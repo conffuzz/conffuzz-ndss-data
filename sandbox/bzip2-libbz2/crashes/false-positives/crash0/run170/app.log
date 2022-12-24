@@ -1,0 +1,25 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==48875==ERROR: AddressSanitizer: SEGV on unknown address 0x55555556c4b0 (pc 0x7fffe289f1cb bp 0x7fffffffbdb0 sp 0x7fffffffbd80 T0)
+==48875==The signal is caused by a WRITE memory access.
+    #0 0x7fffe289f1cb in BZ2_bzRead /root/bzip2-1.0.8/bzlib.c:1170
+    #1 0x55555555a9ba in uncompressStream /root/bzip2-1.0.8/bzip2.c:462
+    #2 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #3 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #4 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/bzip2-1.0.8/bzlib.c:1170 in BZ2_bzRead
+==48875==ABORTING

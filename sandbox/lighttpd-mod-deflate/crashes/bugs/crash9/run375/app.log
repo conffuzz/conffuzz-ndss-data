@@ -1,0 +1,28 @@
+=================================================================
+==27078==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x60e000000258 in thread T0
+    #0 0x7fffe234b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x5555555ad20c in plugins_call_cleanup /root/lighttpd-1.4.67/src/plugin.c:410
+    #2 0x5555555af324 in plugins_free /root/lighttpd-1.4.67/src/plugin.c:578
+    #3 0x55555558a659 in main /root/lighttpd-1.4.67/src/server.c:2118
+    #4 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x60e000000258 is located 88 bytes inside of 160-byte region [0x60e000000200,0x60e0000002a0)
+allocated by thread T0 here:
+    #0 0x7fffe234bc18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x55555562640d in array_extend /root/lighttpd-1.4.67/src/array.c:120
+    #2 0x55555562792b in array_insert_data_at_pos /root/lighttpd-1.4.67/src/array.c:363
+    #3 0x555555627ffb in array_find_or_insert /root/lighttpd-1.4.67/src/array.c:448
+    #4 0x55555562837f in array_insert_unique /root/lighttpd-1.4.67/src/array.c:474
+    #5 0x5555555de876 in yy_reduce configparser.y:388
+    #6 0x5555555e4391 in configparser configparser.c:1812
+    #7 0x5555555d63f9 in config_parse /root/lighttpd-1.4.67/src/configfile.c:2142
+    #8 0x5555555d6cef in config_parse_file_stream /root/lighttpd-1.4.67/src/configfile.c:2216
+    #9 0x5555555d8f3b in config_read /root/lighttpd-1.4.67/src/configfile.c:2486
+    #10 0x5555555855ec in server_main_setup /root/lighttpd-1.4.67/src/server.c:1116
+    #11 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #12 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==27078==ABORTING

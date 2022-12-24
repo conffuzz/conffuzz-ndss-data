@@ -1,0 +1,45 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct(0x7fffe214e100 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17102d2
+png_create_info_struct(0x61a00004e680 [size: 0]) @ 0x00007fffe17102ea
+~> change ret from 0x613000508740 to 0x61300050889b
+png_set_longjmp_fn(0x61a00004e680 [size: 0], 0x7fffe27e5b80 [size: 0], 0xc8 [size: 0]) @ 0x00007fffe1710312
+~> instrumenting 0x00007fffe27e5b80 (__longjmp_chk, 0 arg(s))
+png_init_io(0x61a00004e680 [size: 0], 0x6150000da000 [size: 0]) @ 0x00007fffe1710377
+~> change ret from 0x61a00004e680 to 0x55555555600a
+png_set_compression_level(0x61a00004e680 [size: 0], 0x6 [size: 0]) @ 0x00007fffe1710386
+png_set_IHDR(0x61a00004e680 [size: 0], 0x61300050889b [size: 0], 0x330 [size: 0], 0x420 [size: 0], 0x8 [size: 0], 0x6 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17103c1
+~> change ret from 0xcc0 to 0x911
+png_set_text(0x61a00004e680 [size: 0], 0x61300050889b [size: 0], 0x60600027e1e0 [size: 0], 0x1 [size: 0]) @ 0x00007fffe171078e
+png_set_pHYs(0x61a00004e680 [size: 0], 0x61300050889b [size: 0], 0xec3 [size: 0], 0xec3 [size: 0], 0x1 [size: 0]) @ 0x00007fffe17105fb
+png_write_info(0x61a00004e680 [size: 0], 0x61300050889b [size: 0]) @ 0x00007fffe171060e
+~> change ret from 0 to 0xfffffffffffffdf6
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xfffffffffffffff7
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xfffffffffffffd72
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xfffffffffffffc69
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xffffffffffffffe9
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0x25a
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0x14d
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0x79
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xfffffffffffffc18
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x40 [size: 0]) @ 0x00007fffe1710681
+~> change ret from 0x40 to 0xfffffffffffffcfb
+png_write_rows(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0], 0x20 [size: 0]) @ 0x00007fffe1710681
+png_write_end(0x61a00004e680 [size: 0], 0x61300050889b [size: 0]) @ 0x00007fffe17106fd

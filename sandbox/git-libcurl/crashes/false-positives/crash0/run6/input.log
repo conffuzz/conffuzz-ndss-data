@@ -1,0 +1,49 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+curl_global_init(0x3 {longint} [size: 0]) @ 0x00005555556207c2
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555addfe0 {char*} [size: 0x1]) @ 0x00005555556208bd
+~> change ret {curl_slist*} from 0x60300002af48 to 0x11
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ade020 {char*} [size: 0x1]) @ 0x00005555556208de
+~> failure to write 0x1 bytes at address 0x0000555555ade020
+curl_multi_init() @ 0x000055555562091f
+~> change ret {Curl_multi*} from 0x614000000048 to 0x6140000002a4
+curl_easy_init() @ 0x000055555561f01e
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x40 {CURLoption} [size: 0]) @ 0x000055555561f0d5
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001be8
+~> write {CURL*} 0 -> 0xffffffff0000 at shared buffer 0x0000622000002365
+~> write {CURL*} 0 -> 0xfffffffc18000000 at shared buffer 0x00006220000023d3
+~> change ret {CURLcode} from 0 to 0xffffffffffff8000
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x51 {CURLoption} [size: 0]) @ 0x000055555561f100
+~> write {CURL*} 0xff -> 0 at shared buffer 0x000062200000249a
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001b66
+~> change ret {CURLcode} from 0 to 0x8000000000000000
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x33 {CURLoption} [size: 0]) @ 0x000055555561f1ad
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6b {CURLoption} [size: 0]) @ 0x000055555561f1da
+~> change ret {CURLcode} from 0 to 0x10
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x44 {CURLoption} [size: 0]) @ 0x000055555561f8b5
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000002935
+~> write {CURL*} 0 -> 0xdf00000000 at shared buffer 0x0000622000002da1
+~> write {CURL*} 0 -> 0xfd00000000000000 at shared buffer 0x00006220000026a8
+~> change ret {CURLcode} from 0 to 0xfffffffffffffc5d
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xa1 {CURLoption} [size: 0]) @ 0x000055555561f8e0
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb6 {CURLoption} [size: 0]) @ 0x000055555561f913
+~> change ret {CURLcode} from 0 to 0x179
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb5 {CURLoption} [size: 0]) @ 0x000055555561f946
+~> write {CURL*} 0xfd -> 0x5000000000000 at shared buffer 0x000062200000236a
+~> change ret {CURLcode} from 0 to 0xfffffffffffffff8
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x2722 {CURLoption} [size: 0]) @ 0x000055555561f9ef
+~> write {CURL*} 0 -> 0xbe00000000000000 at shared buffer 0x0000622000002a6f
+~> write {CURL*} 0xbe -> 0x3a00000 at shared buffer 0x00006220000025ea
+~> write {CURL*} 0 -> 0xffffffffffff0000 at shared buffer 0x00006220000019d4
+~> change ret {CURLcode} from 0 to 0xfffffffffffffffc
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6f {CURLoption} [size: 0]) @ 0x000055555561d919
+~> change ret {CURLcode} from 0 to 0xffff
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xd5 {CURLoption} [size: 0]) @ 0x000055555561da8e
+~> write {CURL*} 0xff -> 0 at shared buffer 0x00006220000022c4
+~> change ret {CURLcode} from 0 to 0x330
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ae1520 {char*} [size: 0x1]) @ 0x0000555555633765
+~> failure to write 0x1 bytes at address 0x0000555555ae1520
+~> change ret {curl_slist*} from 0x60300002b278 to 0x60300002af0d
+curl_slist_append(0x60300002af0d {curl_slist*} [size: 0x10], 0x555555ae0d60 {char*} [size: 0x1]) @ 0x0000555555633785

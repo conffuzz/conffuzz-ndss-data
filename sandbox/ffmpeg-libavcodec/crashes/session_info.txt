@@ -1,0 +1,22 @@
+Fuzzing seed: 1651161276
+Starting time: 2022-04-28 15:54:36
+Total instrumented API size: 51
+Statically detected call sites: 60
+Statically detected called API endpoints: 60
+Statically detected caller components: 4
+Max number of call sites reached in a run: 19
+Number of API endpoints reached: 19
+Number of API endpoints that are vulnerability vectors: 11
+List of these endpoints:
+  [api] avcodec_alloc_context3
+  [api] avcodec_close
+  [api] avcodec_configuration
+  [api] avcodec_descriptor_get
+  [api] avcodec_find_decoder
+  [api] avcodec_is_open
+  [api] avcodec_parameters_alloc
+  [api] avcodec_parameters_copy
+  [api] avcodec_parameters_from_context
+  [api] avcodec_parameters_to_context
+  [api] avcodec_send_packet
+Ending time: 2022-04-28 22:54:17

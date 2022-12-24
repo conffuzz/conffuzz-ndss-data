@@ -1,0 +1,19 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe640 {RedisModuleCtx*} [size: 0x78], 0x7fffd9411850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+CFDel_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337b08 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+BFAdd_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337b80 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+BFCheck_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337c10 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+BFCheck_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337c58 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+BFAdd_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd93002f8 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+BFCheck_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd93002f8 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+BFReserve_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f88c0 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+BFAdd_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd93002f8 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+CFReserve_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337b20 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0x1a80000 at shared buffer 0x00007fffffffe3c6
+~> change ret {int} from 0 to 0xfffffffffffffc8a
+CFAdd_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337dd8 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0x10000000000000 at shared buffer 0x00007fffffffe3c9
+~> change ret {int} from 0 to 0xfffffffffffffc42

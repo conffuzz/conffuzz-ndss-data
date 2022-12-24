@@ -1,0 +1,16 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+exif_log_set_func(0x603000000160 {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))
+~> write {ExifLog*} 0x9340000055555556 -> 0x198 at shared buffer 0x000060300000016a
+~> write {ExifLog*} 0 -> 0x16c000000000000 at shared buffer 0x000060300000016f
+exif_loader_new() @ 0x00005555555675e6
+exif_loader_log(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000160 {ExifLog*} [size: 0x20]) @ 0x0000555555567606
+~> write {ExifLog*} 0x13000005555 -> 0xffffffffffff6000 at shared buffer 0x0000603000000174
+~> write {ExifLoader*} 0 -> 0 at shared buffer 0x000060600000008b
+~> write {ExifLoader*} 0x60 -> 0 at shared buffer 0x00006060000000bd
+~> write {ExifLoader*} 0x603000 -> 0x500000000 at shared buffer 0x00006060000000b3
+exif_loader_write_file(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000100 {char*} [size: 0x1]) @ 0x000055555556765a

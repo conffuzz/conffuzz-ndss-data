@@ -1,0 +1,12 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+magic_version() @ 0x0000555555559ef9
+~> failure to write 0x7 bytes at address 0x00006120000002d7
+~> change ret {int} from 0x21d to 0xffffffff80000000
+magic_version() @ 0x0000555555559f05
+~> change ret {int} from 0x21d to 0x3d4
+magic_open(0 {int} [size: 0]) @ 0x000055555555a7b2
+~> change ret {magic_set*} from 0x612000000040 to 0x61200000029e
+magic_load(0x61200000029e {magic_set*} [size: 0x128], 0 {char*} [size: 0x1]) @ 0x000055555555a7ee

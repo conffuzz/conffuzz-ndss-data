@@ -1,0 +1,61 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+=================================================================
+==113467==ERROR: AddressSanitizer: global-buffer-overflow on address 0x5555555a30c8 at pc 0x7fffe26b3d46 bp 0x7fffffffe620 sp 0x7fffffffddd0
+READ of size 1 at 0x5555555a30c8 thread T0
+    #0 0x7fffe26b3d45 in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:389
+    #1 0x7fffe247b4a7 in g_string_insert_len (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x774a7)
+    #2 0x555555583dfc in get_runtime_caplibs_version /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:165
+    #3 0x555555574c80 in get_dumpcap_runtime_info /root/wireshark-3.4.12/dumpcap.c:4678
+    #4 0x555555580a29 in get_runtime_version_info /root/wireshark-3.4.12/version_info.c:440
+    #5 0x555555580368 in ws_init_version_info /root/wireshark-3.4.12/version_info.c:69
+    #6 0x555555574eaa in main /root/wireshark-3.4.12/dumpcap.c:4735
+    #7 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #8 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+0x5555555a30c8 is located 32 bytes to the right of global variable 'comp_info' defined in '/root/wireshark-3.4.12/version_info.c:45:14' (0x5555555a30a0) of size 8
+0x5555555a30c8 is located 24 bytes to the left of global variable 'runtime_info' defined in '/root/wireshark-3.4.12/version_info.c:46:14' (0x5555555a30e0) of size 8
+SUMMARY: AddressSanitizer: global-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:389 in __interceptor_strlen
+Shadow bytes around the buggy address:
+  0x0aab2aaac5c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2aaac5d0: 00 00 00 00 00 00 00 00 f9 f9 f9 f9 04 f9 f9 f9
+  0x0aab2aaac5e0: f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+  0x0aab2aaac5f0: f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9 00 00 00 00
+  0x0aab2aaac600: 00 00 00 00 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+=>0x0aab2aaac610: f9 f9 f9 f9 00 f9 f9 f9 f9[f9]f9 f9 00 f9 f9 f9
+  0x0aab2aaac620: f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+  0x0aab2aaac630: f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+  0x0aab2aaac640: f9 f9 f9 f9 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2aaac650: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2aaac660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==113467==ABORTING

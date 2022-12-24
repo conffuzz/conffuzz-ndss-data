@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+nghttp2_version(0 [size: 0]) @ 0x00007fffe22104f9
+~> change ret from 0x7fffe18e9190 to 0xd

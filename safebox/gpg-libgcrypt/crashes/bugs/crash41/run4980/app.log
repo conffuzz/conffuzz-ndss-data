@@ -1,0 +1,27 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==413790==ERROR: AddressSanitizer: SEGV on unknown address 0xfffffffffffffff6 (pc 0x7fffe195767c bp 0x000000000010 sp 0x7fffffffd6e0 T0)
+==413790==The signal is caused by a READ memory access.
+    #0 0x7fffe195767c in __asan::Allocator::Reallocate(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:679
+    #1 0x7fffe195767c in __asan::asan_realloc(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:921
+    #2 0x7fffe19d91d4 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:165
+    #3 0x7fffe15abd17 in _gcry_private_realloc /root/libgcrypt-1.9.2/src/stdmem.c:193
+    #4 0x7fffe15a57cd in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1029
+    #5 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #6 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #7 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #8 0x7fffe152916a in _gpgrt_malloc /root/libgpg-error-1.41/src/init.c:317
+    #9 0x7fffe1529da6 in mem_alloc /root/libgpg-error-1.41/src/estream.c:222
+    #10 0x7fffe1529fdf in do_list_add /root/libgpg-error-1.41/src/estream.c:520
+    #11 0x7fffe152bd68 in create_stream /root/libgpg-error-1.41/src/estream.c:2257
+    #12 0x7fffe152db19 in do_fpopen /root/libgpg-error-1.41/src/estream.c:3489
+    #13 0x7fffe152de93 in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3667
+    #14 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #15 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #16 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #17 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #18 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/asan/asan_allocator.cpp:679 in __asan::Allocator::Reallocate(void*, unsigned long, __sanitizer::BufferedStackTrace*)
+==413790==ABORTING

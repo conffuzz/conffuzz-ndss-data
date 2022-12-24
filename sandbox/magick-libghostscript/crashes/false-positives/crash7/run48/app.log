@@ -1,0 +1,22 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==4133==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffd3fe561e bp 0x7ffffffed350 sp 0x7ffffffed350 T0)
+    #0 0x7fffd3fe561e in gsapi_set_stdio_with_handle psi/iapi.c:105
+    #1 0x7fffd3fe55dd in gsapi_set_stdio psi/iapi.c:90
+    #2 0x7fffd56873db in InvokeGhostscriptDelegate coders/ghostscript-private.h:161
+    #3 0x7fffd568c212 in ReadPSImage coders/ps.c:812
+    #4 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #5 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #6 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #7 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #8 0x555555556a32 in MagickMain utilities/magick.c:150
+    #9 0x555555556ce5 in main utilities/magick.c:182
+    #10 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #11 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #12 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL psi/iapi.c:105 in gsapi_set_stdio_with_handle
+==4133==ABORTING

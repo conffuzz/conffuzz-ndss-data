@@ -1,0 +1,2 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!

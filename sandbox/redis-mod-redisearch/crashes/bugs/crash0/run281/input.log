@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> change ret {int} from 0 to 0xfffffffffffffd4f
+RSAggregateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482510 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9315bf0 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0x2580 -> 0x8000000000000 at shared buffer 0x00007fffffffe388
+~> write {RedisModuleCtx*} 0x7fffd9 -> 0x30000 at shared buffer 0x00007fffffffe38b
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2ac0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0x3d6
+RSAddDocumentCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2a00 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd92f3a60 -> 0 at shared buffer 0x00007fffd92f2a00
+~> change ret {int} from 0 to 0x2

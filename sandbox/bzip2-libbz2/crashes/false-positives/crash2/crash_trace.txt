@@ -1,0 +1,6 @@
+    #0 0xaddr in BZ2_bzRead /root/bzip2-1.0.8/bzlib.c:1186
+    #1 0xaddr in uncompressStream /root/bzip2-1.0.8/bzip2.c:462
+    #2 0xaddr in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #3 0xaddr in main /root/bzip2-1.0.8/bzip2.c:1984
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/bzip2-1.0.8/bzip2-shared+0xaddr)

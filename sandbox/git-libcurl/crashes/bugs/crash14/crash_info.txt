@@ -1,0 +1,3 @@
+fault_location /root/git-2.35.1/git-http-push
+cap_null_deref
+cap_write_arbitrary

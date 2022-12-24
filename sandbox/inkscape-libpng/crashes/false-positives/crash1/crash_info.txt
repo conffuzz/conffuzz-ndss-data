@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libpng16.so.16.37.0
+cap_null_deref

@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==10878==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe2364066 bp 0x7fffffffd6a0 sp 0x7fffffffcde8 T0)
+==10878==The signal is caused by a READ memory access.
+==10878==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe2364066 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe22f52ed in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:551
+    #2 0x7fffe22f6bd5 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1668
+    #3 0x5555555f1183 in log_buffer_vsprintf /root/lighttpd-1.4.67/src/log.c:186
+    #4 0x5555555f1860 in log_error_va_list_impl /root/lighttpd-1.4.67/src/log.c:267
+    #5 0x5555555f1a1d in log_error /root/lighttpd-1.4.67/src/log.c:285
+    #6 0x5555555ad90f in plugins_call_init /root/lighttpd-1.4.67/src/plugin.c:462
+    #7 0x555555586586 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1290
+    #8 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #9 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==10878==ABORTING

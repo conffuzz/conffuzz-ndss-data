@@ -1,0 +1,22 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==52055==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe03cd066 bp 0x7fffffffbcf0 sp 0x7fffffffb438 T0)
+==52055==The signal is caused by a READ memory access.
+==52055==Hint: address points to the zero page.
+    #0 0x7fffe03cd066 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe035e2ed in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:551
+    #2 0x7fffe035fbd5 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1668
+    #3 0x55555582b1a4 in vreportf /root/git-2.35.1/usage.c:21
+    #4 0x55555582b5e5 in warn_builtin /root/git-2.35.1/usage.c:88
+    #5 0x55555582ca20 in warning /root/git-2.35.1/usage.c:286
+    #6 0x555555621ae3 in start_active_slot /root/git-2.35.1/http.c:1249
+    #7 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #8 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #9 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #10 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #11 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #12 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==52055==ABORTING

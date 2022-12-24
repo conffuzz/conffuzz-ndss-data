@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct_2(0x7fffd47fefe6 {png_const_charp} [size: 0], 0 {png_voidp} [size: 0], 0 {png_error_ptr} [size: 0], 0 {png_error_ptr} [size: 0], 0x61b0000069e8 {png_voidp} [size: 0], 0x7fffd36f2b0b {png_malloc_ptr} [size: 0], 0x7fffd36f2b9a {png_free_ptr} [size: 0]) @ 0x00007fffd36f2d50
+~> instrumenting 0x00007fffd36f2b0b (gdevpng_malloc, 0x2 arg(s))
+~> instrumenting 0x00007fffd36f2b9a (gdevpng_free, 0x2 arg(s))
+png_get_mem_ptr(0x7ffffffea030 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+~> change ret {png_voidp} from 0x61b0000069e8 to 0x61b0000067d2

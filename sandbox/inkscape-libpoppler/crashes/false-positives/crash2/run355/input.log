@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poppler_document_new_from_file(0x603000480850 [size: 0x1], 0 [size: 0x1], 0x7fffffffe058 [size: 0x8]) @ 0x00007fffe16ad5f7
+poppler_document_get_n_pages(0x61d000709b40 [size: 0x40]) @ 0x00007fffe16ad687
+~> change ret from 0x2 to 0xffffffffffffd8f0
+poppler_document_get_page(0x61d000709b40 [size: 0x40], 0 [size: 0]) @ 0x00007fffe16ad6a2
+~> write 0 -> 0x610000000097 at shared buffer 0x000061d000709b4a
+~> change ret from 0x61d000709b80 to 0xd
+poppler_page_get_size(0xd [size: 0x38], 0x7fffffffe060 [size: 0x8], 0x7fffffffe070 [size: 0x8]) @ 0x00007fffe16ad6d2

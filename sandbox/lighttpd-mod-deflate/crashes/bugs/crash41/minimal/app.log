@@ -1,0 +1,24 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==35307==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555555f9b28 bp 0x7fffffffe610 sp 0x7fffffffe5f0 T0)
+==35307==The signal is caused by a READ memory access.
+==35307==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555555f9b28 in chunkqueue_release_chunks /root/lighttpd-1.4.67/src/chunk.c:443
+    #1 0x5555555f9f7f in chunkqueue_reset /root/lighttpd-1.4.67/src/chunk.c:493
+    #2 0x5555555ab4e6 in request_reset /root/lighttpd-1.4.67/src/reqpool.c:143
+    #3 0x555555591ae5 in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:204
+    #4 0x555555596a53 in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #5 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #6 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #7 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #8 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #9 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #10 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #11 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #12 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #13 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #14 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/chunk.c:443 in chunkqueue_release_chunks
+==35307==ABORTING

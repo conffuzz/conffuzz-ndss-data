@@ -1,0 +1,15 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3400==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555555b6b96 bp 0x7fffffffe310 sp 0x7fffffffe2f0 T0)
+==3400==The signal is caused by a READ memory access.
+==3400==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555555b6b96 in network_register_fdevents /root/lighttpd-1.4.67/src/network.c:923
+    #1 0x55555558961f in server_main_setup /root/lighttpd-1.4.67/src/server.c:1797
+    #2 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #3 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/network.c:923 in network_register_fdevents
+==3400==ABORTING

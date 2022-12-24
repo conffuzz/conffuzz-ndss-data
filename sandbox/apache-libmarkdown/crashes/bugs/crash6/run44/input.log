@@ -1,0 +1,24 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebd9c9
+~> write {FILE*} 0x70bebebebebebe -> 0x64 at shared buffer 0x000061500001001a
+~> write {FILE*} 0x1f50000006210 -> 0 at shared buffer 0x000061500000ff8c
+~> write {FILE*} 0x6210 -> 0 at shared buffer 0x000061500000ffa4
+mkd_compile(0x60d000006840 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebc47b
+~> write {Document*} 0 -> 0x19d00000000 at shared buffer 0x000060d0000068aa
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006863
+~> change ret {int} from 0x1 to 0xfffffffffffffcbf
+mkd_doc_title(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7ebcaec
+mkd_document(0x60d000006840 {Document*} [size: 0x88], 0x7fffd5bceae0 {char**} [size: 0x8]) @ 0x00007fffd7ebc541
+mkd_cleanup(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7ebc649
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d0000068aa
+~> write {Document*} 0 -> 0xffffffb200000000 at shared buffer 0x000060d0000068c2
+~> write {Document*} 0 -> 0x4 at shared buffer 0x000060d000006863
+mkd_in(0x615000010200 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebd9c9
+~> write {FILE*} 0 -> 0 at shared buffer 0x00006150000102a9
+~> write {FILE*} 0xbebebebebebebebe -> 0 at shared buffer 0x00006150000102c8
+~> write {FILE*} 0x100002 -> 0 at shared buffer 0x000061500001023a
+~> change ret {Document*} from 0x60d000006910 to 0x60d0000068af

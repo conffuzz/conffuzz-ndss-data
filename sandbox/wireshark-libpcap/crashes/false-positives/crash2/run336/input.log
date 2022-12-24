@@ -1,0 +1,33 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0 -> 0x7fffffffe5e8 at shared buffer 0x00007fffffffe370
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x65 -> 0xb8 at shared buffer 0x0000602000000430
+~> write 0xb8 -> 0 at shared buffer 0x0000602000000430
+~> write 0 -> 0xa7 at shared buffer 0x00007fffffffc250
+~> write 0xa7 -> 0xb at shared buffer 0x00007fffffffc250
+~> write 0xb -> 0x39 at shared buffer 0x00007fffffffc250
+~> change ret from 0x618000000080 to 0x61800000008a
+pcap_set_promisc(0x61800000008a [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+pcap_set_timeout(0x61800000008a [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0x7fffe258 -> 0xffffff80 at shared buffer 0x00006180000002fa
+~> write 0 -> 0x1fb at shared buffer 0x0000618000000236
+pcap_set_tstamp_precision(0x61800000008a [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0 -> 0x2 at shared buffer 0x000061800000024a
+~> write 0 -> 0 at shared buffer 0x0000618000000104
+~> write 0 -> 0xbb8 at shared buffer 0x00006180000001de
+~> write 0xe258b27c00007fff -> 0xff at shared buffer 0x00006180000002ac
+~> change ret from 0xfffffffc to 0x10000006c
+pcap_set_buffer_size(0x61800000008a [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+pcap_activate(0x61800000008a [size: 0x288]) @ 0x0000555555586c87
+~> write 0xe258b27c00007f00 -> 0 at shared buffer 0x00006180000002e6
+~> write 0xe258b27c00602000 -> 0xfffffd08 at shared buffer 0x0000618000000283
+~> write 0xe258b27c00600000 -> 0xffff0000 at shared buffer 0x00006180000000e0
+~> write 0xe258b27c00600000 -> 0xffff00ad at shared buffer 0x0000618000000289
+pcap_statustostr(0xfffffffc [size: 0]) @ 0x0000555555586dbf
+pcap_close(0x61800000008a [size: 0x288]) @ 0x0000555555586de2

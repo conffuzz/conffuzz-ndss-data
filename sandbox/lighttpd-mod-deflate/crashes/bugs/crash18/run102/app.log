@@ -1,0 +1,31 @@
+=================================================================
+==8387==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x00007fffffff in thread T0
+    #0 0x7fffe234bc18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x555555626361 in array_extend /root/lighttpd-1.4.67/src/array.c:119
+    #2 0x55555562792b in array_insert_data_at_pos /root/lighttpd-1.4.67/src/array.c:363
+    #3 0x555555627af7 in array_insert_string_at_pos /root/lighttpd-1.4.67/src/array.c:392
+    #4 0x555555627bad in array_get_buf_ptr_ext /root/lighttpd-1.4.67/src/array.c:400
+    #5 0x5555555f30b8 in http_header_set_key_value /root/lighttpd-1.4.67/src/http_header.c:219
+    #6 0x5555555f33ab in http_header_response_set /root/lighttpd-1.4.67/src/http_header.c:256
+    #7 0x555555637ccf in http_response_send_file /root/lighttpd-1.4.67/src/http-header-glue.c:372
+    #8 0x7fffdbd70d05 in mod_staticfile_process /root/lighttpd-1.4.67/src/mod_staticfile.c:130
+    #9 0x7fffdbd70ddc in mod_staticfile_subrequest /root/lighttpd-1.4.67/src/mod_staticfile.c:144
+    #10 0x5555555ac928 in plugins_call_fn_req_data /root/lighttpd-1.4.67/src/plugin.c:288
+    #11 0x5555555acdc9 in plugins_call_handle_subrequest_start /root/lighttpd-1.4.67/src/plugin.c:341
+    #12 0x55555558ddf5 in http_response_prepare /root/lighttpd-1.4.67/src/response.c:549
+    #13 0x55555559004f in http_response_handler /root/lighttpd-1.4.67/src/response.c:980
+    #14 0x55555559691d in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1007
+    #15 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #16 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #17 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #18 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #19 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #20 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #21 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #22 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #23 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #24 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+Address 0x00007fffffff is located in the low shadow area.
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164 in __interceptor_realloc
+==8387==ABORTING

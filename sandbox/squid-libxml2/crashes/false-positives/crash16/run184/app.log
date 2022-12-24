@@ -1,0 +1,49 @@
+2022/11/09 17:01:23| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==24650==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000099 (pc 0x7fffd7a140c5 bp 0x7fffffffcce0 sp 0x7fffffffcc50 T0)
+==24650==The signal is caused by a READ memory access.
+==24650==Hint: address points to the zero page.
+    #0 0x7fffd7a140c5 in xmlParseChunk /root/libxml2-2.10.3/parser.c:12247
+    #1 0x555555ca668f in ESILibxml2Parser::parse(char const*, unsigned long, bool) /root/squid-5.7/src/esi/Libxml2Parser.cc:108
+    #2 0x555555c851f4 in ESIContext::parseOneBuffer() /root/squid-5.7/src/esi/Esi.cc:1218
+    #3 0x555555c85632 in ESIContext::parse() /root/squid-5.7/src/esi/Esi.cc:1264
+    #4 0x555555c85a53 in ESIContext::process() /root/squid-5.7/src/esi/Esi.cc:1310
+    #5 0x555555c7da18 in ESIContext::kick() /root/squid-5.7/src/esi/Esi.cc:315
+    #6 0x555555c80f23 in esiProcessStream(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/esi/Esi.cc:787
+    #7 0x555555934985 in clientStreamCallback(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:159
+    #8 0x55555595f091 in clientReplyContext::processReplyAccessResult(Acl::Answer const&) /root/squid-5.7/src/client_side_reply.cc:2178
+    #9 0x55555595e6e9 in clientReplyContext::processReplyAccess() /root/squid-5.7/src/client_side_reply.cc:2066
+    #10 0x55555595f8f7 in clientReplyContext::sendMoreData(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:2264
+    #11 0x55555595db73 in clientReplyContext::SendMoreData(void*, StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:1904
+    #12 0x5555559fc475 in store_client::callback(long, bool) /root/squid-5.7/src/store_client.cc:178
+    #13 0x5555559fdc02 in store_client::scheduleMemRead() /root/squid-5.7/src/store_client.cc:474
+    #14 0x5555559fd758 in store_client::scheduleRead() /root/squid-5.7/src/store_client.cc:440
+    #15 0x5555559fd4a6 in store_client::doCopy(StoreEntry*) /root/squid-5.7/src/store_client.cc:401
+    #16 0x5555559fcfe8 in storeClientCopy2 /root/squid-5.7/src/store_client.cc:355
+    #17 0x5555559ff781 in StoreEntry::invokeHandlers() /root/squid-5.7/src/store_client.cc:793
+    #18 0x5555559f722f in StoreEntry::flush() /root/squid-5.7/src/store.cc:1666
+    #19 0x5555559f7acc in StoreEntry::startWriting() /root/squid-5.7/src/store.cc:1812
+    #20 0x555555a98c4c in Client::setFinalReply(HttpReply*) /root/squid-5.7/src/clients/Client.cc:153
+    #21 0x555555a9ef85 in Client::adaptOrFinalizeReply() /root/squid-5.7/src/clients/Client.cc:1010
+    #22 0x5555559a3ecc in HttpStateData::processReply() /root/squid-5.7/src/http.cc:1330
+    #23 0x5555559a3a7d in HttpStateData::readReply(CommIoCbParams const&) /root/squid-5.7/src/http.cc:1302
+    #24 0x5555559afc9e in CommCbMemFunT<HttpStateData, CommIoCbParams>::doDial() (/usr/local/squid/sbin/squid+0x45bc9e)
+    #25 0x5555559b02be in JobDialer<HttpStateData>::dial(AsyncCall&) base/AsyncJobCalls.h:175
+    #26 0x5555559af6ba in AsyncCallT<CommCbMemFunT<HttpStateData, CommIoCbParams> >::fire() (/usr/local/squid/sbin/squid+0x45b6ba)
+    #27 0x555555afdd08 in AsyncCall::make() /root/squid-5.7/src/base/AsyncCall.cc:44
+    #28 0x555555afeb88 in AsyncCallQueue::fireNext() /root/squid-5.7/src/base/AsyncCallQueue.cc:60
+    #29 0x555555afe915 in AsyncCallQueue::fire() /root/squid-5.7/src/base/AsyncCallQueue.cc:43
+    #30 0x55555587fc36 in EventLoop::dispatchCalls() /root/squid-5.7/src/EventLoop.cc:144
+    #31 0x55555587fb42 in EventLoop::runOnce() /root/squid-5.7/src/EventLoop.cc:121
+    #32 0x55555587f995 in EventLoop::run() /root/squid-5.7/src/EventLoop.cc:83
+    #33 0x5555559bf69f in SquidMain(int, char**) /root/squid-5.7/src/main.cc:1719
+    #34 0x5555559be94c in SquidMainSafe /root/squid-5.7/src/main.cc:1406
+    #35 0x5555559be906 in main /root/squid-5.7/src/main.cc:1394
+    #36 0x7fffd73dfd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #37 0x7fffd73dfe3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #38 0x555555831e64 in _start (/usr/local/squid/sbin/squid+0x2dde64)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/libxml2-2.10.3/parser.c:12247 in xmlParseChunk
+==24650==ABORTING

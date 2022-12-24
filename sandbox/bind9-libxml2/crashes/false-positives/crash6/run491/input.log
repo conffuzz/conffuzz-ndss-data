@@ -1,0 +1,25 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+xmlInitParser() @ 0x00005555555c8ef1
+xmlIsMainThread() @ 0x00007fffe0d8bb92
+xmlNewTextWriterDoc(0x7fffd01b4760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+xmlTextWriterStartDocument(0x60700003f250 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29
+xmlTextWriterWritePI(0x60700003f250 {xmlTextWriterPtr} [size: 0], 0x5555556a6060 {xmlChar*} [size: 0x1], 0x5555556a6000 {xmlChar*} [size: 0x1]) @ 0x0000555555654b59
+xmlTextWriterStartElement(0x60700003f250 {xmlTextWriterPtr} [size: 0], 0x5555556a60a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654b82
+~> change ret {int} from 0 to 0xfffffffffffffffd
+xmlFreeTextWriter(0x60700003f250 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555657110
+xmlFreeDoc(0x60f00007ffc0 {xmlDocPtr} [size: 0]) @ 0x0000555555657152
+xmlNewTextWriterDoc(0x7fffd38f0760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+~> write {xmlDocPtr*} 0x90 -> 0 at shared buffer 0x00007fffd38f0760
+xmlTextWriterStartDocument(0x607000045bc0 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29
+xmlTextWriterWritePI(0x607000045bc0 {xmlTextWriterPtr} [size: 0], 0x5555556a6060 {xmlChar*} [size: 0x1], 0x5555556a6000 {xmlChar*} [size: 0x1]) @ 0x0000555555654b59
+~> failure to write 0x1 bytes at address 0x00005555556a6060
+xmlTextWriterStartElement(0x607000045bc0 {xmlTextWriterPtr} [size: 0], 0x5555556a60a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654b82
+xmlTextWriterWriteAttribute(0x607000045bc0 {xmlTextWriterPtr} [size: 0], 0x5555556a6120 {xmlChar*} [size: 0x1], 0x5555556a60e0 {xmlChar*} [size: 0x1]) @ 0x0000555555654bb2
+xmlTextWriterStartElement(0x607000045bc0 {xmlTextWriterPtr} [size: 0], 0x5555556a6160 {xmlChar*} [size: 0x1]) @ 0x0000555555654c52
+~> failure to write 0x1 bytes at address 0x00005555556a6160
+~> change ret {int} from 0 to 0xfffffffffffffebe
+xmlFreeTextWriter(0x607000045bc0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555657110
+xmlFreeDoc(0x60f000087a00 {xmlDocPtr} [size: 0]) @ 0x0000555555657152

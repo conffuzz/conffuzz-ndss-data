@@ -1,0 +1,32 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==243605==ERROR: AddressSanitizer: requested allocation size 0xfffffffffffffc18 (0x418 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffe19d8e8f in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe15abad6 in _gcry_private_malloc /root/libgcrypt-1.9.2/src/stdmem.c:113
+    #2 0x7fffe15a5627 in do_malloc /root/libgcrypt-1.9.2/src/global.c:943
+    #3 0x7fffe15a5693 in _gcry_malloc /root/libgcrypt-1.9.2/src/global.c:965
+    #4 0x7fffe15a5772 in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1019
+    #5 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #6 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #7 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #8 0x7fffe152916a in _gpgrt_malloc /root/libgpg-error-1.41/src/init.c:317
+    #9 0x7fffe1529da6 in mem_alloc /root/libgpg-error-1.41/src/estream.c:222
+    #10 0x7fffe152bc95 in create_stream /root/libgpg-error-1.41/src/estream.c:2215
+    #11 0x7fffe152d830 in _gpgrt_fopencookie /root/libgpg-error-1.41/src/estream.c:3387
+    #12 0x7fffe1534c6a in gpgrt_fopencookie /root/libgpg-error-1.41/src/visibility.c:244
+    #13 0x55555578dfc6 in set_file_fd /root/gnupg-2.2.27/common/logging.c:545
+    #14 0x55555578e04c in log_set_file /root/gnupg-2.2.27/common/logging.c:575
+    #15 0x55555578e614 in do_logv /root/gnupg-2.2.27/common/logging.c:753
+    #16 0x55555578eda3 in log_error /root/gnupg-2.2.27/common/logging.c:935
+    #17 0x555555660d72 in additional_weak_digest /root/gnupg-2.2.27/g10/misc.c:1854
+    #18 0x5555555cc6a3 in main /root/gnupg-2.2.27/g10/gpg.c:2454
+    #19 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==243605==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145 in __interceptor_malloc
+==243605==ABORTING

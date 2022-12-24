@@ -1,0 +1,7 @@
+    #1 0xaddr in fdevent_config /root/lighttpd-1.4.67/src/fdevent_impl.c:87
+    #2 0xaddr in fdevent_init /root/lighttpd-1.4.67/src/fdevent_impl.c:186
+    #3 0xaddr in server_main_setup /root/lighttpd-1.4.67/src/server.c:1761
+    #4 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2082
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

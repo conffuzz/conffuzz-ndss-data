@@ -1,0 +1,4 @@
+fault_location /usr/local/bin/aspell
+cap_write
+cap_read_arbitrary
+cap_write_arbitrary

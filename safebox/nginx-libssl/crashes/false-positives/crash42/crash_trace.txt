@@ -1,0 +1,6 @@
+    #0 0xaddr in ngx_ssl_error src/event/ngx_event_openssl.c:3509
+    #1 0xaddr in ngx_ssl_init src/event/ngx_event_openssl.c:221
+    #2 0xaddr in main src/core/nginx.c:241
+    #3 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

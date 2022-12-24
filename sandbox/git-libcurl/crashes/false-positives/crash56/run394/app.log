@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==60773==ERROR: AddressSanitizer: SEGV on unknown address 0x000000480000 (pc 0x7fffe0130f5b bp 0x7fffffffd140 sp 0x7fffffffd120 T0)
+==60773==The signal is caused by a READ memory access.
+    #0 0x7fffe0130f5b in curl_url_dup /root/curl-7.82.0/lib/urlapi.c:1193
+    #1 0x7fffe011cd7d in parseurlandfillconn /root/curl-7.82.0/lib/url.c:1941
+    #2 0x7fffe01273fc in create_conn /root/curl-7.82.0/lib/url.c:3626
+    #3 0x7fffe012ae6e in Curl_connect /root/curl-7.82.0/lib/url.c:4127
+    #4 0x7fffe00a3f02 in multi_runsingle /root/curl-7.82.0/lib/multi.c:1859
+    #5 0x7fffe00a8a7a in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #6 0x555555621b53 in start_active_slot /root/git-2.35.1/http.c:1260
+    #7 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #8 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #9 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #10 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #11 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #12 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/urlapi.c:1193 in curl_url_dup
+==60773==ABORTING

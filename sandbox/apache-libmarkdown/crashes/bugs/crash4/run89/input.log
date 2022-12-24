@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+~> failure to write 0x4 bytes at address 0x00005555555541d9
+~> failure to write 0x3 bytes at address 0x00005555555541f5
+~> failure to write 0x3 bytes at address 0x00005555555541b1
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebb9c9
+mkd_compile(0x60d000006840 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eba47b
+~> write {Document*} 0x200000300 -> 0xfffffffffdd70000 at shared buffer 0x000060d00000689d
+mkd_doc_title(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7ebaaec
+~> change ret {char*} from 0 to 0xffff

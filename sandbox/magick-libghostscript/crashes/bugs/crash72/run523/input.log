@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gsapi_new_instance(0x7ffffffed460 {**} [size: 0x8], 0x7ffffffed440 {void*} [size: 0x1]) @ 0x00007fffd5687248
+gsapi_set_stdio(0x6110000006b0 {void*} [size: 0x1], 0 {int(*,char*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1]) @ 0x00007fffd56873dc
+~> instrumenting 0x00007fffd56868d5 (GhostscriptDelegateMessage, 0x3 arg(s))
+gsapi_init_with_args(0x6110000006b0 {void*} [size: 0x1], 0x12 {int} [size: 0], 0x60e000000048 {char**} [size: 0x8]) @ 0x00007fffd568748d
+~> detected cb call GhostscriptDelegateMessage(0x7ffffffed440 {void*} [size: 0x1], 0x62a000002a10 {char*} [size: 0x1], 0xb {int} [size: 0]) @ 0x00007fffd3cd538b
+~> write {unknown} 0x10000af100 -> 0x39a000000 at shared buffer 0x000060e000000048
+gsapi_run_string(0x6110000006b0 {void*} [size: 0x1], 0x7fffd56941e0 {char*} [size: 0x1], 0 {int} [size: 0], 0x7ffffffed430 {int*} [size: 0x4]) @ 0x00007fffd568751e
+~> failure to write 0x1 bytes at address 0x00007fffd56941e0
+~> write {int*} 0xe8 -> 0x800000000000000 at shared buffer 0x00007ffffffed433
+~> change ret {int} from 0xffffff9b to 0xffffffff80000000
+gsapi_exit(0x6110000006b0 {void*} [size: 0x1]) @ 0x00007fffd568758b
+~> change ret {int} from 0 to 0xff
+gsapi_delete_instance(0x6110000006b0 {void*} [size: 0x1]) @ 0x00007fffd56875ed
+~> write {void*} 0x8 -> 0xff00000000000000 at shared buffer 0x00006110000006b0

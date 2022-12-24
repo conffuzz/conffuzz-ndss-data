@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gsapi_new_instance(0x7ffffffed460 {**} [size: 0x8], 0x7ffffffed440 {void*} [size: 0x1]) @ 0x00007fffd5687248
+gsapi_set_stdio(0x6110000006b0 {void*} [size: 0x1], 0 {int(*,char*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1]) @ 0x00007fffd56873dc
+~> instrumenting 0x00007fffd56868d5 (GhostscriptDelegateMessage, 0x3 arg(s))
+~> change ret {int} from 0 to 0x3e8
+gsapi_init_with_args(0x6110000006b0 {void*} [size: 0x1], 0x12 {int} [size: 0], 0x60e000000048 {char**} [size: 0x8]) @ 0x00007fffd568748d
+~> detected cb call GhostscriptDelegateMessage(0x7ffffffed440 {void*} [size: 0x1], 0x62a000002a10 {char*} [size: 0x1], 0xb {int} [size: 0]) @ 0x00007fffd3cd538b
+~> change arg #0x1 {void*} from 0x7ffffffed440 to 0x7ffffffed18b
+~> change arg #0x2 {char*} from 0x62a000002a10 to 0x62a0000027b9
+~> change arg #0x3 {int} from 0xb to 0xffffffffffffffd0
+~> write {unknown} 0x6210000af1 -> 0xe200 at shared buffer 0x000060e000000049
+~> change ret {int} from 0 to 0xa
+gsapi_exit(0x6110000006b0 {void*} [size: 0x1]) @ 0x00007fffd568758b
+~> change ret {int} from 0 to 0xffffffffffffff9f
+gsapi_delete_instance(0x6110000006b0 {void*} [size: 0x1]) @ 0x00007fffd56875ed

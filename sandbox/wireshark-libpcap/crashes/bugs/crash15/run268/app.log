@@ -1,0 +1,30 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==84814==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe273c4b6 bp 0x7fffffffba50 sp 0x7fffffffb1a8 T0)
+==84814==The signal is caused by a READ memory access.
+==84814==Hint: address points to the zero page.
+    #0 0x7fffe273c4b6 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe26d2e0d in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:551
+    #2 0x7fffe26d4875 in __interceptor___vsnprintf_chk ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1673
+    #3 0x7fffe24a6a3e in g_snprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xa2a3e)
+    #4 0x5555555711e6 in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3816
+    #5 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #6 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #7 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==84814==ABORTING

@@ -1,0 +1,25 @@
+79359:C 08 Nov 2022 10:16:02.991 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+79359:C 08 Nov 2022 10:16:03.026 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=79359, just started
+79359:C 08 Nov 2022 10:16:03.030 # Configuration loaded
+79359:M 08 Nov 2022 10:16:03.143 * monotonic clock: POSIX clock_gettime
+79359:M 08 Nov 2022 10:16:03.597 * Running mode=standalone, port=6379.
+79359:M 08 Nov 2022 10:16:03.599 # Server initialized
+79359:M 08 Nov 2022 10:16:03.601 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+79359:M 08 Nov 2022 10:16:04.145 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+79359:M 08 Nov 2022 10:16:04.150 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+79359:M 08 Nov 2022 10:16:04.171 * <search> Low level api version 1 initialized successfully
+79359:M 08 Nov 2022 10:16:04.194 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+79359:M 08 Nov 2022 10:16:04.251 * <search> Initialized thread pool!
+79359:M 08 Nov 2022 10:16:04.275 * <search> Enabled diskless replication
+79359:M 08 Nov 2022 10:16:04.357 * Module 'search' loaded from /root/RediSearch/bin/linux-x64-debug/search/redisearch.so
+79359:M 08 Nov 2022 10:16:04.501 * Ready to accept connections
+79359:M 08 Nov 2022 10:16:05.233 * <module> Register index users for async scan
+79359:M 08 Nov 2022 10:16:05.287 * <search> Scanning index users in background
+79359:M 08 Nov 2022 10:16:05.550 * <search> Scanning indexes in background: done (scanned=2)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==79359==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xd930750000000008 bp 0x7fffffffe090 sp 0x7fffffffe078 T0)
+==79359==The signal is caused by a READ memory access.
+==79359==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

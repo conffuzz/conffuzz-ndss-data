@@ -1,0 +1,207 @@
+gcry_mpi_lshift gcry_mpi_lshift 3 unknown_or_void gcry_mpi_t gcry_mpi_t unsignedint
+gcry_sexp_sscan gcry_sexp_sscan 4 gcry_error_t gcry_sexp_t* size_t* char* size_t
+gcry_sexp_nth_data gcry_sexp_nth_data 3 char* gcry_sexp_t int size_t*
+gcry_sexp_alist gcry_sexp_alist 1 gcry_sexp_t gcry_sexp_t*
+gcry_sexp_sprint gcry_sexp_sprint 4 size_t gcry_sexp_t int * size_t
+gcry_mac_ctl gcry_mac_ctl 4 gcry_error_t gcry_mac_hd_t int * size_t
+gcry_mpi_ec_decode_point gcry_mpi_ec_decode_point 3 gpg_error_t gcry_mpi_point_t gcry_mpi_t gcry_ctx_t
+gcry_mpi_ec_get_mpi gcry_mpi_ec_get_mpi 3 gcry_mpi_t char* gcry_ctx_t int
+gcry_mpi_new gcry_mpi_new 1 gcry_mpi_t unsignedint
+gcry_mpi_clear_flag gcry_mpi_clear_flag 2 unknown_or_void gcry_mpi_t gcry_mpi_flag
+gcry_mpi_powm gcry_mpi_powm 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_sexp_release gcry_sexp_release 1 unknown_or_void gcry_sexp_t
+gcry_xcalloc gcry_xcalloc 2 * size_t size_t
+gcry_pk_map_name gcry_pk_map_name 1 int char*
+gcry_mpi_set_opaque_copy gcry_mpi_set_opaque_copy 3 gcry_mpi_t gcry_mpi_t * unsignedint
+gcry_mpi_get_nbits gcry_mpi_get_nbits 1 unsignedint gcry_mpi_t
+gcry_randomize gcry_randomize 3 unknown_or_void * size_t gcry_random_level
+gcry_sexp_dump gcry_sexp_dump 1 unknown_or_void gcry_sexp_t
+gcry_mpi_set_opaque gcry_mpi_set_opaque 3 gcry_mpi_t gcry_mpi_t * unsignedint
+gcry_cipher_setiv gcry_cipher_setiv 3 gcry_error_t gcry_cipher_hd_t * size_t
+gcry_mpi_mod gcry_mpi_mod 3 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_mpi_point_new gcry_mpi_point_new 1 gcry_mpi_point_t unsignedint
+gcry_mpi_mulm gcry_mpi_mulm 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_xrealloc gcry_xrealloc 2 * * size_t
+gcry_mpi_test_bit gcry_mpi_test_bit 2 int gcry_mpi_t unsignedint
+gcry_mac_setkey gcry_mac_setkey 3 gcry_error_t gcry_mac_hd_t * size_t
+gcry_mpi_mul_2exp gcry_mpi_mul_2exp 3 unknown_or_void gcry_mpi_t gcry_mpi_t longunsignedint
+gcry_mpi_mul gcry_mpi_mul 3 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_malloc_secure gcry_malloc_secure 1 * size_t
+gcry_cipher_gettag gcry_cipher_gettag 3 gcry_error_t gcry_cipher_hd_t * size_t
+gcry_xmalloc_secure gcry_xmalloc_secure 1 * size_t
+gcry_mpi_is_neg gcry_mpi_is_neg 1 int gcry_mpi_t
+gcry_prime_release_factors gcry_prime_release_factors 1 unknown_or_void gcry_mpi_t*
+gcry_ctx_release gcry_ctx_release 1 unknown_or_void gcry_ctx_t
+gcry_mpi_sub_ui gcry_mpi_sub_ui 3 unknown_or_void gcry_mpi_t gcry_mpi_t longunsignedint
+gcry_cipher_get_algo_keylen gcry_cipher_get_algo_keylen 1 size_t int
+gcry_sexp_extract_param gcry_sexp_extract_param 3 gpg_error_t gcry_sexp_t char* char*
+gcry_pk_decrypt gcry_pk_decrypt 3 gcry_error_t gcry_sexp_t* gcry_sexp_t gcry_sexp_t
+gcry_mpi_release gcry_mpi_release 1 unknown_or_void gcry_mpi_t
+gcry_set_allocation_handler gcry_set_allocation_handler 5 unknown_or_void gcry_handler_alloc_t gcry_handler_alloc_t gcry_handler_secure_check_t gcry_handler_realloc_t gcry_handler_free_t
+gcry_sexp_build_array gcry_sexp_build_array 4 gcry_error_t gcry_sexp_t* size_t* char* **
+gcry_cipher_algo_info gcry_cipher_algo_info 4 gcry_error_t int int * size_t*
+gcry_mpi_ec_get_affine gcry_mpi_ec_get_affine 4 int gcry_mpi_t gcry_mpi_t gcry_mpi_point_t gcry_ctx_t
+gcry_cipher_setctr gcry_cipher_setctr 3 gpg_error_t gcry_cipher_hd_t * size_t
+gcry_md_ctl gcry_md_ctl 4 gcry_error_t gcry_md_hd_t int * size_t
+gcry_pubkey_get_sexp gcry_pubkey_get_sexp 3 gcry_error_t gcry_sexp_t* int gcry_ctx_t
+gcry_mac_get_algo_keylen gcry_mac_get_algo_keylen 1 unsignedint int
+gcry_pk_algo_info gcry_pk_algo_info 4 gcry_error_t int int * size_t*
+gcry_md_get_algo gcry_md_get_algo 1 int gcry_md_hd_t
+gcry_xmalloc gcry_xmalloc 1 * size_t
+gcry_mpi_ec_curve_point gcry_mpi_ec_curve_point 2 int gcry_mpi_point_t gcry_ctx_t
+gcry_random_add_bytes gcry_random_add_bytes 3 gcry_error_t * size_t int
+gcry_error_from_errno gcry_error_from_errno 1 gcry_error_t int
+gcry_md_close gcry_md_close 1 unknown_or_void gcry_md_hd_t
+gcry_create_nonce gcry_create_nonce 2 unknown_or_void * size_t
+gcry_md_algo_info gcry_md_algo_info 4 gcry_error_t int int * size_t*
+gcry_mpi_sub gcry_mpi_sub 3 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_md_setkey gcry_md_setkey 3 gcry_error_t gcry_md_hd_t * size_t
+gcry_md_enable gcry_md_enable 2 gcry_error_t gcry_md_hd_t int
+gcry_sexp_append gcry_sexp_append 2 gcry_sexp_t gcry_sexp_t gcry_sexp_t
+gcry_mpi_set_flag gcry_mpi_set_flag 2 unknown_or_void gcry_mpi_t gcry_mpi_flag
+gcry_md_copy gcry_md_copy 2 gcry_error_t gcry_md_hd_t* gcry_md_hd_t
+gcry_set_progress_handler gcry_set_progress_handler 2 unknown_or_void gcry_handler_progress_t *
+gcry_cipher_encrypt gcry_cipher_encrypt 5 gcry_error_t gcry_cipher_hd_t * size_t * size_t
+gcry_strsource gcry_strsource 1 char* gcry_error_t
+gcry_kdf_derive gcry_kdf_derive 9 gpg_error_t * size_t int int * size_t longunsignedint size_t *
+gcry_cipher_mode_from_oid gcry_cipher_mode_from_oid 1 int char*
+gcry_strdup gcry_strdup 1 char* char*
+gcry_mpi_randomize gcry_mpi_randomize 3 unknown_or_void gcry_mpi_t unsignedint gcry_random_level
+gcry_mpi_set_ui gcry_mpi_set_ui 2 gcry_mpi_t gcry_mpi_t longunsignedint
+gcry_mpi_scan gcry_mpi_scan 5 gcry_error_t gcry_mpi_t* gcry_mpi_format * size_t size_t*
+gcry_sexp_cdr gcry_sexp_cdr 1 gcry_sexp_t gcry_sexp_t
+gcry_sexp_new gcry_sexp_new 4 gcry_error_t gcry_sexp_t* * size_t int
+gcry_log_debugmpi gcry_log_debugmpi 2 unknown_or_void char* gcry_mpi_t
+gcry_err_code_to_errno gcry_err_code_to_errno 1 int gcry_err_code_t
+gcry_md_map_name gcry_md_map_name 1 int char*
+gcry_sexp_prepend gcry_sexp_prepend 2 gcry_sexp_t gcry_sexp_t gcry_sexp_t
+gcry_sexp_nth_buffer gcry_sexp_nth_buffer 3 * gcry_sexp_t int size_t*
+gcry_cipher_authenticate gcry_cipher_authenticate 3 gcry_error_t gcry_cipher_hd_t * size_t
+gcry_check_version gcry_check_version 1 char* char*
+gcry_err_code_from_errno gcry_err_code_from_errno 1 gcry_err_code_t int
+gcry_calloc_secure gcry_calloc_secure 2 * size_t size_t
+gcry_mac_get_algo gcry_mac_get_algo 1 int gcry_mac_hd_t
+gcry_xcalloc_secure gcry_xcalloc_secure 2 * size_t size_t
+gcry_mpi_ec_set_point gcry_mpi_ec_set_point 3 gpg_error_t char* gcry_mpi_point_t gcry_ctx_t
+gcry_mpi_ec_add gcry_mpi_ec_add 4 unknown_or_void gcry_mpi_point_t gcry_mpi_point_t gcry_mpi_point_t gcry_ctx_t
+gcry_mpi_point_get gcry_mpi_point_get 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_point_t
+gcry_sexp_find_token gcry_sexp_find_token 3 gcry_sexp_t gcry_sexp_t char* size_t
+gcry_mpi_invm gcry_mpi_invm 3 int gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_cipher_info gcry_cipher_info 4 gcry_error_t gcry_cipher_hd_t int * size_t*
+gcry_cipher_checktag gcry_cipher_checktag 3 gcry_error_t gcry_cipher_hd_t * size_t
+gcry_set_outofcore_handler gcry_set_outofcore_handler 2 unknown_or_void gcry_handler_no_mem_t *
+gcry_mpi_get_opaque gcry_mpi_get_opaque 2 * gcry_mpi_t unsignedint*
+gcry_md_hash_buffer gcry_md_hash_buffer 4 unknown_or_void int * * size_t
+gcry_mpi_div gcry_mpi_div 5 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_t int
+gcry_sexp_build gcry_sexp_build 3 gcry_error_t gcry_sexp_t* size_t* char*
+gcry_pk_genkey gcry_pk_genkey 2 gcry_error_t gcry_sexp_t* gcry_sexp_t
+gcry_mac_algo_info gcry_mac_algo_info 4 gcry_error_t int int * size_t*
+gcry_mpi_copy gcry_mpi_copy 1 gcry_mpi_t gcry_mpi_t
+gcry_pk_sign gcry_pk_sign 3 gcry_error_t gcry_sexp_t* gcry_sexp_t gcry_sexp_t
+gcry_mpi_point_copy gcry_mpi_point_copy 1 gcry_mpi_point_t gcry_mpi_point_t
+gcry_mpi_ec_get_point gcry_mpi_ec_get_point 3 gcry_mpi_point_t char* gcry_ctx_t int
+gcry_md_hash_buffers gcry_md_hash_buffers 5 gpg_error_t int unsignedint * gcry_buffer_t* int
+gcry_mpi_get_flag gcry_mpi_get_flag 2 int gcry_mpi_t gcry_mpi_flag
+gcry_mpi_mul_ui gcry_mpi_mul_ui 3 unknown_or_void gcry_mpi_t gcry_mpi_t longunsignedint
+gcry_mpi_snatch gcry_mpi_snatch 2 unknown_or_void gcry_mpi_t gcry_mpi_t
+gcry_mpi_get_ui gcry_mpi_get_ui 2 gcry_error_t unsignedint* gcry_mpi_t
+gcry_mac_setiv gcry_mac_setiv 3 gcry_error_t gcry_mac_hd_t * size_t
+gcry_pk_get_keygrip gcry_pk_get_keygrip 2 unsignedchar* gcry_sexp_t unsignedchar*
+gcry_mpi_dump gcry_mpi_dump 1 unknown_or_void gcry_mpi_t
+gcry_mpi_ec_new gcry_mpi_ec_new 3 gpg_error_t gcry_ctx_t* gcry_sexp_t char*
+gcry_pk_verify gcry_pk_verify 3 gcry_error_t gcry_sexp_t gcry_sexp_t gcry_sexp_t
+gcry_pk_encrypt gcry_pk_encrypt 3 gcry_error_t gcry_sexp_t* gcry_sexp_t gcry_sexp_t
+gcry_prime_check gcry_prime_check 2 gcry_error_t gcry_mpi_t unsignedint
+gcry_cipher_close gcry_cipher_close 1 unknown_or_void gcry_cipher_hd_t
+gcry_mac_write gcry_mac_write 3 gcry_error_t gcry_mac_hd_t * size_t
+gcry_mpi_cmp gcry_mpi_cmp 2 int gcry_mpi_t gcry_mpi_t
+gcry_md_info gcry_md_info 4 gcry_error_t gcry_md_hd_t int * size_t*
+gcry_sexp_length gcry_sexp_length 1 int gcry_sexp_t
+gcry_ecc_mul_point gcry_ecc_mul_point 4 gpg_error_t int unsignedchar* unsignedchar* unsignedchar*
+gcry_pk_testkey gcry_pk_testkey 1 gcry_error_t gcry_sexp_t
+gcry_mpi_point_snatch_get gcry_mpi_point_snatch_get 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_point_t
+gcry_mpi_print gcry_mpi_print 5 gcry_error_t gcry_mpi_format unsignedchar* size_t size_t* gcry_mpi_t
+gcry_cipher_algo_name gcry_cipher_algo_name 1 char* int
+gcry_pk_algo_name gcry_pk_algo_name 1 char* int
+gcry_prime_generate gcry_prime_generate 8 gcry_error_t gcry_mpi_t* unsignedint unsignedint gcry_mpi_t** gcry_prime_check_func_t * gcry_random_level_t unsignedint
+gcry_err_make_from_errno gcry_err_make_from_errno 2 gcry_error_t gcry_err_source_t int
+gcry_sexp_nth_mpi gcry_sexp_nth_mpi 3 gcry_mpi_t gcry_sexp_t int int
+gcry_sexp_cadr gcry_sexp_cadr 1 gcry_sexp_t gcry_sexp_t
+gcry_mpi_ec_mul gcry_mpi_ec_mul 4 unknown_or_void gcry_mpi_point_t gcry_mpi_t gcry_mpi_point_t gcry_ctx_t
+gcry_log_debugpnt gcry_log_debugpnt 3 unknown_or_void char* mpi_point_t gcry_ctx_t
+gcry_mpi_point_release gcry_mpi_point_release 1 unknown_or_void gcry_mpi_point_t
+gcry_md_algo_name gcry_md_algo_name 1 char* int
+gcry_mpi_set_highbit gcry_mpi_set_highbit 2 unknown_or_void gcry_mpi_t unsignedint
+gcry_md_is_secure gcry_md_is_secure 1 int gcry_md_hd_t
+gcry_mpi_abs gcry_mpi_abs 1 unknown_or_void gcry_mpi_t
+gcry_is_secure gcry_is_secure 1 int *
+gcry_mpi_set gcry_mpi_set 2 gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_mac_read gcry_mac_read 3 gcry_error_t gcry_mac_hd_t * size_t*
+gcry_calloc gcry_calloc 2 * size_t size_t
+gcry_sexp_cons gcry_sexp_cons 2 gcry_sexp_t gcry_sexp_t gcry_sexp_t
+gcry_md_debug gcry_md_debug 2 unknown_or_void gcry_md_hd_t char*
+gcry_xstrdup gcry_xstrdup 1 char* char*
+gcry_md_read gcry_md_read 2 unsignedchar* gcry_md_hd_t int
+gcry_cipher_get_algo_blklen gcry_cipher_get_algo_blklen 1 size_t int
+gcry_md_reset gcry_md_reset 1 unknown_or_void gcry_md_hd_t
+gcry_set_log_handler gcry_set_log_handler 2 unknown_or_void gcry_handler_log_t *
+gcry_set_gettext_handler gcry_set_gettext_handler 1 unknown_or_void char*(constchar*)*
+gcry_mpi_ec_sub gcry_mpi_ec_sub 4 unknown_or_void gcry_mpi_point_t gcry_mpi_point_t gcry_mpi_point_t gcry_ctx_t
+gcry_mpi_clear_highbit gcry_mpi_clear_highbit 2 unknown_or_void gcry_mpi_t unsignedint
+gcry_mpi_point_set gcry_mpi_point_set 4 gcry_mpi_point_t gcry_mpi_point_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_sexp_nth gcry_sexp_nth 2 gcry_sexp_t gcry_sexp_t int
+gcry_mpi_addm gcry_mpi_addm 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_pk_get_param gcry_pk_get_param 2 gcry_sexp_t int char*
+gcry_mpi_clear_bit gcry_mpi_clear_bit 2 unknown_or_void gcry_mpi_t unsignedint
+gcry_mpi_cmp_ui gcry_mpi_cmp_ui 2 int gcry_mpi_t longunsignedint
+gcry_realloc gcry_realloc 2 * * size_t
+gcry_md_is_enabled gcry_md_is_enabled 2 int gcry_md_hd_t int
+gcry_mpi_set_bit gcry_mpi_set_bit 2 unknown_or_void gcry_mpi_t unsignedint
+gcry_sexp_car gcry_sexp_car 1 gcry_sexp_t gcry_sexp_t
+gcry_md_get_algo_dlen gcry_md_get_algo_dlen 1 unsignedint int
+gcry_cipher_open gcry_cipher_open 4 gcry_error_t gcry_cipher_hd_t* int int unsignedint
+gcry_mac_algo_name gcry_mac_algo_name 1 char* int
+gcry_mpi_snew gcry_mpi_snew 1 gcry_mpi_t unsignedint
+gcry_pk_get_nbits gcry_pk_get_nbits 1 unsignedint gcry_sexp_t
+gcry_ecc_get_algo_keylen gcry_ecc_get_algo_keylen 1 unsignedint int
+gcry_mac_verify gcry_mac_verify 3 gcry_error_t gcry_mac_hd_t * size_t
+gcry_md_write gcry_md_write 3 unknown_or_void gcry_md_hd_t * size_t
+gcry_mpi_aprint gcry_mpi_aprint 4 gcry_error_t gcry_mpi_format unsignedchar** size_t* gcry_mpi_t
+gcry_malloc gcry_malloc 1 * size_t
+gcry_log_debugsxp gcry_log_debugsxp 2 unknown_or_void char* gcry_sexp_t
+gcry_cipher_map_name gcry_cipher_map_name 1 int char*
+gcry_mpi_swap gcry_mpi_swap 2 unknown_or_void gcry_mpi_t gcry_mpi_t
+gcry_mpi_ec_dup gcry_mpi_ec_dup 3 unknown_or_void gcry_mpi_point_t gcry_mpi_point_t gcry_ctx_t
+gcry_log_debug gcry_log_debug 1 unknown_or_void char*
+gcry_mpi_ec_set_mpi gcry_mpi_ec_set_mpi 3 gpg_error_t char* gcry_mpi_t gcry_ctx_t
+gcry_mpi_rshift gcry_mpi_rshift 3 unknown_or_void gcry_mpi_t gcry_mpi_t unsignedint
+gcry_mpi_point_snatch_set gcry_mpi_point_snatch_set 4 gcry_mpi_point_t gcry_mpi_point_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_log_debughex gcry_log_debughex 3 unknown_or_void char* * size_t
+gcry_mac_map_name gcry_mac_map_name 1 int char*
+gcry_pk_get_curve gcry_pk_get_curve 3 char* gcry_sexp_t int unsignedint*
+gcry_mpi_add gcry_mpi_add 3 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_mpi_gcd gcry_mpi_gcd 3 int gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_sexp_canon_len gcry_sexp_canon_len 4 size_t unsignedchar* size_t size_t* gcry_error_t*
+gcry_mac_open gcry_mac_open 4 gcry_error_t gcry_mac_hd_t* int unsignedint gcry_ctx_t
+gcry_md_extract gcry_md_extract 4 gcry_error_t gcry_md_hd_t int * size_t
+gcry_mac_close gcry_mac_close 1 unknown_or_void gcry_mac_hd_t
+gcry_free gcry_free 1 unknown_or_void *
+gcry_random_bytes gcry_random_bytes 2 * size_t gcry_random_level
+gcry_mpi_add_ui gcry_mpi_add_ui 3 unknown_or_void gcry_mpi_t gcry_mpi_t longunsignedint
+gcry_random_bytes_secure gcry_random_bytes_secure 2 * size_t gcry_random_level
+gcry_md_open gcry_md_open 3 gcry_error_t gcry_md_hd_t* int unsignedint
+gcry_cipher_decrypt gcry_cipher_decrypt 5 gcry_error_t gcry_cipher_hd_t * size_t * size_t
+gcry_cipher_setkey gcry_cipher_setkey 3 gcry_error_t gcry_cipher_hd_t * size_t
+gcry_get_config gcry_get_config 2 char* int char*
+gcry_set_fatalerror_handler gcry_set_fatalerror_handler 2 unknown_or_void gcry_handler_error_t *
+gcry_mpi_subm gcry_mpi_subm 4 unknown_or_void gcry_mpi_t gcry_mpi_t gcry_mpi_t gcry_mpi_t
+gcry_mpi_neg gcry_mpi_neg 2 unknown_or_void gcry_mpi_t gcry_mpi_t
+gcry_sexp_nth_string gcry_sexp_nth_string 2 char* gcry_sexp_t int
+gcry_sexp_create gcry_sexp_create 5 gcry_error_t gcry_sexp_t* * size_t int void(*)*
+gcry_mac_get_algo_maclen gcry_mac_get_algo_maclen 1 unsignedint int
+gcry_control gcry_control 1 gcry_error_t gcry_ctl_cmds
+gcry_sexp_vlist gcry_sexp_vlist 1 gcry_sexp_t gcry_sexp_t
+gcry_strerror gcry_strerror 1 char* gcry_error_t
+gcry_prime_group_generator gcry_prime_group_generator 4 gcry_error_t gcry_mpi_t* gcry_mpi_t gcry_mpi_t* gcry_mpi_t
+gcry_cipher_ctl gcry_cipher_ctl 4 gcry_error_t gcry_cipher_hd_t int * size_t
+gcry_pk_ctl gcry_pk_ctl 3 gcry_error_t int * size_t

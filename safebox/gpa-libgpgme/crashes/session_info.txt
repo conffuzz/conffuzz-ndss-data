@@ -1,0 +1,13 @@
+Fuzzing seed: 1651249063
+Starting time: 2022-04-29 16:17:43
+Total instrumented API size: 206
+Statically detected call sites: 72
+Statically detected called API endpoints: 72
+Statically detected caller components: 1
+Max number of call sites reached in a run: 0
+Number of API endpoints reached: 3
+Number of API endpoints that are vulnerability vectors: 2
+List of these endpoints:
+  [api] gpgme_check_version_internal
+  [api] gpgme_set_locale
+Ending time: 2022-04-29 16:45:21

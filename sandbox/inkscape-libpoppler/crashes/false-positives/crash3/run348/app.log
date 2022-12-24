@@ -1,0 +1,155 @@
+[I] Recursing from popplerattachment into _PopplerAttachment
+[E] Not able to find type information for popplerattachment in DWARF
+[I] Recursing from popplerdocument into _PopplerDocument
+[E] Not able to find type information for popplerdocument in DWARF
+[I] Recursing from popplerstructureelement into _PopplerStructureElement
+[E] Not able to find type information for popplerstructureelement in DWARF
+[I] Recursing from popplerannotmarkup into _PopplerAnnotMarkup
+[E] Not able to find type information for popplerannotmarkup in DWARF
+[I] Recursing from popplerfontsiter into _PopplerFontsIter
+[E] Not able to find type information for popplerfontsiter in DWARF
+[I] Recursing from popplerannot into _PopplerAnnot
+[E] Not able to find type information for popplerannot in DWARF
+[I] Recursing from poppleraction into _PopplerAction
+[E] Not able to find type information for poppleraction in DWARF
+[I] Recursing from popplermovie into _PopplerMovie
+[E] Not able to find type information for popplermovie in DWARF
+[I] Recursing from popplertextspan into _PopplerTextSpan
+[E] Not able to find type information for popplertextspan in DWARF
+[I] Recursing from popplerannottextmarkup into _PopplerAnnotTextMarkup
+[E] Not able to find type information for popplerannottextmarkup in DWARF
+[I] Recursing from popplerformfield into _PopplerFormField
+[E] Not able to find type information for popplerformfield in DWARF
+[I] Recursing from gcancellable into _GCancellable
+[E] Not able to find type information for gcancellable in DWARF
+[I] Recursing from ginputstream into _GInputStream
+[E] Not able to find type information for ginputstream in DWARF
+[I] Recursing from popplerpage into _PopplerPage
+[E] Not able to find type information for popplerpage in DWARF
+[I] Recursing from popplerrectangle into _PopplerRectangle
+[E] Not able to find type information for popplerrectangle in DWARF
+[I] Recursing from popplerstructureelementiter into _PopplerStructureElementIter
+[E] Not able to find type information for popplerstructureelementiter in DWARF
+[I] Recursing from cairo_t into _cairo
+[E] Not able to find type information for cairo_t in DWARF
+[E] Not able to find type information for cairo_t in DWARF
+[I] Recursing from popplerpoint into _PopplerPoint
+[E] Not able to find type information for popplerpoint in DWARF
+[I] Recursing from popplerannotscreen into _PopplerAnnotScreen
+[E] Not able to find type information for popplerannotscreen in DWARF
+[I] Recursing from popplercolor into _PopplerColor
+[E] Not able to find type information for popplercolor in DWARF
+[I] Recursing from popplerannotcircle into _PopplerAnnotCircle
+[E] Not able to find type information for popplerannotcircle in DWARF
+[I] Recursing from gdatetime into _GDateTime
+[E] Not able to find type information for gdatetime in DWARF
+[E] Not able to find type information for gdatetime in DWARF
+[I] Recursing from popplerlayersiter into _PopplerLayersIter
+[E] Not able to find type information for popplerlayersiter in DWARF
+[I] Recursing from guint into unsigned int
+[E] Not able to find type information for guint in DWARF
+[E] Not able to find type information for guint in DWARF
+[I] Recursing from popplerindexiter into _PopplerIndexIter
+[E] Not able to find type information for popplerindexiter in DWARF
+[I] Recursing from popplerannotfileattachment into _PopplerAnnotFileAttachment
+[E] Not able to find type information for popplerannotfileattachment in DWARF
+[I] Recursing from popplersignatureinfo into _PopplerSignatureInfo
+[E] Not able to find type information for popplersignatureinfo in DWARF
+[I] Recursing from popplerannottext into _PopplerAnnotText
+[E] Not able to find type information for popplerannottext in DWARF
+[I] Recursing from gdouble into double
+[E] Not able to find type information for gdouble in DWARF
+[I] Recursing from gchar into char
+[E] Not able to find type information for gchar in DWARF
+[I] Recursing from popplerannotline into _PopplerAnnotLine
+[E] Not able to find type information for popplerannotline in DWARF
+[I] Recursing from popplermedia into _PopplerMedia
+[E] Not able to find type information for popplermedia in DWARF
+[I] Recursing from popplerannotfreetext into _PopplerAnnotFreeText
+[E] Not able to find type information for popplerannotfreetext in DWARF
+[I] Recursing from popplerlayer into _PopplerLayer
+[E] Not able to find type information for popplerlayer in DWARF
+[I] Recursing from popplerpsfile into _PopplerPSFile
+[E] Not able to find type information for popplerpsfile in DWARF
+[I] Recursing from popplerfontinfo into _PopplerFontInfo
+[E] Not able to find type information for popplerfontinfo in DWARF
+[I] Recursing from popplerimagemapping into _PopplerImageMapping
+[E] Not able to find type information for popplerimagemapping in DWARF
+[I] Recursing from glist into _GList
+[E] Not able to find type information for glist in DWARF
+[I] Recursing from popplerannotcalloutline into _PopplerAnnotCalloutLine
+[E] Not able to find type information for popplerannotcalloutline in DWARF
+[I] Recursing from popplerquadrilateral into _PopplerQuadrilateral
+[E] Not able to find type information for popplerquadrilateral in DWARF
+[I] Recursing from popplerannotsquare into _PopplerAnnotSquare
+[E] Not able to find type information for popplerannotsquare in DWARF
+[I] Recursing from guint8 into unsigned char
+[E] Not able to find type information for guint8 in DWARF
+[E] Not able to find type information for guint8 in DWARF
+[I] Recursing from popplerannotmovie into _PopplerAnnotMovie
+[E] Not able to find type information for popplerannotmovie in DWARF
+[I] Recursing from popplerlinkmapping into _PopplerLinkMapping
+[E] Not able to find type information for popplerlinkmapping in DWARF
+[I] Recursing from gasyncresult into _GAsyncResult
+[E] Not able to find type information for gasyncresult in DWARF
+[E] Not able to find type information for gasyncresult in DWARF
+[I] Recursing from garray into _GArray
+[E] Not able to find type information for garray in DWARF
+[I] Recursing from popplerpagetransition into _PopplerPageTransition
+[E] Not able to find type information for popplerpagetransition in DWARF
+[I] Recursing from gint into int
+[E] Not able to find type information for gint in DWARF
+[I] Recursing from popplerannotmapping into _PopplerAnnotMapping
+[E] Not able to find type information for popplerannotmapping in DWARF
+[I] Recursing from popplertextattributes into _PopplerTextAttributes
+[E] Not able to find type information for popplertextattributes in DWARF
+[I] Recursing from gbytes into _GBytes
+[E] Not able to find type information for gbytes in DWARF
+[E] Not able to find type information for gbytes in DWARF
+[I] Recursing from popplerdest into _PopplerDest
+[E] Not able to find type information for popplerdest in DWARF
+[I] Recursing from popplerformfieldmapping into _PopplerFormFieldMapping
+[E] Not able to find type information for popplerformfieldmapping in DWARF
+[I] Recursing from gfile into _GFile
+[E] Not able to find type information for gfile in DWARF
+[E] Not able to find type information for gfile in DWARF
+[I] Recursing from popplerstructureborderstyle into 27PopplerStructureBorderStyle
+[I] Recursing from 27PopplerStructureBorderStyle into unsigned int
+[E] Not able to find type information for popplerstructureborderstyle in DWARF
+[E] Not able to find type information for popplerstructureborderstyle in DWARF
+[I] Recursing from gsize into long unsigned int
+[E] Not able to find type information for gsize in DWARF
+[E] Not able to find type information for gsize in DWARF
+[I] Recursing from time_t into __time_t
+[I] Recursing from __time_t into long int
+[E] Not able to find type information for time_t in DWARF
+[I] Recursing from time_t into __time_t
+[I] Recursing from __time_t into long int
+[E] Not able to find type information for time_t in DWARF
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] Failed to retrieve information about _init
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==903869==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffdfb35b30 bp 0x7fffffffdfd0 sp 0x7fffffffdfa0 T0)
+==903869==The signal is caused by a READ memory access.
+==903869==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffdfb35b30 in poppler_document_get_n_pages /root/poppler-22.02.0/glib/poppler-document.cc:754
+    #1 0x7fffe16ad686 in Inkscape::Extension::Internal::PdfInput::open(Inkscape::Extension::Input*, char const*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa1e686)
+    #2 0x7fffe1605f6c in Inkscape::Extension::open(Inkscape::Extension::Extension*, char const*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x976f6c)
+    #3 0x7fffe17001a5 in ink_file_open(Glib::RefPtr<Gio::File> const&, bool*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa711a5)
+    #4 0x7fffe1f673bf in InkscapeApplication::document_open(Glib::RefPtr<Gio::File> const&, bool*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12d83bf)
+    #5 0x7fffe1f6fabf in InkscapeApplication::on_open(std::vector<Glib::RefPtr<Gio::File>, std::allocator<Glib::RefPtr<Gio::File> > > const&, Glib::ustring const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12e0abf)
+    #6 0x7fffdf1033ac  (/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so.1+0xf53ac)
+    #7 0x7fffe029a71e in g_closure_invoke (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x1671e)
+    #8 0x7fffe02aced0  (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x28ed0)
+    #9 0x7fffe02b3110 in g_signal_emit_valist (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f110)
+    #10 0x7fffe02b36be in g_signal_emit (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f6be)
+    #11 0x7fffe03c8517  (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe4517)
+    #12 0x7fffe03c87bd in g_application_run (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe47bd)
+    #13 0x7fffdd71b7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #14 0x555555556f09 in _start (/root/inkscape-INKSCAPE_1_1_2/build/bin/inkscape+0x2f09)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/poppler-22.02.0/glib/poppler-document.cc:754 in poppler_document_get_n_pages
+==903869==ABORTING

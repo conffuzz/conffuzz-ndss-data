@@ -1,0 +1,7 @@
+    #0 0xaddr in acommon::PossibleElementsEmul::PossibleElementsEmul(acommon::Config const*, bool, bool) (/usr/local/lib/libaspell.so.15+0xaddr)
+    #1 0xaddr in acommon::Config::possible_elements(bool, bool) const common/config.cpp:1119
+    #2 0xaddr in print_help(bool) prog/aspell.cpp:2893
+    #3 0xaddr in main prog/aspell.cpp:267
+    #4 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in _start (/usr/local/bin/aspell+0xaddr)

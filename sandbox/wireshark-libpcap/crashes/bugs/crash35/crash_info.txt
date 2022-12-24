@@ -1,0 +1,2 @@
+fault_location /root/wireshark_build/run/dumpcap
+cap_read

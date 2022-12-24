@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7310==ERROR: AddressSanitizer: SEGV on unknown address 0x00000000000d (pc 0x7fffe2985066 bp 0x7fffffffe6a0 sp 0x7fffffffdde8 T0)
+==7310==The signal is caused by a READ memory access.
+==7310==Hint: address points to the zero page.
+    #0 0x7fffe2985066 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe29162ed in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:551
+    #2 0x7fffe29166cc in __interceptor_vprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1660
+    #3 0x7fffe29167c6 in __interceptor_printf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1718
+    #4 0x55555555af0f in process /root/file-5.41/src/file.c:560
+    #5 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #6 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==7310==ABORTING

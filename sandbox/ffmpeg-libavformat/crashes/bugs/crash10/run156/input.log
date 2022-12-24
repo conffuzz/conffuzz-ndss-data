@@ -1,0 +1,22 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avformat_network_init() @ 0x00005555555a054e
+~> write 0 -> 0x9 at shared buffer 0x00007fffffffe795
+~> write 0x90000000000 -> 0x64 at shared buffer 0x00007fffffffe790
+avformat_configuration() @ 0x00005555555775f7
+~> change ret from 0x7fffe145b460 to 0x7fffe145b6b7
+avformat_version() @ 0x000055555557757a
+avformat_alloc_context() @ 0x000055555559ba84
+avformat_open_input(0x7fffffffe790 [size: 0x8], 0x7fffffffecbf [size: 0x1], 0 [size: 0x98], 0x5555555cd6a0 [size: 0x8]) @ 0x000055555559bb74
+~> write 0x90000000066 -> 0 at shared buffer 0x00007fffffffecbf
+~> write 0x90000000000 -> 0 at shared buffer 0x00007fffffffecbf
+~> write 0x90000000000 -> 0x7d at shared buffer 0x00007fffffffecbf
+~> write 0x9000000007d -> 0 at shared buffer 0x00007fffffffecbf
+~> change ret from 0 to 0x7fffffff
+avformat_find_stream_info(0x617000000080 [size: 0x1d8], 0x603000001540 [size: 0x8]) @ 0x000055555559be79
+~> write 0x90000000000 -> 0x243 at shared buffer 0x0000603000001542
+~> write 0x90000000000 -> 0x1 at shared buffer 0x0000617000000103
+~> write 0x320000 -> 0xffffffffd8f0 at shared buffer 0x000061700000016e
+~> change ret from 0 to 0x9

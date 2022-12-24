@@ -1,0 +1,59 @@
+=================================================================
+==1909==ERROR: AddressSanitizer: heap-use-after-free on address 0x603000000010 at pc 0x555555627093 bp 0x7fffffffaf30 sp 0x7fffffffaf20
+READ of size 4 at 0x603000000010 thread T0
+    #0 0x555555627092 in array_get_index /root/lighttpd-1.4.67/src/array.c:271
+    #1 0x555555627d6b in array_get_buf_ptr /root/lighttpd-1.4.67/src/array.c:418
+    #2 0x555555630311 in array_set_key_value /root/lighttpd-1.4.67/src/array.h:123
+    #3 0x555555632980 in config_plugin_values_init /root/lighttpd-1.4.67/src/configfile-glue.c:322
+    #4 0x7fffdbd7083b in mod_staticfile_set_defaults /root/lighttpd-1.4.67/src/mod_staticfile.c:86
+    #5 0x5555555acbc8 in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #6 0x5555555acee1 in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #7 0x5555555882f6 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #8 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #9 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x603000000010 is located 0 bytes inside of 24-byte region [0x603000000010,0x603000000028)
+freed by thread T0 here:
+    #0 0x7fffe234b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe1f2b2e8  (/lib/x86_64-linux-gnu/libc.so.6+0x902e8)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe234b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe1f2b1da  (/lib/x86_64-linux-gnu/libc.so.6+0x901da)
+
+SUMMARY: AddressSanitizer: heap-use-after-free /root/lighttpd-1.4.67/src/array.c:271 in array_get_index
+Shadow bytes around the buggy address:
+  0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c067fff8000: fa fa[fd]fd fd fa fa fa 00 00 00 fa fa fa 00 00
+  0x0c067fff8010: 00 fa fa fa fd fd fd fa fa fa 00 00 00 fa fa fa
+  0x0c067fff8020: 00 00 00 fa fa fa fd fd fd fd fa fa fd fd fd fd
+  0x0c067fff8030: fa fa 00 00 00 00 fa fa fd fd fd fa fa fa 00 00
+  0x0c067fff8040: 00 00 fa fa 00 00 00 00 fa fa fd fd fd fa fa fa
+  0x0c067fff8050: 00 00 00 00 fa fa 00 00 00 00 fa fa 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==1909==ABORTING

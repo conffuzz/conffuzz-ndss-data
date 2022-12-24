@@ -1,0 +1,32 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b8ba6a [size: 0]) @ 0x00007fffb9b980dc
+~> instrumenting 0x00007fffb9b8ba6a (TIFFErrors, 0x3 arg(s))
+~> write 0x66 -> 0x64 at shared buffer 0x0000627000106cf8
+~> write 0x64 -> 0x85 at shared buffer 0x0000627000106cf8
+~> write 0 -> 0 at shared buffer 0x00007fffb9bd0d80
+~> write 0 -> 0xfd at shared buffer 0x00007fffb9bd0d80
+~> write 0xfd -> 0x7f at shared buffer 0x00007fffb9bd0d80
+~> write 0x7f -> 0xdc at shared buffer 0x00007fffb9bd0d80
+TIFFSetWarningHandler(0x7fffb9b8db44 [size: 0]) @ 0x00007fffb9b980f2
+~> instrumenting 0x00007fffb9b8db44 (TIFFWarnings, 0x3 arg(s))
+TIFFSetTagExtender(0x7fffb9b97e99 [size: 0]) @ 0x00007fffb9b98114
+~> instrumenting 0x00007fffb9b97e99 (TIFFTagExtender, 0x1 arg(s))
+~> change ret from 0 to 0x204
+TIFFGetVersion() @ 0x00007fffb9b98172
+~> change ret from 0x7fffb9b6bfe0 to 0x7fffb9b6be9f
+TIFFClientOpen(0x627000106cf8 [size: 0x1], 0x7fffb9bbdd80 [size: 0x1], 0x627000106900 [size: 0], 0x7fffb9b8da98 [size: 0], 0x7fffb9b8dd62 [size: 0], 0x7fffb9b8db06 [size: 0], 0x7fffb9b8ba4b [size: 0], 0x7fffb9b8bc88 [size: 0], 0x7fffb9b8d9cf [size: 0], 0x7fffb9b8db31 [size: 0]) @ 0x00007fffb9b9cfca
+~> instrumenting 0x00007fffb9b8da98 (TIFFReadBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8dd62 (TIFFWriteBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8db06 (TIFFSeekBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8ba4b (TIFFCloseBlob, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b8bc88 (TIFFGetBlobSize, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b8d9cf (TIFFMapBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8db31 (TIFFUnmapBlob, 0x3 arg(s))
+~> detected cb call TIFFSeekBlob(0x627000106900 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffb9b2ec5b
+~> detected cb call TIFFWriteBlob(0x627000106900 [size: 0], 0x61a000004588 [size: 0], 0x8 [size: 0]) @ 0x00007fffb9b2ec8f
+~> change arg #0x1 from 0x627000106900 to 0xd
+~> change arg #0x2 from 0x61a000004588 to 0x61a000004816
+~> change arg #0x3 from 0x8 to 0xfffffffffffffffe

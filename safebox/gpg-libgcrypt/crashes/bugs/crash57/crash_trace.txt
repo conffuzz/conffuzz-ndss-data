@@ -1,0 +1,7 @@
+    #1 0xaddr in _gcry_private_free /root/libgcrypt-1.9.2/src/stdmem.c:244
+    #2 0xaddr in _gcry_free /root/libgcrypt-1.9.2/src/global.c:1058
+    #3 0xaddr in gcry_free /root/libgcrypt-1.9.2/src/visibility.c:1592
+    #4 0xaddr in session_env_new /root/gnupg-2.2.27/common/session-env.c:132
+    #5 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2326
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

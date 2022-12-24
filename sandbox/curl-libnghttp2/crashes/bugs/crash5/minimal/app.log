@@ -1,0 +1,63 @@
+[I] Recursing from nghttp2_nv into structure 
+[E] Not able to find type information for nghttp2_nv in DWARF
+[I] Recursing from nghttp2_data_provider into structure 
+[E] Not able to find type information for nghttp2_data_provider in DWARF
+[I] Recursing from nghttp2_mem into structure 
+[E] Not able to find type information for nghttp2_mem in DWARF
+[I] Recursing from nghttp2_priority_spec into structure 
+[E] Not able to find type information for nghttp2_priority_spec in DWARF
+[I] Recursing from nghttp2_origin_entry into structure 
+[E] Not able to find type information for nghttp2_origin_entry in DWARF
+[I] Recursing from nghttp2_vec into structure 
+[E] Not able to find type information for nghttp2_vec in DWARF
+[I] Recursing from nghttp2_settings_entry into structure 
+[E] Not able to find type information for nghttp2_settings_entry in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[I] Attempting to instrument callback send_callback
+Got function argument numbers (5) from cache!
+[I] Attempting to instrument callback on_frame_recv
+[I] Recursing from nghttp2_frame into union 
+[E] Not able to find type information for nghttp2_frame in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_data_chunk_recv
+Got function argument numbers (6) from cache!
+[I] Attempting to instrument callback on_stream_close
+Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback on_begin_headers
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_header
+Got function argument numbers (8) from cache!
+[I] Attempting to instrument callback error_callback
+Got function argument numbers (4) from cache!
+send: reset nghttp2_active_outbound_item
+send: aob->item = (nil)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==65164==ERROR: AddressSanitizer: SEGV on unknown address 0x60fffffffff0 (pc 0x7fffe23e69c6 bp 0x610000000000 sp 0x7fffffffd560 T0)
+==65164==The signal is caused by a WRITE memory access.
+    #0 0x7fffe23e69c6 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe23e69c6 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe23e69c6 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe23e69c6 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe246c4a7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe214f397 in http2_init /root/curl-7.82.0/lib/http2.c:1303
+    #6 0x7fffe215321f in Curl_http2_setup /root/curl-7.82.0/lib/http2.c:2031
+    #7 0x7fffe2153598 in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2061
+    #8 0x7fffe214287b in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #9 0x7fffe2181d84 in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #10 0x7fffe2184c17 in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #11 0x7fffe2187e7b in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #12 0x7fffe20ff50a in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #13 0x7fffe20ffa78 in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #14 0x7fffe20ffb41 in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #15 0x5555555be2e7 in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #16 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #17 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #18 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #19 0x7fffe1a927fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #20 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==65164==ABORTING

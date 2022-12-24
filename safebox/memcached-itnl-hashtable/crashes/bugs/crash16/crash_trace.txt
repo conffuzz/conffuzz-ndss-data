@@ -1,0 +1,2 @@
+    #0 0xaddr in assoc_maintenance_thread /root/memcached-1.6.17/assoc.c:211
+    #2 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

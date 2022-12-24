@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libgs.so.9.55
+cap_write
+cap_write_arbitrary
+cap_read_arbitrary

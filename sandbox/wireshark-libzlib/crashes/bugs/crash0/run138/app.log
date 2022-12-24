@@ -1,0 +1,31 @@
+[I] Recursing from bytef into Byte
+[I] Recursing from Byte into unsigned char
+[E] Not able to find type information for bytef in DWARF
+[I] Recursing from uint into unsigned int
+[E] Not able to find type information for uint in DWARF
+[I] Recursing from ulongf into uLong
+[I] Recursing from uLong into long unsigned int
+[E] Not able to find type information for ulongf in DWARF
+[I] Recursing from ulong into long unsigned int
+[E] Not able to find type information for ulong in DWARF
+Running as user "root" and group "root". This could be dangerous.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==38560==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffcbf44d99 bp 0x7fffffffe1d0 sp 0x7fffffffdc78 T0)
+==38560==The signal is caused by a READ memory access.
+==38560==Hint: address points to the zero page.
+    #0 0x7fffcbf44d99  (/lib/x86_64-linux-gnu/libc.so.6+0x15bd99)
+    #1 0x7fffcbe51617  (/lib/x86_64-linux-gnu/libc.so.6+0x68617)
+    #2 0x7fffcbe61de0  (/lib/x86_64-linux-gnu/libc.so.6+0x78de0)
+    #3 0x7fffcc085a7e in g_vasprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xa2a7e)
+    #4 0x7fffcc05b140 in g_string_append_vprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78140)
+    #5 0x7fffcc05b393 in g_string_append_printf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78393)
+    #6 0x5555555d7883 in get_runtime_version_info /root/wireshark-3.4.12/version_info.c:444
+    #7 0x5555555d719f in ws_init_version_info /root/wireshark-3.4.12/version_info.c:69
+    #8 0x5555555849d0 in main /root/wireshark-3.4.12/tshark.c:836
+    #9 0x7fffcbe0c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x5555555825a9 in _start (/root/wireshark_build/run/tshark+0x2e5a9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x15bd99) 
+==38560==ABORTING

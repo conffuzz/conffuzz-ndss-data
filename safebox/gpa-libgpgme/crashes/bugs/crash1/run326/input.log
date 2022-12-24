@@ -1,0 +1,12 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gpgme_check_version_internal(0 [size: 0x1], 0x3c [size: 0]) @ 0x00005555556217b2
+~> change arg #0x2 from 0x3c to 0xffffffffffffff93
+gpgme_set_locale(0 [size: 0], 0 [size: 0], 0x7fffe091b209 [size: 0x1]) @ 0x00005555556217d3
+~> change arg #0x1 from 0 to 0x8
+~> change arg #0x2 from 0 to 0xfffffffffffffffb
+gpgme_set_locale(0 [size: 0], 0x5 [size: 0], 0x7fffe091b209 [size: 0x1]) @ 0x00005555556217f4
+~> change arg #0x1 from 0 to 0xffffffffffffff9c
+~> change arg #0x3 from 0x7fffe091b209 to 0x7fffe091b3cd

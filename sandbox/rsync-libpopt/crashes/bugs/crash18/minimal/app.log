@@ -1,0 +1,55 @@
+=================================================================
+==52925==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fffffffe926 at pc 0x7fffe22d781d bp 0x7fffffffb660 sp 0x7fffffffae10
+READ of size 1 at 0x7fffffffe926 thread T0
+    #0 0x7fffe22d781c in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:547
+    #1 0x7fffe22d9115 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1647
+    #2 0x555555604d76 in rprintf /root/rsync-3.2.7/log.c:413
+    #3 0x555555610edf in parse_arguments /root/rsync-3.2.7/options.c:1448
+    #4 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #5 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #6 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+Address 0x7fffffffe926 is located in stack of thread T0 at offset 4438 in frame
+    #0 0x5555555fa744 in main /root/rsync-3.2.7/main.c:1720
+
+  This frame has 4 object(s):
+    [48, 52) 'argc' (line 1719)
+    [64, 72) 'argv' (line 1719)
+    [96, 224) 'sigmask' (line 1728)
+    [256, 4352) 'buf' (line 1835) <== Memory access at offset 4438 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:547 in printf_common
+Shadow bytes around the buggy address:
+  0x10007fff7cd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7ce0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7cf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d10: 00 00 00 00 00 00 00 00 00 00 f3 f3 f3 f3 f3 f3
+=>0x10007fff7d20: f3 f3 f3 f3[f3]f3 f3 f3 f3 f3 00 00 00 00 00 00
+  0x10007fff7d30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7d70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==52925==ABORTING

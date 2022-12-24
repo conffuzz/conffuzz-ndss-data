@@ -1,0 +1,11 @@
+    #5 0xaddr in curl_dbg_free /root/curl-7.82.0/lib/memdebug.c:292
+    #6 0xaddr in Curl_auth_digest_cleanup vauth/digest.c:941
+    #7 0xaddr in Curl_http_auth_cleanup_digest /root/curl-7.82.0/lib/http_digest.c:180
+    #8 0xaddr in Curl_close /root/curl-7.82.0/lib/url.c:429
+    #9 0xaddr in curl_easy_cleanup /root/curl-7.82.0/lib/easy.c:735
+    #10 0xaddr in http_cleanup /root/git-2.35.1/http.c:1114
+    #11 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1962
+    #12 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #13 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

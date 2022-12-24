@@ -1,0 +1,36 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+
+bzip2-shared: PANIC -- internal consistency error:
+	decompress:unexpected error
+	This is a BUG.  Please report it to:
+	bzip2-devel@sourceware.org
+	Input file = example.bz2, output file = example
+bzip2-shared: Deleting output file example, if it exists.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==64042==ERROR: AddressSanitizer: SEGV on unknown address 0x000000008007 (pc 0x7fffe26b2b77 bp 0x000000000d68 sp 0x7fffffffbb80 T0)
+==64042==The signal is caused by a READ memory access.
+    #0 0x7fffe26b2b77  (/lib/x86_64-linux-gnu/libc.so.6+0x7eb77)
+    #1 0x7fffe266f071  (/lib/x86_64-linux-gnu/libc.so.6+0x3b071)
+    #2 0x7fffe266f119 in exit (/lib/x86_64-linux-gnu/libc.so.6+0x3b119)
+    #3 0x55555555c138 in cleanUpAndFail /root/bzip2-1.0.8/bzip2.c:740
+    #4 0x55555555c1a8 in panic /root/bzip2-1.0.8/bzip2.c:755
+    #5 0x55555555b1a0 in uncompressStream /root/bzip2-1.0.8/bzip2.c:544
+    #6 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #7 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #8 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #9 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x7eb77) 
+==64042==ABORTING

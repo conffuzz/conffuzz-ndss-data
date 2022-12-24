@@ -1,0 +1,14 @@
+    #5 0xaddr in curl_dbg_free /root/curl-7.82.0/lib/memdebug.c:292
+    #6 0xaddr in up_free /root/curl-7.82.0/lib/url.c:345
+    #7 0xaddr in parseurlandfillconn /root/curl-7.82.0/lib/url.c:1937
+    #8 0xaddr in create_conn /root/curl-7.82.0/lib/url.c:3626
+    #9 0xaddr in Curl_connect /root/curl-7.82.0/lib/url.c:4127
+    #10 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:1859
+    #11 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #12 0xaddr in start_active_slot /root/git-2.35.1/http.c:1260
+    #13 0xaddr in locking_available /root/git-2.35.1/http-push.c:1221
+    #14 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1771
+    #15 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #16 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #17 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #18 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

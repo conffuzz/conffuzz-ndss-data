@@ -1,0 +1,28 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x40 {uint64_t} [size: 0], 0 {OPENSSL_INIT_SETTINGS*} [size: 0x18]) @ 0x000055555568137c
+ERR_clear_error() @ 0x00005555556813b6
+CRYPTO_get_ex_new_index(0 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556813db
+~> change arg #0x2 {longint} from 0 to 0xfffffffffffffe2c
+~> change arg #0x3 {void*} from 0 to 0xffffffff
+~> change arg #0x4 {CRYPTO_EX_new*} from 0 to 0xfffffffffffffffe
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681442
+~> change arg #0x2 {longint} from 0 to 0x21e
+~> change arg #0x3 {void*} from 0 to 0xffffffffffffff7b
+~> change arg #0x4 {CRYPTO_EX_new*} from 0 to 0xffffffff
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0xfffffffffffffc18
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556814a9
+~> change arg #0x5 {CRYPTO_EX_dup*} from 0 to 0x2cd
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0xfffffffffffffffe
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681510
+~> change arg #0x1 {int} from 0x1 to 0x97
+~> change arg #0x2 {longint} from 0 to 0xfffffffffffffff7
+~> change arg #0x4 {CRYPTO_EX_new*} from 0 to 0x1
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0xfffffffffffffffa
+ERR_peek_error() @ 0x000055555568ffcf
+ERR_peek_error_line_data(0 {char**} [size: 0x8], 0 {int*} [size: 0x4], 0x7fffffffdf70 {char**} [size: 0x8], 0x7fffffffdf60 {int*} [size: 0x4]) @ 0x000055555569002c
+~> change arg #0x1 {char**} from 0 to 0x2a6
+~> change arg #0x2 {int*} from 0 to 0xfffffffffffffffb
+~> change arg #0x4 {int*} from 0x7fffffffdf60 to 0x7ffffffde190

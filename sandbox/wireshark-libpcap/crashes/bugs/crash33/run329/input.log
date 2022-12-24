@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> change ret from 0x7fffe25b1c30 to 0x5555555a30c8

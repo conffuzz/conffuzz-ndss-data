@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd33fe0a0 {request_rec*} [size: 0x2e0], 0x7fffd2c1e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd16590a0 {request_rec*} [size: 0x2e0], 0x7fffd158b698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d000006ab0 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d000006b80 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d000006c50 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+markdown_output(0x60d000006d20 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+~> write {MMIOT*} 0 -> 0x3e800000000 at shared buffer 0x000060d000006d55
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d000006d3a
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd125e698
+~> write {request_rec*} 0 -> 0xfffe670000000000 at shared buffer 0x00007fffd155d27a
+~> change ret {int} from 0 to 0xff
+markdown_output(0x60d000006df0 {MMIOT*} [size: 0x60], 0x7fffd155d0a0 {request_rec*} [size: 0x2e0], 0x7fffd125e698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+~> write {MMIOT*} 0 -> 0x7fffffff00 at shared buffer 0x000060d000006e31
+~> write {markdown_conf*} 0x1 -> 0x8100000000000000 at shared buffer 0x00007fffd125e698
+~> write {request_rec*} 0xe0c8 -> 0xfffc000000000000 at shared buffer 0x00007fffd155d1a8
+~> change ret {int} from 0 to 0xfffffffffffffd4b

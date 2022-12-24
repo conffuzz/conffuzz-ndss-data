@@ -1,0 +1,33 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b4aa6a [size: 0]) @ 0x00007fffb9b570dc
+~> instrumenting 0x00007fffb9b4aa6a (TIFFErrors, 0x3 arg(s))
+TIFFSetWarningHandler(0x7fffb9b4cb44 [size: 0]) @ 0x00007fffb9b570f2
+~> instrumenting 0x00007fffb9b4cb44 (TIFFWarnings, 0x3 arg(s))
+~> change ret from 0x7fffb9b04f64 to 0xd
+TIFFSetTagExtender(0x7fffb9b56e99 [size: 0]) @ 0x00007fffb9b57114
+~> instrumenting 0x00007fffb9b56e99 (TIFFTagExtender, 0x1 arg(s))
+TIFFGetVersion() @ 0x00007fffb9b57172
+TIFFClientOpen(0x627000106cf8 [size: 0x1], 0x7fffb9b7cd80 [size: 0x1], 0x627000106900 [size: 0], 0x7fffb9b4ca98 [size: 0], 0x7fffb9b4cd62 [size: 0], 0x7fffb9b4cb06 [size: 0], 0x7fffb9b4aa4b [size: 0], 0x7fffb9b4ac88 [size: 0], 0x7fffb9b4c9cf [size: 0], 0x7fffb9b4cb31 [size: 0]) @ 0x00007fffb9b5bfca
+~> instrumenting 0x00007fffb9b4ca98 (TIFFReadBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b4cd62 (TIFFWriteBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b4cb06 (TIFFSeekBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b4aa4b (TIFFCloseBlob, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b4ac88 (TIFFGetBlobSize, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b4c9cf (TIFFMapBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b4cb31 (TIFFUnmapBlob, 0x3 arg(s))
+~> detected cb call TIFFSeekBlob(0x627000106900 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffb9aedc5b
+~> detected cb call TIFFWriteBlob(0x627000106900 [size: 0], 0x61a000004588 [size: 0], 0x8 [size: 0]) @ 0x00007fffb9aedc8f
+~> detected cb call TIFFTagExtender(0x61a000004280 [size: 0x4d8]) @ 0x00007fffb9aa78be
+~> change ret from 0x61a000004280 to 0x61a000003f6b
+TIFFSetField(0x61a000003f6b [size: 0x4d8], 0x101 [size: 0]) @ 0x00007fffb9b5c9c9
+~> detected cb call TIFFErrors(0x7fffb9b06661 [size: 0x1], 0x7fffb9b06bac [size: 0x1], 0x7fffffff6fa8 [size: 0x18]) @ 0x00007fffb9ac05e8
+~> change arg #0x2 from 0x7fffb9b06bac to 0x7ffffffd9000
+~> change ret from 0 to 0x1
+TIFFSetField(0x61a000003f6b [size: 0x4d8], 0x100 [size: 0]) @ 0x00007fffb9b5ca19
+~> detected cb call TIFFErrors(0x7fffb9b06661 [size: 0x1], 0x7fffb9b06bac [size: 0x1], 0x7fffffff6fa8 [size: 0x18]) @ 0x00007fffb9ac05e8
+~> change arg #0x1 from 0x7fffb9b06661 to 0x7ffffffd9190
+~> change arg #0x2 from 0x7fffb9b06bac to 0x555555554000
+~> change arg #0x3 from 0x7fffffff6fa8 to 0

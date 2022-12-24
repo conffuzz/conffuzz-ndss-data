@@ -1,0 +1,42 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4c30 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+RSSuggestAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f3900 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+RSSuggestGetCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482678 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+DictAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+SpellCheckCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+RSAggregateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482810 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3be
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3f1
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9315c40 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2ac0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSAddDocumentCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2a00 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSAddDocumentCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2ac0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f50e0 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4c00 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb690 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+SynUpdateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb690 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9483068 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f52c0 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+RSSuggestAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd940d580 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0xffffffffffffffa5
+RSSuggestGetCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9483068 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+DictAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb7f8 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+SpellCheckCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb7f8 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+RSAggregateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd94830b0 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd93370c0 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd93d71e0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSAddDocumentCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2a60 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSAddDocumentCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd93d71e0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f50e0 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4bd0 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb7d0 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3a2
+~> change ret {int} from 0 to 0xfffffffffffffffe
+SynUpdateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb7d0 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd940d5c0 -> 0xfffffffffccb0000 at shared buffer 0x00007fffd92fb7d0
+~> write {RedisModuleCtx*} 0x7fffd92f -> 0x2ec0000 at shared buffer 0x00007fffffffe38a
+~> change ret {int} from 0 to 0x35

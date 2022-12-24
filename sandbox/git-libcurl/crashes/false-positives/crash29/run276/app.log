@@ -1,0 +1,57 @@
+=================================================================
+==26738==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x614000000415 at pc 0x7fffe009d375 bp 0x7fffffffd820 sp 0x7fffffffd810
+READ of size 4 at 0x614000000415 thread T0
+    #0 0x7fffe009d374 in curl_multi_add_handle /root/curl-7.82.0/lib/multi.c:444
+    #1 0x555555621aa3 in start_active_slot /root/git-2.35.1/http.c:1244
+    #2 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #3 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #4 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #5 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x614000000415 is located 565 bytes to the right of 416-byte region [0x614000000040,0x6140000001e0)
+allocated by thread T0 here:
+    #0 0x7fffe03b4a37 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffe0088872 in curl_dbg_calloc /root/curl-7.82.0/lib/memdebug.c:172
+    #2 0x7fffe009ce11 in Curl_multi_handle /root/curl-7.82.0/lib/multi.c:375
+    #3 0x7fffe009d328 in curl_multi_init /root/curl-7.82.0/lib/multi.c:435
+    #4 0x55555562091e in http_init /root/git-2.35.1/http.c:1057
+    #5 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #6 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #7 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/curl-7.82.0/lib/multi.c:444 in curl_multi_add_handle
+Shadow bytes around the buggy address:
+  0x0c287fff8030: 00 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa
+  0x0c287fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff8060: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff8070: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c287fff8080: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff8090: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff80a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff80b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff80c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c287fff80d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==26738==ABORTING

@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+~> write {unknown} 0x1 -> 0x6500000000000000 at shared buffer 0x0000555555579340
+~> write {unknown} 0 -> 0xfe0c000000000000 at shared buffer 0x00006030000002a9
+~> write {unknown} 0 -> 0 at shared buffer 0x00006030000002b5
+~> change ret {ExifLog*} from 0x603000000160 to 0x6030000000bf
+exif_log_set_func(0x6030000000bf {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))

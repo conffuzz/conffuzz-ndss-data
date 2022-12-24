@@ -1,0 +1,15 @@
+Fuzzing seed: 1651196700
+Starting time: 2022-04-29 01:45:00
+Total instrumented API size: 155
+Statically detected call sites: 36
+Statically detected called API endpoints: 36
+Statically detected caller components: 1
+Max number of call sites reached in a run: 10
+Number of API endpoints reached: 18
+Number of API endpoints that are vulnerability vectors: 4
+List of these endpoints:
+  [api] nghttp2_session_callbacks_new
+  [api] nghttp2_session_callbacks_set_send_callback
+  [api] nghttp2_session_client_new
+  [api] nghttp2_version
+Ending time: 2022-04-29 02:28:28

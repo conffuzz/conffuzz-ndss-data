@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b9ea6a [size: 0]) @ 0x00007fffb9bab0dc
+~> instrumenting 0x00007fffb9b9ea6a (TIFFErrors, 0x3 arg(s))
+TIFFSetWarningHandler(0x7fffb9ba0b44 [size: 0]) @ 0x00007fffb9bab0f2
+~> instrumenting 0x00007fffb9ba0b44 (TIFFWarnings, 0x3 arg(s))
+TIFFSetTagExtender(0x7fffb9baae99 [size: 0]) @ 0x00007fffb9bab114
+~> instrumenting 0x00007fffb9baae99 (TIFFTagExtender, 0x1 arg(s))
+~> change ret from 0 to 0x35f
+TIFFGetVersion() @ 0x00007fffb9bab172
+~> change ret from 0x7fffb9b7efe0 to 0xd

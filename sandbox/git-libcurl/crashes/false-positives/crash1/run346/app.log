@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==53365==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffdfdd597d bp 0x7fffffffd7a0 sp 0x7fffffffcf38 T0)
+==53365==The signal is caused by a READ memory access.
+==53365==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffdfdd597d  (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d)
+    #1 0x7fffe033da1b in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:387
+    #2 0x7fffe00c4c37 in Curl_setstropt /root/curl-7.82.0/lib/setopt.c:65
+    #3 0x7fffe001ce58 in dupset /root/curl-7.82.0/lib/easy.c:775
+    #4 0x7fffe001d285 in curl_easy_duphandle /root/curl-7.82.0/lib/easy.c:829
+    #5 0x555555621272 in get_active_slot /root/git-2.35.1/http.c:1200
+    #6 0x555555633790 in locking_available /root/git-2.35.1/http-push.c:1214
+    #7 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #8 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #9 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d) 
+==53365==ABORTING

@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==32975==ERROR: AddressSanitizer: SEGV on unknown address 0x7fffff00e0d0 (pc 0x555555621973 bp 0x7fffffffde40 sp 0x7fffffffdc00 T0)
+==32975==The signal is caused by a READ memory access.
+    #0 0x555555621973 in ngx_conf_parse src/core/ngx_conf_file.c:233
+    #1 0x5555556a83c2 in ngx_http_block src/http/ngx_http.c:239
+    #2 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #3 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #4 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #5 0x5555555c76b0 in main src/core/nginx.c:292
+    #6 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_conf_file.c:233 in ngx_conf_parse
+==32975==ABORTING

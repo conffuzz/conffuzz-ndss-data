@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mod_deflate_plugin_init(0x611000000180 {plugin*} [size: 0xc8]) @ 0x00005555555ac6a1
+mod_deflate_init() @ 0x00005555555ad6bd
+~> change ret {void*} from 0x60e0000003c0 to 0x7ffffffde190
+mod_deflate_set_defaults(0x614000000040 {server*} [size: 0x1a8], 0x7ffffffde190 {void*} [size: 0x1]) @ 0x00005555555acbc9
+~> write {void*} 0x2 -> 0xf900000000000000 at shared buffer 0x00007ffffffde190
+~> change ret {handler_t} from 0 to 0x25e
+mod_deflate_free(0x7ffffffde190 {void*} [size: 0x1]) @ 0x00005555555ad1cc

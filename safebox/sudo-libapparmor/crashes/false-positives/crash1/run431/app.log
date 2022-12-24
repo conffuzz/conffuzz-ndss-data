@@ -1,0 +1,19 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7445==ERROR: AddressSanitizer: SEGV on unknown address 0x55f232131000 (pc 0x563e76590bb0 bp 0x7ffe10518560 sp 0x7ffe10517cd8 T0)
+==7445==The signal is caused by a READ memory access.
+    #0 0x563e76590bb0 in __sanitizer::internal_strlen(char const*) (/usr/local/bin/sudo+0x166bb0) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #1 0x563e765188ab in printf_common(void*, char const*, __va_list_tag*) asan_interceptors.cpp.o
+    #2 0x563e765195f5 in __interceptor_vasprintf (/usr/local/bin/sudo+0xef5f5) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #3 0x7f4b9177e123 in _aa_asprintf /root/apparmor-v3.1.1/libraries/libapparmor/src/private.c:180:7
+    #4 0x7f4b9176aa14 in aa_change_onexec /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:817:8
+    #5 0x563e766b66b3 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:92:16
+    #6 0x563e76691d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #7 0x563e76673a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #8 0x7f4b91020d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #9 0x7f4b91020e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #10 0x563e764f6d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/bin/sudo+0x166bb0) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8) in __sanitizer::internal_strlen(char const*)
+==7445==ABORTING

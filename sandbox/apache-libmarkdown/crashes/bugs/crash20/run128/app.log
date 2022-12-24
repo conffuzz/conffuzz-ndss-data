@@ -1,0 +1,48 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 09:46:25.866980 2022] [core:warn] [pid 6679:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==6679==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe1e79532 bp 0xffff000000000000 sp 0x7fffd5bc9240 T2)
+==6679==The signal is caused by a READ memory access.
+==6679==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe1e79532 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe1e79532 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:570
+    #2 0x7fffe1e79532 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:647
+    #3 0x7fffe1e79532 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:883
+    #4 0x7fffe1efab43 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe1b28e58 in _IO_unsave_markers (/lib/x86_64-linux-gnu/libc.so.6+0x80e58)
+    #6 0x7fffe1b25ea3 in _IO_file_close_it (/lib/x86_64-linux-gnu/libc.so.6+0x7dea3)
+    #7 0x7fffe1b19375 in _IO_fclose (/lib/x86_64-linux-gnu/libc.so.6+0x71375)
+    #8 0x7fffe1ed9650 in __interceptor_fclose ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6024
+    #9 0x7fffe1ed9650 in __interceptor_fclose ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6019
+    #10 0x7fffd7eb89d8 in markdown_handler /root/apache-mod-markdown/mod_markdown.c:405
+    #11 0x5555556a042b in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #12 0x5555556a1b97 in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #13 0x5555556f5835 in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #14 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #15 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #16 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #17 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #18 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #19 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #20 0x7fffe1ba4a2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+Thread T2 created by T1 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x555555726242 in start_threads /root/httpd-2.4.52/server/mpm/event/event.c:2390
+    #2 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+
+Thread T1 created by T0 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x5555557279e3 in child_main /root/httpd-2.4.52/server/mpm/event/event.c:2599
+    #2 0x555555728659 in make_child /root/httpd-2.4.52/server/mpm/event/event.c:2712
+    #3 0x555555728aef in startup_children /root/httpd-2.4.52/server/mpm/event/event.c:2777
+    #4 0x55555572bf76 in event_run /root/httpd-2.4.52/server/mpm/event/event.c:3161
+    #5 0x555555626daf in ap_run_mpm /root/httpd-2.4.52/server/mpm_common.c:95
+    #6 0x55555560bc90 in main /root/httpd-2.4.52/server/main.c:819
+    #7 0x7fffe1acbd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==6679==ABORTING

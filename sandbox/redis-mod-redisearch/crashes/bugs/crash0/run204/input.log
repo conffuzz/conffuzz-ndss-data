@@ -1,0 +1,25 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0x7fffd932f253 -> 0x7 at shared buffer 0x00007fffd940c850
+~> write {RedisModuleCtx*} 0 -> 0x3900000000000000 at shared buffer 0x00007fffffffe660
+~> write {RedisModuleCtx*} 0 -> 0xfffffffffffcee00 at shared buffer 0x00007fffffffe67f
+~> write {RedisModuleCtx*} 0 -> 0x20000000000 at shared buffer 0x00007fffffffe664
+~> change ret {int} from 0 to 0x29a
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4bd0 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0xff
+RSSuggestAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f3900 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0x9000000 at shared buffer 0x00007fffffffe397
+~> write {RedisModuleCtx*} 0 -> 0xfff9000000000000 at shared buffer 0x00007fffffffe3f4
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3ec
+~> change ret {int} from 0 to 0x24b
+RSSuggestGetCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482678 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0xfffffffffffffdb5
+DictAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0xfffffffffffffcb3
+SpellCheckCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0xd9 -> 0 at shared buffer 0x00007fffd92fb413
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3c0
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3e0

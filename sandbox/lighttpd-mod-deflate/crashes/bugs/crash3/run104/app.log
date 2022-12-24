@@ -1,0 +1,7 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==8612==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7f007fffdbf66429 bp 0x7fffffffe310 sp 0x7fffffffe218 T0)
+==8612==The signal is caused by a READ memory access.
+==8612==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

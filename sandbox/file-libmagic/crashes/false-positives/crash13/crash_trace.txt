@@ -1,0 +1,8 @@
+    #5 0xaddr in file_reset /root/file-5.41/src/funcs.c:508
+    #6 0xaddr in file_or_fd /root/file-5.41/src/magic.c:414
+    #7 0xaddr in magic_file /root/file-5.41/src/magic.c:400
+    #8 0xaddr in process /root/file-5.41/src/file.c:555
+    #9 0xaddr in main /root/file-5.41/src/file.c:428
+    #10 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in _start (/usr/local/bin/file+0xaddr)

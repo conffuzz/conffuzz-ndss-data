@@ -1,0 +1,11 @@
+    #1 0xaddr in init_stream_lock /root/libgpg-error-1.41/src/estream.c:405
+    #2 0xaddr in create_stream /root/libgpg-error-1.41/src/estream.c:2255
+    #3 0xaddr in _gpgrt_fopencookie /root/libgpg-error-1.41/src/estream.c:3387
+    #4 0xaddr in gpgrt_fopencookie /root/libgpg-error-1.41/src/visibility.c:244
+    #5 0xaddr in set_file_fd /root/gnupg-2.2.27/common/logging.c:545
+    #6 0xaddr in log_set_file /root/gnupg-2.2.27/common/logging.c:575
+    #7 0xaddr in do_logv /root/gnupg-2.2.27/common/logging.c:753
+    #8 0xaddr in log_fatal /root/gnupg-2.2.27/common/logging.c:947
+    #9 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2328
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

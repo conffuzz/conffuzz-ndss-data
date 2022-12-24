@@ -1,0 +1,4 @@
+aesni_ecb_encrypt aesni_ecb_encrypt 5 unknown_or_void unsignedchar* unsignedchar* size_t AES_KEY* int
+aesni_encrypt aesni_encrypt 3 unknown_or_void unsignedchar* unsignedchar* AES_KEY*
+aesni_decrypt aesni_decrypt 3 unknown_or_void unsignedchar* unsignedchar* AES_KEY*
+aesni_set_encrypt_key aesni_set_encrypt_key 3 int unsignedchar* int AES_KEY*

@@ -1,0 +1,7 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==18060==ERROR: AddressSanitizer: SEGV on unknown address 0x0000ffffffff (pc 0x0000ffffffff bp 0x7fffffffde40 sp 0x7fffffffdbf8 T0)
+==18060==The signal is caused by a READ memory access.
+==18060==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

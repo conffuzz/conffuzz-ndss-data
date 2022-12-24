@@ -1,0 +1,14 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6f2493c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6f249afe
+~> instrumenting 0x00007fff6f2493c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6f24a1bc
+~> write {QByteArray&} 0xffff00007fff -> 0xffffffff at shared buffer 0x00007fffffffb5a4
+~> write {QByteArray&} 0xffe09b -> 0xffffff0000000000 at shared buffer 0x00007fffffffb5a2
+~> write {QByteArray&} 0x4171f00000 -> 0x9000000 at shared buffer 0x00007fffffffb5c6
+~> write {QByteArray&} 0 -> 0 at shared buffer 0x00007fffffffb5c8
+~> write {QByteArray&} 0x97f -> 0xfffffffffffb0000 at shared buffer 0x00007fffffffb5c5
+~> write {QString&} 0xb5a -> 0 at shared buffer 0x00007fffffffc551
+~> change ret {Document*} from 0x6020002e96f0 to 0x6020002e930e

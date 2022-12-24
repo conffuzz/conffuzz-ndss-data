@@ -1,0 +1,19 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==89336==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe22a667c bp 0x000000000040 sp 0x7fffffffcb10 T0)
+==89336==The signal is caused by a READ memory access.
+==89336==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe22a667c in __asan::Allocator::Reallocate(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:679
+    #1 0x7fffe22a667c in __asan::asan_realloc(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:921
+    #2 0x7fffe23281d4 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:165
+    #3 0x7fffe21b3d91 in poptAddItem /root/popt-popt-1.19-release/src/popt.c:1591
+    #4 0x7fffe21b3d05 in poptAddAlias /root/popt-popt-1.19-release/src/popt.c:1569
+    #5 0x5555556107ae in popt_unalias /root/rsync-3.2.7/options.c:1320
+    #6 0x555555610b79 in parse_arguments /root/rsync-3.2.7/options.c:1377
+    #7 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #8 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #9 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/asan/asan_allocator.cpp:679 in __asan::Allocator::Reallocate(void*, unsigned long, __sanitizer::BufferedStackTrace*)
+==89336==ABORTING

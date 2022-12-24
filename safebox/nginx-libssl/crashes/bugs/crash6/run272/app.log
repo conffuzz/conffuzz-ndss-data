@@ -1,0 +1,8 @@
+nginx: [alert] SSL_get_ex_new_index() failed (SSL: error:0F070C66:::)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==100434==ERROR: AddressSanitizer: SEGV on unknown address 0x000200000301 (pc 0x000200000301 bp 0x7fffffffdd10 sp 0x7fffffffdc68 T0)
+==100434==The signal is caused by a READ memory access.
+==100434==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

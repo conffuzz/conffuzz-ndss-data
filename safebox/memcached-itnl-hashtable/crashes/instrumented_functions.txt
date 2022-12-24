@@ -1,0 +1,12 @@
+assoc_expand assoc_expand 0 unknown_or_void
+assoc_maintenance_thread assoc_maintenance_thread 1 * *
+assoc_init assoc_init 1 unknown_or_void int
+assoc_insert assoc_insert 2 int item* uint32_t
+assoc_find assoc_find 3 item* char* size_t uint32_t
+assoc_iterate assoc_iterate 2 _Bool * item**
+stop_assoc_maintenance_thread stop_assoc_maintenance_thread 0 unknown_or_void
+start_assoc_maintenance_thread start_assoc_maintenance_thread 0 int
+assoc_start_expand assoc_start_expand 1 unknown_or_void uint64_t
+assoc_delete assoc_delete 3 unknown_or_void char* size_t uint32_t
+assoc_iterate_final assoc_iterate_final 1 unknown_or_void *
+assoc_get_iterator assoc_get_iterator 0 *

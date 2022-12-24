@@ -1,0 +1,4 @@
+fault_location /usr/lib/libmarkdown.so.2.2.7
+cap_read_arbitrary
+cap_read
+cap_null_deref

@@ -1,0 +1,33 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+avcodec_version() @ 0x0000555555577440
+~> change ret from 0x3b1264 to 0x2710
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+~> change ret from 0x60e0000233c0 to 0x7ffffffde190
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+~> change ret from 0x619000000080 to 0x7ffffffde0c8
+avcodec_parameters_to_context(0x7ffffffde0c8 [size: 0x398], 0x7ffffffde190 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0 -> 0 at shared buffer 0x00007ffffffde205
+~> write 0 -> 0x3e8 at shared buffer 0x00007ffffffde103
+~> write 0 -> 0xfffffffe2f at shared buffer 0x00007ffffffde444
+~> write 0 -> 0xfffffffe00 at shared buffer 0x00007ffffffde279
+~> write 0x56ff1000000 -> 0x233 at shared buffer 0x00007ffffffde1ad
+~> write 0x50000000000 -> 0 at shared buffer 0x00007ffffffde1ec
+~> write 0x50000000000 -> 0x119 at shared buffer 0x00007ffffffde1f1
+~> change ret from 0 to 0x64
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x7ffffffde190
+avcodec_find_decoder(0 [size: 0]) @ 0x000055555557dc2b
+avcodec_parameters_to_context(0x7ffffffde0c8 [size: 0x398], 0x7ffffffde190 [size: 0x90]) @ 0x00007fffe0eba45e
+~> write 0x50000000000 -> 0xfe at shared buffer 0x00007ffffffde110
+~> write 0x50000000000 -> 0x2710 at shared buffer 0x00007ffffffde1a2
+~> write 0x50000000000 -> 0 at shared buffer 0x00007ffffffde20e
+~> write 0 -> 0x8 at shared buffer 0x00007ffffffde1f7
+~> change ret from 0 to 0x7fffffffffffffff
+avcodec_close(0x7ffffffde0c8 [size: 0x398]) @ 0x00007fffe0ebf6ac
+~> write 0 -> 0xfffffffffffe37 at shared buffer 0x00007ffffffde0d4
+~> write 0 -> 0xffffff00000000 at shared buffer 0x00007ffffffde27e
+avcodec_free_context(0x618000000178 [size: 0x8]) @ 0x00007fffe130d4dd

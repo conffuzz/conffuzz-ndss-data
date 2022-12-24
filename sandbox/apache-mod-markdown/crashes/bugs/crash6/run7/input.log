@@ -1,0 +1,28 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd5f9f0a0 {request_rec*} [size: 0x2e0], 0x7fffd2bd9698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0xfffffffffffffc24 at shared buffer 0x000060d000006844
+~> write {MMIOT*} 0 -> 0xffffffffb5000000 at shared buffer 0x000060d00000687c
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d000006885
+~> write {markdown_conf*} 0x1 -> 0xdb00000000000000 at shared buffer 0x00007fffd2bd9698
+~> write {request_rec*} 0 -> 0 at shared buffer 0x00007fffd5f9f1c2
+~> change ret {int} from 0 to 0x7fffffffffffffff
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd14990a0 {request_rec*} [size: 0x2e0], 0x7fffd13ee698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0x214 at shared buffer 0x000060d00000692d
+~> write {MMIOT*} 0 -> 0x33e00000000 at shared buffer 0x000060d000006936
+~> write {markdown_conf*} 0x1 -> 0x6700000000000000 at shared buffer 0x00007fffd13ee698
+~> write {request_rec*} 0 -> 0xfffffffffffffc18 at shared buffer 0x00007fffd149911f
+~> write {request_rec*} 0 -> 0x2000000000000 at shared buffer 0x00007fffd1499144
+~> change ret {int} from 0 to 0xfffffffffffffef4
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd13ea0a0 {request_rec*} [size: 0x2e0], 0x7fffd11e4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0x3e8 at shared buffer 0x000060d0000069e9
+~> write {MMIOT*} 0 -> 0x20000 at shared buffer 0x000060d0000069ee
+~> change ret {int} from 0 to 0xfffffffffffffffe
+markdown_output(0x60d000006ab0 {MMIOT*} [size: 0x60], 0x7fffd11e40a0 {request_rec*} [size: 0x2e0], 0x7fffd0f83698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {markdown_conf*} 0x1 -> 0x1800000000000000 at shared buffer 0x00007fffd0f83698
+~> write {request_rec*} 0 -> 0 at shared buffer 0x00007fffd11e40d8
+~> write {request_rec*} 0xdba438b8 -> 0 at shared buffer 0x00007fffd11e4230
+~> write {request_rec*} 0 -> 0x2a20000000000 at shared buffer 0x00007fffd11e4215
+~> change ret {int} from 0 to 0x35a

@@ -1,0 +1,36 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+2022/11/03 23:17:04 [notice] 26100#0: using the "epoll" event method
+2022/11/03 23:17:04 [notice] 26100#0: nginx/1.21.6
+2022/11/03 23:17:04 [notice] 26100#0: built by gcc 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+2022/11/03 23:17:04 [notice] 26100#0: OS: Linux 6.0.0-1-amd64
+2022/11/03 23:17:04 [notice] 26100#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/03 23:17:06 [info] 26100#0: *1 client 172.17.0.2 closed keepalive connection
+2022/11/03 23:17:06 [info] 26100#0: *2 client 172.17.0.2 closed keepalive connection
+2022/11/03 23:17:06 [info] 26100#0: *3 client 172.17.0.2 closed keepalive connection
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==26100==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x5555556a6716 bp 0x7fffffffe050 sp 0x7fffffffe010 T0)
+==26100==The signal is caused by a READ memory access.
+==26100==Hint: address points to the zero page.
+    #0 0x5555556a6716 in ngx_regex_exec src/core/ngx_regex.c:442
+    #1 0x55555570e26b in ngx_http_regex_exec src/http/ngx_http_variables.c:2579
+    #2 0x5555556e0a0f in ngx_http_find_virtual_server src/http/ngx_http_request.c:2364
+    #3 0x5555556dfd0c in ngx_http_set_virtual_server src/http/ngx_http_request.c:2252
+    #4 0x5555556dd6a9 in ngx_http_process_host src/http/ngx_http_request.c:1816
+    #5 0x5555556db82f in ngx_http_process_request_headers src/http/ngx_http_request.c:1470
+    #6 0x5555556d9bbf in ngx_http_process_request_line src/http/ngx_http_request.c:1165
+    #7 0x5555556d58cf in ngx_http_wait_request_handler src/http/ngx_http_request.c:503
+    #8 0x55555567f9de in ngx_epoll_process_events src/event/modules/ngx_epoll_module.c:901
+    #9 0x555555650b78 in ngx_process_events_and_timers src/event/ngx_event.c:248
+    #10 0x555555675ae4 in ngx_single_process_cycle src/os/unix/ngx_process_cycle.c:300
+    #11 0x5555555c7ffd in main src/core/nginx.c:380
+    #12 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #13 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #14 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_regex.c:442 in ngx_regex_exec
+==26100==ABORTING

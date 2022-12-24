@@ -1,0 +1,7 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6f25b3c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6f25bafe
+~> instrumenting 0x00007fff6f25b3c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+~> write {unknown} 0x70 -> 0xff00000000000000 at shared buffer 0x00007fffffffb4b0

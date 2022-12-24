@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/mod_deflate.so
+cap_write

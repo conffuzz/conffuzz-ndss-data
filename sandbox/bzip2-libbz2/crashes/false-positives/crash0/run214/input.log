@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+BZ2_bzReadOpen(0x7fffffffbe30 [size: 0x4], 0x615000000580 [size: 0xd8], 0 [size: 0], 0 [size: 0], 0x7fffffffd310 [size: 0x1], 0 [size: 0]) @ 0x000055555555a938
+~> write 0xbebebeffffffffff -> 0 at shared buffer 0x0000615000000613
+~> write 0xbebebeffffffffbe -> 0x64 at shared buffer 0x0000615000000647
+~> write 0xbe00ffffff000061 -> 0xfffffffffffd65 at shared buffer 0x000061500000060d
+~> write 0xbe00000000bebebe -> 0xffffffffffff80 at shared buffer 0x000061500000063d
+~> write 0xbe00000000bebe00 -> 0xffffffffffff00 at shared buffer 0x00007fffffffd310
+~> write 0xbe00000000bebe00 -> 0xffffffffffff9c at shared buffer 0x00007fffffffd310
+~> write 0xbe00000000bebe9c -> 0xffffffffffff00 at shared buffer 0x00007fffffffd310
+~> write 0xbe00000000bebe00 -> 0xffffffffffff7f at shared buffer 0x00007fffffffd310
+~> change ret from 0x622000000100 to 0x11
+BZ2_bzRead(0x7fffffffbe30 [size: 0x4], 0x11 [size: 0x1], 0x7fffffffbe80 [size: 0x1], 0x1388 [size: 0]) @ 0x000055555555a9bb

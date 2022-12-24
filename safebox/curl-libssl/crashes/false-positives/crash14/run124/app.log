@@ -1,0 +1,69 @@
+[I] Recursing from ssl into ssl_st
+[I] Recursing from ssl_session into ssl_session_st
+[I] Recursing from ssl_ctx into ssl_ctx_st
+[I] Recursing from file into const char*
+[E] Not able to find type information for file in DWARF
+[I] Recursing from pem_password_cb into int(char*, int, int, *)
+[E] Not able to find type information for pem_password_cb in DWARF
+[I] Recursing from ssl_conf_ctx into ssl_conf_ctx_st
+[I] Recursing from x509 into x509_st
+[E] Not able to find type information for x509 in DWARF
+[I] Recursing from ssl_cipher into ssl_cipher_st
+[I] Recursing from bio into bio_st
+[E] Not able to find type information for bio in DWARF
+[I] Recursing from ctlog_store into CTLOG_STORE*
+[E] Not able to find type information for ctlog_store in DWARF
+[I] Recursing from bignum into bignum_st
+[E] Not able to find type information for bignum in DWARF
+[I] Recursing from ssl_comp into ssl_comp_st
+[I] Recursing from ssl_method into ssl_method_st
+[I] Recursing from rsa into rsa_st
+[E] Not able to find type information for rsa in DWARF
+[I] Recursing from x509_verify_param into X509_VERIFY_PARAM_st
+[E] Not able to find type information for x509_verify_param in DWARF
+[I] Recursing from openssl_init_settings into ossl_init_settings_st
+[E] Not able to find type information for openssl_init_settings in DWARF
+[I] Recursing from bio_addr into bio_addr_st
+[E] Not able to find type information for bio_addr in DWARF
+[E] Not able to find type information for stack_st_x509_name in DWARF
+[I] Recursing from evp_pkey into evp_pkey_st
+[E] Not able to find type information for evp_pkey in DWARF
+[I] Recursing from x509_store into x509_store_st
+[E] Not able to find type information for x509_store in DWARF
+[I] Recursing from evp_md into evp_md_st
+[E] Not able to find type information for evp_md in DWARF
+[E] Not able to find type information for stack_st_x509 in DWARF
+[E] Not able to find type information for stack_st_ssl_comp in DWARF
+[I] Recursing from comp_method into comp_method_st
+[E] Not able to find type information for comp_method in DWARF
+[I] Recursing from engine into engine_st
+[E] Not able to find type information for engine in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+=================================================================
+==110085==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde190 in thread T0
+    #0 0x7fffe24624d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe1b6c73a in CRYPTO_free crypto/mem.c:312
+    #2 0x7fffe1f69629 in SSL_CTX_free ssl/ssl_lib.c:3223
+    #3 0x7fffe22126de in ossl_closeone vtls/openssl.c:1458
+    #4 0x7fffe22127b8 in ossl_close vtls/openssl.c:1469
+    #5 0x7fffe22285a5 in Curl_ssl_close vtls/vtls.c:688
+    #6 0x7fffe21e7e4f in conn_shutdown /root/curl-7.82.0/lib/url.c:745
+    #7 0x7fffe21e8cf0 in Curl_disconnect /root/curl-7.82.0/lib/url.c:865
+    #8 0x7fffe21742b9 in multi_done /root/curl-7.82.0/lib/multi.c:693
+    #9 0x7fffe217a6ad in multi_runsingle /root/curl-7.82.0/lib/multi.c:2056
+    #10 0x7fffe217de7b in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #11 0x7fffe20f550a in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #12 0x7fffe20f5a78 in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #13 0x7fffe20f5b41 in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #14 0x5555555be2e7 in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #15 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #16 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #17 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #18 0x7fffe158d7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #19 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+Address 0x7ffffffde190 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==110085==ABORTING

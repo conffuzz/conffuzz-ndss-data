@@ -1,0 +1,7 @@
+    #1 0xaddr in _gcry_strdup_core /root/libgcrypt-1.9.2/src/global.c:1111
+    #2 0xaddr in _gcry_xstrdup /root/libgcrypt-1.9.2/src/global.c:1229
+    #3 0xaddr in gcry_xstrdup /root/libgcrypt-1.9.2/src/visibility.c:1586
+    #4 0xaddr in parse_auto_key_locate /root/gnupg-2.2.27/g10/getkey.c:4170
+    #5 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2455
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

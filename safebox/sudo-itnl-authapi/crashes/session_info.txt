@@ -1,0 +1,11 @@
+Fuzzing seed: 1668268392
+Starting time: 2022-11-12 15:53:12
+Total instrumented API size: 5
+Max number of call sites reached in a run: 5
+Statically detected called API endpoints: 5
+Number of API endpoints reached: 5
+Number of API endpoints that are vulnerability vectors: 2
+List of these endpoints:
+  [api] sudo_auth_init
+  [api] sudo_passwd_verify
+Ending time: 2022-11-12 17:00:02

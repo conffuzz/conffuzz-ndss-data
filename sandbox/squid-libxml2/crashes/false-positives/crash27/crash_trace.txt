@@ -1,0 +1,62 @@
+    #0 0xaddr in xmlParseChunk /root/libxml2-2.10.3/parser.c:12262
+    #1 0xaddr in ESILibxml2Parser::parse(char const*, unsigned long, bool) /root/squid-5.7/src/esi/Libxml2Parser.cc:108
+    #2 0xaddr in ESIContext::parseOneBuffer() /root/squid-5.7/src/esi/Esi.cc:1218
+    #3 0xaddr in ESIContext::parse() /root/squid-5.7/src/esi/Esi.cc:1264
+    #4 0xaddr in ESIContext::process() /root/squid-5.7/src/esi/Esi.cc:1310
+    #5 0xaddr in ESIContext::kick() /root/squid-5.7/src/esi/Esi.cc:315
+    #6 0xaddr in esiProcessStream(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/esi/Esi.cc:787
+    #7 0xaddr in clientStreamCallback(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:159
+    #8 0xaddr in clientReplyContext::processReplyAccessResult(Acl::Answer const&) /root/squid-5.7/src/client_side_reply.cc:2178
+    #9 0xaddr in clientReplyContext::processReplyAccess() /root/squid-5.7/src/client_side_reply.cc:2066
+    #10 0xaddr in clientReplyContext::sendMoreData(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:2264
+    #11 0xaddr in clientReplyContext::cacheHit(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:721
+    #12 0xaddr in clientReplyContext::CacheHit(void*, StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:532
+    #13 0xaddr in store_client::callback(long, bool) /root/squid-5.7/src/store_client.cc:178
+    #14 0xaddr in store_client::scheduleMemRead() /root/squid-5.7/src/store_client.cc:474
+    #15 0xaddr in store_client::scheduleRead() /root/squid-5.7/src/store_client.cc:440
+    #16 0xaddr in store_client::doCopy(StoreEntry*) /root/squid-5.7/src/store_client.cc:401
+    #17 0xaddr in storeClientCopy2 /root/squid-5.7/src/store_client.cc:355
+    #18 0xaddr in store_client::copy(StoreEntry*, StoreIOBuffer, void (*)(void*, StoreIOBuffer), void*) /root/squid-5.7/src/store_client.cc:278
+    #19 0xaddr in storeClientCopy(store_client*, StoreEntry*, StoreIOBuffer, void (*)(void*, StoreIOBuffer), void*) /root/squid-5.7/src/store_client.cc:230
+    #20 0xaddr in clientReplyContext::doGetMoreData() /root/squid-5.7/src/client_side_reply.cc:1881
+    #21 0xaddr in clientReplyContext::identifyFoundObject(StoreEntry*) /root/squid-5.7/src/client_side_reply.cc:1783
+    #22 0xaddr in clientReplyContext::created(StoreEntry*) /root/squid-5.7/src/client_side_reply.cc:945
+    #23 0xaddr in StoreEntry::getPublicByRequest(StoreClient*, HttpRequest*) /root/squid-5.7/src/store.cc:512
+    #24 0xaddr in clientReplyContext::identifyStoreObject() /root/squid-5.7/src/client_side_reply.cc:1696
+    #25 0xaddr in clientGetMoreData /root/squid-5.7/src/client_side_reply.cc:1842
+    #26 0xaddr in clientStreamRead(clientStreamNode*, ClientHttpRequest*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:182
+    #27 0xaddr in ClientHttpRequest::httpStart() /root/squid-5.7/src/client_side_request.cc:1548
+    #28 0xaddr in ClientHttpRequest::processRequest() /root/squid-5.7/src/client_side_request.cc:1533
+    #29 0xaddr in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1902
+    #30 0xaddr in ClientRequestContext::clientAccessCheckDone(Acl::Answer const&) /root/squid-5.7/src/client_side_request.cc:826
+    #31 0xaddr in ClientRequestContext::clientAccessCheck2() /root/squid-5.7/src/client_side_request.cc:725
+    #32 0xaddr in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1791
+    #33 0xaddr in ClientRequestContext::clientAccessCheckDone(Acl::Answer const&) /root/squid-5.7/src/client_side_request.cc:826
+    #34 0xaddr in clientAccessCheckDoneWrapper /root/squid-5.7/src/client_side_request.cc:737
+    #35 0xaddr in ACLChecklist::checkCallback(Acl::Answer) /root/squid-5.7/src/acl/Checklist.cc:169
+    #36 0xaddr in ACLChecklist::completeNonBlocking() /root/squid-5.7/src/acl/Checklist.cc:54
+    #37 0xaddr in ACLChecklist::nonBlockingCheck(void (*)(Acl::Answer, void*), void*) /root/squid-5.7/src/acl/Checklist.cc:257
+    #38 0xaddr in ClientRequestContext::clientAccessCheck() /root/squid-5.7/src/client_side_request.cc:705
+    #39 0xaddr in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1763
+    #40 0xaddr in ClientRequestContext::hostHeaderVerify() /root/squid-5.7/src/client_side_request.cc:653
+    #41 0xaddr in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1756
+    #42 0xaddr in clientProcessRequest(ConnStateData*, RefCount<Http::One::RequestParser> const&, Http::Stream*) /root/squid-5.7/src/client_side.cc:1798
+    #43 0xaddr in Http::One::Server::processParsedRequest(RefCount<Http::Stream>&) /root/squid-5.7/src/servers/Http1Server.cc:292
+    #44 0xaddr in ConnStateData::clientParseRequests() /root/squid-5.7/src/client_side.cc:1990
+    #45 0xaddr in ConnStateData::afterClientRead() /root/squid-5.7/src/client_side.cc:2024
+    #46 0xaddr in Server::doClientRead(CommIoCbParams const&) /root/squid-5.7/src/servers/Server.cc:181
+    #47 0xaddr in CommCbMemFunT<Server, CommIoCbParams>::doDial() ../../src/CommCalls.h:205
+    #48 0xaddr in JobDialer<Server>::dial(AsyncCall&) ../../src/base/AsyncJobCalls.h:175
+    #49 0xaddr in AsyncCallT<CommCbMemFunT<Server, CommIoCbParams> >::fire() ../../src/base/AsyncCall.h:145
+    #50 0xaddr in AsyncCall::make() /root/squid-5.7/src/base/AsyncCall.cc:44
+    #51 0xaddr in AsyncCallQueue::fireNext() /root/squid-5.7/src/base/AsyncCallQueue.cc:60
+    #52 0xaddr in AsyncCallQueue::fire() /root/squid-5.7/src/base/AsyncCallQueue.cc:43
+    #53 0xaddr in EventLoop::dispatchCalls() /root/squid-5.7/src/EventLoop.cc:144
+    #54 0xaddr in EventLoop::runOnce() /root/squid-5.7/src/EventLoop.cc:121
+    #55 0xaddr in EventLoop::run() /root/squid-5.7/src/EventLoop.cc:83
+    #56 0xaddr in SquidMain(int, char**) /root/squid-5.7/src/main.cc:1719
+    #57 0xaddr in SquidMainSafe /root/squid-5.7/src/main.cc:1406
+    #58 0xaddr in main /root/squid-5.7/src/main.cc:1394
+    #59 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #60 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #61 0xaddr in _start (/usr/local/squid/sbin/squid+0xaddr)

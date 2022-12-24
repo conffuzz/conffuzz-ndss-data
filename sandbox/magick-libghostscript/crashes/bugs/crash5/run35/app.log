@@ -1,0 +1,25 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2319==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffe2971066 bp 0x7ffffffe96a0 sp 0x7ffffffe8de8 T0)
+    #0 0x7fffe2971066 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe29022ed in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:551
+    #2 0x7fffe2903bd5 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1668
+    #3 0x7fffe226f552 in ThrowMagickExceptionList MagickCore/exception.c:1124
+    #4 0x7fffe226f956 in ThrowMagickException MagickCore/exception.c:1156
+    #5 0x7fffd56878a4 in InvokeGhostscriptDelegate coders/ghostscript-private.h:181
+    #6 0x7fffd568c212 in ReadPSImage coders/ps.c:812
+    #7 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #8 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #9 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #10 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #11 0x555555556a32 in MagickMain utilities/magick.c:150
+    #12 0x555555556ce5 in main utilities/magick.c:182
+    #13 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #15 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==2319==ABORTING

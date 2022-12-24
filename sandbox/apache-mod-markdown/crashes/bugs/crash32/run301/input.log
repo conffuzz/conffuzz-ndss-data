@@ -1,0 +1,24 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd5f1c0a0 {request_rec*} [size: 0x2e0], 0x7fffd2bd8698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd16380a0 {request_rec*} [size: 0x2e0], 0x7fffd158b698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006ab0 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006b80 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006c50 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> change ret {int} from 0 to 0x38b
+markdown_output(0x60d000006d20 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d000006d3e
+~> write {MMIOT*} 0 -> 0xffffffffffff1d00 at shared buffer 0x000060d000006d42
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd14ae698
+~> write {request_rec*} 0xf37000007fffd11d -> 0xfffffffffffffff6 at shared buffer 0x00007fffd15392d2
+~> write {request_rec*} 0 -> 0xffff800000000000 at shared buffer 0x00007fffd15391e3
+~> write {request_rec*} 0x4ae440 -> 0xfffff70000000000 at shared buffer 0x00007fffd1539360
+markdown_output(0x60d000006df0 {MMIOT*} [size: 0x60], 0x7fffd15390a0 {request_rec*} [size: 0x2e0], 0x7fffd14ae698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0xffff320000000000 at shared buffer 0x000060d000006e16
+~> write {MMIOT*} 0 -> 0x18c0000 at shared buffer 0x000060d000006e1c
+~> write {request_rec*} 0xc800 -> 0xfffffffffffffc94 at shared buffer 0x00007fffd1539107
+~> write {request_rec*} 0x7f -> 0xffffff0000000000 at shared buffer 0x00007fffd15390d5
+~> write {request_rec*} 0x5eca2 -> 0x60000000000 at shared buffer 0x00007fffd153931c

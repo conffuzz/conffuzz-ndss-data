@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gcry_control(0x1c {gcry_ctl_cmds} [size: 0]) @ 0x00005555555cc0f7
+~> change arg #0x1 {gcry_ctl_cmds} from 0x1c to 0x3f

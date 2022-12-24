@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct_2(0x7fffd4811fe6 {png_const_charp} [size: 0], 0 {png_voidp} [size: 0], 0 {png_error_ptr} [size: 0], 0 {png_error_ptr} [size: 0], 0x61b0000069e8 {png_voidp} [size: 0], 0x7fffd3705b0b {png_malloc_ptr} [size: 0], 0x7fffd3705b9a {png_free_ptr} [size: 0]) @ 0x00007fffd3705d50
+~> instrumenting 0x00007fffd3705b0b (gdevpng_malloc, 0x2 arg(s))
+~> instrumenting 0x00007fffd3705b9a (gdevpng_free, 0x2 arg(s))
+png_get_mem_ptr(0x7ffffffea030 {png_const_structrp} [size: 0]) @ 0x00007fffd3705b2b
+~> change ret {png_structp} from 0x62a0006bb3e0 to 0x62a0006bb7c3
+png_create_info_struct(0x62a0006bb7c3 {png_const_structrp} [size: 0]) @ 0x00007fffd3705d6a
+png_set_longjmp_fn(0x62a0006bb7c3 {png_structrp} [size: 0], 0x7fffe28c4490 {png_longjmp_ptr} [size: 0], 0xc8 {size_t} [size: 0]) @ 0x00007fffd3705eb4
+~> instrumenting 0x00007fffe28c4490 (longjmp, 0x2 arg(s))
+png_set_write_fn(0x62a0006bb7c3 {png_structrp} [size: 0], 0x6110000480f0 {png_voidp} [size: 0], 0x7fffd3705c0d {png_rw_ptr} [size: 0], 0x7fffd3705c51 {png_flush_ptr} [size: 0]) @ 0x00007fffd3705f24
+~> instrumenting 0x00007fffd3705c0d (my_png_write, 0x3 arg(s))
+~> instrumenting 0x00007fffd3705c51 (my_png_flush, 0x1 arg(s))
+png_set_pHYs(0x62a0006bb7c3 {png_const_structrp} [size: 0], 0x613000001fc0 {png_inforp} [size: 0], 0xb13 {png_uint_32} [size: 0], 0xb13 {png_uint_32} [size: 0], 0x1 {int} [size: 0]) @ 0x00007fffd3706525
+png_set_IHDR(0x62a0006bb7c3 {png_const_structrp} [size: 0], 0x613000001fc0 {png_inforp} [size: 0], 0x264 {png_uint_32} [size: 0], 0x318 {png_uint_32} [size: 0], 0x8 {int} [size: 0], 0x6 {int} [size: 0], 0 {int} [size: 0], 0 {int} [size: 0], 0 {int} [size: 0]) @ 0x00007fffd3706566
+png_destroy_write_struct(0x7ffffffea640 {png_structpp} [size: 0], 0x7ffffffea648 {png_infopp} [size: 0]) @ 0x00007fffd370682a

@@ -1,0 +1,9 @@
+    #0 0xaddr in pcre2_code_free_8 src/pcre2_compile.c:1277
+    #1 0xaddr in ngx_regex_cleanup src/core/ngx_regex.c:580
+    #2 0xaddr in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #3 0xaddr in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #4 0xaddr in ngx_init_cycle src/core/ngx_cycle.c:286
+    #5 0xaddr in main src/core/nginx.c:292
+    #6 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

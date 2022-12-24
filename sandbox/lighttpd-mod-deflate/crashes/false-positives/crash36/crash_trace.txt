@@ -1,0 +1,16 @@
+    #0 0xaddr in mod_deflate_cleanup /root/lighttpd-1.4.67/src/mod_deflate.c:2173
+    #1 0xaddr in plugins_call_fn_req_data /root/lighttpd-1.4.67/src/plugin.c:288
+    #2 0xaddr in plugins_call_handle_request_reset /root/lighttpd-1.4.67/src/plugin.c:344
+    #3 0xaddr in request_reset /root/lighttpd-1.4.67/src/reqpool.c:85
+    #4 0xaddr in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:204
+    #5 0xaddr in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #6 0xaddr in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #7 0xaddr in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #8 0xaddr in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #9 0xaddr in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #10 0xaddr in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #11 0xaddr in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #12 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2085
+    #13 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

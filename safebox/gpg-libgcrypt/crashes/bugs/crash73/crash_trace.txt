@@ -1,0 +1,9 @@
+    #1 0xaddr in _gcry_private_free /root/libgcrypt-1.9.2/src/stdmem.c:244
+    #2 0xaddr in _gcry_free /root/libgcrypt-1.9.2/src/global.c:1058
+    #3 0xaddr in gcry_free /root/libgcrypt-1.9.2/src/visibility.c:1592
+    #4 0xaddr in do_make_filename /root/gnupg-2.2.27/common/stringhelp.c:526
+    #5 0xaddr in make_absfilename /root/gnupg-2.2.27/common/stringhelp.c:645
+    #6 0xaddr in gnupg_set_homedir /root/gnupg-2.2.27/common/homedir.c:488
+    #7 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2373
+    #8 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

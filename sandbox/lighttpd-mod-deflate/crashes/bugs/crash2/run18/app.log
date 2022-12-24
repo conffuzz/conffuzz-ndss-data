@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3217==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000080 (pc 0x555555627097 bp 0x7fffffffaf90 sp 0x7fffffffaf40 T0)
+==3217==The signal is caused by a READ memory access.
+==3217==Hint: address points to the zero page.
+    #0 0x555555627097 in array_get_index /root/lighttpd-1.4.67/src/array.c:271
+    #1 0x555555627d6b in array_get_buf_ptr /root/lighttpd-1.4.67/src/array.c:418
+    #2 0x555555630311 in array_set_key_value /root/lighttpd-1.4.67/src/array.h:123
+    #3 0x555555632980 in config_plugin_values_init /root/lighttpd-1.4.67/src/configfile-glue.c:322
+    #4 0x7fffdbd7083b in mod_staticfile_set_defaults /root/lighttpd-1.4.67/src/mod_staticfile.c:86
+    #5 0x5555555acbc8 in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #6 0x5555555acee1 in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #7 0x5555555882f6 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #8 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #9 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/array.c:271 in array_get_index
+==3217==ABORTING

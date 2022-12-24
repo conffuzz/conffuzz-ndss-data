@@ -1,0 +1,6 @@
+    #0 0xaddr in _gcry_check_version /root/libgcrypt-1.9.2/src/global.c:240
+    #1 0xaddr in gcry_check_version /root/libgcrypt-1.9.2/src/visibility.c:69
+    #2 0xaddr in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:183
+    #3 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

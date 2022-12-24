@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> change ret from 0x7fffe25b1c30 to 0x7fffe25b196f
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0x290 -> 0x7fffff000000 at shared buffer 0x00007fffffffe350
+~> write 0x60 -> 0x7ffffffffe1f at shared buffer 0x00007fffffffe355
+~> write 0x1f4000000000 -> 0 at shared buffer 0x00007fffffffe350
+~> change ret from 0 to 0x228

@@ -1,0 +1,49 @@
+=================================================================
+==10293==ERROR: AddressSanitizer: global-buffer-overflow on address 0x555555ca87a8 at pc 0x7fffe00d36f7 bp 0x7fffffffd4c0 sp 0x7fffffffd4b0
+WRITE of size 1 at 0x555555ca87a8 thread T0
+    #0 0x7fffe00d36f6 in Curl_vsetopt /root/curl-7.82.0/lib/setopt.c:1841
+    #1 0x7fffe00de91f in curl_easy_setopt /root/curl-7.82.0/lib/setopt.c:3052
+    #2 0x55555561f0d4 in get_curl_handle /root/git-2.35.1/http.c:773
+    #3 0x555555620b8c in http_init /root/git-2.35.1/http.c:1103
+    #4 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x555555ca87a8 is located 4 bytes to the right of global variable 'pushing' defined in 'http-push.c:81:12' (0x555555ca87a0) of size 4
+0x555555ca87a8 is located 56 bytes to the left of global variable 'aborted' defined in 'http-push.c:82:12' (0x555555ca87e0) of size 4
+SUMMARY: AddressSanitizer: global-buffer-overflow /root/curl-7.82.0/lib/setopt.c:1841 in Curl_vsetopt
+Shadow bytes around the buggy address:
+  0x0aab2ab8d0a0: 00 f9 f9 f9 f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d0b0: 04 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d0c0: 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d0d0: 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d0e0: 04 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+=>0x0aab2ab8d0f0: 00 00 00 00 04[f9]f9 f9 f9 f9 f9 f9 04 f9 f9 f9
+  0x0aab2ab8d100: f9 f9 f9 f9 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2ab8d110: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2ab8d120: 00 00 00 00 f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d130: 04 f9 f9 f9 f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2ab8d140: 04 f9 f9 f9 f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==10293==ABORTING

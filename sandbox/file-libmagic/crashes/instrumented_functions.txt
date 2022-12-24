@@ -1,0 +1,18 @@
+magic_open magic_open 1 magic_set* int
+magic_getflags magic_getflags 1 int magic_set*
+magic_errno magic_errno 1 int magic_set*
+magic_version magic_version 0 int
+magic_file magic_file 2 char* magic_set* char*
+magic_error magic_error 1 char* magic_set*
+magic_check magic_check 2 int magic_set* char*
+magic_buffer magic_buffer 3 char* magic_set* * size_t
+magic_getparam magic_getparam 3 int magic_set* int *
+magic_close magic_close 1 unknown_or_void magic_set*
+magic_list magic_list 2 int magic_set* char*
+magic_compile magic_compile 2 int magic_set* char*
+magic_setflags magic_setflags 2 int magic_set* int
+magic_descriptor magic_descriptor 2 char* magic_set* int
+magic_setparam magic_setparam 3 int magic_set* int *
+magic_load_buffers magic_load_buffers 4 int magic_set* ** size_t* size_t
+magic_getpath magic_getpath 2 char* char* int
+magic_load magic_load 2 int magic_set* char*

@@ -1,0 +1,22 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==79706==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x00007fffffff in thread T0
+    #0 0x7fffe19d8b6f in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123
+    #1 0x7fffe15abe78 in _gcry_private_free /root/libgcrypt-1.9.2/src/stdmem.c:244
+    #2 0x7fffe15a5864 in _gcry_free /root/libgcrypt-1.9.2/src/global.c:1058
+    #3 0x7fffe15a2cc9 in gcry_free /root/libgcrypt-1.9.2/src/visibility.c:1592
+    #4 0x55555578a180 in do_make_filename /root/gnupg-2.2.27/common/stringhelp.c:526
+    #5 0x55555578a650 in make_absfilename /root/gnupg-2.2.27/common/stringhelp.c:645
+    #6 0x5555557939da in gnupg_set_homedir /root/gnupg-2.2.27/common/homedir.c:488
+    #7 0x5555555cc332 in main /root/gnupg-2.2.27/g10/gpg.c:2373
+    #8 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #9 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+Address 0x00007fffffff is located in the low shadow area.
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123 in __interceptor_free
+==79706==ABORTING

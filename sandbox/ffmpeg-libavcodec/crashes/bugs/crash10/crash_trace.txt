@@ -1,0 +1,10 @@
+    #0 0xaddr in ff_is_intra_only libavformat/utils.c:292
+    #1 0xaddr in compute_pkt_fields libavformat/demux.c:1095
+    #2 0xaddr in parse_packet libavformat/demux.c:1194
+    #3 0xaddr in read_frame_internal libavformat/demux.c:1320
+    #4 0xaddr in avformat_find_stream_info libavformat/demux.c:2584
+    #5 0xaddr in open_input_file fftools/ffprobe.c:3162
+    #6 0xaddr in probe_file fftools/ffprobe.c:3266
+    #7 0xaddr in main fftools/ffprobe.c:3993
+    #8 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in _start (/root/ffmpeg-5.0/ffprobe+0xaddr)

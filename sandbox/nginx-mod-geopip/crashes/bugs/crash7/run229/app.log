@@ -1,0 +1,6 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==18247==ERROR: AddressSanitizer: SEGV on unknown address 0x000002090000 (pc 0x000002090000 bp 0x7fffffffde40 sp 0x7fffffffdbf8 T0)
+==18247==The signal is caused by a READ memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

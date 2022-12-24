@@ -1,0 +1,329 @@
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+Type list: passwd* char***
+   passwd*->48
+   char***->8
+Type list: passwd* char* sudo_auth* sudo_conv_callback*
+   passwd*->48
+   char*->1
+   sudo_auth*->80
+   sudo_conv_callback*->32
+Type list: passwd* int
+   passwd*->48
+   int->0
+Type list: passwd* sudo_auth*
+   passwd*->48
+   sudo_auth*->80
+Type list: passwd* _Bool
+   passwd*->48
+   _Bool->0
+Type list: passwd* sudo_auth* _Bool
+   passwd*->48
+   sudo_auth*->80
+   _Bool->0
+Type list: passwd*
+   passwd*->48
+Type list: passwd* int _Bool
+   passwd*->48
+   int->0
+   _Bool->0
+auth/passwd.c:67:30: runtime error: member access within misaligned address 0x7f896fb9208d for type 'sudo_auth' (aka 'struct sudo_auth'), which requires 8 byte alignment
+0x7f896fb9208d: note: pointer points here
+ a8 8c 6f 89 7f 00 00  00 00 00 00 00 00 00 00  e0 b1 8c 6f 89 7f 00 00  00 00 00 00 00 00 00 00  00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior auth/passwd.c:67:30 in 
+auth/passwd.c:67:30: runtime error: load of misaligned address 0x7f896fb9209d for type 'void *', which requires 8 byte alignment
+0x7f896fb9209d: note: pointer points here
+ b1 8c 6f 89 7f 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 01 00 00 00  00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior auth/passwd.c:67:30 in 
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==4227==ERROR: AddressSanitizer: SEGV on unknown address 0x00000000007f (pc 0x7f897447697d bp 0x7ffd0445c540 sp 0x7ffd0445bcf8 T0)
+==4227==The signal is caused by a READ memory access.
+==4227==Hint: address points to the zero page.
+    #0 0x7f897447697d  (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #1 0x56051727bd78 in strlen (/usr/local/bin/sudo+0xe2d78) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0x7f896f8cac8f in sudo_passwd_verify /root/sudo-1.9.12/plugins/sudoers/./auth/passwd.c:81:14
+    #3 0x7f896f8c78e9 in verify_user /root/sudo-1.9.12/plugins/sudoers/./auth/sudo_auth.c:336:3
+    #4 0x7f896f8d5240 in check_user_interactive /root/sudo-1.9.12/plugins/sudoers/./check.c:144:8
+    #5 0x7f896f8d2a45 in check_user /root/sudo-1.9.12/plugins/sudoers/./check.c:217:11
+    #6 0x7f896f9b6d24 in sudoers_policy_main /root/sudo-1.9.12/plugins/sudoers/./sudoers.c:578:13
+    #7 0x7f896f98b26d in sudoers_policy_check /root/sudo-1.9.12/plugins/sudoers/./policy.c:1180:11
+    #8 0x5605173ee753 in policy_check /root/sudo-1.9.12/src/./sudo.c:1227:10
+    #9 0x5605173e2319 in main /root/sudo-1.9.12/src/./sudo.c:262:11
+    #10 0x7f8974302d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #11 0x7f8974302e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #12 0x560517265d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d) 
+==4227==ABORTING

@@ -1,0 +1,14 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7903==ERROR: AddressSanitizer: SEGV on unknown address 0x7fffe0e2e8a0 (pc 0x7fffe0e2e8a0 bp 0x7fffffffcec0 sp 0x7fffffffce98 T0)
+==7903==The signal is caused by a READ memory access.
+==7903==Hint: PC is at a non-executable region. Maybe a wild jump?
+    #0 0x7fffe0e2e8a0  (/usr/local/lib/libcrypto.so.1.1+0x5958a0)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/lib/libcrypto.so.1.1+0x5958a0) 
+==7903==ABORTING

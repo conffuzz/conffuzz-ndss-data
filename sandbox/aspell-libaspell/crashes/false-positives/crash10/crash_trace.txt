@@ -1,0 +1,5 @@
+    #0 0xaddr in acommon::Config::set_committed_state(bool) common/config.cpp:1356
+    #1 0xaddr in main prog/aspell.cpp:265
+    #2 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #3 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in _start (/usr/local/bin/aspell+0xaddr)

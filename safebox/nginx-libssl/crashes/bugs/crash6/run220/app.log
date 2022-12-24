@@ -1,0 +1,7 @@
+nginx: [alert] SSL_CTX_get_ex_new_index() failed (SSL: f)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==81578==ERROR: AddressSanitizer: SEGV on unknown address 0x00000007a9f8 (pc 0x00000007a9f8 bp 0x7fffffffdd10 sp 0x7fffffffdc68 T0)
+==81578==The signal is caused by a READ memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

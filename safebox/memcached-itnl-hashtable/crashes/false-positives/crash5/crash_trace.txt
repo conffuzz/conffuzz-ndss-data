@@ -1,0 +1,15 @@
+    #0 0xaddr in do_slabs_alloc /root/memcached-1.6.17/slabs.c:430
+    #1 0xaddr in slabs_alloc /root/memcached-1.6.17/slabs.c:661
+    #2 0xaddr in do_item_alloc_pull /root/memcached-1.6.17/items.c:189
+    #3 0xaddr in do_item_alloc /root/memcached-1.6.17/items.c:306
+    #4 0xaddr in item_alloc /root/memcached-1.6.17/thread.c:802
+    #5 0xaddr in process_bin_update /root/memcached-1.6.17/proto_bin.c:1117
+    #6 0xaddr in dispatch_bin_command /root/memcached-1.6.17/proto_bin.c:988
+    #7 0xaddr in try_read_command_binary /root/memcached-1.6.17/proto_bin.c:122
+    #8 0xaddr in drive_machine /root/memcached-1.6.17/memcached.c:3133
+    #9 0xaddr in event_handler /root/memcached-1.6.17/memcached.c:3408
+    #10 0xaddr  (/usr/lib/x86_64-linux-gnu/libevent-2.1.so.7+0xaddr)
+    #11 0xaddr in event_base_loop (/usr/lib/x86_64-linux-gnu/libevent-2.1.so.7+0xaddr)
+    #12 0xaddr in worker_libevent /root/memcached-1.6.17/thread.c:520
+    #13 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #14 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

@@ -1,0 +1,42 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+
+bzip2-shared: Compressed file ends unexpectedly;
+	perhaps it is corrupted?  *Possible* reason follows.
+bzip2-shared: Success
+	Input file = example.bz2, output file = example
+
+It is possible that the compressed file(s) have become corrupted.
+You can use the -tvv option to test integrity of such files.
+
+You can use the `bzip2recover' program to attempt to recover
+data from undamaged sections of corrupted files.
+
+bzip2-shared: Deleting output file example, if it exists.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==38446==ERROR: AddressSanitizer: SEGV on unknown address 0x61feed000668 (pc 0x7fffe26b2b77 bp 0x000000000d68 sp 0x7fffffffbb90 T0)
+==38446==The signal is caused by a READ memory access.
+    #0 0x7fffe26b2b77  (/lib/x86_64-linux-gnu/libc.so.6+0x7eb77)
+    #1 0x7fffe266f071  (/lib/x86_64-linux-gnu/libc.so.6+0x3b071)
+    #2 0x7fffe266f119 in exit (/lib/x86_64-linux-gnu/libc.so.6+0x3b119)
+    #3 0x55555555c138 in cleanUpAndFail /root/bzip2-1.0.8/bzip2.c:740
+    #4 0x55555555c2a0 in compressedStreamEOF /root/bzip2-1.0.8/bzip2.c:785
+    #5 0x55555555b088 in uncompressStream /root/bzip2-1.0.8/bzip2.c:530
+    #6 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #7 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #8 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #9 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x7eb77) 
+==38446==ABORTING

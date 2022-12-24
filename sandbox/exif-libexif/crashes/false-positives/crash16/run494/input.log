@@ -1,0 +1,116 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+exif_log_set_func(0x603000000160 {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))
+exif_loader_new() @ 0x00005555555675e6
+exif_loader_log(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000160 {ExifLog*} [size: 0x20]) @ 0x0000555555567606
+exif_loader_write_file(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000100 {char*} [size: 0x1]) @ 0x000055555556765a
+exif_loader_get_data(0x606000000080 {ExifLoader*} [size: 0x40]) @ 0x00005555555676ba
+exif_loader_unref(0x606000000080 {ExifLoader*} [size: 0x40]) @ 0x00005555555676d0
+~> write {ExifLoader*} 0x6669 -> 0 at shared buffer 0x000060600000008e
+~> write {ExifLoader*} 0xff00 -> 0 at shared buffer 0x0000606000000087
+exif_ifd_get_name(0 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x1 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x1 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x2 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x2 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x3 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x3 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x4 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x4 {ExifIfd} [size: 0]) @ 0x0000555555563220
+~> change ret {char*} from 0x7fffe25d9d00 to 0x7fffe25d99f0
+exif_tag_get_title(0 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x1 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x1 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x1 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x1 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x1 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x1 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x2 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x2 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x2 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0x6030000002500000 -> 0 at shared buffer 0x0000603000000236
+~> write {ExifContent*} 0x60 -> 0 at shared buffer 0x0000603000000235
+~> write {ExifContent*} 0xe0000000 -> 0 at shared buffer 0x000060300000022d
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x2 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x2 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> change ret {ExifEntry*} from 0 to 0x8000000000000000
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x2 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x3 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x3 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x3 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x3 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x3 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x3 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x4 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x4 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x4 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> change ret {ExifEntry*} from 0 to 0xffffffffffffff91
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x4 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x4 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x4 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x5 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x5 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x5 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x5 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x5 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x5 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x6 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x6 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x6 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x6 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x6 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x6 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x7 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x7 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x7 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x7 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x7 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x7 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x8 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x8 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x8 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x8 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x8 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x8 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0x9 {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0x9 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0x9 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0x9 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0x9 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0x9 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0x37000 -> 0 at shared buffer 0x0000603000000357
+~> write {ExifContent*} 0x6060000000 -> 0 at shared buffer 0x0000603000000351
+exif_tag_get_title(0xa {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0xa {ExifTag} [size: 0]) @ 0x000055555556346b
+~> change ret {ExifEntry*} from 0 to 0xffffffffffffd8f0
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0xa {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0xa {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0x2b00000606000 -> 0xc300 at shared buffer 0x0000603000000293
+~> write {ExifContent*} 0xc30000e0 -> 0xfffffffe5d000000 at shared buffer 0x0000603000000290
+~> write {ExifContent*} 0 -> 0x1000000 at shared buffer 0x000060300000028b
+~> change ret {ExifEntry*} from 0 to 0xffffffffffffff9c
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0xa {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0x60600000 -> 0x7fffffff000000 at shared buffer 0x00006030000002f2
+~> write {ExifContent*} 0x31000007f -> 0x60000 at shared buffer 0x00006030000002f5
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0xa {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_tag_get_title(0xb {ExifTag} [size: 0]) @ 0x00005555555632d8
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0xb {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0x60000000e0000000 -> 0x156 at shared buffer 0x00006030000001cd
+~> write {ExifContent*} 0x1 -> 0x3000000000000 at shared buffer 0x00006030000001d9
+~> write {ExifContent*} 0x3f00000 -> 0 at shared buffer 0x00006030000001d6
+~> change ret {ExifEntry*} from 0 to 0x2e
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0xb {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0 -> 0x62000000000000 at shared buffer 0x0000603000000232
+~> write {ExifContent*} 0x400 -> 0x1de0000000000 at shared buffer 0x0000603000000227
+~> change ret {ExifEntry*} from 0 to 0x10
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0xb {ExifTag} [size: 0]) @ 0x000055555556346b

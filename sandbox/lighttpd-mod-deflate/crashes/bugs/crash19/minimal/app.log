@@ -1,0 +1,14 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==8987==ERROR: AddressSanitizer: SEGV on unknown address 0x00009fff8088 (pc 0x555555593820 bp 0x7fffffffe8e0 sp 0x7fffffffe8c0 T0)
+==8987==The signal is caused by a READ memory access.
+    #0 0x555555593820 in connections_pool_clear /root/lighttpd-1.4.67/src/connections.c:539
+    #1 0x5555555938ce in connections_free /root/lighttpd-1.4.67/src/connections.c:545
+    #2 0x55555558a64d in main /root/lighttpd-1.4.67/src/server.c:2117
+    #3 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/connections.c:539 in connections_pool_clear
+==8987==ABORTING

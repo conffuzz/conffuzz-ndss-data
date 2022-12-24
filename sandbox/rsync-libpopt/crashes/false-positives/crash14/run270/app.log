@@ -1,0 +1,16 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==15445==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe21b0299 bp 0x7fffffffd420 sp 0x7fffffffd3f0 T0)
+==15445==The signal is caused by a READ memory access.
+==15445==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe21b0299 in longOptionStrcmp /root/popt-popt-1.19-release/src/popt.c:312
+    #1 0x7fffe21b0f08 in findOption /root/popt-popt-1.19-release/src/popt.c:596
+    #2 0x7fffe21b2e94 in poptGetNextOpt /root/popt-popt-1.19-release/src/popt.c:1319
+    #3 0x555555612445 in parse_arguments /root/rsync-3.2.7/options.c:1381
+    #4 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #5 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #6 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/popt-popt-1.19-release/src/popt.c:312 in longOptionStrcmp
+==15445==ABORTING

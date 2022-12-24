@@ -1,0 +1,57 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+curl_global_init(0x3 {longint} [size: 0]) @ 0x00005555556207c2
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555addfe0 {char*} [size: 0x1]) @ 0x00005555556208bd
+~> change ret {curl_slist*} from 0x60300002af48 to 0x60300002b022
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ade020 {char*} [size: 0x1]) @ 0x00005555556208de
+~> change ret {curl_slist*} from 0x60300002afa8 to 0x60300002afe1
+curl_multi_init() @ 0x000055555562091f
+~> change ret {Curl_multi*} from 0x614000000048 to 0x7ffffffde190
+curl_easy_init() @ 0x000055555561f01e
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x40 {CURLoption} [size: 0]) @ 0x000055555561f0d5
+~> write {CURL*} 0 -> 0xff000000 at shared buffer 0x0000622000001cea
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000002738
+~> write {CURL*} 0 -> 0x12 at shared buffer 0x0000622000001fd6
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x51 {CURLoption} [size: 0]) @ 0x000055555561f100
+~> change ret {CURLcode} from 0 to 0xdc
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x33 {CURLoption} [size: 0]) @ 0x000055555561f1ad
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001a55
+~> write {CURL*} 0 -> 0x2b4 at shared buffer 0x0000622000001e1e
+~> change ret {CURLcode} from 0 to 0x6
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6b {CURLoption} [size: 0]) @ 0x000055555561f1da
+~> write {CURL*} 0 -> 0xfffffffffc180000 at shared buffer 0x0000622000002734
+~> change ret {CURLcode} from 0 to 0x2e9
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x44 {CURLoption} [size: 0]) @ 0x000055555561f8b5
+~> write {CURL*} 0 -> 0xfffce80000000000 at shared buffer 0x0000622000002a23
+~> write {CURL*} 0 -> 0xffffffffffffff95 at shared buffer 0x00006220000026a8
+~> change ret {CURLcode} from 0 to 0xffffffffffff8000
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xa1 {CURLoption} [size: 0]) @ 0x000055555561f8e0
+~> write {CURL*} 0 -> 0 at shared buffer 0x000062200000297e
+~> write {CURL*} 0 -> 0 at shared buffer 0x00006220000022bb
+~> change ret {CURLcode} from 0 to 0x169
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb6 {CURLoption} [size: 0]) @ 0x000055555561f913
+~> write {CURL*} 0 -> 0xfffffffffffffffb at shared buffer 0x0000622000001cfd
+~> write {CURL*} 0 -> 0x33f000000 at shared buffer 0x0000622000002568
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb5 {CURLoption} [size: 0]) @ 0x000055555561f946
+~> write {CURL*} 0 -> 0xffff800000000000 at shared buffer 0x00006220000022b1
+~> write {CURL*} 0 -> 0x8000000000000000 at shared buffer 0x000062200000284a
+~> change ret {CURLcode} from 0 to 0xffffffffffffff1e
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x2722 {CURLoption} [size: 0]) @ 0x000055555561f9ef
+~> write {CURL*} 0 -> 0x560000 at shared buffer 0x0000622000002385
+~> write {CURL*} 0 -> 0x1f8000000000000 at shared buffer 0x000062200000224b
+~> write {CURL*} 0 -> 0xfe00000000000000 at shared buffer 0x0000622000002128
+~> change ret {CURLcode} from 0 to 0xbb8
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6f {CURLoption} [size: 0]) @ 0x000055555561d919
+~> change ret {CURLcode} from 0 to 0xffffffffffffff9c
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xd5 {CURLoption} [size: 0]) @ 0x000055555561da8e
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ae1520 {char*} [size: 0x1]) @ 0x0000555555633765
+~> failure to write 0x1 bytes at address 0x0000555555ae1520
+curl_slist_append(0x60300002b278 {curl_slist*} [size: 0x10], 0x555555ae0d60 {char*} [size: 0x1]) @ 0x0000555555633785
+~> failure to write 0x1 bytes at address 0x0000555555ae0d60
+~> write {curl_slist*} 0x6030000043 -> 0 at shared buffer 0x000060300002b27b
+~> write {curl_slist*} 0 -> 0 at shared buffer 0x000060300002b278
+~> write {curl_slist*} 0x30000200000048 -> 0 at shared buffer 0x000060300002b280
+~> change ret {curl_slist*} from 0x60300002b278 to 0x7ffffffde190
+curl_easy_duphandle(0x622000001908 {Curl_easy*} [size: 0x1500]) @ 0x0000555555621273

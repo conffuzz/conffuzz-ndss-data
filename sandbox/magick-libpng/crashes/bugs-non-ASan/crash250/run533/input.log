@@ -1,0 +1,34 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct_2(0x7fffd47fefe6 {png_const_charp} [size: 0], 0 {png_voidp} [size: 0], 0 {png_error_ptr} [size: 0], 0 {png_error_ptr} [size: 0], 0x61b0000069e8 {png_voidp} [size: 0], 0x7fffd36f2b0b {png_malloc_ptr} [size: 0], 0x7fffd36f2b9a {png_free_ptr} [size: 0]) @ 0x00007fffd36f2d50
+~> instrumenting 0x00007fffd36f2b0b (gdevpng_malloc, 0x2 arg(s))
+~> instrumenting 0x00007fffd36f2b9a (gdevpng_free, 0x2 arg(s))
+png_get_mem_ptr(0x7ffffffea030 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+png_create_info_struct(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2d6a
+~> detected cb call gdevpng_malloc(0x62a0006bb3e0 {png_structp} [size: 0], 0x168 {png_size_t} [size: 0]) @ 0x00007fffd328d1f2
+png_get_mem_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+png_set_longjmp_fn(0x62a0006bb3e0 {png_structrp} [size: 0], 0x7fffe28c4490 {png_longjmp_ptr} [size: 0], 0xc8 {size_t} [size: 0]) @ 0x00007fffd36f2eb4
+~> instrumenting 0x00007fffe28c4490 (longjmp, 0x2 arg(s))
+png_set_write_fn(0x62a0006bb3e0 {png_structrp} [size: 0], 0x6110000480f0 {png_voidp} [size: 0], 0x7fffd36f2c0d {png_rw_ptr} [size: 0], 0x7fffd36f2c51 {png_flush_ptr} [size: 0]) @ 0x00007fffd36f2f24
+~> instrumenting 0x00007fffd36f2c0d (my_png_write, 0x3 arg(s))
+~> instrumenting 0x00007fffd36f2c51 (my_png_flush, 0x1 arg(s))
+png_set_pHYs(0x62a0006bb3e0 {png_const_structrp} [size: 0], 0x62a0006bb8f0 {png_inforp} [size: 0], 0xb13 {png_uint_32} [size: 0], 0xb13 {png_uint_32} [size: 0], 0x1 {int} [size: 0]) @ 0x00007fffd36f3525
+png_set_IHDR(0x62a0006bb3e0 {png_const_structrp} [size: 0], 0x62a0006bb8f0 {png_inforp} [size: 0], 0x264 {png_uint_32} [size: 0], 0x318 {png_uint_32} [size: 0], 0x8 {int} [size: 0], 0x6 {int} [size: 0], 0 {int} [size: 0], 0 {int} [size: 0], 0 {int} [size: 0]) @ 0x00007fffd36f3566
+png_set_text(0x62a0006bb3e0 {png_const_structrp} [size: 0], 0x62a0006bb8f0 {png_inforp} [size: 0], 0x7ffffffea680 {png_const_textp} [size: 0], 0x1 {int} [size: 0]) @ 0x00007fffd36f35ba
+~> detected cb call gdevpng_malloc(0x62a0006bb3e0 {png_structp} [size: 0], 0x1c0 {png_size_t} [size: 0]) @ 0x00007fffd328d1f2
+png_get_mem_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+~> detected cb call gdevpng_malloc(0x62a0006bb3e0 {png_structp} [size: 0], 0x22 {png_size_t} [size: 0]) @ 0x00007fffd328d1f2
+png_get_mem_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+png_set_iCCP(0x62a0006bb3e0 {png_const_structrp} [size: 0], 0x62a0006bb8f0 {png_inforp} [size: 0], 0x6060000089f0 {png_const_charp} [size: 0], 0 {int} [size: 0], 0x61e0000054b0 {png_const_bytep} [size: 0], 0xa10 {png_uint_32} [size: 0]) @ 0x00007fffd36f36a5
+png_get_mem_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+png_get_mem_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2b2b
+png_set_invert_alpha(0x62a0006bb3e0 {png_structrp} [size: 0]) @ 0x00007fffd36f36c6
+png_set_bKGD(0x62a0006bb3e0 {png_const_structrp} [size: 0], 0x62a0006bb8f0 {png_inforp} [size: 0], 0x7ffffffea676 {png_const_color_16p} [size: 0]) @ 0x00007fffd36f3700
+png_write_info(0x62a0006bb3e0 {png_structrp} [size: 0], 0x62a0006bb8f0 {png_const_inforp} [size: 0]) @ 0x00007fffd36f3731
+png_get_io_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2c31
+png_get_io_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2c31
+png_get_io_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2c31
+png_get_io_ptr(0x62a0006bb3e0 {png_const_structrp} [size: 0]) @ 0x00007fffd36f2c31
+~> change ret {png_voidp} from 0x6110000480f0 to 0x611000047eaa

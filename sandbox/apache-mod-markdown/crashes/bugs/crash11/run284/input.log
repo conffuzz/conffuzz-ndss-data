@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd5eef0a0 {request_rec*} [size: 0x2e0], 0x7fffd2b99698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8fa97
+~> write {request_rec*} 0xd5ef0620000000 -> 0x1da00 at shared buffer 0x00007fffd5eef2a5
+~> write {request_rec*} 0x6a800007fffd2 -> 0 at shared buffer 0x00007fffd5eef24b
+~> change ret {int} from 0 to 0x2710
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd17800a0 {request_rec*} [size: 0x2e0], 0x7fffd164d698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8fa97
+~> write {MMIOT*} 0 -> 0xffffffffff000000 at shared buffer 0x000060d000006921
+~> write {MMIOT*} 0 -> 0x3b at shared buffer 0x000060d000006961
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd164d698
+~> write {request_rec*} 0 -> 0 at shared buffer 0x00007fffd17802b9
+~> write {request_rec*} 0 -> 0xfffffff600000000 at shared buffer 0x00007fffd1780147
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd10d40a0 {request_rec*} [size: 0x2e0], 0x7fffd106c698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8fa97
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d0000069ef
+~> write {MMIOT*} 0 -> 0xfffffffffffffb00 at shared buffer 0x000060d000006a00
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd106c698
+~> write {request_rec*} 0xf000 -> 0xfc5b000000000000 at shared buffer 0x00007fffd10d410f
+~> write {request_rec*} 0 -> 0xfffffffffffd3000 at shared buffer 0x00007fffd10d42e1
+~> write {request_rec*} 0 -> 0x64000000 at shared buffer 0x00007fffd10d41d9

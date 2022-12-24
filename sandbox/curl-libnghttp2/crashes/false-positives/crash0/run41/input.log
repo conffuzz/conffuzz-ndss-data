@@ -1,0 +1,12 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+nghttp2_version(0 [size: 0]) @ 0x00007fffe22104f9
+~> change ret from 0x7fffe18e9190 to 0x555555584000
+nghttp2_session_callbacks_new(0x7fffffffde20 [size: 0x8]) @ 0x00007fffe214f16b
+~> write 0x610000002640 -> 0 at shared buffer 0x00007fffffffde20
+~> write 0x610000000000 -> 0 at shared buffer 0x00007fffffffde22
+~> write 0 -> 0xffffffff8000 at shared buffer 0x00007fffffffde21
+nghttp2_session_callbacks_set_send_callback(0xffffffff800000 [size: 0xb8], 0x7fffe214af05 [size: 0]) @ 0x00007fffe214f1d9
+~> instrumenting 0x00007fffe214af05 (send_callback, 0x5 arg(s))

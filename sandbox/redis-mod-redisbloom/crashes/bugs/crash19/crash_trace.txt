@@ -1,0 +1,13 @@
+    #0 0xaddr in tcache_dalloc_large include/jemalloc/internal/tcache_inlines.h:203
+    #1 0xaddr in arena_dalloc include/jemalloc/internal/arena_inlines_b.h:232
+    #2 0xaddr in idalloctm include/jemalloc/internal/jemalloc_internal_inlines_c.h:118
+    #3 0xaddr in ifree src/jemalloc.c:2222
+    #4 0xaddr in je_free src/jemalloc.c:2393
+    #5 0xaddr in zfree /root/redis-6.2.6/src/zmalloc.c:292
+    #6 0xaddr in poolAllocRelease /root/redis-6.2.6/src/module.c:473
+    #7 0xaddr in moduleFreeContext /root/redis-6.2.6/src/module.c:671
+    #8 0xaddr in moduleLoad /root/redis-6.2.6/src/module.c:8595
+    #9 0xaddr in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #10 0xaddr in main /root/redis-6.2.6/src/server.c:6359
+    #11 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in _start (/root/redis-6.2.6/src/redis-server+0xaddr)

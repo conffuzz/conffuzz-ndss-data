@@ -1,0 +1,19 @@
+    #0 0xaddr in QVariant::~QVariant() (/usr/lib/x86_64-linux-gnu/libQt5Core.so.5+0xaddr)
+    #1 0xaddr in QList<QVariant>::node_destruct(QList<QVariant>::Node*, QList<QVariant>::Node*) /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:524
+    #2 0xaddr in QList<QVariant>::dealloc(QListData::Data*) /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:921
+    #3 0xaddr in QList<QVariant>::~QList() /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:874
+    #4 0xaddr in Okular::DocumentPrivate::loadGeneratorLibrary(KPluginMetaData const&) /usr/include/KF5/KCoreAddons/kpluginfactory.h:399
+    #5 0xaddr in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:865
+    #6 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #7 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #8 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #9 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #10 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #11 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #12 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #13 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #14 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #15 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #16 0xaddr in main /root/okular/shell/main.cpp:91
+    #17 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #18 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

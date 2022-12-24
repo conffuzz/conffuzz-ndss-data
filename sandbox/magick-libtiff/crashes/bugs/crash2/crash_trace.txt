@@ -1,0 +1,12 @@
+    #0 0xaddr in RegisterTIFFImage coders/tiff.c:2364
+    #1 0xaddr in OpenModule MagickCore/module.c:1326
+    #2 0xaddr in GetMagickInfo MagickCore/magick.c:638
+    #3 0xaddr in SetImageInfoFromExtension MagickCore/image.c:2758
+    #4 0xaddr in SetImageInfo MagickCore/image.c:2879
+    #5 0xaddr in WriteImages MagickCore/constitute.c:1518
+    #6 0xaddr in ConvertImageCommand MagickWand/convert.c:3330
+    #7 0xaddr in MagickCommandGenesis MagickWand/mogrify.c:188
+    #8 0xaddr in MagickMain utilities/magick.c:150
+    #9 0xaddr in main utilities/magick.c:182
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/usr/local/bin/magick+0xaddr)

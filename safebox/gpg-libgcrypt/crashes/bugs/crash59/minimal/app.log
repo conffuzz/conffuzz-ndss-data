@@ -1,0 +1,27 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==47836==ERROR: AddressSanitizer: requested allocation size 0xfffffffffffffffa (0x800 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffe19d8e8f in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe15abad6 in _gcry_private_malloc /root/libgcrypt-1.9.2/src/stdmem.c:113
+    #2 0x7fffe15a5627 in do_malloc /root/libgcrypt-1.9.2/src/global.c:943
+    #3 0x7fffe15a5693 in _gcry_malloc /root/libgcrypt-1.9.2/src/global.c:965
+    #4 0x7fffe15a5772 in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1019
+    #5 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #6 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #7 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #8 0x7fffe15291c5 in _gpgrt_calloc /root/libgpg-error-1.41/src/init.c:335
+    #9 0x7fffe153b1fe in initialize /root/libgpg-error-1.41/src/argparse.c:387
+    #10 0x7fffe153e7fe in arg_parse /root/libgpg-error-1.41/src/argparse.c:1948
+    #11 0x7fffe153c847 in _gpgrt_argparse /root/libgpg-error-1.41/src/argparse.c:998
+    #12 0x7fffe1536739 in gpgrt_argparse /root/libgpg-error-1.41/src/visibility.c:1157
+    #13 0x5555555cc551 in main /root/gnupg-2.2.27/g10/gpg.c:2384
+    #14 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==47836==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145 in __interceptor_malloc
+==47836==ABORTING

@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+magic_version() @ 0x0000555555559ef9
+magic_open(0 {int} [size: 0]) @ 0x000055555555a7b2
+magic_load(0x612000000040 {magic_set*} [size: 0x128], 0 {char*} [size: 0x1]) @ 0x000055555555a7ee
+magic_error(0x612000000040 {magic_set*} [size: 0x128]) @ 0x000055555555a835
+~> change ret {char*} from 0 to 0xffffffffffffffb2

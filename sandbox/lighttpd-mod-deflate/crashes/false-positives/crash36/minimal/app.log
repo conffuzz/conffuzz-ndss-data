@@ -1,0 +1,76 @@
+=================================================================
+==27804==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000000f10 at pc 0x7fffdbf70262 bp 0x7fffffffe5a0 sp 0x7fffffffe590
+READ of size 8 at 0x603000000f10 thread T0
+    #0 0x7fffdbf70261 in mod_deflate_cleanup /root/lighttpd-1.4.67/src/mod_deflate.c:2173
+    #1 0x5555555ac928 in plugins_call_fn_req_data /root/lighttpd-1.4.67/src/plugin.c:288
+    #2 0x5555555ace32 in plugins_call_handle_request_reset /root/lighttpd-1.4.67/src/plugin.c:344
+    #3 0x5555555aafc6 in request_reset /root/lighttpd-1.4.67/src/reqpool.c:85
+    #4 0x555555591ae5 in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:204
+    #5 0x555555596a53 in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #6 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #7 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #8 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #9 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #10 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #11 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #12 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #13 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #14 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #15 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x603000000f10 is located 1696 bytes to the right of 32-byte region [0x603000000850,0x603000000870)
+allocated by thread T0 here:
+    #0 0x7fffe234b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x55555562fddd in splaytree_insert /root/lighttpd-1.4.67/src/algo_splaytree.c:120
+    #2 0x555555623baf in stat_cache_get_entry /root/lighttpd-1.4.67/src/stat_cache.c:1345
+    #3 0x5555556242c5 in stat_cache_path_stat /root/lighttpd-1.4.67/src/stat_cache.c:1401
+    #4 0x7fffdc2c6c6c in mod_indexfile_tryfiles /root/lighttpd-1.4.67/src/mod_indexfile.c:95
+    #5 0x7fffdc2c72b1 in mod_indexfile_subrequest /root/lighttpd-1.4.67/src/mod_indexfile.c:157
+    #6 0x5555555ac928 in plugins_call_fn_req_data /root/lighttpd-1.4.67/src/plugin.c:288
+    #7 0x5555555acdc9 in plugins_call_handle_subrequest_start /root/lighttpd-1.4.67/src/plugin.c:341
+    #8 0x55555558ddf5 in http_response_prepare /root/lighttpd-1.4.67/src/response.c:549
+    #9 0x55555559004f in http_response_handler /root/lighttpd-1.4.67/src/response.c:980
+    #10 0x55555559691d in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1007
+    #11 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #12 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #13 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #14 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #15 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #16 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #17 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #18 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/mod_deflate.c:2173 in mod_deflate_cleanup
+Shadow bytes around the buggy address:
+  0x0c067fff8190: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff81a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff81b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff81c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff81d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c067fff81e0: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff81f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8200: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8210: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8220: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8230: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==27804==ABORTING

@@ -1,0 +1,18 @@
+    #0 0xaddr in xmlListClear /root/libxml2-2.10.3/list.c:428
+    #1 0xaddr in xmlListDelete /root/libxml2-2.10.3/list.c:338
+    #2 0xaddr in xmlFreeTextWriter /root/libxml2-2.10.3/xmlwriter.c:486
+    #3 0xaddr in generatexml /root/bind-9.18.8/bin/named/statschannel.c:2354
+    #4 0xaddr in render_xml /root/bind-9.18.8/bin/named/statschannel.c:2384
+    #5 0xaddr in render_xml_all /root/bind-9.18.8/bin/named/statschannel.c:2409
+    #6 0xaddr in httpd_request /root/bind-9.18.8/lib/isc/httpd.c:959
+    #7 0xaddr in isc__nm_async_readcb netmgr/netmgr.c:2812
+    #8 0xaddr in isc__nm_readcb netmgr/netmgr.c:2785
+    #9 0xaddr in isc__nm_tcp_read_cb netmgr/tcp.c:901
+    #10 0xaddr  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0xaddr)
+    #11 0xaddr  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0xaddr)
+    #12 0xaddr  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0xaddr)
+    #13 0xaddr in uv_run (/usr/lib/x86_64-linux-gnu/libuv.so.1+0xaddr)
+    #14 0xaddr in nm_thread netmgr/netmgr.c:698
+    #15 0xaddr in isc__trampoline_run /root/bind-9.18.8/lib/isc/trampoline.c:189
+    #16 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #17 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

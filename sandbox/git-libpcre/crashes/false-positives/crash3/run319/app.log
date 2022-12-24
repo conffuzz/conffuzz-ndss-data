@@ -1,0 +1,26 @@
+[I] Attempting to instrument callback pcre2_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback pcre2_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==12488==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000091 (pc 0x7fffde5dad35 bp 0x7fffffffc260 sp 0x7fffffffc250 T0)
+==12488==The signal is caused by a READ memory access.
+==12488==Hint: address points to the zero page.
+    #0 0x7fffde5dad35 in pcre2_match_data_create_from_pattern_8 src/pcre2_match_data.c:83
+    #1 0x555555b5e3ca in compile_pcre2_pattern /root/git-2.35.1/grep.c:400
+    #2 0x555555b5f4b0 in compile_regexp /root/git-2.35.1/grep.c:547
+    #3 0x555555b60e9d in compile_grep_patterns /root/git-2.35.1/grep.c:800
+    #4 0x555555815700 in start_threads builtin/grep.c:235
+    #5 0x5555558203a2 in cmd_grep builtin/grep.c:1133
+    #6 0x55555571ea06 in run_builtin /root/git-2.35.1/git.c:464
+    #7 0x55555571f442 in handle_builtin /root/git-2.35.1/git.c:716
+    #8 0x5555557206ee in cmd_main /root/git-2.35.1/git.c:884
+    #9 0x5555559a3836 in main /root/git-2.35.1/common-main.c:56
+    #10 0x7fffde32bd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #11 0x7fffde32be3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #12 0x55555571a324 in _start (/root/git-2.35.1/git-grep+0x1c6324)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/pcre2_match_data.c:83 in pcre2_match_data_create_from_pattern_8
+==12488==ABORTING

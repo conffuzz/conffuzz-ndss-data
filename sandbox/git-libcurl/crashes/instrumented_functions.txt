@@ -1,0 +1,105 @@
+curl_mime_type curl_mime_type 2 CURLcode curl_mimepart* char*
+curl_dbg_memlimit curl_dbg_memlimit 1 unknown_or_void longint
+curl_url curl_url 0 CURLU*
+curl_share_cleanup curl_share_cleanup 1 CURLSHcode Curl_share*
+curl_multi_socket_all curl_multi_socket_all 2 CURLMcode Curl_multi* int*
+curl_mvsprintf curl_mvsprintf 3 int char* char* __va_list_tag*
+curl_multi_poll curl_multi_poll 5 CURLMcode CURLM* curl_waitfd* unsignedint int int*
+curl_mvfprintf curl_mvfprintf 3 int FILE* char* __va_list_tag*
+curl_easy_reset curl_easy_reset 1 unknown_or_void Curl_easy*
+curl_easy_init curl_easy_init 0 CURL*
+curl_dbg_accept curl_dbg_accept 5 curl_socket_t curl_socket_t * * int char*
+curl_mime_addpart curl_mime_addpart 1 curl_mimepart* curl_mime*
+curl_unescape curl_unescape 2 char* char* int
+curl_msprintf curl_msprintf 2 int char* char*
+curl_mime_data curl_mime_data 3 CURLcode curl_mimepart* char* size_t
+curl_getdate curl_getdate 2 time_t char* time_t*
+curl_easy_duphandle curl_easy_duphandle 1 Curl_easy* Curl_easy*
+curl_mime_filedata curl_mime_filedata 2 CURLcode curl_mimepart* char*
+curl_share_strerror curl_share_strerror 1 char* CURLSHcode
+curl_mime_headers curl_mime_headers 3 CURLcode curl_mimepart* curl_slist* int
+curl_dbg_free curl_dbg_free 3 unknown_or_void * int char*
+curl_dbg_realloc curl_dbg_realloc 4 * * size_t int char*
+curl_strequal curl_strequal 2 int char* char*
+curl_easy_pause curl_easy_pause 2 CURLcode Curl_easy* int
+curl_global_cleanup curl_global_cleanup 0 unknown_or_void
+curl_dbg_mark_sclose curl_dbg_mark_sclose 3 unknown_or_void curl_socket_t int char*
+curl_multi_wait curl_multi_wait 5 CURLMcode Curl_multi* curl_waitfd* unsignedint int int*
+curl_free curl_free 1 unknown_or_void *
+curl_maprintf curl_maprintf 1 char* char*
+curl_easy_perform curl_easy_perform 1 CURLcode Curl_easy*
+curl_strnequal curl_strnequal 3 int char* char* size_t
+curl_multi_perform curl_multi_perform 2 CURLMcode CURLM* int*
+curl_url_strerror curl_url_strerror 1 char* CURLUcode
+curl_easy_recv curl_easy_recv 4 CURLcode Curl_easy* * size_t size_t*
+curl_easy_option_by_name curl_easy_option_by_name 1 curl_easyoption* char*
+curl_multi_timeout curl_multi_timeout 2 CURLMcode Curl_multi* longint*
+curl_easy_perform_ev curl_easy_perform_ev 1 CURLcode Curl_easy*
+curl_mime_subparts curl_mime_subparts 2 CURLcode curl_mimepart* curl_mime*
+curl_easy_option_by_id curl_easy_option_by_id 1 curl_easyoption* CURLoption
+curl_easy_send curl_easy_send 4 CURLcode Curl_easy* * size_t size_t*
+curl_version curl_version 0 char*
+curl_mvprintf curl_mvprintf 2 int char* __va_list_tag*
+curl_easy_strerror curl_easy_strerror 1 char* CURLcode
+curl_dbg_socket curl_dbg_socket 5 curl_socket_t int int int int char*
+curl_dbg_malloc curl_dbg_malloc 3 * size_t int char*
+curl_dbg_sclose curl_dbg_sclose 3 int curl_socket_t int char*
+curl_easy_option_next curl_easy_option_next 1 curl_easyoption* curl_easyoption*
+curl_share_init curl_share_init 0 Curl_share*
+curl_dbg_strdup curl_dbg_strdup 3 char* char* int char*
+curl_multi_fdset curl_multi_fdset 5 CURLMcode Curl_multi* fd_set* fd_set* fd_set* int*
+curl_multi_init curl_multi_init 0 Curl_multi*
+curl_multi_wakeup curl_multi_wakeup 1 CURLMcode Curl_multi*
+curl_pushheader_byname curl_pushheader_byname 2 char* curl_pushheaders* char*
+curl_mfprintf curl_mfprintf 2 int FILE* char*
+curl_url_dup curl_url_dup 1 CURLU* CURLU*
+curl_url_set curl_url_set 4 CURLUcode CURLU* CURLUPart char* unsignedint
+curl_dbg_socketpair curl_dbg_socketpair 6 int int int int curl_socket_t* int char*
+curl_version_info curl_version_info 1 curl_version_info_data* CURLversion
+curl_dbg_recv curl_dbg_recv 6 ssize_t int * size_t int int char*
+curl_dbg_send curl_dbg_send 6 ssize_t int * size_t int int char*
+curl_dbg_memdebug curl_dbg_memdebug 1 unknown_or_void char*
+curl_pushheader_bynum curl_pushheader_bynum 2 char* curl_pushheaders* size_t
+curl_mime_name curl_mime_name 2 CURLcode curl_mimepart* char*
+curl_easy_getinfo curl_easy_getinfo 2 CURLcode Curl_easy* CURLINFO
+curl_global_sslset curl_global_sslset 3 CURLsslset curl_sslbackend char* curl_ssl_backend***
+curl_slist_append curl_slist_append 2 curl_slist* curl_slist* char*
+curl_multi_remove_handle curl_multi_remove_handle 2 CURLMcode CURLM* CURL*
+curl_mime_filename curl_mime_filename 2 CURLcode curl_mimepart* char*
+curl_slist_free_all curl_slist_free_all 1 unknown_or_void curl_slist*
+curl_easy_unescape curl_easy_unescape 4 char* Curl_easy* char* int int*
+curl_mprintf curl_mprintf 1 int char*
+curl_easy_upkeep curl_easy_upkeep 1 CURLcode Curl_easy*
+curl_url_cleanup curl_url_cleanup 1 unknown_or_void CURLU*
+curl_dbg_log curl_dbg_log 1 unknown_or_void char*
+curl_escape curl_escape 2 char* char* int
+curl_formfree curl_formfree 1 unknown_or_void curl_httppost*
+curl_formget curl_formget 3 int curl_httppost* * curl_formget_callback
+curl_multi_setopt curl_multi_setopt 2 CURLMcode CURLM* CURLMoption
+curl_multi_assign curl_multi_assign 3 CURLMcode Curl_multi* curl_socket_t *
+curl_multi_socket curl_multi_socket 3 CURLMcode Curl_multi* curl_socket_t int*
+curl_url_get curl_url_get 4 CURLUcode CURLU* CURLUPart char** unsignedint
+curl_msnprintf curl_msnprintf 3 int char* size_t char*
+curl_mime_encoder curl_mime_encoder 2 CURLcode curl_mimepart* char*
+curl_dbg_fopen curl_dbg_fopen 4 FILE* char* char* int char*
+curl_getenv curl_getenv 1 char* char*
+curl_dbg_calloc curl_dbg_calloc 4 * size_t size_t int char*
+curl_dbg_fdopen curl_dbg_fdopen 4 FILE* int char* int char*
+curl_dbg_fclose curl_dbg_fclose 3 int FILE* int char*
+curl_mime_free curl_mime_free 1 unknown_or_void curl_mime*
+curl_formadd curl_formadd 2 CURLFORMcode curl_httppost** curl_httppost**
+curl_multi_socket_action curl_multi_socket_action 4 CURLMcode CURLM* curl_socket_t int int*
+curl_mime_data_cb curl_mime_data_cb 6 CURLcode curl_mimepart* curl_off_t curl_read_callback curl_seek_callback curl_free_callback *
+curl_multi_add_handle curl_multi_add_handle 2 CURLMcode CURLM* CURL*
+curl_easy_cleanup curl_easy_cleanup 1 unknown_or_void Curl_easy*
+curl_multi_cleanup curl_multi_cleanup 1 CURLMcode CURLM*
+curl_easy_setopt curl_easy_setopt 2 CURLcode CURL* CURLoption
+curl_multi_strerror curl_multi_strerror 1 char* CURLMcode
+curl_share_setopt curl_share_setopt 2 CURLSHcode Curl_share* CURLSHoption
+curl_mvaprintf curl_mvaprintf 2 char* char* __va_list_tag*
+curl_multi_info_read curl_multi_info_read 2 CURLMsg* CURLM* int*
+curl_global_init curl_global_init 1 CURLcode longint
+curl_mime_init curl_mime_init 1 curl_mime* CURL*
+curl_global_init_mem curl_global_init_mem 6 CURLcode longint curl_malloc_callback curl_free_callback curl_realloc_callback curl_strdup_callback curl_calloc_callback
+curl_mvsnprintf curl_mvsnprintf 4 int char* size_t char* __va_list_tag*
+curl_easy_escape curl_easy_escape 3 char* Curl_easy* char* int

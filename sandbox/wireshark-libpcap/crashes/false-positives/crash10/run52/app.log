@@ -1,0 +1,37 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+dumpcap: ÿ.
+=================================================================
+==21783==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x602000000697 in thread T0
+    #0 0x7fffe27254d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe258edfd in pcap_freecode gencode.c:904
+    #2 0x55555556c8d5 in capture_loop_init_filter /root/wireshark-3.4.12/dumpcap.c:2915
+    #3 0x55555557114c in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3806
+    #4 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #5 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #6 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+0x602000000697 is located 7 bytes inside of 8-byte region [0x602000000690,0x602000000698)
+allocated by thread T0 here:
+    #0 0x7fffe27257cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe25a3542 in icode_to_fcode optimize.c:2894
+    #2 0x7fffe258eccc in pcap_compile gencode.c:847
+    #3 0x555555563aa8 in compile_capture_filter /root/wireshark-3.4.12/dumpcap.c:672
+    #4 0x55555556c894 in capture_loop_init_filter /root/wireshark-3.4.12/dumpcap.c:2902
+    #5 0x55555557114c in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3806
+    #6 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #7 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==21783==ABORTING

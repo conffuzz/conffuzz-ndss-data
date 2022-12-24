@@ -1,0 +1,3 @@
+fault_location /root/git-2.35.1/git-grep
+cap_corrupt_allocator
+cap_read_arbitrary

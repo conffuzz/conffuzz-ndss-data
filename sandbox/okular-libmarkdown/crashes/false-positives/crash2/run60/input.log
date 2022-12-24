@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_in(0x6150000a4b80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fff6f3a0ca5
+~> write {FILE*} 0xbe -> 0 at shared buffer 0x00006150000a4c50
+~> write {FILE*} 0xbebefbad -> 0xfffffeab00000000 at shared buffer 0x00006150000a4b82
+~> write {FILE*} 0x4725c000000000 -> 0xfffffffffffffc00 at shared buffer 0x00006150000a4be4
+~> change ret {Document*} from 0x60d000305b80 to 0x60d000305ee4
+mkd_compile(0x60d000305ee4 {Document*} [size: 0x88], 0xe005000 {mkd_flag_t} [size: 0]) @ 0x00007fff6f3a0d1c

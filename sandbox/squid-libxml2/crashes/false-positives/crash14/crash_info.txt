@@ -1,0 +1,3 @@
+fault_location /usr/local/lib/libxml2.so.2.10.3
+cap_read_arbitrary
+cap_read

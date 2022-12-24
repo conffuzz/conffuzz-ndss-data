@@ -1,0 +1,5 @@
+fault_location /usr/local/bin/exif
+cap_write
+cap_read_arbitrary
+cap_null_deref
+cap_read

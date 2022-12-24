@@ -1,0 +1,274 @@
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+=================================================================
+==160422==ERROR: AddressSanitizer: calloc parameters overflow: count * size (-9223372036854775808 * 8) cannot be represented in type size_t (thread T0)
+    #0 0x7fffe266f037 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x5555555ae6e9 in assoc_init /root/memcached-1.6.17/assoc.c:59
+    #2 0x55555558ffd2 in main /root/memcached-1.6.17/memcached.c:6045
+    #3 0x7fffe2275d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==160422==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: calloc-overflow ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154 in __interceptor_calloc
+==160422==ABORTING

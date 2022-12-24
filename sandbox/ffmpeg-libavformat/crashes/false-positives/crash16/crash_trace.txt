@@ -1,0 +1,6 @@
+    #0 0xaddr in av_dump_format libavformat/dump.c:629
+    #1 0xaddr in open_input_file fftools/ffprobe.c:3174
+    #2 0xaddr in probe_file fftools/ffprobe.c:3266
+    #3 0xaddr in main fftools/ffprobe.c:3993
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/ffmpeg-5.0/ffprobe+0xaddr)

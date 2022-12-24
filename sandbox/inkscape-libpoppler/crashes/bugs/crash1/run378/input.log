@@ -1,0 +1,12 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poppler_document_new_from_file(0x603000481c90 [size: 0x1], 0 [size: 0x1], 0x7fffffffe058 [size: 0x8]) @ 0x00007fffe16ad5f7
+~> write 0 -> 0x6210003c6600 at shared buffer 0x000061b00003b880
+~> write 0 -> 0x6210003c6606 at shared buffer 0x000061b00003b880
+~> write 0x6 -> 0x6210003c669c at shared buffer 0x000061b00003b880
+~> write 0x9c -> 0x6210003c6600 at shared buffer 0x000061b00003b880
+~> write 0 -> 0x6210003c6600 at shared buffer 0x00007fffffffe05b
+~> write 0 -> 0x7f at shared buffer 0x00007fffffffe059
+~> change ret from 0x61d000709b40 to 0x61d000709de7

@@ -1,0 +1,28 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==286674==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde190 in thread T0
+    #0 0x7fffe19d8b6f in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123
+    #1 0x7fffe15abe78 in _gcry_private_free /root/libgcrypt-1.9.2/src/stdmem.c:244
+    #2 0x7fffe15a5864 in _gcry_free /root/libgcrypt-1.9.2/src/global.c:1058
+    #3 0x7fffe15a5787 in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1022
+    #4 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #5 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #6 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #7 0x7fffe1529499 in _gpgrt_free /root/libgpg-error-1.41/src/init.c:410
+    #8 0x7fffe1529dec in mem_free /root/libgpg-error-1.41/src/estream.c:235
+    #9 0x7fffe152b0fe in func_file_create /root/libgpg-error-1.41/src/estream.c:1738
+    #10 0x7fffe152d370 in _gpgrt_fopen /root/libgpg-error-1.41/src/estream.c:3227
+    #11 0x7fffe153ddee in _gpgrt_argparser /root/libgpg-error-1.41/src/argparse.c:1690
+    #12 0x7fffe1536766 in gpgrt_argparser /root/libgpg-error-1.41/src/visibility.c:1163
+    #13 0x5555555d17d4 in main /root/gnupg-2.2.27/g10/gpg.c:2476
+    #14 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #15 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+Address 0x7ffffffde190 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123 in __interceptor_free
+==286674==ABORTING

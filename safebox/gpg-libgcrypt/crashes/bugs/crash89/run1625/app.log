@@ -1,0 +1,24 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==128866==ERROR: AddressSanitizer: requested allocation size 0xfffffffffffffdce (0x5d0 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffe19d91f8 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe15abd17 in _gcry_private_realloc /root/libgcrypt-1.9.2/src/stdmem.c:193
+    #2 0x7fffe15a57cd in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1029
+    #3 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #4 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #5 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #6 0x7fffe1529499 in _gpgrt_free /root/libgpg-error-1.41/src/init.c:410
+    #7 0x7fffe153ae46 in initialize /root/libgpg-error-1.41/src/argparse.c:306
+    #8 0x7fffe153d9b4 in _gpgrt_argparser /root/libgpg-error-1.41/src/argparse.c:1590
+    #9 0x7fffe1536766 in gpgrt_argparser /root/libgpg-error-1.41/src/visibility.c:1163
+    #10 0x5555555d17d4 in main /root/gnupg-2.2.27/g10/gpg.c:2476
+    #11 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==128866==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164 in __interceptor_realloc
+==128866==ABORTING

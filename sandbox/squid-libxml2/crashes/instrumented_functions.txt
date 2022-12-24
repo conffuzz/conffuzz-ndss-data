@@ -1,0 +1,1519 @@
+xmlSchemaGetCanonValueWhtsp xmlSchemaGetCanonValueWhtsp 3 int xmlSchemaValPtr xmlChar** xmlSchemaWhitespaceValueType
+htmlParseChunk htmlParseChunk 4 int htmlParserCtxtPtr char* int int
+xmlXPathFunctionLookupNS xmlXPathFunctionLookupNS 3 xmlXPathFunction xmlXPathContextPtr xmlChar* xmlChar*
+xmlUCSIsBuhid xmlUCSIsBuhid 1 int int
+xmlUCSIsHalfwidthandFullwidthForms xmlUCSIsHalfwidthandFullwidthForms 1 int int
+xmlSchemaValidCtxtGetOptions xmlSchemaValidCtxtGetOptions 1 int xmlSchemaValidCtxtPtr
+xmlCtxtGetLastError xmlCtxtGetLastError 1 xmlErrorPtr *
+xmlSchemaFreeValue xmlSchemaFreeValue 1 unknown_or_void xmlSchemaValPtr
+xmlSchemaCleanupTypes xmlSchemaCleanupTypes 0 unknown_or_void
+xmlXPathDifference xmlXPathDifference 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlTextReaderHasValue xmlTextReaderHasValue 1 int xmlTextReaderPtr
+xmlDOMWrapAdoptNode xmlDOMWrapAdoptNode 6 int xmlDOMWrapCtxtPtr xmlDocPtr xmlNodePtr xmlDocPtr xmlNodePtr int
+xmlTextWriterWriteVFormatAttributeNS xmlTextWriterWriteVFormatAttributeNS 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+htmlCtxtUseOptions htmlCtxtUseOptions 2 int htmlParserCtxtPtr int
+xmlFileMatch xmlFileMatch 1 int char*
+xmlParseEntityDecl xmlParseEntityDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlUCSIsCatPc xmlUCSIsCatPc 1 int int
+xmlUCSIsCatPd xmlUCSIsCatPd 1 int int
+xmlSAXParseMemoryWithData xmlSAXParseMemoryWithData 5 xmlDocPtr xmlSAXHandlerPtr char* int int *
+xmlParserInputBufferCreateStatic xmlParserInputBufferCreateStatic 3 xmlParserInputBufferPtr char* int xmlCharEncoding
+xmlUCSIsCatPe xmlUCSIsCatPe 1 int int
+xmlUCSIsCatPf xmlUCSIsCatPf 1 int int
+xmlTextWriterWriteDTD xmlTextWriterWriteDTD 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlAddNextSibling xmlAddNextSibling 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlNoNetExternalEntityLoader xmlNoNetExternalEntityLoader 3 xmlParserInputPtr char* char* xmlParserCtxtPtr
+xmlAutomataNewState xmlAutomataNewState 1 xmlAutomataStatePtr xmlAutomataPtr
+xmlListPushFront xmlListPushFront 2 int xmlListPtr *
+xmlSaveToIO xmlSaveToIO 5 xmlSaveCtxtPtr xmlOutputWriteCallback xmlOutputCloseCallback * char* int
+xmlUCSIsCatPi xmlUCSIsCatPi 1 int int
+xmlCleanupThreads xmlCleanupThreads 0 unknown_or_void
+xmlDebugCheckDocument xmlDebugCheckDocument 2 int FILE* xmlDocPtr
+xmlSaveFileEnc xmlSaveFileEnc 3 int char* xmlDocPtr char*
+xmlTextWriterWriteFormatString xmlTextWriterWriteFormatString 2 int xmlTextWriterPtr char*
+xmlParseDocument xmlParseDocument 1 int xmlParserCtxtPtr
+xmlAutomataSetFlags xmlAutomataSetFlags 2 unknown_or_void xmlAutomataPtr int
+xmlXPathRegisterAllFunctions xmlXPathRegisterAllFunctions 1 unknown_or_void xmlXPathContextPtr
+xmlCreateEntitiesTable xmlCreateEntitiesTable 0 xmlEntitiesTablePtr
+xmlParserHandlePEReference xmlParserHandlePEReference 1 unknown_or_void xmlParserCtxtPtr
+xmlUCSIsCatPo xmlUCSIsCatPo 1 int int
+xmlMemGet xmlMemGet 4 int xmlFreeFunc* xmlMallocFunc* xmlReallocFunc* xmlStrdupFunc*
+xmlValidateRoot xmlValidateRoot 2 int xmlValidCtxtPtr xmlDocPtr
+xmlEncodeAttributeEntities xmlEncodeAttributeEntities 2 xmlChar* xmlDocPtr xmlChar*
+xmlListReverseWalk xmlListReverseWalk 3 unknown_or_void xmlListPtr xmlListWalker *
+xmlCleanupMemory xmlCleanupMemory 0 unknown_or_void
+xmlParseChunk xmlParseChunk 4 int xmlParserCtxtPtr char* int int
+xmlTextWriterEndElement xmlTextWriterEndElement 1 int xmlTextWriterPtr
+xmlXPathStringLengthFunction xmlXPathStringLengthFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlUCSIsCatPs xmlUCSIsCatPs 1 int int
+xmlShellList xmlShellList 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlSchemaValidCtxtGetParserCtxt xmlSchemaValidCtxtGetParserCtxt 1 xmlParserCtxtPtr xmlSchemaValidCtxtPtr
+xmlOutputBufferCreateBuffer xmlOutputBufferCreateBuffer 2 xmlOutputBufferPtr xmlBufferPtr xmlCharEncodingHandlerPtr
+xmlXPathCountFunction xmlXPathCountFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlXPathNextAncestor xmlXPathNextAncestor 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+htmlCreateFileParserCtxt htmlCreateFileParserCtxt 2 htmlParserCtxtPtr char* char*
+xmlFileClose xmlFileClose 1 int *
+xmlTextReaderReadState xmlTextReaderReadState 1 int xmlTextReaderPtr
+xmlRemoveID xmlRemoveID 2 int xmlDocPtr xmlAttrPtr
+xmlCopyNamespaceList xmlCopyNamespaceList 1 xmlNsPtr xmlNsPtr
+xmlNewDocRawNode xmlNewDocRawNode 4 xmlNodePtr xmlDocPtr xmlNsPtr xmlChar* xmlChar*
+xmlNewNsProp xmlNewNsProp 4 xmlAttrPtr xmlNodePtr xmlNsPtr xmlChar* xmlChar*
+xmlUCSIsEnclosedCJKLettersandMonths xmlUCSIsEnclosedCJKLettersandMonths 1 int int
+xmlXPathRegisteredFuncsCleanup xmlXPathRegisteredFuncsCleanup 1 unknown_or_void xmlXPathContextPtr
+xmlBufEmpty xmlBufEmpty 1 unknown_or_void xmlBufPtr
+xmlTextReaderSetErrorHandler xmlTextReaderSetErrorHandler 3 unknown_or_void xmlTextReaderPtr xmlTextReaderErrorFunc *
+xmlIsCombining xmlIsCombining 1 int unsignedint
+xmlXPathNextChild xmlXPathNextChild 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlReaderNewMemory xmlReaderNewMemory 6 int xmlTextReaderPtr char* int char* char* int
+xmlBufUse xmlBufUse 1 size_t xmlBufPtr
+xmlReplaceNode xmlReplaceNode 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlDumpElementDecl xmlDumpElementDecl 2 unknown_or_void xmlBufferPtr xmlElementPtr
+xmlValidateDocumentFinal xmlValidateDocumentFinal 2 int xmlValidCtxtPtr xmlDocPtr
+xmlXPathBooleanFunction xmlXPathBooleanFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlSaveUri xmlSaveUri 1 xmlChar* xmlURIPtr
+xmlAutomataNewCounterTrans xmlAutomataNewCounterTrans 4 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr int
+xmlSchematronNewParserCtxt xmlSchematronNewParserCtxt 1 xmlSchematronParserCtxtPtr char*
+xmlTextReaderSetup xmlTextReaderSetup 5 int xmlTextReaderPtr xmlParserInputBufferPtr char* char* int
+xmlLoadSGMLSuperCatalog xmlLoadSGMLSuperCatalog 1 xmlCatalogPtr char*
+xmlOutputBufferGetSize xmlOutputBufferGetSize 1 size_t xmlOutputBufferPtr
+xmlTextReaderPreservePattern xmlTextReaderPreservePattern 3 int xmlTextReaderPtr xmlChar* xmlChar**
+xmlParseFile xmlParseFile 1 xmlDocPtr char*
+xmlFreePattern xmlFreePattern 1 unknown_or_void xmlPatternPtr
+xmlTextReaderNext xmlTextReaderNext 1 int xmlTextReaderPtr
+xmlSchemaGetValidErrors xmlSchemaGetValidErrors 4 int xmlSchemaValidCtxtPtr xmlSchemaValidityErrorFunc* xmlSchemaValidityWarningFunc* **
+xmlNewInputFromFile xmlNewInputFromFile 2 xmlParserInputPtr xmlParserCtxtPtr char*
+xmlTextReaderMoveToAttribute xmlTextReaderMoveToAttribute 2 int xmlTextReaderPtr xmlChar*
+xmlCharEncInFunc xmlCharEncInFunc 3 int xmlCharEncodingHandler* xmlBufferPtr xmlBufferPtr
+xmlXPathNextPreceding xmlXPathNextPreceding 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlXPathLastFunction xmlXPathLastFunction 2 unknown_or_void xmlXPathParserContextPtr int
+htmlCtxtReadFd htmlCtxtReadFd 5 htmlDocPtr htmlParserCtxtPtr int char* char* int
+xmlTextWriterEndCDATA xmlTextWriterEndCDATA 1 int xmlTextWriterPtr
+xmlSaveFormatFile xmlSaveFormatFile 3 int char* xmlDocPtr int
+xmlUCSIsAlphabeticPresentationForms xmlUCSIsAlphabeticPresentationForms 1 int int
+xmlFreeStreamCtxt xmlFreeStreamCtxt 1 unknown_or_void xmlStreamCtxtPtr
+xmlXPathRegisterNs xmlXPathRegisterNs 3 int xmlXPathContextPtr xmlChar* xmlChar*
+xmlHashCopy xmlHashCopy 2 xmlHashTablePtr xmlHashTablePtr xmlHashCopier
+xmlXPathNodeSetAdd xmlXPathNodeSetAdd 2 int xmlNodeSetPtr xmlNodePtr
+xmlSetNs xmlSetNs 2 unknown_or_void xmlNodePtr xmlNsPtr
+xmlXPathIsNaN xmlXPathIsNaN 1 int double
+xmlOutputBufferCreateFilename xmlOutputBufferCreateFilename 3 xmlOutputBufferPtr char* xmlCharEncodingHandlerPtr int
+xmlGetCharEncodingHandler xmlGetCharEncodingHandler 1 xmlCharEncodingHandlerPtr xmlCharEncoding
+xmlXPathNewCString xmlXPathNewCString 1 xmlXPathObjectPtr char*
+xmlDumpNotationTable xmlDumpNotationTable 2 unknown_or_void xmlBufferPtr xmlNotationTablePtr
+xmlSetTreeDoc xmlSetTreeDoc 2 unknown_or_void xmlNodePtr xmlDocPtr
+xmlSAXParseFile xmlSAXParseFile 3 xmlDocPtr xmlSAXHandlerPtr char* int
+xmlDumpElementTable xmlDumpElementTable 2 unknown_or_void xmlBufferPtr xmlElementTablePtr
+xmlLoadCatalog xmlLoadCatalog 1 int char*
+xmlSaveSetAttrEscape xmlSaveSetAttrEscape 2 int xmlSaveCtxtPtr xmlCharEncodingOutputFunc
+xmlTextReaderPreserve xmlTextReaderPreserve 1 xmlNodePtr xmlTextReaderPtr
+xmlXPathNextAttribute xmlXPathNextAttribute 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlOutputBufferWriteString xmlOutputBufferWriteString 2 int xmlOutputBufferPtr char*
+xmlSnprintfElementContent xmlSnprintfElementContent 4 unknown_or_void char* int xmlElementContentPtr int
+xmlCopyAttributeTable xmlCopyAttributeTable 1 xmlAttributeTablePtr xmlAttributeTablePtr
+xmlUCSIsTagbanwa xmlUCSIsTagbanwa 1 int int
+xmlFreeIDTable xmlFreeIDTable 1 unknown_or_void xmlIDTablePtr
+xmlCatalogAddLocal xmlCatalogAddLocal 2 * * xmlChar*
+xmlUCSIsCJKCompatibilityForms xmlUCSIsCJKCompatibilityForms 1 int int
+xmlSAX2EndElement xmlSAX2EndElement 2 unknown_or_void * xmlChar*
+xmlXPatherror xmlXPatherror 4 unknown_or_void xmlXPathParserContextPtr char* int int
+xmlRelaxParserSetFlag xmlRelaxParserSetFlag 2 int xmlRelaxNGParserCtxtPtr int
+xmlXPathDistinctSorted xmlXPathDistinctSorted 1 xmlNodeSetPtr xmlNodeSetPtr
+xmlFreeDocElementContent xmlFreeDocElementContent 2 unknown_or_void xmlDocPtr xmlElementContentPtr
+xmlXPathNextAncestorOrSelf xmlXPathNextAncestorOrSelf 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlTextWriterWriteVFormatElementNS xmlTextWriterWriteVFormatElementNS 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+xmlTextReaderExpand xmlTextReaderExpand 1 xmlNodePtr xmlTextReaderPtr
+xmlRelaxNGDumpTree xmlRelaxNGDumpTree 2 unknown_or_void FILE* xmlRelaxNGPtr
+xmlFreeTextReader xmlFreeTextReader 1 unknown_or_void xmlTextReaderPtr
+xmlCtxtReadFd xmlCtxtReadFd 5 xmlDocPtr xmlParserCtxtPtr int char* char* int
+htmlElementStatusHere htmlElementStatusHere 2 htmlStatus htmlElemDesc* htmlElemDesc*
+xmlParserWarning xmlParserWarning 2 unknown_or_void * char*
+xmlSAX2InitHtmlDefaultSAXHandler xmlSAX2InitHtmlDefaultSAXHandler 1 unknown_or_void xmlSAXHandler*
+xmlFreeValidCtxt xmlFreeValidCtxt 1 unknown_or_void xmlValidCtxtPtr
+xmlShellPrintXPathError xmlShellPrintXPathError 2 unknown_or_void int char*
+xmlGetDocCompressMode xmlGetDocCompressMode 1 int xmlDoc*
+xmlDictCreate xmlDictCreate 0 xmlDictPtr
+xmlValidateNMToken xmlValidateNMToken 2 int xmlChar* int
+xmlUCSIsCyrillicSupplement xmlUCSIsCyrillicSupplement 1 int int
+xmlSAX2StartElementNs xmlSAX2StartElementNs 9 unknown_or_void * xmlChar* xmlChar* xmlChar* int xmlChar** int int xmlChar**
+xmlRelaxNGValidateDoc xmlRelaxNGValidateDoc 2 int xmlRelaxNGValidCtxtPtr xmlDocPtr
+xmlSAX2GetColumnNumber xmlSAX2GetColumnNumber 1 int *
+xmlListEnd xmlListEnd 1 xmlLinkPtr xmlListPtr
+xmlShellPwd xmlShellPwd 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlDebugDumpNode xmlDebugDumpNode 3 unknown_or_void FILE* xmlNodePtr int
+xmlXPathConcatFunction xmlXPathConcatFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlC14NDocDumpMemory xmlC14NDocDumpMemory 6 int xmlDocPtr xmlNodeSetPtr int xmlChar** int xmlChar**
+xmlBufferWriteCHAR xmlBufferWriteCHAR 2 unknown_or_void xmlBufferPtr xmlChar*
+xmlAutomataNewAllTrans xmlAutomataNewAllTrans 4 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr int
+xmlUCSIsYiSyllables xmlUCSIsYiSyllables 1 int int
+xmlSchemaGetValType xmlSchemaGetValType 1 xmlSchemaValType xmlSchemaValPtr
+xmlUCSIsCat xmlUCSIsCat 2 int int char*
+xmlNewDocText xmlNewDocText 2 xmlNodePtr xmlDoc* xmlChar*
+xmlValidGetValidElements xmlValidGetValidElements 4 int xmlNode* xmlNode* xmlChar** int
+xmlTextWriterStartPI xmlTextWriterStartPI 2 int xmlTextWriterPtr xmlChar*
+xmlAutomataNewCounter xmlAutomataNewCounter 3 int xmlAutomataPtr int int
+xmlTextWriterWriteString xmlTextWriterWriteString 2 int xmlTextWriterPtr xmlChar*
+xmlRegExecErrInfo xmlRegExecErrInfo 6 int xmlRegExecCtxtPtr xmlChar** int* int* xmlChar** int*
+xmlTextReaderIsDefault xmlTextReaderIsDefault 1 int xmlTextReaderPtr
+xmlFreeElementTable xmlFreeElementTable 1 unknown_or_void xmlElementTablePtr
+xmlValidateOneAttribute xmlValidateOneAttribute 5 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr xmlAttrPtr xmlChar*
+xmlSAX2NotationDecl xmlSAX2NotationDecl 4 unknown_or_void * xmlChar* xmlChar* xmlChar*
+xmlListCreate xmlListCreate 2 xmlListPtr xmlListDeallocator xmlListDataCompare
+xmlMemoryStrdup xmlMemoryStrdup 1 char* char*
+xmlBufferResize xmlBufferResize 2 int xmlBufferPtr unsignedint
+xmlTextReaderConstXmlLang xmlTextReaderConstXmlLang 1 xmlChar* xmlTextReaderPtr
+xmlNodeGetSpacePreserve xmlNodeGetSpacePreserve 1 int xmlNode*
+xmlAddEncodingAlias xmlAddEncodingAlias 2 int char* char*
+xmlMemMalloc xmlMemMalloc 1 * size_t
+xmlUCSIsKhmerSymbols xmlUCSIsKhmerSymbols 1 int int
+xmlC14NDocSaveTo xmlC14NDocSaveTo 6 int xmlDocPtr xmlNodeSetPtr int xmlChar** int xmlOutputBufferPtr
+xmlNewDocProp xmlNewDocProp 3 xmlAttrPtr xmlDocPtr xmlChar* xmlChar*
+xmlCleanupGlobals xmlCleanupGlobals 0 unknown_or_void
+xmlXPathNewNodeSet xmlXPathNewNodeSet 1 xmlXPathObjectPtr xmlNodePtr
+xmlListRemoveLast xmlListRemoveLast 2 int xmlListPtr *
+xmlMemDisplay xmlMemDisplay 1 unknown_or_void FILE*
+xmlSaveTree xmlSaveTree 2 longint xmlSaveCtxtPtr xmlNodePtr
+xmlOutputBufferCreateFilenameDefault xmlOutputBufferCreateFilenameDefault 1 xmlOutputBufferCreateFilenameFunc xmlOutputBufferCreateFilenameFunc
+xmlXPathValueFlipSign xmlXPathValueFlipSign 1 unknown_or_void xmlXPathParserContextPtr
+xmlUCSIsCatSc xmlUCSIsCatSc 1 int int
+xmlXPathCompiledEval xmlXPathCompiledEval 2 xmlXPathObjectPtr xmlXPathCompExprPtr xmlXPathContextPtr
+xmlUCSIsOpticalCharacterRecognition xmlUCSIsOpticalCharacterRecognition 1 int int
+xmlTextWriterWriteAttribute xmlTextWriterWriteAttribute 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlSAX2ResolveEntity xmlSAX2ResolveEntity 3 xmlParserInputPtr * xmlChar* xmlChar*
+xmlValidNormalizeAttributeValue xmlValidNormalizeAttributeValue 4 xmlChar* xmlDocPtr xmlNodePtr xmlChar* xmlChar*
+xmlXPathLocalNameFunction xmlXPathLocalNameFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextReaderConstString xmlTextReaderConstString 2 xmlChar* xmlTextReaderPtr xmlChar*
+xmlRelaxNGCleanupTypes xmlRelaxNGCleanupTypes 0 unknown_or_void
+xmlXPathDebugDumpCompExpr xmlXPathDebugDumpCompExpr 3 unknown_or_void FILE* xmlXPathCompExprPtr int
+xmlXPathPopNumber xmlXPathPopNumber 1 double xmlXPathParserContextPtr
+xmlUCSIsCatSk xmlUCSIsCatSk 1 int int
+xmlUCSIsCatSm xmlUCSIsCatSm 1 int int
+xmlXPathPopExternal xmlXPathPopExternal 1 * xmlXPathParserContextPtr
+xmlSchemaValidateLengthFacet xmlSchemaValidateLengthFacet 5 int xmlSchemaTypePtr xmlSchemaFacetPtr xmlChar* xmlSchemaValPtr longunsignedint*
+xmlNanoHTTPAuthHeader xmlNanoHTTPAuthHeader 1 char* *
+xmlShellDu xmlShellDu 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlSAXParseEntity xmlSAXParseEntity 2 xmlDocPtr xmlSAXHandlerPtr char*
+xmlUCSIsCatSo xmlUCSIsCatSo 1 int int
+xmlFreeNotationTable xmlFreeNotationTable 1 unknown_or_void xmlNotationTablePtr
+xmlStrcmp xmlStrcmp 2 int xmlChar* xmlChar*
+xmlTextReaderConstPrefix xmlTextReaderConstPrefix 1 xmlChar* xmlTextReaderPtr
+xmlURIEscapeStr xmlURIEscapeStr 2 xmlChar* xmlChar* xmlChar*
+xmlCreateURI xmlCreateURI 0 xmlURIPtr
+xmlHashUpdateEntry2 xmlHashUpdateEntry2 5 int xmlHashTablePtr xmlChar* xmlChar* * xmlHashDeallocator
+xmlXPathNodeSetMerge xmlXPathNodeSetMerge 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlFreeInputStream xmlFreeInputStream 1 unknown_or_void xmlParserInputPtr
+xmlHashUpdateEntry3 xmlHashUpdateEntry3 6 int xmlHashTablePtr xmlChar* xmlChar* xmlChar* * xmlHashDeallocator
+xmlDictFree xmlDictFree 1 unknown_or_void xmlDictPtr
+xmlUCSIsPrivateUse xmlUCSIsPrivateUse 1 int int
+xmlSAX2GetSystemId xmlSAX2GetSystemId 1 xmlChar* *
+xmlOutputBufferWriteEscape xmlOutputBufferWriteEscape 3 int xmlOutputBufferPtr xmlChar* xmlCharEncodingOutputFunc
+htmlCtxtReadIO htmlCtxtReadIO 7 htmlDocPtr htmlParserCtxtPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlParserInputBufferCreateFilenameDefault xmlParserInputBufferCreateFilenameDefault 1 xmlParserInputBufferCreateFilenameFunc xmlParserInputBufferCreateFilenameFunc
+xmlSAX2GetParameterEntity xmlSAX2GetParameterEntity 2 xmlEntityPtr * xmlChar*
+xmlHashScan3 xmlHashScan3 6 unknown_or_void xmlHashTablePtr xmlChar* xmlChar* xmlChar* xmlHashScanner *
+xmlCharEncInput xmlCharEncInput 2 int xmlParserInputBufferPtr int
+xmlDebugDumpOneNode xmlDebugDumpOneNode 3 unknown_or_void FILE* xmlNodePtr int
+xmlUCSIsEthiopic xmlUCSIsEthiopic 1 int int
+htmlElementAllowedHere htmlElementAllowedHere 2 int htmlElemDesc* xmlChar*
+xmlTextWriterEndDocument xmlTextWriterEndDocument 1 int xmlTextWriterPtr
+xmlReaderNewFile xmlReaderNewFile 4 int xmlTextReaderPtr char* char* int
+xmlXPathRegisterVariableLookup xmlXPathRegisterVariableLookup 3 unknown_or_void xmlXPathContextPtr xmlXPathVariableLookupFunc *
+xmlNewDocNodeEatName xmlNewDocNodeEatName 4 xmlNodePtr xmlDocPtr xmlNsPtr xmlChar* xmlChar*
+xmlGetNsList xmlGetNsList 2 xmlNsPtr* xmlDoc* xmlNode*
+xmlSchemaParse xmlSchemaParse 1 xmlSchemaPtr xmlSchemaParserCtxtPtr
+htmlEntityLookup htmlEntityLookup 1 htmlEntityDesc* xmlChar*
+xmlUTF8Strsub xmlUTF8Strsub 3 xmlChar* xmlChar* int int
+xmlLsOneNode xmlLsOneNode 2 unknown_or_void FILE* xmlNodePtr
+xmlGetBufferAllocationScheme xmlGetBufferAllocationScheme 0 xmlBufferAllocationScheme
+xmlFreePatternList xmlFreePatternList 1 unknown_or_void xmlPatternPtr
+xmlFreeParserInputBuffer xmlFreeParserInputBuffer 1 unknown_or_void xmlParserInputBufferPtr
+xmlStrncmp xmlStrncmp 3 int xmlChar* xmlChar* int
+xmlBufDumpAttributeDecl xmlBufDumpAttributeDecl 2 unknown_or_void xmlBufPtr xmlAttributePtr
+xmlTextWriterStartAttributeNS xmlTextWriterStartAttributeNS 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlNewElementContent xmlNewElementContent 2 xmlElementContentPtr xmlChar* xmlElementContentType
+xmlXPathContainsFunction xmlXPathContainsFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlCleanupEncodingAliases xmlCleanupEncodingAliases 0 int
+xmlUCSIsTibetan xmlUCSIsTibetan 1 int int
+xmlRelaxNGInitTypes xmlRelaxNGInitTypes 0 int
+xmlParserFindNodeInfoIndex xmlParserFindNodeInfoIndex 2 longunsignedint xmlParserNodeInfoSeqPtr xmlNodePtr
+xmlXPathRoundFunction xmlXPathRoundFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextWriterStartDTD xmlTextWriterStartDTD 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlSchematronNewDocParserCtxt xmlSchematronNewDocParserCtxt 1 xmlSchematronParserCtxtPtr xmlDocPtr
+xmlSkipBlankChars xmlSkipBlankChars 1 int xmlParserCtxtPtr
+xmlTextWriterWriteFormatDTDAttlist xmlTextWriterWriteFormatDTDAttlist 3 int xmlTextWriterPtr xmlChar* char*
+htmlParseDocument htmlParseDocument 1 int htmlParserCtxtPtr
+xmlXPathFreeNodeSetList xmlXPathFreeNodeSetList 1 unknown_or_void xmlXPathObjectPtr
+xmlUCSIsSmallFormVariants xmlUCSIsSmallFormVariants 1 int int
+xmlCtxtReadIO xmlCtxtReadIO 7 xmlDocPtr xmlParserCtxtPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlTextReaderConstNamespaceUri xmlTextReaderConstNamespaceUri 1 xmlChar* xmlTextReaderPtr
+xmlNewMutex xmlNewMutex 0 xmlMutexPtr
+xmlTextReaderIsNamespaceDecl xmlTextReaderIsNamespaceDecl 1 int xmlTextReaderPtr
+xmlParseTextDecl xmlParseTextDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlTextReaderLookupNamespace xmlTextReaderLookupNamespace 2 xmlChar* xmlTextReaderPtr xmlChar*
+xmlTextWriterWriteFormatDTDInternalEntity xmlTextWriterWriteFormatDTDInternalEntity 4 int xmlTextWriterPtr int xmlChar* char*
+xmlBufFree xmlBufFree 1 unknown_or_void xmlBufPtr
+xmlUCSIsCyrillic xmlUCSIsCyrillic 1 int int
+xmlParserPrintFileInfo xmlParserPrintFileInfo 1 unknown_or_void xmlParserInputPtr
+xmlSplitQName xmlSplitQName 3 xmlChar* xmlParserCtxtPtr xmlChar* xmlChar**
+xmlSaveFormatFileTo xmlSaveFormatFileTo 4 int xmlOutputBufferPtr xmlDocPtr char* int
+xmlHashRemoveEntry2 xmlHashRemoveEntry2 4 int xmlHashTablePtr xmlChar* xmlChar* xmlHashDeallocator
+xmlHashRemoveEntry3 xmlHashRemoveEntry3 5 int xmlHashTablePtr xmlChar* xmlChar* xmlChar* xmlHashDeallocator
+xmlNewCharEncodingHandler xmlNewCharEncodingHandler 3 xmlCharEncodingHandlerPtr char* xmlCharEncodingInputFunc xmlCharEncodingOutputFunc
+xmlXPathDistinct xmlXPathDistinct 1 xmlNodeSetPtr xmlNodeSetPtr
+xmlNewDocComment xmlNewDocComment 2 xmlNodePtr xmlDocPtr xmlChar*
+xmlTextReaderIsEmptyElement xmlTextReaderIsEmptyElement 1 int xmlTextReaderPtr
+xmlTextReaderNormalization xmlTextReaderNormalization 1 int xmlTextReaderPtr
+xmlParseDoc xmlParseDoc 1 xmlDocPtr xmlChar*
+xmlParseURI xmlParseURI 1 xmlURIPtr char*
+xmlUCSIsIdeographicDescriptionCharacters xmlUCSIsIdeographicDescriptionCharacters 1 int int
+xmlHashUpdateEntry xmlHashUpdateEntry 4 int xmlHashTablePtr xmlChar* * xmlHashDeallocator
+xmlTextReaderConstXmlVersion xmlTextReaderConstXmlVersion 1 xmlChar* xmlTextReaderPtr
+xmlBufAttrSerializeTxtContent xmlBufAttrSerializeTxtContent 4 unknown_or_void xmlBufPtr xmlDocPtr xmlAttrPtr xmlChar*
+xmlStopParser xmlStopParser 1 unknown_or_void xmlParserCtxtPtr
+xmlModuleClose xmlModuleClose 1 int xmlModulePtr
+xmlNodeGetContent xmlNodeGetContent 1 xmlChar* xmlNode*
+xmlParseMarkupDecl xmlParseMarkupDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlUCSIsByzantineMusicalSymbols xmlUCSIsByzantineMusicalSymbols 1 int int
+xmlNewDocElementContent xmlNewDocElementContent 3 xmlElementContentPtr xmlDocPtr xmlChar* xmlElementContentType
+xmlXPathNewContext xmlXPathNewContext 1 xmlXPathContextPtr xmlDocPtr
+xmlParseElementDecl xmlParseElementDecl 1 int xmlParserCtxtPtr
+xmlXPathPopString xmlXPathPopString 1 xmlChar* xmlXPathParserContextPtr
+xmlGetGlobalState xmlGetGlobalState 0 xmlGlobalStatePtr
+xmlRelaxNGSetParserErrors xmlRelaxNGSetParserErrors 4 unknown_or_void xmlRelaxNGParserCtxtPtr xmlRelaxNGValidityErrorFunc xmlRelaxNGValidityWarningFunc *
+xmlUCSIsThai xmlUCSIsThai 1 int int
+xmlBufWriteQuotedString xmlBufWriteQuotedString 2 int xmlBufPtr xmlChar*
+xmlIsIdeographic xmlIsIdeographic 1 int unsignedint
+xmlXPathIdFunction xmlXPathIdFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextWriterWriteBinHex xmlTextWriterWriteBinHex 4 int xmlTextWriterPtr char* int int
+xmlTextWriterWriteVFormatDTDAttlist xmlTextWriterWriteVFormatDTDAttlist 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteElement xmlTextWriterWriteElement 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlUCSIsOgham xmlUCSIsOgham 1 int int
+xmlNewReference xmlNewReference 2 xmlNodePtr xmlDoc* xmlChar*
+xmlXPathNextPrecedingSibling xmlXPathNextPrecedingSibling 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+htmlDocDump htmlDocDump 2 int FILE* xmlDocPtr
+xmlUCSIsArabic xmlUCSIsArabic 1 int int
+xmlTextReaderIsValid xmlTextReaderIsValid 1 int xmlTextReaderPtr
+xmlUCSIsSyriac xmlUCSIsSyriac 1 int int
+xmlThrDefDoValidityCheckingDefaultValue xmlThrDefDoValidityCheckingDefaultValue 1 int int
+xmlCatalogResolveSystem xmlCatalogResolveSystem 1 xmlChar* xmlChar*
+xmlTextReaderGetErrorHandler xmlTextReaderGetErrorHandler 3 unknown_or_void xmlTextReaderPtr xmlTextReaderErrorFunc* **
+xmlTextReaderGetAttribute xmlTextReaderGetAttribute 2 xmlChar* xmlTextReaderPtr xmlChar*
+xmlUCSIsCypriotSyllabary xmlUCSIsCypriotSyllabary 1 int int
+xmlFreeNode xmlFreeNode 1 unknown_or_void xmlNodePtr
+xmlTextWriterFlush xmlTextWriterFlush 1 int xmlTextWriterPtr
+xmlXPathCastToNumber xmlXPathCastToNumber 1 double xmlXPathObjectPtr
+xmlStreamPop xmlStreamPop 1 int xmlStreamCtxtPtr
+xmlTextWriterWriteDTDElement xmlTextWriterWriteDTDElement 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlMutexUnlock xmlMutexUnlock 1 unknown_or_void xmlMutexPtr
+xmlSetCompressMode xmlSetCompressMode 1 unknown_or_void int
+xmlDocDumpFormatMemory xmlDocDumpFormatMemory 4 unknown_or_void xmlDocPtr xmlChar** int* int
+xmlUTF8Size xmlUTF8Size 1 int xmlChar*
+xmlXPathCastNodeToNumber xmlXPathCastNodeToNumber 1 double xmlNodePtr
+xmlGetRefs xmlGetRefs 2 xmlListPtr xmlDocPtr xmlChar*
+xmlStrEqual xmlStrEqual 2 int xmlChar* xmlChar*
+xmlSchemaNewNOTATIONValue xmlSchemaNewNOTATIONValue 2 xmlSchemaValPtr xmlChar* xmlChar*
+xmlInitializeGlobalState xmlInitializeGlobalState 1 unknown_or_void xmlGlobalStatePtr
+xmlUCSIsHangulCompatibilityJamo xmlUCSIsHangulCompatibilityJamo 1 int int
+xmlUCSIsKatakanaPhoneticExtensions xmlUCSIsKatakanaPhoneticExtensions 1 int int
+xmlUCSIsGeorgian xmlUCSIsGeorgian 1 int int
+xmlHashScanFull xmlHashScanFull 3 unknown_or_void xmlHashTablePtr xmlHashScannerFull *
+xmlUCSIsLatin1Supplement xmlUCSIsLatin1Supplement 1 int int
+xmlBufResetInput xmlBufResetInput 2 int xmlBufPtr xmlParserInputPtr
+xmlTextReaderLocatorBaseURI xmlTextReaderLocatorBaseURI 1 xmlChar* xmlTextReaderLocatorPtr
+xmlSAXDefaultVersion xmlSAXDefaultVersion 1 int int
+xmlTextConcat xmlTextConcat 3 int xmlNodePtr xmlChar* int
+xmlCleanupCharEncodingHandlers xmlCleanupCharEncodingHandlers 0 unknown_or_void
+xmlSchemaValidateFacetWhtsp xmlSchemaValidateFacetWhtsp 6 int xmlSchemaFacetPtr xmlSchemaWhitespaceValueType xmlSchemaValType xmlChar* xmlSchemaValPtr xmlSchemaWhitespaceValueType
+xmlSchematronNewMemParserCtxt xmlSchematronNewMemParserCtxt 2 xmlSchematronParserCtxtPtr char* int
+xmlUCSIsKangxiRadicals xmlUCSIsKangxiRadicals 1 int int
+xmlTextWriterWriteFormatElementNS xmlTextWriterWriteFormatElementNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlUCSIsOsmanya xmlUCSIsOsmanya 1 int int
+xmlXPathFalseFunction xmlXPathFalseFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextReaderRelaxNGSetSchema xmlTextReaderRelaxNGSetSchema 2 int xmlTextReaderPtr xmlRelaxNGPtr
+xmlNewTextWriterPushParser xmlNewTextWriterPushParser 2 xmlTextWriterPtr xmlParserCtxtPtr int
+xmlRecoverFile xmlRecoverFile 1 xmlDocPtr char*
+xmlThrDefSetGenericErrorFunc xmlThrDefSetGenericErrorFunc 2 unknown_or_void * xmlGenericErrorFunc
+xmlNanoHTTPCleanup xmlNanoHTTPCleanup 0 unknown_or_void
+xmlTextReaderGetAttributeNo xmlTextReaderGetAttributeNo 2 xmlChar* xmlTextReaderPtr int
+xmlXPathIsInf xmlXPathIsInf 1 int double
+xmlBufferFree xmlBufferFree 1 unknown_or_void xmlBufferPtr
+xmlBufCreateStatic xmlBufCreateStatic 2 xmlBufPtr * size_t
+htmlCreateMemoryParserCtxt htmlCreateMemoryParserCtxt 2 htmlParserCtxtPtr char* int
+xmlStringLenGetNodeList xmlStringLenGetNodeList 3 xmlNodePtr xmlDoc* xmlChar* int
+xmlTextReaderGetAttributeNs xmlTextReaderGetAttributeNs 3 xmlChar* xmlTextReaderPtr xmlChar* xmlChar*
+xmlXPathNextParent xmlXPathNextParent 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlXPathCastNumberToBoolean xmlXPathCastNumberToBoolean 1 int double
+xmlTextReaderReadOuterXml xmlTextReaderReadOuterXml 1 xmlChar* xmlTextReaderPtr
+xmlCheckUTF8 xmlCheckUTF8 1 int unsignedchar*
+xmlTextWriterEndDTDElement xmlTextWriterEndDTDElement 1 int xmlTextWriterPtr
+xmlCatalogResolvePublic xmlCatalogResolvePublic 1 xmlChar* xmlChar*
+xmlInitThreads xmlInitThreads 0 unknown_or_void
+xmlReaderNewWalker xmlReaderNewWalker 2 int xmlTextReaderPtr xmlDocPtr
+xmlSchemaSetParserErrors xmlSchemaSetParserErrors 4 unknown_or_void xmlSchemaParserCtxtPtr xmlSchemaValidityErrorFunc xmlSchemaValidityWarningFunc *
+htmlGetMetaEncoding htmlGetMetaEncoding 1 xmlChar* htmlDocPtr
+xmlValidateNameValue xmlValidateNameValue 1 int xmlChar*
+xmlNewAutomata xmlNewAutomata 0 xmlAutomataPtr
+xmlIsRef xmlIsRef 3 int xmlDocPtr xmlNodePtr xmlAttrPtr
+xmlPedanticParserDefault xmlPedanticParserDefault 1 int int
+xmlNewComment xmlNewComment 1 xmlNodePtr xmlChar*
+xmlXPathRegisterVariableNS xmlXPathRegisterVariableNS 4 int xmlXPathContextPtr xmlChar* xmlChar* xmlXPathObjectPtr
+xmlShellPrintNode xmlShellPrintNode 1 unknown_or_void xmlNodePtr
+xmlSchemaSetValidStructuredErrors xmlSchemaSetValidStructuredErrors 3 unknown_or_void xmlSchemaValidCtxtPtr xmlStructuredErrorFunc *
+xmlNewRMutex xmlNewRMutex 0 xmlRMutexPtr
+xmlParserInputBufferCreateFd xmlParserInputBufferCreateFd 2 xmlParserInputBufferPtr int xmlCharEncoding
+xmlValidateAttributeValue xmlValidateAttributeValue 2 int xmlAttributeType xmlChar*
+xmlNodeAddContent xmlNodeAddContent 2 unknown_or_void xmlNodePtr xmlChar*
+xmlBufferAdd xmlBufferAdd 3 int xmlBufferPtr xmlChar* int
+xmlCatalogLocalResolve xmlCatalogLocalResolve 3 xmlChar* * xmlChar* xmlChar*
+xmlSchemaValidatePredefinedType xmlSchemaValidatePredefinedType 3 int xmlSchemaTypePtr xmlChar* xmlSchemaValPtr*
+xmlBufCreate xmlBufCreate 0 xmlBufPtr
+xmlSchemaIsValid xmlSchemaIsValid 1 int xmlSchemaValidCtxtPtr
+xmlXIncludeFreeContext xmlXIncludeFreeContext 1 unknown_or_void xmlXIncludeCtxtPtr
+xmlSearchNs xmlSearchNs 3 xmlNsPtr xmlDocPtr xmlNodePtr xmlChar*
+xmlTextReaderMoveToElement xmlTextReaderMoveToElement 1 int xmlTextReaderPtr
+xmlCopyDocElementContent xmlCopyDocElementContent 2 xmlElementContentPtr xmlDocPtr xmlElementContentPtr
+xmlMutexLock xmlMutexLock 1 unknown_or_void xmlMutexPtr
+xmlUTF8Strlen xmlUTF8Strlen 1 int xmlChar*
+xmlOutputBufferCreateFile xmlOutputBufferCreateFile 2 xmlOutputBufferPtr FILE* xmlCharEncodingHandlerPtr
+xmlXPathCtxtCompile xmlXPathCtxtCompile 2 xmlXPathCompExprPtr xmlXPathContextPtr xmlChar*
+xmlByteConsumed xmlByteConsumed 1 longint xmlParserCtxtPtr
+xmlRegExecNextValues xmlRegExecNextValues 5 int xmlRegExecCtxtPtr int* int* xmlChar** int*
+xmlStrstr xmlStrstr 2 xmlChar* xmlChar* xmlChar*
+xmlNewTextReader xmlNewTextReader 2 xmlTextReaderPtr xmlParserInputBufferPtr char*
+xmlSchemaValidateFile xmlSchemaValidateFile 3 int xmlSchemaValidCtxtPtr char* int
+xmlIsMixedElement xmlIsMixedElement 2 int xmlDocPtr xmlChar*
+xmlBufferSetAllocationScheme xmlBufferSetAllocationScheme 2 unknown_or_void xmlBufferPtr xmlBufferAllocationScheme
+xmlXPathPopNodeSet xmlXPathPopNodeSet 1 xmlNodeSetPtr xmlXPathParserContextPtr
+xmlListInsert xmlListInsert 2 int xmlListPtr *
+xmlUCSIsDevanagari xmlUCSIsDevanagari 1 int int
+xmlTextWriterStartDTDElement xmlTextWriterStartDTDElement 2 int xmlTextWriterPtr xmlChar*
+xmlXPathCastToString xmlXPathCastToString 1 xmlChar* xmlXPathObjectPtr
+xmlNewTextReaderFilename xmlNewTextReaderFilename 1 xmlTextReaderPtr char*
+xmlUCSIsMusicalSymbols xmlUCSIsMusicalSymbols 1 int int
+xmlXPathNamespaceURIFunction xmlXPathNamespaceURIFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlSaveToBuffer xmlSaveToBuffer 3 xmlSaveCtxtPtr xmlBufferPtr char* int
+xmlHashLookup xmlHashLookup 2 * xmlHashTablePtr xmlChar*
+xmlParseEntity xmlParseEntity 1 xmlDocPtr char*
+xmlListMerge xmlListMerge 2 unknown_or_void xmlListPtr xmlListPtr
+xmlCreateEntityParserCtxt xmlCreateEntityParserCtxt 3 xmlParserCtxtPtr xmlChar* xmlChar* xmlChar*
+xmlNodeSetLang xmlNodeSetLang 2 unknown_or_void xmlNodePtr xmlChar*
+xmlDebugDumpDocument xmlDebugDumpDocument 2 unknown_or_void FILE* xmlDocPtr
+xmlXPathCastNodeToString xmlXPathCastNodeToString 1 xmlChar* xmlNodePtr
+xmlRelaxNGFreeParserCtxt xmlRelaxNGFreeParserCtxt 1 unknown_or_void xmlRelaxNGParserCtxtPtr
+xmlBufSetInputBaseCur xmlBufSetInputBaseCur 4 int xmlBufPtr xmlParserInputPtr size_t size_t
+xmlListDup xmlListDup 1 xmlListPtr xmlListPtr
+xmlParseVersionInfo xmlParseVersionInfo 1 xmlChar* xmlParserCtxtPtr
+xmlParseMisc xmlParseMisc 1 unknown_or_void xmlParserCtxtPtr
+xmlStrsub xmlStrsub 3 xmlChar* xmlChar* int int
+xmlXPathNodeSetDel xmlXPathNodeSetDel 2 unknown_or_void xmlNodeSetPtr xmlNodePtr
+xmlSchemaDump xmlSchemaDump 2 unknown_or_void FILE* xmlSchemaPtr
+xmlSAX2GetLineNumber xmlSAX2GetLineNumber 1 int *
+xmlTextWriterWriteFormatElement xmlTextWriterWriteFormatElement 3 int xmlTextWriterPtr xmlChar* char*
+xmlBufferCat xmlBufferCat 2 int xmlBufferPtr xmlChar*
+xmlNewCharRef xmlNewCharRef 2 xmlNodePtr xmlDocPtr xmlChar*
+xmlXPathNsLookup xmlXPathNsLookup 2 xmlChar* xmlXPathContextPtr xmlChar*
+xmlBufNodeDump xmlBufNodeDump 5 size_t xmlBufPtr xmlDocPtr xmlNodePtr int int
+xmlParsePEReference xmlParsePEReference 1 unknown_or_void xmlParserCtxtPtr
+xmlParseDTD xmlParseDTD 2 xmlDtdPtr xmlChar* xmlChar*
+xmlTextWriterWriteRaw xmlTextWriterWriteRaw 2 int xmlTextWriterPtr xmlChar*
+xmlSAX2GetEntity xmlSAX2GetEntity 2 xmlEntityPtr * xmlChar*
+xmlXPathEvalPredicate xmlXPathEvalPredicate 2 int xmlXPathContextPtr xmlXPathObjectPtr
+xmlTextWriterWriteVFormatCDATA xmlTextWriterWriteVFormatCDATA 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlXPathFunctionLookup xmlXPathFunctionLookup 2 xmlXPathFunction xmlXPathContextPtr xmlChar*
+xmlSchemaValPredefTypeNodeNoNorm xmlSchemaValPredefTypeNodeNoNorm 4 int xmlSchemaTypePtr xmlChar* xmlSchemaValPtr* xmlNodePtr
+xmlXPathStartsWithFunction xmlXPathStartsWithFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlXPathNewParserContext xmlXPathNewParserContext 2 xmlXPathParserContextPtr xmlChar* xmlXPathContextPtr
+xmlAutomataNewNegTrans xmlAutomataNewNegTrans 6 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* xmlChar* *
+xmlCatalogSetDefaults xmlCatalogSetDefaults 1 unknown_or_void xmlCatalogAllow
+xmlDocFormatDump xmlDocFormatDump 3 int FILE* xmlDocPtr int
+xmlUCSIsEnclosedAlphanumerics xmlUCSIsEnclosedAlphanumerics 1 int int
+xmlSearchNsByHref xmlSearchNsByHref 3 xmlNsPtr xmlDocPtr xmlNodePtr xmlChar*
+xmlIOParseDTD xmlIOParseDTD 3 xmlDtdPtr xmlSAXHandlerPtr xmlParserInputBufferPtr xmlCharEncoding
+xmlDumpAttributeDecl xmlDumpAttributeDecl 2 unknown_or_void xmlBufferPtr xmlAttributePtr
+xmlParseElementChildrenContentDecl xmlParseElementChildrenContentDecl 2 xmlElementContentPtr xmlParserCtxtPtr int
+xmlStrcasecmp xmlStrcasecmp 2 int xmlChar* xmlChar*
+xmlDebugDumpString xmlDebugDumpString 2 unknown_or_void FILE* xmlChar*
+xmlXPathTrailingSorted xmlXPathTrailingSorted 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlShellValidate xmlShellValidate 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlParseEncodingDecl xmlParseEncodingDecl 1 xmlChar* xmlParserCtxtPtr
+xmlSwitchEncoding xmlSwitchEncoding 2 int xmlParserCtxtPtr xmlCharEncoding
+xmlStreamWantsAnyNode xmlStreamWantsAnyNode 1 int xmlStreamCtxtPtr
+xmlNodeSetContent xmlNodeSetContent 2 unknown_or_void xmlNodePtr xmlChar*
+xmlSAX2IsStandalone xmlSAX2IsStandalone 1 int *
+xmlXIncludeProcessNode xmlXIncludeProcessNode 2 int xmlXIncludeCtxtPtr xmlNodePtr
+xmlCtxtReadDoc xmlCtxtReadDoc 5 xmlDocPtr xmlParserCtxtPtr xmlChar* char* char* int
+xmlCharEncOutput xmlCharEncOutput 2 int xmlOutputBufferPtr int
+xmlSprintfElementContent xmlSprintfElementContent 3 unknown_or_void char* xmlElementContentPtr int
+xmlTextWriterWriteVFormatPI xmlTextWriterWriteVFormatPI 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlValidateQName xmlValidateQName 2 int xmlChar* int
+xmlSchemaGetCanonValue xmlSchemaGetCanonValue 2 int xmlSchemaValPtr xmlChar**
+xmlCheckVersion xmlCheckVersion 1 unknown_or_void int
+xmlAddDocEntity xmlAddDocEntity 6 xmlEntityPtr xmlDocPtr xmlChar* int xmlChar* xmlChar* xmlChar*
+xmlUTF8Strsize xmlUTF8Strsize 2 int xmlChar* int
+xmlTextWriterWriteVFormatString xmlTextWriterWriteVFormatString 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlFreeParserCtxt xmlFreeParserCtxt 1 unknown_or_void xmlParserCtxtPtr
+xmlDefaultSAXHandlerInit xmlDefaultSAXHandlerInit 0 unknown_or_void
+xmlMallocLoc xmlMallocLoc 3 * size_t char* int
+xmlAutomataIsDeterminist xmlAutomataIsDeterminist 1 int xmlAutomataPtr
+xmlNewIOInputStream xmlNewIOInputStream 3 xmlParserInputPtr xmlParserCtxtPtr xmlParserInputBufferPtr xmlCharEncoding
+htmlAutoCloseTag htmlAutoCloseTag 3 int htmlDocPtr xmlChar* htmlNodePtr
+xmlXPtrEval xmlXPtrEval 2 xmlXPathObjectPtr xmlChar* xmlXPathContextPtr
+xmlParseNmtoken xmlParseNmtoken 1 xmlChar* xmlParserCtxtPtr
+xmlStrVPrintf xmlStrVPrintf 4 int xmlChar* int char* __va_list_tag*
+htmlReadFd htmlReadFd 4 htmlDocPtr int char* char* int
+xmlInitGlobals xmlInitGlobals 0 unknown_or_void
+xmlXPathNodeTrailing xmlXPathNodeTrailing 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodePtr
+xmlSchemaNewStringValue xmlSchemaNewStringValue 2 xmlSchemaValPtr xmlSchemaValType xmlChar*
+xmlParserInputBufferCreateIO xmlParserInputBufferCreateIO 4 xmlParserInputBufferPtr xmlInputReadCallback xmlInputCloseCallback * xmlCharEncoding
+xmlNewNodeEatName xmlNewNodeEatName 2 xmlNodePtr xmlNsPtr xmlChar*
+xmlAutomataNewEpsilon xmlAutomataNewEpsilon 3 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr
+xmlUCSIsBlockElements xmlUCSIsBlockElements 1 int int
+xmlCopyNamespace xmlCopyNamespace 1 xmlNsPtr xmlNsPtr
+xmlTextWriterEndDTDEntity xmlTextWriterEndDTDEntity 1 int xmlTextWriterPtr
+xmlNodeAddContentLen xmlNodeAddContentLen 3 unknown_or_void xmlNodePtr xmlChar* int
+xmlValidateDocument xmlValidateDocument 2 int xmlValidCtxtPtr xmlDocPtr
+xmlIsID xmlIsID 3 int xmlDocPtr xmlNodePtr xmlAttrPtr
+xmlTextReaderConstValue xmlTextReaderConstValue 1 xmlChar* xmlTextReaderPtr
+xmlClearParserCtxt xmlClearParserCtxt 1 unknown_or_void xmlParserCtxtPtr
+xmlTextWriterEndDTD xmlTextWriterEndDTD 1 int xmlTextWriterPtr
+xmlNewTextWriterTree xmlNewTextWriterTree 3 xmlTextWriterPtr xmlDocPtr xmlNodePtr int
+xmlXPathFreeNodeSet xmlXPathFreeNodeSet 1 unknown_or_void xmlNodeSetPtr
+xmlRecoverMemory xmlRecoverMemory 2 xmlDocPtr char* int
+xmlSchemaSetParserStructuredErrors xmlSchemaSetParserStructuredErrors 3 unknown_or_void xmlSchemaParserCtxtPtr xmlStructuredErrorFunc *
+xmlC14NExecute xmlC14NExecute 7 int xmlDocPtr xmlC14NIsVisibleCallback * int xmlChar** int xmlOutputBufferPtr
+xmlXPathWrapCString xmlXPathWrapCString 1 xmlXPathObjectPtr char*
+xmlSAX2StartElement xmlSAX2StartElement 3 unknown_or_void * xmlChar* xmlChar**
+xmlUCSIsKanbun xmlUCSIsKanbun 1 int int
+xmlAddAttributeDecl xmlAddAttributeDecl 9 xmlAttributePtr xmlValidCtxtPtr xmlDtdPtr xmlChar* xmlChar* xmlChar* xmlAttributeType xmlAttributeDefault xmlChar* xmlEnumerationPtr
+xmlReadFile xmlReadFile 3 xmlDocPtr char* char* int
+xmlACatalogRemove xmlACatalogRemove 2 int xmlCatalogPtr xmlChar*
+xmlTextWriterWriteFormatDTD xmlTextWriterWriteFormatDTD 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlBufferShrink xmlBufferShrink 2 int xmlBufferPtr unsignedint
+xmlValidateNotationUse xmlValidateNotationUse 3 int xmlValidCtxtPtr xmlDocPtr xmlChar*
+xmlAddNotationDecl xmlAddNotationDecl 5 xmlNotationPtr xmlValidCtxtPtr xmlDtdPtr xmlChar* xmlChar* xmlChar*
+xmlFreeNodeList xmlFreeNodeList 1 unknown_or_void xmlNodePtr
+xmlDebugDumpEntities xmlDebugDumpEntities 2 unknown_or_void FILE* xmlDocPtr
+xmlSchemaFreeType xmlSchemaFreeType 1 unknown_or_void xmlSchemaTypePtr
+xmlParsePubidLiteral xmlParsePubidLiteral 1 xmlChar* xmlParserCtxtPtr
+xmlRegexpIsDeterminist xmlRegexpIsDeterminist 1 int xmlRegexpPtr
+xmlNanoHTTPOpenRedir xmlNanoHTTPOpenRedir 3 * char* char** char**
+xmlCatalogResolveURI xmlCatalogResolveURI 1 xmlChar* xmlChar*
+xmlListEmpty xmlListEmpty 1 int xmlListPtr
+xmlSchemaValPredefTypeNode xmlSchemaValPredefTypeNode 4 int xmlSchemaTypePtr xmlChar* xmlSchemaValPtr* xmlNodePtr
+xmlSaveFormatFileEnc xmlSaveFormatFileEnc 4 int char* xmlDocPtr char* int
+xmlSetStructuredErrorFunc xmlSetStructuredErrorFunc 2 unknown_or_void * xmlStructuredErrorFunc
+xmlParsePITarget xmlParsePITarget 1 xmlChar* xmlParserCtxtPtr
+xmlBufferDetach xmlBufferDetach 1 xmlChar* xmlBufferPtr
+htmlSaveFileEnc htmlSaveFileEnc 3 int char* xmlDocPtr char*
+xmlListReverseSearch xmlListReverseSearch 2 * xmlListPtr *
+xmlParseAttValue xmlParseAttValue 1 xmlChar* xmlParserCtxtPtr
+xmlRegFreeExecCtxt xmlRegFreeExecCtxt 1 unknown_or_void xmlRegExecCtxtPtr
+xmlSchemaSAXPlug xmlSchemaSAXPlug 3 xmlSchemaSAXPlugPtr xmlSchemaValidCtxtPtr xmlSAXHandlerPtr* **
+htmlCreatePushParserCtxt htmlCreatePushParserCtxt 6 htmlParserCtxtPtr htmlSAXHandlerPtr * char* int char* xmlCharEncoding
+xmlReaderWalker xmlReaderWalker 1 xmlTextReaderPtr xmlDocPtr
+xmlSAXParseFileWithData xmlSAXParseFileWithData 4 xmlDocPtr xmlSAXHandlerPtr char* int *
+xmlSetGenericErrorFunc xmlSetGenericErrorFunc 2 unknown_or_void * xmlGenericErrorFunc
+xmlSAXUserParseFile xmlSAXUserParseFile 3 int xmlSAXHandlerPtr * char*
+xmlStrncatNew xmlStrncatNew 3 xmlChar* xmlChar* xmlChar* int
+xmlSchemaSAXUnplug xmlSchemaSAXUnplug 1 int xmlSchemaSAXPlugPtr
+xmlAutomataNewTransition xmlAutomataNewTransition 5 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* *
+xmlClearNodeInfoSeq xmlClearNodeInfoSeq 1 unknown_or_void xmlParserNodeInfoSeqPtr
+xmlXPathConvertNumber xmlXPathConvertNumber 1 xmlXPathObjectPtr xmlXPathObjectPtr
+xmlTextReaderMoveToFirstAttribute xmlTextReaderMoveToFirstAttribute 1 int xmlTextReaderPtr
+xmlIsLetter xmlIsLetter 1 int int
+xmlUCSIsCatZl xmlUCSIsCatZl 1 int int
+xmlParseCtxtExternalEntity xmlParseCtxtExternalEntity 4 int xmlParserCtxtPtr xmlChar* xmlChar* xmlNodePtr*
+xmlParseExternalID xmlParseExternalID 3 xmlChar* xmlParserCtxtPtr xmlChar** int
+xmlGetPredefinedEntity xmlGetPredefinedEntity 1 xmlEntityPtr xmlChar*
+xmlUCSIsCatZp xmlUCSIsCatZp 1 int int
+xmlRegexpExec xmlRegexpExec 2 int xmlRegexpPtr xmlChar*
+xmlSAX2HasExternalSubset xmlSAX2HasExternalSubset 1 int *
+xmlUCSIsCatZs xmlUCSIsCatZs 1 int int
+xmlTextReaderGetRemainder xmlTextReaderGetRemainder 1 xmlParserInputBufferPtr xmlTextReaderPtr
+xmlBufGrow xmlBufGrow 2 int xmlBufPtr int
+xmlValidateNCName xmlValidateNCName 2 int xmlChar* int
+xmlBufSetAllocationScheme xmlBufSetAllocationScheme 2 int xmlBufPtr xmlBufferAllocationScheme
+xmlXPathSetContextNode xmlXPathSetContextNode 2 int xmlNodePtr xmlXPathContextPtr
+xmlRegisterDefaultInputCallbacks xmlRegisterDefaultInputCallbacks 0 unknown_or_void
+xmlUCSIsTelugu xmlUCSIsTelugu 1 int int
+xmlSchematronFree xmlSchematronFree 1 unknown_or_void xmlSchematronPtr
+xmlTextWriterWritePI xmlTextWriterWritePI 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlXPathCastNodeSetToNumber xmlXPathCastNodeSetToNumber 1 double xmlNodeSetPtr
+xmlThrDefParserDebugEntities xmlThrDefParserDebugEntities 1 int int
+xmlThrDefDefaultBufferSize xmlThrDefDefaultBufferSize 1 int int
+xmlParseEnumerationType xmlParseEnumerationType 1 xmlEnumerationPtr xmlParserCtxtPtr
+xmlAddID xmlAddID 4 xmlIDPtr xmlValidCtxtPtr xmlDocPtr xmlChar* xmlAttrPtr
+xmlTextReaderReadInnerXml xmlTextReaderReadInnerXml 1 xmlChar* xmlTextReaderPtr
+xmlTextWriterStartDTDEntity xmlTextWriterStartDTDEntity 3 int xmlTextWriterPtr int xmlChar*
+xmlSchemaValidateOneElement xmlSchemaValidateOneElement 2 int xmlSchemaValidCtxtPtr xmlNodePtr
+xmlSAX2ProcessingInstruction xmlSAX2ProcessingInstruction 3 unknown_or_void * xmlChar* xmlChar*
+xmlXPathWrapNodeSet xmlXPathWrapNodeSet 1 xmlXPathObjectPtr xmlNodeSetPtr
+xmlParseComment xmlParseComment 1 unknown_or_void xmlParserCtxtPtr
+xmlCatalogGetSystem xmlCatalogGetSystem 1 xmlChar* xmlChar*
+xmlDictQLookup xmlDictQLookup 3 xmlChar* xmlDictPtr xmlChar* xmlChar*
+xmlBuildQName xmlBuildQName 4 xmlChar* xmlChar* xmlChar* xmlChar* int
+xmlSchemaNewDocParserCtxt xmlSchemaNewDocParserCtxt 1 xmlSchemaParserCtxtPtr xmlDocPtr
+xmlBufFromBuffer xmlBufFromBuffer 1 xmlBufPtr xmlBufferPtr
+xmlSAXVersion xmlSAXVersion 2 int xmlSAXHandler* int
+xmlStrlen xmlStrlen 1 int xmlChar*
+xmlDocCopyNodeList xmlDocCopyNodeList 2 xmlNodePtr xmlDocPtr xmlNodePtr
+xmlThrDefBufferAllocScheme xmlThrDefBufferAllocScheme 1 xmlBufferAllocationScheme xmlBufferAllocationScheme
+xmlDumpEntitiesTable xmlDumpEntitiesTable 2 unknown_or_void xmlBufferPtr xmlEntitiesTablePtr
+xmlXPathLangFunction xmlXPathLangFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextReaderLocalName xmlTextReaderLocalName 1 xmlChar* xmlTextReaderPtr
+xmlXPathDebugDumpObject xmlXPathDebugDumpObject 3 unknown_or_void FILE* xmlXPathObjectPtr int
+xmlNodeBufGetContent xmlNodeBufGetContent 2 int xmlBufferPtr xmlNode*
+xmlThrDefSaveNoEmptyTags xmlThrDefSaveNoEmptyTags 1 int int
+xmlListRemoveAll xmlListRemoveAll 2 int xmlListPtr *
+xmlUCSIsSupplementaryPrivateUseAreaA xmlUCSIsSupplementaryPrivateUseAreaA 1 int int
+xmlSchemaGetParserErrors xmlSchemaGetParserErrors 4 int xmlSchemaParserCtxtPtr xmlSchemaValidityErrorFunc* xmlSchemaValidityWarningFunc* **
+xmlUCSIsSupplementaryPrivateUseAreaB xmlUCSIsSupplementaryPrivateUseAreaB 1 int int
+xmlCatalogFreeLocal xmlCatalogFreeLocal 1 unknown_or_void *
+xmlDictCreateSub xmlDictCreateSub 1 xmlDictPtr xmlDictPtr
+htmlReadDoc htmlReadDoc 4 htmlDocPtr xmlChar* char* char* int
+xmlTextWriterStartElementNS xmlTextWriterStartElementNS 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlXPathIsNodeType xmlXPathIsNodeType 1 int xmlChar*
+xmlMemSetup xmlMemSetup 4 int xmlFreeFunc xmlMallocFunc xmlReallocFunc xmlStrdupFunc
+xmlSchemaValidateLengthFacetWhtsp xmlSchemaValidateLengthFacetWhtsp 6 int xmlSchemaFacetPtr xmlSchemaValType xmlChar* xmlSchemaValPtr longunsignedint* xmlSchemaWhitespaceValueType
+htmlReadIO htmlReadIO 6 htmlDocPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlXPathSubstringFunction xmlXPathSubstringFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlUCSIsAegeanNumbers xmlUCSIsAegeanNumbers 1 int int
+xmlTextReaderRelaxNGValidateCtxt xmlTextReaderRelaxNGValidateCtxt 3 int xmlTextReaderPtr xmlRelaxNGValidCtxtPtr int
+xmlUCSIsMongolian xmlUCSIsMongolian 1 int int
+xmlXPathFreeObject xmlXPathFreeObject 1 unknown_or_void xmlXPathObjectPtr
+xmlAllocOutputBuffer xmlAllocOutputBuffer 1 xmlOutputBufferPtr xmlCharEncodingHandlerPtr
+xmlUCSIsGothic xmlUCSIsGothic 1 int int
+xmlNanoHTTPRead xmlNanoHTTPRead 3 int * * int
+xmlModuleOpen xmlModuleOpen 2 xmlModulePtr char* int
+xmlURIUnescapeString xmlURIUnescapeString 3 char* char* int char*
+xmlTextWriterWriteVFormatElement xmlTextWriterWriteVFormatElement 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlSchemaInitTypes xmlSchemaInitTypes 0 unknown_or_void
+htmlSaveFile htmlSaveFile 2 int char* xmlDocPtr
+xmlParserInputBufferPush xmlParserInputBufferPush 3 int xmlParserInputBufferPtr int char*
+xmlSetExternalEntityLoader xmlSetExternalEntityLoader 1 unknown_or_void xmlExternalEntityLoader
+xmlNanoHTTPClose xmlNanoHTTPClose 1 unknown_or_void *
+xmlCopyDoc xmlCopyDoc 2 xmlDocPtr xmlDocPtr int
+xmlNewDoc xmlNewDoc 1 xmlDocPtr xmlChar*
+xmlStringDecodeEntities xmlStringDecodeEntities 6 xmlChar* xmlParserCtxtPtr xmlChar* int xmlChar xmlChar xmlChar
+xmlParserInputBufferGrow xmlParserInputBufferGrow 2 int xmlParserInputBufferPtr int
+xmlTextReaderByteConsumed xmlTextReaderByteConsumed 1 longint xmlTextReaderPtr
+xmlRemoveProp xmlRemoveProp 1 int xmlAttrPtr
+xmlXPathConvertString xmlXPathConvertString 1 xmlXPathObjectPtr xmlXPathObjectPtr
+xmlCatalogGetPublic xmlCatalogGetPublic 1 xmlChar* xmlChar*
+xmlSchemaFreeValidCtxt xmlSchemaFreeValidCtxt 1 unknown_or_void xmlSchemaValidCtxtPtr
+xmlUCSIsKhmer xmlUCSIsKhmer 1 int int
+xmlParseCharRef xmlParseCharRef 1 int xmlParserCtxtPtr
+xmlAutomataNewOnceTrans xmlAutomataNewOnceTrans 7 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* int int *
+xmlStrQEqual xmlStrQEqual 3 int xmlChar* xmlChar* xmlChar*
+xmlXPathPositionFunction xmlXPathPositionFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlParserGetDirectory xmlParserGetDirectory 1 char* char*
+xmlBufferGrow xmlBufferGrow 2 int xmlBufferPtr unsignedint
+xmlSAXUserParseMemory xmlSAXUserParseMemory 4 int xmlSAXHandlerPtr * char* int
+xmlXPathEvalExpression xmlXPathEvalExpression 2 xmlXPathObjectPtr xmlChar* xmlXPathContextPtr
+xmlStrcasestr xmlStrcasestr 2 xmlChar* xmlChar* xmlChar*
+xmlNsListDumpOutput xmlNsListDumpOutput 2 unknown_or_void xmlOutputBufferPtr xmlNsPtr
+xmlXPathRegisteredVariablesCleanup xmlXPathRegisteredVariablesCleanup 1 unknown_or_void xmlXPathContextPtr
+xmlLsCountNode xmlLsCountNode 1 int xmlNodePtr
+xmlCleanupParser xmlCleanupParser 0 unknown_or_void
+xmlAutomataNewCountTrans2 xmlAutomataNewCountTrans2 8 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* xmlChar* int int *
+xmlTextWriterWriteDTDAttlist xmlTextWriterWriteDTDAttlist 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlGetDocEntity xmlGetDocEntity 2 xmlEntityPtr xmlDoc* xmlChar*
+xmlDictOwns xmlDictOwns 2 int xmlDictPtr xmlChar*
+xmlNanoHTTPRedir xmlNanoHTTPRedir 1 char* *
+xmlDetectCharEncoding xmlDetectCharEncoding 2 xmlCharEncoding unsignedchar* int
+xmlXPtrNewContext xmlXPtrNewContext 3 xmlXPathContextPtr xmlDocPtr xmlNodePtr xmlNodePtr
+xmlSchemaSetValidErrors xmlSchemaSetValidErrors 4 unknown_or_void xmlSchemaValidCtxtPtr xmlSchemaValidityErrorFunc xmlSchemaValidityWarningFunc *
+xmlThrDefKeepBlanksDefaultValue xmlThrDefKeepBlanksDefaultValue 1 int int
+xmlParseSystemLiteral xmlParseSystemLiteral 1 xmlChar* xmlParserCtxtPtr
+xmlUCSIsOriya xmlUCSIsOriya 1 int int
+xmlNanoHTTPMimeType xmlNanoHTTPMimeType 1 char* *
+xmlResetError xmlResetError 1 unknown_or_void xmlErrorPtr
+xmlUCSIsBoxDrawing xmlUCSIsBoxDrawing 1 int int
+xmlXPathNodeSetAddUnique xmlXPathNodeSetAddUnique 2 int xmlNodeSetPtr xmlNodePtr
+xmlCatalogAdd xmlCatalogAdd 3 int xmlChar* xmlChar* xmlChar*
+xmlUCSIsLatinExtendedA xmlUCSIsLatinExtendedA 1 int int
+xmlHashFree xmlHashFree 2 unknown_or_void xmlHashTablePtr xmlHashDeallocator
+xmlUCSIsLatinExtendedB xmlUCSIsLatinExtendedB 1 int int
+xmlACatalogResolveURI xmlACatalogResolveURI 2 xmlChar* xmlCatalogPtr xmlChar*
+xmlDictSize xmlDictSize 1 int xmlDictPtr
+xmlTextWriterWriteBase64 xmlTextWriterWriteBase64 4 int xmlTextWriterPtr char* int int
+xmlXPathNormalizeFunction xmlXPathNormalizeFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlNewNode xmlNewNode 2 xmlNodePtr xmlNsPtr xmlChar*
+xmlUCSIsHiragana xmlUCSIsHiragana 1 int int
+xmlSAXParseMemory xmlSAXParseMemory 4 xmlDocPtr xmlSAXHandlerPtr char* int int
+xmlSAX2EndDocument xmlSAX2EndDocument 1 unknown_or_void *
+xmlSAX2EndElementNs xmlSAX2EndElementNs 4 unknown_or_void * xmlChar* xmlChar* xmlChar*
+xmlIsExtender xmlIsExtender 1 int unsignedint
+xmlNodeDumpOutput xmlNodeDumpOutput 6 unknown_or_void xmlOutputBufferPtr xmlDocPtr xmlNodePtr int int char*
+xmlRegexpPrint xmlRegexpPrint 2 unknown_or_void FILE* xmlRegexpPtr
+xmlGcMemGet xmlGcMemGet 5 int xmlFreeFunc* xmlMallocFunc* xmlMallocFunc* xmlReallocFunc* xmlStrdupFunc*
+xmlUCSIsLimbu xmlUCSIsLimbu 1 int int
+xmlNewDocTextLen xmlNewDocTextLen 3 xmlNodePtr xmlDocPtr xmlChar* int
+xmlNodeSetSpacePreserve xmlNodeSetSpacePreserve 2 unknown_or_void xmlNodePtr int
+xmlStrdup xmlStrdup 1 xmlChar* xmlChar*
+htmlNodeDumpFile htmlNodeDumpFile 3 unknown_or_void FILE* xmlDocPtr xmlNodePtr
+xmlParseXMLDecl xmlParseXMLDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlNodeDump xmlNodeDump 5 int xmlBufferPtr xmlDocPtr xmlNodePtr int int
+xmlBufAdd xmlBufAdd 3 int xmlBufPtr xmlChar* int
+xmlFreeProp xmlFreeProp 1 unknown_or_void xmlAttrPtr
+xmlCatalogDump xmlCatalogDump 1 unknown_or_void FILE*
+xmlSchemaValidateStream xmlSchemaValidateStream 5 int xmlSchemaValidCtxtPtr xmlParserInputBufferPtr xmlCharEncoding xmlSAXHandlerPtr *
+xmlTextReaderMoveToAttributeNo xmlTextReaderMoveToAttributeNo 2 int xmlTextReaderPtr int
+xmlUCSIsMathematicalAlphanumericSymbols xmlUCSIsMathematicalAlphanumericSymbols 1 int int
+xmlParserError xmlParserError 2 unknown_or_void * char*
+htmlIsBooleanAttr htmlIsBooleanAttr 1 int xmlChar*
+xmlUCSIsLatinExtendedAdditional xmlUCSIsLatinExtendedAdditional 1 int int
+xmlUCSIsMiscellaneousMathematicalSymbolsA xmlUCSIsMiscellaneousMathematicalSymbolsA 1 int int
+xmlTextReaderMoveToAttributeNs xmlTextReaderMoveToAttributeNs 3 int xmlTextReaderPtr xmlChar* xmlChar*
+xmlUCSIsMiscellaneousMathematicalSymbolsB xmlUCSIsMiscellaneousMathematicalSymbolsB 1 int int
+xmlParserInputBufferCreateMem xmlParserInputBufferCreateMem 3 xmlParserInputBufferPtr char* int xmlCharEncoding
+xmlNextChar xmlNextChar 1 unknown_or_void xmlParserCtxtPtr
+xmlBufferContent xmlBufferContent 1 xmlChar* xmlBuffer*
+xmlSplitQName2 xmlSplitQName2 2 xmlChar* xmlChar* xmlChar**
+xmlSplitQName3 xmlSplitQName3 2 xmlChar* xmlChar* int*
+xmlNodeSetContentLen xmlNodeSetContentLen 3 unknown_or_void xmlNodePtr xmlChar* int
+xmlValidatePushCData xmlValidatePushCData 3 int xmlValidCtxtPtr xmlChar* int
+xmlNewDocFragment xmlNewDocFragment 1 xmlNodePtr xmlDocPtr
+xmlParseExternalEntity xmlParseExternalEntity 7 int xmlDocPtr xmlSAXHandlerPtr * int xmlChar* xmlChar* xmlNodePtr*
+xmlListSearch xmlListSearch 2 * xmlListPtr *
+xmlListPopBack xmlListPopBack 1 unknown_or_void xmlListPtr
+xmlAutomataCompile xmlAutomataCompile 1 xmlRegexpPtr xmlAutomataPtr
+xmlListSize xmlListSize 1 int xmlListPtr
+xmlNewTextWriterFilename xmlNewTextWriterFilename 2 xmlTextWriterPtr char* int
+xmlSchemaFreeParserCtxt xmlSchemaFreeParserCtxt 1 unknown_or_void xmlSchemaParserCtxtPtr
+xmlStrndup xmlStrndup 2 xmlChar* xmlChar* int
+xmlNanoHTTPInit xmlNanoHTTPInit 0 char*
+xmlCatalogIsEmpty xmlCatalogIsEmpty 1 int xmlCatalogPtr
+xmlTextReaderName xmlTextReaderName 1 xmlChar* xmlTextReaderPtr
+xmlParseReference xmlParseReference 1 unknown_or_void xmlParserCtxtPtr
+xmlDictExists xmlDictExists 3 xmlChar* xmlDictPtr xmlChar* int
+xmlPrintURI xmlPrintURI 2 unknown_or_void FILE* xmlURIPtr
+xmlGetDtdQAttrDesc xmlGetDtdQAttrDesc 4 xmlAttributePtr xmlDtdPtr xmlChar* xmlChar* xmlChar*
+xmlXPathNodeSetRemove xmlXPathNodeSetRemove 2 unknown_or_void xmlNodeSetPtr int
+xmlSaveToFilename xmlSaveToFilename 3 xmlSaveCtxtPtr char* char* int
+xmlTextReaderReadAttributeValue xmlTextReaderReadAttributeValue 1 int xmlTextReaderPtr
+xmlUCSIsGreek xmlUCSIsGreek 1 int int
+xmlIOHTTPRead xmlIOHTTPRead 3 int * char* int
+xmlFindCharEncodingHandler xmlFindCharEncodingHandler 1 xmlCharEncodingHandlerPtr char*
+xmlFreeDoc xmlFreeDoc 1 unknown_or_void xmlDocPtr
+xmlHashAddEntry xmlHashAddEntry 3 int xmlHashTablePtr xmlChar* *
+xmlValidateDtd xmlValidateDtd 3 int xmlValidCtxtPtr xmlDocPtr xmlDtdPtr
+xmlThrDefLineNumbersDefaultValue xmlThrDefLineNumbersDefaultValue 1 int int
+xmlNanoHTTPReturnCode xmlNanoHTTPReturnCode 1 int *
+xmlFreeURI xmlFreeURI 1 unknown_or_void xmlURIPtr
+xmlXPathCompiledEvalToBoolean xmlXPathCompiledEvalToBoolean 2 int xmlXPathCompExprPtr xmlXPathContextPtr
+xmlSAX2SetDocumentLocator xmlSAX2SetDocumentLocator 2 unknown_or_void * xmlSAXLocatorPtr
+xmlTextReaderSetStructuredErrorHandler xmlTextReaderSetStructuredErrorHandler 3 unknown_or_void xmlTextReaderPtr xmlStructuredErrorFunc *
+xmlBufCat xmlBufCat 2 int xmlBufPtr xmlChar*
+xmlBufferLength xmlBufferLength 1 int xmlBuffer*
+xmlGetNoNsProp xmlGetNoNsProp 2 xmlChar* xmlNode* xmlChar*
+xmlUCSIsHebrew xmlUCSIsHebrew 1 int int
+xmlUCSIsIPAExtensions xmlUCSIsIPAExtensions 1 int int
+xmlSetDocCompressMode xmlSetDocCompressMode 2 unknown_or_void xmlDocPtr int
+xmlTextReaderNodeType xmlTextReaderNodeType 1 int xmlTextReaderPtr
+xmlTextWriterWriteFormatAttributeNS xmlTextWriterWriteFormatAttributeNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlXPathTranslateFunction xmlXPathTranslateFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlLastElementChild xmlLastElementChild 1 xmlNodePtr xmlNodePtr
+xmlCleanupInputCallbacks xmlCleanupInputCallbacks 0 int
+xmlSchemaValidateDoc xmlSchemaValidateDoc 2 int xmlSchemaValidCtxtPtr xmlDocPtr
+xmlNewParserCtxt xmlNewParserCtxt 0 xmlParserCtxtPtr
+xmlParseEntityValue xmlParseEntityValue 2 xmlChar* xmlParserCtxtPtr xmlChar**
+xmlUCSIsBopomofo xmlUCSIsBopomofo 1 int int
+xmlDumpNotationDecl xmlDumpNotationDecl 2 unknown_or_void xmlBufferPtr xmlNotationPtr
+xmlFileRead xmlFileRead 3 int * char* int
+xmlCtxtReadMemory xmlCtxtReadMemory 6 xmlDocPtr xmlParserCtxtPtr char* int char* char* int
+xmlTextReaderClose xmlTextReaderClose 1 int xmlTextReaderPtr
+xmlReallocLoc xmlReallocLoc 4 * * size_t char* int
+xmlParseName xmlParseName 1 xmlChar* xmlParserCtxtPtr
+xmlSchemaGetBuiltInType xmlSchemaGetBuiltInType 1 xmlSchemaTypePtr xmlSchemaValType
+xmlTextReaderSchemaValidate xmlTextReaderSchemaValidate 2 int xmlTextReaderPtr char*
+xmlAutomataNewCountTrans xmlAutomataNewCountTrans 7 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* int int *
+xmlUCSIsHangulJamo xmlUCSIsHangulJamo 1 int int
+xmlTextWriterSetQuoteChar xmlTextWriterSetQuoteChar 2 int xmlTextWriterPtr xmlChar
+xmlSetBufferAllocationScheme xmlSetBufferAllocationScheme 1 unknown_or_void xmlBufferAllocationScheme
+xmlConvertSGMLCatalog xmlConvertSGMLCatalog 1 int xmlCatalogPtr
+xmlBufAvail xmlBufAvail 1 size_t xmlBufPtr
+xmlBufDumpElementDecl xmlBufDumpElementDecl 2 unknown_or_void xmlBufPtr xmlElementPtr
+xmlCopyError xmlCopyError 2 int xmlErrorPtr xmlErrorPtr
+xmlTextWriterStartCDATA xmlTextWriterStartCDATA 1 int xmlTextWriterPtr
+xmlCatalogSetDefaultPrefer xmlCatalogSetDefaultPrefer 1 xmlCatalogPrefer xmlCatalogPrefer
+xmlValidateElement xmlValidateElement 3 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr
+xmlTextReaderXmlLang xmlTextReaderXmlLang 1 xmlChar* xmlTextReaderPtr
+xmlFreeMutex xmlFreeMutex 1 unknown_or_void xmlMutexPtr
+xmlDictGetUsage xmlDictGetUsage 1 size_t xmlDictPtr
+xmlBuildRelativeURI xmlBuildRelativeURI 2 xmlChar* xmlChar* xmlChar*
+xmlStringGetNodeList xmlStringGetNodeList 2 xmlNodePtr xmlDoc* xmlChar*
+xmlSchematronFreeParserCtxt xmlSchematronFreeParserCtxt 1 unknown_or_void xmlSchematronParserCtxtPtr
+xmlRMutexLock xmlRMutexLock 1 unknown_or_void xmlRMutexPtr
+xmlSAX2StartDocument xmlSAX2StartDocument 1 unknown_or_void *
+xmlUCSIsArabicPresentationFormsA xmlUCSIsArabicPresentationFormsA 1 int int
+xmlTextReaderConstName xmlTextReaderConstName 1 xmlChar* xmlTextReaderPtr
+xmlPatternMatch xmlPatternMatch 2 int xmlPatternPtr xmlNodePtr
+xmlUCSIsArabicPresentationFormsB xmlUCSIsArabicPresentationFormsB 1 int int
+xmlXPathSumFunction xmlXPathSumFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlValidateElementDecl xmlValidateElementDecl 3 int xmlValidCtxtPtr xmlDocPtr xmlElementPtr
+xmlNewTextLen xmlNewTextLen 2 xmlNodePtr xmlChar* int
+xmlParserAddNodeInfo xmlParserAddNodeInfo 2 unknown_or_void xmlParserCtxtPtr xmlParserNodeInfoPtr
+xmlUnlockLibrary xmlUnlockLibrary 0 unknown_or_void
+xmlCtxtResetLastError xmlCtxtResetLastError 1 unknown_or_void *
+xmlGetProp xmlGetProp 2 xmlChar* xmlNode* xmlChar*
+xmlTextWriterWriteVFormatDTDInternalEntity xmlTextWriterWriteVFormatDTDInternalEntity 5 int xmlTextWriterPtr int xmlChar* char* __va_list_tag*
+xmlUCSIsBlock xmlUCSIsBlock 2 int int char*
+xmlUCSIsYijingHexagramSymbols xmlUCSIsYijingHexagramSymbols 1 int int
+xmlParseAttribute xmlParseAttribute 2 xmlChar* xmlParserCtxtPtr xmlChar**
+xmlOutputBufferCreateFd xmlOutputBufferCreateFd 2 xmlOutputBufferPtr int xmlCharEncodingHandlerPtr
+xmlUCSIsUgaritic xmlUCSIsUgaritic 1 int int
+xmlFreePropList xmlFreePropList 1 unknown_or_void xmlAttrPtr
+xmlUnsetProp xmlUnsetProp 2 int xmlNodePtr xmlChar*
+xmlXPathNodeEval xmlXPathNodeEval 3 xmlXPathObjectPtr xmlNodePtr xmlChar* xmlXPathContextPtr
+xmlXPathNextNamespace xmlXPathNextNamespace 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlOutputBufferClose xmlOutputBufferClose 1 int xmlOutputBufferPtr
+xmlCatalogRemove xmlCatalogRemove 1 int xmlChar*
+xmlUCSIsMiscellaneousSymbolsandArrows xmlUCSIsMiscellaneousSymbolsandArrows 1 int int
+xmlACatalogDump xmlACatalogDump 2 unknown_or_void xmlCatalogPtr FILE*
+xmlHasFeature xmlHasFeature 1 int xmlFeature
+xmlUCSIsGujarati xmlUCSIsGujarati 1 int int
+xmlRegisterCharEncodingHandler xmlRegisterCharEncodingHandler 1 unknown_or_void xmlCharEncodingHandlerPtr
+xmlGetParameterEntity xmlGetParameterEntity 2 xmlEntityPtr xmlDocPtr xmlChar*
+xmlResetLastError xmlResetLastError 0 unknown_or_void
+xmlRegisterInputCallbacks xmlRegisterInputCallbacks 4 int xmlInputMatchCallback xmlInputOpenCallback xmlInputReadCallback xmlInputCloseCallback
+xmlDocGetRootElement xmlDocGetRootElement 1 xmlNodePtr xmlDoc*
+xmlXPathConvertBoolean xmlXPathConvertBoolean 1 xmlXPathObjectPtr xmlXPathObjectPtr
+xmlUCSIsBengali xmlUCSIsBengali 1 int int
+xmlValidCtxtNormalizeAttributeValue xmlValidCtxtNormalizeAttributeValue 5 xmlChar* xmlValidCtxtPtr xmlDocPtr xmlNodePtr xmlChar* xmlChar*
+xmlMemBlocks xmlMemBlocks 0 int
+xmlUCSIsLinearBSyllabary xmlUCSIsLinearBSyllabary 1 int int
+xmlXPathWrapExternal xmlXPathWrapExternal 1 xmlXPathObjectPtr *
+xmlDictLookup xmlDictLookup 3 xmlChar* xmlDictPtr xmlChar* int
+xmlUCSIsGeometricShapes xmlUCSIsGeometricShapes 1 int int
+xmlUCSIsHighSurrogates xmlUCSIsHighSurrogates 1 int int
+xmlUCSIsSuperscriptsandSubscripts xmlUCSIsSuperscriptsandSubscripts 1 int int
+xmlStringLenDecodeEntities xmlStringLenDecodeEntities 7 xmlChar* xmlParserCtxtPtr xmlChar* int int xmlChar xmlChar xmlChar
+xmlDOMWrapRemoveNode xmlDOMWrapRemoveNode 4 int xmlDOMWrapCtxtPtr xmlDocPtr xmlNodePtr int
+xmlEncodeEntitiesReentrant xmlEncodeEntitiesReentrant 2 xmlChar* xmlDocPtr xmlChar*
+xmlTextWriterSetIndent xmlTextWriterSetIndent 2 int xmlTextWriterPtr int
+xmlTextReaderSetSchema xmlTextReaderSetSchema 2 int xmlTextReaderPtr xmlSchemaPtr
+xmlCopyNotationTable xmlCopyNotationTable 1 xmlNotationTablePtr xmlNotationTablePtr
+xmlDocDump xmlDocDump 2 int FILE* xmlDocPtr
+xmlTextWriterEndPI xmlTextWriterEndPI 1 int xmlTextWriterPtr
+xmlNewTextWriterDoc xmlNewTextWriterDoc 2 xmlTextWriterPtr xmlDocPtr* int
+xmlCtxtUseOptions xmlCtxtUseOptions 2 int xmlParserCtxtPtr int
+xmlXIncludeSetFlags xmlXIncludeSetFlags 2 int xmlXIncludeCtxtPtr int
+xmlXPathCompile xmlXPathCompile 1 xmlXPathCompExprPtr xmlChar*
+xmlXPathCastToBoolean xmlXPathCastToBoolean 1 int xmlXPathObjectPtr
+xmlSchematronValidateDoc xmlSchematronValidateDoc 2 int xmlSchematronValidCtxtPtr xmlDocPtr
+xmlXPathNodeSetAddNs xmlXPathNodeSetAddNs 3 int xmlNodeSetPtr xmlNodePtr xmlNsPtr
+htmlNewDocNoDtD htmlNewDocNoDtD 2 htmlDocPtr xmlChar* xmlChar*
+xmlValidateOneNamespace xmlValidateOneNamespace 6 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr xmlChar* xmlNsPtr xmlChar*
+xmlInputReadCallbackNop xmlInputReadCallbackNop 3 int * char* int
+xmlSchemaFree xmlSchemaFree 1 unknown_or_void xmlSchemaPtr
+xmlTextWriterFullEndElement xmlTextWriterFullEndElement 1 int xmlTextWriterPtr
+xmlSAX2ElementDecl xmlSAX2ElementDecl 4 unknown_or_void * xmlChar* int xmlElementContentPtr
+xmlCreatePushParserCtxt xmlCreatePushParserCtxt 5 xmlParserCtxtPtr xmlSAXHandlerPtr * char* int char*
+xmlXPathNodeLeadingSorted xmlXPathNodeLeadingSorted 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodePtr
+xmlXPathStringFunction xmlXPathStringFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextWriterStartDocument xmlTextWriterStartDocument 4 int xmlTextWriterPtr char* char* char*
+xmlParseExtParsedEnt xmlParseExtParsedEnt 1 int xmlParserCtxtPtr
+xmlThrDefPedanticParserDefaultValue xmlThrDefPedanticParserDefaultValue 1 int int
+xmlListReverse xmlListReverse 1 unknown_or_void xmlListPtr
+xmlUCSIsRunic xmlUCSIsRunic 1 int int
+xmlDOMWrapFreeCtxt xmlDOMWrapFreeCtxt 1 unknown_or_void xmlDOMWrapCtxtPtr
+xmlListSort xmlListSort 1 unknown_or_void xmlListPtr
+xmlUCSIsMalayalam xmlUCSIsMalayalam 1 int int
+xmlXPathCastStringToNumber xmlXPathCastStringToNumber 1 double xmlChar*
+xmlFreeCatalog xmlFreeCatalog 1 unknown_or_void xmlCatalogPtr
+xmlACatalogResolve xmlACatalogResolve 3 xmlChar* xmlCatalogPtr xmlChar* xmlChar*
+xmlRelaxNGNewValidCtxt xmlRelaxNGNewValidCtxt 1 xmlRelaxNGValidCtxtPtr xmlRelaxNGPtr
+xmlSAX2InitDefaultSAXHandler xmlSAX2InitDefaultSAXHandler 2 unknown_or_void xmlSAXHandler* int
+xmlUTF8Strloc xmlUTF8Strloc 2 int xmlChar* xmlChar*
+xmlCopyEnumeration xmlCopyEnumeration 1 xmlEnumerationPtr xmlEnumerationPtr
+xmlTextWriterStartComment xmlTextWriterStartComment 1 int xmlTextWriterPtr
+xmlCopyDtd xmlCopyDtd 1 xmlDtdPtr xmlDtdPtr
+xmlSAX2InternalSubset xmlSAX2InternalSubset 4 unknown_or_void * xmlChar* xmlChar* xmlChar*
+xmlUCSIsMathematicalOperators xmlUCSIsMathematicalOperators 1 int int
+xmlUCSIsSpacingModifierLetters xmlUCSIsSpacingModifierLetters 1 int int
+xmlNewDtd xmlNewDtd 4 xmlDtdPtr xmlDocPtr xmlChar* xmlChar* xmlChar*
+xmlUTF8Charcmp xmlUTF8Charcmp 2 int xmlChar* xmlChar*
+xmlTextWriterSetIndentString xmlTextWriterSetIndentString 2 int xmlTextWriterPtr xmlChar*
+xmlUCSIsHighPrivateUseSurrogates xmlUCSIsHighPrivateUseSurrogates 1 int int
+xmlParseMemory xmlParseMemory 2 xmlDocPtr char* int
+xmlUCSIsLowSurrogates xmlUCSIsLowSurrogates 1 int int
+xmlCanonicPath xmlCanonicPath 1 xmlChar* xmlChar*
+xmlSetListDoc xmlSetListDoc 2 unknown_or_void xmlNodePtr xmlDocPtr
+xmlBufResize xmlBufResize 2 int xmlBufPtr size_t
+xmlParseBalancedChunkMemory xmlParseBalancedChunkMemory 6 int xmlDocPtr xmlSAXHandlerPtr * int xmlChar* xmlNodePtr*
+xmlSetNsProp xmlSetNsProp 4 xmlAttrPtr xmlNodePtr xmlNsPtr xmlChar* xmlChar*
+xmlBufCreateSize xmlBufCreateSize 1 xmlBufPtr size_t
+xmlShellPrintXPathResult xmlShellPrintXPathResult 1 unknown_or_void xmlXPathObjectPtr
+xmlTextWriterWriteAttributeNS xmlTextWriterWriteAttributeNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlAddDtdEntity xmlAddDtdEntity 6 xmlEntityPtr xmlDocPtr xmlChar* int xmlChar* xmlChar* xmlChar*
+xmlLoadExternalEntity xmlLoadExternalEntity 3 xmlParserInputPtr char* char* xmlParserCtxtPtr
+xmlListDelete xmlListDelete 1 unknown_or_void xmlListPtr
+xmlParseCatalogFile xmlParseCatalogFile 1 xmlDocPtr char*
+xmlXPathNumberFunction xmlXPathNumberFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlAddRef xmlAddRef 4 xmlRefPtr xmlValidCtxtPtr xmlDocPtr xmlChar* xmlAttrPtr
+xmlCtxtResetPush xmlCtxtResetPush 5 int xmlParserCtxtPtr char* int char* char*
+xmlTextWriterWriteFormatComment xmlTextWriterWriteFormatComment 2 int xmlTextWriterPtr char*
+xmlXPathCastBooleanToNumber xmlXPathCastBooleanToNumber 1 double int
+xmlRelaxNGValidatePushElement xmlRelaxNGValidatePushElement 3 int xmlRelaxNGValidCtxtPtr xmlDocPtr xmlNodePtr
+xmlNanoHTTPOpen xmlNanoHTTPOpen 2 * char* char**
+xmlParseURIReference xmlParseURIReference 2 int xmlURIPtr char*
+xmlDebugDumpNodeList xmlDebugDumpNodeList 3 unknown_or_void FILE* xmlNodePtr int
+xmlReaderNewFd xmlReaderNewFd 5 int xmlTextReaderPtr int char* char* int
+xmlCatalogLocalResolveURI xmlCatalogLocalResolveURI 2 xmlChar* * xmlChar*
+xmlValidatePopElement xmlValidatePopElement 4 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr xmlChar*
+xmlTextWriterWriteFormatRaw xmlTextWriterWriteFormatRaw 2 int xmlTextWriterPtr char*
+xmlUCSIsPhoneticExtensions xmlUCSIsPhoneticExtensions 1 int int
+xmlParseElementMixedContentDecl xmlParseElementMixedContentDecl 2 xmlElementContentPtr xmlParserCtxtPtr int
+xmlNanoHTTPMethod xmlNanoHTTPMethod 6 * char* char* char* char** char* int
+xmlParseAttributeListDecl xmlParseAttributeListDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlIsPubidChar xmlIsPubidChar 1 int unsignedint
+xmlCopyNode xmlCopyNode 2 xmlNodePtr xmlNodePtr int
+xmlPopInputCallbacks xmlPopInputCallbacks 0 int
+xmlUCSIsOldItalic xmlUCSIsOldItalic 1 int int
+xmlOutputBufferCreateIO xmlOutputBufferCreateIO 4 xmlOutputBufferPtr xmlOutputWriteCallback xmlOutputCloseCallback * xmlCharEncodingHandlerPtr
+xmlSaveClose xmlSaveClose 1 int xmlSaveCtxtPtr
+xmlStrncasecmp xmlStrncasecmp 3 int xmlChar* xmlChar* int
+xmlThrDefIndentTreeOutput xmlThrDefIndentTreeOutput 1 int int
+xmlUTF8Strndup xmlUTF8Strndup 2 xmlChar* xmlChar* int
+xmlNodeGetBase xmlNodeGetBase 2 xmlChar* xmlDoc* xmlNode*
+xmlXPathNewNodeSetList xmlXPathNewNodeSetList 1 xmlXPathObjectPtr xmlNodeSetPtr
+xmlXPathCompareValues xmlXPathCompareValues 3 int xmlXPathParserContextPtr int int
+xmlLockLibrary xmlLockLibrary 0 unknown_or_void
+xmlXPathFreeCompExpr xmlXPathFreeCompExpr 1 unknown_or_void xmlXPathCompExprPtr
+xmlXPathLeadingSorted xmlXPathLeadingSorted 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlUCSIsLao xmlUCSIsLao 1 int int
+xmlParseInNodeContext xmlParseInNodeContext 5 xmlParserErrors xmlNodePtr char* int int xmlNodePtr*
+xmlXPathRegisterVariable xmlXPathRegisterVariable 3 int xmlXPathContextPtr xmlChar* xmlXPathObjectPtr
+xmlXPathStringEvalNumber xmlXPathStringEvalNumber 1 double xmlChar*
+xmlSchemaSetValidOptions xmlSchemaSetValidOptions 2 int xmlSchemaValidCtxtPtr int
+xmlXIncludeProcess xmlXIncludeProcess 1 int xmlDocPtr
+xmlHashScan xmlHashScan 3 unknown_or_void xmlHashTablePtr xmlHashScanner *
+xmlCharEncFirstLine xmlCharEncFirstLine 3 int xmlCharEncodingHandler* xmlBufferPtr xmlBufferPtr
+xmlSchemaGetFacetValueAsULong xmlSchemaGetFacetValueAsULong 1 longunsignedint xmlSchemaFacetPtr
+xmlHashDefaultDeallocator xmlHashDefaultDeallocator 2 unknown_or_void * xmlChar*
+xmlTextWriterWriteFormatDTDElement xmlTextWriterWriteFormatDTDElement 3 int xmlTextWriterPtr xmlChar* char*
+xmlPatterncompile xmlPatterncompile 4 xmlPatternPtr xmlChar* xmlDict* int xmlChar**
+xmlRegisterOutputCallbacks xmlRegisterOutputCallbacks 4 int xmlOutputMatchCallback xmlOutputOpenCallback xmlOutputWriteCallback xmlOutputCloseCallback
+xmlParseDocTypeDecl xmlParseDocTypeDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlTextReaderHasAttributes xmlTextReaderHasAttributes 1 int xmlTextReaderPtr
+xmlUCSIsCatCc xmlUCSIsCatCc 1 int int
+xmlUCSIsCombiningHalfMarks xmlUCSIsCombiningHalfMarks 1 int int
+xmlXPathNewBoolean xmlXPathNewBoolean 1 xmlXPathObjectPtr int
+xmlCopyElementTable xmlCopyElementTable 1 xmlElementTablePtr xmlElementTablePtr
+htmlNewParserCtxt htmlNewParserCtxt 0 htmlParserCtxtPtr
+htmlCtxtReadDoc htmlCtxtReadDoc 5 htmlDocPtr htmlParserCtxtPtr xmlChar* char* char* int
+xmlSchemaNewFacet xmlSchemaNewFacet 0 xmlSchemaFacetPtr
+xmlTextReaderSetParserProp xmlTextReaderSetParserProp 3 int xmlTextReaderPtr int int
+xmlUCSIsCatCf xmlUCSIsCatCf 1 int int
+xmlGetLastError xmlGetLastError 0 xmlErrorPtr
+xmlTextReaderStandalone xmlTextReaderStandalone 1 int xmlTextReaderPtr
+xmlOutputBufferWrite xmlOutputBufferWrite 3 int xmlOutputBufferPtr int char*
+xmlSchematronSetValidStructuredErrors xmlSchematronSetValidStructuredErrors 3 unknown_or_void xmlSchematronValidCtxtPtr xmlStructuredErrorFunc *
+xmlAutomataNewCountedTrans xmlAutomataNewCountedTrans 4 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr int
+xmlXPathNextDescendantOrSelf xmlXPathNextDescendantOrSelf 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlUCSIsMyanmar xmlUCSIsMyanmar 1 int int
+xmlParseEnumeratedType xmlParseEnumeratedType 2 int xmlParserCtxtPtr xmlEnumerationPtr*
+xmlListRemoveFirst xmlListRemoveFirst 2 int xmlListPtr *
+xmlIsBlank xmlIsBlank 1 int unsignedint
+xmlUCSIsCatCo xmlUCSIsCatCo 1 int int
+htmlHandleOmittedElem htmlHandleOmittedElem 1 int int
+xmlStringCurrentChar xmlStringCurrentChar 3 int xmlParserCtxtPtr xmlChar* int*
+xmlSchemaNewQNameValue xmlSchemaNewQNameValue 2 xmlSchemaValPtr xmlChar* xmlChar*
+xmlACatalogResolveSystem xmlACatalogResolveSystem 2 xmlChar* xmlCatalogPtr xmlChar*
+xmlSAX2HasInternalSubset xmlSAX2HasInternalSubset 1 int *
+xmlFreeTextWriter xmlFreeTextWriter 1 unknown_or_void xmlTextWriterPtr
+xmlUCSIsUnifiedCanadianAboriginalSyllabics xmlUCSIsUnifiedCanadianAboriginalSyllabics 1 int int
+xmlUCSIsCatCs xmlUCSIsCatCs 1 int int
+xmlNewInputStream xmlNewInputStream 1 xmlParserInputPtr xmlParserCtxtPtr
+xmlSchemaValidateSetFilename xmlSchemaValidateSetFilename 2 unknown_or_void xmlSchemaValidCtxtPtr char*
+xmlUCSIsVariationSelectors xmlUCSIsVariationSelectors 1 int int
+xmlListFront xmlListFront 1 xmlLinkPtr xmlListPtr
+xmlSAX2ExternalSubset xmlSAX2ExternalSubset 4 unknown_or_void * xmlChar* xmlChar* xmlChar*
+xmlXPathTrueFunction xmlXPathTrueFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlRelaxNGParse xmlRelaxNGParse 1 xmlRelaxNGPtr xmlRelaxNGParserCtxtPtr
+xmlTextWriterWriteDTDEntity xmlTextWriterWriteDTDEntity 7 int xmlTextWriterPtr int xmlChar* xmlChar* xmlChar* xmlChar* xmlChar*
+xmlFreeDtd xmlFreeDtd 1 unknown_or_void xmlDtdPtr
+xmlParseContent xmlParseContent 1 unknown_or_void xmlParserCtxtPtr
+xmlParserInputBufferRead xmlParserInputBufferRead 2 int xmlParserInputBufferPtr int
+xmlChildElementCount xmlChildElementCount 1 longunsignedint xmlNodePtr
+xmlAutomataNewOnceTrans2 xmlAutomataNewOnceTrans2 8 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* xmlChar* int int *
+htmlReadMemory htmlReadMemory 5 htmlDocPtr char* int char* char* int
+xmlInitParserCtxt xmlInitParserCtxt 1 int xmlParserCtxtPtr
+xmlValidatePushElement xmlValidatePushElement 4 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr xmlChar*
+xmlTextReaderPrefix xmlTextReaderPrefix 1 xmlChar* xmlTextReaderPtr
+xmlXIncludeProcessTree xmlXIncludeProcessTree 1 int xmlNodePtr
+xmlHashScanFull3 xmlHashScanFull3 6 unknown_or_void xmlHashTablePtr xmlChar* xmlChar* xmlChar* xmlHashScannerFull *
+xmlCreateMemoryParserCtxt xmlCreateMemoryParserCtxt 2 xmlParserCtxtPtr char* int
+xmlUCSIsTagalog xmlUCSIsTagalog 1 int int
+xmlSwitchToEncoding xmlSwitchToEncoding 2 int xmlParserCtxtPtr xmlCharEncodingHandlerPtr
+xmlXPathSubValues xmlXPathSubValues 1 unknown_or_void xmlXPathParserContextPtr
+xmlXPathLeading xmlXPathLeading 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlSchemaWhiteSpaceReplace xmlSchemaWhiteSpaceReplace 1 xmlChar* xmlChar*
+xmlTextWriterWriteVFormatDTDElement xmlTextWriterWriteVFormatDTDElement 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlUCSIsMiscellaneousTechnical xmlUCSIsMiscellaneousTechnical 1 int int
+htmlDocContentDumpOutput htmlDocContentDumpOutput 3 unknown_or_void xmlOutputBufferPtr xmlDocPtr char*
+xmlXPathCastBooleanToString xmlXPathCastBooleanToString 1 xmlChar* int
+xmlThrDefSubstituteEntitiesDefaultValue xmlThrDefSubstituteEntitiesDefaultValue 1 int int
+xmlSchemaCollapseString xmlSchemaCollapseString 1 xmlChar* xmlChar*
+xmlXPathCastNumberToString xmlXPathCastNumberToString 1 xmlChar* double
+xmlInitCharEncodingHandlers xmlInitCharEncodingHandlers 0 shortunsignedint
+xmlTextWriterWriteVFormatDTD xmlTextWriterWriteVFormatDTD 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+htmlSAXParseFile htmlSAXParseFile 4 htmlDocPtr char* char* htmlSAXHandlerPtr *
+xmlParseDefaultDecl xmlParseDefaultDecl 2 int xmlParserCtxtPtr xmlChar**
+xmlNanoHTTPMethodRedir xmlNanoHTTPMethodRedir 7 * char* char* char* char** char** char* int
+xmlOutputBufferFlush xmlOutputBufferFlush 1 int xmlOutputBufferPtr
+xmlTextReaderReadString xmlTextReaderReadString 1 xmlChar* xmlTextReaderPtr
+xmlTextWriterWriteElementNS xmlTextWriterWriteElementNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlDOMWrapReconcileNamespaces xmlDOMWrapReconcileNamespaces 3 int xmlDOMWrapCtxtPtr xmlNodePtr int
+htmlParseElement htmlParseElement 1 unknown_or_void htmlParserCtxtPtr
+xmlUCSIsBopomofoExtended xmlUCSIsBopomofoExtended 1 int int
+xmlACatalogResolvePublic xmlACatalogResolvePublic 2 xmlChar* xmlCatalogPtr xmlChar*
+xmlXPathCeilingFunction xmlXPathCeilingFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlSchematronFreeValidCtxt xmlSchematronFreeValidCtxt 1 unknown_or_void xmlSchematronValidCtxtPtr
+xmlIOHTTPOpen xmlIOHTTPOpen 1 * char*
+xmlXPathNodeSetContains xmlXPathNodeSetContains 2 int xmlNodeSetPtr xmlNodePtr
+xmlSAXParseDoc xmlSAXParseDoc 3 xmlDocPtr xmlSAXHandlerPtr xmlChar* int
+xmlReaderNewIO xmlReaderNewIO 7 int xmlTextReaderPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlCopyNodeList xmlCopyNodeList 1 xmlNodePtr xmlNodePtr
+xmlStreamPushAttr xmlStreamPushAttr 3 int xmlStreamCtxtPtr xmlChar* xmlChar*
+xmlGetThreadId xmlGetThreadId 0 int
+xmlTextReaderConstLocalName xmlTextReaderConstLocalName 1 xmlChar* xmlTextReaderPtr
+xmlAllocOutputBufferInternal xmlAllocOutputBufferInternal 1 xmlOutputBufferPtr xmlCharEncodingHandlerPtr
+xmlLoadACatalog xmlLoadACatalog 1 xmlCatalogPtr char*
+xmlThrDefLoadExtDtdDefaultValue xmlThrDefLoadExtDtdDefaultValue 1 int int
+xmlPatternMinDepth xmlPatternMinDepth 1 int xmlPatternPtr
+xmlPatternStreamable xmlPatternStreamable 1 int xmlPatternPtr
+xmlNewText xmlNewText 1 xmlNodePtr xmlChar*
+xmlRegisterDefaultOutputCallbacks xmlRegisterDefaultOutputCallbacks 0 unknown_or_void
+xmlShellSave xmlShellSave 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlACatalogAdd xmlACatalogAdd 4 int xmlCatalogPtr xmlChar* xmlChar* xmlChar*
+xmlXPathNextFollowing xmlXPathNextFollowing 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+htmlNodeDumpFormatOutput htmlNodeDumpFormatOutput 5 unknown_or_void xmlOutputBufferPtr xmlDocPtr xmlNodePtr char* int
+xmlThrDefSetStructuredErrorFunc xmlThrDefSetStructuredErrorFunc 2 unknown_or_void * xmlStructuredErrorFunc
+xmlGetUTF8Char xmlGetUTF8Char 2 int unsignedchar* int*
+xmlUCSIsYiRadicals xmlUCSIsYiRadicals 1 int int
+xmlGetCharEncodingName xmlGetCharEncodingName 1 char* xmlCharEncoding
+xmlShellCat xmlShellCat 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlTextWriterEndComment xmlTextWriterEndComment 1 int xmlTextWriterPtr
+xmlEncodeSpecialChars xmlEncodeSpecialChars 2 xmlChar* xmlDoc* xmlChar*
+xmlRelaxNGGetParserErrors xmlRelaxNGGetParserErrors 4 int xmlRelaxNGParserCtxtPtr xmlRelaxNGValidityErrorFunc* xmlRelaxNGValidityWarningFunc* **
+xmlFileOpen xmlFileOpen 1 * char*
+xmlUCSIsMiscellaneousSymbols xmlUCSIsMiscellaneousSymbols 1 int int
+xmlNewProp xmlNewProp 3 xmlAttrPtr xmlNodePtr xmlChar* xmlChar*
+xmlListAppend xmlListAppend 2 int xmlListPtr *
+xmlNormalizeURIPath xmlNormalizeURIPath 1 int char*
+xmlTextReaderGetParserColumnNumber xmlTextReaderGetParserColumnNumber 1 int xmlTextReaderPtr
+htmlAttrAllowed htmlAttrAllowed 3 htmlStatus htmlElemDesc* xmlChar* int
+xmlAllocParserInputBuffer xmlAllocParserInputBuffer 1 xmlParserInputBufferPtr xmlCharEncoding
+xmlSchemaGetPredefinedType xmlSchemaGetPredefinedType 2 xmlSchemaTypePtr xmlChar* xmlChar*
+xmlTextWriterWriteFormatPI xmlTextWriterWriteFormatPI 3 int xmlTextWriterPtr xmlChar* char*
+xmlGetCompressMode xmlGetCompressMode 0 int
+xmlUCSIsCombiningDiacriticalMarksforSymbols xmlUCSIsCombiningDiacriticalMarksforSymbols 1 int int
+xmlUCSIsCJKUnifiedIdeographsExtensionA xmlUCSIsCJKUnifiedIdeographsExtensionA 1 int int
+xmlUCSIsCJKUnifiedIdeographsExtensionB xmlUCSIsCJKUnifiedIdeographsExtensionB 1 int int
+xmlAddPrevSibling xmlAddPrevSibling 2 xmlNodePtr xmlNodePtr xmlNodePtr
+htmlEntityValueLookup htmlEntityValueLookup 1 htmlEntityDesc* unsignedint
+xmlTextWriterWriteFormatAttribute xmlTextWriterWriteFormatAttribute 3 int xmlTextWriterPtr xmlChar* char*
+xmlCopyChar xmlCopyChar 3 int int xmlChar* int
+xmlDeregisterNodeDefault xmlDeregisterNodeDefault 1 xmlDeregisterNodeFunc xmlDeregisterNodeFunc
+xmlXPathFreeParserContext xmlXPathFreeParserContext 1 unknown_or_void xmlXPathParserContextPtr
+xmlDocDumpMemory xmlDocDumpMemory 3 unknown_or_void xmlDocPtr xmlChar** int*
+xmlGetDtdEntity xmlGetDtdEntity 2 xmlEntityPtr xmlDocPtr xmlChar*
+xmlXPathNewValueTree xmlXPathNewValueTree 1 xmlXPathObjectPtr xmlNodePtr
+xmlInitMemory xmlInitMemory 0 int
+xmlParserInputGrow xmlParserInputGrow 2 int xmlParserInputPtr int
+xmlUCSIsDeseret xmlUCSIsDeseret 1 int int
+xmlRemoveRef xmlRemoveRef 2 int xmlDocPtr xmlAttrPtr
+xmlParseEntityRef xmlParseEntityRef 1 xmlEntityPtr xmlParserCtxtPtr
+xmlXPathNodeLeading xmlXPathNodeLeading 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodePtr
+xmlNanoHTTPSave xmlNanoHTTPSave 2 int * char*
+xmlInitializeDict xmlInitializeDict 0 int
+xmlMallocBreakpoint xmlMallocBreakpoint 0 unknown_or_void
+xmlRelaxNGDump xmlRelaxNGDump 2 unknown_or_void FILE* xmlRelaxNGPtr
+xmlNanoHTTPEncoding xmlNanoHTTPEncoding 1 char* *
+xmlThrDefOutputBufferCreateFilenameDefault xmlThrDefOutputBufferCreateFilenameDefault 1 xmlOutputBufferCreateFilenameFunc xmlOutputBufferCreateFilenameFunc
+xmlTextWriterWriteVFormatComment xmlTextWriterWriteVFormatComment 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlNewTextChild xmlNewTextChild 4 xmlNodePtr xmlNodePtr xmlNsPtr xmlChar* xmlChar*
+xmlUCSIsSpecials xmlUCSIsSpecials 1 int int
+xmlTextReaderCurrentNode xmlTextReaderCurrentNode 1 xmlNodePtr xmlTextReaderPtr
+xmlParsePI xmlParsePI 1 unknown_or_void xmlParserCtxtPtr
+xmlParseNotationDecl xmlParseNotationDecl 1 unknown_or_void xmlParserCtxtPtr
+xmlMallocAtomicLoc xmlMallocAtomicLoc 3 * size_t char* int
+xmlGetID xmlGetID 2 xmlAttrPtr xmlDocPtr xmlChar*
+xmlXPathCmpNodes xmlXPathCmpNodes 2 int xmlNodePtr xmlNodePtr
+xmlBufferWriteQuotedString xmlBufferWriteQuotedString 2 unknown_or_void xmlBufferPtr xmlChar*
+xmlTextReaderCurrentDoc xmlTextReaderCurrentDoc 1 xmlDocPtr xmlTextReaderPtr
+xmlUCSIsBasicLatin xmlUCSIsBasicLatin 1 int int
+xmlBufBackToBuffer xmlBufBackToBuffer 1 xmlBufferPtr xmlBufPtr
+xmlErrMemory xmlErrMemory 2 unknown_or_void xmlParserCtxtPtr char*
+xmlGetIntSubset xmlGetIntSubset 1 xmlDtdPtr xmlDoc*
+xmlBufAddLen xmlBufAddLen 2 int xmlBufPtr size_t
+xmlFirstElementChild xmlFirstElementChild 1 xmlNodePtr xmlNodePtr
+xmlXPathRegisterFunc xmlXPathRegisterFunc 3 int xmlXPathContextPtr xmlChar* xmlXPathFunction
+xmlParserInputBufferCreateFilename xmlParserInputBufferCreateFilename 2 xmlParserInputBufferPtr char* xmlCharEncoding
+xmlXPathCastNodeSetToBoolean xmlXPathCastNodeSetToBoolean 1 int xmlNodeSetPtr
+xmlXPathModValues xmlXPathModValues 1 unknown_or_void xmlXPathParserContextPtr
+xmlNodeListGetString xmlNodeListGetString 3 xmlChar* xmlDocPtr xmlNode* int
+htmlDefaultSAXHandlerInit htmlDefaultSAXHandlerInit 0 unknown_or_void
+xmlParseBalancedChunkMemoryRecover xmlParseBalancedChunkMemoryRecover 7 int xmlDocPtr xmlSAXHandlerPtr * int xmlChar* xmlNodePtr* int
+xmlGenericErrorDefaultFunc xmlGenericErrorDefaultFunc 2 unknown_or_void * char*
+htmlDocContentDumpFormatOutput htmlDocContentDumpFormatOutput 4 unknown_or_void xmlOutputBufferPtr xmlDocPtr char* int
+xmlIOHTTPOpenW xmlIOHTTPOpenW 2 * char* int
+xmlSaveFlush xmlSaveFlush 1 int xmlSaveCtxtPtr
+xmlSchemaValidateSetLocator xmlSchemaValidateSetLocator 3 unknown_or_void xmlSchemaValidCtxtPtr xmlSchemaValidityLocatorFunc *
+xmlListClear xmlListClear 1 unknown_or_void xmlListPtr
+xmlTextReaderRelaxNGValidate xmlTextReaderRelaxNGValidate 2 int xmlTextReaderPtr char*
+xmlURIEscape xmlURIEscape 1 xmlChar* xmlChar*
+xmlC14NDocSave xmlC14NDocSave 7 int xmlDocPtr xmlNodeSetPtr int xmlChar** int char* int
+xmlSAX2AttributeDecl xmlSAX2AttributeDecl 7 unknown_or_void * xmlChar* xmlChar* int int xmlChar* xmlEnumerationPtr
+htmlParseDoc htmlParseDoc 2 htmlDocPtr xmlChar* char*
+xmlXPathNotEqualValues xmlXPathNotEqualValues 1 int xmlXPathParserContextPtr
+xmlParseExternalSubset xmlParseExternalSubset 3 unknown_or_void xmlParserCtxtPtr xmlChar* xmlChar*
+xmlXPathVariableLookup xmlXPathVariableLookup 2 xmlXPathObjectPtr xmlXPathContextPtr xmlChar*
+xmlHashSize xmlHashSize 1 int xmlHashTablePtr
+xmlTextReaderRead xmlTextReaderRead 1 int xmlTextReaderPtr
+xmlSchemaCheckFacet xmlSchemaCheckFacet 4 int xmlSchemaFacetPtr xmlSchemaTypePtr xmlSchemaParserCtxtPtr xmlChar*
+xmlIsBlankNode xmlIsBlankNode 1 int xmlNode*
+xmlTextReaderBaseUri xmlTextReaderBaseUri 1 xmlChar* xmlTextReaderPtr
+xmlXPathFreeContext xmlXPathFreeContext 1 unknown_or_void xmlXPathContextPtr
+xmlGetExternalEntityLoader xmlGetExternalEntityLoader 0 xmlExternalEntityLoader
+xmlUCSIsGreekExtended xmlUCSIsGreekExtended 1 int int
+xmlDebugDumpAttrList xmlDebugDumpAttrList 3 unknown_or_void FILE* xmlAttrPtr int
+xmlTextReaderConstEncoding xmlTextReaderConstEncoding 1 xmlChar* xmlTextReaderPtr
+xmlUCSIsNumberForms xmlUCSIsNumberForms 1 int int
+xmlDumpAttributeTable xmlDumpAttributeTable 2 unknown_or_void xmlBufferPtr xmlAttributeTablePtr
+xmlReadDoc xmlReadDoc 4 xmlDocPtr xmlChar* char* char* int
+xmlXPathNewString xmlXPathNewString 1 xmlXPathObjectPtr xmlChar*
+xmlSaveSetEscape xmlSaveSetEscape 2 int xmlSaveCtxtPtr xmlCharEncodingOutputFunc
+xmlBufGetInputBase xmlBufGetInputBase 2 size_t xmlBufPtr xmlParserInputPtr
+xmlDictCleanup xmlDictCleanup 0 unknown_or_void
+xmlUCSIsGreekandCoptic xmlUCSIsGreekandCoptic 1 int int
+xmlXPathNodeSetCreate xmlXPathNodeSetCreate 1 xmlNodeSetPtr xmlNodePtr
+xmlParseElement xmlParseElement 1 unknown_or_void xmlParserCtxtPtr
+xmlParseEncName xmlParseEncName 1 xmlChar* xmlParserCtxtPtr
+xmlValidBuildContentModel xmlValidBuildContentModel 2 int xmlValidCtxtPtr xmlElementPtr
+htmlParseFile htmlParseFile 2 htmlDocPtr char* char*
+xmlFreeRefTable xmlFreeRefTable 1 unknown_or_void xmlRefTablePtr
+xmlBufGetAllocationScheme xmlBufGetAllocationScheme 1 int xmlBufPtr
+xmlValidateName xmlValidateName 2 int xmlChar* int
+xmlShell xmlShell 4 unknown_or_void xmlDocPtr char* xmlShellReadlineFunc FILE*
+xmlXPathEvaluatePredicateResult xmlXPathEvaluatePredicateResult 2 int xmlXPathParserContextPtr xmlXPathObjectPtr
+xmlUCSIsTaiLe xmlUCSIsTaiLe 1 int int
+xmlDOMWrapCloneNode xmlDOMWrapCloneNode 8 int xmlDOMWrapCtxtPtr xmlDocPtr xmlNodePtr xmlNodePtr* xmlDocPtr xmlNodePtr int int
+xmlInitializeCatalog xmlInitializeCatalog 0 unknown_or_void
+xmlXIncludeProcessTreeFlags xmlXIncludeProcessTreeFlags 2 int xmlNodePtr int
+xmlXPathNewFloat xmlXPathNewFloat 1 xmlXPathObjectPtr double
+xmlXPathEval xmlXPathEval 2 xmlXPathObjectPtr xmlChar* xmlXPathContextPtr
+xmlSchemaValueGetAsString xmlSchemaValueGetAsString 1 xmlChar* xmlSchemaValPtr
+xmlIsXHTML xmlIsXHTML 2 int xmlChar* xmlChar*
+xmlStreamPush xmlStreamPush 3 int xmlStreamCtxtPtr xmlChar* xmlChar*
+xmlInitNodeInfoSeq xmlInitNodeInfoSeq 1 unknown_or_void xmlParserNodeInfoSeqPtr
+xmlStrcat xmlStrcat 2 xmlChar* xmlChar* xmlChar*
+xmlReadFd xmlReadFd 4 xmlDocPtr int char* char* int
+xmlSAX2CDataBlock xmlSAX2CDataBlock 3 unknown_or_void * xmlChar* int
+xmlInitParser xmlInitParser 0 unknown_or_void
+xmlParseElementContentDecl xmlParseElementContentDecl 3 int xmlParserCtxtPtr xmlChar* xmlElementContentPtr*
+xmlTextReaderLocatorLineNumber xmlTextReaderLocatorLineNumber 1 int xmlTextReaderLocatorPtr
+htmlSetMetaEncoding htmlSetMetaEncoding 2 int htmlDocPtr xmlChar*
+xmlParseEndTag xmlParseEndTag 1 unknown_or_void xmlParserCtxtPtr
+xmlNewEntityInputStream xmlNewEntityInputStream 2 xmlParserInputPtr xmlParserCtxtPtr xmlEntityPtr
+xmlXPathWrapString xmlXPathWrapString 1 xmlXPathObjectPtr xmlChar*
+xmlIsDigit xmlIsDigit 1 int unsignedint
+xmlXPathPopBoolean xmlXPathPopBoolean 1 int xmlXPathParserContextPtr
+xmlRegFreeRegexp xmlRegFreeRegexp 1 unknown_or_void xmlRegexpPtr
+xmlSubstituteEntitiesDefault xmlSubstituteEntitiesDefault 1 int int
+xmlXPathCastNodeSetToString xmlXPathCastNodeSetToString 1 xmlChar* xmlNodeSetPtr
+xmlAttrSerializeTxtContent xmlAttrSerializeTxtContent 4 unknown_or_void xmlBufferPtr xmlDocPtr xmlAttrPtr xmlChar*
+xmlNanoHTTPContentLength xmlNanoHTTPContentLength 1 int *
+xmlCatalogConvert xmlCatalogConvert 0 int
+xmlValidateNamesValue xmlValidateNamesValue 1 int xmlChar*
+xmlSAXParseDTD xmlSAXParseDTD 3 xmlDtdPtr xmlSAXHandlerPtr xmlChar* xmlChar*
+xmlReaderForFd xmlReaderForFd 4 xmlTextReaderPtr int char* char* int
+xmlTextReaderNextSibling xmlTextReaderNextSibling 1 int xmlTextReaderPtr
+xmlDebugDumpAttr xmlDebugDumpAttr 3 unknown_or_void FILE* xmlAttrPtr int
+xmlTextReaderGetParserLineNumber xmlTextReaderGetParserLineNumber 1 int xmlTextReaderPtr
+xmlUCSIsVariationSelectorsSupplement xmlUCSIsVariationSelectorsSupplement 1 int int
+xmlSchemaCompareValues xmlSchemaCompareValues 2 int xmlSchemaValPtr xmlSchemaValPtr
+xmlUCSIsKannada xmlUCSIsKannada 1 int int
+xmlGetDtdElementDesc xmlGetDtdElementDesc 2 xmlElementPtr xmlDtdPtr xmlChar*
+xmlHashLookup2 xmlHashLookup2 3 * xmlHashTablePtr xmlChar* xmlChar*
+xmlFreeAutomata xmlFreeAutomata 1 unknown_or_void xmlAutomataPtr
+xmlGetDtdNotationDesc xmlGetDtdNotationDesc 2 xmlNotationPtr xmlDtdPtr xmlChar*
+xmlHashLookup3 xmlHashLookup3 4 * xmlHashTablePtr xmlChar* xmlChar* xmlChar*
+xmlStrncat xmlStrncat 3 xmlChar* xmlChar* xmlChar* int
+xmlSchemaNewMemParserCtxt xmlSchemaNewMemParserCtxt 2 xmlSchemaParserCtxtPtr char* int
+xmlRelaxNGNewDocParserCtxt xmlRelaxNGNewDocParserCtxt 1 xmlRelaxNGParserCtxtPtr xmlDocPtr
+xmlNewNsPropEatName xmlNewNsPropEatName 4 xmlAttrPtr xmlNodePtr xmlNsPtr xmlChar* xmlChar*
+xmlParseSDDecl xmlParseSDDecl 1 int xmlParserCtxtPtr
+xmlParserPrintFileContext xmlParserPrintFileContext 1 unknown_or_void xmlParserInputPtr
+xmlIsChar xmlIsChar 1 int unsignedint
+htmlNodeStatus htmlNodeStatus 2 htmlStatus htmlNodePtr int
+xmlRegexpCompile xmlRegexpCompile 1 xmlRegexpPtr xmlChar*
+xmlAutomataGetInitState xmlAutomataGetInitState 1 xmlAutomataStatePtr xmlAutomataPtr
+xmlIsMainThread xmlIsMainThread 0 int
+xmlThrDefTreeIndentString xmlThrDefTreeIndentString 1 char* char*
+xmlThrDefRegisterNodeDefault xmlThrDefRegisterNodeDefault 1 xmlRegisterNodeFunc xmlRegisterNodeFunc
+xmlMemRealloc xmlMemRealloc 2 * * size_t
+xmlListPushBack xmlListPushBack 2 int xmlListPtr *
+xmlFreeEntitiesTable xmlFreeEntitiesTable 1 unknown_or_void xmlEntitiesTablePtr
+xmlFreeEnumeration xmlFreeEnumeration 1 unknown_or_void xmlEnumerationPtr
+xmlNewCatalog xmlNewCatalog 1 xmlCatalogPtr int
+xmlTextReaderGetParserProp xmlTextReaderGetParserProp 2 int xmlTextReaderPtr int
+xmlBufferCreate xmlBufferCreate 0 xmlBufferPtr
+xmlSetProp xmlSetProp 3 xmlAttrPtr xmlNodePtr xmlChar* xmlChar*
+xmlNormalizeWindowsPath xmlNormalizeWindowsPath 1 xmlChar* xmlChar*
+xmlSchemaIsBuiltInTypeFacet xmlSchemaIsBuiltInTypeFacet 2 int xmlSchemaTypePtr int
+xmlUCSIsPrivateUseArea xmlUCSIsPrivateUseArea 1 int int
+xmlCreateIntSubset xmlCreateIntSubset 4 xmlDtdPtr xmlDocPtr xmlChar* xmlChar* xmlChar*
+xmlPatternMaxDepth xmlPatternMaxDepth 1 int xmlPatternPtr
+xmlCharEncOutFunc xmlCharEncOutFunc 3 int xmlCharEncodingHandler* xmlBufferPtr xmlBufferPtr
+htmlFreeParserCtxt htmlFreeParserCtxt 1 unknown_or_void htmlParserCtxtPtr
+xmlShellLoad xmlShellLoad 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlTextWriterEndDTDAttlist xmlTextWriterEndDTDAttlist 1 int xmlTextWriterPtr
+xmlXPathNodeSetFreeNs xmlXPathNodeSetFreeNs 1 unknown_or_void xmlNsPtr
+xmlCreateDocParserCtxt xmlCreateDocParserCtxt 1 xmlParserCtxtPtr xmlChar*
+xmlSchemaNewValidCtxt xmlSchemaNewValidCtxt 1 xmlSchemaValidCtxtPtr xmlSchemaPtr
+xmlXPathVariableLookupNS xmlXPathVariableLookupNS 3 xmlXPathObjectPtr xmlXPathContextPtr xmlChar* xmlChar*
+xmlTextReaderMoveToNextAttribute xmlTextReaderMoveToNextAttribute 1 int xmlTextReaderPtr
+xmlModuleFree xmlModuleFree 1 int xmlModulePtr
+xmlPathToURI xmlPathToURI 1 xmlChar* xmlChar*
+xmlSchemaValueGetNext xmlSchemaValueGetNext 1 xmlSchemaValPtr xmlSchemaValPtr
+xmlParseCharEncoding xmlParseCharEncoding 1 xmlCharEncoding char*
+xmlUCSIsHanunoo xmlUCSIsHanunoo 1 int int
+xmlRelaxNGValidatePushCData xmlRelaxNGValidatePushCData 3 int xmlRelaxNGValidCtxtPtr xmlChar* int
+htmlTagLookup htmlTagLookup 1 htmlElemDesc* xmlChar*
+htmlEncodeEntities htmlEncodeEntities 5 int unsignedchar* int* unsignedchar* int* int
+xmlParseAttributeType xmlParseAttributeType 2 int xmlParserCtxtPtr xmlEnumerationPtr*
+xmlCopyElementContent xmlCopyElementContent 1 xmlElementContentPtr xmlElementContentPtr
+xmlListCopy xmlListCopy 2 int xmlListPtr xmlListPtr
+xmlHasNsProp xmlHasNsProp 3 xmlAttrPtr xmlNode* xmlChar* xmlChar*
+xmlNewTextWriter xmlNewTextWriter 1 xmlTextWriterPtr xmlOutputBufferPtr
+xmlBufGetNodeContent xmlBufGetNodeContent 2 int xmlBufPtr xmlNode*
+xmlReaderForMemory xmlReaderForMemory 5 xmlTextReaderPtr char* int char* char* int
+xmlSchemaFreeWildcard xmlSchemaFreeWildcard 1 unknown_or_void xmlSchemaWildcardPtr
+xmlHasProp xmlHasProp 2 xmlAttrPtr xmlNode* xmlChar*
+xmlCtxtReset xmlCtxtReset 1 unknown_or_void xmlParserCtxtPtr
+xmlXPathCastStringToBoolean xmlXPathCastStringToBoolean 1 int xmlChar*
+xmlXPathNextDescendant xmlXPathNextDescendant 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlXPathErr xmlXPathErr 2 unknown_or_void xmlXPathParserContextPtr int
+xmlTextWriterWriteRawLen xmlTextWriterWriteRawLen 3 int xmlTextWriterPtr xmlChar* int
+xmlXPathTrailing xmlXPathTrailing 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlUCSIsKatakana xmlUCSIsKatakana 1 int int
+xmlCharEncFirstLineInt xmlCharEncFirstLineInt 4 int xmlCharEncodingHandler* xmlBufferPtr xmlBufferPtr int
+xmlUTF8Strpos xmlUTF8Strpos 2 xmlChar* xmlChar* int
+xmlBufShrink xmlBufShrink 2 size_t xmlBufPtr size_t
+xmlBufferAddHead xmlBufferAddHead 3 int xmlBufferPtr xmlChar* int
+xmlMemoryDump xmlMemoryDump 0 unknown_or_void
+xmlUCSIsCatC xmlUCSIsCatC 1 int int
+xmlUCSIsLetterlikeSymbols xmlUCSIsLetterlikeSymbols 1 int int
+xmlXPathHasSameNodes xmlXPathHasSameNodes 2 int xmlNodeSetPtr xmlNodeSetPtr
+xmlTextWriterEndAttribute xmlTextWriterEndAttribute 1 int xmlTextWriterPtr
+xmlSchemaNewParserCtxt xmlSchemaNewParserCtxt 1 xmlSchemaParserCtxtPtr char*
+xmlSchemaFreeFacet xmlSchemaFreeFacet 1 unknown_or_void xmlSchemaFacetPtr
+xmlUCSIsTaiXuanJingSymbols xmlUCSIsTaiXuanJingSymbols 1 int int
+xmlUCSIsThaana xmlUCSIsThaana 1 int int
+xmlBufDetach xmlBufDetach 1 xmlChar* xmlBufPtr
+xmlMemUsed xmlMemUsed 0 int
+xmlXPathRegisteredNsCleanup xmlXPathRegisteredNsCleanup 1 unknown_or_void xmlXPathContextPtr
+xmlParseStartTag xmlParseStartTag 1 xmlChar* xmlParserCtxtPtr
+xmlXPathNextFollowingSibling xmlXPathNextFollowingSibling 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlTextWriterStartDTDAttlist xmlTextWriterStartDTDAttlist 2 int xmlTextWriterPtr xmlChar*
+xmlXPathIntersection xmlXPathIntersection 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodeSetPtr
+xmlUnlinkNode xmlUnlinkNode 1 unknown_or_void xmlNodePtr
+xmlNodeListGetRawString xmlNodeListGetRawString 3 xmlChar* xmlDoc* xmlNode* int
+xmlReaderForDoc xmlReaderForDoc 4 xmlTextReaderPtr xmlChar* char* char* int
+xmlSchemaCopyValue xmlSchemaCopyValue 1 xmlSchemaValPtr xmlSchemaValPtr
+xmlUCSIsCatL xmlUCSIsCatL 1 int int
+xmlHashQLookup xmlHashQLookup 3 * xmlHashTablePtr xmlChar* xmlChar*
+htmlCtxtReset htmlCtxtReset 1 unknown_or_void htmlParserCtxtPtr
+xmlUCSIsCatM xmlUCSIsCatM 1 int int
+xmlUCSIsCatN xmlUCSIsCatN 1 int int
+xmlHashCreate xmlHashCreate 1 xmlHashTablePtr int
+xmlFreeAttributeTable xmlFreeAttributeTable 1 unknown_or_void xmlAttributeTablePtr
+xmlTextReaderAttributeCount xmlTextReaderAttributeCount 1 int xmlTextReaderPtr
+xmlMemShow xmlMemShow 2 unknown_or_void FILE* int
+xmlUCSIsCatP xmlUCSIsCatP 1 int int
+xmlParserFindNodeInfo xmlParserFindNodeInfo 2 xmlParserNodeInfo* xmlParserCtxtPtr xmlNodePtr
+xmlUCSIsCJKRadicalsSupplement xmlUCSIsCJKRadicalsSupplement 1 int int
+xmlUCSIsGurmukhi xmlUCSIsGurmukhi 1 int int
+xmlCreateURLParserCtxt xmlCreateURLParserCtxt 2 xmlParserCtxtPtr char* int
+xmlUCSIsCatS xmlUCSIsCatS 1 int int
+htmlDocDumpMemory htmlDocDumpMemory 3 unknown_or_void xmlDocPtr xmlChar** int*
+xmlGetNodePath xmlGetNodePath 1 xmlChar* xmlNode*
+xmlXIncludeNewContext xmlXIncludeNewContext 1 xmlXIncludeCtxtPtr xmlDocPtr
+xmlOutputBufferGetContent xmlOutputBufferGetContent 1 xmlChar* xmlOutputBufferPtr
+xmlReadIO xmlReadIO 6 xmlDocPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlTextWriterWriteComment xmlTextWriterWriteComment 2 int xmlTextWriterPtr xmlChar*
+xmlNewEntity xmlNewEntity 6 xmlEntityPtr xmlDocPtr xmlChar* int xmlChar* xmlChar* xmlChar*
+xmlUCSIsCatZ xmlUCSIsCatZ 1 int int
+xmlXIncludeProcessFlags xmlXIncludeProcessFlags 2 int xmlDocPtr int
+xmlFreeNs xmlFreeNs 1 unknown_or_void xmlNsPtr
+htmlNodeDumpFileFormat htmlNodeDumpFileFormat 5 int FILE* xmlDocPtr xmlNodePtr char* int
+xmlTextWriterWriteDTDNotation xmlTextWriterWriteDTDNotation 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlParserInputBufferCreateFile xmlParserInputBufferCreateFile 2 xmlParserInputBufferPtr FILE* xmlCharEncoding
+xmlRelaxNGNewMemParserCtxt xmlRelaxNGNewMemParserCtxt 2 xmlRelaxNGParserCtxtPtr char* int
+xmlCopyProp xmlCopyProp 2 xmlAttrPtr xmlNodePtr xmlAttrPtr
+xmlSwitchInputEncoding xmlSwitchInputEncoding 3 int xmlParserCtxtPtr xmlParserInputPtr xmlCharEncodingHandlerPtr
+xmlLineNumbersDefault xmlLineNumbersDefault 1 int int
+htmlCtxtReadFile htmlCtxtReadFile 4 htmlDocPtr htmlParserCtxtPtr char* char* int
+xmlElemDump xmlElemDump 3 unknown_or_void FILE* xmlDocPtr xmlNodePtr
+xmlBufCCat xmlBufCCat 2 int xmlBufPtr char*
+xmlNewValidCtxt xmlNewValidCtxt 0 xmlValidCtxtPtr
+xmlCopyCharMultiByte xmlCopyCharMultiByte 2 int xmlChar* int
+xmlRegisterHTTPPostCallbacks xmlRegisterHTTPPostCallbacks 0 unknown_or_void
+xmlReaderForIO xmlReaderForIO 6 xmlTextReaderPtr xmlInputReadCallback xmlInputCloseCallback * char* char* int
+xmlCheckLanguageID xmlCheckLanguageID 1 int xmlChar*
+xmlParseCDSect xmlParseCDSect 1 unknown_or_void xmlParserCtxtPtr
+xmlThrDefGetWarningsDefaultValue xmlThrDefGetWarningsDefaultValue 1 int int
+xmlParseVersionNum xmlParseVersionNum 1 xmlChar* xmlParserCtxtPtr
+xmlNextElementSibling xmlNextElementSibling 1 xmlNodePtr xmlNodePtr
+xmlSaveFile xmlSaveFile 2 int char* xmlDocPtr
+xmlAddElementDecl xmlAddElementDecl 5 xmlElementPtr xmlValidCtxtPtr xmlDtdPtr xmlChar* xmlElementTypeVal xmlElementContentPtr
+xmlCopyPropList xmlCopyPropList 2 xmlAttrPtr xmlNodePtr xmlAttrPtr
+htmlParseEntityRef htmlParseEntityRef 2 htmlEntityDesc* htmlParserCtxtPtr xmlChar**
+xmlTextReaderDepth xmlTextReaderDepth 1 int xmlTextReaderPtr
+xmlParserValidityWarning xmlParserValidityWarning 2 unknown_or_void * char*
+xmlUCSIsHangulSyllables xmlUCSIsHangulSyllables 1 int int
+xmlCharEncCloseFunc xmlCharEncCloseFunc 1 int xmlCharEncodingHandler*
+xmlXPathSubstringAfterFunction xmlXPathSubstringAfterFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlUCSIsArmenian xmlUCSIsArmenian 1 int int
+xmlCatalogResolve xmlCatalogResolve 2 xmlChar* xmlChar* xmlChar*
+xmlXPathFloorFunction xmlXPathFloorFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlMemStrdupLoc xmlMemStrdupLoc 3 char* char* char* int
+xmlValidateDtdFinal xmlValidateDtdFinal 2 int xmlValidCtxtPtr xmlDocPtr
+xmlAutomataSetFinalState xmlAutomataSetFinalState 2 int xmlAutomataPtr xmlAutomataStatePtr
+xmlIOHTTPMatch xmlIOHTTPMatch 1 int char*
+xmlDictSetLimit xmlDictSetLimit 2 size_t xmlDictPtr size_t
+xmlIsBaseChar xmlIsBaseChar 1 int unsignedint
+xmlCopyEntitiesTable xmlCopyEntitiesTable 1 xmlEntitiesTablePtr xmlEntitiesTablePtr
+xmlRelaxNGValidateFullElement xmlRelaxNGValidateFullElement 3 int xmlRelaxNGValidCtxtPtr xmlDocPtr xmlNodePtr
+xmlGetDtdAttrDesc xmlGetDtdAttrDesc 3 xmlAttributePtr xmlDtdPtr xmlChar* xmlChar*
+xmlBufIsEmpty xmlBufIsEmpty 1 int xmlBufPtr
+xmlUCSIsGeneralPunctuation xmlUCSIsGeneralPunctuation 1 int int
+xmlNodeSetBase xmlNodeSetBase 2 unknown_or_void xmlNodePtr xmlChar*
+xmlReconciliateNs xmlReconciliateNs 2 int xmlDocPtr xmlNodePtr
+xmlFreeRMutex xmlFreeRMutex 1 unknown_or_void xmlRMutexPtr
+xmlReaderNewDoc xmlReaderNewDoc 5 int xmlTextReaderPtr xmlChar* char* char* int
+xmlTextWriterStartAttribute xmlTextWriterStartAttribute 2 int xmlTextWriterPtr xmlChar*
+xmlRelaxNGGetValidErrors xmlRelaxNGGetValidErrors 4 int xmlRelaxNGValidCtxtPtr xmlRelaxNGValidityErrorFunc* xmlRelaxNGValidityWarningFunc* **
+xmlNewDocNode xmlNewDocNode 4 xmlNodePtr xmlDocPtr xmlNsPtr xmlChar* xmlChar*
+xmlFreeNsList xmlFreeNsList 1 unknown_or_void xmlNsPtr
+xmlTextWriterWriteDTDInternalEntity xmlTextWriterWriteDTDInternalEntity 4 int xmlTextWriterPtr int xmlChar* xmlChar*
+xmlUCSIsCombiningMarksforSymbols xmlUCSIsCombiningMarksforSymbols 1 int int
+xmlDelEncodingAlias xmlDelEncodingAlias 1 int char*
+xmlUnsetNsProp xmlUnsetNsProp 3 int xmlNodePtr xmlNsPtr xmlChar*
+xmlFreeElementContent xmlFreeElementContent 1 unknown_or_void xmlElementContentPtr
+xmlDocCopyNode xmlDocCopyNode 3 xmlNodePtr xmlNodePtr xmlDocPtr int
+xmlModuleSymbol xmlModuleSymbol 3 int xmlModulePtr char* **
+xmlNewTextWriterMemory xmlNewTextWriterMemory 2 xmlTextWriterPtr xmlBufferPtr int
+xmlGetLineNo xmlGetLineNo 1 longint xmlNode*
+xmlCreateEnumeration xmlCreateEnumeration 1 xmlEnumerationPtr xmlChar*
+xmlRecoverDoc xmlRecoverDoc 1 xmlDocPtr xmlChar*
+xmlIOHTTPClose xmlIOHTTPClose 1 int *
+xmlBufferCreateSize xmlBufferCreateSize 1 xmlBufferPtr size_t
+xmlXPathDivValues xmlXPathDivValues 1 unknown_or_void xmlXPathParserContextPtr
+xmlDebugDumpDTD xmlDebugDumpDTD 2 unknown_or_void FILE* xmlDtdPtr
+xmlXPathNextSelf xmlXPathNextSelf 2 xmlNodePtr xmlXPathParserContextPtr xmlNodePtr
+xmlSAX2EntityDecl xmlSAX2EntityDecl 6 unknown_or_void * xmlChar* int xmlChar* xmlChar* xmlChar*
+xmlSchemaValidateFacet xmlSchemaValidateFacet 4 int xmlSchemaTypePtr xmlSchemaFacetPtr xmlChar* xmlSchemaValPtr
+xmlTextWriterWriteVFormatAttribute xmlTextWriterWriteVFormatAttribute 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlValidateNmtokensValue xmlValidateNmtokensValue 1 int xmlChar*
+xmlUCSIsBraillePatterns xmlUCSIsBraillePatterns 1 int int
+xmlAutomataNewTransition2 xmlAutomataNewTransition2 6 xmlAutomataStatePtr xmlAutomataPtr xmlAutomataStatePtr xmlAutomataStatePtr xmlChar* xmlChar* *
+xmlSaveFileTo xmlSaveFileTo 3 int xmlOutputBufferPtr xmlDocPtr char*
+xmlBufferCreateStatic xmlBufferCreateStatic 2 xmlBufferPtr * size_t
+xmlDumpEntityDecl xmlDumpEntityDecl 2 unknown_or_void xmlBufferPtr xmlEntityPtr
+xmlUCSIsCJKSymbolsandPunctuation xmlUCSIsCJKSymbolsandPunctuation 1 int int
+xmlSchemaValueAppend xmlSchemaValueAppend 2 int xmlSchemaValPtr xmlSchemaValPtr
+xmlBufDump xmlBufDump 2 size_t FILE* xmlBufPtr
+xmlSAX2IgnorableWhitespace xmlSAX2IgnorableWhitespace 3 unknown_or_void * xmlChar* int
+xmlCharStrndup xmlCharStrndup 2 xmlChar* char* int
+htmlReadFile htmlReadFile 3 htmlDocPtr char* char* int
+xmlXIncludeProcessTreeFlagsData xmlXIncludeProcessTreeFlagsData 3 int xmlNodePtr int *
+xmlRelaxNGSetParserStructuredErrors xmlRelaxNGSetParserStructuredErrors 3 unknown_or_void xmlRelaxNGParserCtxtPtr xmlStructuredErrorFunc *
+xmlMemDisplayLast xmlMemDisplayLast 2 unknown_or_void FILE* longint
+htmlSaveFileFormat htmlSaveFileFormat 4 int char* xmlDocPtr char* int
+xmlValidateNmtokenValue xmlValidateNmtokenValue 1 int xmlChar*
+xmlPopOutputCallbacks xmlPopOutputCallbacks 0 int
+xmlHashCreateDict xmlHashCreateDict 2 xmlHashTablePtr int xmlDictPtr
+xmlBufferCCat xmlBufferCCat 2 int xmlBufferPtr char*
+xmlDebugDumpDocumentHead xmlDebugDumpDocumentHead 2 unknown_or_void FILE* xmlDocPtr
+xmlDocSetRootElement xmlDocSetRootElement 2 xmlNodePtr xmlDocPtr xmlNodePtr
+xmlTextWriterWriteVFormatRaw xmlTextWriterWriteVFormatRaw 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlRelaxNGSetValidErrors xmlRelaxNGSetValidErrors 4 unknown_or_void xmlRelaxNGValidCtxtPtr xmlRelaxNGValidityErrorFunc xmlRelaxNGValidityWarningFunc *
+xmlXPathNodeTrailingSorted xmlXPathNodeTrailingSorted 2 xmlNodeSetPtr xmlNodeSetPtr xmlNodePtr
+xmlRegisterNodeDefault xmlRegisterNodeDefault 1 xmlRegisterNodeFunc xmlRegisterNodeFunc
+xmlUCSIsSinhala xmlUCSIsSinhala 1 int int
+xmlHashQLookup2 xmlHashQLookup2 5 * xmlHashTablePtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlLinkGetData xmlLinkGetData 1 * xmlLinkPtr
+xmlHashQLookup3 xmlHashQLookup3 7 * xmlHashTablePtr xmlChar* xmlChar* xmlChar* xmlChar* xmlChar* xmlChar*
+xmlParserInputShrink xmlParserInputShrink 1 unknown_or_void xmlParserInputPtr
+xmlUCSIsCatLl xmlUCSIsCatLl 1 int int
+xmlUCSIsCatLm xmlUCSIsCatLm 1 int int
+xmlGetLastChild xmlGetLastChild 1 xmlNodePtr xmlNode*
+xmlRMutexUnlock xmlRMutexUnlock 1 unknown_or_void xmlRMutexPtr
+xmlUCSIsTamil xmlUCSIsTamil 1 int int
+xmlSAX2GetPublicId xmlSAX2GetPublicId 1 xmlChar* *
+xmlUCSIsCatLo xmlUCSIsCatLo 1 int int
+xmlSAX2UnparsedEntityDecl xmlSAX2UnparsedEntityDecl 5 unknown_or_void * xmlChar* xmlChar* xmlChar* xmlChar*
+xmlSetupParserForBuffer xmlSetupParserForBuffer 3 unknown_or_void xmlParserCtxtPtr xmlChar* char*
+xmlRegExecPushString2 xmlRegExecPushString2 4 int xmlRegExecCtxtPtr xmlChar* xmlChar* *
+xmlMemFree xmlMemFree 1 unknown_or_void *
+xmlAddChildList xmlAddChildList 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlNodeIsText xmlNodeIsText 1 int xmlNode*
+xmlUCSIsShavian xmlUCSIsShavian 1 int int
+xmlUCSIsCatLt xmlUCSIsCatLt 1 int int
+xmlSAX2Comment xmlSAX2Comment 2 unknown_or_void * xmlChar*
+xmlUCSIsCatLu xmlUCSIsCatLu 1 int int
+xmlUCSIsCJKCompatibility xmlUCSIsCJKCompatibility 1 int int
+xmlUCSIsCombiningDiacriticalMarks xmlUCSIsCombiningDiacriticalMarks 1 int int
+htmlNodeDumpOutput htmlNodeDumpOutput 4 unknown_or_void xmlOutputBufferPtr xmlDocPtr xmlNodePtr char*
+xmlXPathRegisterFuncNS xmlXPathRegisterFuncNS 4 int xmlXPathContextPtr xmlChar* xmlChar* xmlXPathFunction
+xmlUCSIsCJKCompatibilityIdeographsSupplement xmlUCSIsCJKCompatibilityIdeographsSupplement 1 int int
+xmlSchemaCompareValuesWhtsp xmlSchemaCompareValuesWhtsp 4 int xmlSchemaValPtr xmlSchemaWhitespaceValueType xmlSchemaValPtr xmlSchemaWhitespaceValueType
+xmlUCSIsLinearBIdeograms xmlUCSIsLinearBIdeograms 1 int int
+xmlXIncludeProcessFlagsData xmlXIncludeProcessFlagsData 3 int xmlDocPtr int *
+xmlGetDtdQElementDesc xmlGetDtdQElementDesc 3 xmlElementPtr xmlDtdPtr xmlChar* xmlChar*
+xmlPreviousElementSibling xmlPreviousElementSibling 1 xmlNodePtr xmlNodePtr
+xmlXPathEqualValues xmlXPathEqualValues 1 int xmlXPathParserContextPtr
+xmlUCSIsCurrencySymbols xmlUCSIsCurrencySymbols 1 int int
+xmlParserInputRead xmlParserInputRead 2 int xmlParserInputPtr int
+xmlTextReaderQuoteChar xmlTextReaderQuoteChar 1 int xmlTextReaderPtr
+xmlNewNs xmlNewNs 3 xmlNsPtr xmlNodePtr xmlChar* xmlChar*
+xmlCreateFileParserCtxt xmlCreateFileParserCtxt 1 xmlParserCtxtPtr char*
+xmlXPathParseNCName xmlXPathParseNCName 1 xmlChar* xmlXPathParserContextPtr
+xmlTextWriterWriteDTDExternalEntityContents xmlTextWriterWriteDTDExternalEntityContents 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlCtxtReadFile xmlCtxtReadFile 4 xmlDocPtr xmlParserCtxtPtr char* char* int
+htmlInitAutoClose htmlInitAutoClose 0 unknown_or_void
+xmlStrPrintf xmlStrPrintf 3 int xmlChar* int char*
+xmlRelaxNGValidatePopElement xmlRelaxNGValidatePopElement 3 int xmlRelaxNGValidCtxtPtr xmlDocPtr xmlNodePtr
+xmlTextReaderSchemaValidateCtxt xmlTextReaderSchemaValidateCtxt 3 int xmlTextReaderPtr xmlSchemaValidCtxtPtr int
+xmlUCSIsCatMc xmlUCSIsCatMc 1 int int
+xmlThrDefDeregisterNodeDefault xmlThrDefDeregisterNodeDefault 1 xmlDeregisterNodeFunc xmlDeregisterNodeFunc
+xmlBufDumpNotationTable xmlBufDumpNotationTable 2 unknown_or_void xmlBufPtr xmlNotationTablePtr
+xmlSAX2Reference xmlSAX2Reference 2 unknown_or_void * xmlChar*
+xmlPushInput xmlPushInput 2 int xmlParserCtxtPtr xmlParserInputPtr
+xmlNewStringInputStream xmlNewStringInputStream 2 xmlParserInputPtr xmlParserCtxtPtr xmlChar*
+xmlXPathRegisterFuncLookup xmlXPathRegisterFuncLookup 3 unknown_or_void xmlXPathContextPtr xmlXPathFuncLookupFunc *
+htmlIsAutoClosed htmlIsAutoClosed 2 int htmlDocPtr htmlNodePtr
+xmlUCSIsCatMe xmlUCSIsCatMe 1 int int
+xmlTextWriterStartElement xmlTextWriterStartElement 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteDTDExternalEntity xmlTextWriterWriteDTDExternalEntity 6 int xmlTextWriterPtr int xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextReaderNamespaceUri xmlTextReaderNamespaceUri 1 xmlChar* xmlTextReaderPtr
+xmlDictReference xmlDictReference 1 int xmlDictPtr
+xmlUCSIsSupplementalArrowsA xmlUCSIsSupplementalArrowsA 1 int int
+xmlUCSIsSupplementalArrowsB xmlUCSIsSupplementalArrowsB 1 int int
+xmlPopInput xmlPopInput 1 xmlChar xmlParserCtxtPtr
+xmlHashRemoveEntry xmlHashRemoveEntry 3 int xmlHashTablePtr xmlChar* xmlHashDeallocator
+xmlRelaxNGSetValidStructuredErrors xmlRelaxNGSetValidStructuredErrors 3 unknown_or_void xmlRelaxNGValidCtxtPtr xmlStructuredErrorFunc *
+xmlSAX2Characters xmlSAX2Characters 3 unknown_or_void * xmlChar* int
+xmlUCSIsCatMn xmlUCSIsCatMn 1 int int
+xmlSchemaGetBuiltInListSimpleTypeItemType xmlSchemaGetBuiltInListSimpleTypeItemType 1 xmlSchemaTypePtr xmlSchemaTypePtr
+xmlHashAddEntry2 xmlHashAddEntry2 4 int xmlHashTablePtr xmlChar* xmlChar* *
+xmlListPopFront xmlListPopFront 1 unknown_or_void xmlListPtr
+xmlRelaxNGFreeValidCtxt xmlRelaxNGFreeValidCtxt 1 unknown_or_void xmlRelaxNGValidCtxtPtr
+xmlTextWriterWriteCDATA xmlTextWriterWriteCDATA 2 int xmlTextWriterPtr xmlChar*
+xmlHashAddEntry3 xmlHashAddEntry3 5 int xmlHashTablePtr xmlChar* xmlChar* xmlChar* *
+xmlParseNotationType xmlParseNotationType 1 xmlEnumerationPtr xmlParserCtxtPtr
+xmlCurrentChar xmlCurrentChar 2 int xmlParserCtxtPtr int*
+xmlCreateIOParserCtxt xmlCreateIOParserCtxt 6 xmlParserCtxtPtr xmlSAXHandlerPtr * xmlInputReadCallback xmlInputCloseCallback * xmlCharEncoding
+xmlNewPI xmlNewPI 2 xmlNodePtr xmlChar* xmlChar*
+xmlBufMergeBuffer xmlBufMergeBuffer 2 int xmlBufPtr xmlBufferPtr
+xmlXPathRoot xmlXPathRoot 1 unknown_or_void xmlXPathParserContextPtr
+xmlParseCharData xmlParseCharData 2 unknown_or_void xmlParserCtxtPtr int
+xmlReaderForFile xmlReaderForFile 3 xmlTextReaderPtr char* char* int
+xmlNodeSetName xmlNodeSetName 2 unknown_or_void xmlNodePtr xmlChar*
+xmlGetNsProp xmlGetNsProp 3 xmlChar* xmlNode* xmlChar* xmlChar*
+xmlUCSIsCJKUnifiedIdeographs xmlUCSIsCJKUnifiedIdeographs 1 int int
+xmlBufLength xmlBufLength 1 size_t xmlBufPtr
+xmlGetEncodingAlias xmlGetEncodingAlias 1 char* char*
+xmlBufferDump xmlBufferDump 2 int FILE* xmlBufferPtr
+xmlXPathOrderDocElems xmlXPathOrderDocElems 1 longint xmlDocPtr
+xmlPatternGetStreamCtxt xmlPatternGetStreamCtxt 1 xmlStreamCtxtPtr xmlPatternPtr
+xmlKeepBlanksDefault xmlKeepBlanksDefault 1 int int
+xmlBufferWriteChar xmlBufferWriteChar 2 unknown_or_void xmlBufferPtr char*
+xmlTextMerge xmlTextMerge 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlUCSIsArrows xmlUCSIsArrows 1 int int
+xmlSaveToFd xmlSaveToFd 3 xmlSaveCtxtPtr int char* int
+xmlUCSIsDingbats xmlUCSIsDingbats 1 int int
+xmlSchemaValueGetAsBoolean xmlSchemaValueGetAsBoolean 1 int xmlSchemaValPtr
+xmlTextReaderValue xmlTextReaderValue 1 xmlChar* xmlTextReaderPtr
+xmlCharInRange xmlCharInRange 2 int unsignedint xmlChRangeGroup*
+xmlXPathAddValues xmlXPathAddValues 1 unknown_or_void xmlXPathParserContextPtr
+xmlBuildURI xmlBuildURI 2 xmlChar* xmlChar* xmlChar*
+xmlAddSibling xmlAddSibling 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlParseURIRaw xmlParseURIRaw 2 xmlURIPtr char* int
+xmlUCSIsCatNd xmlUCSIsCatNd 1 int int
+htmlCtxtReadMemory htmlCtxtReadMemory 6 htmlDocPtr htmlParserCtxtPtr char* int char* char* int
+xmlNewCDataBlock xmlNewCDataBlock 3 xmlNodePtr xmlDocPtr xmlChar* int
+xmlUCSIsCatNl xmlUCSIsCatNl 1 int int
+htmlSAXParseDoc htmlSAXParseDoc 4 htmlDocPtr xmlChar* char* htmlSAXHandlerPtr *
+xmlNanoHTTPFetch xmlNanoHTTPFetch 3 int char* char* char**
+xmlUCSIsControlPictures xmlUCSIsControlPictures 1 int int
+xmlCheckFilename xmlCheckFilename 1 int char*
+xmlXPathObjectCopy xmlXPathObjectCopy 1 xmlXPathObjectPtr xmlXPathObjectPtr
+xmlValidateNotationDecl xmlValidateNotationDecl 3 int xmlValidCtxtPtr xmlDocPtr xmlNotationPtr
+xmlUCSIsCatNo xmlUCSIsCatNo 1 int int
+xmlLoadCatalogs xmlLoadCatalogs 1 unknown_or_void char*
+xmlCheckHTTPInput xmlCheckHTTPInput 2 xmlParserInputPtr xmlParserCtxtPtr xmlParserInputPtr
+xmlValidateAttributeDecl xmlValidateAttributeDecl 3 int xmlValidCtxtPtr xmlDocPtr xmlAttributePtr
+htmlNewDoc htmlNewDoc 2 htmlDocPtr xmlChar* xmlChar*
+xmlStrchr xmlStrchr 2 xmlChar* xmlChar* xmlChar
+xmlXPathParseName xmlXPathParseName 1 xmlChar* xmlXPathParserContextPtr
+xmlSchematronParse xmlSchematronParse 1 xmlSchematronPtr xmlSchematronParserCtxtPtr
+xmlRegExecPushString xmlRegExecPushString 3 int xmlRegExecCtxtPtr xmlChar* *
+xmlSchematronNewValidCtxt xmlSchematronNewValidCtxt 2 xmlSchematronValidCtxtPtr xmlSchematronPtr int
+xmlRelaxNGFree xmlRelaxNGFree 1 unknown_or_void xmlRelaxNGPtr
+xmlThrDefParserInputBufferCreateFilenameDefault xmlThrDefParserInputBufferCreateFilenameDefault 1 xmlParserInputBufferCreateFilenameFunc xmlParserInputBufferCreateFilenameFunc
+xmlCatalogGetDefaults xmlCatalogGetDefaults 0 xmlCatalogAllow
+xmlNewDocPI xmlNewDocPI 3 xmlNodePtr xmlDocPtr xmlChar* xmlChar*
+xmlUCSIsCJKCompatibilityIdeographs xmlUCSIsCJKCompatibilityIdeographs 1 int int
+xmlShellDir xmlShellDir 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlDocDumpFormatMemoryEnc xmlDocDumpFormatMemoryEnc 5 unknown_or_void xmlDocPtr xmlChar** int* char* int
+xmlValidGetPotentialChildren xmlValidGetPotentialChildren 4 int xmlElementContent* xmlChar** int* int
+xmlNewChild xmlNewChild 4 xmlNodePtr xmlNodePtr xmlNsPtr xmlChar* xmlChar*
+xmlParserValidityError xmlParserValidityError 2 unknown_or_void * char*
+xmlGcMemSetup xmlGcMemSetup 5 int xmlFreeFunc xmlMallocFunc xmlMallocFunc xmlReallocFunc xmlStrdupFunc
+xmlCatalogSetDebug xmlCatalogSetDebug 1 int int
+xmlBufContent xmlBufContent 1 xmlChar* xmlBuf*
+xmlXPathMultValues xmlXPathMultValues 1 unknown_or_void xmlXPathParserContextPtr
+xmlXPathContextSetCache xmlXPathContextSetCache 4 int xmlXPathContextPtr int int int
+xmlCatalogCleanup xmlCatalogCleanup 0 unknown_or_void
+xmlXPathInit xmlXPathInit 0 unknown_or_void
+xmlStreamPushNode xmlStreamPushNode 4 int xmlStreamCtxtPtr xmlChar* xmlChar* int
+xmlReadMemory xmlReadMemory 5 xmlDocPtr char* int char* char* int
+xmlAddChild xmlAddChild 2 xmlNodePtr xmlNodePtr xmlNodePtr
+xmlBufEnd xmlBufEnd 1 xmlChar* xmlBufPtr
+xmlXPathNodeSetSort xmlXPathNodeSetSort 1 unknown_or_void xmlNodeSetPtr
+xmlRegNewExecCtxt xmlRegNewExecCtxt 3 xmlRegExecCtxtPtr xmlRegexpPtr xmlRegExecCallbacks *
+xmlCharStrdup xmlCharStrdup 1 xmlChar* char*
+xmlBufferEmpty xmlBufferEmpty 1 unknown_or_void xmlBufferPtr
+xmlSaveDoc xmlSaveDoc 2 longint xmlSaveCtxtPtr xmlDocPtr
+htmlDocDumpMemoryFormat htmlDocDumpMemoryFormat 4 unknown_or_void xmlDocPtr xmlChar** int* int
+xmlXPathNotFunction xmlXPathNotFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlDOMWrapNewCtxt xmlDOMWrapNewCtxt 0 xmlDOMWrapCtxtPtr
+xmlUCSIsSupplementalMathematicalOperators xmlUCSIsSupplementalMathematicalOperators 1 int int
+htmlParseCharRef htmlParseCharRef 1 int htmlParserCtxtPtr
+xmlBoolToText xmlBoolToText 1 char* int
+xmlListWalk xmlListWalk 3 unknown_or_void xmlListPtr xmlListWalker *
+xmlShellWrite xmlShellWrite 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlSchemaValidateListSimpleTypeFacet xmlSchemaValidateListSimpleTypeFacet 4 int xmlSchemaFacetPtr xmlChar* longunsignedint longunsignedint*
+xmlUCSIsTags xmlUCSIsTags 1 int int
+xmlXPathEvalExpr xmlXPathEvalExpr 1 unknown_or_void xmlXPathParserContextPtr
+xmlUCSIsCherokee xmlUCSIsCherokee 1 int int
+xmlEscapeFormatString xmlEscapeFormatString 1 xmlChar* xmlChar**
+xmlNodeGetLang xmlNodeGetLang 1 xmlChar* xmlNode*
+htmlNodeDump htmlNodeDump 3 int xmlBufferPtr xmlDocPtr xmlNodePtr
+xmlPatternFromRoot xmlPatternFromRoot 1 int xmlPatternPtr
+xmlCleanupOutputCallbacks xmlCleanupOutputCallbacks 0 int
+xmlValidateOneElement xmlValidateOneElement 3 int xmlValidCtxtPtr xmlDocPtr xmlNodePtr
+xmlCharEncFirstLineInput xmlCharEncFirstLineInput 2 int xmlParserInputBufferPtr int
+xmlRelaxNGNewParserCtxt xmlRelaxNGNewParserCtxt 1 xmlRelaxNGParserCtxtPtr char*
+xmlXPathSubstringBeforeFunction xmlXPathSubstringBeforeFunction 2 unknown_or_void xmlXPathParserContextPtr int
+xmlNanoHTTPScanProxy xmlNanoHTTPScanProxy 1 unknown_or_void char*
+xmlTextReaderConstBaseUri xmlTextReaderConstBaseUri 1 xmlChar* xmlTextReaderPtr
+xmlDocDumpMemoryEnc xmlDocDumpMemoryEnc 4 unknown_or_void xmlDocPtr xmlChar** int* char*
+xmlTextWriterWriteFormatCDATA xmlTextWriterWriteFormatCDATA 2 int xmlTextWriterPtr char*
+xmlShellBase xmlShellBase 4 int xmlShellCtxtPtr char* xmlNodePtr xmlNodePtr
+xmlBufDumpEntityDecl xmlBufDumpEntityDecl 2 unknown_or_void xmlBufPtr xmlEntityPtr
+htmlIsScriptAttribute htmlIsScriptAttribute 1 int xmlChar*

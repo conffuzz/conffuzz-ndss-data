@@ -1,0 +1,4 @@
+fault_location /usr/local/apache2/modules/mod_markdown.so
+cap_write
+cap_read_arbitrary
+cap_write_arbitrary

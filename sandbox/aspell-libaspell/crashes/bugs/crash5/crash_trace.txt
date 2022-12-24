@@ -1,0 +1,6 @@
+    #1 0xaddr in find_option prog/aspell.cpp:240
+    #2 0xaddr in print_help(bool) prog/aspell.cpp:2898
+    #3 0xaddr in main prog/aspell.cpp:267
+    #4 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in _start (/usr/local/bin/aspell+0xaddr)

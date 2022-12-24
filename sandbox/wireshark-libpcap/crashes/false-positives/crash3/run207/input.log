@@ -1,0 +1,34 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0 -> 0x7fffffffe500 at shared buffer 0x00007fffffffe356
+~> change ret from 0 to 0xfffffffffffffffb
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0xbebebe -> 0x61d000000000 at shared buffer 0x00006040000002b5
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0xbebe00 -> 0 at shared buffer 0x00007fffffffc250
+~> write 0xbebe00 -> 0 at shared buffer 0x00007fffffffc250
+~> change ret from 0x618000000080 to 0x618000000045
+pcap_set_promisc(0x618000000045 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+pcap_set_timeout(0x618000000045 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0 -> 0x4 at shared buffer 0x00006180000000ed
+~> write 0 -> 0 at shared buffer 0x0000618000000155
+pcap_set_tstamp_precision(0x618000000045 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0 -> 0 at shared buffer 0x0000618000000225
+~> write 0x60 -> 0xfffffffffffd6a at shared buffer 0x00006180000000fd
+~> write 0x3dc300 -> 0xfffffffffffe36 at shared buffer 0x000061800000029f
+~> write 0x1e800001000003 -> 0xffffffffffffffff at shared buffer 0x0000618000000075
+~> change ret from 0xfffffffc to 0x7fffffff
+pcap_set_buffer_size(0x618000000045 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+~> write 0x1e800000000000 -> 0x37b at shared buffer 0x0000618000000228
+~> write 0x1e800000000000 -> 0 at shared buffer 0x0000618000000069
+~> write 0 -> 0xfffffffffffffc2c at shared buffer 0x000061800000022a
+~> write 0 -> 0xffff000000000000 at shared buffer 0x00006180000001c2
+~> change ret from 0xfffffffc to 0x5
+pcap_activate(0x618000000045 [size: 0x288]) @ 0x0000555555586c87
+pcap_statustostr(0xfffffffc [size: 0]) @ 0x0000555555586dbf
+~> change ret from 0x7fffe25b3b08 to 0x5555555620c8
+pcap_close(0x618000000045 [size: 0x288]) @ 0x0000555555586de2

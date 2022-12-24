@@ -1,0 +1,22 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==12830==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000020 (pc 0x5555555d1357 bp 0x7fffffffdd70 sp 0x7fffffffdd60 T0)
+==12830==The signal is caused by a READ memory access.
+==12830==Hint: address points to the zero page.
+    #0 0x5555555d1357 in ngx_palloc src/core/ngx_palloc.c:126
+    #1 0x5555555d341e in ngx_array_init src/core/ngx_array.h:44
+    #2 0x5555555d675c in ngx_hash_keys_array_init src/core/ngx_hash.c:696
+    #3 0x55555570e959 in ngx_http_variables_add_core_vars src/http/ngx_http_variables.c:2642
+    #4 0x5555556c2f5b in ngx_http_core_preconfiguration src/http/ngx_http_core_module.c:3279
+    #5 0x5555556a828e in ngx_http_block src/http/ngx_http.c:229
+    #6 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #7 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #8 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #9 0x5555555c76b0 in main src/core/nginx.c:292
+    #10 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #11 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #12 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_palloc.c:126 in ngx_palloc
+==12830==ABORTING

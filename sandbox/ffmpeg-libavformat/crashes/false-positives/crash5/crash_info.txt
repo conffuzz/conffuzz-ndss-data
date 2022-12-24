@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libavformat.so.59.16.100
+cap_write

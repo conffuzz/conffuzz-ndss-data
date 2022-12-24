@@ -1,0 +1,39 @@
+49787:C 08 Nov 2022 11:14:08.123 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+49787:C 08 Nov 2022 11:14:08.154 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=49787, just started
+49787:C 08 Nov 2022 11:14:08.157 # Configuration loaded
+49787:M 08 Nov 2022 11:14:08.266 * monotonic clock: POSIX clock_gettime
+49787:M 08 Nov 2022 11:14:08.692 * Running mode=standalone, port=6379.
+49787:M 08 Nov 2022 11:14:08.694 # Server initialized
+49787:M 08 Nov 2022 11:14:08.696 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+49787:M 08 Nov 2022 11:14:08.856 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+49787:M 08 Nov 2022 11:14:08.917 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+49787:M 08 Nov 2022 11:14:09.095 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==49787==ERROR: AddressSanitizer: SEGV on unknown address 0x10037bda6d35 (pc 0x555555b43676 bp 0x7fffffffe2d0 sp 0x7fffffff7100 T0)
+==49787==The signal is caused by a READ memory access.
+    #0 0x555555b43676 in tcache_dalloc_large include/jemalloc/internal/tcache_inlines.h:203
+    #1 0x555555b43676 in arena_dalloc include/jemalloc/internal/arena_inlines_b.h:232
+    #2 0x555555b43676 in idalloctm include/jemalloc/internal/jemalloc_internal_inlines_c.h:118
+    #3 0x555555b43676 in ifree src/jemalloc.c:2222
+    #4 0x555555b43676 in je_free src/jemalloc.c:2393
+    #5 0x555555683576 in zfree /root/redis-6.2.6/src/zmalloc.c:292
+    #6 0x5555557eeb35 in autoMemoryCollect /root/redis-6.2.6/src/module.c:1110
+    #7 0x5555557ec5ba in moduleFreeContext /root/redis-6.2.6/src/module.c:670
+    #8 0x5555557ecaa5 in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:695
+    #9 0x55555566ecb3 in call /root/redis-6.2.6/src/server.c:3721
+    #10 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #11 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #12 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #13 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #14 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #15 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #16 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #17 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #18 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #19 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #20 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV include/jemalloc/internal/tcache_inlines.h:203 in tcache_dalloc_large
+==49787==ABORTING

@@ -1,0 +1,16 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_pattern_info("^(www\.)?(?<domain>.+)$", PCRE2_INFO_CAPTURECOUNT) failed: -31 in /root/nginx-1.21.6/conf/nginx.conf:44
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==24210==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7fffffffe1d0 sp 0x7fffffffe1a8 T0)
+==24210==Hint: pc points to the zero page.
+==24210==The signal is caused by a READ memory access.
+==24210==Hint: address points to the zero page.
+    #0 0x0  (<unknown module>)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (<unknown module>) 
+==24210==ABORTING

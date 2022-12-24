@@ -1,0 +1,15 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==174992==ERROR: AddressSanitizer: SEGV on unknown address 0x555555554448 (pc 0x7fffe21b3daf bp 0x7fffffffd410 sp 0x7fffffffd3c0 T0)
+==174992==The signal is caused by a WRITE memory access.
+    #0 0x7fffe21b3daf in poptAddItem /root/popt-popt-1.19-release/src/popt.c:1594
+    #1 0x7fffe21b3d05 in poptAddAlias /root/popt-popt-1.19-release/src/popt.c:1569
+    #2 0x5555556107ae in popt_unalias /root/rsync-3.2.7/options.c:1320
+    #3 0x555555610b79 in parse_arguments /root/rsync-3.2.7/options.c:1377
+    #4 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #5 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #6 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/popt-popt-1.19-release/src/popt.c:1594 in poptAddItem
+==174992==ABORTING

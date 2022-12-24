@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gsapi_new_instance(0x7ffffffed460 {**} [size: 0x8], 0x7ffffffed440 {void*} [size: 0x1]) @ 0x00007fffd5687248
+~> write {void*} 0 -> 0xff00000000000000 at shared buffer 0x00007ffffffed440
+gsapi_set_stdio(0x6110000006b0 {void*} [size: 0x1], 0 {int(*,char*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1]) @ 0x00007fffd56873dc
+~> instrumenting 0x00007fffd56868d5 (GhostscriptDelegateMessage, 0x3 arg(s))
+~> write {void*} 0xc0 -> 0 at shared buffer 0x00006110000006b0
+gsapi_init_with_args(0x6110000006b0 {void*} [size: 0x1], 0x12 {int} [size: 0], 0x60e000000048 {char**} [size: 0x8]) @ 0x00007fffd568748d

@@ -1,0 +1,31 @@
+3171:C 08 Nov 2022 09:20:43.594 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3171:C 08 Nov 2022 09:20:43.623 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=3171, just started
+3171:C 08 Nov 2022 09:20:43.625 # Configuration loaded
+3171:M 08 Nov 2022 09:20:43.714 * monotonic clock: POSIX clock_gettime
+3171:M 08 Nov 2022 09:20:44.074 * Running mode=standalone, port=6379.
+3171:M 08 Nov 2022 09:20:44.076 # Server initialized
+3171:M 08 Nov 2022 09:20:44.078 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+3171:M 08 Nov 2022 09:20:44.516 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+3171:M 08 Nov 2022 09:20:44.520 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+3171:M 08 Nov 2022 09:20:44.537 * <search> Low level api version 1 initialized successfully
+3171:M 08 Nov 2022 09:20:44.555 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+3171:M 08 Nov 2022 09:20:44.600 * <search> Initialized thread pool!
+3171:M 08 Nov 2022 09:20:44.618 * <search> Enabled diskless replication
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3171==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555556646c7 bp 0x7fffffffe510 sp 0x7fffffffe4f0 T0)
+==3171==The signal is caused by a READ memory access.
+==3171==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555556646c7 in sdslen /root/redis-6.2.6/src/sds.h:88
+    #1 0x555555665ccb in dictSdsCaseHash /root/redis-6.2.6/src/server.c:1307
+    #2 0x55555565facd in dictAddRaw /root/redis-6.2.6/src/dict.c:329
+    #3 0x55555565f8ef in dictAdd /root/redis-6.2.6/src/dict.c:294
+    #4 0x5555558133cf in moduleLoad /root/redis-6.2.6/src/module.c:8586
+    #5 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #6 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #7 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #8 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/sds.h:88 in sdslen
+==3171==ABORTING

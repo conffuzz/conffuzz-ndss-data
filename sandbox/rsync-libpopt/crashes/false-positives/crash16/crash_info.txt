@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libpopt.so.0.0.2
+cap_read

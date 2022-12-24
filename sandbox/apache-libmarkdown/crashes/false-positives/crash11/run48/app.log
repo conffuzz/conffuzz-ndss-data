@@ -1,0 +1,27 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 09:39:36.261771 2022] [core:warn] [pid 2900:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+=================================================================
+==2900==AddressSanitizer CHECK failed: ../../../../src/libsanitizer/asan/asan_descriptions.cpp:80 "((0 && "Address is not in memory and not in shadow?")) != (0)" (0x0, 0x0)
+    #0 0x7fffe1f03657 in AsanCheckFailed ../../../../src/libsanitizer/asan/asan_rtl.cpp:73
+    #1 0x7fffe1f20d4a in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_termination.cpp:78
+    #2 0x7fffe1e7e2b3 in GetShadowKind ../../../../src/libsanitizer/asan/asan_descriptions.cpp:80
+    #3 0x7fffe1e7e2b3 in __asan::GetShadowAddressInformation(unsigned long, __asan::ShadowAddressDescription*) ../../../../src/libsanitizer/asan/asan_descriptions.cpp:96
+    #4 0x7fffe1e7fed2 in __asan::AddressDescription::AddressDescription(unsigned long, unsigned long, bool) ../../../../src/libsanitizer/asan/asan_descriptions.cpp:441
+    #5 0x7fffe1e82350 in __asan::ErrorGeneric::ErrorGeneric(unsigned int, unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long) ../../../../src/libsanitizer/asan/asan_errors.cpp:395
+    #6 0x7fffe1f02cf4 in __asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) ../../../../src/libsanitizer/asan/asan_report.cpp:472
+    #7 0x7fffe1e8a286 in __interceptor_memset ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:778
+    #8 0x7fffd7e6438a in mkd_compile /root/discount-2.2.7/markdown.c:1445
+    #9 0x7fffd7eba47a in markdown_output /root/apache-mod-markdown/mod_markdown.c:150
+    #10 0x7fffd7ebba96 in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #11 0x5555556a042b in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #12 0x5555556a1b97 in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #13 0x5555556f5835 in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #14 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #15 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #16 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #17 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #18 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #19 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #20 0x7fffe1ba4a2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+

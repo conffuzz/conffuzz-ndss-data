@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0x7fff -> 0x10000000000000 at shared buffer 0x00007fffd940c854
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4c30 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3e1
+~> change ret {int} from 0 to 0xfffffffffffffff6
+RSSuggestAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f3900 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd92f3920 -> 0xffffffff80000000 at shared buffer 0x00007fffd92f3900
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3cc
+~> write {RedisModuleCtx*} 0x41 -> 0xfffffdb600000000 at shared buffer 0x00007fffffffe3b0
+~> write {RedisModuleCtx*} 0x30d1000000 -> 0x3000000 at shared buffer 0x00007fffffffe39e
+~> change ret {int} from 0 to 0x1c5

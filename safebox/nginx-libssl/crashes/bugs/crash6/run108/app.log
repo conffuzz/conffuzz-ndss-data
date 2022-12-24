@@ -1,0 +1,8 @@
+nginx: [alert] SSL_get_ex_new_index() failed (SSL: error:0000000A:lib(0):func(0):reason(10))
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==49100==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe0f92a2900 bp 0x7fffffffdd10 sp 0x7fffffffdc68 T0)
+==49100==The signal is caused by a READ memory access.
+==49100==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

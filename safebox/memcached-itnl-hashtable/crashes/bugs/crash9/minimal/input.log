@@ -1,0 +1,58 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+assoc_init(0 {int} [size: 0]) @ 0x000055555558ffd3
+start_assoc_maintenance_thread() @ 0x000055555559020f
+assoc_maintenance_thread(0 {void*} [size: 0x1]) @ 0x00007fffe243bea7
+assoc_start_expand(0 {uint64_t} [size: 0]) @ 0x0000555555588f2c
+assoc_find(0x7fffd15be798 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0xee16f4d7 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be760 {item*} [size: 0x30], 0xee16f4d7 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be738 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0x9b970125 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be700 {item*} [size: 0x30], 0x9b970125 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be6d8 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0x737139b4 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be6a0 {item*} [size: 0x30], 0x737139b4 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be678 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0xa648eb58 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be640 {item*} [size: 0x30], 0xa648eb58 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be618 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0xd4276755 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be5e0 {item*} [size: 0x30], 0xd4276755 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be5b8 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0xe7376f67 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be580 {item*} [size: 0x30], 0xe7376f67 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be558 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0x39dba467 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be520 {item*} [size: 0x30], 0x39dba467 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be4f8 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0x97f357f1 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be4c0 {item*} [size: 0x30], 0x97f357f1 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be498 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0x45e0d702 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_start_expand(0x8 {uint64_t} [size: 0]) @ 0x0000555555588f2c
+assoc_insert(0x7fffd15be460 {item*} [size: 0x30], 0x45e0d702 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be438 {char*} [size: 0x1], 0x4 {size_t} [size: 0], 0xb257e77a {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be400 {item*} [size: 0x30], 0xb257e77a {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be3d8 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x83704509 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be3a0 {item*} [size: 0x30], 0x83704509 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be378 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0xd6138b1c {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be340 {item*} [size: 0x30], 0xd6138b1c {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be318 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x72f62417 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be2e0 {item*} [size: 0x30], 0x72f62417 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be2b8 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x8394c5b8 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be280 {item*} [size: 0x30], 0x8394c5b8 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be258 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0xf8fb1a0f {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be220 {item*} [size: 0x30], 0xf8fb1a0f {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be1f8 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x9d3dd334 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be1c0 {item*} [size: 0x30], 0x9d3dd334 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be198 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x86a3c465 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be160 {item*} [size: 0x30], 0x86a3c465 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+~> change arg #0x2 {uint32_t} from 0x86a3c465 to 0x64
+assoc_find(0x7fffd15be138 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x6314da49 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be100 {item*} [size: 0x30], 0x6314da49 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be0d8 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0xcdde23b1 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15be0a0 {item*} [size: 0x30], 0xcdde23b1 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be078 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x6e5835b3 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_start_expand(0x13 {uint64_t} [size: 0]) @ 0x0000555555588f2c
+assoc_insert(0x7fffd15be040 {item*} [size: 0x30], 0x6e5835b3 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15be018 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x503d4a90 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15bdfe0 {item*} [size: 0x30], 0x503d4a90 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15bdfb8 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x2c5e2828 {uint32_t} [size: 0]) @ 0x00005555555a8b12
+assoc_insert(0x7fffd15bdf80 {item*} [size: 0x30], 0x2c5e2828 {uint32_t} [size: 0]) @ 0x00005555555a2b06
+assoc_find(0x7fffd15bdf58 {char*} [size: 0x1], 0x5 {size_t} [size: 0], 0x2c693e1e {uint32_t} [size: 0]) @ 0x00005555555a8b12
+~> change arg #0x1 {char*} from 0x7fffd15bdf58 to 0x11
+~> change arg #0x3 {uint32_t} from 0x2c693e1e to 0x64

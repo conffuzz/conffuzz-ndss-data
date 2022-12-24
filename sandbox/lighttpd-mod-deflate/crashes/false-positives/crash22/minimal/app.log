@@ -1,0 +1,62 @@
+=================================================================
+==10249==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e0000002a2 at pc 0x7fffdbf695f2 bp 0x7fffffffe0f0 sp 0x7fffffffe0e0
+WRITE of size 2 at 0x60e0000002a2 thread T0
+    #0 0x7fffdbf695f1 in mod_deflate_set_defaults /root/lighttpd-1.4.67/src/mod_deflate.c:845
+    #1 0x5555555acbc8 in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #2 0x5555555acee1 in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #3 0x5555555882f6 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #4 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #5 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x60e0000002a2 is located 2 bytes to the right of 160-byte region [0x60e000000200,0x60e0000002a0)
+allocated by thread T0 here:
+    #0 0x7fffe234bc18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x55555562640d in array_extend /root/lighttpd-1.4.67/src/array.c:120
+    #2 0x55555562792b in array_insert_data_at_pos /root/lighttpd-1.4.67/src/array.c:363
+    #3 0x555555627ffb in array_find_or_insert /root/lighttpd-1.4.67/src/array.c:448
+    #4 0x55555562837f in array_insert_unique /root/lighttpd-1.4.67/src/array.c:474
+    #5 0x5555555de876 in yy_reduce configparser.y:388
+    #6 0x5555555e4391 in configparser configparser.c:1812
+    #7 0x5555555d63f9 in config_parse /root/lighttpd-1.4.67/src/configfile.c:2142
+    #8 0x5555555d6cef in config_parse_file_stream /root/lighttpd-1.4.67/src/configfile.c:2216
+    #9 0x5555555d8f3b in config_read /root/lighttpd-1.4.67/src/configfile.c:2486
+    #10 0x5555555855ec in server_main_setup /root/lighttpd-1.4.67/src/server.c:1116
+    #11 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #12 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/mod_deflate.c:845 in mod_deflate_set_defaults
+Shadow bytes around the buggy address:
+  0x0c1c7fff8000: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fff8010: 00 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa
+  0x0c1c7fff8020: fa fa fa fa 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fff8030: 00 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa
+  0x0c1c7fff8040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c1c7fff8050: 00 00 00 00[fa]fa fa fa fa fa fa fa 00 00 00 00
+  0x0c1c7fff8060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa
+  0x0c1c7fff8070: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fff8080: 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa
+  0x0c1c7fff8090: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c1c7fff80a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==10249==ABORTING

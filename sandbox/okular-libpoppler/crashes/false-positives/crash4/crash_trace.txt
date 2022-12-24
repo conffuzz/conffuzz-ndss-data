@@ -1,0 +1,20 @@
+    #0 0xaddr in QVariant::~QVariant() (/usr/lib/x86_64-linux-gnu/libQt5Core.so.5+0xaddr)
+    #1 0xaddr in PDFGenerator::PDFGenerator(QObject*, QList<QVariant> const&) /root/okular/generators/poppler/generator_pdf.cpp:576
+    #2 0xaddr in QObject* KPluginFactory::createInstance<PDFGenerator, QObject>(QWidget*, QObject*, QList<QVariant> const&) /usr/include/KF5/KCoreAddons/kpluginfactory.h:699
+    #3 0xaddr in KPluginFactory::create(char const*, QWidget*, QObject*, QList<QVariant> const&, QString const&) (/usr/lib/x86_64-linux-gnu/libKF5CoreAddons.so.5+0xaddr)
+    #4 0xaddr in Okular::Generator* KPluginFactory::create<Okular::Generator>(QObject*, QList<QVariant> const&) /usr/include/KF5/KCoreAddons/kpluginfactory.h:744
+    #5 0xaddr in Okular::DocumentPrivate::loadGeneratorLibrary(KPluginMetaData const&) /root/okular/core/document.cpp:781
+    #6 0xaddr in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:865
+    #7 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #8 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #9 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #10 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #11 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #12 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #13 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #14 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #15 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #16 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #17 0xaddr in main /root/okular/shell/main.cpp:91
+    #18 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #19 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

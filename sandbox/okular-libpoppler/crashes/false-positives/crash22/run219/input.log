@@ -1,0 +1,39 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec683c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec68afe
+~> instrumenting 0x00007fff6ec683c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec691bc
+isLocked(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec697ad
+xrefWasReconstructed(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec69ba0
+setXRefReconstructedCallback(0x6020002e98b0 {Document*} [size: 0x4], 0x7fffffffb4b0 {function<void()>&} [size: 0x1]) @ 0x00007fff6ec69d96
+numPages(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec69df1
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec6ac9f
+pageSizeF(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6acf8
+~> change ret {QSizeF} from 0x4083200000000000 to 0x40832000000001d9
+orientation(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6aec9
+transition(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec7a3e1
+action(0x6020002e98d0 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec6b024
+action(0x6020002e98d0 {Page*} [size: 0xe0], 0x1 {PageAction} [size: 0]) @ 0x00007fff6ec6b074
+duration(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6b0bf
+label(0x7fffffffb050 {Page*} [size: 0xe0]) @ 0x00007fff6ec6b129
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec6b26c
+page(0x6020002e98b0 {Document*} [size: 0x4], 0x1 {int} [size: 0]) @ 0x00007fff6ec6ac9f
+pageSizeF(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6acf8
+orientation(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6aec9
+transition(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec7a3e1
+action(0x6020002fabf0 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec6b024
+action(0x6020002fabf0 {Page*} [size: 0xe0], 0x1 {PageAction} [size: 0]) @ 0x00007fff6ec6b074
+duration(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec6b0bf
+label(0x7fffffffb050 {Page*} [size: 0xe0]) @ 0x00007fff6ec6b129
+formFields(0x7fffffffadf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec7a7ab
+~> change ret {QList<Poppler::FormField*>} from 0x7fffffffadf0 to 0x7fffffffb0fa
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec6b26c
+signatures(0x7fffffffb0b0 {Document*} [size: 0x4]) @ 0x00007fff6ec6b475
+~> write {Document*} 0xe0 -> 0 at shared buffer 0x00007fffffffb0b3
+~> change ret {QVector<Poppler::FormFieldSignature*>} from 0x7fffffffb0b0 to 0x7fffffffafa8
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec6b4a1
+~> write {Document*} 0xf6 -> 0xbe00000000000000 at shared buffer 0x00006020002e98b1
+~> change ret {Page*} from 0x6020002fb9b0 to 0x7ffffffde190
+formFields(0x7fffffffadf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec7a7ab

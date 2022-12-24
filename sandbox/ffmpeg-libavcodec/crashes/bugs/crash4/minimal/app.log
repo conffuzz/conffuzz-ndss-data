@@ -1,0 +1,35 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==11134==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe25e39c6 bp 0xc3000000000000 sp 0x7fffffffd810 T0)
+==11134==The signal is caused by a READ memory access.
+==11134==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe25e39c6 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe25e39c6 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe25e39c6 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe25e39c6 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe26694a7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffdda3c044 in av_free libavutil/mem.c:250
+    #6 0x7fffdda3c1b0 in av_freep libavutil/mem.c:260
+    #7 0x7fffde781438 in codec_parameters_reset libavcodec/codec_par.c:33
+    #8 0x7fffde781aab in avcodec_parameters_from_context libavcodec/codec_par.c:93
+    #9 0x7fffe0ebf44d in avformat_find_stream_info libavformat/demux.c:2917
+    #10 0x55555559be78 in open_input_file fftools/ffprobe.c:3162
+    #11 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #12 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #13 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #14 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==11134==ABORTING

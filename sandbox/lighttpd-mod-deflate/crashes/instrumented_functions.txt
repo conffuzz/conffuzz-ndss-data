@@ -1,0 +1,28 @@
+mod_deflate_plugin_init mod_deflate_plugin_init 1 int plugin*
+mod_deflate_init mod_deflate_init 0 *
+mod_deflate_free mod_deflate_free 1 unknown_or_void *
+mod_deflate_cache_file_name mod_deflate_cache_file_name 3 buffer* request_st* buffer* buffer*
+mod_deflate_cache_file_open mod_deflate_cache_file_open 2 unknown_or_void handler_ctx* buffer*
+mod_deflate_cache_file_finish mod_deflate_cache_file_finish 3 int request_st* handler_ctx* buffer*
+mod_deflate_merge_config_cpv mod_deflate_merge_config_cpv 2 unknown_or_void plugin_config* config_plugin_value_t*
+mod_deflate_merge_config mod_deflate_merge_config 2 unknown_or_void plugin_config* config_plugin_value_t*
+mod_deflate_patch_config mod_deflate_patch_config 2 unknown_or_void request_st* plugin_data*
+mod_deflate_parse_params mod_deflate_parse_params 2 encparms* array* log_error_st*
+mod_deflate_encodings_to_flags mod_deflate_encodings_to_flags 1 uint16_t* array*
+mod_deflate_set_defaults mod_deflate_set_defaults 2 handler_t server* *
+mod_deflate_cache_file_append mod_deflate_cache_file_append 3 int handler_ctx* char* size_t
+mod_deflate_stream_init mod_deflate_stream_init 1 int handler_ctx*
+mod_deflate_compress mod_deflate_compress 3 int handler_ctx* unsignedchar* off_t
+mod_deflate_stream_flush mod_deflate_stream_flush 2 int handler_ctx* int
+mod_deflate_note_ratio mod_deflate_note_ratio 3 unknown_or_void request_st* off_t off_t
+mod_deflate_stream_end mod_deflate_stream_end 1 int handler_ctx*
+mod_deflate_using_libdeflate_err mod_deflate_using_libdeflate_err 3 int handler_ctx* buffer* int
+mod_deflate_using_libdeflate_sm mod_deflate_using_libdeflate_sm 2 int handler_ctx* plugin_data*
+mod_deflate_using_libdeflate_setjmp_cb mod_deflate_using_libdeflate_setjmp_cb 3 off_t * * off_t
+mod_deflate_using_libdeflate mod_deflate_using_libdeflate 2 int handler_ctx* plugin_data*
+mod_deflate_file_chunk_no_mmap mod_deflate_file_chunk_no_mmap 4 off_t request_st* handler_ctx* chunk* off_t
+mod_deflate_file_chunk mod_deflate_file_chunk 4 off_t request_st* handler_ctx* chunk* off_t
+mod_deflate_choose_encoding mod_deflate_choose_encoding 3 int char* plugin_data* char**
+mod_deflate_handle_response_start mod_deflate_handle_response_start 2 handler_t request_st* *
+mod_deflate_cleanup mod_deflate_cleanup 2 handler_t request_st* *
+mod_deflate_plugin_init mod_deflate_plugin_init 1 int plugin*

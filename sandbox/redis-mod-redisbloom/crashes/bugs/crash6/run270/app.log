@@ -1,0 +1,41 @@
+51392:C 08 Nov 2022 11:14:55.729 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+51392:C 08 Nov 2022 11:14:55.767 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=51392, just started
+51392:C 08 Nov 2022 11:14:55.770 # Configuration loaded
+51392:M 08 Nov 2022 11:14:55.890 * monotonic clock: POSIX clock_gettime
+51392:M 08 Nov 2022 11:14:56.399 * Running mode=standalone, port=6379.
+51392:M 08 Nov 2022 11:14:56.401 # Server initialized
+51392:M 08 Nov 2022 11:14:56.404 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+51392:M 08 Nov 2022 11:14:56.543 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+51392:M 08 Nov 2022 11:14:56.606 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+51392:M 08 Nov 2022 11:14:56.793 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==51392==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x5555558fb4a8 bp 0x7fffffffd8c0 sp 0x7fffffffd850 T0)
+==51392==The signal is caused by a READ memory access.
+==51392==Hint: address points to the zero page.
+    #0 0x5555558fb4a8 in atomic_load_p include/jemalloc/internal/atomic.h:55
+    #1 0x555555d81b02 in rtree_leaf_elm_bits_read include/jemalloc/internal/rtree.h:175
+    #2 0x555555d81b02 in rtree_leaf_elm_szind_read include/jemalloc/internal/rtree.h:227
+    #3 0x555555d81b02 in rtree_szind_read include/jemalloc/internal/rtree.h:434
+    #4 0x555555d81b02 in arena_salloc include/jemalloc/internal/arena_inlines_b.h:120
+    #5 0x555555d81b02 in isalloc include/jemalloc/internal/jemalloc_internal_inlines_c.h:37
+    #6 0x555555d81b02 in je_malloc_usable_size src/jemalloc.c:3149
+    #7 0x555555683562 in zfree /root/redis-6.2.6/src/zmalloc.c:291
+    #8 0x5555557ec60c in moduleFreeContext /root/redis-6.2.6/src/module.c:673
+    #9 0x5555557ecaa5 in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:695
+    #10 0x55555566ecb3 in call /root/redis-6.2.6/src/server.c:3721
+    #11 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #12 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #13 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #14 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #15 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #16 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #17 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #18 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #19 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #20 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #21 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV include/jemalloc/internal/atomic.h:55 in atomic_load_p
+==51392==ABORTING

@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct(0x7fffe214e100 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17102d2
+png_create_info_struct(0x61a00004e680 [size: 0]) @ 0x00007fffe17102ea
+~> change ret from 0x613000508740 to 0xd
+png_set_longjmp_fn(0x61a00004e680 [size: 0], 0x7fffe27e5b80 [size: 0], 0xc8 [size: 0]) @ 0x00007fffe1710312
+~> instrumenting 0x00007fffe27e5b80 (__longjmp_chk, 0 arg(s))
+~> change ret from 0x61a00004e680 to 0x61a00004e71e
+png_init_io(0x61a00004e680 [size: 0], 0x6150000da280 [size: 0]) @ 0x00007fffe1710377
+~> change ret from 0x61a00004e680 to 0x61a00004e546
+png_set_compression_level(0x61a00004e680 [size: 0], 0x6 [size: 0]) @ 0x00007fffe1710386
+~> change ret from 0x61a00004e680 to 0x7ffffffde190
+png_set_IHDR(0x61a00004e680 [size: 0], 0xd [size: 0], 0x330 [size: 0], 0x420 [size: 0], 0x8 [size: 0], 0x6 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17103c1

@@ -1,0 +1,59 @@
+=================================================================
+==65412==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x622000002e89 at pc 0x7fffe00ca86f bp 0x7fffffffd5e0 sp 0x7fffffffd5d0
+READ of size 8 at 0x622000002e89 thread T0
+    #0 0x7fffe00ca86e in Curl_vsetopt /root/curl-7.82.0/lib/setopt.c:757
+    #1 0x7fffe00de91f in curl_easy_setopt /root/curl-7.82.0/lib/setopt.c:3052
+    #2 0x555555621433 in get_active_slot /root/git-2.35.1/http.c:1210
+    #3 0x555555633790 in locking_available /root/git-2.35.1/http-push.c:1214
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x622000002e89 is located 121 bytes to the right of 5392-byte region [0x622000001900,0x622000002e10)
+allocated by thread T0 here:
+    #0 0x7fffe03b4a37 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffe0088872 in curl_dbg_calloc /root/curl-7.82.0/lib/memdebug.c:172
+    #2 0x7fffe011567e in Curl_open /root/curl-7.82.0/lib/url.c:645
+    #3 0x7fffe001b082 in curl_easy_init /root/curl-7.82.0/lib/easy.c:298
+    #4 0x55555561f01d in get_curl_handle /root/git-2.35.1/http.c:763
+    #5 0x555555620b8c in http_init /root/git-2.35.1/http.c:1103
+    #6 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #7 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #8 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/curl-7.82.0/lib/setopt.c:757 in Curl_vsetopt
+Shadow bytes around the buggy address:
+  0x0c447fff8580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c447fff8590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c447fff85a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c447fff85b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c447fff85c0: 00 00 fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c447fff85d0: fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c447fff85e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c447fff85f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c447fff8600: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c447fff8610: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c447fff8620: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==65412==ABORTING

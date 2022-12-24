@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd32fa0a0 {request_rec*} [size: 0x2e0], 0x7fffd2c01698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f9da97
+~> write {MMIOT*} 0x65000001 -> 0xfffffffffffffdc7 at shared buffer 0x000060d000006840
+~> write {MMIOT*} 0 -> 0x7fffffffffffffff at shared buffer 0x000060d00000687f
+~> write {MMIOT*} 0 -> 0x600000000000000 at shared buffer 0x000060d000006879
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd2c01698
+~> write {request_rec*} 0x635000007fffd3 -> 0 at shared buffer 0x00007fffd32fa0a3
+~> change ret {int} from 0 to 0xfffffffffffffd13

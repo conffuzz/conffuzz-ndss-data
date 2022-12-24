@@ -1,0 +1,19 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poppler_document_new_from_file(0x603000481420 [size: 0x1], 0 [size: 0x1], 0x7fffffffe058 [size: 0x8]) @ 0x00007fffe16ad5f7
+poppler_document_get_n_pages(0x61d000709b40 [size: 0x40]) @ 0x00007fffe16ad687
+~> change ret from 0x2 to 0x5
+poppler_document_get_page(0x61d000709b40 [size: 0x40], 0 [size: 0]) @ 0x00007fffe16ad6a2
+poppler_page_get_size(0x61d000709b80 [size: 0x38], 0x7fffffffe060 [size: 0x8], 0x7fffffffe070 [size: 0x8]) @ 0x00007fffe16ad6d2
+~> write 0 -> 0x608000000000 at shared buffer 0x000061d000709b93
+~> write 0 -> 0x608000000016 at shared buffer 0x000061d000709b91
+~> write 0x61d000 -> 0x608000000bb8 at shared buffer 0x000061d000709b9b
+~> write 0 -> 0x608000000000 at shared buffer 0x000061d000709b9d
+~> write 0x40832000000000 -> 0xfffffffffffffe at shared buffer 0x00007fffffffe061
+~> write 0x88c00000000000 -> 0xffffffffffffff at shared buffer 0x00007fffffffe070
+~> write 0x88c000000000ff -> 0xfffffffffffffc at shared buffer 0x00007fffffffe076
+~> write 0x88c000000000ff -> 0xffffffffffff02 at shared buffer 0x00007fffffffe070
+~> change ret from 0x7fffffffe070 to 0x7ffffffde190
+poppler_page_render_for_printing(0x61d000709b80 [size: 0x38], 0x61b00003b880 [size: 0x1]) @ 0x00007fffe16ad727

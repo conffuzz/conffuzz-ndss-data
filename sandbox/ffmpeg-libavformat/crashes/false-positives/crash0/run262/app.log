@@ -1,0 +1,26 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 19.170
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==41542==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe0ea085f bp 0x7fffffffe710 sp 0x7fffffffe640 T0)
+==41542==The signal is caused by a READ memory access.
+==41542==Hint: address points to the zero page.
+    #0 0x7fffe0ea085f in avformat_open_input libavformat/demux.c:219
+    #1 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #2 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #3 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #4 0x7fffdd64b7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV libavformat/demux.c:219 in avformat_open_input
+==41542==ABORTING

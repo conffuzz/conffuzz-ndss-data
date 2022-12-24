@@ -1,0 +1,12 @@
+Fuzzing seed: 1668010160
+Starting time: 2022-11-09 16:09:20
+Total instrumented API size: 1519
+Statically detected called API endpoints: 10
+Max number of call sites reached in a run: 7
+Number of API endpoints reached: 7
+Number of API endpoints that are vulnerability vectors: 3
+List of these endpoints:
+  [api] xmlCreatePushParserCtxt
+  [api] xmlGetLastError
+  [api] xmlParseChunk
+Ending time: 2022-11-09 18:32:56

@@ -1,0 +1,2 @@
+fault_location /lib/x86_64-linux-gnu/libbz2.so.1.0
+cap_null_deref

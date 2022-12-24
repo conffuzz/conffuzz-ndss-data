@@ -1,0 +1,6 @@
+    #3 0xaddr in file_warn /root/file-5.41/src/file.c:742
+    #4 0xaddr in load /root/file-5.41/src/file.c:487
+    #5 0xaddr in main /root/file-5.41/src/file.c:403
+    #6 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/usr/local/bin/file+0xaddr)

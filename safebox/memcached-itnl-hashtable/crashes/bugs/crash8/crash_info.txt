@@ -1,0 +1,6 @@
+fault_location /root/memcached-1.6.17/memcached
+cap_read_arbitrary
+non_reproducible
+non_reproducible
+cap_read
+cap_null_deref

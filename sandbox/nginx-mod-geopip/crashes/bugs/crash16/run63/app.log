@@ -1,0 +1,22 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7438==ERROR: AddressSanitizer: SEGV on unknown address 0xffffffffffffffef (pc 0x7fffe12f4b46 bp 0xffffffffffffffff sp 0x7fffffffd910 T0)
+==7438==The signal is caused by a WRITE memory access.
+    #0 0x7fffe12f4b46 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe12f4b46 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe12f4b46 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe12f4b46 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe13804d4 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffd7ee2e3d  (/lib/x86_64-linux-gnu/libmaxminddb.so.0+0x1e3d)
+    #6 0x7fffd806000d in ngx_http_geoip2_cleanup ../ngx_http_geoip2_module/ngx_http_geoip2_module.c:708
+    #7 0x5555555d0fb2 in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #8 0x55555561c356 in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #9 0x555555617982 in ngx_init_cycle src/core/ngx_cycle.c:286
+    #10 0x5555555c76b0 in main src/core/nginx.c:292
+    #11 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #12 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #13 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==7438==ABORTING

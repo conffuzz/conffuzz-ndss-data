@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==852==ERROR: AddressSanitizer: SEGV on unknown address 0x7ffcce37d00a (pc 0x7f8baacaf056 bp 0x7ffc45d49420 sp 0x7ffc45d493a0 T0)
+==852==The signal is caused by a WRITE memory access.
+    #0 0x7f8baacaf056 in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:707:10
+    #1 0x7f8baacb08f9 in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #2 0x7f8baacb0923 in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #3 0x55e17ff22588 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #4 0x55e17fefdd49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #5 0x55e17fedfa39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #6 0x7f8baa565d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #7 0x7f8baa565e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0x55e17fd62d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:707:10 in aa_getprocattr
+==852==ABORTING

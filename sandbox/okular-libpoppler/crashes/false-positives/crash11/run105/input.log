@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6f1be3c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6f1beafe
+~> instrumenting 0x00007fff6f1be3c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+~> write {QVariant&} 0 -> 0 at shared buffer 0x00007fffffffb182
+~> write {QVariant&} 0 -> 0xfffffffffe4a0000 at shared buffer 0x00007fffffffb184
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6f1bf1bc
+isLocked(0x6020002e9690 {Document*} [size: 0x4]) @ 0x00007fff6f1bf7ad
+~> write {Document*} 0xf040 -> 0xfc43000000000000 at shared buffer 0x00006020002e9690
+xrefWasReconstructed(0x6020002e9690 {Document*} [size: 0x4]) @ 0x00007fff6f1bfba0
+setXRefReconstructedCallback(0x6020002e9690 {Document*} [size: 0x4], 0x7fffffffb4b0 {function<void()>&} [size: 0x1]) @ 0x00007fff6f1bfd96

@@ -1,0 +1,20 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+~> write {unknown} 0 -> 0 at shared buffer 0x000060d0000064ee
+~> write {unknown} 0 -> 0x6400 at shared buffer 0x000060d0000064d0
+~> write {unknown} 0 -> 0 at shared buffer 0x000060d000006523
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+~> write {FILE*} 0x6210 -> 0x6000000000000 at shared buffer 0x000061500000ff94
+~> write {FILE*} 0x6150 -> 0xfffffffffffd4b00 at shared buffer 0x0000615000010024
+mkd_compile(0x60d000006840 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006896
+~> write {Document*} 0 -> 0xd300000000000000 at shared buffer 0x000060d0000068b2
+~> write {Document*} 0x4 -> 0 at shared buffer 0x000060d000006884
+mkd_doc_title(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+~> write {Document*} 0 -> 0xfffc180000000000 at shared buffer 0x000060d00000689f
+~> write {Document*} 0 -> 0x4a0000000000 at shared buffer 0x000060d0000068a2
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006869
+~> change ret {char*} from 0 to 0xfffffffffffffd45

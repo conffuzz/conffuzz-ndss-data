@@ -1,0 +1,43 @@
+[I] Recursing from nghttp2_nv into structure 
+[E] Not able to find type information for nghttp2_nv in DWARF
+[I] Recursing from nghttp2_data_provider into structure 
+[E] Not able to find type information for nghttp2_data_provider in DWARF
+[I] Recursing from nghttp2_mem into structure 
+[E] Not able to find type information for nghttp2_mem in DWARF
+[I] Recursing from nghttp2_priority_spec into structure 
+[E] Not able to find type information for nghttp2_priority_spec in DWARF
+[I] Recursing from nghttp2_origin_entry into structure 
+[E] Not able to find type information for nghttp2_origin_entry in DWARF
+[I] Recursing from nghttp2_vec into structure 
+[E] Not able to find type information for nghttp2_vec in DWARF
+[I] Recursing from nghttp2_settings_entry into structure 
+[E] Not able to find type information for nghttp2_settings_entry in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[I] Attempting to instrument callback send_callback
+Got function argument numbers (5) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==46336==ERROR: AddressSanitizer: SEGV on unknown address 0x000000002640 (pc 0x7fffe18d6010 bp 0x7fffffffde70 sp 0x7fffffffddd8 T0)
+==46336==The signal is caused by a WRITE memory access.
+    #0 0x7fffe18d6010 in nghttp2_session_callbacks_set_send_callback /root/nghttp2-1.47.0/lib/nghttp2_callbacks.c:45
+    #1 0x7fffe214f1d8 in http2_init /root/curl-7.82.0/lib/http2.c:1282
+    #2 0x7fffe215321f in Curl_http2_setup /root/curl-7.82.0/lib/http2.c:2031
+    #3 0x7fffe2153598 in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2061
+    #4 0x7fffe214287b in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #5 0x7fffe2181d84 in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #6 0x7fffe2184c17 in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #7 0x7fffe2187e7b in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #8 0x7fffe20ff50a in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #9 0x7fffe20ffa78 in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #10 0x7fffe20ffb41 in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #11 0x5555555be2e7 in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #12 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #13 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #14 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #15 0x7fffe1a927fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #16 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/nghttp2-1.47.0/lib/nghttp2_callbacks.c:45 in nghttp2_session_callbacks_set_send_callback
+==46336==ABORTING

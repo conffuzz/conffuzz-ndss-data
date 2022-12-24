@@ -1,0 +1,15 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==8026==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000021 (pc 0x5555555ad7ef bp 0x7fffffffe310 sp 0x7fffffffe220 T0)
+==8026==The signal is caused by a WRITE memory access.
+==8026==Hint: address points to the zero page.
+    #0 0x5555555ad7ef in plugins_call_init /root/lighttpd-1.4.67/src/plugin.c:458
+    #1 0x555555586586 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1290
+    #2 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #3 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/plugin.c:458 in plugins_call_init
+==8026==ABORTING

@@ -1,0 +1,11 @@
+    #0 0xaddr in Curl_splay /root/curl-7.82.0/lib/splay.c:51
+    #1 0xaddr in Curl_splayremove /root/curl-7.82.0/lib/splay.c:238
+    #2 0xaddr in Curl_expire_clear /root/curl-7.82.0/lib/multi.c:3548
+    #3 0xaddr in curl_multi_remove_handle /root/curl-7.82.0/lib/multi.c:798
+    #4 0xaddr in xmulti_remove_handle /root/git-2.35.1/http.c:221
+    #5 0xaddr in http_cleanup /root/git-2.35.1/http.c:1113
+    #6 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1962
+    #7 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #8 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

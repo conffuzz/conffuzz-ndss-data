@@ -1,0 +1,11 @@
+    #0 0xaddr  (/lib64/ld-linux-x86-64.so.2+0xaddr)
+    #1 0xaddr in _dl_catch_exception (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in _dl_catch_error (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #3 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in dlclose (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in plugin_free /root/lighttpd-1.4.67/src/plugin.c:76
+    #8 0xaddr in plugins_free /root/lighttpd-1.4.67/src/plugin.c:584
+    #9 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2118
+    #10 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

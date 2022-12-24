@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6f1c73c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6f1c7afe
+~> instrumenting 0x00007fff6f1c73c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6f1c81bc
+~> write {QString&} 0x20b5a -> 0 at shared buffer 0x00007fffffffc551
+~> change ret {Document*} from 0x6020002e9690 to 0xd
+isLocked(0xd {Document*} [size: 0x4]) @ 0x00007fff6f1c87ad

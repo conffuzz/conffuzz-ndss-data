@@ -1,0 +1,8 @@
+    #1 0xaddr in _gcry_private_malloc /root/libgcrypt-1.9.2/src/stdmem.c:113
+    #2 0xaddr in do_malloc /root/libgcrypt-1.9.2/src/global.c:943
+    #3 0xaddr in _gcry_malloc /root/libgcrypt-1.9.2/src/global.c:965
+    #4 0xaddr in _gcry_calloc /root/libgcrypt-1.9.2/src/global.c:1078
+    #5 0xaddr in gcry_calloc /root/libgcrypt-1.9.2/src/visibility.c:1526
+    #6 0xaddr in session_env_new /root/gnupg-2.2.27/common/session-env.c:124
+    #7 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2326
+    #8 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

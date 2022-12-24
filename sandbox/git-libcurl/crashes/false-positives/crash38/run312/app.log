@@ -1,0 +1,17 @@
+=================================================================
+==32503==ERROR: AddressSanitizer: allocator is out of memory trying to allocate 0xb80000010 bytes
+    #0 0x7fffe03b4a37 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffe0088872 in curl_dbg_calloc /root/curl-7.82.0/lib/memdebug.c:172
+    #2 0x7fffe01586b5 in Curl_ssl_initsessions vtls/vtls.c:739
+    #3 0x7fffe010fd9b in Curl_pretransfer /root/curl-7.82.0/lib/transfer.c:1393
+    #4 0x7fffe00a3cc7 in multi_runsingle /root/curl-7.82.0/lib/multi.c:1830
+    #5 0x7fffe00a8a7a in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #6 0x555555621b53 in start_active_slot /root/git-2.35.1/http.c:1260
+    #7 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #8 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #9 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #10 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+==32503==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: out-of-memory ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154 in __interceptor_calloc
+==32503==ABORTING

@@ -1,0 +1,27 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+Tried and failed to write to 0x0000621ffffffec8 (1 bytes)
+Tried and failed to write to 0x0000621ffffffec8 (1 bytes)
+Tried and failed to write to 0x0000621ffffffec8 (1 bytes)
+=================================================================
+==50279==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde190 in thread T0
+    #0 0x7fffe29b54d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe289f187 in BZ2_bzReadClose /root/bzip2-1.0.8/bzlib.c:1156
+    #2 0x55555555afd1 in uncompressStream /root/bzip2-1.0.8/bzip2.c:518
+    #3 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #4 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #5 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #6 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+Address 0x7ffffffde190 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==50279==ABORTING

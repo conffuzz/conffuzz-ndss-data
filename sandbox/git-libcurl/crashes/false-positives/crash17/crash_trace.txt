@@ -1,0 +1,11 @@
+    #0 0xaddr in Curl_loadhostpairs /root/curl-7.82.0/lib/hostip.c:1031
+    #1 0xaddr in Curl_pretransfer /root/curl-7.82.0/lib/transfer.c:1425
+    #2 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:1830
+    #3 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #4 0xaddr in start_active_slot /root/git-2.35.1/http.c:1260
+    #5 0xaddr in locking_available /root/git-2.35.1/http-push.c:1221
+    #6 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1771
+    #7 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #8 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

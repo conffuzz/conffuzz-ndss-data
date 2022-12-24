@@ -1,0 +1,3 @@
+fault_location /usr/local/bin/file
+cap_read
+cap_null_deref

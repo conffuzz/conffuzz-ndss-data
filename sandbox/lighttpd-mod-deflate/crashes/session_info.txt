@@ -1,0 +1,16 @@
+Fuzzing seed: 1668085149
+Starting time: 2022-11-10 12:59:09
+Total instrumented API size: 28
+Statically detected call sites: 0
+Statically detected called API endpoints: 6
+Statically detected caller components: 0
+Max number of call sites reached in a run: 4
+Number of API endpoints reached: 6
+Number of API endpoints that are vulnerability vectors: 5
+List of these endpoints:
+  [api] mod_deflate_cleanup
+  [api] mod_deflate_handle_response_start
+  [api] mod_deflate_init
+  [api] mod_deflate_plugin_init
+  [api] mod_deflate_set_defaults
+Ending time: 2022-11-10 14:12:46

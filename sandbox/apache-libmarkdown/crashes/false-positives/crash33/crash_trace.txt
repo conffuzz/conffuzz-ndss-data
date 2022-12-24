@@ -1,0 +1,17 @@
+    #0 0xaddr in printcode /root/discount-2.2.7/generate.c:1731
+    #1 0xaddr in display /root/discount-2.2.7/generate.c:1893
+    #2 0xaddr in htmlify_paragraphs /root/discount-2.2.7/generate.c:1775
+    #3 0xaddr in htmlify /root/discount-2.2.7/generate.c:1821
+    #4 0xaddr in mkd_document /root/discount-2.2.7/generate.c:1974
+    #5 0xaddr in markdown_output /root/apache-mod-markdown/mod_markdown.c:162
+    #6 0xaddr in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #7 0xaddr in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #8 0xaddr in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #9 0xaddr in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #10 0xaddr in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #11 0xaddr in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #12 0xaddr in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #13 0xaddr in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #14 0xaddr in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #15 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #16 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> change ret from 0x7fffe00e12c0 to 0x555555554190
+avcodec_version() @ 0x0000555555577440
+~> change ret from 0x3b1264 to 0xfffffffffffffffe
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+~> change ret from 0x60e0000233c0 to 0x60e00002354c
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f

@@ -1,0 +1,2 @@
+fault_location /usr/local/squid/sbin/squid
+cap_read

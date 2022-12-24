@@ -1,0 +1,33 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gcry_control(0x1c {gcry_ctl_cmds} [size: 0]) @ 0x00005555555cc0f7
+gcry_check_version(0x5555558200d8 {char*} [size: 0x1]) @ 0x0000555555790ba8
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x50 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x20c8 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x8 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x50 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x20c8 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x9 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x50 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x20c8 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x2000 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x9 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_set_log_handler(0x555555799f46 {gcry_handler_log_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x000055555579a0d7
+~> instrumenting 0x0000555555799f46 (my_gcry_logger, 0x4 arg(s))
+gcry_set_fatalerror_handler(0x55555579a006 {gcry_handler_error_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x000055555579a0e8
+~> instrumenting 0x000055555579a006 (my_gcry_fatalerror_handler, 0x3 arg(s))
+gcry_set_outofcore_handler(0x55555579a044 {gcry_handler_no_mem_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x000055555579a0f9
+~> instrumenting 0x000055555579a044 (my_gcry_outofcore_handler, 0x3 arg(s))
+gcry_control(0x16 {gcry_ctl_cmds} [size: 0]) @ 0x00005555555cc13c
+gcry_calloc(0x1 {size_t} [size: 0], 0x18 {size_t} [size: 0]) @ 0x00005555557a23c3
+gcry_calloc(0x8 {size_t} [size: 0], 0x8 {size_t} [size: 0]) @ 0x00005555557a2403
+~> change arg #0x1 {size_t} from 0x8 to 0x1
+~> change arg #0x2 {size_t} from 0x8 to 0xfffffffffffffff9

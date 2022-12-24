@@ -1,0 +1,13 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #1 0xaddr in strlen (/usr/local/bin/sudo+0xaddr) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0xaddr in sudo_passwd_verify /root/sudo-1.9.12/plugins/sudoers/./auth/passwd.c:81:14
+    #3 0xaddr in verify_user /root/sudo-1.9.12/plugins/sudoers/./auth/sudo_auth.c:336:3
+    #4 0xaddr in check_user_interactive /root/sudo-1.9.12/plugins/sudoers/./check.c:144:8
+    #5 0xaddr in check_user /root/sudo-1.9.12/plugins/sudoers/./check.c:217:11
+    #6 0xaddr in sudoers_policy_main /root/sudo-1.9.12/plugins/sudoers/./sudoers.c:578:13
+    #7 0xaddr in sudoers_policy_check /root/sudo-1.9.12/plugins/sudoers/./policy.c:1180:11
+    #8 0xaddr in policy_check /root/sudo-1.9.12/src/./sudo.c:1227:10
+    #9 0xaddr in main /root/sudo-1.9.12/src/./sudo.c:262:11
+    #10 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #11 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #12 0xaddr in _start (/usr/local/bin/sudo+0xaddr) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)

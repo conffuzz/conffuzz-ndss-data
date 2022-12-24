@@ -1,0 +1,29 @@
+[I] Recursing from nghttp2_nv into structure 
+[E] Not able to find type information for nghttp2_nv in DWARF
+[I] Recursing from nghttp2_data_provider into structure 
+[E] Not able to find type information for nghttp2_data_provider in DWARF
+[I] Recursing from nghttp2_mem into structure 
+[E] Not able to find type information for nghttp2_mem in DWARF
+[I] Recursing from nghttp2_priority_spec into structure 
+[E] Not able to find type information for nghttp2_priority_spec in DWARF
+[I] Recursing from nghttp2_origin_entry into structure 
+[E] Not able to find type information for nghttp2_origin_entry in DWARF
+[I] Recursing from nghttp2_vec into structure 
+[E] Not able to find type information for nghttp2_vec in DWARF
+[I] Recursing from nghttp2_settings_entry into structure 
+[E] Not able to find type information for nghttp2_settings_entry in DWARF
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==145983==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe221053c bp 0x7fffffffe830 sp 0x7fffffffe810 T0)
+==145983==The signal is caused by a READ memory access.
+==145983==Hint: address points to the zero page.
+    #0 0x7fffe221053c in curl_version_info /root/curl-7.82.0/lib/version.c:556
+    #1 0x5555555a8fdb in get_libcurl_info /root/curl-7.82.0/src/tool_libinfo.c:85
+    #2 0x5555555a9b5a in main_init /root/curl-7.82.0/src/tool_main.c:164
+    #3 0x5555555aa0ea in main /root/curl-7.82.0/src/tool_main.c:271
+    #4 0x7fffe1a927fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/version.c:556 in curl_version_info
+==145983==ABORTING

@@ -1,0 +1,42 @@
+poptFreeContext poptFreeContext 1 poptContext poptContext
+poptAddItem poptAddItem 3 int poptContext poptItem int
+poptSaveLong poptSaveLong 3 int longint* unsignedint longint
+poptSaveString poptSaveString 3 int char*** unsignedint char*
+poptResetContext poptResetContext 1 unknown_or_void poptContext
+poptBitsAdd poptBitsAdd 2 int poptBits char*
+poptInit poptInit 4 poptContext int char** poptOption* char*
+poptAddAlias poptAddAlias 3 int poptContext poptAlias int
+poptSaveBits poptSaveBits 3 int poptBits* unsignedint char*
+poptPeekArg poptPeekArg 1 char* poptContext
+poptPrintUsage poptPrintUsage 3 unknown_or_void poptContext FILE* int
+poptGetContext poptGetContext 5 poptContext char* int char** poptOption* unsignedint
+poptGetArg poptGetArg 1 char* poptContext
+poptSaveInt poptSaveInt 3 int int* unsignedint longint
+poptFini poptFini 1 poptContext poptContext
+poptDupArgv poptDupArgv 4 int int char** int* char***
+poptBitsUnion poptBitsUnion 2 int poptBits* poptBits
+poptSaveLongLong poptSaveLongLong 3 int longlongint* unsignedint longlongint
+poptParseArgvString poptParseArgvString 3 int char* int* char***
+poptBadOption poptBadOption 2 char* poptContext unsignedint
+poptReadFile poptReadFile 4 int char* char** size_t* int
+poptBitsClr poptBitsClr 1 int poptBits
+poptSaneFile poptSaneFile 1 int char*
+poptBitsDel poptBitsDel 2 int poptBits char*
+poptPrintHelp poptPrintHelp 3 unknown_or_void poptContext FILE* int
+poptGetInvocationName poptGetInvocationName 1 char* poptContext
+poptConfigFileToString poptConfigFileToString 3 int FILE* char** int
+poptSetExecPath poptSetExecPath 3 unknown_or_void poptContext char* int
+poptBitsArgs poptBitsArgs 2 int poptContext poptBits*
+poptSaveShort poptSaveShort 3 int shortint* unsignedint longint
+poptStrippedArgv poptStrippedArgv 3 int poptContext int char**
+poptStuffArgs poptStuffArgs 2 int poptContext char**
+poptGetOptArg poptGetOptArg 1 char* poptContext
+poptReadConfigFile poptReadConfigFile 2 int poptContext char*
+poptGetArgs poptGetArgs 1 char** poptContext
+poptBitsChk poptBitsChk 2 int poptBits char*
+poptReadConfigFiles poptReadConfigFiles 2 int poptContext char*
+poptReadDefaultConfig poptReadDefaultConfig 2 int poptContext int
+poptStrerror poptStrerror 1 char* int
+poptGetNextOpt poptGetNextOpt 1 int poptContext
+poptSetOtherOptionHelp poptSetOtherOptionHelp 2 unknown_or_void poptContext char*
+poptBitsIntersect poptBitsIntersect 2 int poptBits* poptBits

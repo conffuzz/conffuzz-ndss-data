@@ -1,0 +1,5 @@
+    #3 0xaddr in g_snprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xaddr)
+    #4 0xaddr in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3816
+    #5 0xaddr in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/root/wireshark_build/run/dumpcap+0xaddr)

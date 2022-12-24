@@ -1,0 +1,4 @@
+fault_location /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_poppler.so
+cap_corrupt_allocator
+cap_write_arbitrary
+cap_read_arbitrary

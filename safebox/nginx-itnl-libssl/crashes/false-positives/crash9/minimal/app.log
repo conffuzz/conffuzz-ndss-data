@@ -1,0 +1,76 @@
+=================================================================
+==14139==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x6120000004c0 in thread T0
+    #0 0x7fffe137e517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe0c2fecb in CRYPTO_free crypto/mem.c:312
+    #2 0x7fffe0bfba03 in EVP_CIPHER_CTX_reset crypto/evp/evp_enc.c:32
+    #3 0x7fffe0bfba94 in EVP_CIPHER_CTX_free crypto/evp/evp_enc.c:47
+    #4 0x7fffe0c8cf4b in drbg_ctr_uninstantiate crypto/rand/drbg_ctr.c:354
+    #5 0x7fffe0c8f0ee in RAND_DRBG_uninstantiate crypto/rand/drbg_lib.c:396
+    #6 0x7fffe0c8fee5 in rand_drbg_restart crypto/rand/drbg_lib.c:531
+    #7 0x7fffe0c9025f in RAND_DRBG_generate crypto/rand/drbg_lib.c:586
+    #8 0x7fffe0c90d38 in RAND_DRBG_bytes crypto/rand/drbg_lib.c:682
+    #9 0x7fffe0c9464f in RAND_priv_bytes crypto/rand/rand_lib.c:929
+    #10 0x7fffe104adb6 in SSL_CTX_new ssl/ssl_lib.c:3066
+    #11 0x55555568177a in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #12 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #13 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #14 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #15 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #16 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #17 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #18 0x5555555c76b0 in main src/core/nginx.c:292
+    #19 0x7fffe062ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #20 0x7fffe062ae3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #21 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+0x6120000004c0 is located 120 bytes to the right of 264-byte region [0x612000000340,0x612000000448)
+freed by thread T0 here:
+    #0 0x7fffe137e517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe0c2fecb in CRYPTO_free crypto/mem.c:312
+    #2 0x7fffe0bfba03 in EVP_CIPHER_CTX_reset crypto/evp/evp_enc.c:32
+    #3 0x7fffe0bfba94 in EVP_CIPHER_CTX_free crypto/evp/evp_enc.c:47
+    #4 0x7fffe0c8cf4b in drbg_ctr_uninstantiate crypto/rand/drbg_ctr.c:354
+    #5 0x7fffe0c8e177 in RAND_DRBG_free crypto/rand/drbg_lib.c:269
+    #6 0x7fffe0c8e089 in rand_drbg_new crypto/rand/drbg_lib.c:245
+    #7 0x7fffe0c8e0ea in RAND_DRBG_secure_new crypto/rand/drbg_lib.c:257
+    #8 0x7fffe0c91481 in drbg_setup crypto/rand/drbg_lib.c:878
+    #9 0x7fffe0c91bf3 in RAND_DRBG_get0_public crypto/rand/drbg_lib.c:1123
+    #10 0x7fffe0c91791 in drbg_bytes crypto/rand/drbg_lib.c:966
+    #11 0x7fffe0c946c3 in RAND_bytes crypto/rand/rand_lib.c:939
+    #12 0x7fffe104aca7 in SSL_CTX_new ssl/ssl_lib.c:3058
+    #13 0x55555568177a in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #14 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #15 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #16 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #17 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #18 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #19 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #20 0x5555555c76b0 in main src/core/nginx.c:292
+    #21 0x7fffe062ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe137e867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe0c2fc6a in CRYPTO_malloc crypto/mem.c:222
+    #2 0x7fffe0c2fca1 in CRYPTO_zalloc crypto/mem.c:230
+    #3 0x7fffe0bfbfd0 in EVP_CipherInit_ex crypto/evp/evp_enc.c:128
+    #4 0x7fffe0c8d38d in drbg_ctr_init crypto/rand/drbg_ctr.c:413
+    #5 0x7fffe0c8dab2 in RAND_DRBG_set crypto/rand/drbg_lib.c:137
+    #6 0x7fffe0c8dfa0 in rand_drbg_new crypto/rand/drbg_lib.c:225
+    #7 0x7fffe0c8e0ea in RAND_DRBG_secure_new crypto/rand/drbg_lib.c:257
+    #8 0x7fffe0c91481 in drbg_setup crypto/rand/drbg_lib.c:878
+    #9 0x7fffe0c91bf3 in RAND_DRBG_get0_public crypto/rand/drbg_lib.c:1123
+    #10 0x7fffe0c91791 in drbg_bytes crypto/rand/drbg_lib.c:966
+    #11 0x7fffe0c946c3 in RAND_bytes crypto/rand/rand_lib.c:939
+    #12 0x7fffe104aca7 in SSL_CTX_new ssl/ssl_lib.c:3058
+    #13 0x55555568177a in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #14 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #15 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #16 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #17 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #18 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #19 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #20 0x5555555c76b0 in main src/core/nginx.c:292
+    #21 0x7fffe062ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==14139==ABORTING

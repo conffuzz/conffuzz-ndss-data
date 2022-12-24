@@ -1,0 +1,3 @@
+fault_location /usr/local/apache2/modules/mod_markdown.so
+cap_corrupt_allocator
+cap_read_arbitrary

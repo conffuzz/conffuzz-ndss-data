@@ -1,0 +1,84 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  WARNING: library configuration mismatch
+  avcodec     configuration: 
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+[mpeg4 @ 0x619000000080] [IMGUTILS @ 0x7fffffffde00] Picture size 0x0 is invalid
+[mpeg4 @ 0x619000000080] Ignoring invalid width/height values
+[mpeg4 @ 0x619000000080] [IMGUTILS @ 0x7fffffffddd0] Picture size 0x0 is invalid
+[avi @ 0x617000000080] Failed to open codec in avformat_find_stream_info
+=================================================================
+==130853==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e0000236f0 at pc 0x7fffe25f428e bp 0x7fffffffe0a0 sp 0x7fffffffd850
+WRITE of size 144 at 0x60e0000236f0 thread T0
+    #0 0x7fffe25f428d in __interceptor_memset ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799
+    #1 0x7fffde78144e in codec_parameters_reset libavcodec/codec_par.c:35
+    #2 0x7fffde781858 in avcodec_parameters_copy libavcodec/codec_par.c:74
+    #3 0x7fffe0eb8ecd in extract_extradata_init libavformat/demux.c:2306
+    #4 0x7fffe0eb908e in extract_extradata libavformat/demux.c:2333
+    #5 0x7fffe0ebd35f in avformat_find_stream_info libavformat/demux.c:2705
+    #6 0x55555559be78 in open_input_file fftools/ffprobe.c:3162
+    #7 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #8 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #9 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+0x60e0000236f0 is located 0 bytes to the right of 144-byte region [0x60e000023660,0x60e0000236f0)
+allocated by thread T0 here:
+    #0 0x7fffe266a3ac in __interceptor_posix_memalign ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:226
+    #1 0x7fffdda3b40d in av_malloc libavutil/mem.c:104
+    #2 0x7fffdda3c21f in av_mallocz libavutil/mem.c:265
+    #3 0x7fffde7817bc in avcodec_parameters_alloc libavcodec/codec_par.c:53
+    #4 0x7fffde5a6477 in av_bsf_alloc libavcodec/bsf.c:115
+    #5 0x7fffde5a9148 in av_bsf_get_null_filter libavcodec/bsf.c:553
+    #6 0x7fffde5a8f4c in av_bsf_list_parse_str libavcodec/bsf.c:528
+    #7 0x7fffde8083e0 in decode_bsfs_init libavcodec/decode.c:198
+    #8 0x7fffde816bc4 in ff_decode_preinit libavcodec/decode.c:1847
+    #9 0x7fffde56892e in avcodec_open2 libavcodec/avcodec.c:295
+    #10 0x7fffe0eba814 in avformat_find_stream_info libavformat/demux.c:2483
+    #11 0x55555559be78 in open_input_file fftools/ffprobe.c:3162
+    #12 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #13 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #14 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799 in __interceptor_memset
+Shadow bytes around the buggy address:
+  0x0c1c7fffc680: 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa fa
+  0x0c1c7fffc690: fa fa fa fa fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fffc6a0: fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa
+  0x0c1c7fffc6b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fffc6c0: 00 00 fa fa fa fa fa fa fa fa fa fa 00 00 00 00
+=>0x0c1c7fffc6d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00[fa]fa
+  0x0c1c7fffc6e0: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fffc6f0: 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa fa
+  0x0c1c7fffc700: fa fa fa fa 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fffc710: 00 00 00 00 00 00 fa fa fa fa fa fa fa fa fa fa
+  0x0c1c7fffc720: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==130853==ABORTING

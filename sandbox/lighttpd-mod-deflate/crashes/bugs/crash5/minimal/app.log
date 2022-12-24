@@ -1,0 +1,36 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3007==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000af0 (pc 0x7fffe22bfca3 bp 0x000000000080 sp 0x7fffffff98f0 T0)
+==3007==The signal is caused by a READ memory access.
+==3007==Hint: address points to the zero page.
+    #0 0x7fffe22bfca3 in __sanitizer::atomic_uint8_t::Type __sanitizer::atomic_load<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t const volatile*, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang_x86.h:46
+    #1 0x7fffe22bfca3 in __sanitizer::atomic_uint8_t::Type __sanitizer::atomic_load<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t const volatile*, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang_x86.h:27
+    #2 0x7fffe22bfca3 in __asan::Allocator::Reallocate(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:729
+    #3 0x7fffe22bfca3 in __asan::asan_realloc(void*, unsigned long, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:1009
+    #4 0x7fffe234bbf4 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:165
+    #5 0x555555626361 in array_extend /root/lighttpd-1.4.67/src/array.c:119
+    #6 0x55555562792b in array_insert_data_at_pos /root/lighttpd-1.4.67/src/array.c:363
+    #7 0x555555627af7 in array_insert_string_at_pos /root/lighttpd-1.4.67/src/array.c:392
+    #8 0x555555627bad in array_get_buf_ptr_ext /root/lighttpd-1.4.67/src/array.c:400
+    #9 0x5555555f3858 in http_header_request_set_ptr /root/lighttpd-1.4.67/src/http_header.c:300
+    #10 0x555555647058 in http_request_header_set_Host /root/lighttpd-1.4.67/src/request.c:340
+    #11 0x555555647431 in http_request_parse_single_header /root/lighttpd-1.4.67/src/request.c:429
+    #12 0x55555564b17e in http_request_parse_headers /root/lighttpd-1.4.67/src/request.c:1204
+    #13 0x55555564b6e6 in http_request_parse_hoff /root/lighttpd-1.4.67/src/request.c:1300
+    #14 0x55555564b84d in http_request_headers_process /root/lighttpd-1.4.67/src/request.c:1336
+    #15 0x5555555952a3 in connection_handle_read_state /root/lighttpd-1.4.67/src/connections.c:774
+    #16 0x55555559682d in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:989
+    #17 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #18 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #19 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #20 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #21 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #22 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #23 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #24 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #25 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #26 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang_x86.h:46 in __sanitizer::atomic_uint8_t::Type __sanitizer::atomic_load<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t const volatile*, __sanitizer::memory_order)
+==3007==ABORTING

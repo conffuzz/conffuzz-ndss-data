@@ -1,0 +1,11 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 10:58:36.296968 2022] [core:warn] [pid 21415:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Nov 05 10:58:37.877185 2022] [core:error] [pid 21415:tid 140736780646144] [client 172.17.0.2:34832] AH00524: Handler for markdown returned invalid result code -100
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==21415==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xe8a78b4940678949 bp 0x7fffd5d12bb0 sp 0x7fffd5d12a98 T2)
+==21415==The signal is caused by a READ memory access.
+==21415==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

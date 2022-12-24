@@ -1,0 +1,81 @@
+nginx: [alert] SSL_get_ex_new_index() failed (SSL: error:0F071007:lib(15):func(113):reason(7))
+=================================================================
+==75372==ERROR: AddressSanitizer: heap-use-after-free on address 0x619000000d1a at pc 0x7fffe0ae58ad bp 0x7fffffffdca0 sp 0x7fffffffdc90
+READ of size 8 at 0x619000000d1a thread T0
+    #0 0x7fffe0ae58ac in CRYPTO_set_ex_data crypto/ex_data.c:373
+    #1 0x7fffe0f0d569 in SSL_CTX_set_ex_data ssl/ssl_lib.c:4223
+    #2 0x555555681844 in ngx_ssl_create src/event/ngx_event_openssl.c:270
+    #3 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #4 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #5 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #6 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #7 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #8 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #9 0x5555555c76b0 in main src/core/nginx.c:292
+    #10 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #11 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #12 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+0x619000000d1a is located 666 bytes inside of 1024-byte region [0x619000000a80,0x619000000e80)
+freed by thread T0 here:
+    #0 0x7fffe122ac18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe0afdd75 in CRYPTO_realloc crypto/mem.c:264
+    #2 0x7fffe0af6bfe in expand crypto/lhash/lhash.c:225
+    #3 0x7fffe0af5e2e in OPENSSL_LH_insert crypto/lhash/lhash.c:103
+    #4 0x7fffe0a898a5 in lh_ERR_STRING_DATA_insert include/openssl/err.h:218
+    #5 0x7fffe0a8a246 in err_load_strings crypto/err/err.c:339
+    #6 0x7fffe0a8a384 in ERR_load_strings_const crypto/err/err.c:374
+    #7 0x7fffe0ef5626 in ERR_load_SSL_strings ssl/ssl_err.c:1272
+    #8 0x7fffe0ef58e3 in ossl_init_load_ssl_strings ssl/ssl_init.c:131
+    #9 0x7fffe0ef58ce in ossl_init_load_ssl_strings_ossl_ ssl/ssl_init.c:120
+    #10 0x7fffe0573f67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe122ac18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe0afdd75 in CRYPTO_realloc crypto/mem.c:264
+    #2 0x7fffe0af6bfe in expand crypto/lhash/lhash.c:225
+    #3 0x7fffe0af5e2e in OPENSSL_LH_insert crypto/lhash/lhash.c:103
+    #4 0x7fffe0a898a5 in lh_ERR_STRING_DATA_insert include/openssl/err.h:218
+    #5 0x7fffe0a8a246 in err_load_strings crypto/err/err.c:339
+    #6 0x7fffe0a89eb9 in build_SYS_str_reasons crypto/err/err.c:260
+    #7 0x7fffe0a8a30a in ERR_load_ERR_strings crypto/err/err.c:355
+    #8 0x7fffe0a8a36d in ERR_load_strings_const crypto/err/err.c:372
+    #9 0x7fffe0ef5626 in ERR_load_SSL_strings ssl/ssl_err.c:1272
+    #10 0x7fffe0ef58e3 in ossl_init_load_ssl_strings ssl/ssl_init.c:131
+    #11 0x7fffe0ef58ce in ossl_init_load_ssl_strings_ossl_ ssl/ssl_init.c:120
+    #12 0x7fffe0573f67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67)
+
+SUMMARY: AddressSanitizer: heap-use-after-free crypto/ex_data.c:373 in CRYPTO_set_ex_data
+Shadow bytes around the buggy address:
+  0x0c327fff8150: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff8160: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff8170: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff8180: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff8190: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+=>0x0c327fff81a0: fd fd fd[fd]fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff81b0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff81c0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c327fff81d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff81e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff81f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==75372==ABORTING

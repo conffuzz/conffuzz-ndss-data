@@ -1,0 +1,20 @@
+Fuzzing seed: 1667948982
+Starting time: 2022-11-08 23:09:42
+Total instrumented API size: 207
+Statically detected call sites: 2526
+Statically detected called API endpoints: 95
+Statically detected caller components: 1
+Max number of call sites reached in a run: 0
+Number of API endpoints reached: 15
+Number of API endpoints that are vulnerability vectors: 9
+List of these endpoints:
+  [api] gcry_calloc
+  [api] gcry_check_version
+  [api] gcry_control
+  [api] gcry_free
+  [api] gcry_md_map_name
+  [api] gcry_realloc
+  [api] gcry_xcalloc
+  [api] gcry_xmalloc
+  [api] gcry_xstrdup
+Ending time: 2022-11-09 02:45:38

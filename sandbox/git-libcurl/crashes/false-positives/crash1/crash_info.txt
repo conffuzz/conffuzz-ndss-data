@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libcurl.so.4.7.0
+cap_read_arbitrary
+cap_read
+cap_null_deref

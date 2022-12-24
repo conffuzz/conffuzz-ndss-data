@@ -1,0 +1,16 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_compile() failed: pattern string is longer than the limit set by the application in "^(www\.)?(?<domain>.+)$" at "^(www\.)?(?<domain>.+)$" in /root/nginx-1.21.6/conf/nginx.conf:44
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==26936==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7fffffffe1d0 sp 0x7fffffffe1b8 T0)
+==26936==Hint: pc points to the zero page.
+==26936==The signal is caused by a READ memory access.
+==26936==Hint: address points to the zero page.
+    #0 0x0  (<unknown module>)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (<unknown module>) 
+==26936==ABORTING

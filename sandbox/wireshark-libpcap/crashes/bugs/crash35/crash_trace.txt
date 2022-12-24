@@ -1,0 +1,9 @@
+    #0 0xaddr in capture_loop_write_packet_cb /root/wireshark-3.4.12/dumpcap.c:4435
+    #1 0xaddr in pcap_handle_packet_mmap pcap-linux.c:3978
+    #2 0xaddr in pcap_read_linux_mmap_v3 pcap-linux.c:4128
+    #3 0xaddr in pcap_dispatch pcap.c:2884
+    #4 0xaddr in capture_loop_dispatch /root/wireshark-3.4.12/dumpcap.c:3264
+    #5 0xaddr in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3912
+    #6 0xaddr in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/root/wireshark_build/run/dumpcap+0xaddr)

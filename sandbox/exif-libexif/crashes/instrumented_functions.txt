@@ -1,0 +1,129 @@
+exif_tag_get_name exif_tag_get_name 1 char* ExifTag
+exif_format_get_size exif_format_get_size 1 unsignedchar ExifFormat
+mnote_olympus_tag_get_description mnote_olympus_tag_get_description 1 char* MnoteOlympusTag
+exif_ifd_get_name exif_ifd_get_name 1 char* ExifIfd
+exif_log_code_get_message exif_log_code_get_message 1 char* ExifLogCode
+exif_content_unref exif_content_unref 1 unknown_or_void ExifContent*
+exif_mnote_data_get_description exif_mnote_data_get_description 2 char* ExifMnoteData* unsignedint
+exif_mnote_data_ref exif_mnote_data_ref 1 unknown_or_void ExifMnoteData*
+exif_loader_write_file exif_loader_write_file 2 unknown_or_void ExifLoader* char*
+exif_mnote_data_olympus_new exif_mnote_data_olympus_new 1 ExifMnoteData* ExifMem*
+exif_mnote_data_pentax_new exif_mnote_data_pentax_new 1 ExifMnoteData* ExifMem*
+exif_mnote_data_canon_new exif_mnote_data_canon_new 2 ExifMnoteData* ExifMem* ExifDataOption
+exif_mnote_data_log exif_mnote_data_log 2 unknown_or_void ExifMnoteData* ExifLog*
+exif_data_dump exif_data_dump 1 unknown_or_void ExifData*
+exif_set_slong exif_set_slong 3 unknown_or_void unsignedchar* ExifByteOrder ExifSLong
+exif_data_ref exif_data_ref 1 unknown_or_void ExifData*
+exif_loader_ref exif_loader_ref 1 unknown_or_void ExifLoader*
+exif_loader_new_mem exif_loader_new_mem 1 ExifLoader* ExifMem*
+exif_entry_fix exif_entry_fix 1 unknown_or_void ExifEntry*
+exif_data_unref exif_data_unref 1 unknown_or_void ExifData*
+exif_data_save_data exif_data_save_data 3 unknown_or_void ExifData* unsignedchar** unsignedint*
+exif_mem_realloc exif_mem_realloc 3 * ExifMem* * ExifLong
+exif_loader_write exif_loader_write 3 unsignedchar ExifLoader* unsignedchar* unsignedint
+exif_mnote_data_get_title exif_mnote_data_get_title 2 char* ExifMnoteData* unsignedint
+exif_log exif_log 4 unknown_or_void ExifLog* ExifLogCode char* char*
+exif_log_code_get_title exif_log_code_get_title 1 char* ExifLogCode
+mnote_olympus_tag_get_name mnote_olympus_tag_get_name 1 char* MnoteOlympusTag
+exif_tag_from_name exif_tag_from_name 1 ExifTag char*
+exif_loader_unref exif_loader_unref 1 unknown_or_void ExifLoader*
+exif_loader_log exif_loader_log 2 unknown_or_void ExifLoader* ExifLog*
+exif_data_log exif_data_log 2 unknown_or_void ExifData* ExifLog*
+exif_mem_alloc exif_mem_alloc 2 * ExifMem* ExifLong
+exif_mnote_data_count exif_mnote_data_count 1 unsignedint ExifMnoteData*
+exif_mnote_data_save exif_mnote_data_save 3 unknown_or_void ExifMnoteData* unsignedchar** unsignedint*
+exif_get_rational exif_get_rational 2 ExifRational unsignedchar* ExifByteOrder
+exif_loader_reset exif_loader_reset 1 unknown_or_void ExifLoader*
+exif_log_ref exif_log_ref 1 unknown_or_void ExifLog*
+mnote_canon_tag_get_description mnote_canon_tag_get_description 1 char* MnoteCanonTag
+exif_get_short exif_get_short 2 ExifShort unsignedchar* ExifByteOrder
+exif_data_foreach_content exif_data_foreach_content 3 unknown_or_void ExifData* ExifDataForeachContentFunc *
+exif_tag_get_support_level_in_ifd exif_tag_get_support_level_in_ifd 3 ExifSupportLevel ExifTag ExifIfd ExifDataType
+exif_array_set_byte_order exif_array_set_byte_order 5 unknown_or_void ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+exif_entry_initialize exif_entry_initialize 2 unknown_or_void ExifEntry* ExifTag
+exif_content_fix exif_content_fix 1 unknown_or_void ExifContent*
+exif_entry_new_mem exif_entry_new_mem 1 ExifEntry* ExifMem*
+exif_tag_get_title exif_tag_get_title 1 char* ExifTag
+exif_data_option_get_name exif_data_option_get_name 1 char* ExifDataOption
+exif_set_rational exif_set_rational 3 unknown_or_void unsignedchar* ExifByteOrder ExifRational
+exif_get_long exif_get_long 2 ExifLong unsignedchar* ExifByteOrder
+exif_tag_get_title_in_ifd exif_tag_get_title_in_ifd 2 char* ExifTag ExifIfd
+exif_entry_ref exif_entry_ref 1 unknown_or_void ExifEntry*
+exif_content_add_entry exif_content_add_entry 2 unknown_or_void ExifContent* ExifEntry*
+exif_content_get_ifd exif_content_get_ifd 1 ExifIfd ExifContent*
+exif_data_get_mnote_data exif_data_get_mnote_data 1 ExifMnoteData* ExifData*
+exif_get_srational exif_get_srational 2 ExifSRational unsignedchar* ExifByteOrder
+exif_get_sshort exif_get_sshort 2 ExifSShort unsignedchar* ExifByteOrder
+exif_data_new_mem exif_data_new_mem 1 ExifData* ExifMem*
+exif_format_get_name exif_format_get_name 1 char* ExifFormat
+exif_mem_ref exif_mem_ref 1 unknown_or_void ExifMem*
+exif_content_dump exif_content_dump 2 unknown_or_void ExifContent* unsignedint
+exif_content_remove_entry exif_content_remove_entry 2 unknown_or_void ExifContent* ExifEntry*
+exif_loader_get_buf exif_loader_get_buf 3 unknown_or_void ExifLoader* unsignedchar** unsignedint*
+exif_set_srational exif_set_srational 3 unknown_or_void unsignedchar* ExifByteOrder ExifSRational
+exif_entry_free exif_entry_free 1 unknown_or_void ExifEntry*
+exif_data_new_from_data exif_data_new_from_data 2 ExifData* unsignedchar* unsignedint
+exif_data_new exif_data_new 0 ExifData*
+exif_loader_new exif_loader_new 0 ExifLoader*
+mnote_canon_tag_get_title mnote_canon_tag_get_title 1 char* MnoteCanonTag
+exif_data_load_data exif_data_load_data 3 unknown_or_void ExifData* unsignedchar* unsignedint
+exif_mnote_data_get_id exif_mnote_data_get_id 2 unsignedint ExifMnoteData* unsignedint
+exif_data_option_get_description exif_data_option_get_description 1 char* ExifDataOption
+exif_mem_new_default exif_mem_new_default 0 ExifMem*
+exif_log_unref exif_log_unref 1 unknown_or_void ExifLog*
+exif_content_ref exif_content_ref 1 unknown_or_void ExifContent*
+mnote_pentax_tag_get_description mnote_pentax_tag_get_description 1 char* MnotePentaxTag
+mnote_olympus_entry_get_value mnote_olympus_entry_get_value 3 char* MnoteOlympusEntry* char* unsignedint
+exif_tag_get_description_in_ifd exif_tag_get_description_in_ifd 2 char* ExifTag ExifIfd
+mnote_pentax_tag_get_name mnote_pentax_tag_get_name 1 char* MnotePentaxTag
+exif_content_log exif_content_log 2 unknown_or_void ExifContent* ExifLog*
+exif_mnote_data_get_name exif_mnote_data_get_name 2 char* ExifMnoteData* unsignedint
+exif_log_new exif_log_new 0 ExifLog*
+exif_data_new_from_file exif_data_new_from_file 1 ExifData* char*
+exif_mnote_data_get_value exif_mnote_data_get_value 4 char* ExifMnoteData* unsignedint char* unsignedint
+mnote_canon_entry_get_value mnote_canon_entry_get_value 4 char* MnoteCanonEntry* unsignedint char* unsignedint
+exif_set_sshort exif_set_sshort 3 unknown_or_void unsignedchar* ExifByteOrder ExifSShort
+exif_set_long exif_set_long 3 unknown_or_void unsignedchar* ExifByteOrder ExifLong
+mnote_canon_tag_get_name mnote_canon_tag_get_name 1 char* MnoteCanonTag
+exif_data_set_option exif_data_set_option 2 unknown_or_void ExifData* ExifDataOption
+exif_mnote_data_set_offset exif_mnote_data_set_offset 2 unknown_or_void ExifMnoteData* unsignedint
+exif_data_free exif_data_free 1 unknown_or_void ExifData*
+exif_entry_new exif_entry_new 0 ExifEntry*
+exif_mnote_data_set_byte_order exif_mnote_data_set_byte_order 2 unknown_or_void ExifMnoteData* ExifByteOrder
+exif_log_free exif_log_free 1 unknown_or_void ExifLog*
+exif_data_unset_option exif_data_unset_option 2 unknown_or_void ExifData* ExifDataOption
+exif_mem_new exif_mem_new 3 ExifMem* ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+mnote_olympus_tag_get_title mnote_olympus_tag_get_title 1 char* MnoteOlympusTag
+exif_content_new_mem exif_content_new_mem 1 ExifContent* ExifMem*
+exif_data_set_byte_order exif_data_set_byte_order 2 unknown_or_void ExifData* ExifByteOrder
+exif_tag_get_description exif_tag_get_description 1 char* ExifTag
+mnote_pentax_tag_get_title mnote_pentax_tag_get_title 1 char* MnotePentaxTag
+exif_mnote_data_unref exif_mnote_data_unref 1 unknown_or_void ExifMnoteData*
+exif_tag_table_get_tag exif_tag_table_get_tag 1 ExifTag unsignedint
+exif_entry_get_value exif_entry_get_value 3 char* ExifEntry* char* unsignedint
+exif_tag_table_count exif_tag_table_count 0 unsignedint
+exif_set_short exif_set_short 3 unknown_or_void unsignedchar* ExifByteOrder ExifShort
+exif_get_slong exif_get_slong 2 ExifSLong unsignedchar* ExifByteOrder
+exif_content_new exif_content_new 0 ExifContent*
+exif_entry_unref exif_entry_unref 1 unknown_or_void ExifEntry*
+exif_loader_get_data exif_loader_get_data 1 ExifData* ExifLoader*
+exif_data_get_log exif_data_get_log 1 ExifLog* ExifData*
+exif_log_set_func exif_log_set_func 3 unknown_or_void ExifLog* ExifLogFunc *
+exif_tag_get_name_in_ifd exif_tag_get_name_in_ifd 2 char* ExifTag ExifIfd
+exif_content_free exif_content_free 1 unknown_or_void ExifContent*
+exif_mem_free exif_mem_free 2 unknown_or_void ExifMem* *
+mnote_pentax_entry_get_value mnote_pentax_entry_get_value 3 char* MnotePentaxEntry* char* unsignedint
+exif_content_get_entry exif_content_get_entry 2 ExifEntry* ExifContent* ExifTag
+exif_mnote_data_construct exif_mnote_data_construct 2 unknown_or_void ExifMnoteData* ExifMem*
+exif_mnote_data_load exif_mnote_data_load 3 unknown_or_void ExifMnoteData* unsignedchar* unsignedint
+exif_data_get_data_type exif_data_get_data_type 1 ExifDataType ExifData*
+exif_entry_dump exif_entry_dump 2 unknown_or_void ExifEntry* unsignedint
+exif_byte_order_get_name exif_byte_order_get_name 1 char* ExifByteOrder
+exif_data_set_data_type exif_data_set_data_type 2 unknown_or_void ExifData* ExifDataType
+exif_tag_table_get_name exif_tag_table_get_name 1 char* unsignedint
+exif_data_get_byte_order exif_data_get_byte_order 1 ExifByteOrder ExifData*
+exif_mem_unref exif_mem_unref 1 unknown_or_void ExifMem*
+exif_content_foreach_entry exif_content_foreach_entry 3 unknown_or_void ExifContent* ExifContentForeachEntryFunc *
+exif_data_fix exif_data_fix 1 unknown_or_void ExifData*
+exif_logv exif_logv 5 unknown_or_void ExifLog* ExifLogCode char* char* __va_list_tag*
+exif_log_new_mem exif_log_new_mem 1 ExifLog* ExifMem*

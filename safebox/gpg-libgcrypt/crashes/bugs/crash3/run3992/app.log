@@ -1,0 +1,15 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==352816==ERROR: AddressSanitizer: SEGV on unknown address 0x00000000007f (pc 0x7fffe15a4256 bp 0x7fffffffe210 sp 0x7fffffffe1d0 T0)
+==352816==The signal is caused by a READ memory access.
+==352816==Hint: address points to the zero page.
+    #0 0x7fffe15a4256 in _gcry_check_version /root/libgcrypt-1.9.2/src/global.c:240
+    #1 0x7fffe159f864 in gcry_check_version /root/libgcrypt-1.9.2/src/visibility.c:69
+    #2 0x555555790bb6 in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:185
+    #3 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #4 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #5 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/libgcrypt-1.9.2/src/global.c:240 in _gcry_check_version
+==352816==ABORTING

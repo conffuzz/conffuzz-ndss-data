@@ -1,0 +1,14 @@
+    #1 0xaddr in TIFFErrors coders/tiff.c:588
+    #2 0xaddr in TIFFErrorExt /root/tiff-4.3.0/libtiff/tif_error.c:70
+    #3 0xaddr in OkToChangeTag /root/tiff-4.3.0/libtiff/tif_dir.c:800
+    #4 0xaddr in TIFFVSetField /root/tiff-4.3.0/libtiff/tif_dir.c:889
+    #5 0xaddr in TIFFSetField /root/tiff-4.3.0/libtiff/tif_dir.c:834
+    #6 0xaddr in WriteTIFFImage coders/tiff.c:3449
+    #7 0xaddr in WriteImage MagickCore/constitute.c:1337
+    #8 0xaddr in WriteImages MagickCore/constitute.c:1558
+    #9 0xaddr in ConvertImageCommand MagickWand/convert.c:3330
+    #10 0xaddr in MagickCommandGenesis MagickWand/mogrify.c:188
+    #11 0xaddr in MagickMain utilities/magick.c:150
+    #12 0xaddr in main utilities/magick.c:182
+    #13 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #14 0xaddr in _start (/usr/local/bin/magick+0xaddr)

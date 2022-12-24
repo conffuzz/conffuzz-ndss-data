@@ -1,0 +1,3 @@
+fault_location /usr/local/lib/libssl.so.1.1
+cap_write_arbitrary
+cap_read_arbitrary

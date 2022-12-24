@@ -1,0 +1,19 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==6047==ERROR: AddressSanitizer: SEGV on unknown address 0x002dffff8008 (pc 0x7fffe277f3b8 bp 0x7fffffffe060 sp 0x7fffffffe040 T0)
+==6047==The signal is caused by a READ memory access.
+    #0 0x7fffe277f3b8 in file_check_mem /root/file-5.41/src/funcs.c:617
+    #1 0x7fffe27502fd in match /root/file-5.41/src/softmagic.c:217
+    #2 0x7fffe274ff15 in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #3 0x7fffe277df67 in file_buffer /root/file-5.41/src/funcs.c:445
+    #4 0x7fffe273ba94 in file_or_fd /root/file-5.41/src/magic.c:518
+    #5 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #6 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #7 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #8 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #9 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #10 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/file-5.41/src/funcs.c:617 in file_check_mem
+==6047==ABORTING

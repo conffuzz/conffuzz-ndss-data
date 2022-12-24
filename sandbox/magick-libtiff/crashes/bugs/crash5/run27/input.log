@@ -1,0 +1,31 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b8ba6a [size: 0]) @ 0x00007fffb9b980dc
+~> instrumenting 0x00007fffb9b8ba6a (TIFFErrors, 0x3 arg(s))
+~> change ret from 0x7fffb9b46010 to 0x7fffb9b45e9d
+TIFFSetWarningHandler(0x7fffb9b8db44 [size: 0]) @ 0x00007fffb9b980f2
+~> instrumenting 0x00007fffb9b8db44 (TIFFWarnings, 0x3 arg(s))
+TIFFSetTagExtender(0x7fffb9b97e99 [size: 0]) @ 0x00007fffb9b98114
+~> instrumenting 0x00007fffb9b97e99 (TIFFTagExtender, 0x1 arg(s))
+~> change ret from 0 to 0xbb8
+TIFFGetVersion() @ 0x00007fffb9b98172
+TIFFClientOpen(0x627000106cf8 [size: 0x1], 0x7fffb9bbdd80 [size: 0x1], 0x627000106900 [size: 0], 0x7fffb9b8da98 [size: 0], 0x7fffb9b8dd62 [size: 0], 0x7fffb9b8db06 [size: 0], 0x7fffb9b8ba4b [size: 0], 0x7fffb9b8bc88 [size: 0], 0x7fffb9b8d9cf [size: 0], 0x7fffb9b8db31 [size: 0]) @ 0x00007fffb9b9cfca
+~> instrumenting 0x00007fffb9b8da98 (TIFFReadBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8dd62 (TIFFWriteBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8db06 (TIFFSeekBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8ba4b (TIFFCloseBlob, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b8bc88 (TIFFGetBlobSize, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b8d9cf (TIFFMapBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b8db31 (TIFFUnmapBlob, 0x3 arg(s))
+~> detected cb call TIFFSeekBlob(0x627000106900 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffb9b2ec5b
+~> change arg #0x2 from 0 to 0x1cc
+~> change arg #0x3 from 0 to 0x10
+~> detected cb call TIFFWriteBlob(0x627000106900 [size: 0], 0x61a000004588 [size: 0], 0x8 [size: 0]) @ 0x00007fffb9b2ec8f
+~> change arg #0x2 from 0x61a000004588 to 0x61a0000042fb
+~> change arg #0x3 from 0x8 to 0xfffffffffffffea3
+~> detected cb call TIFFErrors(0x627000106cf8 [size: 0x1], 0x7fffb9b699d6 [size: 0x1], 0x7fffffff7068 [size: 0x18]) @ 0x00007fffb9b015e8
+~> change arg #0x1 from 0x627000106cf8 to 0x62700010698e
+~> change arg #0x2 from 0x7fffb9b699d6 to 0x7fffb9b69a53
+~> change arg #0x3 from 0x7fffffff7068 to 0xd

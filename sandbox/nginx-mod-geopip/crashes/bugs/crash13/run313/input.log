@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+ngx_http_geoip2_create_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a7c26
+~> change ret {void*} from 0x62900000f9e0 to 0x55555593a00a
+ngx_http_geoip2_init_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60], 0x55555593a00a {void*} [size: 0x1]) @ 0x00005555556a8769
+~> write {void*} 0 -> 0xf800000000000000 at shared buffer 0x000055555593a00a
+~> write {ngx_conf_t*} 0 -> 0x266000000000000 at shared buffer 0x00007fffffffe364
+~> write {ngx_conf_t*} 0 -> 0 at shared buffer 0x00007fffffffe36e
+~> write {ngx_conf_t*} 0x5250 -> 0xffffff2400000000 at shared buffer 0x00007fffffffe330

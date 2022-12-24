@@ -1,0 +1,9 @@
+    #0 0xaddr in Curl_slist_duplicate /root/curl-7.82.0/lib/slist.c:115
+    #1 0xaddr in curl_easy_duphandle /root/curl-7.82.0/lib/easy.c:855
+    #2 0xaddr in get_active_slot /root/git-2.35.1/http.c:1200
+    #3 0xaddr in locking_available /root/git-2.35.1/http-push.c:1214
+    #4 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #6 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

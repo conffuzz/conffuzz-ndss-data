@@ -1,0 +1,17 @@
+    #0 0xaddr in nghttp2_session_callbacks_set_send_callback /root/nghttp2-1.47.0/lib/nghttp2_callbacks.c:45
+    #1 0xaddr in http2_init /root/curl-7.82.0/lib/http2.c:1282
+    #2 0xaddr in Curl_http2_setup /root/curl-7.82.0/lib/http2.c:2031
+    #3 0xaddr in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2061
+    #4 0xaddr in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #5 0xaddr in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #6 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #7 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #8 0xaddr in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #9 0xaddr in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #10 0xaddr in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #11 0xaddr in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #12 0xaddr in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #13 0xaddr in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #14 0xaddr in main /root/curl-7.82.0/src/tool_main.c:274
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/usr/local/bin/curl+0xaddr)

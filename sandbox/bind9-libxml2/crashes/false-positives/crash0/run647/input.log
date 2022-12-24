@@ -1,0 +1,126 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+xmlInitParser() @ 0x00005555555c8ef1
+xmlIsMainThread() @ 0x00007fffe0d8bb92
+xmlNewTextWriterDoc(0x7fffcef45760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+xmlTextWriterStartDocument(0x607000044a40 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29
+xmlTextWriterWritePI(0x607000044a40 {xmlTextWriterPtr} [size: 0], 0x5555556a6060 {xmlChar*} [size: 0x1], 0x5555556a6000 {xmlChar*} [size: 0x1]) @ 0x0000555555654b59
+~> failure to write 0x1 bytes at address 0x00005555556a6000
+xmlTextWriterStartElement(0x607000044a40 {xmlTextWriterPtr} [size: 0], 0x5555556a60a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654b82
+xmlTextWriterWriteAttribute(0x607000044a40 {xmlTextWriterPtr} [size: 0], 0x5555556a6120 {xmlChar*} [size: 0x1], 0x5555556a60e0 {xmlChar*} [size: 0x1]) @ 0x0000555555654bb2
+~> change ret {int} from 0 to 0xfffffffffffffdb9
+xmlFreeTextWriter(0x607000044a40 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555657110
+xmlFreeDoc(0x60f0000aff90 {xmlDocPtr} [size: 0]) @ 0x0000555555657152
+xmlNewTextWriterDoc(0x7fffcdcd8760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+xmlTextWriterStartDocument(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29
+~> change ret {int} from 0 to 0x228
+xmlTextWriterWritePI(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6060 {xmlChar*} [size: 0x1], 0x5555556a6000 {xmlChar*} [size: 0x1]) @ 0x0000555555654b59
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a60a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654b82
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6120 {xmlChar*} [size: 0x1], 0x5555556a60e0 {xmlChar*} [size: 0x1]) @ 0x0000555555654bb2
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6160 {xmlChar*} [size: 0x1]) @ 0x0000555555654c52
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a61a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654c7b
+xmlTextWriterWriteString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x7fffcdcd8780 {xmlChar*} [size: 0x1]) @ 0x0000555555654ca8
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555654cca
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a61e0 {xmlChar*} [size: 0x1]) @ 0x0000555555654cf3
+xmlTextWriterWriteString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x7fffcdcd87c0 {xmlChar*} [size: 0x1]) @ 0x0000555555654d20
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555654d42
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6220 {xmlChar*} [size: 0x1]) @ 0x0000555555654d6b
+xmlTextWriterWriteString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x7fffcdcd8800 {xmlChar*} [size: 0x1]) @ 0x0000555555654d98
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555654dba
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6120 {xmlChar*} [size: 0x1]) @ 0x0000555555654de3
+~> change ret {int} from 0 to 0x8
+xmlTextWriterWriteString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a6260 {xmlChar*} [size: 0x1]) @ 0x0000555555654e0c
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555654e2e
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5c40 {xmlChar*} [size: 0x1]) @ 0x0000555555654eab
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5a80 {xmlChar*} [size: 0x1], 0x5555556a62a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654edb
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> failure to write 0x1 bytes at address 0x00005555556a5440
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> failure to write 0x1 bytes at address 0x00005555556a5400
+~> change ret {int} from 0 to 0xfffffffffffffffb
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> failure to write 0x1 bytes at address 0x00005555556a5480
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> failure to write 0x1 bytes at address 0x00005555556a5480
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> failure to write 0x1 bytes at address 0x00005555556a5440
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> change ret {int} from 0 to 0x3e4
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> change ret {int} from 0 to 0xfffffffffffffffc
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> change ret {int} from 0 to 0xfffffffffffffdc9
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> failure to write 0x1 bytes at address 0x00005555556a5440
+~> change ret {int} from 0 to 0xffffffffffffffc2
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> change ret {int} from 0 to 0xffffffffffffff95
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> failure to write 0x1 bytes at address 0x00005555556a5400
+~> write {xmlChar*} 0x25 -> 0 at shared buffer 0x00007fffcdcd84e0
+~> change ret {int} from 0 to 0xffffffff
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> change ret {int} from 0 to 0x7fff
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> failure to write 0x1 bytes at address 0x00005555556a5400
+~> write {xmlChar*} 0 -> 0 at shared buffer 0x00007fffcdcd84e0
+~> change ret {int} from 0 to 0x28c
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> failure to write 0x1 bytes at address 0x00005555556a5480
+~> change ret {int} from 0 to 0x6
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> write {xmlChar*} 0x6e -> 0xb000000000000000 at shared buffer 0x00007fffcdcd84e0
+~> change ret {int} from 0 to 0x244
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> failure to write 0x1 bytes at address 0x00005555556a5480
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+~> change ret {int} from 0 to 0x8
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> write {xmlChar*} 0 -> 0x8400000000000000 at shared buffer 0x00007fffcdcd84e0
+~> change ret {int} from 0 to 0xfffffffffffffdd9
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> failure to write 0x1 bytes at address 0x00005555556a5440
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+~> write {xmlChar*} 0x52 -> 0 at shared buffer 0x00007fffcdcd84e0
+~> change ret {int} from 0 to 0xfffffffffffffd29
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+~> change ret {int} from 0 to 0xffffffffffff8000
+xmlTextWriterStartElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5440 {xmlChar*} [size: 0x1]) @ 0x0000555555652ee7
+xmlTextWriterWriteAttribute(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5400 {xmlChar*} [size: 0x1], 0x7fffcdcd84e0 {xmlChar*} [size: 0x1]) @ 0x0000555555652f14
+xmlTextWriterWriteFormatString(0x60700002e3f0 {xmlTextWriterPtr} [size: 0], 0x5555556a5480 {char*} [size: 0x1]) @ 0x0000555555652f45
+~> failure to write 0x1 bytes at address 0x00005555556a5480
+xmlTextWriterEndElement(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555652f63
+~> change ret {int} from 0 to 0xffffffffffff8000
+xmlFreeTextWriter(0x60700002e3f0 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555657110
+xmlFreeDoc(0x60f0000b7790 {xmlDocPtr} [size: 0]) @ 0x0000555555657152
+xmlNewTextWriterDoc(0x7fffd1421760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+~> write {xmlDocPtr*} 0x84 -> 0x8800000000000000 at shared buffer 0x00007fffd1421760
+xmlTextWriterStartDocument(0x607000054b80 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29
+~> failure to write 0x1 bytes at address 0x00005555556a5fc0
+xmlTextWriterWritePI(0x607000054b80 {xmlTextWriterPtr} [size: 0], 0x5555556a6060 {xmlChar*} [size: 0x1], 0x5555556a6000 {xmlChar*} [size: 0x1]) @ 0x0000555555654b59
+~> failure to write 0x1 bytes at address 0x00005555556a6000
+xmlTextWriterStartElement(0x607000054b80 {xmlTextWriterPtr} [size: 0], 0x5555556a60a0 {xmlChar*} [size: 0x1]) @ 0x0000555555654b82
+~> failure to write 0x1 bytes at address 0x00005555556a60a0
+~> change ret {int} from 0 to 0x7fffffff
+xmlTextWriterWriteAttribute(0x607000054b80 {xmlTextWriterPtr} [size: 0], 0x5555556a6120 {xmlChar*} [size: 0x1], 0x5555556a60e0 {xmlChar*} [size: 0x1]) @ 0x0000555555654bb2
+~> change ret {int} from 0 to 0xfffffffffffffda9
+xmlFreeTextWriter(0x607000054b80 {xmlTextWriterPtr} [size: 0]) @ 0x0000555555657110
+xmlFreeDoc(0x60f0000bff52 {xmlDocPtr} [size: 0]) @ 0x0000555555657152

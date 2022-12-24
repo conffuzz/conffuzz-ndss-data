@@ -1,0 +1,67 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> write 0 -> 0xffffffff at shared buffer 0x000060e000023786
+~> write 0 -> 0xfffffff6 at shared buffer 0x000060e00002374c
+~> write 0 -> 0xfffffffffffff448 at shared buffer 0x000060e000023983
+avcodec_version() @ 0x0000555555577440
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0x2 -> 0 at shared buffer 0x000060e000023410
+~> change ret from 0 to 0x1bc
+avcodec_get_class() @ 0x000055555557dba8
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+~> change ret from 0x7fffe05302c0 to 0x7fffe05305c2
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+~> write 0 -> 0x7fff at shared buffer 0x000061900000024d
+~> write 0 -> 0 at shared buffer 0x0000619000000174
+~> write 0 -> 0x3c4 at shared buffer 0x00006190000002b5
+~> write 0 -> 0 at shared buffer 0x00006190000000af
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+avcodec_open2(0x619000000080 [size: 0x398], 0x7fffe05302c0 [size: 0xe0], 0x603000001540 [size: 0x8]) @ 0x00007fffe0eba815
+~> write 0 -> 0x1 at shared buffer 0x0000603000001541
+~> change ret from 0 to 0xfffffffffffffffe
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+~> change ret from 0x7fffe0524ef0 to 0x7ffffffde190
+avcodec_parameters_alloc() @ 0x00007fffde5a6429
+avcodec_parameters_alloc() @ 0x00007fffde5a6478
+avcodec_parameters_copy(0x60e000023740 [size: 0x90], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eb8ece
+~> write 0xfffffc9300 -> 0x600000000000 at shared buffer 0x000060e000023436
+avcodec_parameters_copy(0x60e000023820 [size: 0x90], 0x60e000023740 [size: 0x90]) @ 0x00007fffde5a6e63
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> write 0xfffffcfffc -> 0xd8f0 at shared buffer 0x0000619000000379
+~> write 0xff -> 0x7 at shared buffer 0x000061900000032f
+~> change ret from 0x1 to 0xfffffffffffffde9
+avcodec_send_packet(0x619000000080 [size: 0x398], 0x7fffffffe0d0 [size: 0x68]) @ 0x00007fffe0eb5797
+~> write 0xd8 -> 0x7fffffffffff at shared buffer 0x000061900000032d
+~> write 0x7 -> 0x7ffffffffc81 at shared buffer 0x0000619000000154
+~> write 0 -> 0x7fff7fffffff at shared buffer 0x0000619000000330
+~> write 0xffff -> 0x7fff7fffffff at shared buffer 0x00007fffffffe132
+~> write 0xfc8100 -> 0x7fff00000000 at shared buffer 0x00007fffffffe10b
+~> write 0xffff00007fffff -> 0x4 at shared buffer 0x00007fffffffe0ec
+~> change ret from 0 to 0xffffffffffffd8f0
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> change ret from 0x1 to 0xffffffffffffff45
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+~> change ret from 0x7fffe0524ef0 to 0x7fffe0525093
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> write 0xffff00007fff62 -> 0 at shared buffer 0x00006190000001cf
+~> write 0x400009cda00 -> 0x2fc at shared buffer 0x00006190000000fa
+~> write 0x3c0000000 -> 0x3e8 at shared buffer 0x00006190000002ca
+~> write 0x300000000 -> 0 at shared buffer 0x00006190000000b8
+~> change ret from 0x1 to 0x4
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> write 0x3e800 -> 0xfffffffffffe15 at shared buffer 0x00006190000002f4
+~> write 0x30000 -> 0xfffffffffffe06 at shared buffer 0x0000619000000265
+~> write 0xfe1500000000 -> 0xfffffffffffffc at shared buffer 0x000061900000030c
+~> write 0xfe1500fe0600 -> 0xffffff00000000 at shared buffer 0x00006190000000fd
+~> change ret from 0x1 to 0x319
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+~> change ret from 0x7fffe0524ef0 to 0x7fffe0524c93

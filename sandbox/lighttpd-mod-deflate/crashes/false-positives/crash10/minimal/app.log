@@ -1,0 +1,54 @@
+=================================================================
+==5068==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60d000000008 at pc 0x5555555c96fb bp 0x7fffffffe880 sp 0x7fffffffe870
+READ of size 8 at 0x60d000000008 thread T0
+    #0 0x5555555c96fa in config_free_config /root/lighttpd-1.4.67/src/configfile.c:55
+    #1 0x5555555d2a4b in config_free /root/lighttpd-1.4.67/src/configfile.c:1557
+    #2 0x555555582056 in server_free /root/lighttpd-1.4.67/src/server.c:360
+    #3 0x55555558a665 in main /root/lighttpd-1.4.67/src/server.c:2119
+    #4 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x60d000000008 is located 56 bytes to the left of 144-byte region [0x60d000000040,0x60d0000000d0)
+allocated by thread T0 here:
+    #0 0x7fffe234ba37 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x5555555cf424 in config_insert /root/lighttpd-1.4.67/src/configfile.c:1089
+    #2 0x5555555d943f in config_read /root/lighttpd-1.4.67/src/configfile.c:2522
+    #3 0x5555555855ec in server_main_setup /root/lighttpd-1.4.67/src/server.c:1116
+    #4 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #5 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/configfile.c:55 in config_free_config
+Shadow bytes around the buggy address:
+  0x0c1a7fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1a7fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1a7fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1a7fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1a7fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c1a7fff8000: fa[fa]fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1a7fff8010: 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa fa
+  0x0c1a7fff8020: fa fa fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1a7fff8030: fd fd fd fd fa fa fa fa fa fa fa fa fd fd fd fd
+  0x0c1a7fff8040: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa fa
+  0x0c1a7fff8050: fa fa fa fa fa fa 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==5068==ABORTING

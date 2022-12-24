@@ -1,0 +1,43 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+exif_log_set_func(0x603000000160 {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))
+exif_loader_new() @ 0x00005555555675e6
+exif_loader_log(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000160 {ExifLog*} [size: 0x20]) @ 0x0000555555567606
+exif_loader_write_file(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000100 {char*} [size: 0x1]) @ 0x000055555556765a
+exif_loader_get_data(0x606000000080 {ExifLoader*} [size: 0x40]) @ 0x00005555555676ba
+exif_loader_unref(0x606000000080 {ExifLoader*} [size: 0x40]) @ 0x00005555555676d0
+~> write {ExifLoader*} 0x190 -> 0 at shared buffer 0x00006060000000b8
+exif_ifd_get_name(0 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0 {ExifIfd} [size: 0]) @ 0x0000555555563220
+~> change ret {char*} from 0x7fffe25d9c00 to 0x7fffe25d9e3c
+exif_ifd_get_name(0x1 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x1 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x2 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x2 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x3 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x3 {ExifIfd} [size: 0]) @ 0x0000555555563220
+exif_ifd_get_name(0x4 {ExifIfd} [size: 0]) @ 0x000055555556319e
+exif_ifd_get_name(0x4 {ExifIfd} [size: 0]) @ 0x0000555555563220
+~> change ret {char*} from 0x7fffe25d9d00 to 0x55555555e190
+exif_tag_get_title(0 {ExifTag} [size: 0]) @ 0x00005555555632d8
+~> change ret {char*} from 0x7fffe25da3e0 to 0x7fffe25da34c
+exif_content_get_entry(0x6030000001c0 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000220 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0xe000000000000000 -> 0xa at shared buffer 0x0000603000000229
+~> write {ExifContent*} 0xa04 -> 0 at shared buffer 0x0000603000000228
+~> write {ExifContent*} 0 -> 0 at shared buffer 0x000060300000022c
+~> change ret {ExifEntry*} from 0 to 0xfffffffffffffffb
+exif_content_get_entry(0x603000000280 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0xe0 -> 0xfff6000000000000 at shared buffer 0x0000603000000290
+~> write {ExifContent*} 0 -> 0 at shared buffer 0x0000603000000289
+~> write {ExifContent*} 0x2 -> 0xfc00000000000000 at shared buffer 0x0000603000000299
+~> change ret {ExifEntry*} from 0 to 0x108
+exif_content_get_entry(0x6030000002e0 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+exif_content_get_entry(0x603000000340 {ExifContent*} [size: 0x20], 0 {ExifTag} [size: 0]) @ 0x000055555556346b
+~> write {ExifContent*} 0 -> 0x1f00000000000 at shared buffer 0x000060300000034c
+exif_tag_get_title(0x1 {ExifTag} [size: 0]) @ 0x00005555555632d8
+~> change ret {char*} from 0x7fffe25da5a0 to 0x11

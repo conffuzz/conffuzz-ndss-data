@@ -1,0 +1,15 @@
+    #0 0xaddr in _IO_default_xsputn (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #1 0xaddr in _IO_file_xsputn (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in _IO_fwrite (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in WriteBlob MagickCore/blob.c:5627
+    #5 0xaddr in TIFFWriteBlob coders/tiff.c:965
+    #6 0xaddr in TIFFClientOpen /root/tiff-4.3.0/libtiff/tif_open.c:334
+    #7 0xaddr in WriteTIFFImage coders/tiff.c:3376
+    #8 0xaddr in WriteImage MagickCore/constitute.c:1337
+    #9 0xaddr in WriteImages MagickCore/constitute.c:1558
+    #10 0xaddr in ConvertImageCommand MagickWand/convert.c:3330
+    #11 0xaddr in MagickCommandGenesis MagickWand/mogrify.c:188
+    #12 0xaddr in MagickMain utilities/magick.c:150
+    #13 0xaddr in main utilities/magick.c:182
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in _start (/usr/local/bin/magick+0xaddr)

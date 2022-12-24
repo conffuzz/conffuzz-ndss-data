@@ -1,0 +1,7 @@
+    #5 0xaddr in acommon::String::~String() common/string.hpp:251
+    #6 0xaddr in print_help_line(char, char, char const*, acommon::KeyInfoType, char const*, bool) prog/aspell.cpp:2819
+    #7 0xaddr in print_help(bool) prog/aspell.cpp:2900
+    #8 0xaddr in main prog/aspell.cpp:267
+    #9 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/usr/local/bin/aspell+0xaddr)

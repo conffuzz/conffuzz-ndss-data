@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libapparmor.so.1.12.0
+cap_null_deref
+cap_write
+cap_read_arbitrary

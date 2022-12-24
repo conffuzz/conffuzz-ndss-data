@@ -1,0 +1,8 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct(0x7fffe214e100 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17102d2
+~> change ret from 0x61a00004e680 to 0x55555555600a
+png_create_info_struct(0x55555555600a [size: 0]) @ 0x00007fffe17102ea
+~> instrumenting 0x000055555555600a (_init, 0 arg(s))

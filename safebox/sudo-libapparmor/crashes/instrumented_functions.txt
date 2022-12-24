@@ -1,0 +1,71 @@
+aa_policy_cache_replace_all aa_policy_cache_replace_all 2 int aa_policy_cache* aa_kernel_interface*
+free_record free_record 1 unknown_or_void aa_log_record*
+aa_policy_cache_dir_path_preview aa_policy_cache_dir_path_preview 3 char* aa_features* int char*
+aa_stack_profile aa_stack_profile 1 int char*
+aa_splitcon aa_splitcon 2 char* char* char**
+aa_find_mountpoint aa_find_mountpoint 1 int char**
+aa_kernel_interface_new aa_kernel_interface_new 3 int aa_kernel_interface** aa_features* char*
+aa_change_onexec aa_change_onexec 1 int char*
+aa_change_hat_vargs aa_change_hat_vargs 2 int unsignedlong int
+aa_kernel_interface_load_policy_from_file aa_kernel_interface_load_policy_from_file 3 int aa_kernel_interface* int char*
+__aa_query_label __aa_query_label 0 unknown_or_void
+aa_policy_cache_no_dirs aa_policy_cache_no_dirs 1 int aa_policy_cache*
+aa_features_new_from_kernel aa_features_new_from_kernel 1 int aa_features**
+aa_kernel_interface_load_policy_from_fd aa_kernel_interface_load_policy_from_fd 2 int aa_kernel_interface* int
+aa_change_profile aa_change_profile 1 int char*
+aa_gettaskcon aa_gettaskcon 3 int pid_t char** char**
+aa_policy_cache_dir_path aa_policy_cache_dir_path 2 char* aa_policy_cache* int
+_aa_is_blacklisted _aa_is_blacklisted 1 int char*
+aa_policy_cache_open aa_policy_cache_open 3 int aa_policy_cache* char* int
+aa_change_hat aa_change_hat 2 int char* unsignedlong
+aa_policy_cache_ref aa_policy_cache_ref 1 aa_policy_cache* aa_policy_cache*
+aa_kernel_interface_write_policy aa_kernel_interface_write_policy 3 int int char* size_t
+aa_features_ref aa_features_ref 1 aa_features* aa_features*
+aa_getpeercon_raw aa_getpeercon_raw 4 int int char* socklen_t* char**
+aa_features_new_from_file aa_features_new_from_file 2 int aa_features** int
+aa_kernel_interface_remove_policy aa_kernel_interface_remove_policy 2 int aa_kernel_interface* char*
+aa_query_file_path aa_query_file_path 5 int uint32_t char* char* int* int*
+aa_features_id aa_features_id 1 char* aa_features*
+change_hat change_hat 0 unknown_or_void
+aa_kernel_interface_replace_policy aa_kernel_interface_replace_policy 3 int aa_kernel_interface* char* size_t
+change_hat change_hat 0 unknown_or_void
+aa_getcon aa_getcon 2 int char** char**
+aa_stack_onexec aa_stack_onexec 1 int char*
+aa_query_link_path_len aa_query_link_path_len 8 int char* size_t char* size_t char* size_t int* int*
+aa_policy_cache_new aa_policy_cache_new 5 int aa_policy_cache** aa_features* int char* uint16_t
+aa_policy_cache_unref aa_policy_cache_unref 1 unknown_or_void aa_policy_cache*
+parse_record parse_record 1 aa_log_record* char*
+aa_features_new aa_features_new 3 int aa_features** int char*
+aa_features_value aa_features_value 3 char* aa_features* char* size_t*
+aa_getprocattr_raw aa_getprocattr_raw 5 int pid_t char* char* int char**
+aa_policy_cache_add_ro_dir aa_policy_cache_add_ro_dir 3 int aa_policy_cache* int char*
+aa_features_write_to_fd aa_features_write_to_fd 2 int aa_features* int
+_aa_autofclose _aa_autofclose 1 unknown_or_void FILE**
+aa_policy_cache_filename aa_policy_cache_filename 2 char* aa_policy_cache* char*
+aa_features_new_from_string aa_features_new_from_string 3 int aa_features** char* size_t
+aa_query_file_path_len aa_query_file_path_len 7 int uint32_t char* size_t char* size_t int* int*
+query_label query_label 5 int uint32_t char* size_t int* int*
+_aa_dirat_for_each _aa_dirat_for_each 4 int int char* * int(int,constchar*,stat*,*)*
+aa_query_link_path aa_query_link_path 5 int char* char* char* int* int*
+aa_features_unref aa_features_unref 1 unknown_or_void aa_features*
+aa_kernel_interface_unref aa_kernel_interface_unref 1 unknown_or_void aa_kernel_interface*
+aa_kernel_interface_replace_policy_from_fd aa_kernel_interface_replace_policy_from_fd 2 int aa_kernel_interface* int
+aa_query_label aa_query_label 0 unknown_or_void
+aa_policy_cache_dirfd aa_policy_cache_dirfd 2 int aa_policy_cache* int
+aa_query_label aa_query_label 0 unknown_or_void
+aa_kernel_interface_ref aa_kernel_interface_ref 1 aa_kernel_interface* aa_kernel_interface*
+aa_change_hatv aa_change_hatv 2 int char** unsignedlong
+aa_features_write_to_file aa_features_write_to_file 3 int aa_features* int char*
+aa_features_supports aa_features_supports 2 _Bool aa_features* char*
+aa_is_enabled aa_is_enabled 0 int
+aa_features_is_equal aa_features_is_equal 2 _Bool aa_features* aa_features*
+__old_change_hat __old_change_hat 0 unknown_or_void
+_aa_asprintf _aa_asprintf 2 int char** char*
+_aa_autoclose _aa_autoclose 1 unknown_or_void int*
+aa_getprocattr aa_getprocattr 4 int pid_t char* char** char**
+aa_kernel_interface_replace_policy_from_file aa_kernel_interface_replace_policy_from_file 3 int aa_kernel_interface* int char*
+aa_policy_cache_remove aa_policy_cache_remove 2 int int char*
+aa_kernel_interface_load_policy aa_kernel_interface_load_policy 3 int aa_kernel_interface* char* size_t
+__change_hat __change_hat 2 int char* unsignedint
+aa_getpeercon aa_getpeercon 3 int int char** char**
+_aa_autofree _aa_autofree 1 unknown_or_void *

@@ -1,0 +1,9 @@
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libmaxminddb.so.0+0xaddr)
+    #6 0xaddr in ngx_http_geoip2_cleanup ../ngx_http_geoip2_module/ngx_http_geoip2_module.c:708
+    #7 0xaddr in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #8 0xaddr in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #9 0xaddr in ngx_init_cycle src/core/ngx_cycle.c:286
+    #10 0xaddr in main src/core/nginx.c:292
+    #11 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #13 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

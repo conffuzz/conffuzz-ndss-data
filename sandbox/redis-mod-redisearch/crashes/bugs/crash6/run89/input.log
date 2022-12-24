@@ -1,0 +1,17 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0xffd932f253 -> 0xffffffffff000000 at shared buffer 0x00007fffd940c850
+~> write {RedisModuleCtx*} 0x944000 -> 0 at shared buffer 0x00007fffffffe63f
+~> change ret {int} from 0 to 0xfffffffffffffff9
+RSAggregateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482510 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0x2ca000000 at shared buffer 0x00007fffffffe399
+~> write {RedisModuleCtx*} 0 -> 0xffffffffffffff42 at shared buffer 0x00007fffffffe3a0
+~> change ret {int} from 0 to 0xffffffffffffff05
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9315bf0 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0x17000 at shared buffer 0x00007fffffffe3d3
+~> write {RedisModuleCtx*} 0 -> 0xfffd000000000000 at shared buffer 0x00007fffffffe3bf
+~> write {RedisModuleCtx*} 0x7fff -> 0xfffffffffff80000 at shared buffer 0x00007fffffffe394
+~> change ret {int} from 0 to 0xfffffffffffffffb

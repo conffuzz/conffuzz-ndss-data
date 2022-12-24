@@ -1,0 +1,8 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+ngx_http_geoip2_create_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a7c26
+~> write {ngx_conf_t*} 0 -> 0 at shared buffer 0x00007fffffffe37b
+~> write {ngx_conf_t*} 0 -> 0xff80000000000000 at shared buffer 0x00007fffffffe374
+~> write {ngx_conf_t*} 0xff -> 0 at shared buffer 0x00007fffffffe378

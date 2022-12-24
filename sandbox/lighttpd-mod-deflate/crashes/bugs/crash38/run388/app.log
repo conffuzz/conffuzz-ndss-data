@@ -1,0 +1,26 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==28766==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000000ff (pc 0x5555555f9b3b bp 0x7fffffffe5b0 sp 0x7fffffffe590 T0)
+==28766==The signal is caused by a READ memory access.
+==28766==Hint: address points to the zero page.
+    #0 0x5555555f9b3b in chunkqueue_release_chunks /root/lighttpd-1.4.67/src/chunk.c:443
+    #1 0x5555555f9f7f in chunkqueue_reset /root/lighttpd-1.4.67/src/chunk.c:493
+    #2 0x5555555ab4e6 in request_reset /root/lighttpd-1.4.67/src/reqpool.c:143
+    #3 0x55555559399f in connection_reset /root/lighttpd-1.4.67/src/connections.c:557
+    #4 0x555555591585 in connection_handle_shutdown /root/lighttpd-1.4.67/src/connections.c:160
+    #5 0x555555591c34 in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:216
+    #6 0x555555596a53 in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #7 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #8 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #9 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #10 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #11 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #12 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #13 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #14 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #15 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #16 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/chunk.c:443 in chunkqueue_release_chunks
+==28766==ABORTING

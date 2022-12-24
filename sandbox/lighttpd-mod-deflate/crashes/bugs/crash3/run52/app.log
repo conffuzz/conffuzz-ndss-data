@@ -1,0 +1,7 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==5891==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xffffffdbf66429 bp 0x7fffffffe310 sp 0x7fffffffe218 T0)
+==5891==The signal is caused by a READ memory access.
+==5891==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

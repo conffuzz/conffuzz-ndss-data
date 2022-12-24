@@ -1,0 +1,60 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+2022/11/03 23:45:20 [notice] 65818#0: using the "epoll" event method
+2022/11/03 23:45:20 [notice] 65818#0: nginx/1.21.6
+2022/11/03 23:45:20 [notice] 65818#0: built by gcc 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+2022/11/03 23:45:20 [notice] 65818#0: OS: Linux 6.0.0-1-amd64
+2022/11/03 23:45:20 [notice] 65818#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/03 23:45:22 [info] 65818#0: *1 client 172.17.0.2 closed keepalive connection
+2022/11/03 23:45:22 [info] 65818#0: *2 client 172.17.0.2 closed keepalive connection
+2022/11/03 23:45:23 [alert] 65818#0: *3 pcre2_match() failed: -412 on "/" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:45:23 [alert] 65818#0: *4 pcre2_match() failed: -10000 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:45:23 [alert] 65818#0: *5 pcre2_match() failed: -100 on "/" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:45:24 [alert] 65818#0: *6 pcre2_match() failed: -128 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:45:24 [alert] 65818#0: *7 pcre2_match() failed: -413 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:45:24 [alert] 65818#0: *8 pcre2_match() failed: -3 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+=================================================================
+==65818==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7fffd2786485 in thread T0
+    #0 0x7fffe137b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x5555556a6a92 in ngx_regex_free src/core/ngx_regex.c:519
+    #2 0x7fffe11bb9a5 in pcre2_match_8 src/pcre2_match.c:7265
+    #3 0x5555556a6661 in ngx_regex_exec src/core/ngx_regex.c:428
+    #4 0x55555570e26b in ngx_http_regex_exec src/http/ngx_http_variables.c:2579
+    #5 0x5555556e0a0f in ngx_http_find_virtual_server src/http/ngx_http_request.c:2364
+    #6 0x5555556dfd0c in ngx_http_set_virtual_server src/http/ngx_http_request.c:2252
+    #7 0x5555556dd6a9 in ngx_http_process_host src/http/ngx_http_request.c:1816
+    #8 0x5555556db82f in ngx_http_process_request_headers src/http/ngx_http_request.c:1470
+    #9 0x5555556d9bbf in ngx_http_process_request_line src/http/ngx_http_request.c:1165
+    #10 0x5555556d58cf in ngx_http_wait_request_handler src/http/ngx_http_request.c:503
+    #11 0x55555567f9de in ngx_epoll_process_events src/event/modules/ngx_epoll_module.c:901
+    #12 0x555555650b78 in ngx_process_events_and_timers src/event/ngx_event.c:248
+    #13 0x555555675ae4 in ngx_single_process_cycle src/os/unix/ngx_process_cycle.c:300
+    #14 0x5555555c7ffd in main src/core/nginx.c:380
+    #15 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #16 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #17 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+0x7fffd2786485 is located 891 bytes to the left of 142720-byte region [0x7fffd2786800,0x7fffd27a9580)
+allocated by thread T0 here:
+    #0 0x7fffe137b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x555555665834 in ngx_alloc src/os/unix/ngx_alloc.c:22
+    #2 0x5555556a6a5d in ngx_regex_malloc src/core/ngx_regex.c:508
+    #3 0x7fffe11ba356 in pcre2_match_8 src/pcre2_match.c:6639
+    #4 0x5555556a6661 in ngx_regex_exec src/core/ngx_regex.c:428
+    #5 0x55555570e26b in ngx_http_regex_exec src/http/ngx_http_variables.c:2579
+    #6 0x5555556e0a0f in ngx_http_find_virtual_server src/http/ngx_http_request.c:2364
+    #7 0x5555556dfd0c in ngx_http_set_virtual_server src/http/ngx_http_request.c:2252
+    #8 0x5555556dd6a9 in ngx_http_process_host src/http/ngx_http_request.c:1816
+    #9 0x5555556db82f in ngx_http_process_request_headers src/http/ngx_http_request.c:1470
+    #10 0x5555556d9bbf in ngx_http_process_request_line src/http/ngx_http_request.c:1165
+    #11 0x5555556d58cf in ngx_http_wait_request_handler src/http/ngx_http_request.c:503
+    #12 0x55555567f9de in ngx_epoll_process_events src/event/modules/ngx_epoll_module.c:901
+    #13 0x555555650b78 in ngx_process_events_and_timers src/event/ngx_event.c:248
+    #14 0x555555675ae4 in ngx_single_process_cycle src/os/unix/ngx_process_cycle.c:300
+    #15 0x5555555c7ffd in main src/core/nginx.c:380
+    #16 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==65818==ABORTING

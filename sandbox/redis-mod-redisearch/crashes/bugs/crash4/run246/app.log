@@ -1,0 +1,42 @@
+58905:C 08 Nov 2022 10:04:40.798 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+58905:C 08 Nov 2022 10:04:40.826 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=58905, just started
+58905:C 08 Nov 2022 10:04:40.829 # Configuration loaded
+58905:M 08 Nov 2022 10:04:40.922 * monotonic clock: POSIX clock_gettime
+58905:M 08 Nov 2022 10:04:41.328 * Running mode=standalone, port=6379.
+58905:M 08 Nov 2022 10:04:41.330 # Server initialized
+58905:M 08 Nov 2022 10:04:41.332 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+58905:M 08 Nov 2022 10:04:41.823 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+58905:M 08 Nov 2022 10:04:41.827 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+58905:M 08 Nov 2022 10:04:41.847 * <search> Low level api version 1 initialized successfully
+58905:M 08 Nov 2022 10:04:41.867 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+58905:M 08 Nov 2022 10:04:41.918 * <search> Initialized thread pool!
+58905:M 08 Nov 2022 10:04:41.939 * <search> Enabled diskless replication
+58905:M 08 Nov 2022 10:04:42.038 * Module 'search' loaded from /root/RediSearch/bin/linux-x64-debug/search/redisearch.so
+58905:M 08 Nov 2022 10:04:42.169 * Ready to accept connections
+58905:M 08 Nov 2022 10:04:42.792 * <module> Register index users for async scan
+58905:M 08 Nov 2022 10:04:42.838 * <search> Scanning index users in background
+58905:M 08 Nov 2022 10:04:43.058 * <search> Scanning indexes in background: done (scanned=2)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==58905==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555557eb723 bp 0x7fffffffe310 sp 0x7fffffffe2f0 T0)
+==58905==The signal is caused by a READ memory access.
+==58905==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555557eb723 in poolAllocRelease /root/redis-6.2.6/src/module.c:472
+    #1 0x5555557ec5c6 in moduleFreeContext /root/redis-6.2.6/src/module.c:671
+    #2 0x5555557ecaa5 in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:695
+    #3 0x55555566ecb3 in call /root/redis-6.2.6/src/server.c:3721
+    #4 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #5 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #6 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #7 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #8 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #9 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #10 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #11 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #12 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #13 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #14 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/module.c:472 in poolAllocRelease
+==58905==ABORTING

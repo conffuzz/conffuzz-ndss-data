@@ -1,0 +1,23 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 11:03:56.779584 2022] [core:warn] [pid 24428:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Nov 05 11:03:59.229257 2022] [core:error] [pid 24428:tid 140736780654336] [client 172.17.0.2:50636] AH00524: Handler for markdown returned invalid result code 6
+=================================================================
+==24428==ERROR: AddressSanitizer: global-buffer-overflow on address 0x555555749c00 at pc 0x5555556fb906 bp 0x7fffd5d14950 sp 0x7fffd5d14948
+READ of size 8 at 0x555555749c00 thread T2
+    #0 0x5555556fb905 in ap_http_filter /root/httpd-2.4.52/modules/http/http_filters.c:344
+    #1 0x55555562d041 in ap_get_brigade /root/httpd-2.4.52/server/util_filter.c:553
+    #2 0x55555570b833 in ap_discard_request_body /root/httpd-2.4.52/modules/http/http_filters.c:1622
+    #3 0x5555556498c5 in ap_finalize_request_protocol /root/httpd-2.4.52/server/protocol.c:1717
+    #4 0x5555556f1d5d in ap_die_r /root/httpd-2.4.52/modules/http/http_request.c:82
+    #5 0x5555556f59cb in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:475
+    #6 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #7 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #8 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #9 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #10 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #11 0x7fffe1c8dea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #12 0x7fffe1bada2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

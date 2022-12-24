@@ -1,0 +1,14 @@
+Fuzzing seed: 1651157571
+Starting time: 2022-04-28 14:52:51
+Total instrumented API size: 33
+Statically detected call sites: 8
+Statically detected called API endpoints: 8
+Statically detected caller components: 1
+Max number of call sites reached in a run: 5
+Number of API endpoints reached: 5
+Number of API endpoints that are vulnerability vectors: 3
+List of these endpoints:
+  [api] BZ2_bzRead
+  [api] BZ2_bzReadGetUnused
+  [api] BZ2_bzReadOpen
+Ending time: 2022-04-28 15:21:59

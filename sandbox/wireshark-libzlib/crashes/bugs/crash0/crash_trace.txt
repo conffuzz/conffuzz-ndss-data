@@ -1,0 +1,11 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #1 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #3 0xaddr in g_vasprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xaddr)
+    #4 0xaddr in g_string_append_vprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xaddr)
+    #5 0xaddr in g_string_append_printf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xaddr)
+    #6 0xaddr in get_runtime_version_info /root/wireshark-3.4.12/version_info.c:444
+    #7 0xaddr in ws_init_version_info /root/wireshark-3.4.12/version_info.c:69
+    #8 0xaddr in main /root/wireshark-3.4.12/tshark.c:836
+    #9 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in _start (/root/wireshark_build/run/tshark+0xaddr)

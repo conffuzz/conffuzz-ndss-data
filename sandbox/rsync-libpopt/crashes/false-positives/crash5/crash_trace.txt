@@ -1,0 +1,5 @@
+    #0 0xaddr in poptReadDefaultConfig /root/popt-popt-1.19-release/src/poptconfig.c:443
+    #1 0xaddr in parse_arguments /root/rsync-3.2.7/options.c:1376
+    #2 0xaddr in main /root/rsync-3.2.7/main.c:1789
+    #3 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in _start (/usr/local/bin/rsync+0xaddr)

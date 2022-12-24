@@ -1,0 +1,11 @@
+    #0 0xaddr in file_check_mem /root/file-5.41/src/funcs.c:617
+    #1 0xaddr in match /root/file-5.41/src/softmagic.c:217
+    #2 0xaddr in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #3 0xaddr in file_buffer /root/file-5.41/src/funcs.c:445
+    #4 0xaddr in file_or_fd /root/file-5.41/src/magic.c:518
+    #5 0xaddr in magic_file /root/file-5.41/src/magic.c:400
+    #6 0xaddr in process /root/file-5.41/src/file.c:555
+    #7 0xaddr in main /root/file-5.41/src/file.c:428
+    #8 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in _start (/usr/local/bin/file+0xaddr)

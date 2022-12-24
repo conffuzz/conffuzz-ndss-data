@@ -1,0 +1,4 @@
+fault_location /usr/local/libexec/sudo/sudoers.so
+cap_null_deref
+non_reproducible
+cap_read_arbitrary

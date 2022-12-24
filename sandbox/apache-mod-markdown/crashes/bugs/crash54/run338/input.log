@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd34880a0 {request_rec*} [size: 0x2e0], 0x7fffd2bfe698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd16810a0 {request_rec*} [size: 0x2e0], 0x7fffd15d2698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006ab0 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006b80 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006c50 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006d20 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006df0 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+markdown_output(0x60d000006ec0 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b4698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {request_rec*} 0x7fffd15825f00000 -> 0xfffffffffffffffc at shared buffer 0x00007fffd158110e
+~> change ret {int} from 0 to 0x156
+markdown_output(0x60d000006f90 {MMIOT*} [size: 0x60], 0x7fffd15810a0 {request_rec*} [size: 0x2e0], 0x7fffd14b3698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f83a97
+~> write {MMIOT*} 0 -> 0x14e at shared buffer 0x000060d000006fc2
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd14b3698
+~> write {request_rec*} 0 -> 0 at shared buffer 0x00007fffd15810c7
+~> write {request_rec*} 0x37200000 -> 0xfffffd1500000000 at shared buffer 0x00007fffd1581246
+~> write {request_rec*} 0 -> 0x64000000 at shared buffer 0x00007fffd15812cb

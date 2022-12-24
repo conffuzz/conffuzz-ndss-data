@@ -1,0 +1,14 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==272347==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000002c1 (pc 0x7fffe21b5d73 bp 0x7fffffffd550 sp 0x7fffffffd480 T0)
+==272347==The signal is caused by a READ memory access.
+==272347==Hint: address points to the zero page.
+    #0 0x7fffe21b5d73 in poptReadDefaultConfig /root/popt-popt-1.19-release/src/poptconfig.c:443
+    #1 0x555555610b63 in parse_arguments /root/rsync-3.2.7/options.c:1376
+    #2 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #3 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #4 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/popt-popt-1.19-release/src/poptconfig.c:443 in poptReadDefaultConfig
+==272347==ABORTING

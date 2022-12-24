@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libmagic.so.1.0.0
+cap_read
+cap_write
+cap_null_deref

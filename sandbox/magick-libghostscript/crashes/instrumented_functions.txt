@@ -1,0 +1,31 @@
+gsapi_run_file gsapi_run_file 4 int * char* int int*
+gsapi_register_callout gsapi_register_callout 3 int * gs_callout *
+gsapi_is_path_control_active gsapi_is_path_control_active 1 int *
+gsapi_get_param gsapi_get_param 4 int * char* * gs_set_param_type
+gsapi_run_string_end gsapi_run_string_end 3 int * int int*
+gsapi_get_default_device_list gsapi_get_default_device_list 3 int * char** int*
+gsapi_remove_control_path gsapi_remove_control_path 3 int * int char*
+gsapi_deregister_callout gsapi_deregister_callout 3 unknown_or_void * gs_callout *
+gsapi_init_with_args gsapi_init_with_args 3 int * int char**
+gsapi_activate_path_control gsapi_activate_path_control 2 unknown_or_void * int
+gsapi_set_default_device_list gsapi_set_default_device_list 3 int * char* int
+gsapi_delete_instance gsapi_delete_instance 1 unknown_or_void *
+gsapi_run_string_with_length gsapi_run_string_with_length 5 int * char* unsignedint int int*
+gsapi_purge_control_paths gsapi_purge_control_paths 2 unknown_or_void * int
+gsapi_add_fs gsapi_add_fs 3 int * gsapi_fs_t* *
+gsapi_set_arg_encoding gsapi_set_arg_encoding 2 int * int
+gsapi_exit gsapi_exit 1 int *
+gsapi_run_string_begin gsapi_run_string_begin 3 int * int int*
+gsapi_remove_fs gsapi_remove_fs 3 unknown_or_void * gsapi_fs_t* *
+gsapi_enumerate_params gsapi_enumerate_params 4 int * ** char** gs_set_param_type*
+gsapi_set_poll gsapi_set_poll 2 int * int(*)*
+gsapi_revision gsapi_revision 2 int gsapi_revision_t* int
+gsapi_set_param gsapi_set_param 4 int * char* * gs_set_param_type
+gsapi_set_stdio_with_handle gsapi_set_stdio_with_handle 5 int * int(*,char*,int)* int(*,constchar*,int)* int(*,constchar*,int)* *
+gsapi_run_string_continue gsapi_run_string_continue 5 int * char* unsignedint int int*
+gsapi_set_display_callback gsapi_set_display_callback 2 int * display_callback*
+gsapi_set_poll_with_handle gsapi_set_poll_with_handle 3 int * int(*)* *
+gsapi_add_control_path gsapi_add_control_path 3 int * int char*
+gsapi_run_string gsapi_run_string 4 int * char* int int*
+gsapi_set_stdio gsapi_set_stdio 4 int * int(*,char*,int)* int(*,constchar*,int)* int(*,constchar*,int)*
+gsapi_new_instance gsapi_new_instance 2 int ** *

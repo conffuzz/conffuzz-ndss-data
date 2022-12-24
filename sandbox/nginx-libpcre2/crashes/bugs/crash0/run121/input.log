@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcre2_general_context_create_8(0x5555556a69bb {*(size_t,*)*} [size: 0x1], 0x5555556a6a67 {void(*,*)*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00005555556a596e
+~> instrumenting 0x00005555556a69bb (ngx_regex_malloc, 0x2 arg(s))
+~> instrumenting 0x00005555556a6a67 (ngx_regex_free, 0x2 arg(s))
+~> detected cb call ngx_regex_malloc(0x18 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe118539b
+~> change arg #0x1 {size_t} from 0x18 to 0xfffffffffffffff9

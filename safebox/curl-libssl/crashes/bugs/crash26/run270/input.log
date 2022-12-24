@@ -1,0 +1,56 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x7640 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2211c78
+TLS_client_method() @ 0x00007fffe221753a
+SSL_CTX_new(0x7fffe2045f80 [size: 0xe0]) @ 0x00007fffe221763e
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x21 [size: 0], 0x10 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2217716
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x7c [size: 0], 0 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2215684
+SSL_CTX_set_options(0x619000000f80 [size: 0x400], 0x82024054 [size: 0]) @ 0x00007fffe2217bbc
+SSL_CTX_set_next_proto_select_cb(0x619000000f80 [size: 0x400], 0x7fffe2214fca [size: 0], 0x622000003108 [size: 0x1]) @ 0x00007fffe2217c5a
+~> instrumenting 0x00007fffe2214fca (select_next_proto_cb, 0x6 arg(s))
+SSL_CTX_set_alpn_protos(0x619000000f80 [size: 0x400], 0x7fffffffddb0 [size: 0x1], 0xc [size: 0]) @ 0x00007fffe2218019
+SSL_CTX_set_post_handshake_auth(0x619000000f80 [size: 0x400], 0x1 [size: 0]) @ 0x00007fffe2218c3f
+SSL_CTX_load_verify_locations(0x619000000f80 [size: 0x400], 0x606000000928 [size: 0x1], 0 [size: 0x1]) @ 0x00007fffe2219607
+SSL_CTX_get_cert_store(0x619000000f80 [size: 0x400]) @ 0x00007fffe2219873
+SSL_CTX_get_cert_store(0x619000000f80 [size: 0x400]) @ 0x00007fffe2219a89
+SSL_CTX_set_verify(0x619000000f80 [size: 0x400], 0x1 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2219ae2
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x2c [size: 0], 0x301 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2219b7a
+SSL_CTX_sess_set_new_cb(0x619000000f80 [size: 0x400], 0x7fffe2215697 [size: 0x1]) @ 0x00007fffe2219bbf
+~> instrumenting 0x00007fffe2215697 (ossl_new_session_cb, 0x2 arg(s))
+SSL_new(0x619000000f80 [size: 0x400]) @ 0x00007fffe2219d9a
+SSL_set_connect_state(0x623000000100 [size: 0x1888]) @ 0x00007fffe221a045
+SSL_ctrl(0x623000000100 [size: 0x1888], 0x37 [size: 0], 0 [size: 0], 0x633000000808 [size: 0x1]) @ 0x00007fffe221a14d
+~> change arg #0x3 from 0 to 0x20f
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x1 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2223643
+~> change arg #0x1 from 0x623000000100 to 0x622ffffffd97
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x2 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2223682
+~> change arg #0x1 from 0x623000000100 to 0x7ffffffde190
+~> change arg #0x2 from 0x2 to 0x42
+~> change arg #0x3 from 0 to 0x35
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x3 [size: 0], 0 [size: 0x1]) @ 0x00007fffe22236c1
+~> change arg #0x3 from 0 to 0xfffffffffffffff6
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x4 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2223700
+~> change arg #0x2 from 0x4 to 0x3e5
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x1 [size: 0], 0x622000003108 [size: 0x1]) @ 0x00007fffe2223105
+~> change arg #0x2 from 0x1 to 0xfffffffffffffffc
+~> change arg #0x3 from 0x622000003108 to 0x7ffffffde190
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x2 [size: 0], 0x61b000000788 [size: 0x1]) @ 0x00007fffe2223146
+~> change arg #0x1 from 0x623000000100 to 0x623000000348
+~> change arg #0x2 from 0x2 to 0xb1
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x3 [size: 0], 0x61b000000980 [size: 0x1]) @ 0x00007fffe222319a
+~> change arg #0x1 from 0x623000000100 to 0x7ffffffde190
+~> change arg #0x2 from 0x3 to 0xfffffffffffffff9
+~> change arg #0x3 from 0x61b000000980 to 0x61b000000934
+SSL_set_ex_data(0x623000000100 [size: 0x1888], 0x4 [size: 0], 0 [size: 0x1]) @ 0x00007fffe22232ec
+~> change arg #0x1 from 0x623000000100 to 0x62300000039f
+~> change arg #0x2 from 0x4 to 0x3e8
+~> change arg #0x3 from 0 to 0xfffffffffffff448
+SSL_read(0x623000000100 [size: 0x1888], 0x7fffffffde40 [size: 0x1], 0x20 [size: 0]) @ 0x00007fffe2212598
+~> change arg #0x2 from 0x7fffffffde40 to 0x7ffffffde190
+~> change arg #0x3 from 0x20 to 0xffffffffffffff80
+SSL_shutdown(0x623000000100 [size: 0x1888]) @ 0x00007fffe22125d3
+SSL_set_connect_state(0x623000000100 [size: 0x1888]) @ 0x00007fffe221260e
+SSL_free(0x623000000100 [size: 0x1888]) @ 0x00007fffe2212649
+~> change arg #0x1 from 0x623000000100 to 0xd

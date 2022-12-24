@@ -1,0 +1,37 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+pcap_set_promisc(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> write 0 -> 0 at shared buffer 0x00006180000001f7
+~> change ret from 0 to 0xffffffffffffff50
+pcap_set_timeout(0x618000000080 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0 -> 0xfffffffffcb0 at shared buffer 0x00006180000000eb
+~> change ret from 0 to 0x2bb
+pcap_set_tstamp_precision(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+pcap_set_buffer_size(0x618000000080 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+~> write 0 -> 0x9 at shared buffer 0x0000618000000220
+~> write 0 -> 0x4 at shared buffer 0x0000618000000098
+~> change ret from 0xfffffffc to 0xfffffffffffffffd
+pcap_activate(0x618000000080 [size: 0x288]) @ 0x0000555555586c87
+~> change ret from 0xfffffffc to 0x100000053
+pcap_get_tstamp_precision(0x618000000080 [size: 0x288]) @ 0x0000555555585b92
+~> write 0 -> 0 at shared buffer 0x000061800000012d
+~> write 0 -> 0x35b at shared buffer 0x00006180000000c6
+pcap_datalink(0x618000000080 [size: 0x288]) @ 0x0000555555585188
+~> change ret from 0 to 0xfffffffffffffffb
+pcap_get_selectable_fd(0x618000000080 [size: 0x288]) @ 0x000055555556bf6b
+~> write 0 -> 0xfffffffffffffd55 at shared buffer 0x00006180000001b8
+~> change ret from 0xffffffff to 0xfffffe13
+pcap_lookupnet(0x602000000430 [size: 0x1], 0x7fffffffc1b0 [size: 0x1], 0x7fffffffc1c0 [size: 0x1], 0x7fffffffc1d0 [size: 0x1]) @ 0x0000555555563a0a
+~> write 0x65 -> 0x7fffffffc17e at shared buffer 0x0000602000000430
+~> write 0xac -> 0x7fffffffc1d8 at shared buffer 0x00007fffffffc1b0
+~> write 0 -> 0x7fffffffc109 at shared buffer 0x00007fffffffc1d0
+~> change ret from 0 to 0xffffffffffffff80
+pcap_compile(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0x10], 0x55555558bb80 [size: 0x1], 0x1 [size: 0], 0 [size: 0]) @ 0x0000555555563aa9
+pcap_geterr(0x618000000080 [size: 0x288]) @ 0x00005555555711c1
+~> change ret from 0x618000000158 to 0x11

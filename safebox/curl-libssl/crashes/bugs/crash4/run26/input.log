@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x7640 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2211c78
+~> change arg #0x1 from 0x7640 to 0xfffffffffffffff7
+~> change arg #0x2 from 0 to 0x8000000000000000
+TLS_client_method() @ 0x00007fffe221753a
+SSL_CTX_new(0x7fffe2045f80 [size: 0xe0]) @ 0x00007fffe221763e
+~> change arg #0x1 from 0x7fffe2045f80 to 0x555555584190

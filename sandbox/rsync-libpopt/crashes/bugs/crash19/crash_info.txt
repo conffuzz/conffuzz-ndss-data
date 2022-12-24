@@ -1,0 +1,2 @@
+fault_location /usr/local/bin/rsync
+cap_null_deref

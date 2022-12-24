@@ -1,0 +1,4 @@
+fault_location /root/ffmpeg-5.0/ffprobe
+cap_read
+cap_null_deref
+cap_read_arbitrary

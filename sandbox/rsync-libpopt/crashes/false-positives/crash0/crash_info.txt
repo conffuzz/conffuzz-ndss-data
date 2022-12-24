@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libpopt.so.0.0.2
+cap_null_deref
+cap_read
+cap_read_arbitrary

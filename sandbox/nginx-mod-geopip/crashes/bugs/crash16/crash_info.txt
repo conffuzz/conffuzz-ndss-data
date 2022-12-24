@@ -1,0 +1,2 @@
+fault_location /usr/lib/x86_64-linux-gnu/libmaxminddb.so.0.0.7
+cap_write

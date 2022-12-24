@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==10371==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000004 (pc 0x555555632ec7 bp 0x7fffffffe0f0 sp 0x7fffffffae80 T0)
+==10371==The signal is caused by a WRITE memory access.
+==10371==Hint: address points to the zero page.
+    #0 0x555555632ec7 in config_plugin_values_init /root/lighttpd-1.4.67/src/configfile-glue.c:343
+    #1 0x7fffdbf682cd in mod_deflate_set_defaults /root/lighttpd-1.4.67/src/mod_deflate.c:730
+    #2 0x5555555acbc8 in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #3 0x5555555acee1 in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #4 0x5555555882f6 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #5 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #6 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/configfile-glue.c:343 in config_plugin_values_init
+==10371==ABORTING

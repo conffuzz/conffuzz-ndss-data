@@ -1,0 +1,113 @@
+[I] Recursing from tifffield into _TIFFField
+[I] Recursing from tiffcodec into structure 
+[E] Not able to find type information for tiffcodec in DWARF
+[I] Recursing from tiffrgbaimage into _TIFFRGBAImage
+[I] Recursing from tiffcielabtorgb into structure 
+[E] Not able to find type information for tiffcielabtorgb in DWARF
+[I] Recursing from tiffycbcrtorgb into structure 
+[E] Not able to find type information for tiffycbcrtorgb in DWARF
+[I] Recursing from tifffieldarray into _TIFFFieldArray
+[I] Recursing from uint16_t into __uint16_t
+[I] Recursing from __uint16_t into short unsigned int
+[E] Not able to find type information for uint16_t in DWARF
+[I] Recursing from tifffieldinfo into structure 
+[E] Not able to find type information for tifffieldinfo in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from tiffdisplay into structure 
+[E] Not able to find type information for tiffdisplay in DWARF
+[I] Attempting to instrument callback TIFFErrors
+Got function argument numbers (3) from cache!
+Tried and failed to write to 0x00007fffb9b91d80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b91d80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b91d80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b91d80 (1 bytes)
+[I] Attempting to instrument callback TIFFWarnings
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFTagExtender
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFReadBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFWriteBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFSeekBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFCloseBlob
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFGetBlobSize
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFMapBlob
+[E] Not able to find type information for tdata_t in DWARF
+[I] Recursing from toff_t into uint64_t
+[I] Recursing from uint64_t into __uint64_t
+[I] Recursing from __uint64_t into long unsigned int
+[E] Not able to find type information for toff_t in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFUnmapBlob
+Got function argument numbers (3) from cache!
+=================================================================
+==44951==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x62700010a0b7 at pc 0x7fffe209907a bp 0x7fffffff6ff0 sp 0x7fffffff6fe8
+READ of size 8 at 0x62700010a0b7 thread T0
+    #0 0x7fffe2099079 in WriteBlob MagickCore/blob.c:5605
+    #1 0x7fffb9b82d8c in TIFFWriteBlob coders/tiff.c:965
+    #2 0x7fffb9b23c8e in TIFFClientOpen /root/tiff-4.3.0/libtiff/tif_open.c:334
+    #3 0x7fffb9b91fc9 in WriteTIFFImage coders/tiff.c:3376
+    #4 0x7fffe212566f in WriteImage MagickCore/constitute.c:1337
+    #5 0x7fffe2126745 in WriteImages MagickCore/constitute.c:1558
+    #6 0x7fffe1be9121 in ConvertImageCommand MagickWand/convert.c:3330
+    #7 0x7fffe1d0a1f6 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #8 0x555555556823 in MagickMain utilities/magick.c:150
+    #9 0x555555556aba in main utilities/magick.c:182
+    #10 0x7fffe11dd7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #11 0x555555556239 in _start (/usr/local/bin/magick+0x2239)
+
+0x62700010a0b7 is located 759 bytes to the right of 13504-byte region [0x627000106900,0x627000109dc0)
+allocated by thread T0 here:
+    #0 0x7fffe28f77cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe230470a in AcquireMagickMemory MagickCore/memory.c:558
+    #2 0x7fffe230472c in AcquireCriticalMemory MagickCore/memory.c:634
+    #3 0x7fffe22bbe72 in AcquireImage MagickCore/image.c:150
+    #4 0x7fffbeb14430 in ReadPNGImage coders/png.c:4279
+    #5 0x7fffe2121a7e in ReadImage MagickCore/constitute.c:728
+    #6 0x7fffd5367c0f in ReadPSImage coders/ps.c:844
+    #7 0x7fffe2121a7e in ReadImage MagickCore/constitute.c:728
+    #8 0x7fffe2124399 in ReadImages MagickCore/constitute.c:1075
+    #9 0x7fffe1b6c14c in ConvertImageCommand MagickWand/convert.c:614
+    #10 0x7fffe1d0a1f6 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #11 0x555555556823 in MagickMain utilities/magick.c:150
+    #12 0x555555556aba in main utilities/magick.c:182
+    #13 0x7fffe11dd7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow MagickCore/blob.c:5605 in WriteBlob
+Shadow bytes around the buggy address:
+  0x0c4e800193c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4e800193d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4e800193e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4e800193f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4e80019400: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c4e80019410: fa fa fa fa fa fa[fa]fa fa fa fa fa fa fa fa fa
+  0x0c4e80019420: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c4e80019430: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c4e80019440: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c4e80019450: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c4e80019460: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==44951==ABORTING

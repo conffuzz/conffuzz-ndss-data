@@ -1,0 +1,24 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+dumpcap: ª.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==86666==ERROR: AddressSanitizer: SEGV on unknown address 0x7fffe2ffffff (pc 0x7fffe2ffffff bp 0x7fffffffc330 sp 0x7fffffffc318 T0)
+==86666==The signal is caused by a READ memory access.
+==86666==Hint: PC is at a non-executable region. Maybe a wild jump?
+    #0 0x7fffe2ffffff in __sanitizer::theDepot (/usr/lib/x86_64-linux-gnu/libasan.so.6+0x988fff)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/lib/x86_64-linux-gnu/libasan.so.6+0x988fff) in __sanitizer::theDepot
+==86666==ABORTING

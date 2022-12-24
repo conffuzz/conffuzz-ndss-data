@@ -1,0 +1,2738 @@
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqeglfs.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqeglfs.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "eglfs"
+        ]
+    },
+    "archreq": 0,
+    "className": "QEglFSIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("eglfs")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqlinuxfb.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqlinuxfb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "linuxfb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QLinuxFbIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("linuxfb")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimal.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimal.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimal"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("minimal")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimalegl.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqminimalegl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "minimalegl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QMinimalEglIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("minimalegl")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqoffscreen.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqoffscreen.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "offscreen"
+        ]
+    },
+    "archreq": 0,
+    "className": "QOffscreenIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("offscreen")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqvnc.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqvnc.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "vnc"
+        ]
+    },
+    "archreq": 0,
+    "className": "QVncIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("vnc")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-egl.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("wayland-egl")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-generic.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-generic.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("wayland")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-xcomposite-egl.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-xcomposite-egl.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeEglPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("wayland-xcomposite-egl")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-xcomposite-glx.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqwayland-xcomposite-glx.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "wayland-xcomposite-glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QWaylandXCompositeGlxPlatformIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("wayland-xcomposite-glx")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("xcb")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/platforms" ...
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so"
+loaded library "Xcursor"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes/libqgtk3.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes/libqgtk3.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformThemeFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "gtk3"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGtk3ThemePlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("gtk3")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/platformthemes" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "compose",
+            "xim"
+        ]
+    },
+    "archreq": 0,
+    "className": "QComposePlatformInputContextPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("compose", "xim")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1",
+    "MetaData": {
+        "Keys": [
+            "ibus"
+        ]
+    },
+    "archreq": 0,
+    "className": "QIbusPlatformInputContextPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("ibus")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/platforminputcontexts" ...
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/iconengines" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/iconengines/KIconEnginePlugin.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/iconengines/KIconEnginePlugin.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QIconEngineFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "KIconEngine"
+        ]
+    },
+    "archreq": 0,
+    "className": "KIconEnginePlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("kiconengine")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/iconengines/libqsvgicon.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/iconengines/libqsvgicon.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QIconEngineFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz",
+            "svg.gz"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgIconPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("svg", "svgz", "svg.gz")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/iconengines" ...
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/styles" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/styles" ...
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/kf5/kwindowsystem/KF5WindowSystemKWaylandPlugin.so, metadata=
+{
+    "IID": "org.kde.kwindowsystem.KWindowSystemPluginInterface",
+    "MetaData": {
+        "platforms": [
+            "wayland",
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "KWaylandPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/kf5/kwindowsystem/KF5WindowSystemWaylandPlugin.so, metadata=
+{
+    "IID": "org.kde.kwindowsystem.KWindowSystemPluginInterface",
+    "MetaData": {
+        "platforms": [
+            "wayland",
+            "wayland-egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "WaylandPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/kf5/kwindowsystem/KF5WindowSystemX11Plugin.so, metadata=
+{
+    "IID": "org.kde.kwindowsystem.KWindowSystemPluginInterface",
+    "MetaData": {
+        "platforms": [
+            "xcb"
+        ]
+    },
+    "archreq": 0,
+    "className": "X11Plugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/kf5/kwindowsystem/KF5WindowSystemX11Plugin.so"
+Trying... "/usr/lib/x86_64-linux-gnu/qt5/plugins/okularpart"
+Trying... "/usr/lib/x86_64-linux-gnu/qt5/plugins/okularpart.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okularpart.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "archreq": 1,
+    "className": "OkularPartFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/okularpart.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqgif.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqgif.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "gif"
+        ],
+        "MimeTypes": [
+            "image/gif"
+        ]
+    },
+    "archreq": 0,
+    "className": "QGifPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("gif")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqico.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqico.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "ico",
+            "cur"
+        ],
+        "MimeTypes": [
+            "image/vnd.microsoft.icon",
+            "image/vnd.microsoft.icon"
+        ]
+    },
+    "archreq": 0,
+    "className": "QICOPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("ico", "cur")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jpg",
+            "jpeg"
+        ],
+        "MimeTypes": [
+            "image/jpeg",
+            "image/jpeg"
+        ]
+    },
+    "archreq": 0,
+    "className": "QJpegPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("jpg", "jpeg")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqsvg.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqsvg.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "svg",
+            "svgz"
+        ],
+        "MimeTypes": [
+            "image/svg+xml",
+            "image/svg+xml-compressed"
+        ]
+    },
+    "archreq": 0,
+    "className": "QSvgPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("svg", "svgz")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/imageformats" ...
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqgif.so"
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqico.so"
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so"
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqsvg.so"
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/accessible" ...
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/accessible" ...
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_txt.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "a3at.mail@gmail.com",
+                    "Name": "Azat Khuzhin",
+                    "Name[ar]": "Azat Khuzhin",
+                    "Name[az]": "Azat Khuzhin",
+                    "Name[ca@valencia]": "Azat Khuzhin",
+                    "Name[ca]": "Azat Khuzhin",
+                    "Name[cs]": "Azat Khuzhin",
+                    "Name[da]": "Azat Khuzhin",
+                    "Name[de]": "Azat Khuzhin",
+                    "Name[el]": "Azat Khuzhin",
+                    "Name[en_GB]": "Azat Khuzhin",
+                    "Name[es]": "Azat Khuzhin",
+                    "Name[et]": "Azat Khuzhin",
+                    "Name[eu]": "Azat Khuzhin",
+                    "Name[fi]": "Azat Khuzhin",
+                    "Name[fr]": "Azat Khuzhin",
+                    "Name[gl]": "Azat Khuzhin",
+                    "Name[hu]": "Azat Khuzhin",
+                    "Name[ia]": "Azat Khuzhin",
+                    "Name[it]": "Azat Khuzhin",
+                    "Name[ko]": "Azat Khuzhin",
+                    "Name[lt]": "Azat Khuzhin",
+                    "Name[nl]": "Azat Khuzhin",
+                    "Name[nn]": "Azat Khuzhin",
+                    "Name[pl]": "Azat Khuzhin",
+                    "Name[pt]": "Azat Khuzhin",
+                    "Name[pt_BR]": "Azat Khuzhin",
+                    "Name[ru]": "Азат Хужин",
+                    "Name[sk]": "Azat Khuzhin",
+                    "Name[sl]": "Azat Khuzhin",
+                    "Name[sr@ijekavian]": "Азат Хужин",
+                    "Name[sr@ijekavianlatin]": "Azat Hužin",
+                    "Name[sr@latin]": "Azat Hužin",
+                    "Name[sr]": "Азат Хужин",
+                    "Name[sv]": "Azat Khuzhin",
+                    "Name[tr]": "Azat Khuzhin",
+                    "Name[uk]": "Azat Khuzhin",
+                    "Name[vi]": "Azat Khuzhin",
+                    "Name[x-test]": "xxAzat Khuzhinxx",
+                    "Name[zh_CN]": "Azat Khuzhin",
+                    "Name[zh_TW]": "Azat Khuzhin"
+                }
+            ],
+            "Copyright": "© 2013 Azat Khuzhin",
+            "Copyright[ar]": "© 2013 Azat Khuzhin",
+            "Copyright[az]": "© 2013 Azat Khuzhin",
+            "Copyright[ca@valencia]": "© 2013 Azat Khuzhin",
+            "Copyright[ca]": "© 2013 Azat Khuzhin",
+            "Copyright[cs]": "© 2013 Azat Khuzhin",
+            "Copyright[da]": "© 2013 Azat Khuzhin",
+            "Copyright[de]": "© 2013 Azat Khuzhin",
+            "Copyright[el]": "© 2013 Azat Khuzhin",
+            "Copyright[en_GB]": "© 2013 Azat Khuzhin",
+            "Copyright[es]": "© 2013 Azat Khuzhin",
+            "Copyright[et]": "© 2013: Azat Khuzhin",
+            "Copyright[eu]": "© 2013 Azat Khuzhin",
+            "Copyright[fi]": "© 2013 Azat Khuzhin",
+            "Copyright[fr]": "© 2013 Azat Khuzhin",
+            "Copyright[gl]": "© 2013 Azat Khuzhin",
+            "Copyright[hu]": "© Azat Khuzhin, 2013.",
+            "Copyright[ia]": "© 2013 Azat Khuzhin",
+            "Copyright[it]": "© 2013 Azat Khuzhin",
+            "Copyright[ko]": "© 2013 Azat Khuzhin",
+            "Copyright[lt]": "© 2013 Azat Khuzhin",
+            "Copyright[nl]": "© 2013 Azat Khuzhin",
+            "Copyright[nn]": "© 2013 Azat Khuzhin",
+            "Copyright[pa]": "© 2013 Azat Khuzhin",
+            "Copyright[pl]": "© 2013 Azat Khuzhin",
+            "Copyright[pt]": "© 2013 Azat Khuzhin",
+            "Copyright[pt_BR]": "© 2013 Azat Khuzhin",
+            "Copyright[ru]": "© Азат Хужин, 2013",
+            "Copyright[sk]": "© 2013 Azat Khuzhin",
+            "Copyright[sl]": "© 2013 Azat Khuzhin",
+            "Copyright[sr@ijekavian]": "© 2013, Азат Хужин",
+            "Copyright[sr@ijekavianlatin]": "© 2013, Azat Hužin",
+            "Copyright[sr@latin]": "© 2013, Azat Hužin",
+            "Copyright[sr]": "© 2013, Азат Хужин",
+            "Copyright[sv]": "© 2013 Azat Khuzhin",
+            "Copyright[tr]": "© 2013 Azat Khuzhin",
+            "Copyright[uk]": "© Azat Khuzhin, 2013",
+            "Copyright[vi]": "© 2013 Azat Khuzhin",
+            "Copyright[x-test]": "xx© 2013 Azat Khuzhinxx",
+            "Copyright[zh_CN]": "© 2013 Azat Khuzhin",
+            "Copyright[zh_TW]": "© 2013 Azat Khuzhin",
+            "Description": "Txt backend",
+            "Description[ar]": "خلفية النص",
+            "Description[az]": "Txt modulu",
+            "Description[ca@valencia]": "Dorsal de txt",
+            "Description[ca]": "Dorsal de txt",
+            "Description[cs]": "Podpůrná vrstva txt",
+            "Description[da]": "Txt-backend",
+            "Description[de]": "Anzeigemodul für Textformat",
+            "Description[el]": "Σύστημα υποστήριξης txt",
+            "Description[en_GB]": "Txt backend",
+            "Description[es]": "Motor Txt",
+            "Description[et]": "Txt taustaprogramm",
+            "Description[eu]": "Txt-ren bizkarraldekoa",
+            "Description[fi]": "Txt-taustaosa",
+            "Description[fr]": "Moteur Txt",
+            "Description[gl]": "Infraestrutura para txt.",
+            "Description[hu]": "TXT modul",
+            "Description[ia]": "Retro-administration per Txt ",
+            "Description[it]": "Backend di testo semplice",
+            "Description[ko]": "TXT 백엔드",
+            "Description[lt]": "Txt programinė sąsaja",
+            "Description[nl]": "Txt-backend",
+            "Description[nn]": "Txt-motor",
+            "Description[pa]": "Txt ਬੈਕਐਂਡ",
+            "Description[pl]": "Obsługa plików tekstowych",
+            "Description[pt]": "Infra-estrutura de TXT",
+            "Description[pt_BR]": "Infraestrutura Txt",
+            "Description[ru]": "Модуль поддержки формата Txt",
+            "Description[sk]": "Txt backend",
+            "Description[sl]": "Zaledje za txt",
+            "Description[sr@ijekavian]": "Позадина за текст",
+            "Description[sr@ijekavianlatin]": "Pozadina za tekst",
+            "Description[sr@latin]": "Pozadina za tekst",
+            "Description[sr]": "Позадина за текст",
+            "Description[sv]": "Textgränssnitt",
+            "Description[tr]": "Txt arka ucu",
+            "Description[uk]": "Модуль тексту",
+            "Description[vi]": "Hậu phương Txt",
+            "Description[x-test]": "xxTxt backendxx",
+            "Description[zh_CN]": "纯文本后端",
+            "Description[zh_TW]": "Txt 後端介面",
+            "Id": "okular_txt",
+            "License": "GPL",
+            "MimeTypes": [
+                "text/plain"
+            ],
+            "Name": "Txt Backend",
+            "Name[ar]": "خلفية النص",
+            "Name[az]": "Txt modulu",
+            "Name[ca@valencia]": "Dorsal txt",
+            "Name[ca]": "Dorsal txt",
+            "Name[cs]": "Podpůrná vrstva txt",
+            "Name[da]": "Txt-backend",
+            "Name[de]": "Anzeigemodul für Textformat",
+            "Name[el]": "Σύστημα υποστήριξης txt",
+            "Name[en_GB]": "Txt Backend",
+            "Name[es]": "Motor para Txt",
+            "Name[et]": "Txt taustaprogramm",
+            "Name[eu]": "Txt-ren bizkarraldekoa",
+            "Name[fi]": "Txt-taustaosa",
+            "Name[fr]": "Moteur Txt",
+            "Name[gl]": "Infraestrutura para txt",
+            "Name[hu]": "TXT modul",
+            "Name[ia]": "Retro-administration per Txt ",
+            "Name[it]": "Backend di testo semplice",
+            "Name[ko]": "TXT 백엔드",
+            "Name[lt]": "Txt programinė sąsaja",
+            "Name[nl]": "Txt-backend",
+            "Name[nn]": "Txt-motor",
+            "Name[pa]": "Txt ਬੈਕਐਂਡ",
+            "Name[pl]": "Obsługa plików tekstowych",
+            "Name[pt]": "Infra-Estrutura de TXT",
+            "Name[pt_BR]": "Infraestrutura Txt",
+            "Name[ru]": "Модуль поддержки формата Txt",
+            "Name[sk]": "Txt backend",
+            "Name[sl]": "Zaledje za txt",
+            "Name[sr@ijekavian]": "Позадина за текст",
+            "Name[sr@ijekavianlatin]": "Pozadina za tekst",
+            "Name[sr@latin]": "Pozadina za tekst",
+            "Name[sr]": "Позадина за текст",
+            "Name[sv]": "Textgränssnitt",
+            "Name[tr]": "Txt Arka Ucu",
+            "Name[uk]": "Модуль тексту",
+            "Name[vi]": "Hậu phương Txt",
+            "Name[x-test]": "xxTxt Backendxx",
+            "Name[zh_CN]": "纯文本后端",
+            "Name[zh_TW]": "Txt 後端介面",
+            "Version": "0.1"
+        },
+        "X-KDE-Priority": 2,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": true
+    },
+    "archreq": 1,
+    "className": "TxtGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_dvi.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "luigi.toscano@tiscali.it",
+                    "Name": "Luigi Toscano",
+                    "Name[ar]": "Luigi Toscano",
+                    "Name[az]": "Luigi Toscano",
+                    "Name[ca@valencia]": "Luigi Toscano",
+                    "Name[ca]": "Luigi Toscano",
+                    "Name[cs]": "Luigi Toscano",
+                    "Name[da]": "Luigi Toscano",
+                    "Name[de]": "Luigi Toscano",
+                    "Name[el]": "Luigi Toscano",
+                    "Name[en_GB]": "Luigi Toscano",
+                    "Name[es]": "Luigi Toscano",
+                    "Name[et]": "Luigi Toscano",
+                    "Name[eu]": "Luigi Toscano",
+                    "Name[fi]": "Luigi Toscano",
+                    "Name[fr]": "Luigi Toscano",
+                    "Name[gl]": "Luigi Toscano",
+                    "Name[hu]": "Luigi Toscano",
+                    "Name[ia]": "Luigi Toscano",
+                    "Name[it]": "Luigi Toscano",
+                    "Name[ko]": "Luigi Toscano",
+                    "Name[lt]": "Luigi Toscano",
+                    "Name[nl]": "Luigi Toscano",
+                    "Name[nn]": "Luigi Toscano",
+                    "Name[pl]": "Luigi Toscano",
+                    "Name[pt]": "Luigi Toscano",
+                    "Name[pt_BR]": "Luigi Toscano",
+                    "Name[ru]": "Luigi Toscano",
+                    "Name[sk]": "Luigi Toscano",
+                    "Name[sl]": "Luigi Toscano",
+                    "Name[sr@ijekavian]": "Луиђи Тоскано",
+                    "Name[sr@ijekavianlatin]": "Luiđi Toskano",
+                    "Name[sr@latin]": "Luiđi Toskano",
+                    "Name[sr]": "Луиђи Тоскано",
+                    "Name[sv]": "Luigi Toscano",
+                    "Name[tr]": "Luigi Toscano",
+                    "Name[uk]": "Luigi Toscano",
+                    "Name[vi]": "Luigi Toscano",
+                    "Name[x-test]": "xxLuigi Toscanoxx",
+                    "Name[zh_CN]": "Luigi Toscano",
+                    "Name[zh_TW]": "Luigi Toscano"
+                }
+            ],
+            "Copyright": "© 2006 Luigi Toscano",
+            "Copyright[ar]": "© 2006 Luigi Toscano",
+            "Copyright[az]": "© 2006 Luigi Toscano",
+            "Copyright[ca@valencia]": "© 2006 Luigi Toscano",
+            "Copyright[ca]": "© 2006 Luigi Toscano",
+            "Copyright[cs]": "© 2006 Luigi Toscano",
+            "Copyright[da]": "© 2006 Luigi Toscano",
+            "Copyright[de]": "© 2006 Luigi Toscano",
+            "Copyright[el]": "© 2006 Luigi Toscano",
+            "Copyright[en_GB]": "© 2006 Luigi Toscano",
+            "Copyright[es]": "© 2006 Luigi Toscano",
+            "Copyright[et]": "© 2006: Luigi Toscano",
+            "Copyright[eu]": "© 2006 Luigi Toscano",
+            "Copyright[fi]": "© 2006 Luigi Toscano",
+            "Copyright[fr]": "© 2006 Luigi Toscano",
+            "Copyright[gl]": "© 2006 Luigi Toscano",
+            "Copyright[hu]": "© Luigi Toscano, 2006.",
+            "Copyright[ia]": "© 2006 Pino Toscano",
+            "Copyright[it]": "© 2006 Luigi Toscano",
+            "Copyright[ko]": "© 2006 Luigi Toscano",
+            "Copyright[lt]": "© 2006 Luigi Toscano",
+            "Copyright[nl]": "© 2006 Luigi Toscano",
+            "Copyright[nn]": "© 2006 Luigi Toscano",
+            "Copyright[pa]": "© 2006 Luigi Toscano",
+            "Copyright[pl]": "© 2006 Luigi Toscano",
+            "Copyright[pt]": "© 2006 Luigi Toscano",
+            "Copyright[pt_BR]": "© 2006 Luigi Toscano",
+            "Copyright[ru]": "© Luigi Toscano, 2006",
+            "Copyright[sk]": "© 2006 Luigi Toscano",
+            "Copyright[sl]": "© 2006 Luigi Toscano",
+            "Copyright[sr@ijekavian]": "© 2006, Луиђи Тоскано",
+            "Copyright[sr@ijekavianlatin]": "© 2006, Luiđi Toskano",
+            "Copyright[sr@latin]": "© 2006, Luiđi Toskano",
+            "Copyright[sr]": "© 2006, Луиђи Тоскано",
+            "Copyright[sv]": "© 2006 Luigi Toscano",
+            "Copyright[tr]": "© 2006 Luigi Toscano",
+            "Copyright[uk]": "© Luigi Toscano, 2006",
+            "Copyright[vi]": "© 2006 Luigi Toscano",
+            "Copyright[x-test]": "xx© 2006 Luigi Toscanoxx",
+            "Copyright[zh_CN]": "© 2006 Luigi Toscano",
+            "Copyright[zh_TW]": "© 2006 Luigi Toscano",
+            "Description": "A DVI file renderer",
+            "Description[ar]": "عارض ملف DVI",
+            "Description[az]": "DVİ faylı tərtibatçısı",
+            "Description[ca@valencia]": "Un renderitzador de fitxers DVI",
+            "Description[ca]": "Un renderitzador de fitxers DVI",
+            "Description[cs]": "Vykreslovač DVI souborů",
+            "Description[da]": "En gengiver til DVI-filer",
+            "Description[de]": "Ein Renderer für DVI-Dateien",
+            "Description[el]": "Πρόγραμμα αποτύπωσης για DVI αρχεία",
+            "Description[en_GB]": "A DVI file renderer",
+            "Description[es]": "Un visor de archivos DVI",
+            "Description[et]": "DVI-faili renderdaja",
+            "Description[eu]": "DVI fitxategi errendatzaile bat",
+            "Description[fi]": "DVI-tiedostohahmonnin",
+            "Description[fr]": "Système de rendu pour fichiers « DVI »",
+            "Description[gl]": "Un visor de ficheiros DVI",
+            "Description[hu]": "DVI-fájl leképező",
+            "Description[ia]": "Un renditor de file de DVI",
+            "Description[it]": "Un visualizzatore di file DVI",
+            "Description[ko]": "DVI 파일 렌더러",
+            "Description[lt]": "DVI failų atvaizdavimas",
+            "Description[nl]": "Een DVI-bestandsweergever",
+            "Description[nn]": "Ein gjengjevar for DVI-filer",
+            "Description[pl]": "Wyświetlanie plików DVI",
+            "Description[pt]": "Um visualizador de ficheiros DVI",
+            "Description[pt_BR]": "Um renderizador de arquivo DVI",
+            "Description[ru]": "Модуль поддержки формата DVI",
+            "Description[sk]": "Vykresľovanie DVI súborov",
+            "Description[sl]": "Izrisovalnik datotek DVI",
+            "Description[sr@ijekavian]": "Рендерер ДВИ фајлова",
+            "Description[sr@ijekavianlatin]": "Renderer DVI fajlova",
+            "Description[sr@latin]": "Renderer DVI fajlova",
+            "Description[sr]": "Рендерер ДВИ фајлова",
+            "Description[sv]": "Ett återgivningsprogram för DVI-filer",
+            "Description[tr]": "Bir DVI dosya oluşturucu",
+            "Description[uk]": "Інструмент для показу файлів DVI",
+            "Description[vi]": "Một trình kết xuất tệp DVI",
+            "Description[x-test]": "xxA DVI file rendererxx",
+            "Description[zh_CN]": "DVI 文件渲染器",
+            "Description[zh_TW]": "DVI 檔成像器",
+            "Id": "okular_dvi",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/x-dvi"
+            ],
+            "Name": "DVI Backend",
+            "Name[ar]": "خلفية DVI",
+            "Name[az]": "DVİ modulu",
+            "Name[ca@valencia]": "Dorsal DVI",
+            "Name[ca]": "Dorsal DVI",
+            "Name[cs]": "Implementace DVI",
+            "Name[da]": "DVI-backend",
+            "Name[de]": "Anzeigemodul für DVI",
+            "Name[el]": "Σύστημα υποστήριξης DVI",
+            "Name[en_GB]": "DVI Backend",
+            "Name[es]": "Motor para DVI",
+            "Name[et]": "DVI taustaprogramm",
+            "Name[eu]": "DVIren bizkarraldekoa",
+            "Name[fi]": "DVI-taustaosa",
+            "Name[fr]": "Moteur DVI",
+            "Name[gl]": "Infraestrutura de DVI",
+            "Name[hu]": "DVI modul",
+            "Name[ia]": "Retro-administration de DVI",
+            "Name[it]": "Backend DVI",
+            "Name[ko]": "DVI 백엔드",
+            "Name[lt]": "DVI programinė sąsaja",
+            "Name[nl]": "DVI-backend",
+            "Name[nn]": "DVI-motor",
+            "Name[pa]": "DVI ਬੈਕਐਂਡ",
+            "Name[pl]": "Obsługa DVI",
+            "Name[pt]": "Infra-Estrutura de DVI",
+            "Name[pt_BR]": "Infraestrutura DVI",
+            "Name[ru]": "Модуль поддержки формата DVI",
+            "Name[sk]": "DVI Backend",
+            "Name[sl]": "Zaledje za DVI",
+            "Name[sr@ijekavian]": "Позадина за ДВИ",
+            "Name[sr@ijekavianlatin]": "Pozadina za DVI",
+            "Name[sr@latin]": "Pozadina za DVI",
+            "Name[sr]": "Позадина за ДВИ",
+            "Name[sv]": "DVI-gränssnitt",
+            "Name[tr]": "DVI Arka Ucu",
+            "Name[uk]": "Модуль DVI",
+            "Name[vi]": "Hậu phương DVI",
+            "Name[x-test]": "xxDVI Backendxx",
+            "Name[zh_CN]": "DVI 后端",
+            "Name[zh_TW]": "DVI 後端介面",
+            "Version": "0.3.7"
+        },
+        "X-KDE-Priority": 2,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "DviGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_xps.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "bradh@frogmouth.net",
+                    "Name": "Brad Hards",
+                    "Name[ar]": "Brad Hards",
+                    "Name[az]": "Brad Hards",
+                    "Name[ca@valencia]": "Brad Hards",
+                    "Name[ca]": "Brad Hards",
+                    "Name[cs]": "Brad Hards",
+                    "Name[da]": "Brad Hards",
+                    "Name[de]": "Brad Hards",
+                    "Name[el]": "Brad Hards",
+                    "Name[en_GB]": "Brad Hards",
+                    "Name[es]": "Brad Hards",
+                    "Name[et]": "Brad Hards",
+                    "Name[eu]": "Brad Hards",
+                    "Name[fi]": "Brad Hards",
+                    "Name[fr]": "Brad Hards",
+                    "Name[gl]": "Brad Hards",
+                    "Name[hu]": "Brad Hards",
+                    "Name[ia]": "Brad Hards",
+                    "Name[it]": "Brad Hards",
+                    "Name[ko]": "Brad Hards",
+                    "Name[lt]": "Brad Hards",
+                    "Name[nl]": "Brad Hards",
+                    "Name[nn]": "Brad Hards",
+                    "Name[pa]": "ਬਰਾਂਡ ਹਾਰਡਸ",
+                    "Name[pl]": "Brad Hards",
+                    "Name[pt]": "Brad Hards",
+                    "Name[pt_BR]": "Brad Hards",
+                    "Name[ru]": "Brad Hards",
+                    "Name[sk]": "Brad Hards",
+                    "Name[sl]": "Brad Hards",
+                    "Name[sr@ijekavian]": "Бред Хардс",
+                    "Name[sr@ijekavianlatin]": "Bred Hards",
+                    "Name[sr@latin]": "Bred Hards",
+                    "Name[sr]": "Бред Хардс",
+                    "Name[sv]": "Brad Hards",
+                    "Name[tr]": "Brad Hards",
+                    "Name[uk]": "Brad Hards",
+                    "Name[vi]": "Brad Hards",
+                    "Name[x-test]": "xxBrad Hardsxx",
+                    "Name[zh_CN]": "Brad Hards",
+                    "Name[zh_TW]": "Brad Hards"
+                },
+                {
+                    "Email": "jiri.klement@gmail.com",
+                    "Name": "Jiri Klement",
+                    "Name[ar]": "Jiri Klement",
+                    "Name[az]": "Jiri Klement",
+                    "Name[ca@valencia]": "Jiri Klement",
+                    "Name[ca]": "Jiri Klement",
+                    "Name[cs]": "Jiří Klement",
+                    "Name[da]": "Jiri Klement",
+                    "Name[de]": "Jiri Klement",
+                    "Name[el]": "Jiri Klement",
+                    "Name[en_GB]": "Jiri Klement",
+                    "Name[es]": "Jiri Klement",
+                    "Name[et]": "Jiri Klement",
+                    "Name[eu]": "Jiri Klement",
+                    "Name[fi]": "Jiri Klement",
+                    "Name[fr]": "Jiri Klement",
+                    "Name[gl]": "Jiri Klement",
+                    "Name[hu]": "Jiri Klement",
+                    "Name[ia]": "Jiri Klement",
+                    "Name[it]": "Jiri Klement",
+                    "Name[ko]": "Jiri Klement",
+                    "Name[lt]": "Jiri Klement",
+                    "Name[nl]": "Jiri Klement",
+                    "Name[nn]": "Jiri Klement",
+                    "Name[pl]": "Jiri Klement",
+                    "Name[pt]": "Jiri Klement",
+                    "Name[pt_BR]": "Jiri Klement",
+                    "Name[ru]": "Jiri Klement",
+                    "Name[sk]": "Jiri Klement",
+                    "Name[sl]": "Jiri Klement",
+                    "Name[sr@ijekavian]": "Јиржи Клемент",
+                    "Name[sr@ijekavianlatin]": "Jirži Klement",
+                    "Name[sr@latin]": "Jirži Klement",
+                    "Name[sr]": "Јиржи Клемент",
+                    "Name[sv]": "Jiri Klement",
+                    "Name[tr]": "Jiri Klement",
+                    "Name[uk]": "Jiri Klement",
+                    "Name[vi]": "Jiri Klement",
+                    "Name[x-test]": "xxJiri Klementxx",
+                    "Name[zh_CN]": "Jiri Klement",
+                    "Name[zh_TW]": "Jiri Klement"
+                },
+                {
+                    "Email": "pino@kde.org",
+                    "Name": "Pino Toscano",
+                    "Name[ar]": "Pino Toscano",
+                    "Name[az]": "Pino Toscano",
+                    "Name[ca@valencia]": "Pino Toscano",
+                    "Name[ca]": "Pino Toscano",
+                    "Name[cs]": "Pino Toscano",
+                    "Name[da]": "Pino Toscano",
+                    "Name[de]": "Pino Toscano",
+                    "Name[el]": "Pino Toscano",
+                    "Name[en_GB]": "Pino Toscano",
+                    "Name[es]": "Pino Toscano",
+                    "Name[et]": "Pino Toscano",
+                    "Name[eu]": "Pino Toscano",
+                    "Name[fi]": "Pino Toscano",
+                    "Name[fr]": "Pino Toscano",
+                    "Name[gl]": "Pino Toscano",
+                    "Name[hu]": "Pino Toscano",
+                    "Name[ia]": "Pino Toscano",
+                    "Name[it]": "Pino Toscano",
+                    "Name[ko]": "Pino Toscano",
+                    "Name[lt]": "Pino Toscano",
+                    "Name[nl]": "Pino Toscano",
+                    "Name[nn]": "Pino Toscano",
+                    "Name[pa]": "ਪਿਨੋ ਟਿਸਕਾਨੋ",
+                    "Name[pl]": "Pino Toscano",
+                    "Name[pt]": "Pino Toscano",
+                    "Name[pt_BR]": "Pino Toscano",
+                    "Name[ru]": "Pino Toscano",
+                    "Name[sk]": "Pino Toscano",
+                    "Name[sl]": "Pino Toscano",
+                    "Name[sr@ijekavian]": "Пино Тоскано",
+                    "Name[sr@ijekavianlatin]": "Pino Toskano",
+                    "Name[sr@latin]": "Pino Toskano",
+                    "Name[sr]": "Пино Тоскано",
+                    "Name[sv]": "Pino Toscano",
+                    "Name[tr]": "Pino Toscano",
+                    "Name[uk]": "Pino Toscano",
+                    "Name[vi]": "Pino Toscano",
+                    "Name[x-test]": "xxPino Toscanoxx",
+                    "Name[zh_CN]": "Pino Toscano",
+                    "Name[zh_TW]": "Pino Toscano"
+                }
+            ],
+            "Copyright": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[ar]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[az]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[ca@valencia]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[ca]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[cs]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[da]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[de]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[el]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[en_GB]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[es]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[et]": "© 2006-2007: Brad Hards\n© 2007: Jiri Klement\n© 2008: Pino Toscano",
+            "Copyright[eu]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[fi]": "© 2006–2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[fr]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[gl]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[hu]": "© Brad Hards, 2006-2007.\n© Jiri Klement, 2007.\n© Pino Toscano, 2008.",
+            "Copyright[ia]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[it]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[ko]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[lt]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[nl]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[nn]": "© 2006–2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[pa]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[pl]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[pt]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[pt_BR]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[ru]": "© Brad Hards, 2006-2007\n© Jiri Klement, 2007\n© Pino Toscano, 2008",
+            "Copyright[sk]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[sl]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[sr@ijekavian]": "© 2006–2007, Бред Хардс\n© 2007, Јиржи Клемент\n© 2008, Пино Тоскано",
+            "Copyright[sr@ijekavianlatin]": "© 2006–2007, Bred Hards\n© 2007, Jirži Klement\n© 2008, Pino Toskano",
+            "Copyright[sr@latin]": "© 2006–2007, Bred Hards\n© 2007, Jirži Klement\n© 2008, Pino Toskano",
+            "Copyright[sr]": "© 2006–2007, Бред Хардс\n© 2007, Јиржи Клемент\n© 2008, Пино Тоскано",
+            "Copyright[sv]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[tr]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[uk]": "© Brad Hards, 2006–2007\n© Jiri Klement, 2007\n© Pino Toscano, 2008",
+            "Copyright[vi]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[x-test]": "xx© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscanoxx",
+            "Copyright[zh_CN]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Copyright[zh_TW]": "© 2006-2007 Brad Hards\n© 2007 Jiri Klement\n© 2008 Pino Toscano",
+            "Description": "An XPS backend",
+            "Description[ar]": "خلفية XPS",
+            "Description[az]": "XPS modulu",
+            "Description[ca@valencia]": "Un dorsal de XPS",
+            "Description[ca]": "Un dorsal de XPS",
+            "Description[cs]": "Podpůrná vrstva XPS",
+            "Description[da]": "En XPS-backend",
+            "Description[de]": "Ein Anzeigemodul für XPS",
+            "Description[el]": "Σύστημα υποστήριξης XPS",
+            "Description[en_GB]": "An XPS backend",
+            "Description[es]": "Un motor para XPS",
+            "Description[et]": "XPS-i taustaprogramm",
+            "Description[eu]": "XPS-ren bizkarraldeko bat",
+            "Description[fi]": "XPS-taustaosa",
+            "Description[fr]": "Un moteur XPS",
+            "Description[gl]": "Unha infraestrutura para XPS",
+            "Description[hu]": "XPS modul",
+            "Description[ia]": "Un retro-administration de XPS",
+            "Description[it]": "Un backend per XPS",
+            "Description[ko]": "XPS 백엔드",
+            "Description[lt]": "XPS programinė sąsaja",
+            "Description[nl]": "Een XPS-backend",
+            "Description[nn]": "Ein XPS-motor",
+            "Description[pa]": "XPS ਬੈਕਐਂਡ",
+            "Description[pl]": "Obsługa formatu XPS",
+            "Description[pt]": "Uma infra-estrutura de XPS",
+            "Description[pt_BR]": "Uma infraestrutura XPS",
+            "Description[ru]": "Модуль поддержки формата XPS",
+            "Description[sk]": "XPS backend",
+            "Description[sl]": "Zaledje za XPS",
+            "Description[sr@ijekavian]": "Позадина за ИксПС",
+            "Description[sr@ijekavianlatin]": "Pozadina za XPS",
+            "Description[sr@latin]": "Pozadina za XPS",
+            "Description[sr]": "Позадина за ИксПС",
+            "Description[sv]": "Ett XPS-gränssnitt",
+            "Description[tr]": "Bir XPS arka ucu",
+            "Description[uk]": "Програма для XPS",
+            "Description[vi]": "Một hậu phương XPS",
+            "Description[x-test]": "xxAn XPS backendxx",
+            "Description[zh_CN]": "XPS 后端",
+            "Description[zh_TW]": "XPS 後端介面",
+            "Id": "okular_xps",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/oxps",
+                "application/vnd.ms-xpsdocument"
+            ],
+            "Name": "XPS Backend",
+            "Name[ar]": "خلفية XPS",
+            "Name[az]": "XPS modulu",
+            "Name[ca@valencia]": "Dorsal XPS",
+            "Name[ca]": "Dorsal XPS",
+            "Name[cs]": "Podpůrná vrstva XPS",
+            "Name[da]": "XPS-backend",
+            "Name[de]": "Anzeigemodul für XPS",
+            "Name[el]": "Σύστημα υποστήριξης XPS",
+            "Name[en_GB]": "XPS Backend",
+            "Name[es]": "Motor para XPS",
+            "Name[et]": "XPS-i taustaprogramm",
+            "Name[eu]": "XPS-ren bizkarraldekoa",
+            "Name[fi]": "XPS-taustaosa",
+            "Name[fr]": "Moteur XPS",
+            "Name[gl]": "Infraestrutura para XPS",
+            "Name[hu]": "XPS modul",
+            "Name[ia]": "Retro-Administration de XPS",
+            "Name[it]": "Backend XPS",
+            "Name[ko]": "XPS 백엔드",
+            "Name[lt]": "XPS programinė sąsaja",
+            "Name[nl]": "XPS-backend",
+            "Name[nn]": "XPS-motor",
+            "Name[pa]": "XPS ਬੈਕਐਂਡ",
+            "Name[pl]": "Obsługa XPS",
+            "Name[pt]": "Infra-Estrutura de XPS",
+            "Name[pt_BR]": "Infraestrutura XPS",
+            "Name[ru]": "Модуль поддержки формата XPS",
+            "Name[sk]": "XPS Backend",
+            "Name[sl]": "Zaledje za XPS",
+            "Name[sr@ijekavian]": "Позадина за ИксПС",
+            "Name[sr@ijekavianlatin]": "Pozadina za XPS",
+            "Name[sr@latin]": "Pozadina za XPS",
+            "Name[sr]": "Позадина за ИксПС",
+            "Name[sv]": "XPS-gränssnitt",
+            "Name[tr]": "XPS Arka Ucu",
+            "Name[uk]": "Модуль XPS",
+            "Name[vi]": "Hậu phương XPS",
+            "Name[x-test]": "xxXPS Backendxx",
+            "Name[zh_CN]": "XPS 后端",
+            "Name[zh_TW]": "XPS 後端介面",
+            "Version": "0.3.3"
+        },
+        "X-KDE-Priority": 4,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "XpsGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_plucker.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "tokoe@kde.org",
+                    "Name": "Tobias Koenig",
+                    "Name[ar]": "Tobias Koenig",
+                    "Name[az]": "Tobias Koenig",
+                    "Name[ca@valencia]": "Tobias Koenig",
+                    "Name[ca]": "Tobias Koenig",
+                    "Name[cs]": "Tobias Koenig",
+                    "Name[da]": "Tobias Koenig",
+                    "Name[de]": "Tobias Koenig",
+                    "Name[el]": "Tobias Koenig",
+                    "Name[en_GB]": "Tobias Koenig",
+                    "Name[es]": "Tobias Koenig",
+                    "Name[et]": "Tobias Koenig",
+                    "Name[eu]": "Tobias Koenig",
+                    "Name[fi]": "Tobias Koenig",
+                    "Name[fr]": "Tobias Koenig",
+                    "Name[gl]": "Tobias Koenig",
+                    "Name[hu]": "Tobias Koenig",
+                    "Name[ia]": "Tobias Koenig",
+                    "Name[it]": "Tobias Koenig",
+                    "Name[ko]": "Tobias Koenig",
+                    "Name[lt]": "Tobias Koenig",
+                    "Name[nl]": "Tobias Koenig",
+                    "Name[nn]": "Tobias König",
+                    "Name[pa]": "Tobias Koenig",
+                    "Name[pl]": "Tobias Koenig",
+                    "Name[pt]": "Tobias Koenig",
+                    "Name[pt_BR]": "Tobias Koenig",
+                    "Name[ru]": "Tobias König",
+                    "Name[sk]": "Tobias Koenig",
+                    "Name[sl]": "Tobias Koenig",
+                    "Name[sr@ijekavian]": "Тобијас Кениг",
+                    "Name[sr@ijekavianlatin]": "Tobijas Kenig",
+                    "Name[sr@latin]": "Tobijas Kenig",
+                    "Name[sr]": "Тобијас Кениг",
+                    "Name[sv]": "Tobias Koenig",
+                    "Name[tr]": "Tobias Koenig",
+                    "Name[uk]": "Tobias Koenig",
+                    "Name[vi]": "Tobias Koenig",
+                    "Name[x-test]": "xxTobias Koenigxx",
+                    "Name[zh_CN]": "Tobias Koenig",
+                    "Name[zh_TW]": "Tobias Koenig"
+                }
+            ],
+            "Copyright": "© 2007-2008 Tobias Koenig",
+            "Copyright[ar]": "© 2007-2008 Tobias Koenig",
+            "Copyright[az]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca@valencia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca]": "© 2007-2008 Tobias Koenig",
+            "Copyright[cs]": "© 2007-2008 Tobias Koenig",
+            "Copyright[da]": "© 2007-2008 Tobias Koenig",
+            "Copyright[de]": "© 2007-2008 Tobias Koenig",
+            "Copyright[el]": "© 2007-2008 Tobias Koenig",
+            "Copyright[en_GB]": "© 2007-2008 Tobias Koenig",
+            "Copyright[es]": "© 2007-2008 Tobias Koenig",
+            "Copyright[et]": "© 2007-2008: Tobias Koenig",
+            "Copyright[eu]": "© 2007-2008 Tobias Koenig",
+            "Copyright[fi]": "© 2007–2008 Tobias Koenig",
+            "Copyright[fr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[gl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[hu]": "© Tobias Koenig, 2007-2008.",
+            "Copyright[ia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[it]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ko]": "© 2007-2008 Tobias Koenig",
+            "Copyright[lt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nn]": "© 2007–2008 Tobias König",
+            "Copyright[pa]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt_BR]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ru]": "© Tobias König, 2007-2008",
+            "Copyright[sk]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sr@ijekavian]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sr@ijekavianlatin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr@latin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sv]": "© 2007-2008 Tobias Koenig",
+            "Copyright[tr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[uk]": "© Tobias Koenig, 2007–2008",
+            "Copyright[vi]": "© 2007-2008 Tobias Koenig",
+            "Copyright[x-test]": "xx© 2007-2008 Tobias Koenigxx",
+            "Copyright[zh_CN]": "© 2007-2008 Tobias Koenig",
+            "Copyright[zh_TW]": "© 2007-2008 Tobias Koenig",
+            "Description": "A renderer for Plucker eBooks",
+            "Description[ar]": "عارض كتب الإلكترونية Plucker",
+            "Description[az]": "Plucker eBooks üçün təsvirləmə",
+            "Description[ca@valencia]": "Un renderitzador per a llibres electrònics Plucker",
+            "Description[ca]": "Un renderitzador per a llibres electrònics Plucker",
+            "Description[cs]": "Renderer elektronických knih Plucker",
+            "Description[da]": "En gengiver til Plucker-e-bøger",
+            "Description[de]": "Ein Renderer für Plucker eBooks",
+            "Description[el]": "Πρόγραμμα αποτύπωσης για Plucker eBooks",
+            "Description[en_GB]": "A renderer for Plucker eBooks",
+            "Description[es]": "Un visor de libros electrónicos Plucker",
+            "Description[et]": "Pluckeri e-raamatute renderdaja",
+            "Description[eu]": "Plucker eLiburuentzako errendatzaile bat",
+            "Description[fi]": "Plucker-e-kirjojen hahmonnin",
+            "Description[fr]": "Système de rendu pour les livres électroniques Plucker",
+            "Description[gl]": "Un visor de libros electrónicos Plucker",
+            "Description[hu]": "Leképező Plucker e-könyvekhez",
+            "Description[ia]": "Un rendition pro eBooks (Libros electronic) de Plucker",
+            "Description[it]": "Un visualizzatore per eBook Plucker",
+            "Description[ko]": "Plucker 전자책 렌더러",
+            "Description[lt]": "Plucker elektroninių knygų atvaizdavimas",
+            "Description[nl]": "Een viewer voor Plucker eBooks",
+            "Description[nn]": "Ein gjengjevar for Plucker-e-bøker",
+            "Description[pl]": "Wyświetlanie e-booków Plucker",
+            "Description[pt]": "Um visualizador de eBooks do Plucker",
+            "Description[pt_BR]": "Um interpretador de eBooks Plucker",
+            "Description[ru]": "Модуль поддержки формата электронных книг Plucker",
+            "Description[sk]": "Vykresľovanie e-kníh Plucker",
+            "Description[sl]": "Izrisovalnik za e-knjige Plucker",
+            "Description[sr@ijekavian]": "Рендерер за Плакерове е‑књиге",
+            "Description[sr@ijekavianlatin]": "Renderer za Pluckerove e‑knjige",
+            "Description[sr@latin]": "Renderer za Pluckerove e‑knjige",
+            "Description[sr]": "Рендерер за Плакерове е‑књиге",
+            "Description[sv]": "Ett återgivningsprogram för Plucker e-böcker",
+            "Description[tr]": "Plucker e-kitapları için bir oluşturucu",
+            "Description[uk]": "Програма для відображення ел. книг Plucker",
+            "Description[vi]": "Một trình kết xuất cho các sách điện tử Plucker",
+            "Description[x-test]": "xxA renderer for Plucker eBooksxx",
+            "Description[zh_CN]": "Plucker 电子书渲染器",
+            "Description[zh_TW]": "Plucker 電子書成像器",
+            "Id": "okular_plucker",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/prs.plucker"
+            ],
+            "Name": "Plucker Document Backend",
+            "Name[ar]": "خلفية مستندات Plucker",
+            "Name[az]": "Plucker sənədi modulu",
+            "Name[ca@valencia]": "Dorsal de documents Plucker",
+            "Name[ca]": "Dorsal de documents Plucker",
+            "Name[cs]": "Podpůrná vrstva Plucker Dokumentu",
+            "Name[da]": "Plucker-dokument-backend",
+            "Name[de]": "Anzeigemodul für Plucker-Dokumente",
+            "Name[el]": "Σύστημα υποστήριξης εγγράφων Plucker",
+            "Name[en_GB]": "Plucker Document Backend",
+            "Name[es]": "Motor para documento de Plucker",
+            "Name[et]": "Pluckeri dokumendi taustaprogramm",
+            "Name[eu]": "Plucker dokumentuen bizkarraldekoa",
+            "Name[fi]": "Plucker-tiedostotaustaosa",
+            "Name[fr]": "Moteur de document Plucker",
+            "Name[gl]": "Infraestrutura para documentos Plucker",
+            "Name[hu]": "Plucker dokument modul",
+            "Name[ia]": "Un retro-administration de documento Plucker",
+            "Name[it]": "Backend per documenti Plucker",
+            "Name[ko]": "Plucker 문서 백엔드",
+            "Name[lt]": "Plucker dokumentų programinė sąsaja",
+            "Name[nl]": "Plucker Document-backend",
+            "Name[nn]": "Plucker-dokumentmotor",
+            "Name[pl]": "Obsługa Plucker",
+            "Name[pt]": "Infra-Estrutura de Documentos do Plucker",
+            "Name[pt_BR]": "Infraestrutura de documentos Plucker",
+            "Name[ru]": "Модуль поддержки формата Plucker",
+            "Name[sk]": "Backend dokumentov Plucker",
+            "Name[sl]": "Zaledje za dokumente Plucker",
+            "Name[sr@ijekavian]": "Позадина за Плакерови документе",
+            "Name[sr@ijekavianlatin]": "Pozadina za Pluckerovi dokumente",
+            "Name[sr@latin]": "Pozadina za Pluckerovi dokumente",
+            "Name[sr]": "Позадина за Плакерови документе",
+            "Name[sv]": "Plucker-dokumentgränssnitt",
+            "Name[tr]": "Plucker Belgesi Arka Ucu",
+            "Name[uk]": "Модуль документів Plucker",
+            "Name[vi]": "Hậu phương tài liệu Plucker",
+            "Name[x-test]": "xxPlucker Document Backendxx",
+            "Name[zh_CN]": "Plucker 文档后端",
+            "Name[zh_TW]": "Pluker 文件後端介面",
+            "Version": "0.1.1"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "PluckerGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_md.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "wolff@julianwolff.de",
+                    "Name": "Julian Wolff",
+                    "Name[ar]": "Julian Wolff",
+                    "Name[az]": "Julian Wolff",
+                    "Name[ca@valencia]": "Julian Wolff",
+                    "Name[ca]": "Julian Wolff",
+                    "Name[cs]": "Julian Wolff",
+                    "Name[da]": "Julian Wolff",
+                    "Name[de]": "Julian Wolff",
+                    "Name[el]": "Julian Wolff",
+                    "Name[en_GB]": "Julian Wolff",
+                    "Name[es]": "Julian Wolff",
+                    "Name[et]": "Julian Wolff",
+                    "Name[eu]": "Julian Wolff",
+                    "Name[fi]": "Julian Wolff",
+                    "Name[fr]": "Julian Wolff",
+                    "Name[gl]": "Julian Wolff",
+                    "Name[hu]": "Julian Wolff",
+                    "Name[ia]": "Julian Wolff",
+                    "Name[it]": "Julian Wolff",
+                    "Name[ko]": "Julian Wolff",
+                    "Name[lt]": "Julian Wolff",
+                    "Name[nl]": "Julian Wolff",
+                    "Name[nn]": "Julian Wolff",
+                    "Name[pl]": "Julian Wolff",
+                    "Name[pt]": "Julian Wolff",
+                    "Name[pt_BR]": "Juliano",
+                    "Name[ru]": "Julian Wolff",
+                    "Name[sk]": "Julian Wolff",
+                    "Name[sl]": "Julian Wolff",
+                    "Name[sr@ijekavian]": "Јулијан Волф",
+                    "Name[sr@ijekavianlatin]": "Julijan Volf",
+                    "Name[sr@latin]": "Julijan Volf",
+                    "Name[sr]": "Јулијан Волф",
+                    "Name[sv]": "Julian Wolff",
+                    "Name[tr]": "Julian Wolff",
+                    "Name[uk]": "Julian Wolff",
+                    "Name[vi]": "Julian Wolff",
+                    "Name[x-test]": "xxJulian Wolffxx",
+                    "Name[zh_CN]": "Julian Wolff",
+                    "Name[zh_TW]": "Julian Wolff"
+                }
+            ],
+            "Copyright": "© 2017 Julian Wolff",
+            "Copyright[ar]": "© 2017 Julian Wolff",
+            "Copyright[az]": "© 2017 Julian Wolff",
+            "Copyright[ca@valencia]": "© 2017 Julian Wolff",
+            "Copyright[ca]": "© 2017 Julian Wolff",
+            "Copyright[cs]": "© 2017 Julian Wolff",
+            "Copyright[da]": "© 2017 Julian Wolff",
+            "Copyright[de]": "© 2017 Julian Wolff",
+            "Copyright[el]": "© 2017 Julian Wolff",
+            "Copyright[en_GB]": "© 2017 Julian Wolff",
+            "Copyright[es]": "© 2017 Julian Wolff",
+            "Copyright[et]": "© 2017: Julian Wolff",
+            "Copyright[eu]": "© 2017 Julian Wolff",
+            "Copyright[fi]": "© 2017 Julian Wolff",
+            "Copyright[fr]": "© 2017 Julian Wolff",
+            "Copyright[gl]": "© 2017 Julian Wolff",
+            "Copyright[hu]": "© Julian Wolff, 2017.",
+            "Copyright[ia]": "© 2017 Julian Wolff",
+            "Copyright[it]": "© 2017 Julian Wolff",
+            "Copyright[ko]": "© 2017 Julian Wolff",
+            "Copyright[lt]": "© 2017 Julian Wolff",
+            "Copyright[nl]": "© 2017 Julian Wolff",
+            "Copyright[nn]": "© 2017 Julian Wolff",
+            "Copyright[pa]": "© 2017 Julian Wolff",
+            "Copyright[pl]": "© 2017 Julian Wolff",
+            "Copyright[pt]": "© 2017 Julian Wolff",
+            "Copyright[pt_BR]": "© 2017 Julian Wolff",
+            "Copyright[ru]": "© Julian Wolff, 2017",
+            "Copyright[sk]": "© 2017 Julian Wolff",
+            "Copyright[sl]": "© 2017 Julian Wolff",
+            "Copyright[sr@ijekavian]": "© 2017, Јулијан Волф",
+            "Copyright[sr@ijekavianlatin]": "© 2017, Julijan Volf",
+            "Copyright[sr@latin]": "© 2017, Julijan Volf",
+            "Copyright[sr]": "© 2017, Јулијан Волф",
+            "Copyright[sv]": "© 2017 Julian Wolff",
+            "Copyright[tr]": "© 2017 Julian Wolff",
+            "Copyright[uk]": "© Julian Wolff, 2017",
+            "Copyright[vi]": "© 2017 Julian Wolff",
+            "Copyright[x-test]": "xx© 2017 Julian Wolffxx",
+            "Copyright[zh_CN]": "© 2017 Julian Wolff",
+            "Copyright[zh_TW]": "© 2017 Julian Wolff",
+            "Id": "okular_markdown",
+            "License": "GPL",
+            "MimeTypes": [
+                "text/markdown",
+                "text/x-markdown"
+            ],
+            "Name": "Markdown Backend",
+            "Name[ar]": "خلفية مارك داون",
+            "Name[az]": "Markdown modulu",
+            "Name[ca@valencia]": "Dorsal Markdown",
+            "Name[ca]": "Dorsal Markdown",
+            "Name[cs]": "Podpůrná vrstva Markdown",
+            "Name[da]": "Markdown-backend",
+            "Name[de]": "Anzeigemodul für Markdown",
+            "Name[el]": "Σύστημα υποστήριξης markdown",
+            "Name[en_GB]": "Markdown Backend",
+            "Name[es]": "Motor para Markdown",
+            "Name[et]": "Markdowni taustaprogramm",
+            "Name[eu]": "Markdown-en bizkarraldekoa",
+            "Name[fi]": "Markdown-taustaosa",
+            "Name[fr]": "Moteur de markdown",
+            "Name[gl]": "Infraestrutura de Markdown",
+            "Name[hu]": "Markdown modul",
+            "Name[ia]": "Retro-Administration Markdown",
+            "Name[it]": "Backend Markdown",
+            "Name[ko]": "Markdown 백엔드",
+            "Name[lt]": "Markdown programinė sąsaja",
+            "Name[nl]": "Markdown-backend",
+            "Name[nn]": "Markdown-motor",
+            "Name[pl]": "Obsługa Markdown",
+            "Name[pt]": "Infra-Estrutura de Markdown",
+            "Name[pt_BR]": "Infraestrutura Markdown",
+            "Name[ru]": "Модуль поддержки формата Markdown",
+            "Name[sk]": "Markdown backend",
+            "Name[sl]": "Zaledje za Markdown",
+            "Name[sr@ijekavian]": "Позадина за маркдаун",
+            "Name[sr@ijekavianlatin]": "Pozadina za Markdown",
+            "Name[sr@latin]": "Pozadina za Markdown",
+            "Name[sr]": "Позадина за маркдаун",
+            "Name[sv]": "Markdown-gränssnitt",
+            "Name[tr]": "Markdown Arka Ucu",
+            "Name[uk]": "Модуль Markdown",
+            "Name[vi]": "Hậu phương Markdown",
+            "Name[x-test]": "xxMarkdown Backendxx",
+            "Name[zh_CN]": "Markdown 后端",
+            "Name[zh_TW]": "Markdown 後端介面",
+            "Version": "0.1.0"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": true
+    },
+    "archreq": 1,
+    "className": "MarkdownGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_comicbook.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "tokoe@kde.org",
+                    "Name": "Tobias Koenig",
+                    "Name[ar]": "Tobias Koenig",
+                    "Name[az]": "Tobias Koenig",
+                    "Name[ca@valencia]": "Tobias Koenig",
+                    "Name[ca]": "Tobias Koenig",
+                    "Name[cs]": "Tobias Koenig",
+                    "Name[da]": "Tobias Koenig",
+                    "Name[de]": "Tobias Koenig",
+                    "Name[el]": "Tobias Koenig",
+                    "Name[en_GB]": "Tobias Koenig",
+                    "Name[es]": "Tobias Koenig",
+                    "Name[et]": "Tobias Koenig",
+                    "Name[eu]": "Tobias Koenig",
+                    "Name[fi]": "Tobias Koenig",
+                    "Name[fr]": "Tobias Koenig",
+                    "Name[gl]": "Tobias Koenig",
+                    "Name[hu]": "Tobias Koenig",
+                    "Name[ia]": "Tobias Koenig",
+                    "Name[it]": "Tobias Koenig",
+                    "Name[ko]": "Tobias Koenig",
+                    "Name[lt]": "Tobias Koenig",
+                    "Name[nl]": "Tobias Koenig",
+                    "Name[nn]": "Tobias König",
+                    "Name[pa]": "Tobias Koenig",
+                    "Name[pl]": "Tobias Koenig",
+                    "Name[pt]": "Tobias Koenig",
+                    "Name[pt_BR]": "Tobias Koenig",
+                    "Name[ru]": "Tobias König",
+                    "Name[sk]": "Tobias Koenig",
+                    "Name[sl]": "Tobias Koenig",
+                    "Name[sr@ijekavian]": "Тобијас Кениг",
+                    "Name[sr@ijekavianlatin]": "Tobijas Kenig",
+                    "Name[sr@latin]": "Tobijas Kenig",
+                    "Name[sr]": "Тобијас Кениг",
+                    "Name[sv]": "Tobias Koenig",
+                    "Name[tr]": "Tobias Koenig",
+                    "Name[uk]": "Tobias Koenig",
+                    "Name[vi]": "Tobias Koenig",
+                    "Name[x-test]": "xxTobias Koenigxx",
+                    "Name[zh_CN]": "Tobias Koenig",
+                    "Name[zh_TW]": "Tobias Koenig"
+                }
+            ],
+            "Copyright": "© 2007-2008 Tobias Koenig",
+            "Copyright[ar]": "© 2007-2008 Tobias Koenig",
+            "Copyright[az]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca@valencia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca]": "© 2007-2008 Tobias Koenig",
+            "Copyright[cs]": "© 2007-2008 Tobias Koenig",
+            "Copyright[da]": "© 2007-2008 Tobias Koenig",
+            "Copyright[de]": "© 2007-2008 Tobias Koenig",
+            "Copyright[el]": "© 2007-2008 Tobias Koenig",
+            "Copyright[en_GB]": "© 2007-2008 Tobias Koenig",
+            "Copyright[es]": "© 2007-2008 Tobias Koenig",
+            "Copyright[et]": "© 2007-2008: Tobias Koenig",
+            "Copyright[eu]": "© 2007-2008 Tobias Koenig",
+            "Copyright[fi]": "© 2007–2008 Tobias Koenig",
+            "Copyright[fr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[gl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[hu]": "© Tobias Koenig, 2007-2008.",
+            "Copyright[ia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[it]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ko]": "© 2007-2008 Tobias Koenig",
+            "Copyright[lt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nn]": "© 2007–2008 Tobias König",
+            "Copyright[pa]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt_BR]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ru]": "© Tobias König, 2007-2008",
+            "Copyright[sk]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sr@ijekavian]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sr@ijekavianlatin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr@latin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sv]": "© 2007-2008 Tobias Koenig",
+            "Copyright[tr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[uk]": "© Tobias Koenig, 2007–2008",
+            "Copyright[vi]": "© 2007-2008 Tobias Koenig",
+            "Copyright[x-test]": "xx© 2007-2008 Tobias Koenigxx",
+            "Copyright[zh_CN]": "© 2007-2008 Tobias Koenig",
+            "Copyright[zh_TW]": "© 2007-2008 Tobias Koenig",
+            "Description": "A renderer for various comic book formats",
+            "Description[ar]": "عارض العديد من تنسيقات كتب الهزل",
+            "Description[az]": "Dəyişkən komiks formatları tərtibatçısı",
+            "Description[ca@valencia]": "Un renderitzador per a diversos formats de ComicBook",
+            "Description[ca]": "Un renderitzador per a diversos formats de ComicBook",
+            "Description[cs]": "Vykreslovač různých formátů knih komiksů",
+            "Description[da]": "En gengiver til diverse tegneserierformater",
+            "Description[de]": "Ein Renderer für verschiedene Comic-Book-Formate",
+            "Description[el]": "Πρόγραμμα αποτύπωσης για διάφορους τύπους comic book",
+            "Description[en_GB]": "A renderer for various comic book formats",
+            "Description[es]": "Un visor para diversos formatos de libros de cómics",
+            "Description[et]": "Mitmesuguste koomiksivormingute renderdaja",
+            "Description[eu]": "Hainbat Komiki-liburu formatuentzako errendatzaile bat",
+            "Description[fi]": "Eri sarjakuvakirjamuotojen hahmonnin",
+            "Description[fr]": "Un système de rendu pour divers formats de livres de BD",
+            "Description[gl]": "Un visor de varios formatos de banda deseñada",
+            "Description[hu]": "Leképező különböző képregényformátumokhoz",
+            "Description[ia]": "Un rendition pro varie formatos de libros comic",
+            "Description[it]": "Un visualizzatore per vari formati di strisce a fumetti",
+            "Description[ko]": "다양한 만화책 형식 렌더러",
+            "Description[lt]": "Įvairių komiksų knygų formatų atvaizdavimas",
+            "Description[nl]": "Een viewer voor diverse ComicBook-formaten",
+            "Description[nn]": "Ein gjengjevar for ulike teikneserieformat",
+            "Description[pl]": "Wyświetlanie różnych formatów komiksów",
+            "Description[pt]": "Um visualizador de diversos formatos de banda desenhada",
+            "Description[pt_BR]": "Um interpretador de vários formatos de histórias em quadrinhos",
+            "Description[ru]": "Модуль поддержки различных форматов комиксов",
+            "Description[sk]": "Vykresľovanie rôznych formátov kníh komiksov",
+            "Description[sl]": "Izrisovalnik za različne vrste stripov",
+            "Description[sr@ijekavian]": "Рендерер различитих формата стрипова",
+            "Description[sr@ijekavianlatin]": "Renderer različitih formata stripova",
+            "Description[sr@latin]": "Renderer različitih formata stripova",
+            "Description[sr]": "Рендерер различитих формата стрипова",
+            "Description[sv]": "Ett återgivningsprogram för diverse format för serieböcker",
+            "Description[tr]": "Çeşitli çizgi roman biçimleri için bir oluşturucu",
+            "Description[uk]": "Програма для відображення коміксів у різних форматах",
+            "Description[vi]": "Một trình kết xuất cho nhiều dạng thức truyện tranh khác nhau",
+            "Description[x-test]": "xxA renderer for various comic book formatsxx",
+            "Description[zh_CN]": "多种漫画书格式的渲染器",
+            "Description[zh_TW]": "多種漫畫書的成像器",
+            "Id": "okular_comicbook",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/x-cbz",
+                "application/x-cbr",
+                "application/x-cbt",
+                "application/x-cb7",
+                "inode/directory"
+            ],
+            "Name": "ComicBook Backend",
+            "Name[ar]": "خلفية ComicBook",
+            "Name[az]": "ComicBook modulu",
+            "Name[ca@valencia]": "Dorsal ComicBook",
+            "Name[ca]": "Dorsal ComicBook",
+            "Name[cs]": "Podpůrná vrstva ComicBook",
+            "Name[da]": "ComicBook-backend",
+            "Name[de]": "Anzeigemodul für Comic-Book",
+            "Name[el]": "Σύστημα υποστήριξης ComicBook",
+            "Name[en_GB]": "ComicBook Backend",
+            "Name[es]": "Motor para ComicBook",
+            "Name[et]": "ComicBooki taustaprogramm",
+            "Name[eu]": "ComicBook-en bizkarraldekoa",
+            "Name[fi]": "ComicBook-taustaosa",
+            "Name[fr]": "Moteur pour les livres de BD",
+            "Name[gl]": "Infraestrutura para ComicBook",
+            "Name[hu]": "Képregény modul",
+            "Name[ia]": "Retro-Administration de libros de comic",
+            "Name[it]": "Backend ComicBook",
+            "Name[ko]": "만화책 백엔드",
+            "Name[lt]": "ComicBook programinė sąsaja",
+            "Name[nl]": "ComicBook-backend",
+            "Name[nn]": "ComicBook-motor",
+            "Name[pl]": "Obsługa ComicBook",
+            "Name[pt]": "Infra-Estrutura de ComicBook (BD)",
+            "Name[pt_BR]": "Infraestrutura ComicBook",
+            "Name[ru]": "Модуль поддержки формата ComicBook",
+            "Name[sk]": "Backend pre knihy komiksov",
+            "Name[sl]": "Zaledje za stripe",
+            "Name[sr@ijekavian]": "Позадина за комикбук",
+            "Name[sr@ijekavianlatin]": "Pozadina za ComicBook",
+            "Name[sr@latin]": "Pozadina za ComicBook",
+            "Name[sr]": "Позадина за комикбук",
+            "Name[sv]": "Comic Book-gränssnitt",
+            "Name[tr]": "ComicBook Arka Ucu",
+            "Name[uk]": "Модуль коміксів",
+            "Name[vi]": "Hậu phương ComicBook",
+            "Name[x-test]": "xxComicBook Backendxx",
+            "Name[zh_CN]": "漫画书后端",
+            "Name[zh_TW]": "ComicBook 後端介面",
+            "Version": "0.4"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "ComicBookGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_kimgio.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "aacid@kde.org",
+                    "Name": "Albert Astals Cid",
+                    "Name[ar]": "Albert Astals Cid",
+                    "Name[az]": "Albert Astals Cid",
+                    "Name[ca@valencia]": "Albert Astals Cid",
+                    "Name[ca]": "Albert Astals Cid",
+                    "Name[cs]": "Albert Astals Cid",
+                    "Name[da]": "Albert Astals Cid",
+                    "Name[de]": "Albert Astals Cid",
+                    "Name[el]": "Albert Astals Cid",
+                    "Name[en_GB]": "Albert Astals Cid",
+                    "Name[es]": "Albert Astals Cid",
+                    "Name[et]": "Albert Astals Cid",
+                    "Name[eu]": "Albert Astals Cid",
+                    "Name[fi]": "Albert Astals Cid",
+                    "Name[fr]": "Albert Astals Cid",
+                    "Name[gl]": "Albert Astals Cid",
+                    "Name[hu]": "Albert Astals Cid",
+                    "Name[ia]": "Albert  Astals Cid",
+                    "Name[it]": "Albert Astals Cid",
+                    "Name[ko]": "Albert Astals Cid",
+                    "Name[lt]": "Albert Astals Cid",
+                    "Name[nl]": "Albert Astals Cid",
+                    "Name[nn]": "Albert Astals Cid",
+                    "Name[pa]": "ਅਲਬਰਟ ਅਸਟਾਲਸ ਸਿਡ",
+                    "Name[pl]": "Albert Astals Cid",
+                    "Name[pt]": "Albert Astals Cid",
+                    "Name[pt_BR]": "Albert Astals Cid",
+                    "Name[ru]": "Albert Astals Cid",
+                    "Name[sk]": "Albert Astals Cid",
+                    "Name[sl]": "Albert Astals Cid",
+                    "Name[sr@ijekavian]": "Алберт Асталс Сид",
+                    "Name[sr@ijekavianlatin]": "Albert Astals Sid",
+                    "Name[sr@latin]": "Albert Astals Sid",
+                    "Name[sr]": "Алберт Асталс Сид",
+                    "Name[sv]": "Albert Astals Cid",
+                    "Name[tr]": "Albert Astals Cid",
+                    "Name[uk]": "Albert Astals Cid",
+                    "Name[vi]": "Albert Astals Cid",
+                    "Name[x-test]": "xxAlbert Astals Cidxx",
+                    "Name[zh_CN]": "Albert Astals Cid",
+                    "Name[zh_TW]": "Albert Astals Cid"
+                },
+                {
+                    "Email": "pino@kde.org",
+                    "Name": "Pino Toscano",
+                    "Name[ar]": "Pino Toscano",
+                    "Name[az]": "Pino Toscano",
+                    "Name[ca@valencia]": "Pino Toscano",
+                    "Name[ca]": "Pino Toscano",
+                    "Name[cs]": "Pino Toscano",
+                    "Name[da]": "Pino Toscano",
+                    "Name[de]": "Pino Toscano",
+                    "Name[el]": "Pino Toscano",
+                    "Name[en_GB]": "Pino Toscano",
+                    "Name[es]": "Pino Toscano",
+                    "Name[et]": "Pino Toscano",
+                    "Name[eu]": "Pino Toscano",
+                    "Name[fi]": "Pino Toscano",
+                    "Name[fr]": "Pino Toscano",
+                    "Name[gl]": "Pino Toscano",
+                    "Name[hu]": "Pino Toscano",
+                    "Name[ia]": "Pino Toscano",
+                    "Name[it]": "Pino Toscano",
+                    "Name[ko]": "Pino Toscano",
+                    "Name[lt]": "Pino Toscano",
+                    "Name[nl]": "Pino Toscano",
+                    "Name[nn]": "Pino Toscano",
+                    "Name[pa]": "ਪਿਨੋ ਟਿਸਕਾਨੋ",
+                    "Name[pl]": "Pino Toscano",
+                    "Name[pt]": "Pino Toscano",
+                    "Name[pt_BR]": "Pino Toscano",
+                    "Name[ru]": "Pino Toscano",
+                    "Name[sk]": "Pino Toscano",
+                    "Name[sl]": "Pino Toscano",
+                    "Name[sr@ijekavian]": "Пино Тоскано",
+                    "Name[sr@ijekavianlatin]": "Pino Toskano",
+                    "Name[sr@latin]": "Pino Toskano",
+                    "Name[sr]": "Пино Тоскано",
+                    "Name[sv]": "Pino Toscano",
+                    "Name[tr]": "Pino Toscano",
+                    "Name[uk]": "Pino Toscano",
+                    "Name[vi]": "Pino Toscano",
+                    "Name[x-test]": "xxPino Toscanoxx",
+                    "Name[zh_CN]": "Pino Toscano",
+                    "Name[zh_TW]": "Pino Toscano"
+                },
+                {
+                    "Email": "tokoe@kde.org",
+                    "Name": "Tobias Koenig",
+                    "Name[ar]": "Tobias Koenig",
+                    "Name[az]": "Tobias Koenig",
+                    "Name[ca@valencia]": "Tobias Koenig",
+                    "Name[ca]": "Tobias Koenig",
+                    "Name[cs]": "Tobias Koenig",
+                    "Name[da]": "Tobias Koenig",
+                    "Name[de]": "Tobias Koenig",
+                    "Name[el]": "Tobias Koenig",
+                    "Name[en_GB]": "Tobias Koenig",
+                    "Name[es]": "Tobias Koenig",
+                    "Name[et]": "Tobias Koenig",
+                    "Name[eu]": "Tobias Koenig",
+                    "Name[fi]": "Tobias Koenig",
+                    "Name[fr]": "Tobias Koenig",
+                    "Name[gl]": "Tobias Koenig",
+                    "Name[hu]": "Tobias Koenig",
+                    "Name[ia]": "Tobias Koenig",
+                    "Name[it]": "Tobias Koenig",
+                    "Name[ko]": "Tobias Koenig",
+                    "Name[lt]": "Tobias Koenig",
+                    "Name[nl]": "Tobias Koenig",
+                    "Name[nn]": "Tobias König",
+                    "Name[pa]": "Tobias Koenig",
+                    "Name[pl]": "Tobias Koenig",
+                    "Name[pt]": "Tobias Koenig",
+                    "Name[pt_BR]": "Tobias Koenig",
+                    "Name[ru]": "Tobias König",
+                    "Name[sk]": "Tobias Koenig",
+                    "Name[sl]": "Tobias Koenig",
+                    "Name[sr@ijekavian]": "Тобијас Кениг",
+                    "Name[sr@ijekavianlatin]": "Tobijas Kenig",
+                    "Name[sr@latin]": "Tobijas Kenig",
+                    "Name[sr]": "Тобијас Кениг",
+                    "Name[sv]": "Tobias Koenig",
+                    "Name[tr]": "Tobias Koenig",
+                    "Name[uk]": "Tobias Koenig",
+                    "Name[vi]": "Tobias Koenig",
+                    "Name[x-test]": "xxTobias Koenigxx",
+                    "Name[zh_CN]": "Tobias Koenig",
+                    "Name[zh_TW]": "Tobias Koenig"
+                }
+            ],
+            "Copyright": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[ar]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[az]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[ca@valencia]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[ca]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[cs]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[da]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[de]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[el]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[en_GB]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[es]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[et]": "© 2005, 2009: Albert Astals Cid\n© 2006-2007: Pino Toscano\n© 2006-2007: Tobias Koenig",
+            "Copyright[eu]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[fi]": "© 2005, 2009 Albert Astals Cid\n© 2006–2007 Pino Toscano\n© 2006–2007 Tobias Koenig",
+            "Copyright[fr]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[gl]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[hu]": "© Albert Astals Cid, 2005., 2009.\n© Pino Toscano,  2006-2007.\n© Tobias Koenig, 2006-2007.",
+            "Copyright[ia]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[it]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[ko]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[lt]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[nl]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[nn]": "© 2005, 2009 Albert Astals Cid\n© 2006–2007 Pino Toscano\n© 2006–2007 Tobias Koenig",
+            "Copyright[pa]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[pl]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[pt]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[pt_BR]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[ru]": "© Albert Astals Cid, 2005, 2009\n© Pino Toscano, 2006-2007\n© Tobias König, 2006-2007",
+            "Copyright[sk]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[sl]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[sr@ijekavian]": "© 2005, 2009, Алберт Асталс Сид\n© 2006–2007, Пино Тоскано\n© 2006–2007, Тобијас Кениг",
+            "Copyright[sr@ijekavianlatin]": "© 2005, 2009, Albert Astals Sid\n© 2006–2007, Pino Toskano\n© 2006–2007, Tobijas Kenig",
+            "Copyright[sr@latin]": "© 2005, 2009, Albert Astals Sid\n© 2006–2007, Pino Toskano\n© 2006–2007, Tobijas Kenig",
+            "Copyright[sr]": "© 2005, 2009, Алберт Асталс Сид\n© 2006–2007, Пино Тоскано\n© 2006–2007, Тобијас Кениг",
+            "Copyright[sv]": "© 2005,2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[tr]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[uk]": "© Albert Astals Cid, 2005, 2009 \n© Pino Toscano, 2006–2007\n© Tobias Koenig, 2006–2007",
+            "Copyright[vi]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[x-test]": "xx© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenigxx",
+            "Copyright[zh_CN]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Copyright[zh_TW]": "© 2005, 2009 Albert Astals Cid\n© 2006-2007 Pino Toscano\n© 2006-2007 Tobias Koenig",
+            "Description": "A simple image backend",
+            "Description[ar]": "خلفية صور بسيطة",
+            "Description[az]": "Sadə şəkil modulu",
+            "Description[ca@valencia]": "Un dorsal d'imatges senzill",
+            "Description[ca]": "Un dorsal d'imatges senzill",
+            "Description[cs]": "Jednoduchá podpůrná vrstva obrázků",
+            "Description[da]": "En simpel billed-backend",
+            "Description[de]": "Ein einfaches Anzeigemodul für Bilder",
+            "Description[el]": "Ένα απλό σύστημα υποστήριξης εικόνων",
+            "Description[en_GB]": "A simple image backend",
+            "Description[es]": "Un sencillo motor para imágenes",
+            "Description[et]": "Lihtne pildi taustaprogramm",
+            "Description[eu]": "Irudien bizkarraldeko xume bat",
+            "Description[fi]": "Yksinkertainen kuvataustaosa",
+            "Description[fr]": "Un moteur simple pour image",
+            "Description[gl]": "Unha infraestrutura simple para imaxes",
+            "Description[hu]": "Egyszerű képmodul",
+            "Description[ia]": "Un simplice retroadministration de image",
+            "Description[it]": "Un semplice backend per le immagini",
+            "Description[ko]": "간단한 그림 백엔드",
+            "Description[lt]": "Paprasta paveikslų programinė sąsaja",
+            "Description[nl]": "Een eenvoudige afbeeldingsbackend",
+            "Description[nn]": "Ein enkel biletmotor",
+            "Description[pl]": "Wyświetlanie obrazów",
+            "Description[pt]": "Uma infra-estrutura de imagens simples",
+            "Description[pt_BR]": "Uma infraestrutura simples de imagens",
+            "Description[ru]": "Модуль поддержки форматов изображений",
+            "Description[sk]": "Backend jednoduchých obrázkov",
+            "Description[sl]": "Preprosto zaledje za slike",
+            "Description[sr@ijekavian]": "Једноставна позадина за слике",
+            "Description[sr@ijekavianlatin]": "Jednostavna pozadina za slike",
+            "Description[sr@latin]": "Jednostavna pozadina za slike",
+            "Description[sr]": "Једноставна позадина за слике",
+            "Description[sv]": "Ett enkelt bildgränssnitt",
+            "Description[tr]": "Basit bir görüntü arka ucu",
+            "Description[uk]": "Проста програма для зображень",
+            "Description[vi]": "Một hậu phương ảnh đơn giản",
+            "Description[x-test]": "xxA simple image backendxx",
+            "Description[zh_CN]": "简单的图像后端",
+            "Description[zh_TW]": "簡易的圖片後端介面",
+            "Id": "okular_kimgio",
+            "License": "GPL",
+            "MimeTypes": [
+                "image/bmp",
+                "image/x-dds",
+                "image/x-eps",
+                "image/x-exr",
+                "image/gif",
+                "image/x-hdr",
+                "image/x-ico",
+                "image/jp2",
+                "image/jpeg",
+                "video/x-mng",
+                "image/x-portable-bitmap",
+                "image/x-pcx",
+                "image/x-portable-graymap",
+                "image/png",
+                "image/x-portable-pixmap",
+                "image/x-psd",
+                "image/x-rgb",
+                "image/x-tga",
+                "image/tiff",
+                "image/x-xbitmap",
+                "image/x-xcf",
+                "image/x-xpixmap",
+                "image/x-gzeps",
+                "image/x-bzeps",
+                "image/avif",
+                "image/heif",
+                "image/webp"
+            ],
+            "Name": "Image Backend",
+            "Name[ar]": "خلفية الصور",
+            "Name[az]": "Image Backend",
+            "Name[ca@valencia]": "Dorsal d'imatges",
+            "Name[ca]": "Dorsal d'imatges",
+            "Name[cs]": "Podpůrná vrstva obrázků",
+            "Name[da]": "Billed-backend",
+            "Name[de]": "Anzeigemodul für Bilder",
+            "Name[el]": "Σύστημα υποστήριξης εικόνας",
+            "Name[en_GB]": "Image Backend",
+            "Name[es]": "Motor para imágenes",
+            "Name[et]": "Pildi taustaprogramm",
+            "Name[eu]": "Irudien bizkarraldekoa",
+            "Name[fi]": "Kuvataustaosa",
+            "Name[fr]": "Moteur image",
+            "Name[gl]": "Infraestrutura de imaxe",
+            "Name[hu]": "Kép modul",
+            "Name[ia]": "Retro-Administration de Image",
+            "Name[it]": "Backend immagini",
+            "Name[ko]": "그림 백엔드",
+            "Name[lt]": "Paveikslų programinė sąsaja",
+            "Name[nl]": "Afbeeldings-backend",
+            "Name[nn]": "Biletmotor",
+            "Name[pa]": "ਚਿੱਤਰ ਬੈਕਐਂਡ",
+            "Name[pl]": "Obsługa obrazów",
+            "Name[pt]": "Infra-Estrutura de Imagens",
+            "Name[pt_BR]": "Infraestrutura de imagens",
+            "Name[ru]": "Модуль поддержки форматов изображений",
+            "Name[sk]": "Backend obrázkov",
+            "Name[sl]": "Zaledje za slike",
+            "Name[sr@ijekavian]": "Позадина за слике",
+            "Name[sr@ijekavianlatin]": "Pozadina za slike",
+            "Name[sr@latin]": "Pozadina za slike",
+            "Name[sr]": "Позадина за слике",
+            "Name[sv]": "Bildgränssnitt",
+            "Name[tr]": "Resim Arka Ucu",
+            "Name[uk]": "Модуль зображень",
+            "Name[vi]": "Hậu phương ảnh",
+            "Name[x-test]": "xxImage Backendxx",
+            "Name[zh_CN]": "图像后端",
+            "Name[zh_TW]": "圖片後端介面",
+            "Version": "0.1.2"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "KIMGIOGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_poppler.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "aacid@kde.org",
+                    "Name": "Albert Astals Cid",
+                    "Name[ar]": "Albert Astals Cid",
+                    "Name[az]": "Albert Astals Cid",
+                    "Name[ca@valencia]": "Albert Astals Cid",
+                    "Name[ca]": "Albert Astals Cid",
+                    "Name[cs]": "Albert Astals Cid",
+                    "Name[da]": "Albert Astals Cid",
+                    "Name[de]": "Albert Astals Cid",
+                    "Name[el]": "Albert Astals Cid",
+                    "Name[en_GB]": "Albert Astals Cid",
+                    "Name[es]": "Albert Astals Cid",
+                    "Name[et]": "Albert Astals Cid",
+                    "Name[eu]": "Albert Astals Cid",
+                    "Name[fi]": "Albert Astals Cid",
+                    "Name[fr]": "Albert Astals Cid",
+                    "Name[gl]": "Albert Astals Cid",
+                    "Name[hu]": "Albert Astals Cid",
+                    "Name[ia]": "Albert  Astals Cid",
+                    "Name[it]": "Albert Astals Cid",
+                    "Name[ko]": "Albert Astals Cid",
+                    "Name[lt]": "Albert Astals Cid",
+                    "Name[nl]": "Albert Astals Cid",
+                    "Name[nn]": "Albert Astals Cid",
+                    "Name[pa]": "ਅਲਬਰਟ ਅਸਟਾਲਸ ਸਿਡ",
+                    "Name[pl]": "Albert Astals Cid",
+                    "Name[pt]": "Albert Astals Cid",
+                    "Name[pt_BR]": "Albert Astals Cid",
+                    "Name[ru]": "Albert Astals Cid",
+                    "Name[sk]": "Albert Astals Cid",
+                    "Name[sl]": "Albert Astals Cid",
+                    "Name[sr@ijekavian]": "Алберт Асталс Сид",
+                    "Name[sr@ijekavianlatin]": "Albert Astals Sid",
+                    "Name[sr@latin]": "Albert Astals Sid",
+                    "Name[sr]": "Алберт Асталс Сид",
+                    "Name[sv]": "Albert Astals Cid",
+                    "Name[tr]": "Albert Astals Cid",
+                    "Name[uk]": "Albert Astals Cid",
+                    "Name[vi]": "Albert Astals Cid",
+                    "Name[x-test]": "xxAlbert Astals Cidxx",
+                    "Name[zh_CN]": "Albert Astals Cid",
+                    "Name[zh_TW]": "Albert Astals Cid"
+                }
+            ],
+            "Copyright": "© 2005-2008 Albert Astals Cid",
+            "Copyright[ar]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[az]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[ca@valencia]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[ca]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[cs]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[da]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[de]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[el]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[en_GB]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[es]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[et]": "© 2005-2008: Albert Astals Cid",
+            "Copyright[eu]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[fi]": "© 2005–2008 Albert Astals Cid",
+            "Copyright[fr]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[gl]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[hu]": "© Albert Astals Cid, 2005-2008.",
+            "Copyright[ia]": "Albert  Astals Cid",
+            "Copyright[it]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[ko]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[lt]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[nl]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[nn]": "© 2005–2008 Albert Astals Cid",
+            "Copyright[pa]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[pl]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[pt]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[pt_BR]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[ru]": "© Albert Astals Cid, 2005-2008",
+            "Copyright[sk]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[sl]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[sr@ijekavian]": "© 2005–2008, Алберт Асталс Сид",
+            "Copyright[sr@ijekavianlatin]": "© 2005–2008, Albert Astals Sid",
+            "Copyright[sr@latin]": "© 2005–2008, Albert Astals Sid",
+            "Copyright[sr]": "© 2005–2008, Алберт Асталс Сид",
+            "Copyright[sv]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[tr]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[uk]": "© Albert Astals Cid, 2005–2008",
+            "Copyright[vi]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[x-test]": "xx© 2005-2008 Albert Astals Cidxx",
+            "Copyright[zh_CN]": "© 2005-2008 Albert Astals Cid",
+            "Copyright[zh_TW]": "© 2005-2008 Albert Astals Cid",
+            "Description": "A PDF file renderer",
+            "Description[ar]": "عارض ملفات بي دي اف",
+            "Description[az]": "PDF faylı tərtibatçısı",
+            "Description[ca@valencia]": "Un renderitzador de fitxers PDF",
+            "Description[ca]": "Un renderitzador de fitxers PDF",
+            "Description[cs]": "Vykreslovač PDF souborů",
+            "Description[da]": "En gengiver til PDF-filer",
+            "Description[de]": "Ein Renderer für PDF-Dateien",
+            "Description[el]": "Πρόγραμμα αποτύπωσης για PDF αρχεία",
+            "Description[en_GB]": "A PDF file renderer",
+            "Description[es]": "Un visor de archivos PDF",
+            "Description[et]": "PDF-faili renderdaja",
+            "Description[eu]": "PDF fitxategi errendatzaile bat",
+            "Description[fi]": "PDF-tiedostohahmonnin",
+            "Description[fr]": "Système de rendu pour les fichiers « PDF »",
+            "Description[gl]": "Un visor de ficheiros PDF",
+            "Description[hu]": "PDF-fájl leképező",
+            "Description[ia]": "Un renditor de file de PDF",
+            "Description[it]": "Un visualizzatore di file PDF",
+            "Description[ko]": "PDF 파일 렌더러",
+            "Description[lt]": "PDF failų atvaizdavimas",
+            "Description[nl]": "Een PDF-bestandsviewer",
+            "Description[nn]": "Ein gjengjevar for PDF-filer",
+            "Description[pa]": "PDF ਫ਼ਾਈਲ ਰੈਂਡਰਰ",
+            "Description[pl]": "Wyświetlanie plików PDF",
+            "Description[pt]": "Um visualizador de ficheiros PDF",
+            "Description[pt_BR]": "Um interpretador de arquivos PDF",
+            "Description[ru]": "Модуль поддержки формата PDF",
+            "Description[sk]": "Vykresľovanie PDF súborov",
+            "Description[sl]": "Izrisovalnik datotek PDF",
+            "Description[sr@ijekavian]": "Рендерер ПДФ фајлова",
+            "Description[sr@ijekavianlatin]": "Renderer PDF fajlova",
+            "Description[sr@latin]": "Renderer PDF fajlova",
+            "Description[sr]": "Рендерер ПДФ фајлова",
+            "Description[sv]": "Ett återgivningsprogram för PDF-filer",
+            "Description[tr]": "PDF dosyası oluşturucu",
+            "Description[uk]": "Програма для показу файлів PDF",
+            "Description[vi]": "Một trình kết xuất tệp PDF",
+            "Description[x-test]": "xxA PDF file rendererxx",
+            "Description[zh_CN]": "PDF 文件渲染器",
+            "Description[zh_TW]": "PDF 檔成像器",
+            "Id": "okular_poppler",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/x-pdf",
+                "application/pdf",
+                "application/x-wwf"
+            ],
+            "Name": "PDF Backend",
+            "Name[ar]": "خلفية بي دي اف",
+            "Name[az]": "PDF modulu",
+            "Name[ca@valencia]": "Dorsal PDF",
+            "Name[ca]": "Dorsal PDF",
+            "Name[cs]": "Podpůrná vrstva PDF",
+            "Name[da]": "PDF-backend",
+            "Name[de]": "PDF-Anzeigemodul",
+            "Name[el]": "Σύστημα υποστήριξης PDF",
+            "Name[en_GB]": "PDF Backend",
+            "Name[es]": "Motor para PDF",
+            "Name[et]": "PDF-i taustaprogramm",
+            "Name[eu]": "PDFen bizkarraldekoa",
+            "Name[fi]": "PDF-taustaosa",
+            "Name[fr]": "Moteur PDF",
+            "Name[gl]": "Infraestrutura de PDF",
+            "Name[hu]": "PDF modul",
+            "Name[ia]": "Retro-administration de PDF",
+            "Name[it]": "Backend PDF",
+            "Name[ko]": "PDF 백엔드",
+            "Name[lt]": "PDF programinė sąsaja",
+            "Name[nl]": "PDF-backend",
+            "Name[nn]": "PDF-motor",
+            "Name[pa]": "PDF ਬੈਕਐਂਡ",
+            "Name[pl]": "Obsługa PDF",
+            "Name[pt]": "Infra-Estrutura de PDF",
+            "Name[pt_BR]": "Infraestrutura PDF",
+            "Name[ru]": "Модуль поддержки формата PDF",
+            "Name[sk]": "PDF Backend",
+            "Name[sl]": "Zaledje za PDF",
+            "Name[sr@ijekavian]": "Позадина за ПДФ",
+            "Name[sr@ijekavianlatin]": "Pozadina za PDF",
+            "Name[sr@latin]": "Pozadina za PDF",
+            "Name[sr]": "Позадина за ПДФ",
+            "Name[sv]": "PDF-gränssnitt",
+            "Name[tr]": "PDF Arka Ucu",
+            "Name[uk]": "Модуль PDF",
+            "Name[vi]": "Hậu phương PDF",
+            "Name[x-test]": "xxPDF Backendxx",
+            "Name[zh_CN]": "PDF 后端",
+            "Name[zh_TW]": "PDF 後端介面",
+            "Version": "0.6.5"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": true
+    },
+    "archreq": 1,
+    "className": "PDFGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_fb.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "tokoe@kde.org",
+                    "Name": "Tobias Koenig",
+                    "Name[ar]": "Tobias Koenig",
+                    "Name[az]": "Tobias Koenig",
+                    "Name[ca@valencia]": "Tobias Koenig",
+                    "Name[ca]": "Tobias Koenig",
+                    "Name[cs]": "Tobias Koenig",
+                    "Name[da]": "Tobias Koenig",
+                    "Name[de]": "Tobias Koenig",
+                    "Name[el]": "Tobias Koenig",
+                    "Name[en_GB]": "Tobias Koenig",
+                    "Name[es]": "Tobias Koenig",
+                    "Name[et]": "Tobias Koenig",
+                    "Name[eu]": "Tobias Koenig",
+                    "Name[fi]": "Tobias Koenig",
+                    "Name[fr]": "Tobias Koenig",
+                    "Name[gl]": "Tobias Koenig",
+                    "Name[hu]": "Tobias Koenig",
+                    "Name[ia]": "Tobias Koenig",
+                    "Name[it]": "Tobias Koenig",
+                    "Name[ko]": "Tobias Koenig",
+                    "Name[lt]": "Tobias Koenig",
+                    "Name[nl]": "Tobias Koenig",
+                    "Name[nn]": "Tobias König",
+                    "Name[pa]": "Tobias Koenig",
+                    "Name[pl]": "Tobias Koenig",
+                    "Name[pt]": "Tobias Koenig",
+                    "Name[pt_BR]": "Tobias Koenig",
+                    "Name[ru]": "Tobias König",
+                    "Name[sk]": "Tobias Koenig",
+                    "Name[sl]": "Tobias Koenig",
+                    "Name[sr@ijekavian]": "Тобијас Кениг",
+                    "Name[sr@ijekavianlatin]": "Tobijas Kenig",
+                    "Name[sr@latin]": "Tobijas Kenig",
+                    "Name[sr]": "Тобијас Кениг",
+                    "Name[sv]": "Tobias Koenig",
+                    "Name[tr]": "Tobias Koenig",
+                    "Name[uk]": "Tobias Koenig",
+                    "Name[vi]": "Tobias Koenig",
+                    "Name[x-test]": "xxTobias Koenigxx",
+                    "Name[zh_CN]": "Tobias Koenig",
+                    "Name[zh_TW]": "Tobias Koenig"
+                }
+            ],
+            "Copyright": "© 2007-2008 Tobias Koenig",
+            "Copyright[ar]": "© 2007-2008 Tobias Koenig",
+            "Copyright[az]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca@valencia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ca]": "© 2007-2008 Tobias Koenig",
+            "Copyright[cs]": "© 2007-2008 Tobias Koenig",
+            "Copyright[da]": "© 2007-2008 Tobias Koenig",
+            "Copyright[de]": "© 2007-2008 Tobias Koenig",
+            "Copyright[el]": "© 2007-2008 Tobias Koenig",
+            "Copyright[en_GB]": "© 2007-2008 Tobias Koenig",
+            "Copyright[es]": "© 2007-2008 Tobias Koenig",
+            "Copyright[et]": "© 2007-2008: Tobias Koenig",
+            "Copyright[eu]": "© 2007-2008 Tobias Koenig",
+            "Copyright[fi]": "© 2007–2008 Tobias Koenig",
+            "Copyright[fr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[gl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[hu]": "© Tobias Koenig, 2007-2008.",
+            "Copyright[ia]": "© 2007-2008 Tobias Koenig",
+            "Copyright[it]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ko]": "© 2007-2008 Tobias Koenig",
+            "Copyright[lt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[nn]": "© 2007–2008 Tobias König",
+            "Copyright[pa]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt]": "© 2007-2008 Tobias Koenig",
+            "Copyright[pt_BR]": "© 2007-2008 Tobias Koenig",
+            "Copyright[ru]": "© Tobias König, 2007-2008",
+            "Copyright[sk]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sl]": "© 2007-2008 Tobias Koenig",
+            "Copyright[sr@ijekavian]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sr@ijekavianlatin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr@latin]": "© 2007–2008, Tobijas Kenig",
+            "Copyright[sr]": "© 2007–2008, Тобијас Кениг",
+            "Copyright[sv]": "© 2007-2008 Tobias Koenig",
+            "Copyright[tr]": "© 2007-2008 Tobias Koenig",
+            "Copyright[uk]": "© Tobias Koenig, 2007–2008",
+            "Copyright[vi]": "© 2007-2008 Tobias Koenig",
+            "Copyright[x-test]": "xx© 2007-2008 Tobias Koenigxx",
+            "Copyright[zh_CN]": "© 2007-2008 Tobias Koenig",
+            "Copyright[zh_TW]": "© 2007-2008 Tobias Koenig",
+            "Description": "A renderer for FictionBook eBooks",
+            "Description[ar]": "عارض الكتب الإلكترونية FictionBook",
+            "Description[az]": "FictionBook eBooks üçün tərtibatçı",
+            "Description[ca@valencia]": "Un renderitzador per a llibres electrònics FictionBook",
+            "Description[ca]": "Un renderitzador per a llibres electrònics FictionBook",
+            "Description[cs]": "Renderer elektronických knih Fiction Book",
+            "Description[da]": "En gengiver til FictionBook-e-bøger",
+            "Description[de]": "Ein Renderer für FictionBook-eBooks",
+            "Description[el]": "Πρόγραμμα αποτύπωσης για FictionBook eBooks",
+            "Description[en_GB]": "A renderer for FictionBook eBooks",
+            "Description[es]": "Un visor para libros electrónicos FictionBook",
+            "Description[et]": "FictionBooki e-raamatute renderdaja",
+            "Description[eu]": "FictionBook eLiburuentzako errendatzaile bat",
+            "Description[fi]": "FictionBook-e-kirjojen hahmonnin",
+            "Description[fr]": "Système de rendu pour les livres électroniques FictionBook",
+            "Description[gl]": "Un visor de libros electrónicos FictionBook.",
+            "Description[hu]": "Leképező FictionBook e-könyvekhez",
+            "Description[ia]": "Un rendition pro eBooks (Libros electronic) de FictionBook",
+            "Description[it]": "Un visualizzatore per ebook FictionBook",
+            "Description[ko]": "FictionBook 전자책 렌더러",
+            "Description[lt]": "FictionBook elektroninių knygų atvaizdavimas",
+            "Description[nl]": "Een viewer voor FictionBooks eBooks",
+            "Description[nn]": "Ein lesar for e-bøker av typen FictionBook",
+            "Description[pl]": "Wyświetlanie e-booków FictionBook",
+            "Description[pt]": "Um visualizador de eBooks em FictionBook",
+            "Description[pt_BR]": "Um interpretador de eBooks FictionBook",
+            "Description[ru]": "Модуль поддержки формата электронных книг FictionBook",
+            "Description[sk]": "Vykresľovanie e-kníh FictionBook",
+            "Description[sl]": "Izrisovalnik za e-knjige FictionBook",
+            "Description[sr@ijekavian]": "Рендерер за фикшнбук електронске књиге",
+            "Description[sr@ijekavianlatin]": "Renderer za FictionBook elektronske knjige",
+            "Description[sr@latin]": "Renderer za FictionBook elektronske knjige",
+            "Description[sr]": "Рендерер за фикшнбук електронске књиге",
+            "Description[sv]": "Ett återgivningsprogram för Fiction Book e-böcker",
+            "Description[tr]": "FictionBook e-kitapları için bir oluşturucu",
+            "Description[uk]": "Програма для відображення електронної белетристики",
+            "Description[vi]": "Một trình kết xuất cho các sách điện tử FictionBook",
+            "Description[x-test]": "xxA renderer for FictionBook eBooksxx",
+            "Description[zh_CN]": "FictionBook 电子书渲染器",
+            "Description[zh_TW]": "FictionBook 電子書成像器",
+            "Id": "okular_fictionbook",
+            "License": "GPL",
+            "MimeTypes": [
+                "application/x-fictionbook+xml"
+            ],
+            "Name": "Fiction Book Backend",
+            "Name[ar]": "خلفية الكتب الخيالية",
+            "Name[az]": "Fiction Book modulu",
+            "Name[ca@valencia]": "Dorsal Fiction Book",
+            "Name[ca]": "Dorsal Fiction Book",
+            "Name[cs]": "Podpůrná vrstva Fiction Book",
+            "Name[da]": "Fiction Book-backend",
+            "Name[de]": "Anzeigemodul für FictionBook",
+            "Name[el]": "Σύστημα υποστήριξης Fiction Book",
+            "Name[en_GB]": "Fiction Book Backend",
+            "Name[es]": "Motor para Fiction Book",
+            "Name[et]": "Fiction Booki taustaprogramm",
+            "Name[eu]": "Fiction Book-en bizkarraldekoa",
+            "Name[fi]": "FictionBook-taustaosa",
+            "Name[fr]": "Moteur pour « FictionBook »",
+            "Name[gl]": "Infraestrutura para libros FictionBook",
+            "Name[hu]": "FictionBook modul",
+            "Name[ia]": "Retro adminisration de Fiction Book",
+            "Name[it]": "Backend Fiction Book",
+            "Name[ko]": "Fiction Book 백엔드",
+            "Name[lt]": "Fiction Book programinė sąsaja",
+            "Name[nl]": "FictionBook-backend",
+            "Name[nn]": "FictionBook-motor",
+            "Name[pl]": "Obsługa Fiction Book",
+            "Name[pt]": "Infra-Estrutura de Livros de Ficção",
+            "Name[pt_BR]": "Infraestrutura Fiction Book",
+            "Name[ru]": "Модуль поддержки формата FictionBook",
+            "Name[sk]": "Fiction Book Backend",
+            "Name[sl]": "Zaledje za FictionBook",
+            "Name[sr@ijekavian]": "Позадина за фикшнбук",
+            "Name[sr@ijekavianlatin]": "Pozadina za FictionBook",
+            "Name[sr@latin]": "Pozadina za FictionBook",
+            "Name[sr]": "Позадина за фикшнбук",
+            "Name[sv]": "Fiction Book-gränssnitt",
+            "Name[tr]": "Kurgu Kitabı Arka Ucu",
+            "Name[uk]": "Модуль FictionBook",
+            "Name[vi]": "Hậu phương FictionBook",
+            "Name[x-test]": "xxFiction Book Backendxx",
+            "Name[zh_CN]": "Fiction Book 后端",
+            "Name[zh_TW]": "Fiction Book 後端介面",
+            "Version": "0.1.5"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": true
+    },
+    "archreq": 1,
+    "className": "FictionBookGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_fax.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "tokoe@kde.org",
+                    "Name": "Tobias Koenig",
+                    "Name[ar]": "Tobias Koenig",
+                    "Name[az]": "Tobias Koenig",
+                    "Name[ca@valencia]": "Tobias Koenig",
+                    "Name[ca]": "Tobias Koenig",
+                    "Name[cs]": "Tobias Koenig",
+                    "Name[da]": "Tobias Koenig",
+                    "Name[de]": "Tobias Koenig",
+                    "Name[el]": "Tobias Koenig",
+                    "Name[en_GB]": "Tobias Koenig",
+                    "Name[es]": "Tobias Koenig",
+                    "Name[et]": "Tobias Koenig",
+                    "Name[eu]": "Tobias Koenig",
+                    "Name[fi]": "Tobias Koenig",
+                    "Name[fr]": "Tobias Koenig",
+                    "Name[gl]": "Tobias Koenig",
+                    "Name[hu]": "Tobias Koenig",
+                    "Name[ia]": "Tobias Koenig",
+                    "Name[it]": "Tobias Koenig",
+                    "Name[ko]": "Tobias Koenig",
+                    "Name[lt]": "Tobias Koenig",
+                    "Name[nl]": "Tobias Koenig",
+                    "Name[nn]": "Tobias König",
+                    "Name[pa]": "Tobias Koenig",
+                    "Name[pl]": "Tobias Koenig",
+                    "Name[pt]": "Tobias Koenig",
+                    "Name[pt_BR]": "Tobias Koenig",
+                    "Name[ru]": "Tobias König",
+                    "Name[sk]": "Tobias Koenig",
+                    "Name[sl]": "Tobias Koenig",
+                    "Name[sr@ijekavian]": "Тобијас Кениг",
+                    "Name[sr@ijekavianlatin]": "Tobijas Kenig",
+                    "Name[sr@latin]": "Tobijas Kenig",
+                    "Name[sr]": "Тобијас Кениг",
+                    "Name[sv]": "Tobias Koenig",
+                    "Name[tr]": "Tobias Koenig",
+                    "Name[uk]": "Tobias Koenig",
+                    "Name[vi]": "Tobias Koenig",
+                    "Name[x-test]": "xxTobias Koenigxx",
+                    "Name[zh_CN]": "Tobias Koenig",
+                    "Name[zh_TW]": "Tobias Koenig"
+                }
+            ],
+            "Copyright": "© 2008 Tobias Koenig",
+            "Copyright[ar]": "© 2008 Tobias Koenig",
+            "Copyright[az]": "© 2008 Tobias Koenig",
+            "Copyright[ca@valencia]": "© 2008 Tobias Koenig",
+            "Copyright[ca]": "© 2008 Tobias Koenig",
+            "Copyright[cs]": "© 2008 Tobias Koenig",
+            "Copyright[da]": "© 2008 Tobias Koenig",
+            "Copyright[de]": "© 2008 Tobias Koenig",
+            "Copyright[el]": "© 2008 Tobias Koenig",
+            "Copyright[en_GB]": "© 2008 Tobias Koenig",
+            "Copyright[es]": "© 2008 Tobias Koenig",
+            "Copyright[et]": "© 2008: Tobias Koenig",
+            "Copyright[eu]": "© 2008 Tobias Koenig",
+            "Copyright[fi]": "© 2008 Tobias Koenig",
+            "Copyright[fr]": "© 2008 Tobias Koenig",
+            "Copyright[gl]": "© 2008 Tobias Koenig",
+            "Copyright[hu]": "© Tobias Koenig, 2008.",
+            "Copyright[ia]": "© 2008 Tobias Koenig",
+            "Copyright[it]": "© 2008 Tobias Koenig",
+            "Copyright[ko]": "© 2008 Tobias Koenig",
+            "Copyright[lt]": "© 2008 Tobias Koenig",
+            "Copyright[nl]": "© 2008 Tobias Koenig",
+            "Copyright[nn]": "© 2008 Tobias König",
+            "Copyright[pa]": "© 2008 Tobias Koenig",
+            "Copyright[pl]": "© 2008 Tobias Koenig",
+            "Copyright[pt]": "© 2008 Tobias Koenig",
+            "Copyright[pt_BR]": "© 2008 Tobias Koenig",
+            "Copyright[ru]": "© Tobias König, 2008",
+            "Copyright[sk]": "© 2008 Tobias Koenig",
+            "Copyright[sl]": "© 2008 Tobias Koenig",
+            "Copyright[sr@ijekavian]": "© 2008, Тобијас Кениг",
+            "Copyright[sr@ijekavianlatin]": "© 2008, Tobijas Kenig",
+            "Copyright[sr@latin]": "© 2008, Tobijas Kenig",
+            "Copyright[sr]": "© 2008, Тобијас Кениг",
+            "Copyright[sv]": "© 2008 Tobias Koenig",
+            "Copyright[tr]": "© 2008 Tobias Koenig",
+            "Copyright[uk]": "© Tobias Koenig, 2008",
+            "Copyright[vi]": "© 2008 Tobias Koenig",
+            "Copyright[x-test]": "xx© 2008 Tobias Koenigxx",
+            "Copyright[zh_CN]": "© 2008 Tobias Koenig",
+            "Copyright[zh_TW]": "© 2008 Tobias Koenig",
+            "Description": "A G3/G4 fax document backend",
+            "Description[ar]": "خلفية مستندات فاكس G3/G4",
+            "Description[az]": "A G3/G4 fax sənədi modulu",
+            "Description[ca@valencia]": "Un dorsal de documents de fax G3/G4",
+            "Description[ca]": "Un dorsal de documents de fax G3/G4",
+            "Description[cs]": "Implementace dokumentu faxu A G3/G4",
+            "Description[da]": "En G3/G4 faxdokument-backend",
+            "Description[de]": "Ein Anzeigemodul für G3/G4-Faxe",
+            "Description[el]": "Σύστημα υποστήριξης για έγγραφα τηλεμοιοτυπίας G3/G4",
+            "Description[en_GB]": "A G3/G4 fax document backend",
+            "Description[es]": "Un motor para documentos de fax G3/G4",
+            "Description[et]": "G3/G4 faksidokumendi taustaprogramm",
+            "Description[eu]": "G3/G4 fax dokumentuen bizkarraldekoa",
+            "Description[fi]": "G3/G4-faksitiedostotaustaosa",
+            "Description[fr]": "Un moteur de document fax G3/G4",
+            "Description[gl]": "Unha infraestrutura de documentos de fax G3/G4",
+            "Description[hu]": "G3/G4 faxdokumentum modul",
+            "Description[ia]": "UN retro-administration de documento fax G3/G4",
+            "Description[it]": "Un backend per documenti fax G3/G4",
+            "Description[ko]": "G3/G4 팩스 문서 백엔드",
+            "Description[lt]": "G3/G4 fakso dokumentų programinė sąsaja",
+            "Description[nl]": "Een backend voor een G3/G4 faxdocument",
+            "Description[nn]": "Ein motor for G3/G4-faksdokument",
+            "Description[pl]": "Obsługa dokumentów wysłanych faksem G3/G4",
+            "Description[pt]": "Uma infra-estrutura de documentos de fax G3/G4",
+            "Description[pt_BR]": "Uma infraestrutura para documentos de fax G3/G4",
+            "Description[ru]": "Модуль поддержки формата факсов G3/G4",
+            "Description[sk]": "Backend dokumentu faxu G3/G4",
+            "Description[sl]": "Zaledje za dokumente faksov G3/G4",
+            "Description[sr@ijekavian]": "Позадина за Г3 факс и Г4 факс документе",
+            "Description[sr@ijekavianlatin]": "Pozadina za G4 Fax i G3 Fax dokumente",
+            "Description[sr@latin]": "Pozadina za G4 Fax i G3 Fax dokumente",
+            "Description[sr]": "Позадина за Г3 факс и Г4 факс документе",
+            "Description[sv]": "Ett G3/G4 telefax-dokumentgränssnitt",
+            "Description[tr]": "G3/G4 faks belgesi arka ucu",
+            "Description[uk]": "Сервер документів факсів G3/G4",
+            "Description[vi]": "Một hậu phương tài liệu fax G3/G4",
+            "Description[x-test]": "xxA G3/G4 fax document backendxx",
+            "Description[zh_CN]": "G3/G4 传真文档后端",
+            "Description[zh_TW]": "G3/G4 fax 文件後端介面",
+            "Id": "okular_fax",
+            "License": "GPL",
+            "MimeTypes": [
+                "image/fax-g3",
+                "image/g3fax"
+            ],
+            "Name": "Fax Backend",
+            "Name[ar]": "خلفية الفاكس",
+            "Name[az]": "Fax Backend",
+            "Name[ca@valencia]": "Dorsal de fax",
+            "Name[ca]": "Dorsal de fax",
+            "Name[cs]": "Implementace faxu",
+            "Name[da]": "Fax-backend",
+            "Name[de]": "Anzeigemodul für Faxe",
+            "Name[el]": "Σύστημα υποστήριξης fax",
+            "Name[en_GB]": "Fax Backend",
+            "Name[es]": "Motor para fax",
+            "Name[et]": "Faksi taustaprogramm",
+            "Name[eu]": "Fax-aren bizkarraldekoa",
+            "Name[fi]": "Faksitaustaosa",
+            "Name[fr]": "Moteur Fax",
+            "Name[gl]": "Infraestrutura de fax",
+            "Name[hu]": "Fax modul",
+            "Name[ia]": "Retro-Administration de fax",
+            "Name[it]": "Backend fax",
+            "Name[ko]": "팩스 백엔드",
+            "Name[lt]": "Fakso programinė sąsaja",
+            "Name[nl]": "Faxbackend",
+            "Name[nn]": "Faksmotor",
+            "Name[pl]": "Obsługa faksu",
+            "Name[pt]": "Fax Backend",
+            "Name[pt_BR]": "Infraestrutura de fax",
+            "Name[ru]": "Модуль поддержки форматов факсов",
+            "Name[sk]": "Fax Backend",
+            "Name[sl]": "Zaledje za faks",
+            "Name[sr@ijekavian]": "Позадина за факсове",
+            "Name[sr@ijekavianlatin]": "Pozadina za faksove",
+            "Name[sr@latin]": "Pozadina za faksove",
+            "Name[sr]": "Позадина за факсове",
+            "Name[sv]": "Telefax-gränssnitt",
+            "Name[tr]": "Faks Arka Ucu",
+            "Name[uk]": "Модуль факсів",
+            "Name[vi]": "Hậu phương Fax",
+            "Name[x-test]": "xxFax Backendxx",
+            "Name[zh_CN]": "传真后端",
+            "Name[zh_TW]": "Fax 後端介面",
+            "Version": "0.1.1"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": false
+    },
+    "archreq": 1,
+    "className": "FaxGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+QFactoryLoader::QFactoryLoader() checking directory path "/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations" ...
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations/libqxcb-egl-integration.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations/libqxcb-egl-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_egl"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbEglIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("xcb_egl")
+QFactoryLoader::QFactoryLoader() looking at "/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.Xcb.QXcbGlIntegrationFactoryInterface.5.5",
+    "MetaData": {
+        "Keys": [
+            "xcb_glx"
+        ]
+    },
+    "archreq": 0,
+    "className": "QXcbGlxIntegrationPlugin",
+    "debug": false,
+    "version": 331520
+}
+
+
+Got keys from plugin meta data ("xcb_glx")
+QFactoryLoader::QFactoryLoader() checking directory path "/root/okular/build/bin/xcbglintegrations" ...
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+Icon theme "breeze" not found.
+Found metadata in lib /usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_md.so, metadata=
+{
+    "IID": "org.kde.KPluginFactory",
+    "MetaData": {
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "wolff@julianwolff.de",
+                    "Name": "Julian Wolff",
+                    "Name[ar]": "Julian Wolff",
+                    "Name[az]": "Julian Wolff",
+                    "Name[ca@valencia]": "Julian Wolff",
+                    "Name[ca]": "Julian Wolff",
+                    "Name[cs]": "Julian Wolff",
+                    "Name[da]": "Julian Wolff",
+                    "Name[de]": "Julian Wolff",
+                    "Name[el]": "Julian Wolff",
+                    "Name[en_GB]": "Julian Wolff",
+                    "Name[es]": "Julian Wolff",
+                    "Name[et]": "Julian Wolff",
+                    "Name[eu]": "Julian Wolff",
+                    "Name[fi]": "Julian Wolff",
+                    "Name[fr]": "Julian Wolff",
+                    "Name[gl]": "Julian Wolff",
+                    "Name[hu]": "Julian Wolff",
+                    "Name[ia]": "Julian Wolff",
+                    "Name[it]": "Julian Wolff",
+                    "Name[ko]": "Julian Wolff",
+                    "Name[lt]": "Julian Wolff",
+                    "Name[nl]": "Julian Wolff",
+                    "Name[nn]": "Julian Wolff",
+                    "Name[pl]": "Julian Wolff",
+                    "Name[pt]": "Julian Wolff",
+                    "Name[pt_BR]": "Juliano",
+                    "Name[ru]": "Julian Wolff",
+                    "Name[sk]": "Julian Wolff",
+                    "Name[sl]": "Julian Wolff",
+                    "Name[sr@ijekavian]": "Јулијан Волф",
+                    "Name[sr@ijekavianlatin]": "Julijan Volf",
+                    "Name[sr@latin]": "Julijan Volf",
+                    "Name[sr]": "Јулијан Волф",
+                    "Name[sv]": "Julian Wolff",
+                    "Name[tr]": "Julian Wolff",
+                    "Name[uk]": "Julian Wolff",
+                    "Name[vi]": "Julian Wolff",
+                    "Name[x-test]": "xxJulian Wolffxx",
+                    "Name[zh_CN]": "Julian Wolff",
+                    "Name[zh_TW]": "Julian Wolff"
+                }
+            ],
+            "Copyright": "© 2017 Julian Wolff",
+            "Copyright[ar]": "© 2017 Julian Wolff",
+            "Copyright[az]": "© 2017 Julian Wolff",
+            "Copyright[ca@valencia]": "© 2017 Julian Wolff",
+            "Copyright[ca]": "© 2017 Julian Wolff",
+            "Copyright[cs]": "© 2017 Julian Wolff",
+            "Copyright[da]": "© 2017 Julian Wolff",
+            "Copyright[de]": "© 2017 Julian Wolff",
+            "Copyright[el]": "© 2017 Julian Wolff",
+            "Copyright[en_GB]": "© 2017 Julian Wolff",
+            "Copyright[es]": "© 2017 Julian Wolff",
+            "Copyright[et]": "© 2017: Julian Wolff",
+            "Copyright[eu]": "© 2017 Julian Wolff",
+            "Copyright[fi]": "© 2017 Julian Wolff",
+            "Copyright[fr]": "© 2017 Julian Wolff",
+            "Copyright[gl]": "© 2017 Julian Wolff",
+            "Copyright[hu]": "© Julian Wolff, 2017.",
+            "Copyright[ia]": "© 2017 Julian Wolff",
+            "Copyright[it]": "© 2017 Julian Wolff",
+            "Copyright[ko]": "© 2017 Julian Wolff",
+            "Copyright[lt]": "© 2017 Julian Wolff",
+            "Copyright[nl]": "© 2017 Julian Wolff",
+            "Copyright[nn]": "© 2017 Julian Wolff",
+            "Copyright[pa]": "© 2017 Julian Wolff",
+            "Copyright[pl]": "© 2017 Julian Wolff",
+            "Copyright[pt]": "© 2017 Julian Wolff",
+            "Copyright[pt_BR]": "© 2017 Julian Wolff",
+            "Copyright[ru]": "© Julian Wolff, 2017",
+            "Copyright[sk]": "© 2017 Julian Wolff",
+            "Copyright[sl]": "© 2017 Julian Wolff",
+            "Copyright[sr@ijekavian]": "© 2017, Јулијан Волф",
+            "Copyright[sr@ijekavianlatin]": "© 2017, Julijan Volf",
+            "Copyright[sr@latin]": "© 2017, Julijan Volf",
+            "Copyright[sr]": "© 2017, Јулијан Волф",
+            "Copyright[sv]": "© 2017 Julian Wolff",
+            "Copyright[tr]": "© 2017 Julian Wolff",
+            "Copyright[uk]": "© Julian Wolff, 2017",
+            "Copyright[vi]": "© 2017 Julian Wolff",
+            "Copyright[x-test]": "xx© 2017 Julian Wolffxx",
+            "Copyright[zh_CN]": "© 2017 Julian Wolff",
+            "Copyright[zh_TW]": "© 2017 Julian Wolff",
+            "Id": "okular_markdown",
+            "License": "GPL",
+            "MimeTypes": [
+                "text/markdown",
+                "text/x-markdown"
+            ],
+            "Name": "Markdown Backend",
+            "Name[ar]": "خلفية مارك داون",
+            "Name[az]": "Markdown modulu",
+            "Name[ca@valencia]": "Dorsal Markdown",
+            "Name[ca]": "Dorsal Markdown",
+            "Name[cs]": "Podpůrná vrstva Markdown",
+            "Name[da]": "Markdown-backend",
+            "Name[de]": "Anzeigemodul für Markdown",
+            "Name[el]": "Σύστημα υποστήριξης markdown",
+            "Name[en_GB]": "Markdown Backend",
+            "Name[es]": "Motor para Markdown",
+            "Name[et]": "Markdowni taustaprogramm",
+            "Name[eu]": "Markdown-en bizkarraldekoa",
+            "Name[fi]": "Markdown-taustaosa",
+            "Name[fr]": "Moteur de markdown",
+            "Name[gl]": "Infraestrutura de Markdown",
+            "Name[hu]": "Markdown modul",
+            "Name[ia]": "Retro-Administration Markdown",
+            "Name[it]": "Backend Markdown",
+            "Name[ko]": "Markdown 백엔드",
+            "Name[lt]": "Markdown programinė sąsaja",
+            "Name[nl]": "Markdown-backend",
+            "Name[nn]": "Markdown-motor",
+            "Name[pl]": "Obsługa Markdown",
+            "Name[pt]": "Infra-Estrutura de Markdown",
+            "Name[pt_BR]": "Infraestrutura Markdown",
+            "Name[ru]": "Модуль поддержки формата Markdown",
+            "Name[sk]": "Markdown backend",
+            "Name[sl]": "Zaledje za Markdown",
+            "Name[sr@ijekavian]": "Позадина за маркдаун",
+            "Name[sr@ijekavianlatin]": "Pozadina za Markdown",
+            "Name[sr@latin]": "Pozadina za Markdown",
+            "Name[sr]": "Позадина за маркдаун",
+            "Name[sv]": "Markdown-gränssnitt",
+            "Name[tr]": "Markdown Arka Ucu",
+            "Name[uk]": "Модуль Markdown",
+            "Name[vi]": "Hậu phương Markdown",
+            "Name[x-test]": "xxMarkdown Backendxx",
+            "Name[zh_CN]": "Markdown 后端",
+            "Name[zh_TW]": "Markdown 後端介面",
+            "Version": "0.1.0"
+        },
+        "X-KDE-Priority": 1,
+        "X-KDE-okularAPIVersion": 1,
+        "X-KDE-okularHasInternalSettings": true
+    },
+    "archreq": 1,
+    "className": "MarkdownGeneratorFactory",
+    "debug": true,
+    "version": 331520
+}
+
+
+loaded library "/usr/lib/x86_64-linux-gnu/qt5/plugins/okular/generators/okularGenerator_md.so"
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==5163==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fff6f373e0d bp 0x7fffffffae50 sp 0x7fffffffae40 T0)
+==5163==The signal is caused by a READ memory access.
+==5163==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fff6f373e0d in ___mkd_freeLine /root/discount-2.2.7/resource.c:25
+    #1 0x7fff6f37445e in mkd_cleanup /root/discount-2.2.7/resource.c:155
+    #2 0x7fff6f3a3f60 in Markdown::Converter::convertOpenFile() /root/okular/generators/markdown/converter.cpp:117
+    #3 0x7fff6f3a34f2 in Markdown::Converter::convert(QString const&) /root/okular/generators/markdown/converter.cpp:68
+    #4 0x7fffbe6975fc in Okular::TextDocumentConverter::convertWithPassword(QString const&, QString const&) /root/okular/core/textdocumentgenerator.cpp:52
+    #5 0x7fffbe69a96b in Okular::TextDocumentGenerator::loadDocumentWithPassword(QString const&, QVector<Okular::Page*>&, QString const&) /root/okular/core/textdocumentgenerator.cpp:290
+    #6 0x7fffbe5a1cc3 in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:889
+    #7 0x7fffbe5bc40c in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #8 0x7fffbebe396f in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #9 0x7fffbebe67a1 in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #10 0x7fffe1f6e5d4  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0x2f5d4)
+    #11 0x7fffe1f6f362 in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0x30362)
+    #12 0x7fffbebeb671 in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #13 0x7fffbebea8a1 in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #14 0x55555559287e in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #15 0x555555591d27 in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #16 0x555555589ef0 in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #17 0x555555581ed2 in main /root/okular/shell/main.cpp:91
+    #18 0x7fffe02c5d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #19 0x55555557a569 in _start (/root/okular/build/bin/okular+0x26569)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/discount-2.2.7/resource.c:25 in ___mkd_freeLine
+==5163==ABORTING

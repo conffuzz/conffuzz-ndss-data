@@ -1,0 +1,12 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3309==ERROR: AddressSanitizer: SEGV on unknown address 0x00000000007f (pc 0x00000000007f bp 0x7fffffffcec0 sp 0x7fffffffce98 T0)
+==3309==Hint: pc points to the zero page.
+==3309==The signal is caused by a READ memory access.
+==3309==Hint: address points to the zero page.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

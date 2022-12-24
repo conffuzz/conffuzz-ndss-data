@@ -1,0 +1,13 @@
+=================================================================
+==12058==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde190 in thread T0
+    #0 0x7fffe296c517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe273d516 in file_ms_free /root/file-5.41/src/apprentice.c:510
+    #2 0x7fffe273af4e in magic_close /root/file-5.41/src/magic.c:293
+    #3 0x55555555a382 in main /root/file-5.41/src/file.c:433
+    #4 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+Address 0x7ffffffde190 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==12058==ABORTING

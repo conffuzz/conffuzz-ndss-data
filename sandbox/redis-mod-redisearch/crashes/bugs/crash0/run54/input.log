@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe65d
+~> write {RedisModuleCtx*} 0x7fffd946 -> 0x3e80000 at shared buffer 0x00007fffffffe642
+~> write {RedisModuleCtx*} 0x4000 -> 0 at shared buffer 0x00007fffffffe63f
+~> change ret {int} from 0 to 0x2db
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4c30 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0xffd9 -> 0 at shared buffer 0x00007fffd92f4c33

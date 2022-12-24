@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mod_deflate_plugin_init(0x611000000180 {plugin*} [size: 0xc8]) @ 0x00005555555ac6a1
+~> write {plugin*} 0 -> 0xc200000000000000 at shared buffer 0x0000611000000247
+~> write {plugin*} 0 -> 0xd8f0000000000000 at shared buffer 0x00006110000001bf
+~> write {plugin*} 0x7fffdbf66429 -> 0 at shared buffer 0x0000611000000208
+~> change ret {int} from 0 to 0xfffffffffffffff7

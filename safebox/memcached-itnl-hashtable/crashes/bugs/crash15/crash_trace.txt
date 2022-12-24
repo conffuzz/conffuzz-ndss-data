@@ -1,0 +1,2 @@
+    #1 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #2 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

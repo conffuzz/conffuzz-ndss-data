@@ -1,0 +1,15 @@
+Fuzzing seed: 1667809755
+Starting time: 2022-11-07 08:29:15
+Total instrumented API size: 31
+Statically detected call sites: 0
+Statically detected called API endpoints: 11
+Statically detected caller components: 0
+Max number of call sites reached in a run: 7
+Number of API endpoints reached: 11
+Number of API endpoints that are vulnerability vectors: 4
+List of these endpoints:
+  [api] gsapi_init_with_args
+  [api] gsapi_new_instance
+  [api] gsapi_revision
+  [api] gsapi_run_string
+Ending time: {{unknown}}

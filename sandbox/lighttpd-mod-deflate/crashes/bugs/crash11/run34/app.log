@@ -1,0 +1,23 @@
+2022-11-10 13:13:00: (plugin.c.260) mod_deflate plugin init failed
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==5151==ERROR: AddressSanitizer: SEGV on unknown address 0x00250000099f (pc 0x7ffff7fc624d bp 0x7ffff7ffda48 sp 0x7fffffffe0a0 T0)
+==5151==The signal is caused by a READ memory access.
+    #0 0x7ffff7fc624d  (/lib64/ld-linux-x86-64.so.2+0x324d)
+    #1 0x7fffe200fc27 in _dl_catch_exception (/lib/x86_64-linux-gnu/libc.so.6+0x174c27)
+    #2 0x7fffe200fcf2 in _dl_catch_error (/lib/x86_64-linux-gnu/libc.so.6+0x174cf2)
+    #3 0x7fffe1f2b1ad  (/lib/x86_64-linux-gnu/libc.so.6+0x901ad)
+    #4 0x7fffe1f2aed7 in dlclose (/lib/x86_64-linux-gnu/libc.so.6+0x8fed7)
+    #5 0x7fffe22d4928 in __interceptor_dlclose ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6260
+    #6 0x7fffe22d4928 in __interceptor_dlclose ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6257
+    #7 0x5555555abf7d in plugin_free /root/lighttpd-1.4.67/src/plugin.c:76
+    #8 0x5555555ac72f in plugins_load /root/lighttpd-1.4.67/src/plugin.c:262
+    #9 0x555555586512 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1284
+    #10 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #11 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #12 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #13 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib64/ld-linux-x86-64.so.2+0x324d) 
+==5151==ABORTING

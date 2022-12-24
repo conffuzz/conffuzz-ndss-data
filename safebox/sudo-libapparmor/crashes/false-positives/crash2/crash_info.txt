@@ -1,0 +1,2 @@
+fault_location /usr/local/bin/sudo
+cap_write

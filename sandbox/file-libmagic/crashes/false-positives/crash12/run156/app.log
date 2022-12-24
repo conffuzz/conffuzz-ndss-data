@@ -1,0 +1,54 @@
+=================================================================
+==8256==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6120000001b6 at pc 0x7fffe273b4b4 bp 0x7fffffffe600 sp 0x7fffffffe5f0
+READ of size 8 at 0x6120000001b6 thread T0
+    #0 0x7fffe273b4b3 in file_or_fd /root/file-5.41/src/magic.c:422
+    #1 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #2 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #3 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #4 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+0x6120000001b6 is located 78 bytes to the right of 296-byte region [0x612000000040,0x612000000168)
+allocated by thread T0 here:
+    #0 0x7fffe296ca37 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffe273d539 in file_ms_alloc /root/file-5.41/src/apprentice.c:519
+    #2 0x7fffe273ae2c in magic_open /root/file-5.41/src/magic.c:265
+    #3 0x55555555a7b1 in load /root/file-5.41/src/file.c:474
+    #4 0x55555555a066 in main /root/file-5.41/src/file.c:403
+    #5 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/file-5.41/src/magic.c:422 in file_or_fd
+Shadow bytes around the buggy address:
+  0x0c247fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c247fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c247fff8000: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c247fff8010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c247fff8020: 00 00 00 00 00 00 00 00 00 00 00 00 00 fa fa fa
+=>0x0c247fff8030: fa fa fa fa fa fa[fa]fa fa fa fa fa fa fa fa fa
+  0x0c247fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c247fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c247fff8060: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c247fff8070: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c247fff8080: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==8256==ABORTING

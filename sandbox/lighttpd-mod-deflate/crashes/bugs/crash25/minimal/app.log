@@ -1,0 +1,48 @@
+=================================================================
+==11473==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x606000006118 at pc 0x555555627149 bp 0x7fffffffada0 sp 0x7fffffffad90
+READ of size 4 at 0x606000006118 thread T0
+    #0 0x555555627148 in array_get_index /root/lighttpd-1.4.67/src/array.c:278
+    #1 0x5555556271f9 in array_get_element_klen /root/lighttpd-1.4.67/src/array.c:293
+    #2 0x555555632864 in config_plugin_values_init /root/lighttpd-1.4.67/src/configfile-glue.c:317
+    #3 0x5555555b5284 in network_init /root/lighttpd-1.4.67/src/network.c:770
+    #4 0x5555555871e8 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1389
+    #5 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #6 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+Address 0x606000006118 is a wild pointer.
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/array.c:278 in array_get_index
+Shadow bytes around the buggy address:
+  0x0c0c7fff8bd0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8be0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8bf0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c10: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c0c7fff8c20: fa fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c30: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c40: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c50: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c60: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fff8c70: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==11473==ABORTING

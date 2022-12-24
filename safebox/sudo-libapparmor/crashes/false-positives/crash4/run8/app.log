@@ -1,0 +1,60 @@
+=================================================================
+==656==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000000fc2 at pc 0x55ae742fb9dd bp 0x7ffdf4869740 sp 0x7ffdf4868ec8
+READ of size 1 at 0x603000000fc2 thread T0
+    #0 0x55ae742fb9dc in printf_common(void*, char const*, __va_list_tag*) asan_interceptors.cpp.o
+    #1 0x55ae742fc5f5 in __interceptor_vasprintf (/usr/local/bin/sudo+0xef5f5) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0x7f54e169c123 in _aa_asprintf /root/apparmor-v3.1.1/libraries/libapparmor/src/private.c:180:7
+    #3 0x7f54e1688a14 in aa_change_onexec /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:817:8
+    #4 0x55ae744996b3 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:92:16
+    #5 0x55ae74474d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #6 0x55ae74456a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #7 0x7f54e0f3ed8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0x7f54e0f3ee3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #9 0x55ae742d9d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+0x603000000fc2 is located 14 bytes to the left of 24-byte region [0x603000000fd0,0x603000000fe8)
+allocated by thread T0 here:
+    #0 0x55ae7435cdb8 in __interceptor_calloc (/usr/local/bin/sudo+0x14fdb8) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #1 0x7f54dc550abe in sudoers_gc_add /root/sudo-1.9.12/plugins/sudoers/./gc.c:55:10
+    #2 0x7f54dc542951 in env_file_next_local /root/sudo-1.9.12/plugins/sudoers/./env.c:1285:6
+    #3 0x7f54dc53a513 in read_env_file /root/sudo-1.9.12/plugins/sudoers/./env.c:1340:16
+    #4 0x7f54dc536aba in rebuild_env /root/sudo-1.9.12/plugins/sudoers/./env.c:914:11
+    #5 0x7f54dc60ed06 in sudoers_policy_main /root/sudo-1.9.12/plugins/sudoers/./sudoers.c:574:10
+    #6 0x7f54dc5e326d in sudoers_policy_check /root/sudo-1.9.12/plugins/sudoers/./policy.c:1180:11
+    #7 0x55ae74462753 in policy_check /root/sudo-1.9.12/src/./sudo.c:1227:10
+    #8 0x55ae74456319 in main /root/sudo-1.9.12/src/./sudo.c:262:11
+    #9 0x7f54e0f3ed8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow asan_interceptors.cpp.o in printf_common(void*, char const*, __va_list_tag*)
+Shadow bytes around the buggy address:
+  0x0c067fff81a0: fd fd fd fa fa fa fd fd fd fa fa fa 00 00 02 fa
+  0x0c067fff81b0: fa fa fd fd fd fa fa fa fd fd fd fa fa fa fd fd
+  0x0c067fff81c0: fd fa fa fa 00 00 00 fa fa fa 00 00 03 fa fa fa
+  0x0c067fff81d0: 00 00 05 fa fa fa 00 00 06 fa fa fa 00 00 00 fa
+  0x0c067fff81e0: fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa 00 00
+=>0x0c067fff81f0: 00 fa fa fa fd fd fd fa[fa]fa 00 00 00 fa fa fa
+  0x0c067fff8200: 00 00 04 fa fa fa 00 00 00 fa fa fa 00 00 00 fa
+  0x0c067fff8210: fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa 00 00
+  0x0c067fff8220: 00 fa fa fa 00 00 00 02 fa fa 00 00 00 fa fa fa
+  0x0c067fff8230: 00 00 00 fa fa fa 00 00 00 fa fa fa 00 00 00 fa
+  0x0c067fff8240: fa fa fd fd fd fa fa fa 00 00 05 fa fa fa 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==656==ABORTING

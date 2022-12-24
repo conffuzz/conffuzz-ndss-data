@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gcry_control(0x1c {gcry_ctl_cmds} [size: 0]) @ 0x00005555555cc0f7
+gcry_check_version(0x5555558200d8 {char*} [size: 0x1]) @ 0x0000555555790ba8
+~> change arg #0x1 {char*} from 0x5555558200d8 to 0x7ffffffde0c8
+gcry_check_version(0 {char*} [size: 0x1]) @ 0x0000555555790bb7
+~> change arg #0x1 {char*} from 0 to 0xfffffffffffffe0b

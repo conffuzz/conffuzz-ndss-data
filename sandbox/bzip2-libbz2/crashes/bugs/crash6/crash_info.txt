@@ -1,0 +1,4 @@
+fault_location /root/bzip2-1.0.8/bzip2-shared
+cap_read
+cap_write
+cap_read_arbitrary

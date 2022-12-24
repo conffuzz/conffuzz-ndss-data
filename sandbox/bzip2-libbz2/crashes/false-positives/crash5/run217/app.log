@@ -1,0 +1,30 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==56545==ERROR: AddressSanitizer: SEGV on unknown address 0x621ffffffdb6 (pc 0x7fffe292f9c6 bp 0x621ffffffdc6 sp 0x7fffffffb510 T0)
+==56545==The signal is caused by a WRITE memory access.
+    #0 0x7fffe292f9c6 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe292f9c6 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe292f9c6 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe292f9c6 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe29b54a7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe289f187 in BZ2_bzReadClose /root/bzip2-1.0.8/bzlib.c:1156
+    #6 0x55555555afd1 in uncompressStream /root/bzip2-1.0.8/bzip2.c:518
+    #7 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #8 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #9 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==56545==ABORTING

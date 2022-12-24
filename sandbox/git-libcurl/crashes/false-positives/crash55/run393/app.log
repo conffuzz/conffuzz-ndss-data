@@ -1,0 +1,16 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==60489==ERROR: AddressSanitizer: SEGV on unknown address 0x555555ffffff (pc 0x7fffe009d5dc bp 0x7fffffffd850 sp 0x7fffffffd830 T0)
+==60489==The signal is caused by a WRITE memory access.
+    #0 0x7fffe009d5dc in curl_multi_add_handle /root/curl-7.82.0/lib/multi.c:478
+    #1 0x555555621aa3 in start_active_slot /root/git-2.35.1/http.c:1244
+    #2 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #3 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #4 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #5 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/multi.c:478 in curl_multi_add_handle
+==60489==ABORTING

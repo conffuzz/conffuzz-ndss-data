@@ -1,0 +1,26 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] {instrumentation.cpp:476} Failed to retrieve information about _init
+nginx: [emerg] pcre2_pattern_info("^(www\.)?(?<domain>.+)$", PCRE2_INFO_CAPTURECOUNT) failed: -31 in /root/nginx-1.21.6/conf/nginx.conf:44
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7115==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe1172d58 bp 0x7fffffffe1d0 sp 0x7fffffffe1b0 T0)
+==7115==The signal is caused by a READ memory access.
+==7115==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe1172d58 in pcre2_code_free_8 src/pcre2_compile.c:1277
+    #1 0x5555556a6c26 in ngx_regex_cleanup src/core/ngx_regex.c:580
+    #2 0x5555555d0fb2 in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #3 0x55555561c356 in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #4 0x555555617982 in ngx_init_cycle src/core/ngx_cycle.c:286
+    #5 0x5555555c76b0 in main src/core/nginx.c:292
+    #6 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/pcre2_compile.c:1277 in pcre2_code_free_8
+==7115==ABORTING

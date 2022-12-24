@@ -1,0 +1,19 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec953c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec95afe
+~> instrumenting 0x00007fff6ec953c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+~> write {QVariant&} 0 -> 0xf900000000000000 at shared buffer 0x00007fffffffb188
+~> write {QVariant&} 0 -> 0x101000000000000 at shared buffer 0x00007fffffffb185
+~> write {QVariant&} 0xf9000101000000 -> 0 at shared buffer 0x00007fffffffb182
+~> write {unknown} 0 -> 0xfffffffd00000000 at shared buffer 0x00007fffffffb3ba
+~> write {unknown} 0xfffd000000000000 -> 0 at shared buffer 0x00007fffffffb3b4
+~> write {unknown} 0 -> 0 at shared buffer 0x00007fffffffb3d6
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec961bc
+~> write {QByteArray&} 0xe09b -> 0x1d2000000000000 at shared buffer 0x00007fffffffb5a2
+~> write {QByteArray&} 0xffff -> 0 at shared buffer 0x00007fffffffb5a8
+~> write {QByteArray&} 0xf000007fffe0 -> 0 at shared buffer 0x00007fffffffb5c3
+~> write {QByteArray&} 0x60 -> 0 at shared buffer 0x00007fffffffb5c0
+~> write {QByteArray&} 0xbe419100 -> 0 at shared buffer 0x00007fffffffb5c8
+~> write {QString&} 0x20b6520 -> 0xde00000000 at shared buffer 0x00007fffffffc550

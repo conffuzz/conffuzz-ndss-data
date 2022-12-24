@@ -1,0 +1,12 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avformat_network_init() @ 0x00005555555a054e
+~> change ret from 0 to 0xfffffffffffffffc
+avformat_configuration() @ 0x00005555555775f7
+avformat_version() @ 0x000055555557757a
+~> change ret from 0x3b1064 to 0x3b10b1
+avformat_alloc_context() @ 0x000055555559ba84
+~> change ret from 0x617000000080 to 0x555555554190
+avformat_open_input(0x7fffffffe790 [size: 0x8], 0x7fffffffecbf [size: 0x1], 0 [size: 0x98], 0x5555555cd6a0 [size: 0x8]) @ 0x000055555559bb74

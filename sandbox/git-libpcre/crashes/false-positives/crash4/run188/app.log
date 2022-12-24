@@ -1,0 +1,11 @@
+[I] Attempting to instrument callback pcre2_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback pcre2_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7658==ERROR: AddressSanitizer: SEGV on unknown address 0x000600000002 (pc 0x000600000002 bp 0x7fffffffc210 sp 0x7fffffffc1e8 T0)
+==7658==The signal is caused by a READ memory access.
+==7658==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

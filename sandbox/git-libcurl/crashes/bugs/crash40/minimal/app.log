@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==49849==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x55555561c925 bp 0x7fffffffd570 sp 0x7fffffffd4d0 T0)
+==49849==The signal is caused by a READ memory access.
+==49849==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x55555561c925 in process_curl_messages /root/git-2.35.1/http.c:231
+    #1 0x555555621fbe in step_active_slots /root/git-2.35.1/http.c:1318
+    #2 0x55555562216c in run_active_slot /root/git-2.35.1/http.c:1334
+    #3 0x55555563391a in locking_available /root/git-2.35.1/http-push.c:1222
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/git-2.35.1/http.c:231 in process_curl_messages
+==49849==ABORTING

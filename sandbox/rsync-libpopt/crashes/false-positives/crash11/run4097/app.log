@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==241713==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000040 (pc 0x7fffe1dfdad8 bp 0x7fffffffd3e0 sp 0x7fffffffcb88 T0)
+==241713==The signal is caused by a READ memory access.
+==241713==Hint: address points to the zero page.
+    #0 0x7fffe1dfdad8  (/lib/x86_64-linux-gnu/libc.so.6+0x172ad8)
+    #1 0x7fffe22baa8c in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:368
+    #2 0x7fffe21b0308 in longOptionStrcmp /root/popt-popt-1.19-release/src/popt.c:326
+    #3 0x7fffe21b0f08 in findOption /root/popt-popt-1.19-release/src/popt.c:596
+    #4 0x7fffe21b2e94 in poptGetNextOpt /root/popt-popt-1.19-release/src/popt.c:1319
+    #5 0x555555610ef3 in parse_arguments /root/rsync-3.2.7/options.c:1424
+    #6 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #7 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #8 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x172ad8) 
+==241713==ABORTING

@@ -1,0 +1,28 @@
+file: Compiled magic version [541] does not match with shared library magic version [1]
+
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] {instrumentation.cpp:476} Failed to retrieve information about _init
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3354==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe28e0b46 bp 0xff3001f0f00009d sp 0x7fffffffded0 T0)
+==3354==The signal is caused by a READ memory access.
+==3354==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe28e0b46 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe28e0b46 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe28e0b46 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe28e0b46 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe296c4d4 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe277b8ac in file_clearbuf /root/file-5.41/src/funcs.c:66
+    #6 0x7fffe277e58a in file_reset /root/file-5.41/src/funcs.c:506
+    #7 0x7fffe273e08f in file_apprentice /root/file-5.41/src/apprentice.c:687
+    #8 0x7fffe273af8d in magic_load /root/file-5.41/src/magic.c:304
+    #9 0x55555555a7ed in load /root/file-5.41/src/file.c:481
+    #10 0x55555555a066 in main /root/file-5.41/src/file.c:403
+    #11 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #12 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #13 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==3354==ABORTING

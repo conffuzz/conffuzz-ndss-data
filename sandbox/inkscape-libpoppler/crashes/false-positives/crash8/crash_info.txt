@@ -1,0 +1,2 @@
+fault_location /usr/lib/x86_64-linux-gnu/libcairo.so.2.11600.0
+cap_read_arbitrary

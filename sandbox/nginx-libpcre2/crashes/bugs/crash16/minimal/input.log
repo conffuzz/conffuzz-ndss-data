@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcre2_general_context_create_8(0x5555556a69bb {*(size_t,*)*} [size: 0x1], 0x5555556a6a67 {void(*,*)*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00005555556a596e
+~> instrumenting 0x00005555556a69bb (ngx_regex_malloc, 0x2 arg(s))
+~> instrumenting 0x00005555556a6a67 (ngx_regex_free, 0x2 arg(s))
+~> detected cb call ngx_regex_malloc(0x18 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe118539b
+pcre2_compile_context_create_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a5998
+~> detected cb call ngx_regex_malloc(0x48 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11852dd
+pcre2_general_context_free_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a59df
+~> detected cb call ngx_regex_free(0x60300002a820 {void*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00007fffe11857d8
+pcre2_compile_8(0x62900001974a {PCRE2_SPTR8} [size: 0], 0x17 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x7fffffffcf70 {int*} [size: 0x4], 0x7fffffffcf80 {size_t*} [size: 0x8], 0x6070000003a0 {pcre2_compile_context_8*} [size: 0x48]) @ 0x00005555556a5c7c
+~> detected cb call ngx_regex_malloc(0xb5 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11842fa
+~> change ret {pcre2_code_8*} from 0x629000019768 to 0x5555555c4190
+pcre2_pattern_info_8(0x5555555c4190 {pcre2_code_8*} [size: 0x88], 0x4 {uint32_t} [size: 0], 0x7fffffffd228 {void*} [size: 0x1]) @ 0x00005555556a6111
+~> instrumenting 0x00005555555c4190 (.plt, 0 arg(s))
+~> change ret {int} from 0xffffffe1 to 0
+pcre2_compile_8(0x62900001af4a {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0x8 {uint32_t} [size: 0], 0x7fffffffce50 {int*} [size: 0x4], 0x7fffffffce60 {size_t*} [size: 0x8], 0x6070000003a0 {pcre2_compile_context_8*} [size: 0x48]) @ 0x00005555556a5c7c
+~> detected cb call ngx_regex_malloc(0x91 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11842fa
+~> change arg #0x1 {size_t} from 0x91 to 0xfffffffffffffc18

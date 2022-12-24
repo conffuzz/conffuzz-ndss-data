@@ -1,0 +1,52 @@
+=================================================================
+==285583==ERROR: AddressSanitizer: global-buffer-overflow on address 0x5555556bf940 at pc 0x7fffe22bab11 bp 0x7fffffffd3e0 sp 0x7fffffffcb90
+READ of size 1 at 0x5555556bf940 thread T0
+    #0 0x7fffe22bab10 in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:370
+    #1 0x7fffe21b0308 in longOptionStrcmp /root/popt-popt-1.19-release/src/popt.c:326
+    #2 0x7fffe21b0f08 in findOption /root/popt-popt-1.19-release/src/popt.c:596
+    #3 0x7fffe21b2e94 in poptGetNextOpt /root/popt-popt-1.19-release/src/popt.c:1319
+    #4 0x555555610ef3 in parse_arguments /root/rsync-3.2.7/options.c:1424
+    #5 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #6 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #7 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+0x5555556bf940 is located 9 bytes to the right of global variable '*.LC36' defined in 'compat.c' (0x5555556bf900) of size 55
+  '*.LC36' is ascii string '%s is very old version of rsync, upgrade recommended.
+'
+0x5555556bf940 is located 32 bytes to the left of global variable '*.LC37' defined in 'compat.c' (0x5555556bf960) of size 43
+  '*.LC37' is ascii string '--protocol must be at least %d on the %s.
+'
+SUMMARY: AddressSanitizer: global-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:370 in __interceptor_strlen
+Shadow bytes around the buggy address:
+  0x0aab2aacfed0: 00 00 00 00 f9 f9 f9 f9 00 00 00 00 f9 f9 f9 f9
+  0x0aab2aacfee0: 00 00 00 00 00 00 00 00 00 00 04 f9 f9 f9 f9 f9
+  0x0aab2aacfef0: 00 00 00 00 00 00 00 06 f9 f9 f9 f9 00 00 00 00
+  0x0aab2aacff00: 00 00 02 f9 f9 f9 f9 f9 00 00 00 00 00 00 03 f9
+  0x0aab2aacff10: f9 f9 f9 f9 00 00 00 00 00 04 f9 f9 f9 f9 f9 f9
+=>0x0aab2aacff20: 00 00 00 00 00 00 07 f9[f9]f9 f9 f9 00 00 00 00
+  0x0aab2aacff30: 00 03 f9 f9 f9 f9 f9 f9 00 00 00 00 00 07 f9 f9
+  0x0aab2aacff40: f9 f9 f9 f9 00 00 00 00 00 00 00 f9 f9 f9 f9 f9
+  0x0aab2aacff50: 00 00 00 00 00 00 00 02 f9 f9 f9 f9 00 00 00 00
+  0x0aab2aacff60: 00 00 00 01 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+  0x0aab2aacff70: 03 f9 f9 f9 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==285583==ABORTING

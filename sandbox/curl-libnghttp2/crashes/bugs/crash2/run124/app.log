@@ -1,0 +1,104 @@
+[I] Recursing from nghttp2_nv into structure 
+[E] Not able to find type information for nghttp2_nv in DWARF
+[I] Recursing from nghttp2_data_provider into structure 
+[E] Not able to find type information for nghttp2_data_provider in DWARF
+[I] Recursing from nghttp2_mem into structure 
+[E] Not able to find type information for nghttp2_mem in DWARF
+[I] Recursing from nghttp2_priority_spec into structure 
+[E] Not able to find type information for nghttp2_priority_spec in DWARF
+[I] Recursing from nghttp2_origin_entry into structure 
+[E] Not able to find type information for nghttp2_origin_entry in DWARF
+[I] Recursing from nghttp2_vec into structure 
+[E] Not able to find type information for nghttp2_vec in DWARF
+[I] Recursing from nghttp2_settings_entry into structure 
+[E] Not able to find type information for nghttp2_settings_entry in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[I] Attempting to instrument callback send_callback
+Got function argument numbers (5) from cache!
+[I] Attempting to instrument callback on_frame_recv
+[I] Recursing from nghttp2_frame into union 
+[E] Not able to find type information for nghttp2_frame in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_data_chunk_recv
+Got function argument numbers (6) from cache!
+[I] Attempting to instrument callback on_stream_close
+Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback on_begin_headers
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_header
+Got function argument numbers (8) from cache!
+[I] Attempting to instrument callback error_callback
+Got function argument numbers (4) from cache!
+send: reset nghttp2_active_outbound_item
+send: aob->item = (nil)
+recv: connection recv_window_size=0, local_window=33554432
+stream: adjusting kept idle streams num_idle_streams=0, max=100
+recv: [IB_READ_FIRST_SETTINGS]
+stream: adjusting kept idle streams num_idle_streams=0, max=100
+=================================================================
+==46623==ERROR: AddressSanitizer: heap-use-after-free on address 0x61b000000eda at pc 0x7fffe214a813 bp 0x7fffffffdca0 sp 0x7fffffffdc98
+READ of size 8 at 0x61b000000eda thread T0
+    #0 0x7fffe214a812 in get_transfer /root/curl-7.82.0/lib/http2.c:236
+    #1 0x7fffe214afc5 in send_callback /root/curl-7.82.0/lib/http2.c:380
+    #2 0x7fffe18cd149 in nghttp2_session_send /root/nghttp2-1.47.0/lib/nghttp2_session.c:3258
+    #3 0x7fffe2150dad in h2_session_send /root/curl-7.82.0/lib/http2.c:1612
+    #4 0x7fffe214fafa in h2_process_pending_input /root/curl-7.82.0/lib/http2.c:1411
+    #5 0x7fffe2153c77 in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2136
+    #6 0x7fffe214287b in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #7 0x7fffe2181d84 in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #8 0x7fffe2184c17 in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #9 0x7fffe2187e7b in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #10 0x7fffe20ff50a in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #11 0x7fffe20ffa78 in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #12 0x7fffe20ffb41 in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #13 0x5555555be2e7 in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #14 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #15 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #16 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #17 0x7fffe1a927fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #18 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+0x61b000000eda is located 90 bytes inside of 1648-byte region [0x61b000000e80,0x61b0000014f0)
+freed by thread T0 here:
+    #0 0x7fffe246c4d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe1e5e26c in CRYPTO_clear_realloc (/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1+0x19526c)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe246c7cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe1e5e245 in CRYPTO_clear_realloc (/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1+0x195245)
+
+SUMMARY: AddressSanitizer: heap-use-after-free /root/curl-7.82.0/lib/http2.c:236 in get_transfer
+Shadow bytes around the buggy address:
+  0x0c367fff8180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c367fff8190: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c367fff81a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c367fff81b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c367fff81c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c367fff81d0: fd fd fd fd fd fd fd fd fd fd fd[fd]fd fd fd fd
+  0x0c367fff81e0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c367fff81f0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c367fff8200: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c367fff8210: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c367fff8220: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==46623==ABORTING

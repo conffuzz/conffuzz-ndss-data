@@ -1,0 +1,15 @@
+Fuzzing seed: 1667520330
+Starting time: 2022-11-04 00:05:30
+Total instrumented API size: 14
+Statically detected call sites: 0
+Statically detected called API endpoints: 14
+Statically detected caller components: 0
+Max number of call sites reached in a run: 4
+Number of API endpoints reached: 5
+Number of API endpoints that are vulnerability vectors: 4
+List of these endpoints:
+  [api] ngx_http_geoip2_create_conf
+  [api] ngx_http_geoip2_init
+  [api] ngx_http_geoip2_init_conf
+  [api] ngx_http_geoip2_log_handler
+Ending time: 2022-11-04 00:54:08

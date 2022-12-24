@@ -1,0 +1,7 @@
+fault_location /usr/lib/x86_64-linux-gnu/libapr-1.so.0.7.0
+cap_read
+non_reproducible
+cap_null_deref
+cap_read_arbitrary
+cap_write
+cap_write_arbitrary

@@ -1,0 +1,17 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+magic_version() @ 0x0000555555559ef9
+~> failure to write 0x2 bytes at address 0x000061200000053a
+~> failure to write 0x8 bytes at address 0x000061200000052c
+~> failure to write 0x8 bytes at address 0x00006120000004a8
+magic_open(0 {int} [size: 0]) @ 0x000055555555a7b2
+magic_load(0x612000000040 {magic_set*} [size: 0x128], 0 {char*} [size: 0x1]) @ 0x000055555555a7ee
+~> change ret {int} from 0 to 0xffffffffffff8000
+magic_error(0x612000000040 {magic_set*} [size: 0x128]) @ 0x000055555555a835
+magic_file(0x612000000040 {magic_set*} [size: 0x128], 0x7fffffffec72 {char*} [size: 0x1]) @ 0x000055555555aebb
+~> write {magic_set*} 0x7fffe2 -> 0xfffca00000000000 at shared buffer 0x0000612000000093
+~> write {magic_set*} 0x60e000 -> 0 at shared buffer 0x000061200000005b
+~> write {magic_set*} 0x80 -> 0xf600000000000000 at shared buffer 0x000061200000014d
+~> change ret {char*} from 0x60e000018f40 to 0x60e00001912b

@@ -1,0 +1,20 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+~> write {unknown} 0x1 -> 0 at shared buffer 0x0000555555579340
+~> change ret {ExifLog*} from 0x603000000160 to 0x7ffffffde000
+exif_log_set_func(0x7ffffffde000 {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))
+~> write {void*} 0 -> 0xff00000000000000 at shared buffer 0x0000555555579340
+~> write {ExifLog*} 0x57934000005555 -> 0 at shared buffer 0x00007ffffffde00c
+~> write {ExifLog*} 0 -> 0 at shared buffer 0x00007ffffffde002
+~> write {ExifLog*} 0x55566116 -> 0x1f100 at shared buffer 0x00007ffffffde008
+exif_loader_new() @ 0x00005555555675e6
+exif_loader_log(0x606000000080 {ExifLoader*} [size: 0x40], 0x7ffffffde000 {ExifLog*} [size: 0x20]) @ 0x0000555555567606
+~> write {ExifLoader*} 0 -> 0 at shared buffer 0x0000606000000096
+~> write {ExifLoader*} 0x603000000190 -> 0x24d0000 at shared buffer 0x00006060000000b8
+~> write {ExifLoader*} 0x10000000000 -> 0xa0000 at shared buffer 0x00006060000000a7
+~> write {ExifLog*} 0x5555550000 -> 0xfffffffec8000000 at shared buffer 0x00007ffffffde011
+exif_loader_write_file(0x606000000080 {ExifLoader*} [size: 0x40], 0x603000000100 {char*} [size: 0x1]) @ 0x000055555556765a

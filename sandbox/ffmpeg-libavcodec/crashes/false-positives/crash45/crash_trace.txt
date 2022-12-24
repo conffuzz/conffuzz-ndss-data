@@ -1,0 +1,13 @@
+    #0 0xaddr in get_bits libavcodec/get_bits.h:404
+    #1 0xaddr in ff_mpeg4_decode_picture_header libavcodec/mpeg4videodec.c:3257
+    #2 0xaddr in mpeg4_decode_header libavcodec/mpeg4video_parser.c:103
+    #3 0xaddr in mpeg4video_parse libavcodec/mpeg4video_parser.c:164
+    #4 0xaddr in av_parser_parse2 libavcodec/parser.c:165
+    #5 0xaddr in parse_packet libavformat/demux.c:1126
+    #6 0xaddr in read_frame_internal libavformat/demux.c:1320
+    #7 0xaddr in avformat_find_stream_info libavformat/demux.c:2584
+    #8 0xaddr in open_input_file fftools/ffprobe.c:3162
+    #9 0xaddr in probe_file fftools/ffprobe.c:3266
+    #10 0xaddr in main fftools/ffprobe.c:3993
+    #11 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in _start (/root/ffmpeg-5.0/ffprobe+0xaddr)

@@ -1,0 +1,24 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+htmlDefaultSAXHandlerInit() @ 0x0000555555ca63fa
+xmlCreatePushParserCtxt(0x7fffffffcf70 {xmlSAXHandlerPtr} [size: 0], 0x604000032390 {void*} [size: 0x1], 0 {char*} [size: 0x1], 0 {int} [size: 0], 0 {char*} [size: 0x1]) @ 0x0000555555ca647c
+htmlNewDoc(0 {xmlChar*} [size: 0x1], 0 {xmlChar*} [size: 0x1]) @ 0x0000555555ca64a2
+xmlParseChunk(0x617000001900 {xmlParserCtxtPtr} [size: 0], 0x62100005f120 {char*} [size: 0x1], 0 {int} [size: 0], 0 {int} [size: 0]) @ 0x0000555555ca6690
+~> write {char*} 0 -> 0 at shared buffer 0x000062100005f120
+xmlParseChunk(0x617000001900 {xmlParserCtxtPtr} [size: 0], 0x62100005f120 {char*} [size: 0x1], 0x2c0 {int} [size: 0], 0 {int} [size: 0]) @ 0x0000555555ca6690
+~> write {char*} 0x3c -> 0x7500000000000000 at shared buffer 0x000062100005f120
+~> change ret {int} from 0 to 0xf2
+xmlGetLastError() @ 0x0000555555ca66d1
+xmlSAX2GetLineNumber(0x617000001900 {void*} [size: 0x1]) @ 0x0000555555ca66b8
+~> change ret {int} from 0x1c to 0
+xmlFreeParserCtxt(0x617000001900 {xmlParserCtxtPtr} [size: 0]) @ 0x0000555555ca65cc
+htmlDefaultSAXHandlerInit() @ 0x0000555555ca63fa
+xmlCreatePushParserCtxt(0x7fffffffb6f0 {xmlSAXHandlerPtr} [size: 0], 0x6040000338d0 {void*} [size: 0x1], 0 {char*} [size: 0x1], 0 {int} [size: 0], 0 {char*} [size: 0x1]) @ 0x0000555555ca647c
+~> change ret {xmlParserCtxtPtr} from 0x617000001c80 to 0x7ffffffde190
+xmlParseChunk(0x7ffffffde190 {xmlParserCtxtPtr} [size: 0], 0x621000061920 {char*} [size: 0x1], 0x2c0 {int} [size: 0], 0 {int} [size: 0]) @ 0x0000555555ca6690
+~> write {char*} 0x3c -> 0x9000000000000000 at shared buffer 0x0000621000061920
+xmlGetLastError() @ 0x0000555555ca66d1
+xmlSAX2GetLineNumber(0x7ffffffde190 {void*} [size: 0x1]) @ 0x0000555555ca66b8
+xmlFreeParserCtxt(0x7ffffffde190 {xmlParserCtxtPtr} [size: 0]) @ 0x0000555555ca65cc

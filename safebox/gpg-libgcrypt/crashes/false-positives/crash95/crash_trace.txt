@@ -1,0 +1,8 @@
+    #1 0xaddr in _gpgrt_calloc /root/libgpg-error-1.41/src/init.c:337
+    #2 0xaddr in initialize /root/libgpg-error-1.41/src/argparse.c:387
+    #3 0xaddr in arg_parse /root/libgpg-error-1.41/src/argparse.c:1948
+    #4 0xaddr in _gpgrt_argparse /root/libgpg-error-1.41/src/argparse.c:998
+    #5 0xaddr in gpgrt_argparse /root/libgpg-error-1.41/src/visibility.c:1157
+    #6 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2384
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

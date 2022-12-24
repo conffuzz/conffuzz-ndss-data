@@ -1,0 +1,9 @@
+    #5 0xaddr in pcap_close pcap.c:4068
+    #6 0xaddr in open_capture_device_pcap_create /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1366
+    #7 0xaddr in open_capture_device_local /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:82
+    #8 0xaddr in open_capture_device /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1607
+    #9 0xaddr in capture_loop_open_input /root/wireshark-3.4.12/dumpcap.c:2703
+    #10 0xaddr in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3793
+    #11 0xaddr in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #12 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #13 0xaddr in _start (/root/wireshark_build/run/dumpcap+0xaddr)

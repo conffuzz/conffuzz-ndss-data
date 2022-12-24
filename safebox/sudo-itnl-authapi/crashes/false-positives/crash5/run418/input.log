@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+sudo_auth_init(0x60c0000112e8 {passwd*} [size: 0x30], 0x2000001 {int} [size: 0]) @ 0x00007fd9efc871dd
+sudo_passwd_verify(0x60c0000112e8 {passwd*} [size: 0x30], 0x7ffe83d62c80 {char*} [size: 0x1], 0x7fd9eff47060 {sudo_auth*} [size: 0x50], 0x7ffe83d63360 {sudo_conv_callback*} [size: 0x20]) @ 0x00007fd9efc7c8ea

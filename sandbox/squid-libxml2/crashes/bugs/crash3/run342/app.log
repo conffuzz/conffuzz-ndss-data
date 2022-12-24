@@ -1,0 +1,11 @@
+2022/11/09 17:53:52| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==49593==ERROR: AddressSanitizer: SEGV on unknown address 0x555555d3c1d0 (pc 0x555555d3c1d0 bp 0x7fffffffb920 sp 0x7fffffffb498 T0)
+==49593==The signal is caused by a READ memory access.
+==49593==Hint: PC is at a non-executable region. Maybe a wild jump?
+    #0 0x555555d3c1d0 in typeinfo name for ESIExpatParser (/usr/local/squid/sbin/squid+0x7e81d0)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/squid/sbin/squid+0x7e81d0) in typeinfo name for ESIExpatParser
+==49593==ABORTING

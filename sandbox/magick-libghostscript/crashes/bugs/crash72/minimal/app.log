@@ -1,0 +1,82 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+=================================================================
+==26033==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x62000000039a in thread T0
+    #0 0x7fffe2958517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe23239b5 in RelinquishMagickMemory MagickCore/memory.c:1167
+    #2 0x7fffe248619a in DestroyString MagickCore/string.c:790
+    #3 0x7fffd568765a in InvokeGhostscriptDelegate coders/ghostscript-private.h:170
+    #4 0x7fffd568c212 in ReadPSImage coders/ps.c:812
+    #5 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #6 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #7 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #8 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #9 0x555555556a32 in MagickMain utilities/magick.c:150
+    #10 0x555555556ce5 in main utilities/magick.c:182
+    #11 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #12 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #13 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+0x62000000039a is located 794 bytes inside of 3792-byte region [0x620000000080,0x620000000f50)
+freed by thread T0 here:
+    #0 0x7fffe2958517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffd3cccb40 in gs_heap_free_object base/gsmalloc.c:365
+    #2 0x7fffd35048e4 in gs_lcms2_free base/gsicc_lcms2mt.c:96
+    #3 0x7fffd351f880 in _cmsFree lcms2mt/src/cmserr.c:296
+    #4 0x7fffd35321dd in cmsCloseProfile lcms2mt/src/cmsio0.c:1474
+    #5 0x7fffd35061d5 in gscms_release_profile base/gsicc_lcms2mt.c:941
+    #6 0x7fffd34fdc1b in rc_free_icc_profile base/gsicc_manage.c:2203
+    #7 0x7fffd34f8679 in gsicc_adjust_profile_rc base/gsicc_manage.c:561
+    #8 0x7fffd34fb4a1 in rc_free_profile_array base/gsicc_manage.c:1386
+    #9 0x7fffd3c9f90e in gx_device_finalize base/gsdevice.c:59
+    #10 0x7fffd3f1b553 in restore_finalize psi/isave.c:954
+    #11 0x7fffd3f1b2b7 in alloc_restore_all psi/isave.c:899
+    #12 0x7fffd3ea4462 in gs_main_finit psi/imain.c:1391
+    #13 0x7fffd3ea4761 in gs_to_exit_with_code psi/imain.c:1434
+    #14 0x7fffd3ea478c in gs_to_exit psi/imain.c:1439
+    #15 0x7fffd3eaaff5 in psapi_exit psi/psapi.c:516
+    #16 0x7fffd3fe5b78 in gsapi_exit psi/iapi.c:401
+    #17 0x7fffd568758a in InvokeGhostscriptDelegate coders/ghostscript-private.h:167
+    #18 0x7fffd568c212 in ReadPSImage coders/ps.c:812
+    #19 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #20 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #21 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #22 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #23 0x555555556a32 in MagickMain utilities/magick.c:150
+    #24 0x555555556ce5 in main utilities/magick.c:182
+    #25 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+
+previously allocated by thread T0 here:
+    #0 0x7fffe2958867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffd3ccc33e in gs_heap_alloc_bytes base/gsmalloc.c:191
+    #2 0x7fffd3504888 in gs_lcms2_malloc base/gsicc_lcms2mt.c:75
+    #3 0x7fffd351f765 in _cmsMalloc lcms2mt/src/cmserr.c:267
+    #4 0x7fffd351f3ae in _cmsMallocZeroDefaultFn lcms2mt/src/cmserr.c:106
+    #5 0x7fffd351f7a5 in _cmsMallocZero lcms2mt/src/cmserr.c:274
+    #6 0x7fffd352ff62 in cmsCreateProfilePlaceholder lcms2mt/src/cmsio0.c:495
+    #7 0x7fffd35314e9 in cmsOpenProfileFromMem lcms2mt/src/cmsio0.c:1161
+    #8 0x7fffd3504e76 in gscms_get_profile_handle_mem base/gsicc_lcms2mt.c:319
+    #9 0x7fffd34fee11 in gsicc_get_profile_handle_buffer base/gsicc_manage.c:2599
+    #10 0x7fffd34fd199 in gsicc_set_device_profile base/gsicc_manage.c:1999
+    #11 0x7fffd34fc916 in gsicc_init_device_profile_struct base/gsicc_manage.c:1817
+    #12 0x7fffd3ca0f95 in gs_setdevice_no_erase base/gsdevice.c:565
+    #13 0x7fffd3f03c47 in zsetdevice_no_safer psi/zdevice.c:520
+    #14 0x7fffd3f03e6e in zsetdevice psi/zdevice.c:564
+    #15 0x7fffd3eb27eb in do_call_operator psi/interp.c:86
+    #16 0x7fffd3eb6ffb in interp psi/interp.c:1722
+    #17 0x7fffd3eb319d in gs_call_interp psi/interp.c:520
+    #18 0x7fffd3eb2f26 in gs_interpret psi/interp.c:477
+    #19 0x7fffd3ea128f in gs_main_interpret psi/imain.c:257
+    #20 0x7fffd3ea2bdb in gs_run_init_file psi/imain.c:861
+    #21 0x7fffd3ea1461 in gs_main_init2aux psi/imain.c:305
+    #22 0x7fffd3ea1c19 in gs_main_init2 psi/imain.c:491
+    #23 0x7fffd3ea80bd in runarg psi/imainarg.c:1111
+    #24 0x7fffd3ea7dc0 in argproc psi/imainarg.c:1047
+    #25 0x7fffd3ea6588 in swproc psi/imainarg.c:580
+    #26 0x7fffd3ea5348 in gs_main_init_with_args01 psi/imainarg.c:224
+    #27 0x7fffd3ea5669 in gs_main_init_with_args psi/imainarg.c:289
+    #28 0x7fffd3eaa910 in psapi_init_with_args psi/psapi.c:280
+    #29 0x7fffd3fe59cf in gsapi_init_with_args psi/iapi.c:239
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==26033==ABORTING

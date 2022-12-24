@@ -1,0 +1,22 @@
+61517:C 08 Nov 2022 11:22:31.981 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+61517:C 08 Nov 2022 11:22:32.009 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=61517, just started
+61517:C 08 Nov 2022 11:22:32.013 # Configuration loaded
+61517:M 08 Nov 2022 11:22:32.117 * monotonic clock: POSIX clock_gettime
+61517:M 08 Nov 2022 11:22:32.583 * Running mode=standalone, port=6379.
+61517:M 08 Nov 2022 11:22:32.585 # Server initialized
+61517:M 08 Nov 2022 11:22:32.587 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+61517:M 08 Nov 2022 11:22:32.726 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==61517==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555558133aa bp 0x7fffffffe7d0 sp 0x7fffffffe5e0 T0)
+==61517==The signal is caused by a READ memory access.
+==61517==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555558133aa in moduleLoad /root/redis-6.2.6/src/module.c:8586
+    #1 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #2 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #3 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #4 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/module.c:8586 in moduleLoad
+==61517==ABORTING

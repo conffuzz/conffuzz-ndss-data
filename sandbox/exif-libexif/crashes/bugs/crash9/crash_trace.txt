@@ -1,0 +1,11 @@
+    #4 0xaddr in log_func /root/exif/exif/main.c:136
+    #5 0xaddr in exif_logv /root/libexif/libexif/exif-log.c:151
+    #6 0xaddr in exif_log /root/libexif/libexif/exif-log.c:141
+    #7 0xaddr in exif_loader_alloc /root/libexif/libexif/exif-loader.c:112
+    #8 0xaddr in exif_loader_copy /root/libexif/libexif/exif-loader.c:150
+    #9 0xaddr in exif_loader_write /root/libexif/libexif/exif-loader.c:242
+    #10 0xaddr in exif_loader_write_file /root/libexif/libexif/exif-loader.c:136
+    #11 0xaddr in main /root/exif/exif/main.c:404
+    #12 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #13 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #14 0xaddr in _start (/usr/local/bin/exif+0xaddr)

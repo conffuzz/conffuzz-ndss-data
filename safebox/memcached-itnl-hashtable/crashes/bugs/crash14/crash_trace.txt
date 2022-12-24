@@ -1,0 +1,5 @@
+    #0 0xaddr in getblock32 /root/memcached-1.6.17/murmur3_hash.c:50
+    #1 0xaddr in MurmurHash3_x86_32 /root/memcached-1.6.17/murmur3_hash.c:88
+    #2 0xaddr in assoc_maintenance_thread /root/memcached-1.6.17/assoc.c:212
+    #3 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #4 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

@@ -1,0 +1,6 @@
+    #0 0xaddr in do_item_unlink_q /root/memcached-1.6.17/items.c:478
+    #1 0xaddr in lru_pull_tail /root/memcached-1.6.17/items.c:1208
+    #2 0xaddr in lru_maintainer_juggle /root/memcached-1.6.17/items.c:1446
+    #3 0xaddr in lru_maintainer_thread /root/memcached-1.6.17/items.c:1643
+    #4 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #5 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

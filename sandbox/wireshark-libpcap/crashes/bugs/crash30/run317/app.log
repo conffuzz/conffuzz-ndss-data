@@ -1,0 +1,31 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==109750==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe2478bb0 bp 0x7fffffffc0b0 sp 0x7fffffffc060 T0)
+==109750==The signal is caused by a READ memory access.
+==109750==Hint: address points to the zero page.
+    #0 0x7fffe2478bb0 in g_strlcpy (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x74bb0)
+    #1 0x555555586dd5 in open_capture_device_pcap_create /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1363
+    #2 0x555555583d3f in open_capture_device_local /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:82
+    #3 0x555555587514 in open_capture_device /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1607
+    #4 0x55555556b980 in capture_loop_open_input /root/wireshark-3.4.12/dumpcap.c:2703
+    #5 0x555555570f5a in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3793
+    #6 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #7 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #8 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x74bb0) in g_strlcpy
+==109750==ABORTING

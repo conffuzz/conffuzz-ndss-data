@@ -1,0 +1,30 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b5ca6a [size: 0]) @ 0x00007fffb9b690dc
+~> instrumenting 0x00007fffb9b5ca6a (TIFFErrors, 0x3 arg(s))
+~> change ret from 0x7fffb9b17010 to 0x7ffffffd9000
+TIFFSetWarningHandler(0x7fffb9b5eb44 [size: 0]) @ 0x00007fffb9b690f2
+~> instrumenting 0x00007fffb9b5eb44 (TIFFWarnings, 0x3 arg(s))
+~> change ret from 0x7fffb9b16f64 to 0x7fffb9b170a0
+TIFFSetTagExtender(0x7fffb9b68e99 [size: 0]) @ 0x00007fffb9b69114
+~> instrumenting 0x00007fffb9b68e99 (TIFFTagExtender, 0x1 arg(s))
+TIFFGetVersion() @ 0x00007fffb9b69172
+TIFFClientOpen(0x627000106cf8 [size: 0x1], 0x7fffb9b8ed80 [size: 0x1], 0x627000106900 [size: 0], 0x7fffb9b5ea98 [size: 0], 0x7fffb9b5ed62 [size: 0], 0x7fffb9b5eb06 [size: 0], 0x7fffb9b5ca4b [size: 0], 0x7fffb9b5cc88 [size: 0], 0x7fffb9b5e9cf [size: 0], 0x7fffb9b5eb31 [size: 0]) @ 0x00007fffb9b6dfca
+~> instrumenting 0x00007fffb9b5ea98 (TIFFReadBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b5ed62 (TIFFWriteBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b5eb06 (TIFFSeekBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b5ca4b (TIFFCloseBlob, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b5cc88 (TIFFGetBlobSize, 0x1 arg(s))
+~> instrumenting 0x00007fffb9b5e9cf (TIFFMapBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9b5eb31 (TIFFUnmapBlob, 0x3 arg(s))
+~> detected cb call TIFFSeekBlob(0x627000106900 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffb9affc5b
+~> change arg #0x3 from 0 to 0xffffffff80000000
+~> detected cb call TIFFWriteBlob(0x627000106900 [size: 0], 0x61a000004588 [size: 0], 0x8 [size: 0]) @ 0x00007fffb9affc8f
+~> change arg #0x2 from 0x61a000004588 to 0x61a000004371
+~> detected cb call TIFFTagExtender(0x61a000004280 [size: 0x4d8]) @ 0x00007fffb9ab98be
+~> change arg #0x1 from 0x61a000004280 to 0x61a0000043c9
+~> detected cb call TIFFErrors(0x200000000000000 [size: 0x1], 0x7fffb9b18058 [size: 0x1], 0x7fffffff6f58 [size: 0x18]) @ 0x00007fffb9ad25e8
+~> change arg #0x2 from 0x7fffb9b18058 to 0xd
+~> change arg #0x3 from 0x7fffffff6f58 to 0x7fffffff6c74

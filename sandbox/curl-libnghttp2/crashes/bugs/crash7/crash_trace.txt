@@ -1,0 +1,24 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #1 0xaddr  (/usr/lib/x86_64-linux-gnu/libssl.so.1.1+0xaddr)
+    #2 0xaddr  (/usr/lib/x86_64-linux-gnu/libssl.so.1.1+0xaddr)
+    #3 0xaddr  (/usr/lib/x86_64-linux-gnu/libssl.so.1.1+0xaddr)
+    #4 0xaddr in SSL_write (/usr/lib/x86_64-linux-gnu/libssl.so.1.1+0xaddr)
+    #5 0xaddr in ossl_send vtls/openssl.c:4264
+    #6 0xaddr in send_callback /root/curl-7.82.0/lib/http2.c:391
+    #7 0xaddr in nghttp2_session_send /root/nghttp2-1.47.0/lib/nghttp2_session.c:3258
+    #8 0xaddr in h2_session_send /root/curl-7.82.0/lib/http2.c:1612
+    #9 0xaddr in h2_process_pending_input /root/curl-7.82.0/lib/http2.c:1411
+    #10 0xaddr in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2136
+    #11 0xaddr in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #12 0xaddr in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #13 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #14 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #15 0xaddr in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #16 0xaddr in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #17 0xaddr in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #18 0xaddr in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #19 0xaddr in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #20 0xaddr in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #21 0xaddr in main /root/curl-7.82.0/src/tool_main.c:274
+    #22 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #23 0xaddr in _start (/usr/local/bin/curl+0xaddr)

@@ -1,0 +1,12 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_pattern_info("/", PCRE2_INFO_NAMECOUNT) failed: -220 in /root/nginx-1.21.6/conf/nginx.conf:50
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==34223==ERROR: AddressSanitizer: SEGV on unknown address 0x0000fd6d0000 (pc 0x0000fd6d0000 bp 0x7fffffffe1d0 sp 0x7fffffffe1a8 T0)
+==34223==The signal is caused by a READ memory access.
+==34223==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

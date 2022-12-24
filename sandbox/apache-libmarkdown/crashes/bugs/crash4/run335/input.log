@@ -1,0 +1,34 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+mkd_compile(0x60d000006840 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+mkd_doc_title(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+mkd_document(0x60d000006840 {Document*} [size: 0x88], 0x7fffd5bc5ae0 {char**} [size: 0x8]) @ 0x00007fffd7eb7541
+mkd_cleanup(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7eb7649
+mkd_in(0x615000010200 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+mkd_compile(0x60d000006910 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+mkd_doc_title(0x60d000006910 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+mkd_document(0x60d000006910 {Document*} [size: 0x88], 0x7fffd5bc5ae0 {char**} [size: 0x8]) @ 0x00007fffd7eb7541
+mkd_cleanup(0x60d000006910 {Document*} [size: 0x88]) @ 0x00007fffd7eb7649
+mkd_in(0x615000010480 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+mkd_compile(0x60d0000069e0 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+mkd_doc_title(0x60d0000069e0 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+mkd_document(0x60d0000069e0 {Document*} [size: 0x88], 0x7fffd5bc5ae0 {char**} [size: 0x8]) @ 0x00007fffd7eb7541
+~> write {Document*} 0x1 -> 0 at shared buffer 0x000060d000006a20
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006a06
+mkd_cleanup(0x60d0000069e0 {Document*} [size: 0x88]) @ 0x00007fffd7eb7649
+mkd_in(0x615000010700 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+mkd_compile(0x60d000006ab0 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+mkd_doc_title(0x60d000006ab0 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+mkd_document(0x60d000006ab0 {Document*} [size: 0x88], 0x7fffd5bc5ae0 {char**} [size: 0x8]) @ 0x00007fffd7eb7541
+mkd_cleanup(0x60d000006ab0 {Document*} [size: 0x88]) @ 0x00007fffd7eb7649
+mkd_in(0x615000010980 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb89c9
+mkd_compile(0x60d000006b80 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7eb747b
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006bed
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006b9f
+mkd_doc_title(0x60d000006b80 {Document*} [size: 0x88]) @ 0x00007fffd7eb7aec
+~> write {Document*} 0 -> 0x9000000000000 at shared buffer 0x000060d000006bd7
+~> change ret {char*} from 0 to 0xffffffffffffff35

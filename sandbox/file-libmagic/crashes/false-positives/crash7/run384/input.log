@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+magic_version() @ 0x0000555555559ef9
+magic_open(0 {int} [size: 0]) @ 0x000055555555a7b2
+magic_load(0x612000000040 {magic_set*} [size: 0x128], 0 {char*} [size: 0x1]) @ 0x000055555555a7ee
+magic_error(0x612000000040 {magic_set*} [size: 0x128]) @ 0x000055555555a835
+magic_file(0x612000000040 {magic_set*} [size: 0x128], 0x7fffffffec72 {char*} [size: 0x1]) @ 0x000055555555aebb
+~> write {magic_set*} 0x6f6620676e697a7a -> 0 at shared buffer 0x00006120000000d7
+magic_file(0x612000000040 {magic_set*} [size: 0x128], 0x7fffffffec7c {char*} [size: 0x1]) @ 0x000055555555aebb
+~> write {char*} 0x2f -> 0 at shared buffer 0x00007fffffffec7c
+magic_file(0x612000000040 {magic_set*} [size: 0x128], 0x7fffffffeca4 {char*} [size: 0x1]) @ 0x000055555555aebb
+~> write {magic_set*} 0 -> 0 at shared buffer 0x0000612000000159
+~> write {magic_set*} 0x6040 -> 0xffffff0b00000000 at shared buffer 0x0000612000000044
+~> write {magic_set*} 0 -> 0 at shared buffer 0x000061200000011d
+~> write {char*} 0x2f -> 0x6400000000000000 at shared buffer 0x00007fffffffeca4
+magic_close(0x612000000040 {magic_set*} [size: 0x128]) @ 0x000055555555a383

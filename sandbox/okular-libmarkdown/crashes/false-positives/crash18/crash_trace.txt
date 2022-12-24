@@ -1,0 +1,20 @@
+    #5 0xaddr in ___mkd_freemmiot /root/discount-2.2.7/resource.c:114
+    #6 0xaddr in mkd_cleanup /root/discount-2.2.7/resource.c:148
+    #7 0xaddr in Markdown::Converter::convertOpenFile() /root/okular/generators/markdown/converter.cpp:117
+    #8 0xaddr in Markdown::Converter::convert(QString const&) /root/okular/generators/markdown/converter.cpp:68
+    #9 0xaddr in Okular::TextDocumentConverter::convertWithPassword(QString const&, QString const&) /root/okular/core/textdocumentgenerator.cpp:52
+    #10 0xaddr in Okular::TextDocumentGenerator::loadDocumentWithPassword(QString const&, QVector<Okular::Page*>&, QString const&) /root/okular/core/textdocumentgenerator.cpp:290
+    #11 0xaddr in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:889
+    #12 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #13 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #14 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #15 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #16 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #17 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #18 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #19 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #20 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #21 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #22 0xaddr in main /root/okular/shell/main.cpp:91
+    #23 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #24 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

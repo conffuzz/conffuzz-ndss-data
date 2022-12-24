@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebd9c9
+mkd_compile(0x60d000006840 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebc47b
+mkd_doc_title(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7ebcaec
+mkd_document(0x60d000006840 {Document*} [size: 0x88], 0x7fffd5bceae0 {char**} [size: 0x8]) @ 0x00007fffd7ebc541
+mkd_cleanup(0x60d000006840 {Document*} [size: 0x88]) @ 0x00007fffd7ebc649
+mkd_in(0x615000010200 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebd9c9
+mkd_compile(0x60d000006910 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebc47b
+~> write {Document*} 0 -> 0x900000000 at shared buffer 0x000060d000006979
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d00000693a
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d000006936
+mkd_doc_title(0x60d000006910 {Document*} [size: 0x88]) @ 0x00007fffd7ebcaec
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d00000695c
+~> write {Document*} 0 -> 0x2cc000000 at shared buffer 0x000060d00000693a
+~> write {Document*} 0 -> 0 at shared buffer 0x000060d00000697b
+mkd_document(0x60d000006910 {Document*} [size: 0x88], 0x7fffd5bceae0 {char**} [size: 0x8]) @ 0x00007fffd7ebc541
+~> write {char**} 0x60e000007120 -> 0xffffffffffffff8b at shared buffer 0x00007fffd5bceae0

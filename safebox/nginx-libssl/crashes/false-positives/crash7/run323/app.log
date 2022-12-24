@@ -1,0 +1,12 @@
+nginx: [alert] SSL_CTX_get_ex_new_index() failed (SSL: error:000000FF:lib(0):func(0):reason(255))
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==105132==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7fffffffdd10 sp 0x7fffffffdc68 T0)
+==105132==Hint: pc points to the zero page.
+==105132==The signal is caused by a READ memory access.
+==105132==Hint: address points to the zero page.
+    #0 0x0  (<unknown module>)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (<unknown module>) 
+==105132==ABORTING

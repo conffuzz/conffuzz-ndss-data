@@ -1,0 +1,39 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+avcodec_version() @ 0x0000555555577440
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+~> change ret from 0x619000000080 to 0x7ffffffde190
+avcodec_parameters_to_context(0x7ffffffde190 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0xff0000 -> 0 at shared buffer 0x000060e0000233da
+~> write 0x2 -> 0x5 at shared buffer 0x000060e000023410
+~> write 0 -> 0xff at shared buffer 0x00007ffffffde36c
+~> write 0 -> 0xfff9 at shared buffer 0x00007ffffffde49b
+~> write 0 -> 0xfffffffffd at shared buffer 0x00007ffffffde382
+~> write 0 -> 0xff00000000 at shared buffer 0x00007ffffffde44b
+~> change ret from 0 to 0xfffffffffffffc5d
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x555555554000
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+avcodec_parameters_to_context(0x7ffffffde190 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+~> change ret from 0x7fffe05302c0 to 0x55555556f190
+avcodec_is_open(0x7ffffffde190 [size: 0x398]) @ 0x00007fffe0ead509
+~> write 0 -> 0 at shared buffer 0x00007ffffffde4be
+~> write 0x3450 -> 0xfffffffffc18 at shared buffer 0x00007ffffffde1ae
+avcodec_parameters_to_context(0x7ffffffde190 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ead7db
+~> write 0 -> 0 at shared buffer 0x000060e0000233cd
+~> write 0 -> 0x6f at shared buffer 0x00007ffffffde2b2
+~> write 0 -> 0x5 at shared buffer 0x00007ffffffde360
+~> write 0 -> 0xfffffffffffc18 at shared buffer 0x00007ffffffde3b7
+~> write 0 -> 0xff00000000000a at shared buffer 0x00007ffffffde392
+~> change ret from 0 to 0xfffffffffffffcd6
+avcodec_parameters_from_context(0x60e0000233c0 [size: 0x90], 0x7ffffffde190 [size: 0x398]) @ 0x00007fffe0ebf44e
+~> write 0x34 -> 0 at shared buffer 0x000060e0000233cb
+~> write 0 -> 0x30c at shared buffer 0x000060e000023438
+~> write 0xc000000 -> 0 at shared buffer 0x000060e0000233c1
+~> write 0 -> 0xfffffe84 at shared buffer 0x000060e00002344c
+avcodec_close(0x7ffffffde190 [size: 0x398]) @ 0x00007fffe0ebf6ac

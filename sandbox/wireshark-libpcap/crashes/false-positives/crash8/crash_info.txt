@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libpcap.so.1.10.1
+cap_null_deref
+cap_read_arbitrary
+cap_write

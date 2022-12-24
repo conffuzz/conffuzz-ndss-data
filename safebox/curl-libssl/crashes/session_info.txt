@@ -1,0 +1,25 @@
+Fuzzing seed: 1651253546
+Starting time: 2022-04-29 17:32:26
+Total instrumented API size: 495
+Statically detected call sites: 56
+Statically detected called API endpoints: 56
+Statically detected caller components: 1
+Max number of call sites reached in a run: 0
+Number of API endpoints reached: 14
+Number of API endpoints that are vulnerability vectors: 14
+List of these endpoints:
+  [api] OPENSSL_init_ssl
+  [api] SSL_connect
+  [api] SSL_ctrl
+  [api] SSL_CTX_ctrl
+  [api] SSL_CTX_free
+  [api] SSL_CTX_new
+  [api] SSL_CTX_set_alpn_protos
+  [api] SSL_CTX_set_options
+  [api] SSL_CTX_set_post_handshake_auth
+  [api] SSL_CTX_set_verify
+  [api] SSL_free
+  [api] SSL_new
+  [api] SSL_read
+  [api] SSL_set_connect_state
+Ending time: 2022-04-29 18:39:55

@@ -1,0 +1,39 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==75215==ERROR: AddressSanitizer: stack-overflow on address 0x7ffffffff000 (pc 0x7fffe09ae17a bp 0x7fffffffd250 sp 0x7fffffffd200 T0)
+    #0 0x7fffe09ae17a in _aesni_encrypt8 (/usr/local/lib/libcrypto.so.1.1+0x13517a)
+    #1 0x7fffe09ae3f2 in aesni_ecb_encrypt (/usr/local/lib/libcrypto.so.1.1+0x1353f2)
+    #2 0x7fffe0bcb702 in aesni_ecb_cipher crypto/evp/e_aes.c:324
+    #3 0x7fffe0bfcf1a in evp_EncryptDecryptUpdate crypto/evp/evp_enc.c:340
+    #4 0x7fffe0bfd43c in EVP_EncryptUpdate crypto/evp/evp_enc.c:392
+    #5 0x7fffe0bfc85a in EVP_CipherUpdate crypto/evp/evp_enc.c:213
+    #6 0x7fffe0c8b344 in ctr_BCC_block crypto/rand/drbg_ctr.c:73
+    #7 0x7fffe0c8b439 in ctr_BCC_blocks crypto/rand/drbg_ctr.c:86
+    #8 0x7fffe0c8b75c in ctr_BCC_update crypto/rand/drbg_ctr.c:140
+    #9 0x7fffe0c8bd05 in ctr_df crypto/rand/drbg_ctr.c:193
+    #10 0x7fffe0c8c715 in ctr_update crypto/rand/drbg_ctr.c:261
+    #11 0x7fffe0c8c9df in drbg_ctr_instantiate crypto/rand/drbg_ctr.c:290
+    #12 0x7fffe0c8ebd2 in RAND_DRBG_instantiate crypto/rand/drbg_lib.c:355
+    #13 0x7fffe0c8ff43 in rand_drbg_restart crypto/rand/drbg_lib.c:536
+    #14 0x7fffe0c9025f in RAND_DRBG_generate crypto/rand/drbg_lib.c:586
+    #15 0x7fffe0c921c6 in rand_drbg_get_entropy crypto/rand/rand_lib.c:172
+    #16 0x7fffe0c8e8d3 in RAND_DRBG_instantiate crypto/rand/drbg_lib.c:338
+    #17 0x7fffe0c9157f in drbg_setup crypto/rand/drbg_lib.c:895
+    #18 0x7fffe0c91bf3 in RAND_DRBG_get0_public crypto/rand/drbg_lib.c:1123
+    #19 0x7fffe0c91791 in drbg_bytes crypto/rand/drbg_lib.c:966
+    #20 0x7fffe0c946c3 in RAND_bytes crypto/rand/rand_lib.c:939
+    #21 0x7fffe104aca7 in SSL_CTX_new ssl/ssl_lib.c:3058
+    #22 0x55555568177a in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #23 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #24 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #25 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #26 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #27 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #28 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #29 0x5555555c76b0 in main src/core/nginx.c:292
+    #30 0x7fffe062ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #31 0x7fffe062ae3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #32 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+SUMMARY: AddressSanitizer: stack-overflow (/usr/local/lib/libcrypto.so.1.1+0x13517a) in _aesni_encrypt8
+==75215==ABORTING

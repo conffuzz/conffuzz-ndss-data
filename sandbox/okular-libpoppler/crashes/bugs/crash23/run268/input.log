@@ -1,0 +1,17 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec443c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec44afe
+~> instrumenting 0x00007fff6ec443c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec451bc
+isLocked(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec457ad
+xrefWasReconstructed(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec45ba0
+setXRefReconstructedCallback(0x6020002e98b0 {Document*} [size: 0x4], 0x7fffffffb4b0 {function<void()>&} [size: 0x1]) @ 0x00007fff6ec45d96
+numPages(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec45df1
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec46c9f
+pageSizeF(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec46cf8
+orientation(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec46ec9
+transition(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec563e1
+action(0x6020002e98d0 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec47024
+~> change ret {Link*} from 0 to 0x1f8

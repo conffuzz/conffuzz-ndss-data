@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec823c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec82afe
+~> instrumenting 0x00007fff6ec823c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec831bc
+isLocked(0x6020002e9850 {Document*} [size: 0x4]) @ 0x00007fff6ec837ad
+~> change ret {bool} from 0 to 0x10
+unlock(0x6020002e9850 {Document*} [size: 0x4], 0x7fffffffb3b0 {QByteArray&} [size: 0x10], 0x7fffffffb3d0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec83886
+isLocked(0x6020002e9850 {Document*} [size: 0x4]) @ 0x00007fff6ec83907
+~> write {Document*} 0x129f640 -> 0 at shared buffer 0x00006020002e9850
+xrefWasReconstructed(0x6020002e9850 {Document*} [size: 0x4]) @ 0x00007fff6ec83ba0
+~> write {Document*} 0 -> 0 at shared buffer 0x00006020002e9850
+numPages(0x6020002e9850 {Document*} [size: 0x4]) @ 0x00007fff6ec83df1

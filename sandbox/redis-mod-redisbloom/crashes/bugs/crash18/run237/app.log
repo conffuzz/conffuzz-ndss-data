@@ -1,0 +1,34 @@
+45473:C 08 Nov 2022 11:11:27.381 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+45473:C 08 Nov 2022 11:11:27.414 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=45473, just started
+45473:C 08 Nov 2022 11:11:27.417 # Configuration loaded
+45473:M 08 Nov 2022 11:11:27.528 * monotonic clock: POSIX clock_gettime
+45473:M 08 Nov 2022 11:11:28.013 * Running mode=standalone, port=6379.
+45473:M 08 Nov 2022 11:11:28.017 # Server initialized
+45473:M 08 Nov 2022 11:11:28.019 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+45473:M 08 Nov 2022 11:11:28.186 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+45473:M 08 Nov 2022 11:11:28.254 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+45473:M 08 Nov 2022 11:11:28.441 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==45473==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555556b4c30 bp 0x7fffffffe310 sp 0x7fffffffe2d0 T0)
+==45473==The signal is caused by a READ memory access.
+==45473==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555556b4c30 in sdsavail /root/redis-6.2.6/src/sds.h:105
+    #1 0x5555556b6d02 in trimStringObjectIfNeeded /root/redis-6.2.6/src/object.c:431
+    #2 0x5555557ecb9e in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:710
+    #3 0x55555566ecb3 in call /root/redis-6.2.6/src/server.c:3721
+    #4 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #5 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #6 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #7 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #8 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #9 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #10 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #11 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #12 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #13 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #14 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/sds.h:105 in sdsavail
+==45473==ABORTING

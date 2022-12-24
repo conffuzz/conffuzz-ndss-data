@@ -1,0 +1,24 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==130630==ERROR: AddressSanitizer: SEGV on unknown address 0x00ffe2587318 (pc 0x00ffe2587318 bp 0x7fffffffc330 sp 0x7fffffffc318 T0)
+==130630==The signal is caused by a READ memory access.
+==130630==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

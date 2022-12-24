@@ -1,0 +1,42 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec323c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec32afe
+~> instrumenting 0x00007fff6ec323c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec331bc
+isLocked(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec337ad
+xrefWasReconstructed(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec33ba0
+~> change ret {bool} from 0 to 0xfffffffffffffc18
+numPages(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec33df1
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec34c9f
+pageSizeF(0x6020002ea170 {Page*} [size: 0xe0]) @ 0x00007fff6ec34cf8
+orientation(0x6020002ea170 {Page*} [size: 0xe0]) @ 0x00007fff6ec34ec9
+transition(0x6020002ea170 {Page*} [size: 0xe0]) @ 0x00007fff6ec443e1
+action(0x6020002ea170 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec35024
+action(0x6020002ea170 {Page*} [size: 0xe0], 0x1 {PageAction} [size: 0]) @ 0x00007fff6ec35074
+duration(0x6020002ea170 {Page*} [size: 0xe0]) @ 0x00007fff6ec350bf
+label(0x7fffffffb050 {Page*} [size: 0xe0]) @ 0x00007fff6ec35129
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec3526c
+page(0x6020002e98b0 {Document*} [size: 0x4], 0x1 {int} [size: 0]) @ 0x00007fff6ec34c9f
+pageSizeF(0x6020002fb490 {Page*} [size: 0xe0]) @ 0x00007fff6ec34cf8
+orientation(0x6020002fb490 {Page*} [size: 0xe0]) @ 0x00007fff6ec34ec9
+~> write {Page*} 0 -> 0 at shared buffer 0x00006020002fb4d3
+~> write {Page*} 0 -> 0 at shared buffer 0x00006020002fb4d0
+transition(0x6020002fb490 {Page*} [size: 0xe0]) @ 0x00007fff6ec443e1
+action(0x6020002fb490 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec35024
+action(0x6020002fb490 {Page*} [size: 0xe0], 0x1 {PageAction} [size: 0]) @ 0x00007fff6ec35074
+duration(0x6020002fb490 {Page*} [size: 0xe0]) @ 0x00007fff6ec350bf
+label(0x7fffffffb050 {Page*} [size: 0xe0]) @ 0x00007fff6ec35129
+formFields(0x7fffffffadf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec447ab
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec3526c
+signatures(0x7fffffffb0b0 {Document*} [size: 0x4]) @ 0x00007fff6ec35475
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec354a1
+formFields(0x7fffffffadf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec447ab
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec5cc58
+paperColor(0x7fffffffb2f0 {Document*} [size: 0x4]) @ 0x00007fff6ec3fffc
+renderHints(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec40675
+setRenderHint(0x6020002e98b0 {Document*} [size: 0x4], 0x1 {RenderHint} [size: 0], 0x1 {bool} [size: 0]) @ 0x00007fff6ec407a3
+setRenderHint(0x6020002e98b0 {Document*} [size: 0x4], 0x2 {RenderHint} [size: 0], 0x1 {bool} [size: 0]) @ 0x00007fff6ec408dd
+~> write {Document*} 0xf640 -> 0 at shared buffer 0x00006020002e98b0
+okToFillForm(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec39b4a

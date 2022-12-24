@@ -1,0 +1,4 @@
+    #0 0xaddr in parse_auto_key_locate /root/gnupg-2.2.27/g10/getkey.c:4191
+    #1 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2455
+    #2 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #3 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

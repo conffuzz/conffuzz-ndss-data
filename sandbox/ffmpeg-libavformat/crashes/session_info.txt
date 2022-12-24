@@ -1,0 +1,16 @@
+Fuzzing seed: 1651190121
+Starting time: 2022-04-28 23:55:21
+Total instrumented API size: 28
+Statically detected call sites: 19
+Statically detected called API endpoints: 19
+Statically detected caller components: 3
+Max number of call sites reached in a run: 8
+Number of API endpoints reached: 10
+Number of API endpoints that are vulnerability vectors: 5
+List of these endpoints:
+  [api] avformat_alloc_context
+  [api] avformat_configuration
+  [api] avformat_find_stream_info
+  [api] avformat_network_init
+  [api] avformat_open_input
+Ending time: 2022-04-29 01:44:39

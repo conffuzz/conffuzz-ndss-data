@@ -1,0 +1,8 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3553==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000000ff (pc 0x0000000000ff bp 0x7fffffffde40 sp 0x7fffffffdbf8 T0)
+==3553==Hint: pc points to the zero page.
+==3553==The signal is caused by a READ memory access.
+==3553==Hint: address points to the zero page.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

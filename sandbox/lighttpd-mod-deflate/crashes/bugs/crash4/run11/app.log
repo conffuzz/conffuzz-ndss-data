@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2538==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe23293f8 bp 0x7fffffffe220 sp 0x7fffffffd9a0 T0)
+==2538==The signal is caused by a READ memory access.
+==2538==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe23293f8 in __interceptor_strcmp ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:461
+    #1 0x5555555c3882 in fdevent_config /root/lighttpd-1.4.67/src/fdevent_impl.c:87
+    #2 0x5555555c3bc1 in fdevent_init /root/lighttpd-1.4.67/src/fdevent_impl.c:186
+    #3 0x5555555890b7 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1761
+    #4 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #5 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:461 in __interceptor_strcmp
+==2538==ABORTING

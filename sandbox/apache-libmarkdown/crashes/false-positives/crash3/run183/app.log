@@ -1,0 +1,41 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 09:52:59.359412 2022] [core:warn] [pid 9375:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==9375==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7fffe1c0975c bp 0x7fffd5bc6a80 sp 0x7fffd5bc6a58 T2)
+==9375==The signal is caused by a WRITE memory access.
+==9375==Hint: address points to the zero page.
+    #0 0x7fffe1c0975c  (/lib/x86_64-linux-gnu/libc.so.6+0x16175c)
+    #1 0x7fffd7e6438a in mkd_compile /root/discount-2.2.7/markdown.c:1445
+    #2 0x7fffd7eba47a in markdown_output /root/apache-mod-markdown/mod_markdown.c:150
+    #3 0x7fffd7ebba96 in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #4 0x5555556a042b in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #5 0x5555556a1b97 in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #6 0x5555556f5835 in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #7 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #8 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #9 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #10 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #11 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #12 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #13 0x7fffe1ba4a2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x16175c) 
+Thread T2 created by T1 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x555555726242 in start_threads /root/httpd-2.4.52/server/mpm/event/event.c:2390
+    #2 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+
+Thread T1 created by T0 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x5555557279e3 in child_main /root/httpd-2.4.52/server/mpm/event/event.c:2599
+    #2 0x555555728659 in make_child /root/httpd-2.4.52/server/mpm/event/event.c:2712
+    #3 0x555555728aef in startup_children /root/httpd-2.4.52/server/mpm/event/event.c:2777
+    #4 0x55555572bf76 in event_run /root/httpd-2.4.52/server/mpm/event/event.c:3161
+    #5 0x555555626daf in ap_run_mpm /root/httpd-2.4.52/server/mpm_common.c:95
+    #6 0x55555560bc90 in main /root/httpd-2.4.52/server/main.c:819
+    #7 0x7fffe1acbd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==9375==ABORTING

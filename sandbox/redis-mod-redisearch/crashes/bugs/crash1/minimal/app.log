@@ -1,0 +1,40 @@
+2987:C 08 Nov 2022 09:20:39.283 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2987:C 08 Nov 2022 09:20:39.312 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=2987, just started
+2987:C 08 Nov 2022 09:20:39.315 # Configuration loaded
+2987:M 08 Nov 2022 09:20:39.406 * monotonic clock: POSIX clock_gettime
+2987:M 08 Nov 2022 09:20:39.773 * Running mode=standalone, port=6379.
+2987:M 08 Nov 2022 09:20:39.775 # Server initialized
+2987:M 08 Nov 2022 09:20:39.776 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2987:M 08 Nov 2022 09:20:40.224 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+2987:M 08 Nov 2022 09:20:40.228 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+2987:M 08 Nov 2022 09:20:40.245 * <search> Low level api version 1 initialized successfully
+2987:M 08 Nov 2022 09:20:40.263 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+2987:M 08 Nov 2022 09:20:40.308 * <search> Initialized thread pool!
+2987:M 08 Nov 2022 09:20:40.328 * <search> Enabled diskless replication
+2987:M 08 Nov 2022 09:20:40.393 * Module 'search' loaded from /root/RediSearch/bin/linux-x64-debug/search/redisearch.so
+2987:M 08 Nov 2022 09:20:40.507 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2987==ERROR: AddressSanitizer: SEGV on unknown address 0x00207b25672c (pc 0x5555556b683b bp 0x7fffffffe2b0 sp 0x7fffffffe2a0 T0)
+==2987==The signal is caused by a READ memory access.
+    #0 0x5555556b683b in decrRefCount /root/redis-6.2.6/src/object.c:377
+    #1 0x55555569edd1 in freeClientArgv /root/redis-6.2.6/src/networking.c:1199
+    #2 0x55555569ff9c in freeClient /root/redis-6.2.6/src/networking.c:1376
+    #3 0x5555557ec76b in moduleFreeContext /root/redis-6.2.6/src/module.c:682
+    #4 0x5555557ecaa5 in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:695
+    #5 0x55555566ecb3 in call /root/redis-6.2.6/src/server.c:3721
+    #6 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #7 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #8 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #9 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #10 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #11 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #12 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #13 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #14 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #15 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #16 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/object.c:377 in decrRefCount
+==2987==ABORTING

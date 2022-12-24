@@ -1,0 +1,21 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gsapi_new_instance(0x7ffffffed460 {**} [size: 0x8], 0x7ffffffed440 {void*} [size: 0x1]) @ 0x00007fffd5687248
+~> write {void*} 0 -> 0x8000000000000000 at shared buffer 0x00007ffffffed440
+~> write {**} 0x6110000006b0 -> 0 at shared buffer 0x00007ffffffed460
+~> change ret {int} from 0 to 0x318
+gsapi_set_stdio(0 {void*} [size: 0x1], 0 {int(*,char*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1], 0x7fffd56868d5 {int(*,constchar*,int)*} [size: 0x1]) @ 0x00007fffd56873dc
+~> instrumenting 0x00007fffd56868d5 (GhostscriptDelegateMessage, 0x3 arg(s))
+~> change ret {int} from 0xffffff9c to 0xffffffff80000000
+gsapi_init_with_args(0 {void*} [size: 0x1], 0x12 {int} [size: 0], 0x60e000000048 {char**} [size: 0x8]) @ 0x00007fffd568748d
+~> write {char**} 0x6210000af100 -> 0 at shared buffer 0x000060e000000048
+~> change ret {int} from 0xffffff9c to 0xfffffffffffffffd
+gsapi_exit(0 {void*} [size: 0x1]) @ 0x00007fffd568758b
+gsapi_delete_instance(0 {void*} [size: 0x1]) @ 0x00007fffd56875ed
+gsapi_revision(0x7ffffffed300 {gsapi_revision_t*} [size: 0x20], 0x20 {int} [size: 0]) @ 0x00007fffd5686ba5
+~> write {gsapi_revision_t*} 0x6eb8 -> 0 at shared buffer 0x00007ffffffed300
+~> write {gsapi_revision_t*} 0x4e00 -> 0x1be000000000000 at shared buffer 0x00007ffffffed30f
+~> write {gsapi_revision_t*} 0x134 -> 0xfff7000000000000 at shared buffer 0x00007ffffffed31a
+~> change ret {int} from 0 to 0x204

@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/tiff.so
+cap_null_deref

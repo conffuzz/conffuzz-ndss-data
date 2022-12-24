@@ -1,0 +1,77 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  WARNING: library configuration mismatch
+  avcodec     configuration: 
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+foo.avi: Input/output error
+=================================================================
+==42370==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e000023450 at pc 0x7fffe25f428e bp 0x7fffffffe6f0 sp 0x7fffffffdea0
+WRITE of size 144 at 0x60e000023450 thread T0
+    #0 0x7fffe25f428d in __interceptor_memset ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799
+    #1 0x7fffde78144e in codec_parameters_reset libavcodec/codec_par.c:35
+    #2 0x7fffde78182b in avcodec_parameters_free libavcodec/codec_par.c:67
+    #3 0x7fffe130d5b8 in free_stream libavformat/utils.c:674
+    #4 0x7fffe130da99 in avformat_free_context libavformat/utils.c:706
+    #5 0x7fffe0ea2dea in avformat_close_input libavformat/demux.c:374
+    #6 0x55555559caf7 in close_input_file fftools/ffprobe.c:3253
+    #7 0x55555559d4f9 in probe_file fftools/ffprobe.c:3329
+    #8 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #9 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+0x60e000023450 is located 0 bytes to the right of 144-byte region [0x60e0000233c0,0x60e000023450)
+allocated by thread T0 here:
+    #0 0x7fffe266a3ac in __interceptor_posix_memalign ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:226
+    #1 0x7fffdda3b40d in av_malloc libavutil/mem.c:104
+    #2 0x7fffdda3c21f in av_mallocz libavutil/mem.c:265
+    #3 0x7fffde7817bc in avcodec_parameters_alloc libavcodec/codec_par.c:53
+    #4 0x7fffe130e180 in avformat_new_stream libavformat/utils.c:796
+    #5 0x7fffe0e2abfb in avi_read_header libavformat/avidec.c:587
+    #6 0x7fffe0ea238b in avformat_open_input libavformat/demux.c:297
+    #7 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #8 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #9 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #10 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799 in __interceptor_memset
+Shadow bytes around the buggy address:
+  0x0c1c7fffc630: 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa fa
+  0x0c1c7fffc640: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fffc650: 00 00 00 fa fa fa fa fa fa fa fa fa 00 00 00 00
+  0x0c1c7fffc660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa
+  0x0c1c7fffc670: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+=>0x0c1c7fffc680: 00 00 00 00 00 00 00 00 00 00[fa]fa fa fa fa fa
+  0x0c1c7fffc690: fa fa fa fa fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fffc6a0: fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa
+  0x0c1c7fffc6b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c1c7fffc6c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c1c7fffc6d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==42370==ABORTING

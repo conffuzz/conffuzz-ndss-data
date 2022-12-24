@@ -1,0 +1,46 @@
+fatal: curl_global_init failed
+=================================================================
+==9817==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x60300002aee0 in thread T0
+    #0 0x7fffe03b4517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffdf602ecb in CRYPTO_free crypto/mem.c:312
+    #2 0x7fffdf6e098c in OPENSSL_sk_free crypto/stack/stack.c:377
+    #3 0x7fffdf6e0911 in OPENSSL_sk_pop_free crypto/stack/stack.c:369
+    #4 0x7fffdf5e8f23 in sk_EX_CALLBACK_pop_free include/internal/cryptlib.h:47
+    #5 0x7fffdf5e911d in crypto_cleanup_all_ex_data_int crypto/ex_data.c:100
+    #6 0x7fffdf5f5ae6 in OPENSSL_cleanup crypto/init.c:604
+    #7 0x7fffdfc7d494  (/lib/x86_64-linux-gnu/libc.so.6+0x45494)
+    #8 0x7fffdfc7d60f in exit (/lib/x86_64-linux-gnu/libc.so.6+0x4560f)
+    #9 0x55555582b542 in die_builtin /root/git-2.35.1/usage.c:74
+    #10 0x55555582b9dd in die /root/git-2.35.1/usage.c:181
+    #11 0x5555556207de in http_init /root/git-2.35.1/http.c:1036
+    #12 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #13 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #14 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #15 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #16 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x60300002aee0 is located 16 bytes to the right of 32-byte region [0x60300002aeb0,0x60300002aed0)
+freed by thread T0 here:
+    #0 0x7fffe03b4517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffdf602ecb in CRYPTO_free crypto/mem.c:312
+    #2 0x7fffdf6e098c in OPENSSL_sk_free crypto/stack/stack.c:377
+    #3 0x7fffdf6e0911 in OPENSSL_sk_pop_free crypto/stack/stack.c:369
+    #4 0x7fffdf9cdc2e in sk_SSL_COMP_pop_free include/openssl/ssl.h:959
+    #5 0x7fffdf9d4e4a in ssl_comp_free_compression_methods_int ssl/ssl_ciph.c:1958
+    #6 0x7fffdf9d9943 in ssl_library_stop ssl/ssl_init.c:157
+    #7 0x7fffdf5f59b1 in OPENSSL_cleanup crypto/init.c:519
+    #8 0x7fffdfc7d494  (/lib/x86_64-linux-gnu/libc.so.6+0x45494)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe03b4867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffdf602c6a in CRYPTO_malloc crypto/mem.c:222
+    #2 0x7fffdf602ca1 in CRYPTO_zalloc crypto/mem.c:230
+    #3 0x7fffdf6dfa0f in OPENSSL_sk_new_reserve crypto/stack/stack.c:209
+    #4 0x7fffdf6df599 in OPENSSL_sk_new crypto/stack/stack.c:123
+    #5 0x7fffdf9cdbe4 in sk_SSL_COMP_new include/openssl/ssl.h:959
+    #6 0x7fffdf9ce529 in do_load_builtin_compressions ssl/ssl_ciph.c:464
+    #7 0x7fffdf9ce4eb in do_load_builtin_compressions_ossl_ ssl/ssl_ciph.c:458
+    #8 0x7fffdfcd1f67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==9817==ABORTING

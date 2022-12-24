@@ -1,0 +1,38 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==20211==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffe138c97d bp 0x7ffffffebce0 sp 0x7ffffffeb478 T0)
+    #0 0x7fffe138c97d  (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d)
+    #1 0x7fffe28e1a1b in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:387
+    #2 0x7fffd568699e in GhostscriptDelegateMessage coders/ghostscript-private.h:37
+    #3 0x7fffd3cd538a in errwrite base/gslibctx.c:534
+    #4 0x7fffd3cd521d in outwrite base/gslibctx.c:494
+    #5 0x7fffd3ed9311 in s_stdout_write_process psi/ziodevsc.c:198
+    #6 0x7fffd34ab8b2 in swritebuf base/stream.c:929
+    #7 0x7fffd34ab2b2 in s_process_write_buf base/stream.c:780
+    #8 0x7fffd34aa369 in s_std_write_flush base/stream.c:276
+    #9 0x7fffd3ed1e31 in zflush psi/zfileio.c:488
+    #10 0x7fffd3ea8362 in run_string psi/imainarg.c:1170
+    #11 0x7fffd3ea81ce in runarg psi/imainarg.c:1125
+    #12 0x7fffd3ea7dc0 in argproc psi/imainarg.c:1047
+    #13 0x7fffd3ea6588 in swproc psi/imainarg.c:580
+    #14 0x7fffd3ea5348 in gs_main_init_with_args01 psi/imainarg.c:224
+    #15 0x7fffd3ea5669 in gs_main_init_with_args psi/imainarg.c:289
+    #16 0x7fffd3eaa910 in psapi_init_with_args psi/psapi.c:280
+    #17 0x7fffd3fe59cf in gsapi_init_with_args psi/iapi.c:239
+    #18 0x7fffd568748c in InvokeGhostscriptDelegate coders/ghostscript-private.h:163
+    #19 0x7fffd568c212 in ReadPSImage coders/ps.c:812
+    #20 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #21 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #22 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #23 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #24 0x555555556a32 in MagickMain utilities/magick.c:150
+    #25 0x555555556ce5 in main utilities/magick.c:182
+    #26 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #27 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #28 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d) 
+==20211==ABORTING

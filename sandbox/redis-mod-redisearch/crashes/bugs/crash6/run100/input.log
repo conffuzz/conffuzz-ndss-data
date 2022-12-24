@@ -1,0 +1,28 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> change ret {int} from 0 to 0xfffffffffffffcc9
+RSSearchCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f4c30 {RedisModuleString**} [size: 0x8], 0x6 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0xfe57000000000000 at shared buffer 0x00007fffffffe3a5
+~> write {RedisModuleCtx*} 0xc012 -> 0xfff6000000000000 at shared buffer 0x00007fffffffe380
+~> write {RedisModuleCtx*} 0 -> 0xa600000000000000 at shared buffer 0x00007fffffffe3cf
+RSSuggestAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f3900 {RedisModuleString**} [size: 0x8], 0x4 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0x13a
+RSSuggestGetCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482678 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0x13d
+DictAddCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0xaa
+SpellCheckCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb410 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> change ret {int} from 0 to 0x3b3
+RSAggregateCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9482528 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0x540000007fff -> 0xfffffffffd5f0000 at shared buffer 0x00007fffffffe38c
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9315c40 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0xd92f25800000 -> 0xfffffffff4480000 at shared buffer 0x00007fffffffe386
+~> change ret {int} from 0 to 0x254
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2ac0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd92f3960 -> 0xffffffffffffffff at shared buffer 0x00007fffd92f2ac0
+~> write {RedisModuleCtx*} 0 -> 0x9f at shared buffer 0x00007fffffffe3bd
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3b6
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3e3

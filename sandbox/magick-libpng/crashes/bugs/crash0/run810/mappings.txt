@@ -1,0 +1,517 @@
+7fff7000-8fff7000 rw-p 00000000 00:00 0 
+8fff7000-2008fff7000 ---p 00000000 00:00 0 
+2008fff7000-10007fff8000 rw-p 00000000 00:00 0 
+555555554000-555555556000 r--p 00000000 fe:01 3953133                    /usr/local/bin/magick
+555555556000-555555557000 r-xp 00002000 fe:01 3953133                    /usr/local/bin/magick
+555555557000-555555558000 r--p 00003000 fe:01 3953133                    /usr/local/bin/magick
+555555558000-555555559000 r--p 00003000 fe:01 3953133                    /usr/local/bin/magick
+555555559000-55555555a000 rw-p 00004000 fe:01 3953133                    /usr/local/bin/magick
+600000000000-602000000000 ---p 00000000 00:00 0 
+602000000000-602000010000 rw-p 00000000 00:00 0 
+602000010000-602e00000000 ---p 00000000 00:00 0 
+602e00000000-602e00010000 rw-p 00000000 00:00 0 
+602e00010000-603000000000 ---p 00000000 00:00 0 
+603000000000-603000010000 rw-p 00000000 00:00 0 
+603000010000-603e00000000 ---p 00000000 00:00 0 
+603e00000000-603e00010000 rw-p 00000000 00:00 0 
+603e00010000-604000000000 ---p 00000000 00:00 0 
+604000000000-604000010000 rw-p 00000000 00:00 0 
+604000010000-604e00000000 ---p 00000000 00:00 0 
+604e00000000-604e00010000 rw-p 00000000 00:00 0 
+604e00010000-606000000000 ---p 00000000 00:00 0 
+606000000000-606000010000 rw-p 00000000 00:00 0 
+606000010000-606e00000000 ---p 00000000 00:00 0 
+606e00000000-606e00010000 rw-p 00000000 00:00 0 
+606e00010000-607000000000 ---p 00000000 00:00 0 
+607000000000-607000010000 rw-p 00000000 00:00 0 
+607000010000-607e00000000 ---p 00000000 00:00 0 
+607e00000000-607e00010000 rw-p 00000000 00:00 0 
+607e00010000-608000000000 ---p 00000000 00:00 0 
+608000000000-608000010000 rw-p 00000000 00:00 0 
+608000010000-608e00000000 ---p 00000000 00:00 0 
+608e00000000-608e00010000 rw-p 00000000 00:00 0 
+608e00010000-60a000000000 ---p 00000000 00:00 0 
+60a000000000-60a000010000 rw-p 00000000 00:00 0 
+60a000010000-60ae00000000 ---p 00000000 00:00 0 
+60ae00000000-60ae00010000 rw-p 00000000 00:00 0 
+60ae00010000-60b000000000 ---p 00000000 00:00 0 
+60b000000000-60b000010000 rw-p 00000000 00:00 0 
+60b000010000-60be00000000 ---p 00000000 00:00 0 
+60be00000000-60be00010000 rw-p 00000000 00:00 0 
+60be00010000-60c000000000 ---p 00000000 00:00 0 
+60c000000000-60c000010000 rw-p 00000000 00:00 0 
+60c000010000-60ce00000000 ---p 00000000 00:00 0 
+60ce00000000-60ce00010000 rw-p 00000000 00:00 0 
+60ce00010000-60d000000000 ---p 00000000 00:00 0 
+60d000000000-60d000010000 rw-p 00000000 00:00 0 
+60d000010000-60de00000000 ---p 00000000 00:00 0 
+60de00000000-60de00010000 rw-p 00000000 00:00 0 
+60de00010000-60e000000000 ---p 00000000 00:00 0 
+60e000000000-60e000010000 rw-p 00000000 00:00 0 
+60e000010000-60ee00000000 ---p 00000000 00:00 0 
+60ee00000000-60ee00010000 rw-p 00000000 00:00 0 
+60ee00010000-60f000000000 ---p 00000000 00:00 0 
+60f000000000-60f000010000 rw-p 00000000 00:00 0 
+60f000010000-60fe00000000 ---p 00000000 00:00 0 
+60fe00000000-60fe00010000 rw-p 00000000 00:00 0 
+60fe00010000-610000000000 ---p 00000000 00:00 0 
+610000000000-610000010000 rw-p 00000000 00:00 0 
+610000010000-610e00000000 ---p 00000000 00:00 0 
+610e00000000-610e00010000 rw-p 00000000 00:00 0 
+610e00010000-611000000000 ---p 00000000 00:00 0 
+611000000000-611000050000 rw-p 00000000 00:00 0 
+611000050000-611e00000000 ---p 00000000 00:00 0 
+611e00000000-611e00010000 rw-p 00000000 00:00 0 
+611e00010000-612000000000 ---p 00000000 00:00 0 
+612000000000-612000010000 rw-p 00000000 00:00 0 
+612000010000-612e00000000 ---p 00000000 00:00 0 
+612e00000000-612e00010000 rw-p 00000000 00:00 0 
+612e00010000-613000000000 ---p 00000000 00:00 0 
+613000000000-613000010000 rw-p 00000000 00:00 0 
+613000010000-613e00000000 ---p 00000000 00:00 0 
+613e00000000-613e00010000 rw-p 00000000 00:00 0 
+613e00010000-614000000000 ---p 00000000 00:00 0 
+614000000000-614000010000 rw-p 00000000 00:00 0 
+614000010000-614e00000000 ---p 00000000 00:00 0 
+614e00000000-614e00010000 rw-p 00000000 00:00 0 
+614e00010000-615000000000 ---p 00000000 00:00 0 
+615000000000-615000020000 rw-p 00000000 00:00 0 
+615000020000-615e00000000 ---p 00000000 00:00 0 
+615e00000000-615e00010000 rw-p 00000000 00:00 0 
+615e00010000-616000000000 ---p 00000000 00:00 0 
+616000000000-616000010000 rw-p 00000000 00:00 0 
+616000010000-616e00000000 ---p 00000000 00:00 0 
+616e00000000-616e00010000 rw-p 00000000 00:00 0 
+616e00010000-617000000000 ---p 00000000 00:00 0 
+617000000000-617000010000 rw-p 00000000 00:00 0 
+617000010000-617e00000000 ---p 00000000 00:00 0 
+617e00000000-617e00010000 rw-p 00000000 00:00 0 
+617e00010000-619000000000 ---p 00000000 00:00 0 
+619000000000-619000010000 rw-p 00000000 00:00 0 
+619000010000-619e00000000 ---p 00000000 00:00 0 
+619e00000000-619e00010000 rw-p 00000000 00:00 0 
+619e00010000-61a000000000 ---p 00000000 00:00 0 
+61a000000000-61a000010000 rw-p 00000000 00:00 0 
+61a000010000-61ae00000000 ---p 00000000 00:00 0 
+61ae00000000-61ae00010000 rw-p 00000000 00:00 0 
+61ae00010000-61b000000000 ---p 00000000 00:00 0 
+61b000000000-61b000010000 rw-p 00000000 00:00 0 
+61b000010000-61be00000000 ---p 00000000 00:00 0 
+61be00000000-61be00010000 rw-p 00000000 00:00 0 
+61be00010000-61c000000000 ---p 00000000 00:00 0 
+61c000000000-61c000010000 rw-p 00000000 00:00 0 
+61c000010000-61ce00000000 ---p 00000000 00:00 0 
+61ce00000000-61ce00010000 rw-p 00000000 00:00 0 
+61ce00010000-61d000000000 ---p 00000000 00:00 0 
+61d000000000-61d000020000 rw-p 00000000 00:00 0 
+61d000020000-61de00000000 ---p 00000000 00:00 0 
+61de00000000-61de00010000 rw-p 00000000 00:00 0 
+61de00010000-61e000000000 ---p 00000000 00:00 0 
+61e000000000-61e000010000 rw-p 00000000 00:00 0 
+61e000010000-61ee00000000 ---p 00000000 00:00 0 
+61ee00000000-61ee00010000 rw-p 00000000 00:00 0 
+61ee00010000-620000000000 ---p 00000000 00:00 0 
+620000000000-620000010000 rw-p 00000000 00:00 0 
+620000010000-620e00000000 ---p 00000000 00:00 0 
+620e00000000-620e00010000 rw-p 00000000 00:00 0 
+620e00010000-621000000000 ---p 00000000 00:00 0 
+621000000000-6210000f0000 rw-p 00000000 00:00 0 
+6210000f0000-621e00000000 ---p 00000000 00:00 0 
+621e00000000-621e00010000 rw-p 00000000 00:00 0 
+621e00010000-622000000000 ---p 00000000 00:00 0 
+622000000000-622000010000 rw-p 00000000 00:00 0 
+622000010000-622e00000000 ---p 00000000 00:00 0 
+622e00000000-622e00010000 rw-p 00000000 00:00 0 
+622e00010000-624000000000 ---p 00000000 00:00 0 
+624000000000-624000150000 rw-p 00000000 00:00 0 
+624000150000-624e00000000 ---p 00000000 00:00 0 
+624e00000000-624e00010000 rw-p 00000000 00:00 0 
+624e00010000-625000000000 ---p 00000000 00:00 0 
+625000000000-625000160000 rw-p 00000000 00:00 0 
+625000160000-625e00000000 ---p 00000000 00:00 0 
+625e00000000-625e00010000 rw-p 00000000 00:00 0 
+625e00010000-626000000000 ---p 00000000 00:00 0 
+626000000000-626000010000 rw-p 00000000 00:00 0 
+626000010000-626e00000000 ---p 00000000 00:00 0 
+626e00000000-626e00010000 rw-p 00000000 00:00 0 
+626e00010000-627000000000 ---p 00000000 00:00 0 
+627000000000-627000100000 rw-p 00000000 00:00 0 
+627000100000-627e00000000 ---p 00000000 00:00 0 
+627e00000000-627e00010000 rw-p 00000000 00:00 0 
+627e00010000-629000000000 ---p 00000000 00:00 0 
+629000000000-6290000e0000 rw-p 00000000 00:00 0 
+6290000e0000-629e00000000 ---p 00000000 00:00 0 
+629e00000000-629e00010000 rw-p 00000000 00:00 0 
+629e00010000-62a000000000 ---p 00000000 00:00 0 
+62a000000000-62a0006d0000 rw-p 00000000 00:00 0 
+62a0006d0000-62ae00000000 ---p 00000000 00:00 0 
+62ae00000000-62ae00010000 rw-p 00000000 00:00 0 
+62ae00010000-62d000000000 ---p 00000000 00:00 0 
+62d000000000-62d000070000 rw-p 00000000 00:00 0 
+62d000070000-62de00000000 ---p 00000000 00:00 0 
+62de00000000-62de00010000 rw-p 00000000 00:00 0 
+62de00010000-62e000000000 ---p 00000000 00:00 0 
+62e000000000-62e000020000 rw-p 00000000 00:00 0 
+62e000020000-62ee00000000 ---p 00000000 00:00 0 
+62ee00000000-62ee00010000 rw-p 00000000 00:00 0 
+62ee00010000-62f000000000 ---p 00000000 00:00 0 
+62f000000000-62f000040000 rw-p 00000000 00:00 0 
+62f000040000-62fe00000000 ---p 00000000 00:00 0 
+62fe00000000-62fe00010000 rw-p 00000000 00:00 0 
+62fe00010000-630000000000 ---p 00000000 00:00 0 
+630000000000-630001900000 rw-p 00000000 00:00 0 
+630001900000-630e00000000 ---p 00000000 00:00 0 
+630e00000000-630e00010000 rw-p 00000000 00:00 0 
+630e00010000-631000000000 ---p 00000000 00:00 0 
+631000000000-631000130000 rw-p 00000000 00:00 0 
+631000130000-631e00000000 ---p 00000000 00:00 0 
+631e00000000-631e00010000 rw-p 00000000 00:00 0 
+631e00010000-632000000000 ---p 00000000 00:00 0 
+632000000000-632000030000 rw-p 00000000 00:00 0 
+632000030000-632e00000000 ---p 00000000 00:00 0 
+632e00000000-632e00010000 rw-p 00000000 00:00 0 
+632e00010000-640000000000 ---p 00000000 00:00 0 
+640000000000-640000003000 rw-p 00000000 00:00 0 
+7fffbfcaf000-7fffbfcb0000 rw-p 00000000 00:00 0 
+7fffbfcb3000-7fffbfcb4000 rw-p 00000000 00:00 0 
+7fffbfcb9000-7fffc474a000 rw-p 00000000 00:00 0 
+7fffc474a000-7fffcc8f4000 rw-p 00000000 00:00 0 
+7fffcc8f4000-7fffd2f01000 rw-p 00000000 00:00 0 
+7fffd2f01000-7fffd2f34000 rw-p 00000000 00:00 0 
+7fffd2f34000-7fffd3079000 rw-p 00000000 00:00 0 
+7fffd3079000-7fffd3087000 rw-p 00000000 00:00 0 
+7fffd3087000-7fffd3089000 rw-p 00000000 00:00 0 
+7fffd3089000-7fffd31b8000 r--p 00000000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd31b8000-7fffd3e95000 r-xp 0012f000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd3e95000-7fffd4a8c000 r--p 00e0c000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd4a8c000-7fffd4a8d000 ---p 01a03000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd4a8d000-7fffd50b9000 r--p 01a03000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd50b9000-7fffd53de000 rw-p 0202f000 fe:01 3936982                    /usr/local/lib/libgs.so.9.55
+7fffd53de000-7fffd553b000 rw-p 00000000 00:00 0 
+7fffd553b000-7fffd5540000 rw-p 00000000 00:00 0 
+7fffd5540000-7fffd5546000 r--p 00000000 fe:01 3953442                    /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/ps.so
+7fffd5546000-7fffd5556000 r-xp 00006000 fe:01 3953442                    /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/ps.so
+7fffd5556000-7fffd555c000 r--p 00016000 fe:01 3953442                    /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/ps.so
+7fffd555c000-7fffd555d000 r--p 0001b000 fe:01 3953442                    /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/ps.so
+7fffd555d000-7fffd5560000 rw-p 0001c000 fe:01 3953442                    /usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders/ps.so
+7fffd5560000-7fffda4a6000 rw-p 00000000 00:00 0 
+7fffda4a6000-7fffdac86000 ---p 00000000 00:00 0 
+7fffdac86000-7fffdcfd8000 rw-p 00000000 00:00 0 
+7fffdcfd8000-7fffdd4bb000 rw-p 00000000 00:00 0 
+7fffdd4bb000-7fffdd7bf000 rw-p 00000000 00:00 0 
+7fffdd7bf000-7fffdd86d000 rw-p 00000000 00:00 0 
+7fffdd86d000-7fffdd899000 rw-p 00000000 00:00 0 
+7fffdd899000-7fffdda8d000 rw-p 00000000 00:00 0 
+7fffdda8d000-7fffdda91000 rw-p 00000000 00:00 0 
+7fffdda91000-7fffdda94000 rw-p 00000000 00:00 0 
+7fffdda94000-7fffdda98000 rw-p 00000000 00:00 0 
+7fffdda98000-7fffde3be000 rw-p 00000000 00:00 0 
+7fffde3be000-7fffde3c2000 rw-p 00000000 00:00 0 
+7fffde3c2000-7fffde409000 rw-p 00000000 00:00 0 
+7fffde409000-7fffde40b000 rw-p 00000000 00:00 0 
+7fffde40b000-7fffde40f000 rw-p 00000000 00:00 0 
+7fffde40f000-7fffde415000 rw-p 00000000 00:00 0 
+7fffde415000-7fffde442000 rw-p 00000000 00:00 0 
+7fffde442000-7fffde446000 rw-p 00000000 00:00 0 
+7fffde446000-7fffde590000 rw-p 00000000 00:00 0 
+7fffde590000-7fffde594000 rw-p 00000000 00:00 0 
+7fffde594000-7fffde5ee000 rw-p 00000000 00:00 0 
+7fffde5ee000-7fffde614000 rw-p 00000000 00:00 0 
+7fffde614000-7fffde620000 rw-p 00000000 00:00 0 
+7fffde620000-7fffde686000 rw-p 00000000 00:00 0 
+7fffde686000-7fffde68e000 rw-p 00000000 00:00 0 
+7fffde68e000-7fffde69d000 rw-p 00000000 00:00 0 
+7fffde69d000-7fffde6e8000 rw-p 00000000 00:00 0 
+7fffde6e8000-7fffde7c8000 rw-p 00000000 00:00 0 
+7fffde7c8000-7fffde7e1000 rw-p 00000000 00:00 0 
+7fffde7e1000-7fffde80c000 rw-p 00000000 00:00 0 
+7fffde80c000-7fffde81d000 rw-p 00000000 00:00 0 
+7fffde81d000-7fffde825000 rw-p 00000000 00:00 0 
+7fffde825000-7fffde82d000 rw-p 00000000 00:00 0 
+7fffde82d000-7fffde84e000 rw-p 00000000 00:00 0 
+7fffde84e000-7fffde86b000 rw-p 00000000 00:00 0 
+7fffde86b000-7fffde875000 rw-p 00000000 00:00 0 
+7fffde875000-7fffde885000 rw-p 00000000 00:00 0 
+7fffde885000-7fffde895000 rw-p 00000000 00:00 0 
+7fffde895000-7fffde8a0000 rw-p 00000000 00:00 0 
+7fffde8a0000-7fffde90b000 rw-p 00000000 00:00 0 
+7fffde90b000-7fffde950000 rw-p 00000000 00:00 0 
+7fffde950000-7fffde95c000 rw-p 00000000 00:00 0 
+7fffde95c000-7fffde974000 rw-p 00000000 00:00 0 
+7fffde974000-7fffde9c2000 rw-p 00000000 00:00 0 
+7fffde9c2000-7fffdf033000 rw-p 00000000 00:00 0 
+7fffdf033000-7fffdf035000 rw-p 00000000 00:00 0 
+7fffdf035000-7fffdf037000 r--p 00000000 fe:01 3812784                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fffdf037000-7fffdf039000 r-xp 00002000 fe:01 3812784                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fffdf039000-7fffdf03b000 r--p 00004000 fe:01 3812784                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fffdf03b000-7fffdf03c000 r--p 00005000 fe:01 3812784                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fffdf03c000-7fffdf03d000 rw-p 00006000 fe:01 3812784                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fffdf03d000-7fffdf03f000 r--p 00000000 fe:01 3812915                    /usr/lib/x86_64-linux-gnu/libmd.so.0.0.5
+7fffdf03f000-7fffdf046000 r-xp 00002000 fe:01 3812915                    /usr/lib/x86_64-linux-gnu/libmd.so.0.0.5
+7fffdf046000-7fffdf048000 r--p 00009000 fe:01 3812915                    /usr/lib/x86_64-linux-gnu/libmd.so.0.0.5
+7fffdf048000-7fffdf049000 r--p 0000a000 fe:01 3812915                    /usr/lib/x86_64-linux-gnu/libmd.so.0.0.5
+7fffdf049000-7fffdf04a000 rw-p 0000b000 fe:01 3812915                    /usr/lib/x86_64-linux-gnu/libmd.so.0.0.5
+7fffdf04a000-7fffdf0e4000 r--p 00000000 fe:01 3029405                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7fffdf0e4000-7fffdf1f4000 r-xp 0009a000 fe:01 3029405                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7fffdf1f4000-7fffdf263000 r--p 001aa000 fe:01 3029405                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7fffdf263000-7fffdf26e000 r--p 00218000 fe:01 3029405                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7fffdf26e000-7fffdf271000 rw-p 00223000 fe:01 3029405                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+7fffdf271000-7fffdf274000 rw-p 00000000 00:00 0 
+7fffdf274000-7fffdf275000 r--p 00000000 fe:01 3812872                    /usr/lib/x86_64-linux-gnu/libicudata.so.70.1
+7fffdf275000-7fffdf276000 r-xp 00001000 fe:01 3812872                    /usr/lib/x86_64-linux-gnu/libicudata.so.70.1
+7fffdf276000-7fffe0e90000 r--p 00002000 fe:01 3812872                    /usr/lib/x86_64-linux-gnu/libicudata.so.70.1
+7fffe0e90000-7fffe0e91000 r--p 01c1b000 fe:01 3812872                    /usr/lib/x86_64-linux-gnu/libicudata.so.70.1
+7fffe0e91000-7fffe0e92000 rw-p 01c1c000 fe:01 3812872                    /usr/lib/x86_64-linux-gnu/libicudata.so.70.1
+7fffe0e92000-7fffe0e93000 r--p 00000000 fe:01 3812801                    /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+7fffe0e93000-7fffe0e94000 r-xp 00001000 fe:01 3812801                    /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+7fffe0e94000-7fffe0eb3000 r--p 00002000 fe:01 3812801                    /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+7fffe0eb3000-7fffe0eb4000 r--p 00020000 fe:01 3812801                    /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+7fffe0eb4000-7fffe0eb5000 rw-p 00021000 fe:01 3812801                    /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+7fffe0eb5000-7fffe0ec0000 r--p 00000000 fe:01 3813000                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fffe0ec0000-7fffe0ed4000 r-xp 0000b000 fe:01 3813000                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fffe0ed4000-7fffe0edd000 r--p 0001f000 fe:01 3813000                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fffe0edd000-7fffe0ede000 r--p 00027000 fe:01 3813000                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fffe0ede000-7fffe0edf000 rw-p 00028000 fe:01 3813000                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fffe0edf000-7fffe0ee3000 r--p 00000000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ee3000-7fffe0ef0000 r-xp 00004000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ef0000-7fffe0ef3000 r--p 00011000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ef3000-7fffe0ef4000 ---p 00014000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ef4000-7fffe0ef5000 r--p 00014000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ef5000-7fffe0ef6000 rw-p 00015000 fe:01 3812807                    /usr/lib/x86_64-linux-gnu/libbsd.so.0.11.5
+7fffe0ef6000-7fffe0ef7000 rw-p 00000000 00:00 0 
+7fffe0ef7000-7fffe0ef9000 r--p 00000000 fe:01 3029423                    /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fffe0ef9000-7fffe0efd000 r-xp 00002000 fe:01 3029423                    /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fffe0efd000-7fffe0efe000 r--p 00006000 fe:01 3029423                    /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fffe0efe000-7fffe0eff000 r--p 00006000 fe:01 3029423                    /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fffe0eff000-7fffe0f00000 rw-p 00007000 fe:01 3029423                    /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fffe0f00000-7fffe0f03000 r--p 00000000 fe:01 3029347                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7fffe0f03000-7fffe0f1e000 r-xp 00003000 fe:01 3029347                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7fffe0f1e000-7fffe0f29000 r--p 0001e000 fe:01 3029347                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7fffe0f29000-7fffe0f2a000 r--p 00028000 fe:01 3029347                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7fffe0f2a000-7fffe0f2b000 rw-p 00029000 fe:01 3029347                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+7fffe0f2b000-7fffe0f2c000 rw-p 00000000 00:00 0 
+7fffe0f2c000-7fffe0f2d000 r--p 00000000 fe:01 3812782                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fffe0f2d000-7fffe0f2f000 r-xp 00001000 fe:01 3812782                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fffe0f2f000-7fffe0f30000 r--p 00003000 fe:01 3812782                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fffe0f30000-7fffe0f31000 r--p 00003000 fe:01 3812782                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fffe0f31000-7fffe0f32000 rw-p 00004000 fe:01 3812782                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fffe0f32000-7fffe0f53000 rw-p 00000000 00:00 0 
+7fffe0f53000-7fffe0fb9000 r--p 00000000 fe:01 3812892                    /usr/lib/x86_64-linux-gnu/libicuuc.so.70.1
+7fffe0fb9000-7fffe10ac000 r-xp 00066000 fe:01 3812892                    /usr/lib/x86_64-linux-gnu/libicuuc.so.70.1
+7fffe10ac000-7fffe1138000 r--p 00159000 fe:01 3812892                    /usr/lib/x86_64-linux-gnu/libicuuc.so.70.1
+7fffe1138000-7fffe114b000 r--p 001e4000 fe:01 3812892                    /usr/lib/x86_64-linux-gnu/libicuuc.so.70.1
+7fffe114b000-7fffe114c000 rw-p 001f7000 fe:01 3812892                    /usr/lib/x86_64-linux-gnu/libicuuc.so.70.1
+7fffe114c000-7fffe114e000 rw-p 00000000 00:00 0 
+7fffe114e000-7fffe114f000 r--p 00000000 fe:01 3812803                    /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9
+7fffe114f000-7fffe1157000 r-xp 00001000 fe:01 3812803                    /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9
+7fffe1157000-7fffe115a000 r--p 00009000 fe:01 3812803                    /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9
+7fffe115a000-7fffe115b000 r--p 0000b000 fe:01 3812803                    /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9
+7fffe115b000-7fffe115c000 rw-p 0000c000 fe:01 3812803                    /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9
+7fffe115c000-7fffe1161000 r--p 00000000 fe:01 3937463                    /usr/local/lib/libpng16.so.16.37.0
+7fffe1161000-7fffe1197000 r-xp 00005000 fe:01 3937463                    /usr/local/lib/libpng16.so.16.37.0
+7fffe1197000-7fffe11a1000 r--p 0003b000 fe:01 3937463                    /usr/local/lib/libpng16.so.16.37.0
+7fffe11a1000-7fffe11a2000 r--p 00044000 fe:01 3937463                    /usr/local/lib/libpng16.so.16.37.0
+7fffe11a2000-7fffe11a3000 rw-p 00045000 fe:01 3937463                    /usr/local/lib/libpng16.so.16.37.0
+7fffe11a3000-7fffe11d4000 rw-p 00000000 00:00 0 
+7fffe11d4000-7fffe11d6000 rw-p 00000000 00:00 0 
+7fffe11d6000-7fffe11fe000 r--p 00000000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fffe11fe000-7fffe1393000 r-xp 00028000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fffe1393000-7fffe13eb000 r--p 001bd000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fffe13eb000-7fffe13ef000 r--p 00214000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fffe13ef000-7fffe13f1000 rw-p 00218000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fffe13f1000-7fffe1435000 rw-p 00000000 00:00 0 
+7fffe1435000-7fffe1437000 rw-p 00000000 00:00 0 
+7fffe1437000-7fffe143a000 r--p 00000000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe143a000-7fffe1451000 r-xp 00003000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe1451000-7fffe1455000 r--p 0001a000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe1455000-7fffe1456000 r--p 0001d000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe1456000-7fffe1457000 rw-p 0001e000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe1457000-7fffe1465000 r--p 00000000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fffe1465000-7fffe14e1000 r-xp 0000e000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fffe14e1000-7fffe153c000 r--p 0008a000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fffe153c000-7fffe153d000 r--p 000e4000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fffe153d000-7fffe153e000 rw-p 000e5000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fffe153e000-7fffe1548000 r--p 00000000 fe:01 3812865                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fffe1548000-7fffe1579000 r-xp 0000a000 fe:01 3812865                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fffe1579000-7fffe1586000 r--p 0003b000 fe:01 3812865                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fffe1586000-7fffe1587000 r--p 00047000 fe:01 3812865                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fffe1587000-7fffe1588000 rw-p 00048000 fe:01 3812865                    /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+7fffe1588000-7fffe15a1000 r--p 00000000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe15a1000-7fffe162d000 r-xp 00019000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe162d000-7fffe16c2000 r--p 000a5000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe16c2000-7fffe16c3000 ---p 0013a000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe16c3000-7fffe16c4000 r--p 0013a000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe16c4000-7fffe16c8000 rw-p 0013b000 fe:01 3812780                    /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+7fffe16c8000-7fffe16cc000 r--p 00000000 fe:01 3704545                    /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+7fffe16cc000-7fffe16db000 r-xp 00004000 fe:01 3704545                    /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+7fffe16db000-7fffe16e0000 r--p 00013000 fe:01 3704545                    /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+7fffe16e0000-7fffe16e1000 r--p 00017000 fe:01 3704545                    /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+7fffe16e1000-7fffe16e2000 rw-p 00018000 fe:01 3704545                    /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+7fffe16e2000-7fffe16e5000 rw-p 00000000 00:00 0 
+7fffe16e5000-7fffe16e7000 r--p 00000000 fe:01 3704549                    /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+7fffe16e7000-7fffe16ec000 r-xp 00002000 fe:01 3704549                    /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+7fffe16ec000-7fffe16ee000 r--p 00007000 fe:01 3704549                    /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+7fffe16ee000-7fffe16ef000 r--p 00008000 fe:01 3704549                    /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+7fffe16ef000-7fffe16f0000 rw-p 00009000 fe:01 3704549                    /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+7fffe16f0000-7fffe16f2000 r--p 00000000 fe:01 3704623                    /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.1
+7fffe16f2000-7fffe16f7000 r-xp 00002000 fe:01 3704623                    /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.1
+7fffe16f7000-7fffe16f9000 r--p 00007000 fe:01 3704623                    /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.1
+7fffe16f9000-7fffe16fa000 r--p 00008000 fe:01 3704623                    /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.1
+7fffe16fa000-7fffe16fb000 rw-p 00009000 fe:01 3704623                    /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.1
+7fffe16fb000-7fffe16fd000 r--p 00000000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe16fd000-7fffe170e000 r-xp 00002000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe170e000-7fffe1714000 r--p 00013000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe1714000-7fffe1715000 ---p 00019000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe1715000-7fffe1716000 r--p 00019000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe1716000-7fffe1717000 rw-p 0001a000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fffe1717000-7fffe1719000 r--p 00000000 fe:01 3029295                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fffe1719000-7fffe1726000 r-xp 00002000 fe:01 3029295                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fffe1726000-7fffe1728000 r--p 0000f000 fe:01 3029295                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fffe1728000-7fffe1729000 r--p 00010000 fe:01 3029295                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fffe1729000-7fffe172a000 rw-p 00011000 fe:01 3029295                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7fffe172a000-7fffe172e000 r--p 00000000 fe:01 3812786                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fffe172e000-7fffe1739000 r-xp 00004000 fe:01 3812786                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fffe1739000-7fffe173d000 r--p 0000f000 fe:01 3812786                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fffe173d000-7fffe173e000 r--p 00012000 fe:01 3812786                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fffe173e000-7fffe173f000 rw-p 00013000 fe:01 3812786                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fffe173f000-7fffe176e000 r--p 00000000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe176e000-7fffe18c1000 r-xp 0002f000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe18c1000-7fffe1915000 r--p 00182000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe1915000-7fffe1916000 ---p 001d6000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe1916000-7fffe191f000 r--p 001d6000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe191f000-7fffe1920000 rw-p 001df000 fe:01 3813004                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.13
+7fffe1920000-7fffe1921000 rw-p 00000000 00:00 0 
+7fffe1921000-7fffe192e000 r--p 00000000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe192e000-7fffe19b7000 r-xp 0000d000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe19b7000-7fffe19e0000 r--p 00096000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe19e0000-7fffe19e1000 ---p 000bf000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe19e1000-7fffe19e8000 r--p 000bf000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe19e8000-7fffe19e9000 rw-p 000c6000 fe:01 3812856                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+7fffe19e9000-7fffe19f3000 r--p 00000000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe19f3000-7fffe1a2f000 r-xp 0000a000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe1a2f000-7fffe1a43000 r--p 00046000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe1a43000-7fffe1a44000 ---p 0005a000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe1a44000-7fffe1a46000 r--p 0005a000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe1a46000-7fffe1a49000 rw-p 0005c000 fe:01 3704619                    /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.12
+7fffe1a49000-7fffe1a4b000 rw-p 00000000 00:00 0 
+7fffe1a4b000-7fffe1ab5000 r--p 00000000 fe:01 3953553                    /usr/local/lib/libMagickWand-7.Q16HDRI.so.10.0.0
+7fffe1ab5000-7fffe1e95000 r-xp 0006a000 fe:01 3953553                    /usr/local/lib/libMagickWand-7.Q16HDRI.so.10.0.0
+7fffe1e95000-7fffe1f09000 r--p 0044a000 fe:01 3953553                    /usr/local/lib/libMagickWand-7.Q16HDRI.so.10.0.0
+7fffe1f09000-7fffe1f0a000 r--p 004bd000 fe:01 3953553                    /usr/local/lib/libMagickWand-7.Q16HDRI.so.10.0.0
+7fffe1f0a000-7fffe1f51000 rw-p 004be000 fe:01 3953553                    /usr/local/lib/libMagickWand-7.Q16HDRI.so.10.0.0
+7fffe1f51000-7fffe1f54000 rw-p 00000000 00:00 0 
+7fffe1f54000-7fffe1f62000 rw-p 00000000 00:00 0 
+7fffe1f62000-7fffe1f67000 rw-p 00000000 00:00 0 
+7fffe1f67000-7fffe2047000 r--p 00000000 fe:01 3953548                    /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+7fffe2047000-7fffe2588000 r-xp 000e0000 fe:01 3953548                    /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+7fffe2588000-7fffe2683000 r--p 00621000 fe:01 3953548                    /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+7fffe2683000-7fffe2697000 r--p 0071b000 fe:01 3953548                    /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+7fffe2697000-7fffe276a000 rw-p 0072f000 fe:01 3953548                    /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+7fffe276a000-7fffe288b000 rw-p 00000000 00:00 0 
+7fffe288b000-7fffe28af000 r--p 00000000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe28af000-7fffe2986000 r-xp 00024000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe2986000-7fffe29b8000 r--p 000fb000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe29b8000-7fffe29b9000 ---p 0012d000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe29b9000-7fffe29bd000 r--p 0012d000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe29bd000-7fffe29c0000 rw-p 00131000 fe:01 3812794                    /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe29c0000-7fffe33b7000 rw-p 00000000 00:00 0 
+7fffe33b7000-7fffe38e8000 rw-p 00000000 00:00 0 
+7fffe38e8000-7fffe392a000 rw-p 00000000 00:00 0 
+7fffe392a000-7fffe395b000 rw-p 00000000 00:00 0 
+7fffe395b000-7fffe3963000 rw-p 00000000 00:00 0 
+7fffe3963000-7fffe396f000 r--p 00000000 fe:01 3953133                    /usr/local/bin/magick
+7fffe396f000-7fffe3979000 rw-p 00000000 00:00 0 
+7fffe3979000-7fffe399e000 rw-p 00000000 00:00 0 
+7fffe399e000-7fffe39aa000 r--p 00000000 fe:01 3953133                    /usr/local/bin/magick
+7fffe39aa000-7fffe3abd000 rw-p 00000000 00:00 0 
+7fffe3abd000-7fffe3bbd000 ---p 00000000 00:00 0 
+7fffe3bbd000-7fffe427d000 rwxp 00000000 00:00 0 
+7fffe427d000-7ffff3abd000 ---p 00000000 00:00 0 
+7ffff3abd000-7ffff4acf000 rw-p 00000000 00:00 0 
+7ffff4acf000-7ffff4ad1000 rwxp 00000000 00:00 0 
+7ffff4ad1000-7ffff53a9000 rw-p 00000000 00:00 0 
+7ffff53a9000-7ffff552b000 rw-p 00000000 00:00 0 
+7ffff552b000-7ffff554b000 rw-p 00000000 00:00 0 
+7ffff554b000-7ffff5809000 rw-p 00000000 00:00 0 
+7ffff5809000-7ffff5813000 rw-p 00000000 00:00 0 
+7ffff5813000-7ffff5816000 rw-p 00000000 00:00 0 
+7ffff5816000-7ffff581e000 rw-p 00000000 00:00 0 
+7ffff581e000-7ffff5835000 rw-p 00000000 00:00 0 
+7ffff5835000-7ffff5865000 rw-p 00000000 00:00 0 
+7ffff5865000-7ffff586a000 rw-p 00000000 00:00 0 
+7ffff586a000-7ffff5877000 rw-p 00000000 00:00 0 
+7ffff5877000-7ffff5896000 rw-p 00000000 00:00 0 
+7ffff5896000-7ffff5968000 rw-p 00000000 00:00 0 
+7ffff5968000-7ffff596a000 r--p 00000000 00:00 0 
+7ffff596a000-7ffff59a0000 r--p 00000000 fe:01 2772171                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff59a0000-7ffff5bb9000 r-xp 00036000 fe:01 2772171                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5bb9000-7ffff5c37000 r--p 0024f000 fe:01 2772171                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c37000-7ffff5c4b000 r--p 002cc000 fe:01 2772171                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c4b000-7ffff5c4c000 rw-p 002e0000 fe:01 2772171                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c4c000-7ffff5c4f000 rw-p 00000000 00:00 0 
+7ffff5c4f000-7ffff5c58000 r--p 00000000 fe:01 2776966                    /root/conffuzz/instrumentation.so
+7ffff5c58000-7ffff5e22000 r-xp 00009000 fe:01 2776966                    /root/conffuzz/instrumentation.so
+7ffff5e22000-7ffff5e76000 r--p 001d3000 fe:01 2776966                    /root/conffuzz/instrumentation.so
+7ffff5e76000-7ffff5e78000 r--p 00226000 fe:01 2776966                    /root/conffuzz/instrumentation.so
+7ffff5e78000-7ffff5e7a000 rw-p 00228000 fe:01 2776966                    /root/conffuzz/instrumentation.so
+7ffff5e7a000-7ffff5ea0000 rw-p 00000000 00:00 0 
+7ffff5ea0000-7ffff5ea1000 r--p 00000000 00:00 0 
+7ffff5ea1000-7ffff5eb9000 rw-p 00000000 00:00 0 
+7ffff5eb9000-7ffff5ebe000 r--p 00000000 00:00 0 
+7ffff5ebe000-7ffff5f51000 r-xp 00000000 fe:01 2772187                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff5f51000-7ffff6151000 ---p 00000000 00:00 0 
+7ffff6151000-7ffff6154000 r--p 00093000 fe:01 2772187                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff6154000-7ffff6155000 rw-p 00096000 fe:01 2772187                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff6155000-7ffff617e000 rw-p 00000000 00:00 0 
+7ffff617e000-7ffff617f000 r--p 00000000 00:00 0 
+7ffff617f000-7ffff61ae000 r-xp 00000000 fe:01 2772186                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff61ae000-7ffff63ad000 ---p 00000000 00:00 0 
+7ffff63ad000-7ffff63ae000 r--p 0002e000 fe:01 2772186                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff63ae000-7ffff63af000 rw-p 0002f000 fe:01 2772186                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff63af000-7ffff6455000 r-xp 00000000 fe:01 2772189                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff6455000-7ffff6654000 ---p 00000000 00:00 0 
+7ffff6654000-7ffff6658000 r--p 000a5000 fe:01 2772189                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff6658000-7ffff6659000 rw-p 000a9000 fe:01 2772189                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff6659000-7ffff665a000 rw-p 00000000 00:00 0 
+7ffff665a000-7ffff6669000 r-xp 00000000 fe:01 2772192                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff6669000-7ffff6868000 ---p 00000000 00:00 0 
+7ffff6868000-7ffff6869000 r--p 0000e000 fe:01 2772192                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff6869000-7ffff686a000 rw-p 0000f000 fe:01 2772192                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff686a000-7ffff6d2c000 r-xp 00000000 fe:01 2775144                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6d2c000-7ffff6f2b000 ---p 00000000 00:00 0 
+7ffff6f2b000-7ffff6fe4000 r--p 004c1000 fe:01 2775144                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6fe4000-7ffff6fe5000 rw-p 0057a000 fe:01 2775144                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6fe5000-7ffff6fea000 rw-p 00000000 00:00 0 
+7ffff6fea000-7ffff6feb000 r--p 00000000 00:00 0 
+7ffff6feb000-7ffff7004000 rw-p 00000000 00:00 0 
+7ffff7004000-7ffff7005000 r--p 00000000 00:00 0 
+7ffff7005000-7ffff701d000 rw-p 00000000 00:00 0 
+7ffff701d000-7ffff701e000 r--p 00000000 00:00 0 
+7ffff701e000-7ffff705d000 rw-p 00000000 00:00 0 
+7ffff705d000-7ffff7095000 r-xp 00000000 fe:01 2772180                    /root/pintools/intel64/runtime/pincrt/linker
+7ffff7095000-7ffff7295000 ---p 00000000 00:00 0 
+7ffff7295000-7ffff7296000 r--p 00038000 fe:01 2772180                    /root/pintools/intel64/runtime/pincrt/linker
+7ffff7296000-7ffff7297000 rw-p 00039000 fe:01 2772180                    /root/pintools/intel64/runtime/pincrt/linker
+7ffff7297000-7ffff729b000 rw-p 00000000 00:00 0 
+7ffff729b000-7ffff786d000 r-xp 00000000 fe:01 2772174                    /root/pintools/intel64/bin/pinbin
+7ffff786d000-7ffff7a6d000 ---p 00000000 00:00 0 
+7ffff7a6d000-7ffff7a72000 r--p 005d2000 fe:01 2772174                    /root/pintools/intel64/bin/pinbin
+7ffff7a72000-7ffff7a7f000 rw-p 005d7000 fe:01 2772174                    /root/pintools/intel64/bin/pinbin
+7ffff7a7f000-7ffff7b4d000 rw-p 00000000 00:00 0 
+7ffff7b4d000-7ffff7b4e000 ---p 00000000 00:00 0 
+7ffff7b4e000-7ffff7b50000 rw-p 00000000 00:00 0 
+7ffff7b50000-7ffff7b52000 ---p 00000000 00:00 0 
+7ffff7b52000-7ffff7b55000 rw-p 00000000 00:00 0 
+7ffff7b55000-7ffff7b59000 ---p 00000000 00:00 0 
+7ffff7b59000-7ffff7b80000 rw-p 00000000 00:00 0 
+7ffff7b80000-7ffff7b81000 ---p 00000000 00:00 0 
+7ffff7b81000-7ffff7fbd000 rw-p 00000000 00:00 0 
+7ffff7fbd000-7ffff7fc1000 r--p 00000000 00:00 0                          [vvar]
+7ffff7fc1000-7ffff7fc3000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7fc3000-7ffff7fc5000 r--p 00000000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffff7fc5000-7ffff7fef000 r-xp 00002000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffff7fef000-7ffff7ffa000 r--p 0002c000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffff7ffa000-7ffff7ffb000 rwxp 00000000 00:00 0 
+7ffff7ffb000-7ffff7ffd000 r--p 00037000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffff7ffd000-7ffff7fff000 rw-p 00039000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]

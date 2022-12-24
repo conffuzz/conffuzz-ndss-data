@@ -1,0 +1,15 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in apr_pstrcat (/usr/lib/x86_64-linux-gnu/libapr-1.so.0+0xaddr)
+    #3 0xaddr in apr_uri_unparse (/usr/lib/x86_64-linux-gnu/libaprutil-1.so.0+0xaddr)
+    #4 0xaddr in copy_request /root/httpd-2.4.52/server/scoreboard.c:453
+    #5 0xaddr in update_child_status_internal /root/httpd-2.4.52/server/scoreboard.c:525
+    #6 0xaddr in ap_update_child_status /root/httpd-2.4.52/server/scoreboard.c:596
+    #7 0xaddr in eor_bucket_cleanup /root/httpd-2.4.52/server/eor_bucket.c:39
+    #8 0xaddr in apr_pool_destroy (/usr/lib/x86_64-linux-gnu/libapr-1.so.0+0xaddr)
+    #9 0xaddr in eor_bucket_destroy /root/httpd-2.4.52/server/eor_bucket.c:101
+    #10 0xaddr in send_brigade_nonblocking /root/httpd-2.4.52/server/core_filters.c:702
+    #11 0xaddr in ap_core_output_filter /root/httpd-2.4.52/server/core_filters.c:505
+    #12 0xaddr in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1113
+    #13 0xaddr in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #14 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #15 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

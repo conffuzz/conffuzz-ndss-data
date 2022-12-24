@@ -1,0 +1,16 @@
+    #0 0xaddr in QString::size() const /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:277
+    #1 0xaddr in QString::toLocal8Bit() const & /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:688
+    #2 0xaddr in QFile::encodeName(QString const&) (/usr/lib/x86_64-linux-gnu/libOkular5Core.so.9+0xaddr)
+    #3 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2377
+    #4 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #5 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #6 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #7 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #8 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #9 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #10 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #11 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #12 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #13 0xaddr in main /root/okular/shell/main.cpp:91
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

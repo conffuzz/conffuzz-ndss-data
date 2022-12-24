@@ -1,0 +1,67 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+=================================================================
+==62745==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fffffffd208 at pc 0x7fffe2946026 bp 0x7fffffffbdb0 sp 0x7fffffffb560
+READ of size 10000 at 0x7fffffffd208 thread T0
+    #0 0x7fffe2946025 in __interceptor_fwrite ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1160
+    #1 0x55555555aa75 in uncompressStream /root/bzip2-1.0.8/bzip2.c:465
+    #2 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #3 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #4 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+Address 0x7fffffffd208 is located in stack of thread T0 at offset 5128 in frame
+    #0 0x55555555a6d7 in uncompressStream /root/bzip2-1.0.8/bzip2.c:434
+
+  This frame has 6 object(s):
+    [48, 52) 'bzerr' (line 436)
+    [64, 68) 'bzerr_dummy' (line 436)
+    [80, 84) 'nUnused' (line 439)
+    [96, 104) 'unusedTmpV' (line 440)
+    [128, 5128) 'obuf' (line 437)
+    [5392, 10392) 'unused' (line 438) <== Memory access at offset 5128 partially underflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1160 in __interceptor_fwrite
+Shadow bytes around the buggy address:
+  0x10007fff79f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10007fff7a40: 00[f2]f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2
+  0x10007fff7a50: f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2
+  0x10007fff7a60: f2 f2 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7a90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==62745==ABORTING

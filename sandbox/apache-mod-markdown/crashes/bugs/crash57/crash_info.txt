@@ -1,0 +1,3 @@
+fault_location /usr/local/apache2/modules/mod_log_config.so
+cap_write
+non_reproducible

@@ -1,0 +1,15 @@
+    #1 0xaddr in _gcry_private_realloc /root/libgcrypt-1.9.2/src/stdmem.c:193
+    #2 0xaddr in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1029
+    #3 0xaddr in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #4 0xaddr in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #5 0xaddr in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #6 0xaddr in _gpgrt_malloc /root/libgpg-error-1.41/src/init.c:317
+    #7 0xaddr in mem_alloc /root/libgpg-error-1.41/src/estream.c:222
+    #8 0xaddr in create_stream /root/libgpg-error-1.41/src/estream.c:2222
+    #9 0xaddr in do_fpopen /root/libgpg-error-1.41/src/estream.c:3489
+    #10 0xaddr in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3665
+    #11 0xaddr in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #12 0xaddr in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #13 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

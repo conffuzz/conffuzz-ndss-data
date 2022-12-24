@@ -1,0 +1,15 @@
+Fuzzing seed: 1651199329
+Starting time: 2022-04-29 02:28:49
+Total instrumented API size: 467
+Statically detected call sites: 0
+Statically detected called API endpoints: 9
+Statically detected caller components: 0
+Max number of call sites reached in a run: 7
+Number of API endpoints reached: 9
+Number of API endpoints that are vulnerability vectors: 4
+List of these endpoints:
+  [api] poppler_document_get_n_pages
+  [api] poppler_document_new_from_file
+  [api] poppler_page_get_size
+  [api] poppler_page_render_for_printing
+Ending time: 2022-04-29 07:32:21

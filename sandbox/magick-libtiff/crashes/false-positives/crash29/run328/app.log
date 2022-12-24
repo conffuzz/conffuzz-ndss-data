@@ -1,0 +1,63 @@
+[I] Recursing from tifffield into _TIFFField
+[I] Recursing from tiffcodec into structure 
+[E] Not able to find type information for tiffcodec in DWARF
+[I] Recursing from tiffrgbaimage into _TIFFRGBAImage
+[I] Recursing from tiffcielabtorgb into structure 
+[E] Not able to find type information for tiffcielabtorgb in DWARF
+[I] Recursing from tiffycbcrtorgb into structure 
+[E] Not able to find type information for tiffycbcrtorgb in DWARF
+[I] Recursing from tifffieldarray into _TIFFFieldArray
+[I] Recursing from uint16_t into __uint16_t
+[I] Recursing from __uint16_t into short unsigned int
+[E] Not able to find type information for uint16_t in DWARF
+[I] Recursing from tifffieldinfo into structure 
+[E] Not able to find type information for tifffieldinfo in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from tiffdisplay into structure 
+[E] Not able to find type information for tiffdisplay in DWARF
+[I] Attempting to instrument callback TIFFErrors
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFWarnings
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFTagExtender
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFReadBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFWriteBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFSeekBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFCloseBlob
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFGetBlobSize
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFMapBlob
+[E] Not able to find type information for tdata_t in DWARF
+[I] Recursing from toff_t into uint64_t
+[I] Recursing from uint64_t into __uint64_t
+[I] Recursing from __uint64_t into long unsigned int
+[E] Not able to find type information for toff_t in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFUnmapBlob
+Got function argument numbers (3) from cache!
+=================================================================
+==180162==ERROR: AddressSanitizer: requested allocation size 0x1b000003d50 (0x1b000004d50 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffe28f7b48 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffb9b04edb in _TIFFrealloc /root/tiff-4.3.0/libtiff/tif_unix.c:334
+    #2 0x7fffb9a9e3a5 in _TIFFCheckRealloc /root/tiff-4.3.0/libtiff/tif_aux.c:106
+    #3 0x7fffb9aa9803 in TIFFMergeFieldInfo /root/tiff-4.3.0/libtiff/tif_dirinfo.c:1072
+    #4 0x7fffb9b56ebf in TIFFTagExtender coders/tiff.c:2314
+    #5 0x7fffb9aa78bd in TIFFDefaultDirectory /root/tiff-4.3.0/libtiff/tif_dir.c:1470
+    #6 0x7fffb9aedcfb in TIFFClientOpen /root/tiff-4.3.0/libtiff/tif_open.c:354
+    #7 0x7fffb9b5bfc9 in WriteTIFFImage coders/tiff.c:3376
+    #8 0x7fffe212566f in WriteImage MagickCore/constitute.c:1337
+    #9 0x7fffe2126745 in WriteImages MagickCore/constitute.c:1558
+    #10 0x7fffe1be9121 in ConvertImageCommand MagickWand/convert.c:3330
+    #11 0x7fffe1d0a1f6 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #12 0x555555556823 in MagickMain utilities/magick.c:150
+    #13 0x555555556aba in main utilities/magick.c:182
+    #14 0x7fffe11dd7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+==180162==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164 in __interceptor_realloc
+==180162==ABORTING

@@ -1,0 +1,7 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1965==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xf6ffdbf66465 bp 0x7fffffffe8e0 sp 0x7fffffffe8a8 T0)
+==1965==The signal is caused by a READ memory access.
+==1965==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

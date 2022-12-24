@@ -1,0 +1,14 @@
+ngx_http_geoip2_log_handler ngx_http_geoip2_log_handler 1 ngx_int_t ngx_http_request_t*
+ngx_http_geoip2_cidr_value ngx_http_geoip2_cidr_value 3 ngx_int_t ngx_conf_t* ngx_str_t* ngx_cidr_t*
+ngx_http_geoip2_init_conf ngx_http_geoip2_init_conf 2 char* ngx_conf_t* *
+ngx_http_geoip2_metadata ngx_http_geoip2_metadata 3 ngx_int_t ngx_http_request_t* ngx_http_variable_value_t* uintptr_t
+ngx_http_geoip2 ngx_http_geoip2 3 char* ngx_conf_t* ngx_command_t* *
+ngx_http_geoip2_create_conf ngx_http_geoip2_create_conf 1 * ngx_conf_t*
+ngx_http_geoip2_cleanup ngx_http_geoip2_cleanup 1 unknown_or_void *
+ngx_http_geoip2_proxy ngx_http_geoip2_proxy 3 char* ngx_conf_t* ngx_command_t* *
+ngx_http_geoip2_add_variable ngx_http_geoip2_add_variable 3 char* ngx_conf_t* ngx_command_t* *
+ngx_http_geoip2_add_variable_geodata ngx_http_geoip2_add_variable_geodata 2 char* ngx_conf_t* ngx_http_geoip2_db_t*
+ngx_http_geoip2_init ngx_http_geoip2_init 1 ngx_int_t ngx_conf_t*
+ngx_http_geoip2_add_variable_metadata ngx_http_geoip2_add_variable_metadata 2 char* ngx_conf_t* ngx_http_geoip2_db_t*
+ngx_http_geoip2_parse_config ngx_http_geoip2_parse_config 3 char* ngx_conf_t* ngx_command_t* *
+ngx_http_geoip2_variable ngx_http_geoip2_variable 3 ngx_int_t ngx_http_request_t* ngx_http_variable_value_t* uintptr_t

@@ -1,0 +1,34 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+BZ2_bzReadOpen(0x7fffffffbe30 [size: 0x4], 0x615000000580 [size: 0xd8], 0 [size: 0], 0 [size: 0], 0x7fffffffd310 [size: 0x1], 0 [size: 0]) @ 0x000055555555a938
+~> write 0 -> 0xffffffff at shared buffer 0x00006150000005bb
+~> write 0x800 -> 0xfffffffe at shared buffer 0x00006150000005ef
+~> write 0xffff000000 -> 0xffffffff80 at shared buffer 0x00006150000005b8
+~> write 0xffff000000 -> 0xffffffff00 at shared buffer 0x00007fffffffd310
+~> write 0xffff000000 -> 0xffffffff18 at shared buffer 0x00007fffffffd310
+BZ2_bzRead(0x7fffffffbe30 [size: 0x4], 0x622000000100 [size: 0x1], 0x7fffffffbe80 [size: 0x1], 0x1388 [size: 0]) @ 0x000055555555a9bb
+~> write 0xfffffffff9 -> 0xfb0000ff at shared buffer 0x00007fffffffbe30
+~> write 0xffff0000ff -> 0 at shared buffer 0x00007fffffffbe30
+~> write 0xff00000000 -> 0 at shared buffer 0x00007fffffffbe30
+~> write 0xff00000000 -> 0x10 at shared buffer 0x00007fffffffbe80
+BZ2_bzRead(0x7fffffffbe30 [size: 0x4], 0x622000000100 [size: 0x1], 0x7fffffffbe80 [size: 0x1], 0x1388 [size: 0]) @ 0x000055555555a9bb
+~> write 0xff00000080 -> 0x1303 at shared buffer 0x0000622000000100
+~> write 0xff00000003 -> 0x1310 at shared buffer 0x0000622000000100
+~> write 0xff00000010 -> 0x136e at shared buffer 0x0000622000000100
+~> write 0xff0000006e -> 0x1300 at shared buffer 0x0000622000000100
+~> write 0xfffffffffa -> 0xfffffff8 at shared buffer 0x00007fffffffbe30
+~> write 0xfffffffff8 -> 0xff000010 at shared buffer 0x00007fffffffbe30
+~> write 0xffffffff10 -> 0xff000037 at shared buffer 0x00007fffffffbe30
+~> write 0xffffffff10 -> 0xff0000d9 at shared buffer 0x00007fffffffbe80
+~> write 0xffffffffd9 -> 0xff000000 at shared buffer 0x00007fffffffbe80
+~> write 0xffffffff00 -> 0xff0000f7 at shared buffer 0x00007fffffffbe80
+~> write 0xfffffffff7 -> 0xff000000 at shared buffer 0x00007fffffffbe80
+BZ2_bzReadClose(0x7fffffffbe40 [size: 0x4], 0x622000000100 [size: 0x1]) @ 0x000055555555afd2
+~> write 0xffffffff01 -> 0x13f6 at shared buffer 0x0000622000000100
+~> write 0xfffffffff6 -> 0x133b at shared buffer 0x0000622000000100
+~> write 0xffffffff3b -> 0x1300 at shared buffer 0x0000622000000100
+~> write 0xffffffff00 -> 0x1303 at shared buffer 0x0000622000000100
+~> write 0xffffff0000 -> 0xfdfb at shared buffer 0x00007fffffffbe42
+~> change ret from 0x1332f to 0x13557

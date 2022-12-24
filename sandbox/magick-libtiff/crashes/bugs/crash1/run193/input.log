@@ -1,0 +1,24 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9bbfa6a [size: 0]) @ 0x00007fffb9bcc0dc
+~> instrumenting 0x00007fffb9bbfa6a (TIFFErrors, 0x3 arg(s))
+~> write 0x66 -> 0xfd at shared buffer 0x0000627000106cf8
+TIFFSetWarningHandler(0x7fffb9bc1b44 [size: 0]) @ 0x00007fffb9bcc0f2
+~> instrumenting 0x00007fffb9bc1b44 (TIFFWarnings, 0x3 arg(s))
+~> change ret from 0x7fffb9b79f64 to 0x7fffb9b7a056
+TIFFSetTagExtender(0x7fffb9bcbe99 [size: 0]) @ 0x00007fffb9bcc114
+~> instrumenting 0x00007fffb9bcbe99 (TIFFTagExtender, 0x1 arg(s))
+TIFFGetVersion() @ 0x00007fffb9bcc172
+TIFFClientOpen(0x627000106cf8 [size: 0x1], 0x7fffb9bf1d80 [size: 0x1], 0x627000106900 [size: 0], 0x7fffb9bc1a98 [size: 0], 0x7fffb9bc1d62 [size: 0], 0x7fffb9bc1b06 [size: 0], 0x7fffb9bbfa4b [size: 0], 0x7fffb9bbfc88 [size: 0], 0x7fffb9bc19cf [size: 0], 0x7fffb9bc1b31 [size: 0]) @ 0x00007fffb9bd0fca
+~> instrumenting 0x00007fffb9bc1a98 (TIFFReadBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9bc1d62 (TIFFWriteBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9bc1b06 (TIFFSeekBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9bbfa4b (TIFFCloseBlob, 0x1 arg(s))
+~> instrumenting 0x00007fffb9bbfc88 (TIFFGetBlobSize, 0x1 arg(s))
+~> instrumenting 0x00007fffb9bc19cf (TIFFMapBlob, 0x3 arg(s))
+~> instrumenting 0x00007fffb9bc1b31 (TIFFUnmapBlob, 0x3 arg(s))
+~> detected cb call TIFFSeekBlob(0x627000106900 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffb9b62c5b
+~> change arg #0x1 from 0x627000106900 to 0xd
+~> change arg #0x3 from 0 to 0xfffffffffffffcbc

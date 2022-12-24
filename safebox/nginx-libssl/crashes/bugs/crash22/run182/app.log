@@ -1,0 +1,56 @@
+=================================================================
+==75805==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fffffffdf65 at pc 0x7fffe0a8befa bp 0x7fffffffde50 sp 0x7fffffffde40
+WRITE of size 8 at 0x7fffffffdf65 thread T0
+    #0 0x7fffe0a8bef9 in get_error_values crypto/err/err.c:573
+    #1 0x7fffe0a8ae18 in ERR_peek_error_line_data crypto/err/err.c:484
+    #2 0x55555569002b in ngx_ssl_error src/event/ngx_event_openssl.c:3489
+    #3 0x555555681410 in ngx_ssl_init src/event/ngx_event_openssl.c:191
+    #4 0x5555555c7508 in main src/core/nginx.c:241
+    #5 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+Address 0x7fffffffdf65 is located in stack of thread T0 at offset 53 in frame
+    #0 0x55555568fe2e in ngx_ssl_error src/event/ngx_event_openssl.c:3470
+
+  This frame has 4 object(s):
+    [48, 52) 'flags' (line 3471) <== Memory access at offset 53 overflows this variable
+    [64, 72) 'data' (line 3476)
+    [96, 120) 'args' (line 3473)
+    [160, 1184) 'errstr' (line 3475)
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow crypto/err/err.c:573 in get_error_values
+Shadow bytes around the buggy address:
+  0x10007fff7b90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7ba0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7bb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7bc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7bd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10007fff7be0: 00 00 00 00 00 00 f1 f1 f1 f1 f1 f1[04]f2 00 f2
+  0x10007fff7bf0: f2 f2 00 00 00 f2 f2 f2 f2 f2 00 00 00 00 00 00
+  0x10007fff7c00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7c10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7c20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007fff7c30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==75805==ABORTING

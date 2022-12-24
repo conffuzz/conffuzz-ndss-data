@@ -1,0 +1,19 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe640 {RedisModuleCtx*} [size: 0x78], 0x7fffd9411850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0xffd933 -> 0 at shared buffer 0x00007fffd9411852
+~> change ret {int} from 0 to 0x8
+BFAdd_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337b08 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0x100000 -> 0 at shared buffer 0x00007fffffffe3b6
+~> write {RedisModuleCtx*} 0x800000 -> 0 at shared buffer 0x00007fffffffe396
+~> change ret {int} from 0 to 0x4
+BFCheck_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337bb0 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe3e1
+BFCheck_RedisCommand(0x7fffffffe390 {RedisModuleCtx*} [size: 0x78], 0x7fffd9337bf8 {RedisModuleString**} [size: 0x8], 0x3 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd92f8780 -> 0xb100 at shared buffer 0x00007fffd9337bf8
+~> write {RedisModuleCtx*} 0xd92f758000 -> 0 at shared buffer 0x00007fffffffe397
+~> write {RedisModuleCtx*} 0 -> 0x5500000000000000 at shared buffer 0x00007fffffffe3e0
+~> write {RedisModuleCtx*} 0 -> 0x3f00 at shared buffer 0x00007fffffffe3e1
+~> change ret {int} from 0 to 0x8000000000000000

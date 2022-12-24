@@ -1,0 +1,143 @@
+[I] Recursing from ssl into ssl_st
+[I] Recursing from ssl_session into ssl_session_st
+[I] Recursing from ssl_ctx into ssl_ctx_st
+[I] Recursing from file into const char*
+[E] Not able to find type information for file in DWARF
+[I] Recursing from pem_password_cb into int(char*, int, int, *)
+[E] Not able to find type information for pem_password_cb in DWARF
+[I] Recursing from ssl_conf_ctx into ssl_conf_ctx_st
+[I] Recursing from x509 into x509_st
+[E] Not able to find type information for x509 in DWARF
+[I] Recursing from ssl_cipher into ssl_cipher_st
+[I] Recursing from bio into bio_st
+[E] Not able to find type information for bio in DWARF
+[I] Recursing from ctlog_store into CTLOG_STORE*
+[E] Not able to find type information for ctlog_store in DWARF
+[I] Recursing from bignum into bignum_st
+[E] Not able to find type information for bignum in DWARF
+[I] Recursing from ssl_comp into ssl_comp_st
+[I] Recursing from ssl_method into ssl_method_st
+[I] Recursing from rsa into rsa_st
+[E] Not able to find type information for rsa in DWARF
+[I] Recursing from x509_verify_param into X509_VERIFY_PARAM_st
+[E] Not able to find type information for x509_verify_param in DWARF
+[I] Recursing from openssl_init_settings into ossl_init_settings_st
+[E] Not able to find type information for openssl_init_settings in DWARF
+[I] Recursing from bio_addr into bio_addr_st
+[E] Not able to find type information for bio_addr in DWARF
+[E] Not able to find type information for stack_st_x509_name in DWARF
+[I] Recursing from evp_pkey into evp_pkey_st
+[E] Not able to find type information for evp_pkey in DWARF
+[I] Recursing from x509_store into x509_store_st
+[E] Not able to find type information for x509_store in DWARF
+[I] Recursing from evp_md into evp_md_st
+[E] Not able to find type information for evp_md in DWARF
+[E] Not able to find type information for stack_st_x509 in DWARF
+[E] Not able to find type information for stack_st_ssl_comp in DWARF
+[I] Recursing from comp_method into comp_method_st
+[E] Not able to find type information for comp_method in DWARF
+[I] Recursing from engine into engine_st
+[E] Not able to find type information for engine in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[I] Attempting to instrument callback select_next_proto_cb
+Got function argument numbers (6) from cache!
+=================================================================
+==377536==ERROR: AddressSanitizer: heap-use-after-free on address 0x6060000007d3 at pc 0x7fffe24079cd bp 0x7fffffffda90 sp 0x7fffffffd240
+READ of size 4 at 0x6060000007d3 thread T0
+    #0 0x7fffe24079cc in __interceptor_fopen64 ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6091
+    #1 0x7fffe1b85d92 in openssl_fopen crypto/o_fopen.c:114
+    #2 0x7fffe19735ac in BIO_new_file crypto/bio/bss_file.c:62
+    #3 0x7fffe1c6b24e in X509_load_cert_crl_file crypto/x509/by_file.c:197
+    #4 0x7fffe1c6aca8 in by_file_ctrl crypto/x509/by_file.c:64
+    #5 0x7fffe1c7278b in X509_LOOKUP_ctrl crypto/x509/x509_lu.c:80
+    #6 0x7fffe1c71583 in X509_STORE_load_locations crypto/x509/x509_d2.c:44
+    #7 0x7fffe1f6dbdf in SSL_CTX_load_verify_locations ssl/ssl_lib.c:4139
+    #8 0x7fffe2219606 in ossl_connect_step1 vtls/openssl.c:3097
+    #9 0x7fffe2220eac in ossl_connect_common vtls/openssl.c:4116
+    #10 0x7fffe2221454 in ossl_connect_nonblocking vtls/openssl.c:4203
+    #11 0x7fffe2226093 in Curl_ssl_connect_nonblocking vtls/vtls.c:363
+    #12 0x7fffe21315e2 in https_connecting /root/curl-7.82.0/lib/http.c:1583
+    #13 0x7fffe2131039 in Curl_http_connect /root/curl-7.82.0/lib/http.c:1509
+    #14 0x7fffe2178a91 in protocol_connect /root/curl-7.82.0/lib/multi.c:1728
+    #15 0x7fffe217a55e in multi_runsingle /root/curl-7.82.0/lib/multi.c:2044
+    #16 0x7fffe217de7b in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #17 0x7fffe20f550a in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #18 0x7fffe20f5a78 in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #19 0x7fffe20f5b41 in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #20 0x5555555be2e7 in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #21 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #22 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #23 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #24 0x7fffe158d7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #25 0x555555584a69 in _start (/usr/local/bin/curl+0x30a69)
+
+0x6060000007d6 is located 0 bytes to the right of 54-byte region [0x6060000007a0,0x6060000007d6)
+freed by thread T0 here:
+    #0 0x7fffe24624d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe215ef00 in curl_dbg_free /root/curl-7.82.0/lib/memdebug.c:292
+    #2 0x7fffe2202538 in seturl /root/curl-7.82.0/lib/urlapi.c:1127
+    #3 0x7fffe22026bd in parseurl /root/curl-7.82.0/lib/urlapi.c:1138
+    #4 0x7fffe22027cf in parseurl_and_replace /root/curl-7.82.0/lib/urlapi.c:1155
+    #5 0x7fffe220502b in curl_url_set /root/curl-7.82.0/lib/urlapi.c:1578
+    #6 0x5555555adc65 in url_proto /root/curl-7.82.0/src/tool_operate.c:664
+    #7 0x5555555b1e7e in single_transfer /root/curl-7.82.0/src/tool_operate.c:1208
+    #8 0x5555555bec1d in transfer_per_config /root/curl-7.82.0/src/tool_operate.c:2494
+    #9 0x5555555bed0e in create_transfer /root/curl-7.82.0/src/tool_operate.c:2510
+    #10 0x5555555be0df in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2337
+    #11 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #12 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #13 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #14 0x7fffe158d7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe24627cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe215ea23 in curl_dbg_malloc /root/curl-7.82.0/lib/memdebug.c:143
+    #2 0x7fffe2200afa in seturl /root/curl-7.82.0/lib/urlapi.c:831
+    #3 0x7fffe22026bd in parseurl /root/curl-7.82.0/lib/urlapi.c:1138
+    #4 0x7fffe22027cf in parseurl_and_replace /root/curl-7.82.0/lib/urlapi.c:1155
+    #5 0x7fffe220502b in curl_url_set /root/curl-7.82.0/lib/urlapi.c:1578
+    #6 0x5555555adc65 in url_proto /root/curl-7.82.0/src/tool_operate.c:664
+    #7 0x5555555b1e7e in single_transfer /root/curl-7.82.0/src/tool_operate.c:1208
+    #8 0x5555555bec1d in transfer_per_config /root/curl-7.82.0/src/tool_operate.c:2494
+    #9 0x5555555bed0e in create_transfer /root/curl-7.82.0/src/tool_operate.c:2510
+    #10 0x5555555be0df in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2337
+    #11 0x5555555befc0 in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #12 0x5555555bf63f in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #13 0x5555555aa117 in main /root/curl-7.82.0/src/tool_main.c:274
+    #14 0x7fffe158d7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-use-after-free ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:6091 in __interceptor_fopen64
+Shadow bytes around the buggy address:
+  0x0c0c7fff80a0: 00 00 00 00 00 00 00 fa fa fa fa fa 00 00 00 00
+  0x0c0c7fff80b0: 00 00 03 fa fa fa fa fa 00 00 00 00 00 00 03 fa
+  0x0c0c7fff80c0: fa fa fa fa fd fd fd fd fd fd fd fa fa fa fa fa
+  0x0c0c7fff80d0: fd fd fd fd fd fd fd fa fa fa fa fa 00 00 00 00
+  0x0c0c7fff80e0: 00 00 03 fa fa fa fa fa 00 00 00 00 00 00 03 fa
+=>0x0c0c7fff80f0: fa fa fa fa fd fd fd fd fd fd[fd]fa fa fa fa fa
+  0x0c0c7fff8100: 00 00 00 00 00 00 03 fa fa fa fa fa 00 00 00 00
+  0x0c0c7fff8110: 00 00 03 fa fa fa fa fa fd fd fd fd fd fd fd fa
+  0x0c0c7fff8120: fa fa fa fa 00 00 00 00 00 00 03 fa fa fa fa fa
+  0x0c0c7fff8130: 00 00 00 00 00 00 03 fa fa fa fa fa 00 00 00 00
+  0x0c0c7fff8140: 00 00 00 00 fa fa fa fa fd fd fd fd fd fd fd fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==377536==ABORTING

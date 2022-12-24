@@ -1,0 +1,26 @@
+5182:C 08 Nov 2022 09:22:36.571 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5182:C 08 Nov 2022 09:22:36.597 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=5182, just started
+5182:C 08 Nov 2022 09:22:36.599 # Configuration loaded
+5182:M 08 Nov 2022 09:22:36.684 * monotonic clock: POSIX clock_gettime
+5182:M 08 Nov 2022 09:22:37.054 * Running mode=standalone, port=6379.
+5182:M 08 Nov 2022 09:22:37.057 # Server initialized
+5182:M 08 Nov 2022 09:22:37.058 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5182:M 08 Nov 2022 09:22:37.493 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+5182:M 08 Nov 2022 09:22:37.497 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+5182:M 08 Nov 2022 09:22:37.513 * <search> Low level api version 1 initialized successfully
+5182:M 08 Nov 2022 09:22:37.531 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+5182:M 08 Nov 2022 09:22:37.578 * <search> Initialized thread pool!
+5182:M 08 Nov 2022 09:22:37.596 * <search> Enabled diskless replication
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==5182==ERROR: AddressSanitizer: SEGV on unknown address 0x0000002f2588 (pc 0x5555558133ba bp 0x7fffffffe7c0 sp 0x7fffffffe5d0 T0)
+==5182==The signal is caused by a READ memory access.
+    #0 0x5555558133ba in moduleLoad /root/redis-6.2.6/src/module.c:8586
+    #1 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #2 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #3 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #4 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/module.c:8586 in moduleLoad
+==5182==ABORTING

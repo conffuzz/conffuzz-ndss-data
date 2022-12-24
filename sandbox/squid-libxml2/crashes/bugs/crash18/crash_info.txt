@@ -1,0 +1,3 @@
+fault_location /usr/local/squid/sbin/squid
+cap_read_arbitrary
+cap_write_arbitrary

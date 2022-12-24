@@ -1,0 +1,6 @@
+fault_location /root/redis-6.2.6/src/redis-server
+cap_read
+cap_read_arbitrary
+cap_null_deref
+cap_write
+cap_write_arbitrary

@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct(0x7fffe214e100 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17102d2
+~> change ret from 0x61a00004e680 to 0x61a00004e388
+png_create_info_struct(0x61a00004e388 [size: 0]) @ 0x00007fffe17102ea
+~> change ret from 0x613000508740 to 0x61300050863d
+png_set_longjmp_fn(0x61a00004e388 [size: 0], 0x7fffe27e5b80 [size: 0], 0xc8 [size: 0]) @ 0x00007fffe1710312
+~> instrumenting 0x00007fffe27e5b80 (__longjmp_chk, 0 arg(s))

@@ -1,0 +1,16 @@
+    #5 0xaddr in http2_init /root/curl-7.82.0/lib/http2.c:1303
+    #6 0xaddr in Curl_http2_setup /root/curl-7.82.0/lib/http2.c:2031
+    #7 0xaddr in Curl_http2_switched /root/curl-7.82.0/lib/http2.c:2061
+    #8 0xaddr in Curl_http /root/curl-7.82.0/lib/http.c:3030
+    #9 0xaddr in multi_do /root/curl-7.82.0/lib/multi.c:1560
+    #10 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:2109
+    #11 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #12 0xaddr in easy_transfer /root/curl-7.82.0/lib/easy.c:599
+    #13 0xaddr in easy_perform /root/curl-7.82.0/lib/easy.c:689
+    #14 0xaddr in curl_easy_perform /root/curl-7.82.0/lib/easy.c:708
+    #15 0xaddr in serial_transfers /root/curl-7.82.0/src/tool_operate.c:2364
+    #16 0xaddr in run_all_transfers /root/curl-7.82.0/src/tool_operate.c:2535
+    #17 0xaddr in operate /root/curl-7.82.0/src/tool_operate.c:2649
+    #18 0xaddr in main /root/curl-7.82.0/src/tool_main.c:274
+    #19 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #20 0xaddr in _start (/usr/local/bin/curl+0xaddr)

@@ -1,0 +1,16 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==14493==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555555d0f5f bp 0x7fffffffe220 sp 0x7fffffffe1f0 T0)
+==14493==The signal is caused by a READ memory access.
+==14493==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555555d0f5f in ngx_destroy_pool src/core/ngx_palloc.c:54
+    #1 0x55555561c321 in ngx_destroy_cycle_pools src/core/ngx_cycle.c:946
+    #2 0x555555617982 in ngx_init_cycle src/core/ngx_cycle.c:286
+    #3 0x5555555c76b0 in main src/core/nginx.c:292
+    #4 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_palloc.c:54 in ngx_destroy_pool
+==14493==ABORTING

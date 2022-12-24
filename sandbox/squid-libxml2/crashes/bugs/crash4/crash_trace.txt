@@ -1,0 +1,1 @@
+    #0 0xaddr in typeinfo for ESIParser (/usr/local/squid/sbin/squid+0xaddr)

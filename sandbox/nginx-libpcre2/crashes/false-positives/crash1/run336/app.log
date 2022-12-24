@@ -1,0 +1,12 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_pattern_info("/", PCRE2_INFO_NAMETABLE) failed: -31 in /root/nginx-1.21.6/conf/nginx.conf:50
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==27329==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x616d6f6402000001 bp 0x7fffffffe1d0 sp 0x7fffffffe1a8 T0)
+==27329==The signal is caused by a READ memory access.
+==27329==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

@@ -1,0 +1,25 @@
+26986:C 08 Nov 2022 10:56:23.690 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+26986:C 08 Nov 2022 10:56:23.718 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=26986, just started
+26986:C 08 Nov 2022 10:56:23.720 # Configuration loaded
+26986:M 08 Nov 2022 10:56:23.810 * monotonic clock: POSIX clock_gettime
+26986:M 08 Nov 2022 10:56:24.200 * Running mode=standalone, port=6379.
+26986:M 08 Nov 2022 10:56:24.202 # Server initialized
+26986:M 08 Nov 2022 10:56:24.204 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+26986:M 08 Nov 2022 10:56:24.339 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+26986:M 08 Nov 2022 10:56:24.394 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==26986==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555557eb723 bp 0x7fffffffe5b0 sp 0x7fffffffe590 T0)
+==26986==The signal is caused by a READ memory access.
+==26986==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555557eb723 in poolAllocRelease /root/redis-6.2.6/src/module.c:472
+    #1 0x5555557ec5c6 in moduleFreeContext /root/redis-6.2.6/src/module.c:671
+    #2 0x555555813575 in moduleLoad /root/redis-6.2.6/src/module.c:8595
+    #3 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #4 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #5 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #6 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/module.c:472 in poolAllocRelease
+==26986==ABORTING

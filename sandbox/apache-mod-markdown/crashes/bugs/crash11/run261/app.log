@@ -1,0 +1,41 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 10:54:15.662411 2022] [core:warn] [pid 19337:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==19337==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffd81389b1 bp 0x7fffd5d35880 sp 0x7fffd5d35860 T2)
+==19337==The signal is caused by a READ memory access.
+==19337==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffd81389b1 in log_remote_user /root/httpd-2.4.52/modules/loggers/mod_log_config.c:350
+    #1 0x7fffd813d6d5 in process_item /root/httpd-2.4.52/modules/loggers/mod_log_config.c:1101
+    #2 0x7fffd813de3d in config_log_transaction /root/httpd-2.4.52/modules/loggers/mod_log_config.c:1174
+    #3 0x7fffd813e433 in multi_log_transaction /root/httpd-2.4.52/modules/loggers/mod_log_config.c:1212
+    #4 0x5555556510d5 in ap_run_log_transaction /root/httpd-2.4.52/server/protocol.c:2575
+    #5 0x55555568a66d in eor_bucket_cleanup /root/httpd-2.4.52/server/eor_bucket.c:40
+    #6 0x7fffe1cce61d in apr_pool_destroy (/usr/lib/x86_64-linux-gnu/libapr-1.so.0+0x2261d)
+    #7 0x55555568aa70 in eor_bucket_destroy /root/httpd-2.4.52/server/eor_bucket.c:101
+    #8 0x55555568fec0 in send_brigade_nonblocking /root/httpd-2.4.52/server/core_filters.c:702
+    #9 0x55555568e9c9 in ap_core_output_filter /root/httpd-2.4.52/server/core_filters.c:505
+    #10 0x55555571c563 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1113
+    #11 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #12 0x7fffe1c8dea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #13 0x7fffe1bada2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/httpd-2.4.52/modules/loggers/mod_log_config.c:350 in log_remote_user
+Thread T2 created by T1 here:
+    #0 0x7fffe1ea92a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x555555726242 in start_threads /root/httpd-2.4.52/server/mpm/event/event.c:2390
+    #2 0x7fffe1c8dea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+
+Thread T1 created by T0 here:
+    #0 0x7fffe1ea92a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x5555557279e3 in child_main /root/httpd-2.4.52/server/mpm/event/event.c:2599
+    #2 0x555555728659 in make_child /root/httpd-2.4.52/server/mpm/event/event.c:2712
+    #3 0x555555728aef in startup_children /root/httpd-2.4.52/server/mpm/event/event.c:2777
+    #4 0x55555572bf76 in event_run /root/httpd-2.4.52/server/mpm/event/event.c:3161
+    #5 0x555555626daf in ap_run_mpm /root/httpd-2.4.52/server/mpm_common.c:95
+    #6 0x55555560bc90 in main /root/httpd-2.4.52/server/main.c:819
+    #7 0x7fffe1ad4d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==19337==ABORTING

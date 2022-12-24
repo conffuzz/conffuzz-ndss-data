@@ -1,0 +1,10 @@
+    #1 0xaddr in curl_dbg_calloc /root/curl-7.82.0/lib/memdebug.c:172
+    #2 0xaddr in Curl_ssl_initsessions vtls/vtls.c:739
+    #3 0xaddr in Curl_pretransfer /root/curl-7.82.0/lib/transfer.c:1393
+    #4 0xaddr in multi_runsingle /root/curl-7.82.0/lib/multi.c:1830
+    #5 0xaddr in curl_multi_perform /root/curl-7.82.0/lib/multi.c:2637
+    #6 0xaddr in start_active_slot /root/git-2.35.1/http.c:1260
+    #7 0xaddr in locking_available /root/git-2.35.1/http-push.c:1221
+    #8 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1771
+    #9 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #10 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

@@ -1,0 +1,8 @@
+    #0 0xaddr in acommon::Config::keyinfo(acommon::ParmString const&) const common/config.cpp:485
+    #1 0xaddr in acommon::Config::retrieve_list(acommon::ParmString const&, acommon::MutableContainer*) const common/config.cpp:448
+    #2 0xaddr in acommon::load_all_filters(acommon::Config*) lib/new_filter.cpp:490
+    #3 0xaddr in print_help(bool) prog/aspell.cpp:2882
+    #4 0xaddr in main prog/aspell.cpp:267
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/usr/local/bin/aspell+0xaddr)

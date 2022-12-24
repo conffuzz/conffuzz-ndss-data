@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==9854==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7fff97e19130 sp 0x7fff97e19040 T0)
+==9854==Hint: pc points to the zero page.
+==9854==The signal is caused by a READ memory access.
+==9854==Hint: address points to the zero page.
+    #0 0x0  (<unknown module>)
+    #1 0x7ff628724f22 in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:698:8
+    #2 0x7ff6287268f9 in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #3 0x7ff628726923 in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #4 0x56215c627588 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #5 0x56215c602d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #6 0x56215c5e4a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #7 0x7ff627fdbd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (<unknown module>) 
+==9854==ABORTING

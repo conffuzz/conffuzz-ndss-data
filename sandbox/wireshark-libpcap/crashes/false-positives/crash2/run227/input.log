@@ -1,0 +1,35 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> change ret from 0x7fffe25b1c30 to 0x7fffe25b19e9
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0 -> 0x7fffffffe5d1 at shared buffer 0x00007fffffffe370
+~> write 0xd1 -> 0x7fffffffe53e at shared buffer 0x00007fffffffe370
+~> write 0x3e -> 0x7fffffffe5f0 at shared buffer 0x00007fffffffe370
+~> write 0xf0 -> 0x7fffffffe5fc at shared buffer 0x00007fffffffe370
+~> change ret from 0 to 0xfffffffffffffc46
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0 -> 0x61d000000000 at shared buffer 0x00006040000002a4
+~> write 0xd0000000000000 -> 0 at shared buffer 0x00006040000002a2
+~> change ret from 0 to 0xfffffffffffffc65
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0xd0000000000000 -> 0xc6 at shared buffer 0x00007fffffffc250
+~> write 0xd00000000000c6 -> 0x41 at shared buffer 0x00007fffffffc250
+~> write 0xd0000000000041 -> 0 at shared buffer 0x00007fffffffc250
+~> change ret from 0x618000000080 to 0x617fffffffe1
+pcap_set_promisc(0x617fffffffe1 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> write 0xd00000cc6e96b9 -> 0x8 at shared buffer 0x0000618000000004
+pcap_set_timeout(0x617fffffffe1 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0xd00000cc6e0000 -> 0 at shared buffer 0x0000618000000217
+~> write 0xd00000cc6e0000 -> 0x73 at shared buffer 0x0000618000000252
+~> write 0xd0000000000000 -> 0x7f at shared buffer 0x0000618000000243
+~> write 0xd0000000000000 -> 0 at shared buffer 0x0000618000000032
+~> change ret from 0 to 0x4b
+pcap_set_tstamp_precision(0x617fffffffe1 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0xd0000000000000 -> 0xfffb at shared buffer 0x000061800000006e
+~> write 0xd0000000000000 -> 0xffff16 at shared buffer 0x0000618000000106
+~> change ret from 0xfffffff4 to 0xfffffc87
+pcap_set_buffer_size(0x617fffffffe1 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+pcap_activate(0x617fffffffe1 [size: 0x288]) @ 0x0000555555586c87

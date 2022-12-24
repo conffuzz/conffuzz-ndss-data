@@ -1,0 +1,15 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==180517==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7fffe1dfcc02 bp 0x7fffffffd550 sp 0x7fffffffcce8 T0)
+==180517==The signal is caused by a READ memory access.
+==180517==Hint: address points to the zero page.
+    #0 0x7fffe1dfcc02  (/lib/x86_64-linux-gnu/libc.so.6+0x171c02)
+    #1 0x7fffe22bae1c in __interceptor_strchr ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:684
+    #2 0x555555611e5b in parse_arguments /root/rsync-3.2.7/options.c:1794
+    #3 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #4 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #5 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x171c02) 
+==180517==ABORTING

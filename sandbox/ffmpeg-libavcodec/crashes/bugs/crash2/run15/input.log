@@ -1,0 +1,14 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> write 0 -> 0 at shared buffer 0x00007ffffffde349
+~> write 0 -> 0 at shared buffer 0x00007ffffffde041
+~> write 0 -> 0xfcfe at shared buffer 0x00007ffffffde1b9
+avcodec_version() @ 0x0000555555577440
+~> change ret from 0x3b1264 to 0xfffffffffffff448
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+~> change ret from 0x60e0000233c0 to 0x60e000022fdd
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+~> change ret from 0x619000000080 to 0x6190000003f1

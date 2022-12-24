@@ -1,0 +1,20 @@
+Fuzzing seed: 1667516044
+Starting time: 2022-11-03 22:54:04
+Total instrumented API size: 73
+Statically detected call sites: 36
+Statically detected called API endpoints: 15
+Statically detected caller components: 1
+Max number of call sites reached in a run: 12
+Number of API endpoints reached: 14
+Number of API endpoints that are vulnerability vectors: 9
+List of these endpoints:
+  [api] pcre2_compile_8
+  [api] pcre2_compile_context_create_8
+  [api] pcre2_general_context_create_8
+  [api] pcre2_general_context_free_8
+  [api] pcre2_get_error_message_8
+  [api] pcre2_get_ovector_count_8
+  [api] pcre2_get_ovector_pointer_8
+  [api] pcre2_match_8
+  [api] pcre2_pattern_info_8
+Ending time: 2022-11-04 00:05:14

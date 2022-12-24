@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libpoppler-qt5.so.1.31.0
+cap_null_deref
+cap_read
+cap_read_arbitrary

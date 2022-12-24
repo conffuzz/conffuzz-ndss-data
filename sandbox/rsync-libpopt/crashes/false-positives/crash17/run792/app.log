@@ -1,0 +1,14 @@
+=================================================================
+==45934==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x5555556f62a0 in thread T0
+    #0 0x7fffe23281f8 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe21b3d91 in poptAddItem /root/popt-popt-1.19-release/src/popt.c:1591
+    #2 0x7fffe21b3d05 in poptAddAlias /root/popt-popt-1.19-release/src/popt.c:1569
+    #3 0x5555556107ae in popt_unalias /root/rsync-3.2.7/options.c:1320
+    #4 0x555555610b79 in parse_arguments /root/rsync-3.2.7/options.c:1377
+    #5 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #6 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #7 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+0x5555556f62a0 is located 0 bytes inside of global variable 'long_options' defined in 'options.c:589:26' (0x5555556f62a0) of size 12096
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164 in __interceptor_realloc
+==45934==ABORTING

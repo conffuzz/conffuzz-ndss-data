@@ -1,0 +1,62 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 65535.216.240
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+=================================================================
+==138581==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e00002329a at pc 0x7fffde782ef1 bp 0x7fffffffe5d0 sp 0x7fffffffe5c8
+READ of size 4 at 0x60e00002329a thread T0
+    #0 0x7fffde782ef0 in avcodec_parameters_to_context libavcodec/codec_par.c:158
+    #1 0x7fffe0ea160c in update_stream_avctx libavformat/demux.c:198
+    #2 0x7fffe0ea28ef in avformat_open_input libavformat/demux.c:333
+    #3 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #4 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #5 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #6 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #7 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+0x60e00002329a is located 2 bytes to the right of 152-byte region [0x60e000023200,0x60e000023298)
+allocated by thread T0 here:
+    #0 0x7fffe2669987 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffdc06d707  (/usr/lib/x86_64-linux-gnu/libtasn1.so.6+0xb707)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow libavcodec/codec_par.c:158 in avcodec_parameters_to_context
+Shadow bytes around the buggy address:
+  0x0c1c7fffc600: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fffc610: 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa
+  0x0c1c7fffc620: fa fa fa fa 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fffc630: 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa fa
+  0x0c1c7fffc640: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c1c7fffc650: 00 00 00[fa]fa fa fa fa fa fa fa fa 00 00 00 00
+  0x0c1c7fffc660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa
+  0x0c1c7fffc670: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fffc680: 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa fa
+  0x0c1c7fffc690: fa fa fa fa fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fffc6a0: fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==138581==ABORTING

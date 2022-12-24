@@ -1,0 +1,28 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+BZ2_bzReadOpen(0x7fffffffbe30 [size: 0x4], 0x615000000580 [size: 0xd8], 0 [size: 0], 0 [size: 0], 0x7fffffffd310 [size: 0x1], 0 [size: 0]) @ 0x000055555555a938
+~> write 0 -> 0x62fffffffccc at shared buffer 0x000061500000059e
+~> write 0x615000 -> 0x62ffff0001b9 at shared buffer 0x0000615000000623
+~> write 0xbebebebe -> 0x62ff00000000 at shared buffer 0x0000615000000619
+~> write 0xfffffffccc00 -> 0x8e at shared buffer 0x000061500000059d
+~> write 0xfffffffccc00 -> 0x20 at shared buffer 0x00007fffffffd310
+~> write 0xfffffffccc20 -> 0x7c at shared buffer 0x00007fffffffd310
+~> write 0xfffffffccc7c -> 0 at shared buffer 0x00007fffffffd310
+BZ2_bzRead(0x7fffffffbe30 [size: 0x4], 0x622000000100 [size: 0x1], 0x7fffffffbe80 [size: 0x1], 0x1388 [size: 0]) @ 0x000055555555a9bb
+~> write 0xfffffffccc74 -> 0xfe at shared buffer 0x00007fffffffbe80
+~> write 0xfffffffcccfe -> 0 at shared buffer 0x00007fffffffbe80
+~> write 0xfffffffccc00 -> 0xf6 at shared buffer 0x00007fffffffbe80
+~> write 0xfffffffcccf6 -> 0x9b at shared buffer 0x00007fffffffbe80
+~> change ret from 0x5 to 0xfffffffffffffffb
+BZ2_bzReadGetUnused(0x7fffffffbe30 [size: 0x4], 0x622000000100 [size: 0x1], 0x7fffffffbe60 [size: 0x8], 0x7fffffffbe50 [size: 0x4]) @ 0x000055555555ab00
+~> write 0xffff00000000 -> 0x7ffffffffd99 at shared buffer 0x00007fffffffbe30
+~> write 0xffff00fffffd -> 0x7fffff000000 at shared buffer 0x00007fffffffbe31
+~> write 0xffff00ff0000 -> 0x7fffff000250 at shared buffer 0x00007fffffffbe31
+~> write 0xffff00025099 -> 0x7fff00000000 at shared buffer 0x00007fffffffbe30
+~> write 0xffff00025000 -> 0x7fff00000000 at shared buffer 0x00007fffffffbe50
+~> write 0xffff00025000 -> 0x7fff00000031 at shared buffer 0x00007fffffffbe53
+~> write 0xffff00020000 -> 0x7fff0000ffff at shared buffer 0x00007fffffffbe50
+~> write 0xffff0002ffff -> 0x7fff00000000 at shared buffer 0x00007fffffffbe50
+~> write 0xffff0002ff20 -> 0x7fff000000d5 at shared buffer 0x00007fffffffbe64

@@ -1,0 +1,13 @@
+Fuzzing seed: 1668010363
+Starting time: 2022-11-09 16:12:43
+Total instrumented API size: 30
+Statically detected call sites: 0
+Statically detected called API endpoints: 4
+Statically detected caller components: 0
+Max number of call sites reached in a run: 0
+Number of API endpoints reached: 2
+Number of API endpoints that are vulnerability vectors: 2
+List of these endpoints:
+  [api] aesni_ecb_encrypt
+  [api] aesni_set_encrypt_key
+Ending time: 2022-11-09 18:02:19

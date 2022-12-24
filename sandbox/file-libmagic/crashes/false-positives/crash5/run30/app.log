@@ -1,0 +1,18 @@
+file: Compiled magic version [541] does not match with shared library magic version [9]
+
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2844==ERROR: AddressSanitizer: SEGV on unknown address 0x00087fff8003 (pc 0x7fffe273dd95 bp 0x7fffffffe780 sp 0x7fffffffe760 T0)
+==2844==The signal is caused by a READ memory access.
+    #0 0x7fffe273dd95 in mlist_free /root/file-5.41/src/apprentice.c:626
+    #1 0x7fffe273e14a in file_apprentice /root/file-5.41/src/apprentice.c:700
+    #2 0x7fffe273af8d in magic_load /root/file-5.41/src/magic.c:304
+    #3 0x55555555a7ed in load /root/file-5.41/src/file.c:481
+    #4 0x55555555a066 in main /root/file-5.41/src/file.c:403
+    #5 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/file-5.41/src/apprentice.c:626 in mlist_free
+==2844==ABORTING

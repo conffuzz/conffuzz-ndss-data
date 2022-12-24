@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avformat_network_init() @ 0x00005555555a054e
+~> write {AVDictionary**} 0 -> 0x15c at shared buffer 0x00005555555cd6a0
+avformat_configuration() @ 0x00005555555775f7
+avformat_version() @ 0x000055555557757a
+avformat_alloc_context() @ 0x000055555559ba84

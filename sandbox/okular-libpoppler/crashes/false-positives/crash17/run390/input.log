@@ -1,0 +1,34 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+setDebugErrorFunction(0x7fff6ec413c9 {PopplerDebugFunc} [size: 0], 0x7fffffffb180 {QVariant&} [size: 0x10]) @ 0x00007fff6ec41afe
+~> instrumenting 0x00007fff6ec413c9 (_ZL32PDFGeneratorPopplerDebugFunctionRK7QStringRK8QVariant, 0 arg(s))
+load(0x7fffffffc550 {QString&} [size: 0x4], 0x7fffffffb5a0 {QByteArray&} [size: 0x10], 0x7fffffffb5c0 {QByteArray&} [size: 0x10]) @ 0x00007fff6ec421bc
+~> write {QByteArray&} 0xff -> 0 at shared buffer 0x00007fffffffb5a9
+isLocked(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec427ad
+xrefWasReconstructed(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec42ba0
+setXRefReconstructedCallback(0x6020002e98b0 {Document*} [size: 0x4], 0x7fffffffb4b0 {function<void()>&} [size: 0x1]) @ 0x00007fff6ec42d96
+numPages(0x6020002e98b0 {Document*} [size: 0x4]) @ 0x00007fff6ec42df1
+page(0x6020002e98b0 {Document*} [size: 0x4], 0 {int} [size: 0]) @ 0x00007fff6ec43c9f
+pageSizeF(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec43cf8
+orientation(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec43ec9
+transition(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec533e1
+action(0x6020002e98d0 {Page*} [size: 0xe0], 0 {PageAction} [size: 0]) @ 0x00007fff6ec44024
+action(0x6020002e98d0 {Page*} [size: 0xe0], 0x1 {PageAction} [size: 0]) @ 0x00007fff6ec44074
+duration(0x6020002e98d0 {Page*} [size: 0xe0]) @ 0x00007fff6ec440bf
+label(0x7fffffffb050 {Page*} [size: 0xe0]) @ 0x00007fff6ec44129
+~> change ret {QString} from 0x7fffffffb050 to 0xd
+_ZN7Poppler4PageD1Ev() @ 0x00007fff6ec4426c
+page(0x6020002e98b0 {Document*} [size: 0x4], 0x1 {int} [size: 0]) @ 0x00007fff6ec43c9f
+pageSizeF(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec43cf8
+orientation(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec43ec9
+~> write {Page*} 0 -> 0xc0 at shared buffer 0x00006020002fac33
+~> write {Page*} 0 -> 0x2710000000 at shared buffer 0x00006020002fac09
+~> change ret {Orientation} from 0x1 to 0xffffffffffffff80
+transition(0x6020002fabf0 {Page*} [size: 0xe0]) @ 0x00007fff6ec533e1
+~> write {Page*} 0 -> 0 at shared buffer 0x00006020002fac9d
+~> write {Page*} 0x6030 -> 0xffffff0000000000 at shared buffer 0x00006020002fabf4
+~> write {Page*} 0 -> 0xbf00000000000000 at shared buffer 0x00006020002fac20
+~> change ret {PageTransition*} from 0 to 0xfffffffffffffd4e
+type(0xfffffffffffffd4e {PageTransition*} [size: 0x30]) @ 0x00007fff6ec533f8

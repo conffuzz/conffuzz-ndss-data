@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==32614==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000001a1 (pc 0x7fffe0a8bc62 bp 0x7fffffffdeb0 sp 0x7fffffffde60 T0)
+==32614==The signal is caused by a WRITE memory access.
+==32614==Hint: address points to the zero page.
+    #0 0x7fffe0a8bc62 in get_error_values crypto/err/err.c:562
+    #1 0x7fffe0a8ae18 in ERR_peek_error_line_data crypto/err/err.c:484
+    #2 0x55555569002b in ngx_ssl_error src/event/ngx_event_openssl.c:3489
+    #3 0x5555556814de in ngx_ssl_init src/event/ngx_event_openssl.c:206
+    #4 0x5555555c7508 in main src/core/nginx.c:241
+    #5 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV crypto/err/err.c:562 in get_error_values
+==32614==ABORTING

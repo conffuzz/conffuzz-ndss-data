@@ -1,0 +1,8 @@
+    #0 0xaddr in ngx_http_block src/http/ngx_http.c:302
+    #1 0xaddr in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #2 0xaddr in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #3 0xaddr in ngx_init_cycle src/core/ngx_cycle.c:284
+    #4 0xaddr in main src/core/nginx.c:292
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

@@ -1,0 +1,17 @@
+warning: curl_multi_add_handle failed: Unknown error
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+=================================================================
+==65644==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde188 in thread T0
+    #0 0x7fffe03b4517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe0088bd0 in curl_dbg_free /root/curl-7.82.0/lib/memdebug.c:292
+    #2 0x7fffe00e07ef in curl_slist_free_all /root/curl-7.82.0/lib/slist.c:141
+    #3 0x555555633db6 in locking_available /root/git-2.35.1/http-push.c:1260
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+Address 0x7ffffffde188 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==65644==ABORTING

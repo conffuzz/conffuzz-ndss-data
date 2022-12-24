@@ -1,0 +1,63 @@
+mkd_search_tags mkd_search_tags 2 kw* char* int
+gfm_populate gfm_populate 3 Document* getc_func * int
+___mkd_freeLines ___mkd_freeLines 1 unknown_or_void Line*
+mkd_compile mkd_compile 2 int Document* mkd_flag_t
+mkd_doc_date mkd_doc_date 1 char* Document*
+mkd_mmiot_flags mkd_mmiot_flags 3 unknown_or_void FILE* MMIOT* int
+mkd_flags_are mkd_flags_are 3 unknown_or_void FILE* mkd_flag_t int
+__mkd_trim_line __mkd_trim_line 2 unknown_or_void Line* int
+mkd_cleanup mkd_cleanup 1 unknown_or_void Document*
+mkd_initialize mkd_initialize 0 unknown_or_void
+___mkd_emblock ___mkd_emblock 1 unknown_or_void MMIOT*
+___mkd_freeParagraph ___mkd_freeParagraph 1 unknown_or_void Paragraph*
+mkd_e_flags mkd_e_flags 2 unknown_or_void Document* mkd_callback_t
+___mkd_freemmiot ___mkd_freemmiot 2 unknown_or_void MMIOT* *
+___mkd_tidy ___mkd_tidy 1 unknown_or_void Cstring*
+Csprintf Csprintf 2 int Cstring* char*
+mkd_string mkd_string 3 Document* char* int mkd_flag_t
+___mkd_reparse ___mkd_reparse 5 unknown_or_void char* int mkd_flag_t MMIOT* char*
+___mkd_initmmiot ___mkd_initmmiot 2 unknown_or_void MMIOT* *
+mkd_generatehtml mkd_generatehtml 2 int Document* FILE*
+mkd_generatecss mkd_generatecss 2 int Document* FILE*
+mkd_e_data mkd_e_data 2 unknown_or_void Document* *
+mkd_generateline mkd_generateline 4 int char* int FILE* mkd_flag_t
+mkd_in mkd_in 2 Document* FILE* mkd_flag_t
+mkd_dump mkd_dump 4 int Document* FILE* mkd_flag_t char*
+mkd_css mkd_css 2 int Document* char**
+gfm_in gfm_in 2 Document* FILE* mkd_flag_t
+Cswrite Cswrite 3 int Cstring* char* int
+mkd_e_code_format mkd_e_code_format 2 unknown_or_void Document* mkd_callback_t
+populate populate 3 Document* getc_func * mkd_flag_t
+mkd_document mkd_document 2 int Document* char**
+mkd_define_tag mkd_define_tag 2 unknown_or_void char* int
+mkd_e_url mkd_e_url 2 unknown_or_void Document* mkd_callback_t
+mkd_shlib_destructor mkd_shlib_destructor 0 unknown_or_void
+___mkd_freefootnotes ___mkd_freefootnotes 1 unknown_or_void MMIOT*
+mkd_basename mkd_basename 2 unknown_or_void MMIOT* char*
+__mkd_enqueue __mkd_enqueue 2 unknown_or_void Document* Cstring*
+Csputc Csputc 2 unknown_or_void int Cstring*
+mkd_with_html5_tags mkd_with_html5_tags 0 int
+__mkd_footsort __mkd_footsort 2 int Footnote* Footnote*
+mkd_deallocate_tags mkd_deallocate_tags 0 unknown_or_void
+mkd_generatetoc mkd_generatetoc 2 int Document* FILE*
+___mkd_freeLine ___mkd_freeLine 1 unknown_or_void Line*
+gfm_string gfm_string 3 Document* char* int mkd_flag_t
+mkd_toc mkd_toc 2 int Document* char**
+mkd_doc_title mkd_doc_title 1 char* Document*
+mkd_xhtmlpage mkd_xhtmlpage 3 int Document* mkd_flag_t FILE*
+markdown markdown 3 int Document* FILE* mkd_flag_t
+___mkd_freefootnote ___mkd_freefootnote 1 unknown_or_void Footnote*
+Csreparse Csreparse 4 unknown_or_void Cstring* char* int mkd_flag_t
+mkd_e_anchor mkd_e_anchor 2 unknown_or_void Document* mkd_callback_t
+__mkd_new_Document __mkd_new_Document 0 Document*
+mkd_sort_tags mkd_sort_tags 0 unknown_or_void
+mkd_ref_prefix mkd_ref_prefix 2 unknown_or_void Document* char*
+mkd_generatexml mkd_generatexml 3 int char* int FILE*
+___mkd_freeLineRange ___mkd_freeLineRange 2 unknown_or_void Line* Line*
+mkd_doc_author mkd_doc_author 1 char* Document*
+mkd_xml mkd_xml 3 int char* int char**
+__mkd_io_strget __mkd_io_strget 1 int string_stream*
+mkd_string_to_anchor mkd_string_to_anchor 6 unknown_or_void char* int mkd_sta_function_t * int MMIOT*
+mkd_line mkd_line 4 int char* int char** mkd_flag_t
+mkd_e_free mkd_e_free 2 unknown_or_void Document* mkd_free_t
+mkd_firstnonblank mkd_firstnonblank 1 int Line*

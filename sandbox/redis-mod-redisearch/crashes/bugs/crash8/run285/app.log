@@ -1,0 +1,40 @@
+67411:C 08 Nov 2022 10:09:01.971 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+67411:C 08 Nov 2022 10:09:02.001 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=67411, just started
+67411:C 08 Nov 2022 10:09:02.005 # Configuration loaded
+67411:M 08 Nov 2022 10:09:02.107 * monotonic clock: POSIX clock_gettime
+67411:M 08 Nov 2022 10:09:02.567 * Running mode=standalone, port=6379.
+67411:M 08 Nov 2022 10:09:02.569 # Server initialized
+67411:M 08 Nov 2022 10:09:02.571 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+67411:M 08 Nov 2022 10:09:03.138 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+67411:M 08 Nov 2022 10:09:03.142 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+67411:M 08 Nov 2022 10:09:03.165 * <search> Low level api version 1 initialized successfully
+67411:M 08 Nov 2022 10:09:03.191 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+67411:M 08 Nov 2022 10:09:03.250 * <search> Initialized thread pool!
+67411:M 08 Nov 2022 10:09:03.275 * <search> Enabled diskless replication
+67411:M 08 Nov 2022 10:09:03.362 * Module 'search' loaded from /root/RediSearch/bin/linux-x64-debug/search/redisearch.so
+67411:M 08 Nov 2022 10:09:03.512 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==67411==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x55555578e489 bp 0x7fffffffe370 sp 0x7fffffffe350 T0)
+==67411==The signal is caused by a READ memory access.
+==67411==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x55555578e489 in sdslen /root/redis-6.2.6/src/sds.h:88
+    #1 0x55555578e9d8 in slowlogCreateEntry /root/redis-6.2.6/src/slowlog.c:67
+    #2 0x55555578f14a in slowlogPushEntryIfNeeded /root/redis-6.2.6/src/slowlog.c:127
+    #3 0x55555566eab2 in slowlogPushCurrentCommand /root/redis-6.2.6/src/server.c:3657
+    #4 0x55555566f169 in call /root/redis-6.2.6/src/server.c:3773
+    #5 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #6 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #7 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #8 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #9 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #10 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #11 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #12 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #13 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #14 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #15 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/sds.h:88 in sdslen
+==67411==ABORTING

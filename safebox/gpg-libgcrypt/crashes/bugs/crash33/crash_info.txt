@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/x86_64-linux-gnu/libgcrypt.so.20.3.2
+cap_read
+cap_null_deref
+cap_read_arbitrary

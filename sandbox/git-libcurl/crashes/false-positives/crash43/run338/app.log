@@ -1,0 +1,9 @@
+warning: curl_multi_add_handle failed: Internal error
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==51753==ERROR: AddressSanitizer: SEGV on unknown address 0x0000ffffffff (pc 0x0000ffffffff bp 0x7fffffffda30 sp 0x7fffffffda18 T0)
+==51753==The signal is caused by a READ memory access.
+==51753==Hint: PC is at a non-executable region. Maybe a wild jump?
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

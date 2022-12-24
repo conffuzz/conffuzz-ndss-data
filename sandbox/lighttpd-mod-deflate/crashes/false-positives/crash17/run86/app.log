@@ -1,0 +1,55 @@
+=================================================================
+==7582==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000000008 at pc 0x555555626651 bp 0x7fffffffe870 sp 0x7fffffffe860
+READ of size 8 at 0x603000000008 thread T0
+    #0 0x555555626650 in array_free_data /root/lighttpd-1.4.67/src/array.c:137
+    #1 0x555555626b00 in array_free /root/lighttpd-1.4.67/src/array.c:162
+    #2 0x5555555d2aba in config_free /root/lighttpd-1.4.67/src/configfile.c:1560
+    #3 0x555555582056 in server_free /root/lighttpd-1.4.67/src/server.c:360
+    #4 0x55555558a665 in main /root/lighttpd-1.4.67/src/server.c:2119
+    #5 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x603000000008 is located 8 bytes to the left of 24-byte region [0x603000000010,0x603000000028)
+freed by thread T0 here:
+    #0 0x7fffe234b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe1f2b2e8  (/lib/x86_64-linux-gnu/libc.so.6+0x902e8)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe234b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe1f2b1da  (/lib/x86_64-linux-gnu/libc.so.6+0x901da)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/array.c:137 in array_free_data
+Shadow bytes around the buggy address:
+  0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c067fff8000: fa[fa]fd fd fd fa fa fa fd fd fd fa fa fa 00 00
+  0x0c067fff8010: 00 fa fa fa fd fd fd fa fa fa 00 00 00 fa fa fa
+  0x0c067fff8020: fd fd fd fa fa fa fd fd fd fd fa fa fd fd fd fd
+  0x0c067fff8030: fa fa fd fd fd fd fa fa fd fd fd fa fa fa fd fd
+  0x0c067fff8040: fd fd fa fa fd fd fd fd fa fa fd fd fd fa fa fa
+  0x0c067fff8050: fd fd fd fd fa fa fd fd fd fd fa fa fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==7582==ABORTING

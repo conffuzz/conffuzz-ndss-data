@@ -1,0 +1,7 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poppler_document_new_from_file(0x6030004802b0 [size: 0x1], 0 [size: 0x1], 0x7fffffffe058 [size: 0x8]) @ 0x00007fffe16ad5f7
+~> change ret from 0x61d000709b40 to 0x61d000709953
+poppler_document_get_n_pages(0x61d000709953 [size: 0x40]) @ 0x00007fffe16ad687

@@ -1,0 +1,14 @@
+    #1 0xaddr in _gcry_private_malloc /root/libgcrypt-1.9.2/src/stdmem.c:113
+    #2 0xaddr in do_malloc /root/libgcrypt-1.9.2/src/global.c:943
+    #3 0xaddr in _gcry_malloc /root/libgcrypt-1.9.2/src/global.c:965
+    #4 0xaddr in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1019
+    #5 0xaddr in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #6 0xaddr in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #7 0xaddr in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #8 0xaddr in _gpgrt_calloc /root/libgpg-error-1.41/src/init.c:335
+    #9 0xaddr in initialize /root/libgpg-error-1.41/src/argparse.c:387
+    #10 0xaddr in arg_parse /root/libgpg-error-1.41/src/argparse.c:1948
+    #11 0xaddr in _gpgrt_argparse /root/libgpg-error-1.41/src/argparse.c:998
+    #12 0xaddr in gpgrt_argparse /root/libgpg-error-1.41/src/visibility.c:1157
+    #13 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2384
+    #14 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

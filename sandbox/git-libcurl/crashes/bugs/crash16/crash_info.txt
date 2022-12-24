@@ -1,0 +1,4 @@
+fault_location /root/git-2.35.1/git-http-push
+cap_read
+cap_write_arbitrary
+cap_read_arbitrary

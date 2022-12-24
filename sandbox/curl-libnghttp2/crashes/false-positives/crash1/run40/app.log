@@ -1,0 +1,44 @@
+[I] Recursing from nghttp2_nv into structure 
+[E] Not able to find type information for nghttp2_nv in DWARF
+[I] Recursing from nghttp2_data_provider into structure 
+[E] Not able to find type information for nghttp2_data_provider in DWARF
+[I] Recursing from nghttp2_mem into structure 
+[E] Not able to find type information for nghttp2_mem in DWARF
+[I] Recursing from nghttp2_priority_spec into structure 
+[E] Not able to find type information for nghttp2_priority_spec in DWARF
+[I] Recursing from nghttp2_origin_entry into structure 
+[E] Not able to find type information for nghttp2_origin_entry in DWARF
+[I] Recursing from nghttp2_vec into structure 
+[E] Not able to find type information for nghttp2_vec in DWARF
+[I] Recursing from nghttp2_settings_entry into structure 
+[E] Not able to find type information for nghttp2_settings_entry in DWARF
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[I] Attempting to instrument callback send_callback
+Got function argument numbers (5) from cache!
+[I] Attempting to instrument callback on_frame_recv
+[I] Recursing from nghttp2_frame into union 
+[E] Not able to find type information for nghttp2_frame in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_data_chunk_recv
+Got function argument numbers (6) from cache!
+[I] Attempting to instrument callback on_stream_close
+Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback on_begin_headers
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback on_header
+Got function argument numbers (8) from cache!
+[I] Attempting to instrument callback error_callback
+Got function argument numbers (4) from cache!
+send: reset nghttp2_active_outbound_item
+send: aob->item = (nil)
+recv: connection recv_window_size=0, local_window=33554432
+stream: adjusting kept idle streams num_idle_streams=0, max=100
+recv: [IB_READ_FIRST_SETTINGS]
+stream: adjusting kept idle streams num_idle_streams=0, max=100
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==21805==ERROR: AddressSanitizer: SEGV on unknown address 0x7fff00000000 (pc 0x7fff00000000 bp 0x61e000000c80 sp 0x7fffffffdd88 T0)
+==21805==The signal is caused by a READ memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

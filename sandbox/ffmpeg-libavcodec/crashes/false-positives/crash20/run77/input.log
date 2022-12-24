@@ -1,0 +1,35 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> change ret from 0x7fffe00e12c0 to 0x7fffe00e1333
+avcodec_version() @ 0x0000555555577440
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> change ret from 0 to 0xffffffff80000000
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x7fffe0500ac6
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+~> write 0xffffffff -> 0xfffffffffffffa at shared buffer 0x00006190000000c8
+~> write 0 -> 0x5 at shared buffer 0x00006190000002e5
+~> write 0x10000 -> 0 at shared buffer 0x00006190000001b2
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+~> change ret from 0x7fffe05302c0 to 0x7fffe053059a
+avcodec_open2(0x619000000080 [size: 0x398], 0x7fffe053059a [size: 0xe0], 0x603000001540 [size: 0x8]) @ 0x00007fffe0eba815
+~> write 0x60300000 -> 0x610000000249 at shared buffer 0x0000603000001542
+~> write 0x249 -> 0x6100fffff448 at shared buffer 0x0000603000001542
+~> write 0xfffff44815 -> 0x610000000000 at shared buffer 0x0000603000001541
+~> write 0 -> 0x61fffffffffb at shared buffer 0x0000603000001543
+~> write 0x10000753000 -> 0xe1 at shared buffer 0x00006190000000e7
+~> write 0x10000000000 -> 0 at shared buffer 0x0000619000000256
+~> change ret from 0xffffffea to 0xffffffffffffd8f0
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0ead509
+~> write 0x3600007fffff -> 0x7fff at shared buffer 0x0000619000000083
+~> write 0x7fffe0000000 -> 0xfffffffffffda4 at shared buffer 0x0000619000000358
+~> write 0x7fffe0000000 -> 0xfffffffffffd0a at shared buffer 0x000061900000009b
+~> write 0x75 -> 0xff000000000001 at shared buffer 0x0000619000000316
+~> change ret from 0 to 0xfd
+avcodec_close(0x619000000080 [size: 0x398]) @ 0x00007fffe0ead571

@@ -1,0 +1,58 @@
+=================================================================
+==7629==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e000000004 at pc 0x7fffe277f3de bp 0x7fffffffe030 sp 0x7fffffffe020
+WRITE of size 4 at 0x60e000000004 thread T0
+    #0 0x7fffe277f3dd in file_check_mem /root/file-5.41/src/funcs.c:617
+    #1 0x7fffe27502fd in match /root/file-5.41/src/softmagic.c:217
+    #2 0x7fffe274ff15 in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #3 0x7fffe277df67 in file_buffer /root/file-5.41/src/funcs.c:445
+    #4 0x7fffe273ba94 in file_or_fd /root/file-5.41/src/magic.c:518
+    #5 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #6 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #7 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #8 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #9 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #10 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+0x60e000000004 is located 60 bytes to the left of 160-byte region [0x60e000000040,0x60e0000000e0)
+allocated by thread T0 here:
+    #0 0x7fffe296c867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe273d68a in file_ms_alloc /root/file-5.41/src/apprentice.c:532
+    #2 0x7fffe273ae2c in magic_open /root/file-5.41/src/magic.c:265
+    #3 0x55555555a7b1 in load /root/file-5.41/src/file.c:474
+    #4 0x55555555a066 in main /root/file-5.41/src/file.c:403
+    #5 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/file-5.41/src/funcs.c:617 in file_check_mem
+Shadow bytes around the buggy address:
+  0x0c1c7fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c1c7fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c1c7fff8000:[fa]fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c1c7fff8010: 00 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa
+  0x0c1c7fff8020: fa fa fa fa fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff8030: fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa
+  0x0c1c7fff8040: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff8050: fd fd fd fd fa fa fa fa fa fa fa fa fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==7629==ABORTING

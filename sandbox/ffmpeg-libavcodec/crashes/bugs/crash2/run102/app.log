@@ -1,0 +1,71 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+=================================================================
+==78381==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6190000004a8 at pc 0x7fffe1310cd2 bp 0x7fffffffe0d0 sp 0x7fffffffe0c8
+WRITE of size 8 at 0x6190000004a8 thread T0
+    #0 0x7fffe1310cd1 in avpriv_set_pts_info libavformat/utils.c:1217
+    #1 0x7fffe130e3f3 in avformat_new_stream libavformat/utils.c:816
+    #2 0x7fffe0e2abfb in avi_read_header libavformat/avidec.c:587
+    #3 0x7fffe0ea238b in avformat_open_input libavformat/demux.c:297
+    #4 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #5 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #6 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #7 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #8 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+0x6190000004a8 is located 144 bytes to the right of 920-byte region [0x619000000080,0x619000000418)
+allocated by thread T0 here:
+    #0 0x7fffe266a3ac in __interceptor_posix_memalign ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:226
+    #1 0x7fffdda3b40d in av_malloc libavutil/mem.c:104
+    #2 0x7fffdf53e557 in avcodec_alloc_context3 libavcodec/options.c:143
+    #3 0x7fffe130e20e in avformat_new_stream libavformat/utils.c:800
+    #4 0x7fffe0e2abfb in avi_read_header libavformat/avidec.c:587
+    #5 0x7fffe0ea238b in avformat_open_input libavformat/demux.c:297
+    #6 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #7 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #8 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #9 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow libavformat/utils.c:1217 in avpriv_set_pts_info
+Shadow bytes around the buggy address:
+  0x0c327fff8040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fff8050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fff8060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fff8070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fff8080: 00 00 00 fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c327fff8090: fa fa fa fa fa[fa]fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff80a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff80b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff80c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff80d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fff80e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==78381==ABORTING

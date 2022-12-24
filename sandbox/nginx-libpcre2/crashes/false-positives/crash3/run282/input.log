@@ -1,0 +1,16 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcre2_general_context_create_8(0x5555556a69bb {*(size_t,*)*} [size: 0x1], 0x5555556a6a67 {void(*,*)*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00005555556a596e
+~> instrumenting 0x00005555556a69bb (ngx_regex_malloc, 0x2 arg(s))
+~> instrumenting 0x00005555556a6a67 (ngx_regex_free, 0x2 arg(s))
+~> detected cb call ngx_regex_malloc(0x18 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe118539b
+~> write {unknown} 0 -> 0 at shared buffer 0x00007fffffffd228
+pcre2_compile_context_create_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a5998
+~> detected cb call ngx_regex_malloc(0x48 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11852dd
+~> write {unknown} 0x5555556a6a -> 0xe0 at shared buffer 0x000060300002a829
+~> write {unknown} 0x6700 -> 0xd8f0000000000000 at shared buffer 0x000060300002a827
+~> write {unknown} 0xe0d8f0005555 -> 0x7 at shared buffer 0x000060300002a824
+~> change ret {pcre2_compile_context_8*} from 0x6070000003a0 to 0x11
+pcre2_general_context_free_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a59df

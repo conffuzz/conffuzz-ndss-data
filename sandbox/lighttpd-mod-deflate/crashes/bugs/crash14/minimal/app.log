@@ -1,0 +1,46 @@
+=================================================================
+==6403==ERROR: AddressSanitizer: global-buffer-overflow on address 0x5555556a1190 at pc 0x5555555ad839 bp 0x7fffffffe210 sp 0x7fffffffe200
+WRITE of size 4 at 0x5555556a1190 thread T0
+    #0 0x5555555ad838 in plugins_call_init /root/lighttpd-1.4.67/src/plugin.c:459
+    #1 0x555555586586 in server_main_setup /root/lighttpd-1.4.67/src/server.c:1290
+    #2 0x55555558a4b9 in main /root/lighttpd-1.4.67/src/server.c:2082
+    #3 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x5555556a1190 is located 16 bytes to the left of global variable 'log_tlast' defined in 'log.c:28:22' (0x5555556a11a0) of size 8
+0x5555556a1190 is located 40 bytes to the right of global variable 'yyTracePrompt' defined in './configparser.c:584:14' (0x5555556a1160) of size 8
+SUMMARY: AddressSanitizer: global-buffer-overflow /root/lighttpd-1.4.67/src/plugin.c:459 in plugins_call_init
+Shadow bytes around the buggy address:
+  0x0aab2aacc1e0: f9 f9 f9 f9 00 00 00 00 00 00 00 00 f9 f9 f9 f9
+  0x0aab2aacc1f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0aab2aacc200: 00 00 00 00 00 00 00 04 f9 f9 f9 f9 04 f9 f9 f9
+  0x0aab2aacc210: f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9 04 f9 f9 f9
+  0x0aab2aacc220: f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+=>0x0aab2aacc230: f9 f9[f9]f9 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+  0x0aab2aacc240: f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9
+  0x0aab2aacc250: f9 f9 f9 f9 00 00 00 f9 f9 f9 f9 f9 04 f9 f9 f9
+  0x0aab2aacc260: f9 f9 f9 f9 00 00 00 00 00 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2aacc270: 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+  0x0aab2aacc280: 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==6403==ABORTING

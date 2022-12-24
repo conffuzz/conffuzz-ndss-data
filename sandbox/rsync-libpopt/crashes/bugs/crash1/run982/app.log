@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==57627==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe233e5b2 bp 0x7fffffffcbc0 sp 0x7fffffffc318 T0)
+==57627==The signal is caused by a READ memory access.
+==57627==Hint: address points to the zero page.
+    #0 0x7fffe233e5b2 in __sanitizer::internal_strlen(char const*) ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167
+    #1 0x7fffe22d7bb5 in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:545
+    #2 0x7fffe22d9115 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1647
+    #3 0x7fffe22d9266 in __interceptor_snprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1718
+    #4 0x55555561242b in parse_arguments /root/rsync-3.2.7/options.c:1917
+    #5 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #6 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #7 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_libc.cpp:167 in __sanitizer::internal_strlen(char const*)
+==57627==ABORTING

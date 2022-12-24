@@ -1,0 +1,42 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+ngx_http_geoip2_create_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a7c26
+~> write {ngx_conf_t*} 0x4f43 -> 0 at shared buffer 0x00007fffffffe360
+ngx_http_geoip2_init_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60], 0x62900000f9e0 {void*} [size: 0x1]) @ 0x00005555556a8769
+ngx_http_geoip2_init(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a8c52
+ngx_http_geoip2_log_handler(0x62100001b950 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+ngx_http_geoip2_log_handler(0x62100001f550 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0x2 -> 0 at shared buffer 0x000062100001f912
+ngx_http_geoip2_log_handler(0x621000021d50 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0xb600000000000000 at shared buffer 0x0000621000021dd0
+ngx_http_geoip2_log_handler(0x621000024550 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x0000621000024851
+~> change ret {ngx_int_t} from 0 to 0xfffffffffffff448
+ngx_http_geoip2_log_handler(0x621000026d50 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0xffff000000000000 at shared buffer 0x0000621000026ea6
+~> write {ngx_http_request_t*} 0 -> 0xfffffffffda30000 at shared buffer 0x0000621000027195
+~> change ret {ngx_int_t} from 0 to 0x3da
+ngx_http_geoip2_log_handler(0x621000029550 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0xc00000 -> 0x400000000000 at shared buffer 0x00006210000295b6
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x0000621000029618
+ngx_http_geoip2_log_handler(0x62100002bd50 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0x62100002bd00 -> 0x80000 at shared buffer 0x000062100002bf98
+~> change ret {ngx_int_t} from 0 to 0xfffffffffffffffe
+ngx_http_geoip2_log_handler(0x62100002f950 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> change ret {ngx_int_t} from 0 to 0xfffffffffffffffc
+ngx_http_geoip2_log_handler(0x621000032150 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x00006210000322fb
+~> write {ngx_http_request_t*} 0x55556e -> 0x3cf0000000000 at shared buffer 0x000062100003261a
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x00006210000321f7
+ngx_http_geoip2_log_handler(0x621000034950 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x0000621000034db5
+~> change ret {ngx_int_t} from 0 to 0x3e8
+ngx_http_geoip2_log_handler(0x621000037150 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> change ret {ngx_int_t} from 0 to 0xfffffffffffffffd
+ngx_http_geoip2_log_handler(0x621000039950 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8
+~> write {ngx_http_request_t*} 0 -> 0xfffffffffc180000 at shared buffer 0x00006210000399a3
+~> write {ngx_http_request_t*} 0x960000 -> 0xfffc550000000000 at shared buffer 0x0000621000039b0e
+~> write {ngx_http_request_t*} 0 -> 0 at shared buffer 0x0000621000039e27
+~> change ret {ngx_int_t} from 0 to 0xfffffffffffffd66

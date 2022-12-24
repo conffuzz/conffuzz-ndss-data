@@ -1,0 +1,67 @@
+[I] Recursing from tifffield into _TIFFField
+[I] Recursing from tiffcodec into structure 
+[E] Not able to find type information for tiffcodec in DWARF
+[I] Recursing from tiffrgbaimage into _TIFFRGBAImage
+[I] Recursing from tiffcielabtorgb into structure 
+[E] Not able to find type information for tiffcielabtorgb in DWARF
+[I] Recursing from tiffycbcrtorgb into structure 
+[E] Not able to find type information for tiffycbcrtorgb in DWARF
+[I] Recursing from tifffieldarray into _TIFFFieldArray
+[I] Recursing from uint16_t into __uint16_t
+[I] Recursing from __uint16_t into short unsigned int
+[E] Not able to find type information for uint16_t in DWARF
+[I] Recursing from tifffieldinfo into structure 
+[E] Not able to find type information for tifffieldinfo in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from tiffdisplay into structure 
+[E] Not able to find type information for tiffdisplay in DWARF
+[I] Attempting to instrument callback TIFFErrors
+Got function argument numbers (3) from cache!
+Tried and failed to write to 0x00007fffb9b6ed80 (1 bytes)
+[I] Attempting to instrument callback TIFFWarnings
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFTagExtender
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFReadBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFWriteBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFSeekBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFCloseBlob
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFGetBlobSize
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFMapBlob
+[E] Not able to find type information for tdata_t in DWARF
+[I] Recursing from toff_t into uint64_t
+[I] Recursing from uint64_t into __uint64_t
+[I] Recursing from __uint64_t into long unsigned int
+[E] Not able to find type information for toff_t in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFUnmapBlob
+Got function argument numbers (3) from cache!
+Tried and failed to write to 0x00007fffb9b9fd80 (1 bytes)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==133342==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffe28a494f bp 0x7fffffff55d0 sp 0x7fffffff4d30 T0)
+    #0 0x7fffe28a494f in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:541
+    #1 0x7fffe28a6425 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1668
+    #2 0x7fffb9b6db46 in TIFFErrors coders/tiff.c:588
+    #3 0x7fffb9ae35e7 in TIFFErrorExt /root/tiff-4.3.0/libtiff/tif_error.c:70
+    #4 0x7fffb9ac7dcd in OkToChangeTag /root/tiff-4.3.0/libtiff/tif_dir.c:800
+    #5 0x7fffb9ac80ed in TIFFVSetField /root/tiff-4.3.0/libtiff/tif_dir.c:889
+    #6 0x7fffb9ac7ee3 in TIFFSetField /root/tiff-4.3.0/libtiff/tif_dir.c:834
+    #7 0x7fffb9b7fa18 in WriteTIFFImage coders/tiff.c:3449
+    #8 0x7fffe212566f in WriteImage MagickCore/constitute.c:1337
+    #9 0x7fffe2126745 in WriteImages MagickCore/constitute.c:1558
+    #10 0x7fffe1be9121 in ConvertImageCommand MagickWand/convert.c:3330
+    #11 0x7fffe1d0a1f6 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #12 0x555555556823 in MagickMain utilities/magick.c:150
+    #13 0x555555556aba in main utilities/magick.c:182
+    #14 0x7fffe11dd7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #15 0x555555556239 in _start (/usr/local/bin/magick+0x2239)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:541 in printf_common
+==133342==ABORTING

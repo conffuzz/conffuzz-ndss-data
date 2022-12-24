@@ -1,0 +1,9 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_pattern_info("/", PCRE2_INFO_CAPTURECOUNT) failed: -173 in /root/nginx-1.21.6/conf/nginx.conf:50
+=================================================================
+==31498==ERROR: AddressSanitizer: requested allocation size 0x6070000003a0 (0x6070000013a0 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcre2_general_context_create_8(0x555555b5dd4e {*(size_t,*)*} [size: 0x1], 0x555555b5dd78 {void(*,*)*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x0000555555b5df53
+~> instrumenting 0x0000555555b5dd4e (pcre2_malloc, 0x2 arg(s))
+~> instrumenting 0x0000555555b5dd78 (pcre2_free, 0x2 arg(s))
+~> detected cb call pcre2_malloc(0x18 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffde5a439b
+pcre2_compile_8(0x6020000002b0 {PCRE2_SPTR8} [size: 0], 0x3 {size_t} [size: 0], 0x400 {uint32_t} [size: 0], 0x7fffffffc2c0 {int*} [size: 0x4], 0x7fffffffc2d0 {size_t*} [size: 0x8], 0 {pcre2_compile_context_8*} [size: 0x48]) @ 0x0000555555b5e336
+pcre2_match_data_create_from_pattern_8(0x60e0000002e0 {pcre2_code_8*} [size: 0x88], 0x603000000ac0 {pcre2_general_context_8*} [size: 0x18]) @ 0x0000555555b5e3cb
+~> detected cb call pcre2_malloc(0x60 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffde5a42dd
+pcre2_config_8(0x1 {uint32_t} [size: 0], 0x60e000000298 {void*} [size: 0x1]) @ 0x0000555555b5e4b2
+~> change ret {int} from 0 to 0xfffffffffffffd61

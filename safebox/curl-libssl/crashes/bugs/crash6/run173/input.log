@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x7640 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2211c78
+TLS_client_method() @ 0x00007fffe221753a
+SSL_CTX_new(0x7fffe2045f80 [size: 0xe0]) @ 0x00007fffe221763e
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x21 [size: 0], 0x10 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2217716
+~> change arg #0x2 from 0x21 to 0x5
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x7c [size: 0], 0 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2215684
+~> change arg #0x1 from 0x619000000f80 to 0x619000000d3f
+~> change arg #0x3 from 0 to 0x87
+~> change arg #0x4 from 0 to 0xfffffffffffffff7

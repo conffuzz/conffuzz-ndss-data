@@ -1,0 +1,43 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+nghttp2_version(0 [size: 0]) @ 0x00007fffe22104f9
+nghttp2_session_callbacks_new(0x7fffffffde20 [size: 0x8]) @ 0x00007fffe214f16b
+nghttp2_session_callbacks_set_send_callback(0x610000002640 [size: 0xb8], 0x7fffe214af05 [size: 0]) @ 0x00007fffe214f1d9
+~> instrumenting 0x00007fffe214af05 (send_callback, 0x5 arg(s))
+~> write 0 -> 0x610000000000 at shared buffer 0x00006100000026e9
+~> change ret from 0x610000002640 to 0x61000000271c
+nghttp2_session_callbacks_set_on_frame_recv_callback(0x610000002640 [size: 0xb8], 0x7fffe214c9ab [size: 0]) @ 0x00007fffe214f210
+~> instrumenting 0x00007fffe214c9ab (on_frame_recv, 0x3 arg(s))
+~> write 0 -> 0x61000000007f at shared buffer 0x00006100000026d5
+~> change ret from 0x610000002640 to 0x7ffffffde190
+nghttp2_session_callbacks_set_on_data_chunk_recv_callback(0x610000002640 [size: 0xb8], 0x7fffe214d260 [size: 0]) @ 0x00007fffe214f247
+~> instrumenting 0x00007fffe214d260 (on_data_chunk_recv, 0x6 arg(s))
+~> write 0 -> 0x610000000000 at shared buffer 0x00006100000026cd
+~> write 0x6000 -> 0x610000000000 at shared buffer 0x000061000000265f
+~> change ret from 0x610000002640 to 0x6100000023de
+nghttp2_session_callbacks_set_on_stream_close_callback(0x610000002640 [size: 0xb8], 0x7fffe214d5f6 [size: 0]) @ 0x00007fffe214f27e
+~> instrumenting 0x00007fffe214d5f6 (on_stream_close, 0x4 arg(s))
+~> change ret from 0x610000002640 to 0xd
+nghttp2_session_callbacks_set_on_begin_headers_callback(0x610000002640 [size: 0xb8], 0x7fffe214d84f [size: 0]) @ 0x00007fffe214f2b5
+~> instrumenting 0x00007fffe214d84f (on_begin_headers, 0x3 arg(s))
+~> write 0 -> 0x6100000002c5 at shared buffer 0x00006100000026f1
+~> write 0 -> 0x6100fffffe97 at shared buffer 0x000061000000264a
+~> write 0 -> 0x6100ffff034c at shared buffer 0x00006100000026f6
+~> change ret from 0x610000002640 to 0x7ffffffde190
+nghttp2_session_callbacks_set_on_header_callback(0x610000002640 [size: 0xb8], 0x7fffe214da61 [size: 0]) @ 0x00007fffe214f2ec
+~> instrumenting 0x00007fffe214da61 (on_header, 0x8 arg(s))
+~> write 0 -> 0x61000000fecc at shared buffer 0x000061000000269a
+~> write 0 -> 0x610000000000 at shared buffer 0x000061000000265c
+~> write 0 -> 0x6100000003e8 at shared buffer 0x000061000000269e
+~> write 0x7fffe214c9ab00 -> 0xfffffffffffff6 at shared buffer 0x000061000000264f
+nghttp2_session_callbacks_set_error_callback(0x610000002640 [size: 0xb8], 0x7fffe214e6f6 [size: 0]) @ 0x00007fffe214f323
+~> instrumenting 0x00007fffe214e6f6 (error_callback, 0x4 arg(s))
+~> write 0 -> 0x1 at shared buffer 0x00006100000026c4
+nghttp2_session_client_new(0x61b000000c98 [size: 0x8], 0x610000002640 [size: 0xb8], 0x61b000000788 [size: 0x1]) @ 0x00007fffe214f368
+~> detected cb call send_callback(0x61e000000c80 [size: 0x9d0], 0x62900002320a [size: 0x1], 0x18 [size: 0], 0 [size: 0], 0x61b000000788 [size: 0x1]) @ 0x00007fffe18cd14a
+~> change arg #0x1 from 0x61e000000c80 to 0x7ffffffde190
+~> change arg #0x3 from 0x18 to 0x2
+~> change arg #0x4 from 0 to 0x11b
+~> change arg #0x5 from 0x61b000000788 to 0x61b0000009d2

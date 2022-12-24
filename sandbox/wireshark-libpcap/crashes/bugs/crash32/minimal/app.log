@@ -1,0 +1,73 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+=================================================================
+==109414==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x618000000513 at pc 0x7fffe26d2ab7 bp 0x7fffffffba50 sp 0x7fffffffb200
+READ of size 1 at 0x618000000513 thread T0
+    #0 0x7fffe26d2ab6 in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553
+    #1 0x7fffe26d4875 in __interceptor___vsnprintf_chk ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1673
+    #2 0x7fffe24a6a3e in g_snprintf (/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xa2a3e)
+    #3 0x5555555711e6 in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3816
+    #4 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #5 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #6 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+0x618000000513 is located 379 bytes to the right of 792-byte region [0x618000000080,0x618000000398)
+allocated by thread T0 here:
+    #0 0x7fffe2725987 in __interceptor_calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x7fffe258c669 in pcap_alloc_pcap_t pcap.c:2449
+    #2 0x7fffe258c713 in pcap_create_common pcap.c:2488
+    #3 0x7fffe258385e in pcap_create_interface pcap-linux.c:344
+    #4 0x7fffe258c53a in pcap_create pcap.c:2364
+    #5 0x55555558674f in open_capture_device_pcap_create /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1280
+    #6 0x555555583d3f in open_capture_device_local /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:82
+    #7 0x555555587514 in open_capture_device /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1607
+    #8 0x55555556b980 in capture_loop_open_input /root/wireshark-3.4.12/dumpcap.c:2703
+    #9 0x555555570f5a in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3793
+    #10 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #11 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553 in printf_common
+Shadow bytes around the buggy address:
+  0x0c307fff8050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c307fff8060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c307fff8070: 00 00 00 fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff8080: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff8090: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c307fff80a0: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff80b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff80c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff80d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff80e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c307fff80f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==109414==ABORTING

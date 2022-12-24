@@ -1,0 +1,17 @@
+[I] Attempting to instrument callback pcre2_malloc
+[I] Acquired data about pcre2_malloc, recursing.
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback pcre2_free
+[I] Acquired data about pcre2_free, recursing.
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==426==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7fffffffc210 sp 0x7fffffffc1e8 T0)
+==426==Hint: pc points to the zero page.
+==426==The signal is caused by a READ memory access.
+==426==Hint: address points to the zero page.
+    #0 0x0  (<unknown module>)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (<unknown module>) 
+==426==ABORTING

@@ -1,0 +1,121 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+curl_global_init(0x3 {longint} [size: 0]) @ 0x00005555556207c2
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555addfe0 {char*} [size: 0x1]) @ 0x00005555556208bd
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ade020 {char*} [size: 0x1]) @ 0x00005555556208de
+curl_multi_init() @ 0x000055555562091f
+curl_easy_init() @ 0x000055555561f01e
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x40 {CURLoption} [size: 0]) @ 0x000055555561f0d5
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x51 {CURLoption} [size: 0]) @ 0x000055555561f100
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x33 {CURLoption} [size: 0]) @ 0x000055555561f1ad
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6b {CURLoption} [size: 0]) @ 0x000055555561f1da
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001947
+~> write {CURL*} 0 -> 0x700 at shared buffer 0x0000622000001bf8
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000002288
+~> change ret {CURLcode} from 0 to 0xfffffffffffffffd
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x44 {CURLoption} [size: 0]) @ 0x000055555561f8b5
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000002950
+~> write {CURL*} 0 -> 0x4c at shared buffer 0x00006220000028c5
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xa1 {CURLoption} [size: 0]) @ 0x000055555561f8e0
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb6 {CURLoption} [size: 0]) @ 0x000055555561f913
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001a46
+~> change ret {CURLcode} from 0 to 0x7
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xb5 {CURLoption} [size: 0]) @ 0x000055555561f946
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000002694
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000001ff7
+~> change ret {CURLcode} from 0 to 0xfffffffffffffcf4
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x2722 {CURLoption} [size: 0]) @ 0x000055555561f9ef
+~> write {CURL*} 0 -> 0xffffffff80000000 at shared buffer 0x0000622000002c86
+~> write {CURL*} 0 -> 0x7fffffffffffffff at shared buffer 0x0000622000001c68
+~> write {CURL*} 0 -> 0xff9c000000000000 at shared buffer 0x0000622000001e26
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0x6f {CURLoption} [size: 0]) @ 0x000055555561d919
+~> write {CURL*} 0 -> 0 at shared buffer 0x000062200000233d
+~> write {CURL*} 0 -> 0xfffffd1000000000 at shared buffer 0x0000622000001a15
+~> write {CURL*} 0 -> 0x7fff00000000 at shared buffer 0x0000622000002d5f
+curl_easy_setopt(0x622000001908 {CURL*} [size: 0x1500], 0xd5 {CURLoption} [size: 0]) @ 0x000055555561da8e
+~> write {CURL*} 0 -> 0x10000000000 at shared buffer 0x0000622000001e3c
+~> change ret {CURLcode} from 0 to 0x121
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ae1520 {char*} [size: 0x1]) @ 0x0000555555633765
+curl_slist_append(0x60300002b278 {curl_slist*} [size: 0x10], 0x555555ae0d60 {char*} [size: 0x1]) @ 0x0000555555633785
+~> change ret {curl_slist*} from 0x60300002b278 to 0x7ffffffde190
+curl_easy_duphandle(0x622000001908 {Curl_easy*} [size: 0x1500]) @ 0x0000555555621273
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x272f {CURLoption} [size: 0]) @ 0x0000555555621434
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2727 {CURLoption} [size: 0]) @ 0x00005555556214e8
+~> write {CURL*} 0 -> 0 at shared buffer 0x000062200000315c
+~> write {CURL*} 0 -> 0x600 at shared buffer 0x00006220000035d9
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x271a {CURLoption} [size: 0]) @ 0x000055555562153c
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2734 {CURLoption} [size: 0]) @ 0x000055555562158e
+~> write {CURL*} 0 -> 0x16600 at shared buffer 0x00006220000041eb
+~> change ret {CURLcode} from 0 to 0x2cf
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x4e2c {CURLoption} [size: 0]) @ 0x00005555556215e0
+~> write {CURL*} 0 -> 0xe20000000000 at shared buffer 0x0000622000003ddd
+~> write {CURL*} 0 -> 0 at shared buffer 0x00006220000035e7
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003f9d
+~> change ret {CURLcode} from 0 to 0xfffffffffffff448
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x4e2b {CURLoption} [size: 0]) @ 0x0000555555621632
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x271f {CURLoption} [size: 0]) @ 0x0000555555621684
+~> write {CURL*} 0 -> 0xffffffff at shared buffer 0x0000622000003b5b
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2e {CURLoption} [size: 0]) @ 0x00005555556216d6
+~> write {CURL*} 0 -> 0xfffffffffffff448 at shared buffer 0x00006220000041c2
+~> change ret {CURLcode} from 0 to 0xfffffffffffffebc
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x50 {CURLoption} [size: 0]) @ 0x0000555555621728
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2d {CURLoption} [size: 0]) @ 0x000055555562177a
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003b3c
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2717 {CURLoption} [size: 0]) @ 0x00005555556217cc
+~> write {CURL*} 0 -> 0x2710000000 at shared buffer 0x0000622000003498
+~> write {CURL*} 0 -> 0xfffffffffffff700 at shared buffer 0x00006220000044ed
+~> write {CURL*} 0 -> 0x2ad00000000 at shared buffer 0x0000622000003d45
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x34 {CURLoption} [size: 0]) @ 0x000055555562187d
+~> write {CURL*} 0 -> 0xfffffffffffd7500 at shared buffer 0x0000622000003ffd
+~> write {CURL*} 0 -> 0 at shared buffer 0x000062200000441f
+~> write {CURL*} 0 -> 0xfffffffff9000000 at shared buffer 0x00006220000035d4
+~> change ret {CURLcode} from 0 to 0xfffffffffffffee8
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x71 {CURLoption} [size: 0]) @ 0x00005555556218d2
+~> write {CURL*} 0 -> 0x3e5000000000000 at shared buffer 0x0000622000003209
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x6b {CURLoption} [size: 0]) @ 0x0000555555621927
+~> write {CURL*} 0 -> 0x29c0000000000 at shared buffer 0x000062200000410a
+~> write {CURL*} 0 -> 0xa4000000000000 at shared buffer 0x00006220000031af
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000004221
+~> change ret {CURLcode} from 0 to 0x7fff
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x36 {CURLoption} [size: 0]) @ 0x000055555562b49a
+~> write {CURL*} 0 -> 0x40000 at shared buffer 0x000062200000425f
+~> write {CURL*} 0 -> 0xffffffff000000 at shared buffer 0x0000622000003ff0
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003767
+~> change ret {CURLcode} from 0 to 0xfffffffffffffff7
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2712 {CURLoption} [size: 0]) @ 0x000055555562b4bb
+~> change ret {CURLcode} from 0 to 0x31a
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2719 {CURLoption} [size: 0]) @ 0x000055555562b4dc
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0xe {CURLoption} [size: 0]) @ 0x000055555562b526
+~> change ret {CURLcode} from 0 to 0xffffffffffffff65
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x4e2c {CURLoption} [size: 0]) @ 0x000055555562b54a
+~> write {CURL*} 0 -> 0 at shared buffer 0x000062200000360e
+~> write {CURL*} 0 -> 0x287 at shared buffer 0x000062200000373f
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x4ea2 {CURLoption} [size: 0]) @ 0x000055555562b56e
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2793 {CURLoption} [size: 0]) @ 0x000055555562b58f
+~> write {CURL*} 0 -> 0xfffffffea2000000 at shared buffer 0x00006220000036cd
+~> write {CURL*} 0 -> 0xfffffe1300000000 at shared buffer 0x0000622000003908
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003c5e
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x4e2b {CURLoption} [size: 0]) @ 0x000055555562b5b0
+~> write {CURL*} 0 -> 0xfffffffffffe0000 at shared buffer 0x00006220000034e2
+~> write {CURL*} 0 -> 0 at shared buffer 0x00006220000045ee
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2c {CURLoption} [size: 0]) @ 0x000055555562b5d2
+~> write {CURL*} 0 -> 0 at shared buffer 0x00006220000037bf
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2734 {CURLoption} [size: 0]) @ 0x000055555562b5f3
+~> change ret {CURLcode} from 0 to 0x3e8
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2e {CURLoption} [size: 0]) @ 0x000055555562b615
+~> write {CURL*} 0 -> 0xfffffffff6000000 at shared buffer 0x0000622000003df1
+~> write {CURL*} 0 -> 0xff000000000000 at shared buffer 0x00006220000039e8
+~> change ret {CURLcode} from 0 to 0x7fffffffffffffff
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2727 {CURLoption} [size: 0]) @ 0x00005555556338a1
+~> change ret {CURLcode} from 0 to 0xffffffffffffd8f0
+curl_easy_setopt(0x622000003108 {CURL*} [size: 0x1500], 0x2711 {CURLoption} [size: 0]) @ 0x00005555556338f5
+curl_multi_add_handle(0x614000000048 {CURLM*} [size: 0x190], 0x622000003108 {CURL*} [size: 0x1500]) @ 0x0000555555621aa4
+~> write {CURLM*} 0x6220 -> 0xffffd8f000000000 at shared buffer 0x0000614000000184
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003249
+~> write {CURL*} 0 -> 0x500 at shared buffer 0x000062200000388e
+~> write {CURL*} 0 -> 0 at shared buffer 0x0000622000003d4f
+~> change ret {CURLMcode} from 0 to 0xfffffffffffffffc
+curl_multi_strerror(0xfffffffc {CURLMcode} [size: 0]) @ 0x0000555555621acd
+~> change ret {char*} from 0x7fffe018a8a0 to 0x11

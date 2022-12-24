@@ -1,0 +1,10 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==32922==ERROR: AddressSanitizer: SEGV on unknown address 0x7fffe0cc0a40 (pc 0x7fffe0cc0a40 bp 0x7fffffffdee0 sp 0x7fffffffdec0 T0)
+==32922==The signal is caused by a READ memory access.
+==32922==Hint: PC is at a non-executable region. Maybe a wild jump?
+    #0 0x7fffe0cc0a40  (/usr/local/lib/libcrypto.so.1.1+0x579a40)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/lib/libcrypto.so.1.1+0x579a40) 
+==32922==ABORTING

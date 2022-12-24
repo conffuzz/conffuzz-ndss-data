@@ -1,0 +1,6 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==5784==ERROR: AddressSanitizer: SEGV on unknown address 0x5611b1ed2e90 (pc 0x5611b1c90fe4 bp 0x000000000000 sp 0x7ffc1fd06800 T0)
+==5784==The signal is caused by a WRITE memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

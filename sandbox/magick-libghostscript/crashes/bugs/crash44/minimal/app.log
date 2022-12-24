@@ -1,0 +1,44 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+=================================================================
+==17564==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffed26c in thread T0
+    #0 0x7fffe2958c18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe2323e64 in ResizeMagickMemory MagickCore/memory.c:1405
+    #2 0x7fffe2324026 in ResizeQuantumMemory MagickCore/memory.c:1470
+    #3 0x7fffd56869cc in GhostscriptDelegateMessage coders/ghostscript-private.h:38
+    #4 0x7fffd3cd538a in errwrite base/gslibctx.c:534
+    #5 0x7fffd3cd521d in outwrite base/gslibctx.c:494
+    #6 0x7fffd3ed9311 in s_stdout_write_process psi/ziodevsc.c:198
+    #7 0x7fffd34ab8b2 in swritebuf base/stream.c:929
+    #8 0x7fffd34ab2b2 in s_process_write_buf base/stream.c:780
+    #9 0x7fffd34aa369 in s_std_write_flush base/stream.c:276
+    #10 0x7fffd3ed1e31 in zflush psi/zfileio.c:488
+    #11 0x7fffd3ea8362 in run_string psi/imainarg.c:1170
+    #12 0x7fffd3ea81ce in runarg psi/imainarg.c:1125
+    #13 0x7fffd3ea7dc0 in argproc psi/imainarg.c:1047
+    #14 0x7fffd3ea6588 in swproc psi/imainarg.c:580
+    #15 0x7fffd3ea5348 in gs_main_init_with_args01 psi/imainarg.c:224
+    #16 0x7fffd3ea5669 in gs_main_init_with_args psi/imainarg.c:289
+    #17 0x7fffd3eaa910 in psapi_init_with_args psi/psapi.c:280
+    #18 0x7fffd3fe59cf in gsapi_init_with_args psi/iapi.c:239
+    #19 0x7fffd568748c in InvokeGhostscriptDelegate coders/ghostscript-private.h:163
+    #20 0x7fffd568c2fb in ReadPSImage coders/ps.c:820
+    #21 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #22 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #23 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #24 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #25 0x555555556a32 in MagickMain utilities/magick.c:150
+    #26 0x555555556ce5 in main utilities/magick.c:182
+    #27 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #28 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #29 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+Address 0x7ffffffed26c is located in stack of thread T0 at offset 5660 in frame
+    #0 0x7fffe2323e95 in ResizeQuantumMemory MagickCore/memory.c:1459
+
+  This frame has 1 object(s):
+    [32, 40) 'size' (line 1461) <== Memory access at offset 5660 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164 in __interceptor_realloc
+==17564==ABORTING

@@ -1,0 +1,8 @@
+    #9 0xaddr in avcodec_parameters_to_context libavcodec/codec_par.c:197
+    #10 0xaddr in update_stream_avctx libavformat/demux.c:198
+    #11 0xaddr in avformat_open_input libavformat/demux.c:333
+    #12 0xaddr in open_input_file fftools/ffprobe.c:3143
+    #13 0xaddr in probe_file fftools/ffprobe.c:3266
+    #14 0xaddr in main fftools/ffprobe.c:3993
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/root/ffmpeg-5.0/ffprobe+0xaddr)

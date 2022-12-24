@@ -1,0 +1,20 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0x6020000001b0 -> 0xffffffffffff80 at shared buffer 0x0000604000000298
+~> write 0x602000160000 -> 0xffffffff000000 at shared buffer 0x00006040000002ae
+~> write 0x602000000000 -> 0xfffffffffffffe at shared buffer 0x00006040000002a2
+~> write 0x602000001780 -> 0xfffffffffffcc9 at shared buffer 0x0000604000000292
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x602000001765 -> 0xff at shared buffer 0x0000602000000430
+~> write 0x6020000017ff -> 0xf0 at shared buffer 0x0000602000000430
+~> write 0x6020000017f0 -> 0 at shared buffer 0x0000602000000430
+~> write 0x602000001700 -> 0 at shared buffer 0x00007fffffffc250
+~> write 0x602000001700 -> 0xa6 at shared buffer 0x00007fffffffc250
+~> change ret from 0x618000000080 to 0x555555562190
+pcap_set_promisc(0x555555562190 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> instrumenting 0x0000555555562190 (__asan_report_load8@plt, 0 arg(s))

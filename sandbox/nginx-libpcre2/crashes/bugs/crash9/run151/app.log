@@ -1,0 +1,35 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==8392==ERROR: AddressSanitizer: SEGV on unknown address 0x555555553ffa (pc 0x7fffe12efb46 bp 0x55555555400a sp 0x7fffffffc640 T0)
+==8392==The signal is caused by a WRITE memory access.
+    #0 0x7fffe12efb46 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe12efb46 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe12efb46 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe12efb46 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe137b4d4 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x5555556a6a92 in ngx_regex_free src/core/ngx_regex.c:519
+    #6 0x7fffe11857d7 in pcre2_general_context_free_8 src/pcre2_context.c:285
+    #7 0x5555556a59de in ngx_regex_compile src/core/ngx_regex.c:152
+    #8 0x55555570d802 in ngx_http_regex_compile src/http/ngx_http_variables.c:2494
+    #9 0x5555556cc213 in ngx_http_core_server_name src/http/ngx_http_core_module.c:4294
+    #10 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #11 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #12 0x5555556c01db in ngx_http_core_server src/http/ngx_http_core_module.c:2892
+    #13 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #14 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #15 0x5555556a83c2 in ngx_http_block src/http/ngx_http.c:239
+    #16 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #17 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #18 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #19 0x5555555c76b0 in main src/core/nginx.c:292
+    #20 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #21 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #22 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==8392==ABORTING

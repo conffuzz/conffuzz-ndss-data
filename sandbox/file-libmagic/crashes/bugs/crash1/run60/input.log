@@ -1,0 +1,14 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+magic_version() @ 0x0000555555559ef9
+magic_open(0 {int} [size: 0]) @ 0x000055555555a7b2
+~> change ret {magic_set*} from 0x612000000040 to 0x6120000000b9
+magic_load(0x6120000000b9 {magic_set*} [size: 0x128], 0 {char*} [size: 0x1]) @ 0x000055555555a7ee
+~> write {magic_set*} 0 -> 0xffffffff at shared buffer 0x0000612000000114
+~> write {magic_set*} 0 -> 0x1f3 at shared buffer 0x00006120000000dc
+~> write {magic_set*} 0 -> 0x64000000 at shared buffer 0x0000612000000120
+~> change ret {int} from 0 to 0x8000000000000000
+magic_error(0x6120000000b9 {magic_set*} [size: 0x128]) @ 0x000055555555a835
+~> change ret {char*} from 0 to 0x7

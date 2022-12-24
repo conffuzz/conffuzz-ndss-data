@@ -1,0 +1,12 @@
+    #0 0xaddr in array_get_index /root/lighttpd-1.4.67/src/array.c:271
+    #1 0xaddr in array_get_buf_ptr /root/lighttpd-1.4.67/src/array.c:418
+    #2 0xaddr in array_set_key_value /root/lighttpd-1.4.67/src/array.h:123
+    #3 0xaddr in config_plugin_values_init /root/lighttpd-1.4.67/src/configfile-glue.c:322
+    #4 0xaddr in mod_staticfile_set_defaults /root/lighttpd-1.4.67/src/mod_staticfile.c:86
+    #5 0xaddr in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #6 0xaddr in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #7 0xaddr in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #8 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2082
+    #9 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

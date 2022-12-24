@@ -1,0 +1,73 @@
+xmlTextWriterWriteVFormatAttributeNS xmlTextWriterWriteVFormatAttributeNS 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+xmlTextWriterWriteDTD xmlTextWriterWriteDTD 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteFormatString xmlTextWriterWriteFormatString 2 int xmlTextWriterPtr char*
+xmlTextWriterEndElement xmlTextWriterEndElement 1 int xmlTextWriterPtr
+xmlTextWriterEndCDATA xmlTextWriterEndCDATA 1 int xmlTextWriterPtr
+xmlTextWriterWriteVFormatElementNS xmlTextWriterWriteVFormatElementNS 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+xmlTextWriterStartPI xmlTextWriterStartPI 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteString xmlTextWriterWriteString 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteAttribute xmlTextWriterWriteAttribute 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlTextWriterEndDocument xmlTextWriterEndDocument 1 int xmlTextWriterPtr
+xmlTextWriterStartAttributeNS xmlTextWriterStartAttributeNS 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlTextWriterStartDTD xmlTextWriterStartDTD 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteFormatDTDAttlist xmlTextWriterWriteFormatDTDAttlist 3 int xmlTextWriterPtr xmlChar* char*
+xmlTextWriterWriteFormatDTDInternalEntity xmlTextWriterWriteFormatDTDInternalEntity 4 int xmlTextWriterPtr int xmlChar* char*
+xmlTextWriterWriteBinHex xmlTextWriterWriteBinHex 4 int xmlTextWriterPtr char* int int
+xmlTextWriterWriteVFormatDTDAttlist xmlTextWriterWriteVFormatDTDAttlist 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteElement xmlTextWriterWriteElement 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlTextWriterFlush xmlTextWriterFlush 1 int xmlTextWriterPtr
+xmlTextWriterWriteDTDElement xmlTextWriterWriteDTDElement 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlTextWriterWriteFormatElementNS xmlTextWriterWriteFormatElementNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlTextWriterEndDTDElement xmlTextWriterEndDTDElement 1 int xmlTextWriterPtr
+xmlTextWriterStartDTDElement xmlTextWriterStartDTDElement 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteFormatElement xmlTextWriterWriteFormatElement 3 int xmlTextWriterPtr xmlChar* char*
+xmlTextWriterWriteRaw xmlTextWriterWriteRaw 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteVFormatCDATA xmlTextWriterWriteVFormatCDATA 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlTextWriterWriteVFormatPI xmlTextWriterWriteVFormatPI 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteVFormatString xmlTextWriterWriteVFormatString 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlTextWriterEndDTDEntity xmlTextWriterEndDTDEntity 1 int xmlTextWriterPtr
+xmlTextWriterEndDTD xmlTextWriterEndDTD 1 int xmlTextWriterPtr
+xmlTextWriterWriteFormatDTD xmlTextWriterWriteFormatDTD 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlTextWriterWritePI xmlTextWriterWritePI 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlTextWriterStartDTDEntity xmlTextWriterStartDTDEntity 3 int xmlTextWriterPtr int xmlChar*
+xmlTextWriterStartElementNS xmlTextWriterStartElementNS 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteVFormatElement xmlTextWriterWriteVFormatElement 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteDTDAttlist xmlTextWriterWriteDTDAttlist 3 int xmlTextWriterPtr xmlChar* xmlChar*
+xmlTextWriterWriteBase64 xmlTextWriterWriteBase64 4 int xmlTextWriterPtr char* int int
+xmlTextWriterWriteFormatAttributeNS xmlTextWriterWriteFormatAttributeNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char*
+xmlTextWriterSetQuoteChar xmlTextWriterSetQuoteChar 2 int xmlTextWriterPtr xmlChar
+xmlTextWriterStartCDATA xmlTextWriterStartCDATA 1 int xmlTextWriterPtr
+xmlTextWriterWriteVFormatDTDInternalEntity xmlTextWriterWriteVFormatDTDInternalEntity 5 int xmlTextWriterPtr int xmlChar* char* __va_list_tag*
+xmlTextWriterSetIndent xmlTextWriterSetIndent 2 int xmlTextWriterPtr int
+xmlTextWriterEndPI xmlTextWriterEndPI 1 int xmlTextWriterPtr
+xmlTextWriterFullEndElement xmlTextWriterFullEndElement 1 int xmlTextWriterPtr
+xmlTextWriterStartDocument xmlTextWriterStartDocument 4 int xmlTextWriterPtr char* char* char*
+xmlTextWriterStartComment xmlTextWriterStartComment 1 int xmlTextWriterPtr
+xmlTextWriterSetIndentString xmlTextWriterSetIndentString 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteAttributeNS xmlTextWriterWriteAttributeNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteFormatComment xmlTextWriterWriteFormatComment 2 int xmlTextWriterPtr char*
+xmlTextWriterWriteFormatRaw xmlTextWriterWriteFormatRaw 2 int xmlTextWriterPtr char*
+xmlTextWriterWriteFormatDTDElement xmlTextWriterWriteFormatDTDElement 3 int xmlTextWriterPtr xmlChar* char*
+xmlTextWriterWriteDTDEntity xmlTextWriterWriteDTDEntity 7 int xmlTextWriterPtr int xmlChar* xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteVFormatDTDElement xmlTextWriterWriteVFormatDTDElement 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteVFormatDTD xmlTextWriterWriteVFormatDTD 6 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* char* __va_list_tag*
+xmlTextWriterWriteElementNS xmlTextWriterWriteElementNS 5 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextWriterEndComment xmlTextWriterEndComment 1 int xmlTextWriterPtr
+xmlTextWriterWriteFormatPI xmlTextWriterWriteFormatPI 3 int xmlTextWriterPtr xmlChar* char*
+xmlTextWriterWriteFormatAttribute xmlTextWriterWriteFormatAttribute 3 int xmlTextWriterPtr xmlChar* char*
+xmlTextWriterWriteVFormatComment xmlTextWriterWriteVFormatComment 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlTextWriterEndDTDAttlist xmlTextWriterEndDTDAttlist 1 int xmlTextWriterPtr
+xmlTextWriterWriteRawLen xmlTextWriterWriteRawLen 3 int xmlTextWriterPtr xmlChar* int
+xmlTextWriterEndAttribute xmlTextWriterEndAttribute 1 int xmlTextWriterPtr
+xmlTextWriterStartDTDAttlist xmlTextWriterStartDTDAttlist 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteComment xmlTextWriterWriteComment 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteDTDNotation xmlTextWriterWriteDTDNotation 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlTextWriterStartAttribute xmlTextWriterStartAttribute 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteDTDInternalEntity xmlTextWriterWriteDTDInternalEntity 4 int xmlTextWriterPtr int xmlChar* xmlChar*
+xmlTextWriterWriteVFormatAttribute xmlTextWriterWriteVFormatAttribute 4 int xmlTextWriterPtr xmlChar* char* __va_list_tag*
+xmlTextWriterWriteVFormatRaw xmlTextWriterWriteVFormatRaw 3 int xmlTextWriterPtr char* __va_list_tag*
+xmlTextWriterWriteDTDExternalEntityContents xmlTextWriterWriteDTDExternalEntityContents 4 int xmlTextWriterPtr xmlChar* xmlChar* xmlChar*
+xmlTextWriterStartElement xmlTextWriterStartElement 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteDTDExternalEntity xmlTextWriterWriteDTDExternalEntity 6 int xmlTextWriterPtr int xmlChar* xmlChar* xmlChar* xmlChar*
+xmlTextWriterWriteCDATA xmlTextWriterWriteCDATA 2 int xmlTextWriterPtr xmlChar*
+xmlTextWriterWriteFormatCDATA xmlTextWriterWriteFormatCDATA 2 int xmlTextWriterPtr char*

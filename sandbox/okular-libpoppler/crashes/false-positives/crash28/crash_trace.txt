@@ -1,0 +1,26 @@
+    #0 0xaddr in std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Object>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Object> > >::size() const /usr/include/c++/10/bits/stl_vector.h:919
+    #1 0xaddr in Dict::find[abi:cxx11](char const*) const /root/poppler/poppler/Dict.cc:109
+    #2 0xaddr in Dict::lookup(char const*, int) const /root/poppler/poppler/Dict.cc:178
+    #3 0xaddr in Object::dictLookup(char const*, int) const /root/poppler/poppler/Object.h:615
+    #4 0xaddr in Catalog::cachePageTree(int) /root/poppler/poppler/Catalog.cc:273
+    #5 0xaddr in Catalog::getPage(int) /root/poppler/poppler/Catalog.cc:199
+    #6 0xaddr in PDFDoc::getPage(int) /root/poppler/poppler/PDFDoc.cc:2100
+    #7 0xaddr in Poppler::Page::Page(Poppler::DocumentData*, int) /root/poppler/qt5/src/poppler-page.cc:422
+    #8 0xaddr in Poppler::Document::page(int) const /root/poppler/qt5/src/poppler-document.cc:117
+    #9 0xaddr in PDFGenerator::loadPages(QVector<Okular::Page*>&, int, bool) /root/okular/generators/poppler/generator_pdf.cpp:726
+    #10 0xaddr in PDFGenerator::init(QVector<Okular::Page*>&, QString const&) /root/okular/generators/poppler/generator_pdf.cpp:658
+    #11 0xaddr in PDFGenerator::loadDocumentWithPassword(QString const&, QVector<Okular::Page*>&, QString const&) /root/okular/generators/poppler/generator_pdf.cpp:601
+    #12 0xaddr in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:889
+    #13 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #14 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #15 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #16 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #17 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #18 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #19 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #20 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #21 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #22 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #23 0xaddr in main /root/okular/shell/main.cpp:91
+    #24 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #25 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

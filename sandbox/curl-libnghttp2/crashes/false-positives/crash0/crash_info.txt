@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libnghttp2.so.14.21.2
+cap_read_arbitrary
+cap_write
+cap_null_deref

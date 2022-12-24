@@ -1,0 +1,4 @@
+    #0 0xaddr in additional_weak_digest /root/gnupg-2.2.27/g10/misc.c:1865
+    #1 0xaddr in main /root/gnupg-2.2.27/g10/gpg.c:2454
+    #2 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #3 0xaddr in _start (/usr/local/bin/gpg+0xaddr)

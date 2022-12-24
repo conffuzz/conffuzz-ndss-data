@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/x86_64-linux-gnu/libgpgme.so.11.24.1
+cap_read
+cap_read_arbitrary
+cap_null_deref

@@ -1,0 +1,2 @@
+fault_location /root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so
+cap_read

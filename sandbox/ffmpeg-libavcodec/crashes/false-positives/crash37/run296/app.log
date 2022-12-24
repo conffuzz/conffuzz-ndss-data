@@ -1,0 +1,36 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  WARNING: library configuration mismatch
+  avcodec     configuration: 
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 65535.255.251
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] Failed to retrieve information about _init
+=================================================================
+==154287==AddressSanitizer CHECK failed: ../../../../src/libsanitizer/asan/asan_descriptions.cpp:80 "((0 && "Address is not in memory and not in shadow?")) != (0)" (0x0, 0x0)
+    #0 0x7fffe2671e6b in AsanCheckFailed ../../../../src/libsanitizer/asan/asan_rtl.cpp:74
+    #1 0x7fffe269089e in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_termination.cpp:78
+    #2 0x7fffe25e8807 in GetShadowKind ../../../../src/libsanitizer/asan/asan_descriptions.cpp:80
+    #3 0x7fffe25e8807 in __asan::GetShadowAddressInformation(unsigned long, __asan::ShadowAddressDescription*) ../../../../src/libsanitizer/asan/asan_descriptions.cpp:96
+    #4 0x7fffe25e8807 in __asan::GetShadowAddressInformation(unsigned long, __asan::ShadowAddressDescription*) ../../../../src/libsanitizer/asan/asan_descriptions.cpp:93
+    #5 0x7fffe25e9e56 in __asan::AddressDescription::AddressDescription(unsigned long, unsigned long, bool) ../../../../src/libsanitizer/asan/asan_descriptions.cpp:441
+    #6 0x7fffe25ec3b4 in __asan::ErrorGeneric::ErrorGeneric(unsigned int, unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long) ../../../../src/libsanitizer/asan/asan_errors.cpp:389
+    #7 0x7fffe26714c6 in __asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) ../../../../src/libsanitizer/asan/asan_report.cpp:476
+    #8 0x7fffe25f49ce in __interceptor_memcpy ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:827
+    #9 0x7fffde783c17 in avcodec_parameters_to_context libavcodec/codec_par.c:197
+    #10 0x7fffe0ea160c in update_stream_avctx libavformat/demux.c:198
+    #11 0x7fffe0ea28ef in avformat_open_input libavformat/demux.c:333
+    #12 0x55555559bb73 in open_input_file fftools/ffprobe.c:3143
+    #13 0x55555559cc7b in probe_file fftools/ffprobe.c:3266
+    #14 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #15 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #16 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+

@@ -1,0 +1,20 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==38170==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe08df69a bp 0x7fffffffd930 sp 0x7fffffffd8f0 T0)
+==38170==The signal is caused by a WRITE memory access.
+==38170==Hint: address points to the zero page.
+    #0 0x7fffe08df69a in doapr_outch crypto/bio/b_print.c:843
+    #1 0x7fffe08db206 in _dopr crypto/bio/b_print.c:114
+    #2 0x7fffe08dff97 in BIO_vsnprintf crypto/bio/b_print.c:917
+    #3 0x7fffe08dfdf6 in BIO_snprintf crypto/bio/b_print.c:906
+    #4 0x7fffe0a8c2cf in ERR_error_string_n crypto/err/err.c:615
+    #5 0x5555556900cb in ngx_ssl_error src/event/ngx_event_openssl.c:3503
+    #6 0x555555681410 in ngx_ssl_init src/event/ngx_event_openssl.c:191
+    #7 0x5555555c7508 in main src/core/nginx.c:241
+    #8 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #9 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #10 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV crypto/bio/b_print.c:843 in doapr_outch
+==38170==ABORTING

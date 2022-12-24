@@ -1,0 +1,6 @@
+    #0 0xaddr in av_freep libavutil/mem.c:255
+    #1 0xaddr in av_dict_free libavutil/dict.c:209
+    #2 0xaddr in uninit_opts fftools/cmdutils.c:87
+    #3 0xaddr in main fftools/ffprobe.c:4007
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/ffmpeg-5.0/ffprobe+0xaddr)

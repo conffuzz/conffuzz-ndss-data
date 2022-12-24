@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_in(0x6150000a4b80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fff6f410ca5
+~> write {unknown} 0 -> 0xfffffffffc800000 at shared buffer 0x00007ffffffde1c5
+~> write {unknown} 0 -> 0x200000000 at shared buffer 0x00007ffffffde1b9
+~> write {unknown} 0 -> 0 at shared buffer 0x00007ffffffde1dc
+mkd_compile(0x60d000305b80 {Document*} [size: 0x88], 0xe005000 {mkd_flag_t} [size: 0]) @ 0x00007fff6f410d1c
+~> change ret {int} from 0x1 to 0xfffffffffffffd29
+mkd_document(0x60d000305b80 {Document*} [size: 0x88], 0x7fffffffaef0 {char**} [size: 0x8]) @ 0x00007fff6f410db7
+~> write {Document*} 0 -> 0x1 at shared buffer 0x000060d000305bf5
+~> write {Document*} 0x10000606002 -> 0 at shared buffer 0x000060d000305bb3
+~> write {char**} 0 -> 0 at shared buffer 0x00007fffffffaef6
+mkd_cleanup(0x60d000305b80 {Document*} [size: 0x88]) @ 0x00007fff6f410f61

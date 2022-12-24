@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+aa_getcon(0x7ffe40855ee0 {char**} [size: 0x8], 0x7ffe40855ec0 {char**} [size: 0x8]) @ 0x000055ac29236589
+~> change arg #0x1 {char**} from 0x7ffe40855ee0 to 0x55f232131000

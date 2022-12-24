@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x7640 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2211c78
+TLS_client_method() @ 0x00007fffe221753a
+SSL_CTX_new(0x7fffe2045f80 [size: 0xe0]) @ 0x00007fffe221763e
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x21 [size: 0], 0x10 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2217716
+SSL_CTX_ctrl(0x619000000f80 [size: 0x400], 0x7c [size: 0], 0 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2215684
+~> change arg #0x4 from 0 to 0x386
+SSL_CTX_set_options(0x619000000f80 [size: 0x400], 0x82024054 [size: 0]) @ 0x00007fffe2217bbc
+~> change arg #0x1 from 0x619000000f80 to 0x7ffffffde190
+SSL_CTX_set_next_proto_select_cb(0x619000000f80 [size: 0x400], 0x7fffe2214fca [size: 0], 0x622000003108 [size: 0x1]) @ 0x00007fffe2217c5a
+~> instrumenting 0x00007fffe2214fca (select_next_proto_cb, 0x6 arg(s))
+SSL_CTX_set_alpn_protos(0x619000000f80 [size: 0x400], 0x7fffffffddb0 [size: 0x1], 0xc [size: 0]) @ 0x00007fffe2218019
+~> change arg #0x1 from 0x619000000f80 to 0xd
+~> change arg #0x2 from 0x7fffffffddb0 to 0x7fffffffdfca
+~> change arg #0x3 from 0xc to 0x4

@@ -1,0 +1,35 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> write 0 -> 0xfd0d at shared buffer 0x00007ffffffde1e7
+~> change ret from 0x7fffe25b1c30 to 0x7ffffffde190
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0 -> 0x7fffffffe500 at shared buffer 0x00007fffffffe370
+~> change ret from 0 to 0x1b1
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0x604000 -> 0x61d0000000bc at shared buffer 0x00006040000002ab
+~> write 0 -> 0x6100000002a1 at shared buffer 0x000060400000029f
+~> write 0 -> 0x610000000000 at shared buffer 0x00006040000002ac
+~> write 0x178000 -> 0x6100000000d0 at shared buffer 0x0000604000000291
+~> change ret from 0 to 0x7fffffff
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x178000 -> 0x29 at shared buffer 0x00007fffffffc250
+~> write 0x178029 -> 0xb9 at shared buffer 0x00007fffffffc250
+~> write 0x1780b9 -> 0 at shared buffer 0x00007fffffffc250
+~> change ret from 0x618000000080 to 0x6180000002f6
+pcap_set_promisc(0x6180000002f6 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> change ret from 0 to 0x2710
+pcap_set_timeout(0x6180000002f6 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> change ret from 0 to 0x5
+pcap_set_tstamp_precision(0x6180000002f6 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0 -> 0 at shared buffer 0x00006180000003aa
+~> change ret from 0xfffffff4 to 0xfffffffffffffc18
+pcap_set_buffer_size(0x6180000002f6 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+~> write 0 -> 0 at shared buffer 0x0000618000000576
+~> write 0 -> 0 at shared buffer 0x000061800000032b
+~> write 0 -> 0xffff at shared buffer 0x0000618000000433
+~> write 0x100 -> 0 at shared buffer 0x000061800000037d
+~> change ret from 0 to 0xbb8
+pcap_activate(0x6180000002f6 [size: 0x288]) @ 0x0000555555586c87

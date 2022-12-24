@@ -1,0 +1,27 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  WARNING: library configuration mismatch
+  avformat    configuration: 
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 59. 18.100
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+foo.avi: Unknown error 743
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==23934==ERROR: AddressSanitizer: SEGV on unknown address 0x000000001420 (pc 0x7fffdd9fd2e0 bp 0x7fffffffe8d0 sp 0x7fffffffe8b0 T0)
+==23934==The signal is caused by a READ memory access.
+    #0 0x7fffdd9fd2e0 in av_dict_free libavutil/dict.c:208
+    #1 0x5555555701b5 in uninit_opts fftools/cmdutils.c:87
+    #2 0x5555555a0d9e in main fftools/ffprobe.c:4007
+    #3 0x7fffdd64b7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #4 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV libavutil/dict.c:208 in av_dict_free
+==23934==ABORTING

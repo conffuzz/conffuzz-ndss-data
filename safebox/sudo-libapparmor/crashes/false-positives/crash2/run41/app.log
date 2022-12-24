@@ -1,0 +1,16 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1075==ERROR: AddressSanitizer: SEGV on unknown address 0x557682647e90 (pc 0x557682405fe4 bp 0x000000000000 sp 0x7ffd36682b60 T0)
+==1075==The signal is caused by a WRITE memory access.
+    #0 0x557682405fe4 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) (/usr/local/bin/sudo+0xcefe4) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #1 0x557682486985 in free (/usr/local/bin/sudo+0x14f985) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0x5576825c3999 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:113:9
+    #3 0x55768259ed49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #4 0x557682580a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #5 0x7f96560b4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #6 0x7f96560b4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #7 0x557682403d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/bin/sudo+0xcefe4) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8) in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType)
+==1075==ABORTING

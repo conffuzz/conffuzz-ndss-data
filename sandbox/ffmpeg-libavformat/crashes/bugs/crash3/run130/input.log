@@ -1,0 +1,14 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avformat_network_init() @ 0x00005555555a054e
+~> write 0 -> 0 at shared buffer 0x00005555555cd6a0
+~> write 0 -> 0xfffffffffff1 at shared buffer 0x00005555555cd6a1
+~> write 0 -> 0xffffffff03e8 at shared buffer 0x00007fffffffe792
+~> write 0x3e800 -> 0xfffffffffffffb at shared buffer 0x00007fffffffe791
+~> write 0xfffffffb00 -> 0xffff0000000200 at shared buffer 0x00007fffffffe790
+~> write 0xff0000000200 -> 0xffffffffffff7c at shared buffer 0x00007fffffffe790
+~> change ret from 0 to 0x53
+avformat_configuration() @ 0x00005555555775f7
+~> change ret from 0x7fffe145b460 to 0x11

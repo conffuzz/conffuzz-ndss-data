@@ -1,0 +1,25 @@
+[I] Attempting to instrument callback GhostscriptDelegateMessage
+[E] {instrumentation.cpp:469} Got function argument numbers (3) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==28331==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffd3ea238a bp 0x7ffffffed260 sp 0x7ffffffed170 T0)
+    #0 0x7fffd3ea238a in gs_main_set_lib_paths psi/imain.c:716
+    #1 0x7fffd3ea2d45 in gs_main_run_string_begin psi/imain.c:908
+    #2 0x7fffd3ea2c84 in gs_main_run_string_with_length psi/imain.c:880
+    #3 0x7fffd3eaacfb in psapi_run_string_with_length psi/psapi.c:430
+    #4 0x7fffd3fe5b16 in gsapi_run_string psi/iapi.c:295
+    #5 0x7fffd568751d in InvokeGhostscriptDelegate coders/ghostscript-private.h:165
+    #6 0x7fffd568c2fb in ReadPSImage coders/ps.c:820
+    #7 0x7fffe213a9df in ReadImage MagickCore/constitute.c:728
+    #8 0x7fffe213d33d in ReadImages MagickCore/constitute.c:1075
+    #9 0x7fffe1bad6f0 in ConvertImageCommand MagickWand/convert.c:614
+    #10 0x7fffe1d4f5d9 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #11 0x555555556a32 in MagickMain utilities/magick.c:150
+    #12 0x555555556ce5 in main utilities/magick.c:182
+    #13 0x7fffe1218d8f in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x7fffe1218e3f in __libc_start_main_impl ../csu/libc-start.c:392
+    #15 0x555555556424 in _start (/usr/local/bin/magick+0x2424)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL psi/imain.c:716 in gs_main_set_lib_paths
+==28331==ABORTING

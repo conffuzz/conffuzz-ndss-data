@@ -1,0 +1,78 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Tried and failed to write to 0x0000618000000226 (7 bytes)
+Tried and failed to write to 0x00006180000003cd (6 bytes)
+=================================================================
+==59220==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x604000000284 at pc 0x555555584d2b bp 0x7fffffffe2f0 sp 0x7fffffffe2e8
+READ of size 8 at 0x604000000284 thread T0
+    #0 0x555555584d2a in get_interface_list_findalldevs /root/wireshark-3.4.12/caputils/capture-pcap-util.c:686
+    #1 0x555555583cae in get_interface_list /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:43
+    #2 0x555555564231 in capture_interface_list /root/wireshark-3.4.12/dumpcap.c:766
+    #3 0x55555557c76c in capture_opts_add_iface_opt /root/wireshark-3.4.12/capture_opts.c:699
+    #4 0x55555557ecba in capture_opts_default_iface_if_necessary /root/wireshark-3.4.12/capture_opts.c:1116
+    #5 0x555555575c14 in main /root/wireshark-3.4.12/dumpcap.c:5286
+    #6 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #7 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+0x604000000284 is located 12 bytes to the left of 40-byte region [0x604000000290,0x6040000002b8)
+allocated by thread T0 here:
+    #0 0x7fffe27257cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe258bd83 in add_dev pcap.c:1314
+    #2 0x7fffe258bd05 in find_or_add_dev pcap.c:1266
+    #3 0x7fffe258b86d in find_or_add_if pcap.c:1049
+    #4 0x7fffe258b8ac in add_addr_to_if pcap.c:1085
+    #5 0x7fffe2588941 in pcap_findalldevs_interfaces fad-getad.c:266
+    #6 0x7fffe2584838 in pcap_platform_finddevs pcap-linux.c:1704
+    #7 0x7fffe258b63e in pcap_findalldevs pcap.c:721
+    #8 0x555555584b21 in get_interface_list_findalldevs /root/wireshark-3.4.12/caputils/capture-pcap-util.c:668
+    #9 0x555555583cae in get_interface_list /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:43
+    #10 0x555555564231 in capture_interface_list /root/wireshark-3.4.12/dumpcap.c:766
+    #11 0x55555557c76c in capture_opts_add_iface_opt /root/wireshark-3.4.12/capture_opts.c:699
+    #12 0x55555557ecba in capture_opts_default_iface_if_necessary /root/wireshark-3.4.12/capture_opts.c:1116
+    #13 0x555555575c14 in main /root/wireshark-3.4.12/dumpcap.c:5286
+    #14 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/wireshark-3.4.12/caputils/capture-pcap-util.c:686 in get_interface_list_findalldevs
+Shadow bytes around the buggy address:
+  0x0c087fff8000: fa fa 00 00 00 00 05 fa fa fa fd fd fd fd fd fd
+  0x0c087fff8010: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fff8020: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+  0x0c087fff8030: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+  0x0c087fff8040: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+=>0x0c087fff8050:[fa]fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+  0x0c087fff8060: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+  0x0c087fff8070: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 06
+  0x0c087fff8080: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 06 fa
+  0x0c087fff8090: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 02
+  0x0c087fff80a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==59220==ABORTING

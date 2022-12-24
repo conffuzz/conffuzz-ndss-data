@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+zlibVersion() @ 0x00005555555d7866
+~> change ret {char*} from 0x7fffcc5b5ead to 0x11

@@ -1,0 +1,53 @@
+=================================================================
+==10055==ERROR: AddressSanitizer: stack-buffer-underflow on address 0x7ffd45782f46 at pc 0x7f10c30cc04e bp 0x7ffd45782cf0 sp 0x7ffd45782ce8
+WRITE of size 8 at 0x7ffd45782f46 thread T0
+    #0 0x7f10c30cc04d in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:707:10
+    #1 0x7f10c30cd8f9 in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #2 0x7f10c30cd923 in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #3 0x56455ff09588 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #4 0x56455fee4d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #5 0x56455fec6a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #6 0x7f10c2982d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #7 0x7f10c2982e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0x56455fd49d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+Address 0x7ffd45782f46 is located in stack of thread T0 at offset 6 in frame
+    #0 0x56455fed588f in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:652
+
+  This frame has 1 object(s):
+    [32, 40) 'errstr' (line 653)
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-underflow /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:707:10 in aa_getprocattr
+Shadow bytes around the buggy address:
+  0x100028ae8590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae85a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae85b0: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+  0x100028ae85c0: 00 f2 f2 f2 00 f3 f3 f3 00 00 00 00 00 00 00 00
+  0x100028ae85d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100028ae85e0: 00 00 00 00 00 00 00 00[f1]f1 f1 f1 00 f3 f3 f3
+  0x100028ae85f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae8600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae8610: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae8620: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100028ae8630: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==10055==ABORTING

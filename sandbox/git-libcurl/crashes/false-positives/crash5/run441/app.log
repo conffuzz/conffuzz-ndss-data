@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==71597==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000629 (pc 0x7fffe00d3701 bp 0x7fffffffd580 sp 0x7fffffffd4d0 T0)
+==71597==The signal is caused by a READ memory access.
+==71597==Hint: address points to the zero page.
+    #0 0x7fffe00d3701 in Curl_vsetopt /root/curl-7.82.0/lib/setopt.c:1841
+    #1 0x7fffe00de91f in curl_easy_setopt /root/curl-7.82.0/lib/setopt.c:3052
+    #2 0x55555561f0d4 in get_curl_handle /root/git-2.35.1/http.c:773
+    #3 0x555555620b8c in http_init /root/git-2.35.1/http.c:1103
+    #4 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/setopt.c:1841 in Curl_vsetopt
+==71597==ABORTING

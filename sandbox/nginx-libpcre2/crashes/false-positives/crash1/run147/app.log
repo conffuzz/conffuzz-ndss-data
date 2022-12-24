@@ -1,0 +1,13 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback .plt
+[I] Acquired data about .plt, recursing.
+[E] {instrumentation.cpp:476} Failed to retrieve information about .plt
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7938==ERROR: AddressSanitizer: SEGV on unknown address 0x1668fa1e0ff3 (pc 0x1668fa1e0ff3 bp 0x7fffffffcec0 sp 0x7fffffffce98 T0)
+==7938==The signal is caused by a READ memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

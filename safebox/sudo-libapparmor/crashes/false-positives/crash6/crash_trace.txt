@@ -1,0 +1,8 @@
+    #0 0xaddr  (<unknown module>)
+    #1 0xaddr in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:698:8
+    #2 0xaddr in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #3 0xaddr in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #4 0xaddr in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #5 0xaddr in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #6 0xaddr in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #7 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)

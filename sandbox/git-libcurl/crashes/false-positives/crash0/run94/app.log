@@ -1,0 +1,66 @@
+=================================================================
+==5237==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60300002aed9 at pc 0x7fffe00e04ac bp 0x7fffffffd870 sp 0x7fffffffd860
+READ of size 8 at 0x60300002aed9 thread T0
+    #0 0x7fffe00e04ab in slist_get_last /root/curl-7.82.0/lib/slist.c:44
+    #1 0x7fffe00e05aa in Curl_slist_append_nodup /root/curl-7.82.0/lib/slist.c:77
+    #2 0x7fffe00e0636 in curl_slist_append /root/curl-7.82.0/lib/slist.c:97
+    #3 0x555555633784 in locking_available /root/git-2.35.1/http-push.c:1212
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x60300002aed9 is located 7 bytes to the left of 32-byte region [0x60300002aee0,0x60300002af00)
+allocated by thread T0 here:
+    #0 0x7fffe03b4867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffdf602c6a in CRYPTO_malloc crypto/mem.c:222
+    #2 0x7fffdf602ca1 in CRYPTO_zalloc crypto/mem.c:230
+    #3 0x7fffdf6dfa0f in OPENSSL_sk_new_reserve crypto/stack/stack.c:209
+    #4 0x7fffdf6df576 in OPENSSL_sk_new_null crypto/stack/stack.c:118
+    #5 0x7fffdf5e8ed9 in sk_EX_CALLBACK_new_null include/internal/cryptlib.h:47
+    #6 0x7fffdf5e93d5 in CRYPTO_get_ex_new_index crypto/ex_data.c:167
+    #7 0x7fffe013f0c8 in ossl_get_ssl_data_index vtls/openssl.c:397
+    #8 0x7fffe014125e in ossl_init vtls/openssl.c:1241
+    #9 0x7fffe01553b3 in Curl_ssl_init vtls/vtls.c:242
+    #10 0x7fffe001ad42 in global_init /root/curl-7.82.0/lib/easy.c:151
+    #11 0x7fffe001ae5d in curl_global_init /root/curl-7.82.0/lib/easy.c:210
+    #12 0x5555556207c1 in http_init /root/git-2.35.1/http.c:1035
+    #13 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #14 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #15 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/curl-7.82.0/lib/slist.c:44 in slist_get_last
+Shadow bytes around the buggy address:
+  0x0c067fffd580: fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa fd fd
+  0x0c067fffd590: fd fa fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa
+  0x0c067fffd5a0: 00 00 00 fa fa fa fd fd fd fa fa fa 00 00 00 fa
+  0x0c067fffd5b0: fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa fd fd
+  0x0c067fffd5c0: fd fa fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa
+=>0x0c067fffd5d0: 00 00 00 fa fa fa 00 00 00 00 fa[fa]00 00 00 00
+  0x0c067fffd5e0: fa fa fd fd fd fd fa fa 00 00 00 00 fa fa 00 00
+  0x0c067fffd5f0: 00 fa fa fa 00 00 00 00 fa fa 00 00 00 00 fa fa
+  0x0c067fffd600: 00 00 00 fa fa fa fd fd fd fa fa fa 00 00 00 00
+  0x0c067fffd610: fa fa fd fd fd fa fa fa fd fd fd fa fa fa fd fd
+  0x0c067fffd620: fd fa fa fa fd fd fd fa fa fa fd fd fd fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==5237==ABORTING

@@ -1,0 +1,23 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==29870==ERROR: AddressSanitizer: SEGV on unknown address 0x607001000000 (pc 0x5555555e6798 bp 0x7fffffffe5e0 sp 0x7fffffffe5b0 T0)
+==29870==The signal is caused by a WRITE memory access.
+    #0 0x5555555e6798 in buffer_copy_string_len /root/lighttpd-1.4.67/src/buffer.c:167
+    #1 0x55555558a83b in buffer_copy_buffer /root/lighttpd-1.4.67/src/buffer.h:298
+    #2 0x55555558d6f7 in http_response_prepare /root/lighttpd-1.4.67/src/response.c:462
+    #3 0x55555559004f in http_response_handler /root/lighttpd-1.4.67/src/response.c:980
+    #4 0x55555559691d in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1007
+    #5 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #6 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #7 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #8 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #9 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #10 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #11 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #12 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #13 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #14 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/buffer.c:167 in buffer_copy_string_len
+==29870==ABORTING

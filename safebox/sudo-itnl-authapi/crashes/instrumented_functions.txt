@@ -1,0 +1,5 @@
+sudo_auth_begin_session sudo_auth_begin_session 2 int passwd* char***
+sudo_auth_init sudo_auth_init 2 int passwd* int
+sudo_auth_cleanup sudo_auth_cleanup 2 int passwd* _Bool
+sudo_auth_end_session sudo_auth_end_session 1 int passwd*
+sudo_auth_approval sudo_auth_approval 3 int passwd* int _Bool

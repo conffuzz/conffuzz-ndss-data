@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+TIFFSetErrorHandler(0x7fffb9b5da6a [size: 0]) @ 0x00007fffb9b6a0dc
+~> instrumenting 0x00007fffb9b5da6a (TIFFErrors, 0x3 arg(s))
+~> write 0 -> 0 at shared buffer 0x00007fffb9bb2d80
+~> write 0 -> 0 at shared buffer 0x00007fffb9bb2d80
+~> write 0 -> 0xe8 at shared buffer 0x00007fffb9bb2d80
+~> write 0xe8 -> 0xfc at shared buffer 0x00007fffb9bb2d80
+~> change ret from 0x7fffb9b18010 to 0xd
+TIFFSetWarningHandler(0x7fffb9b5fb44 [size: 0]) @ 0x00007fffb9b6a0f2
+~> instrumenting 0x00007fffb9b5fb44 (TIFFWarnings, 0x3 arg(s))
+~> change ret from 0x7fffb9b17f64 to 0xd
+TIFFSetTagExtender(0x7fffb9b69e99 [size: 0]) @ 0x00007fffb9b6a114
+~> instrumenting 0x00007fffb9b69e99 (TIFFTagExtender, 0x1 arg(s))
+TIFFGetVersion() @ 0x00007fffb9b6a172
+~> change ret from 0x7fffb9b3dfe0 to 0xd

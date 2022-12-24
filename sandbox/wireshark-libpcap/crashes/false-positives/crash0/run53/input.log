@@ -1,0 +1,19 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> write 0 -> 0xff at shared buffer 0x00007fffffffc387
+~> write 0xff00 -> 0 at shared buffer 0x00007fffffffc386
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> write 0xff00 -> 0x7fffffffe501 at shared buffer 0x00007fffffffe370
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0xb000000000 -> 0x61000000037d at shared buffer 0x0000604000000294
+~> write 0x602000 -> 0 at shared buffer 0x000060400000029b
+~> change ret from 0 to 0x7
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x602065 -> 0xb8 at shared buffer 0x0000602000000430
+~> write 0x6020b8 -> 0x11 at shared buffer 0x0000602000000430
+~> write 0x602011 -> 0 at shared buffer 0x0000602000000430
+~> change ret from 0x618000000080 to 0x11
+pcap_set_promisc(0x11 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980

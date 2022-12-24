@@ -1,0 +1,8 @@
+    #0 0xaddr in exif_mem_free /root/libexif/libexif/exif-mem.c:72
+    #1 0xaddr in exif_loader_reset /root/libexif/libexif/exif-loader.c:417
+    #2 0xaddr in exif_loader_free /root/libexif/libexif/exif-loader.c:397
+    #3 0xaddr in exif_loader_unref /root/libexif/libexif/exif-loader.c:409
+    #4 0xaddr in main /root/exif/exif/main.c:415
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/usr/local/bin/exif+0xaddr)

@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==171270==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7fffe14a8a48 bp 0x7fffffffe1e0 sp 0x7fffffffe1a8 T0)
+==171270==The signal is caused by a WRITE memory access.
+==171270==Hint: address points to the zero page.
+    #0 0x7fffe14a8a48  (/lib/x86_64-linux-gnu/libc.so.6+0x172a48)
+    #1 0x7fffe152ff54 in fname_set_internal /root/libgpg-error-1.41/src/estream.c:5260
+    #2 0x7fffe152dfa9 in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3686
+    #3 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #4 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #5 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #6 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #7 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x172a48) 
+==171270==ABORTING

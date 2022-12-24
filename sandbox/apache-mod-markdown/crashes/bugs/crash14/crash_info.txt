@@ -1,0 +1,5 @@
+fault_location /usr/local/apache2/modules/mod_log_config.so
+cap_null_deref
+non_reproducible
+cap_read_arbitrary
+cap_read

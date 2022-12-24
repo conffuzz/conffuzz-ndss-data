@@ -1,0 +1,42 @@
+[I] Recursing from gpgme_passphrase_cb_t into gpgme_error_t(*, const char*, const char*, int, int)*
+[E] Not able to find type information for gpgme_passphrase_cb_t in DWARF
+[I] Recursing from gpgme_key_t into _gpgme_key*
+[E] Not able to find type information for gpgme_key_t in DWARF
+[I] Recursing from gpgme_engine_info_t into _gpgme_engine_info*
+[E] Not able to find type information for gpgme_engine_info_t in DWARF
+[I] Recursing from gpgme_data_t into gpgme_data*
+[E] Not able to find type information for gpgme_data_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from gpgme_error_t into gpg_error_t
+[I] Recursing from gpg_error_t into unsigned int
+[E] Not able to find type information for gpgme_error_t in DWARF
+[I] Recursing from gpgme_progress_cb_t into void(*, const char*, int, int, int)*
+[E] Not able to find type information for gpgme_progress_cb_t in DWARF
+[I] Recursing from gpgme_status_cb_t into gpgme_error_t(*, const char*, const char*)*
+[E] Not able to find type information for gpgme_status_cb_t in DWARF
+[I] Recursing from gpgme_conf_comp_t into gpgme_conf_comp*
+[E] Not able to find type information for gpgme_conf_comp_t in DWARF
+[I] Recursing from gpgme_ctx_t into gpgme_context*
+[E] Not able to find type information for gpgme_ctx_t in DWARF
+[I] Recursing from _gpgme_sig_stat_t into enumeration unsigned int
+[E] Not able to find type information for _gpgme_sig_stat_t in DWARF
+[I] Recursing from time_t into __time_t
+[I] Recursing from __time_t into long int
+[E] Not able to find type information for time_t in DWARF
+[I] Recursing from gpgme_conf_arg_t into gpgme_conf_arg*
+[E] Not able to find type information for gpgme_conf_arg_t in DWARF
+[I] Recursing from gpgme_trust_item_t into _gpgme_trust_item*
+[E] Not able to find type information for gpgme_trust_item_t in DWARF
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==99217==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe18df76c bp 0x7fffffffe7c0 sp 0x7fffffffe7a0 T0)
+==99217==The signal is caused by a READ memory access.
+==99217==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe18df76c in gpgme_check_version_internal /root/gpgme-1.15.1/src/version.c:225
+    #1 0x5555556217b1 in main /root/gpa-0.10.0/src/gpa.c:503
+    #2 0x7fffe07a87fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #3 0x555555620a09 in _start (/root/gpa-0.10.0/src/gpa+0xcca09)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/gpgme-1.15.1/src/version.c:225 in gpgme_check_version_internal
+==99217==ABORTING

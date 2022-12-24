@@ -1,0 +1,3068 @@
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifFormat
+   ExifFormat->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifIfd
+   ExifIfd->0
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifLoader* char*
+   ExifLoader*->64
+   char*->1
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifMem* ExifDataOption
+   ExifMem*->32
+   ExifDataOption->0
+Type list: ExifMnoteData* ExifLog*
+   ExifMnoteData*->112
+   ExifLog*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder ExifSLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSLong->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifData* unsignedchar** unsignedint*
+   ExifData*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: ExifMem* * ExifLong
+   ExifMem*->32
+   void*->1
+   ExifLong->0
+Type list: ExifLoader* unsignedchar* unsignedint
+   ExifLoader*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifLog* ExifLogCode char* char*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+Type list: ExifLogCode
+   ExifLogCode->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: char*
+   char*->1
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLoader* ExifLog*
+   ExifLoader*->64
+   ExifLog*->32
+Type list: ExifData* ExifLog*
+   ExifData*->64
+   ExifLog*->32
+Type list: ExifMem* ExifLong
+   ExifMem*->32
+   ExifLong->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: ExifMnoteData* unsignedchar** unsignedint*
+   ExifMnoteData*->112
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifLog*
+   ExifLog*->32
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifData* ExifDataForeachContentFunc *
+   ExifData*->64
+   ExifDataForeachContentFunc->0
+   void*->1
+Type list: ExifTag ExifIfd ExifDataType
+   ExifTag->0
+   ExifIfd->0
+   ExifDataType->0
+Type list: ExifFormat unsignedchar* unsignedint ExifByteOrder ExifByteOrder
+   ExifFormat->0
+   unsignedchar*->1
+   unsignedint->0
+   ExifByteOrder->0
+   ExifByteOrder->0
+Type list: ExifEntry* ExifTag
+   ExifEntry*->48
+   ExifTag->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifTag
+   ExifTag->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: unsignedchar* ExifByteOrder ExifRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifRational->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifData*
+   ExifData*->64
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifFormat
+   ExifFormat->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* unsignedint
+   ExifContent*->32
+   unsignedint->0
+Type list: ExifContent* ExifEntry*
+   ExifContent*->32
+   ExifEntry*->48
+Type list: ExifLoader* unsignedchar** unsignedint*
+   ExifLoader*->64
+   unsignedchar**->8
+   unsignedint*->4
+Type list: unsignedchar* ExifByteOrder ExifSRational
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSRational->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: unsignedchar* unsignedint
+   unsignedchar*->1
+   unsignedint->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* unsignedchar* unsignedint
+   ExifData*->64
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifDataOption
+   ExifDataOption->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifContent*
+   ExifContent*->32
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: MnoteOlympusEntry* char* unsignedint
+   MnoteOlympusEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifContent* ExifLog*
+   ExifContent*->32
+   ExifLog*->32
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: char*
+   char*->1
+Type list: ExifMnoteData* unsignedint char* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: MnoteCanonEntry* unsignedint char* unsignedint
+   MnoteCanonEntry*->32
+   unsignedint->0
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifSShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifSShort->0
+Type list: unsignedchar* ExifByteOrder ExifLong
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifLong->0
+Type list: MnoteCanonTag
+   MnoteCanonTag->0
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMnoteData* unsignedint
+   ExifMnoteData*->112
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMnoteData* ExifByteOrder
+   ExifMnoteData*->112
+   ExifByteOrder->0
+Type list: ExifLog*
+   ExifLog*->32
+Type list: ExifData* ExifDataOption
+   ExifData*->64
+   ExifDataOption->0
+Type list: ExifMemAllocFunc ExifMemReallocFunc ExifMemFreeFunc
+   ExifMemAllocFunc->0
+   ExifMemReallocFunc->0
+   ExifMemFreeFunc->0
+Type list: MnoteOlympusTag
+   MnoteOlympusTag->0
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifData* ExifByteOrder
+   ExifData*->64
+   ExifByteOrder->0
+Type list: ExifTag
+   ExifTag->0
+Type list: MnotePentaxTag
+   MnotePentaxTag->0
+Type list: ExifMnoteData*
+   ExifMnoteData*->112
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifEntry* char* unsignedint
+   ExifEntry*->48
+   char*->1
+   unsignedint->0
+Type list: unsignedchar* ExifByteOrder ExifShort
+   unsignedchar*->1
+   ExifByteOrder->0
+   ExifShort->0
+Type list: unsignedchar* ExifByteOrder
+   unsignedchar*->1
+   ExifByteOrder->0
+Type list: ExifEntry*
+   ExifEntry*->48
+Type list: ExifLoader*
+   ExifLoader*->64
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogFunc *
+   ExifLog*->32
+   ExifLogFunc->0
+   void*->1
+Type list: ExifTag ExifIfd
+   ExifTag->0
+   ExifIfd->0
+Type list: ExifContent*
+   ExifContent*->32
+Type list: ExifMem* *
+   ExifMem*->32
+   void*->1
+Type list: MnotePentaxEntry* char* unsignedint
+   MnotePentaxEntry*->32
+   char*->1
+   unsignedint->0
+Type list: ExifContent* ExifTag
+   ExifContent*->32
+   ExifTag->0
+Type list: ExifMnoteData* ExifMem*
+   ExifMnoteData*->112
+   ExifMem*->32
+Type list: ExifMnoteData* unsignedchar* unsignedint
+   ExifMnoteData*->112
+   unsignedchar*->1
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifEntry* unsignedint
+   ExifEntry*->48
+   unsignedint->0
+Type list: ExifByteOrder
+   ExifByteOrder->0
+Type list: ExifData* ExifDataType
+   ExifData*->64
+   ExifDataType->0
+Type list: unsignedint
+   unsignedint->0
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifMem*
+   ExifMem*->32
+Type list: ExifContent* ExifContentForeachEntryFunc *
+   ExifContent*->32
+   ExifContentForeachEntryFunc->0
+   void*->1
+Type list: ExifData*
+   ExifData*->64
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag*
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+Type list: ExifMem*
+   ExifMem*->32
+[I] Attempting to instrument callback log_func
+Type list: ExifLog* ExifLogCode char* char* __va_list_tag* *
+   ExifLog*->32
+   ExifLogCode->0
+   char*->1
+   char*->1
+   __va_list_tag*->24
+   void*->1
+[E] {instrumentation.cpp:473} Got function argument numbers (6) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==108767==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000011 (pc 0x7fffe249523c bp 0x7fffffffd230 sp 0x7fffffffc9c8 T0)
+==108767==The signal is caused by a READ memory access.
+==108767==Hint: address points to the zero page.
+    #0 0x7fffe249523c  (/lib/x86_64-linux-gnu/libc.so.6+0x1b223c)
+    #1 0x7fffe2876a1b in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:387
+    #2 0x5555555683ac in exif_mbstrlen /root/exif/exif/utils.c:126
+    #3 0x5555555631b2 in action_tag_table /root/exif/exif/actions.c:417
+    #4 0x5555555678e0 in main /root/exif/exif/main.c:454
+    #5 0x7fffe230cd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe230ce3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x55555555f0e4 in _start (/usr/local/bin/exif+0xb0e4)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x1b223c) 
+==108767==ABORTING

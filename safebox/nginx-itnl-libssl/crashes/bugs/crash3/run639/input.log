@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+aesni_set_encrypt_key(0x7fffe0e2de60 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x612000000040 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+aesni_set_encrypt_key(0x6130000002c8 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x6120000001c0 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+~> change arg #0x1 {unsignedchar*} from 0x6130000002c8 to 0x6130000001d4
+aesni_ecb_encrypt(0x6130000002e8 {unsignedchar*} [size: 0x1], 0x6130000002c8 {unsignedchar*} [size: 0x1], 0x10 {size_t} [size: 0], 0x6120000001c0 {AES_KEY*} [size: 0xf4], 0x1 {int} [size: 0]) @ 0x00007fffe0bcb703
+~> change arg #0x3 {size_t} from 0x10 to 0xfffffffffffffffa
+~> change arg #0x5 {int} from 0x1 to 0xffffffffffffffbf

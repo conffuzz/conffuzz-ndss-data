@@ -1,0 +1,30 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==14649==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000293 (pc 0x7fffe1957532 bp 0x0000000002a3 sp 0x7fffffffd780 T0)
+==14649==The signal is caused by a WRITE memory access.
+==14649==Hint: address points to the zero page.
+    #0 0x7fffe1957532 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe1957532 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:570
+    #2 0x7fffe1957532 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:647
+    #3 0x7fffe1957532 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:883
+    #4 0x7fffe19d8b43 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe15abe78 in _gcry_private_free /root/libgcrypt-1.9.2/src/stdmem.c:244
+    #6 0x7fffe15a5864 in _gcry_free /root/libgcrypt-1.9.2/src/global.c:1058
+    #7 0x7fffe15a5787 in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1022
+    #8 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #9 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #10 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #11 0x7fffe152916a in _gpgrt_malloc /root/libgpg-error-1.41/src/init.c:317
+    #12 0x7fffe1529da6 in mem_alloc /root/libgpg-error-1.41/src/estream.c:222
+    #13 0x7fffe152adc6 in func_fp_create /root/libgpg-error-1.41/src/estream.c:1481
+    #14 0x7fffe152da9d in do_fpopen /root/libgpg-error-1.41/src/estream.c:3482
+    #15 0x7fffe152de3b in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3663
+    #16 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #17 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #18 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #19 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #20 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==14649==ABORTING

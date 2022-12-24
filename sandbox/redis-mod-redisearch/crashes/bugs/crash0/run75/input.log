@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0x7fffd9 -> 0 at shared buffer 0x00007fffd940c853
+~> change ret {int} from 0 to 0xfffffffffffffca5
+SpellCheckCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92fb348 {RedisModuleString**} [size: 0x8], 0x5 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fff -> 0 at shared buffer 0x00007fffd92fb34c
+~> write {RedisModuleCtx*} 0 -> 0xfffffb0000000000 at shared buffer 0x00007fffffffe3d0
+~> write {RedisModuleCtx*} 0 -> 0xfc68000000000000 at shared buffer 0x00007fffffffe397

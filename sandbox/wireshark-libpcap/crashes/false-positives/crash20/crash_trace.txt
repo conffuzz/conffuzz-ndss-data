@@ -1,0 +1,6 @@
+    #1 0xaddr in pcap_freecode gencode.c:904
+    #2 0xaddr in capture_loop_init_filter /root/wireshark-3.4.12/dumpcap.c:2910
+    #3 0xaddr in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3806
+    #4 0xaddr in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #5 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in _start (/root/wireshark_build/run/dumpcap+0xaddr)

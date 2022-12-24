@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+~> write {unknown} 0 -> 0x8b0000000000 at shared buffer 0x000060d00000685a
+~> write {unknown} 0 -> 0 at shared buffer 0x000060d0000068bb
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ede9c9
+~> change ret {Document*} from 0x60d000006840 to 0x555555606190
+mkd_compile(0x555555606190 {Document*} [size: 0x88], 0x2005000 {mkd_flag_t} [size: 0]) @ 0x00007fffd7edd47b
+~> instrumenting 0x0000555555606190 (apr_bucket_flush_create@plt, 0 arg(s))

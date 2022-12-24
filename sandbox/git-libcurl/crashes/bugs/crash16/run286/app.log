@@ -1,0 +1,54 @@
+=================================================================
+==28564==ERROR: AddressSanitizer: global-buffer-overflow on address 0x7fffe018a500 at pc 0x7fffe035df89 bp 0x7fffffffbcf0 sp 0x7fffffffb468
+READ of size 1 at 0x7fffe018a500 thread T0
+    #0 0x7fffe035df88 in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553
+    #1 0x7fffe035fbd5 in __interceptor_vsnprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1668
+    #2 0x55555582b1a4 in vreportf /root/git-2.35.1/usage.c:21
+    #3 0x55555582b5e5 in warn_builtin /root/git-2.35.1/usage.c:88
+    #4 0x55555582ca20 in warning /root/git-2.35.1/usage.c:286
+    #5 0x555555621ae3 in start_active_slot /root/git-2.35.1/http.c:1249
+    #6 0x555555633903 in locking_available /root/git-2.35.1/http-push.c:1221
+    #7 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #8 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #9 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x7fffe018a500 is located 32 bytes to the left of global variable '*.LC76' defined in 'strerror.c' (0x7fffe018a520) of size 22
+  '*.LC76' is ascii string 'Chunk callback failed'
+0x7fffe018a500 is located 2 bytes to the right of global variable '*.LC75' defined in 'strerror.c' (0x7fffe018a4e0) of size 30
+  '*.LC75' is ascii string 'Unable to parse FTP file list'
+SUMMARY: AddressSanitizer: global-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553 in printf_common
+Shadow bytes around the buggy address:
+  0x10007c029450: 00 00 00 02 f9 f9 f9 f9 00 00 00 03 f9 f9 f9 f9
+  0x10007c029460: 00 00 03 f9 f9 f9 f9 f9 00 00 02 f9 f9 f9 f9 f9
+  0x10007c029470: 00 00 06 f9 f9 f9 f9 f9 00 00 07 f9 f9 f9 f9 f9
+  0x10007c029480: 00 00 00 07 f9 f9 f9 f9 00 00 00 00 03 f9 f9 f9
+  0x10007c029490: f9 f9 f9 f9 00 00 03 f9 f9 f9 f9 f9 00 00 00 06
+=>0x10007c0294a0:[f9]f9 f9 f9 00 00 06 f9 f9 f9 f9 f9 00 00 00 00
+  0x10007c0294b0: 04 f9 f9 f9 f9 f9 f9 f9 00 00 00 00 00 00 f9 f9
+  0x10007c0294c0: f9 f9 f9 f9 00 00 00 00 00 00 02 f9 f9 f9 f9 f9
+  0x10007c0294d0: 00 00 00 00 00 01 f9 f9 f9 f9 f9 f9 00 00 00 00
+  0x10007c0294e0: 00 01 f9 f9 f9 f9 f9 f9 00 00 00 00 00 05 f9 f9
+  0x10007c0294f0: f9 f9 f9 f9 00 05 f9 f9 f9 f9 f9 f9 00 00 06 f9
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==28564==ABORTING

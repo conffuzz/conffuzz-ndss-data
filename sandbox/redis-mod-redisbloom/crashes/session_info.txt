@@ -1,0 +1,14 @@
+Fuzzing seed: 1667903504
+Starting time: 2022-11-08 10:31:44
+Total instrumented API size: 19
+Statically detected call sites: 0
+Statically detected called API endpoints: 19
+Statically detected caller components: 0
+Max number of call sites reached in a run: 2
+Number of API endpoints reached: 8
+Number of API endpoints that are vulnerability vectors: 3
+List of these endpoints:
+  [api] BFAdd_RedisCommand
+  [api] BFCheck_RedisCommand
+  [api] RedisModule_OnLoad
+Ending time: 2022-11-08 11:31:15

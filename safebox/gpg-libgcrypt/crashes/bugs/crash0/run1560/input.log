@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gcry_control(0x1c {gcry_ctl_cmds} [size: 0]) @ 0x00005555555cc0f7
+~> change arg #0x1 {gcry_ctl_cmds} from 0x1c to 0x173
+gcry_check_version(0x5555558200d8 {char*} [size: 0x1]) @ 0x0000555555790ba8
+gcry_realloc(0 {void*} [size: 0x1], 0x10 {size_t} [size: 0]) @ 0x00007fffe1529014
+gcry_realloc(0 {void*} [size: 0x1], 0x50 {size_t} [size: 0]) @ 0x00007fffe1529014
+~> change arg #0x1 {void*} from 0 to 0xffffffffffffd8f0

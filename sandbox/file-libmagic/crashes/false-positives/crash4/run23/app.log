@@ -1,0 +1,23 @@
+file: Compiled magic version [541] does not match with shared library magic version [-3000]
+
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2605==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe274f994 bp 0x7fffffffdd60 sp 0x7fffffffdd10 T0)
+==2605==The signal is caused by a READ memory access.
+==2605==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe274f994 in file_magicfind /root/file-5.41/src/apprentice.c:3549
+    #1 0x7fffe275d86d in mget /root/file-5.41/src/softmagic.c:1862
+    #2 0x7fffe275117f in match /root/file-5.41/src/softmagic.c:353
+    #3 0x7fffe274ff15 in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #4 0x7fffe277df67 in file_buffer /root/file-5.41/src/funcs.c:445
+    #5 0x7fffe273ba94 in file_or_fd /root/file-5.41/src/magic.c:518
+    #6 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #7 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #8 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #9 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/file-5.41/src/apprentice.c:3549 in file_magicfind
+==2605==ABORTING

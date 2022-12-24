@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==42351==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7fffe067797d bp 0x7fffffffdd00 sp 0x7fffffffd498 T0)
+==42351==The signal is caused by a READ memory access.
+==42351==Hint: address points to the zero page.
+    #0 0x7fffe067797d  (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d)
+    #1 0x7fffe11b3a1b in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:387
+    #2 0x7fffe0a8c2e2 in ERR_error_string_n crypto/err/err.c:616
+    #3 0x5555556900cb in ngx_ssl_error src/event/ngx_event_openssl.c:3503
+    #4 0x555555681410 in ngx_ssl_init src/event/ngx_event_openssl.c:191
+    #5 0x5555555c7508 in main src/core/nginx.c:241
+    #6 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x19d97d) 
+==42351==ABORTING

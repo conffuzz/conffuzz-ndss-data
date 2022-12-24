@@ -1,0 +1,27 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+markdown_output(0x60d000006840 {MMIOT*} [size: 0x60], 0x7fffd33fb0a0 {request_rec*} [size: 0x2e0], 0x7fffd2bd8698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+~> write {MMIOT*} 0 -> 0x3e8000000000000 at shared buffer 0x000060d00000684b
+~> write {markdown_conf*} 0x1 -> 0xe800000000000000 at shared buffer 0x00007fffd2bd8698
+~> write {request_rec*} 0 -> 0 at shared buffer 0x00007fffd33fb16d
+~> write {request_rec*} 0 -> 0x4 at shared buffer 0x00007fffd33fb2e7
+~> change ret {int} from 0 to 0xe9
+markdown_output(0x60d000006910 {MMIOT*} [size: 0x60], 0x7fffd15cd0a0 {request_rec*} [size: 0x2e0], 0x7fffd15c6698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+~> write {request_rec*} 0x7fffd15ce61800 -> 0 at shared buffer 0x00007fffd15cd1e7
+markdown_output(0x60d0000069e0 {MMIOT*} [size: 0x60], 0x7fffd14a90a0 {request_rec*} [size: 0x2e0], 0x7fffd13d7698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+markdown_output(0x60d000006ab0 {MMIOT*} [size: 0x60], 0x7fffd14a90a0 {request_rec*} [size: 0x2e0], 0x7fffd13d7698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d000006ad2
+~> write {request_rec*} 0 -> 0x200000 at shared buffer 0x00007fffd14a92c3
+~> change ret {int} from 0 to 0x8
+markdown_output(0x60d000006b80 {MMIOT*} [size: 0x60], 0x7fffd143c0a0 {request_rec*} [size: 0x2e0], 0x7fffd13d5698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+~> write {MMIOT*} 0 -> 0 at shared buffer 0x000060d000006b8f
+~> write {markdown_conf*} 0x1 -> 0x4900000000000000 at shared buffer 0x00007fffd13d5698
+~> change ret {int} from 0 to 0x1e5
+markdown_output(0x60d000006c50 {MMIOT*} [size: 0x60], 0x7fffd143c0a0 {request_rec*} [size: 0x2e0], 0x7fffd13d5698 {markdown_conf*} [size: 0x1]) @ 0x00007fffd7f8ea97
+~> write {MMIOT*} 0 -> 0xae00000000000000 at shared buffer 0x000060d000006c8c
+~> write {MMIOT*} 0 -> 0x2eb000000000000 at shared buffer 0x000060d000006ca9
+~> write {markdown_conf*} 0x1 -> 0 at shared buffer 0x00007fffd13d5698
+~> write {request_rec*} 0x5b23fed60005eca2 -> 0x311 at shared buffer 0x00007fffd143c324
+~> write {request_rec*} 0x50 -> 0xa200000000000000 at shared buffer 0x00007fffd143c0a8

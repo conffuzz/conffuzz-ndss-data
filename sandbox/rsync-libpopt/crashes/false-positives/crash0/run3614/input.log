@@ -1,0 +1,10 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poptGetContext(0x5555556b15a0 {char*} [size: 0x1], 0x5 {int} [size: 0], 0x7fffffffea68 {char**} [size: 0x8], 0x5555556f62a0 {poptOption*} [size: 0x30], 0 {unsignedint} [size: 0]) @ 0x0000555555610b3b
+~> change ret {poptContext} from 0x618000000080 to 0x617ffffffe94
+poptReadDefaultConfig(0x617ffffffe94 {poptContext} [size: 0], 0 {int} [size: 0]) @ 0x0000555555610b64
+poptAddAlias(0x617ffffffe94 {poptContext} [size: 0], 0 {poptAlias} [size: 0], 0 {int} [size: 0]) @ 0x00005555556107af
+poptAddAlias(0x617ffffffe94 {poptContext} [size: 0], 0 {poptAlias} [size: 0], 0 {int} [size: 0]) @ 0x00005555556107af
+poptGetNextOpt(0x617ffffffe94 {poptContext} [size: 0]) @ 0x0000555555612446

@@ -1,0 +1,87 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1caf96e
+_ZN7acommon5MutexC2Ev(0x7fffe1f735a0 {char} [size: 0]) @ 0x00007fffe1caf9a0
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cb4c1a
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cb865c
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cbcbb6
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cc0708
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cc72c2
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cdf18a
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cf244a
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cf6c6a
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1cf8c12
+_ZN7acommon7FStreamC2EP8_IO_FILEb(0x5555555f4fe0 {char} [size: 0], 0x7fffe172aaa0 {char} [size: 0], 0 {char} [size: 0]) @ 0x00007fffe1cf8c7a
+_ZN7acommon7FStreamC2EP8_IO_FILEb(0x5555555f5020 {char} [size: 0], 0x7fffe172b780 {char} [size: 0], 0 {char} [size: 0]) @ 0x00007fffe1cf8ce2
+_ZN7acommon7FStreamC2EP8_IO_FILEb(0x5555555f5060 {char} [size: 0], 0x7fffe172b6a0 {char} [size: 0], 0 {char} [size: 0]) @ 0x00007fffe1cf8d4a
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d03acf
+_ZN7acommon17MDInfoListofListsC1Ev() @ 0x00007fffe1d03b01
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d1b227
+_ZN7acommon11GlobalCacheINS_6DecodeEEC1EPKc() @ 0x00007fffe1d1b263
+_ZN7acommon11GlobalCacheINS_6EncodeEEC1EPKc() @ 0x00007fffe1d1b29f
+_ZN7acommon11GlobalCacheINS_10NormTablesEEC2EPKc(0x7fffe1f83b60 {char} [size: 0], 0x7fffe1e93880 {char} [size: 0]) @ 0x00007fffe1d1b2db
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d2b45c
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d2d6ad
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d30c82
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d3656e
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d3eb67
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d54c9b
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d82761
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1d9a754
+_ZN7acommon11GlobalCacheIN8aspeller10DictionaryEEC1EPKc() @ 0x00007fffe1d9a790
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1da149f
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1da45e7
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1dbdfed
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1dd5366
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEiE() @ 0x00007fffe1dd5406
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEbE() @ 0x00007fffe1dd5480
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEbE() @ 0x00007fffe1dd54fa
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEbE() @ 0x00007fffe1dd5574
+_ZN8aspeller12UpdateMember3FunC2EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEPKcE(0x7fffe1f93f50 {char} [size: 0], 0x7fffe1dd79e4 {char} [size: 0]) @ 0x00007fffe1dd55ee
+~> instrumenting 0x00007fffe1dd79e4 (_ZN8aspeller11SpellerImpl14ConfigNotifier8sug_modeEPS0_PKc, 0x2 arg(s))
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEbE() @ 0x00007fffe1dd5668
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEiE() @ 0x00007fffe1dd56e2
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEiE() @ 0x00007fffe1dd575c
+_ZN8aspeller12UpdateMember3FunC1EPFN7acommon8PosibErrIvEEPNS_11SpellerImplEbE() @ 0x00007fffe1dd57d9
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1de4f2e
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1debb24
+_ZN7acommon11GlobalCacheIN8aspeller20TypoEditDistanceInfoEEC2EPKc(0x7fffe1f96b00 {char} [size: 0], 0x7fffe1eacf40 {char} [size: 0]) @ 0x00007fffe1debb60
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e0a540
+_ZN7acommon11GlobalCacheIN8aspeller8LanguageEEC1EPKc() @ 0x00007fffe1e0a57c
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e24485
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e2a96b
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e2cc1b
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e2f273
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e31738
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e33b65
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e365f3
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e3917b
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e3c809
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e3ede1
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e47d33
+_ZN7acommon11GlobalCacheINS_18ConfigFilterModuleEEC1EPKc() @ 0x00007fffe1e47dd9
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e5a9c6
+_ZN7acommon11GlobalCacheINS_14FilterModeListEEC1EPKc() @ 0x00007fffe1e5aa02
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e69354
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e72ab3
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e78e06
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e7b6b9
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00007fffe1e7df95
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x0000555555599910
+_ZN7acommon6VectorINS_6StringEEC1Ev() @ 0x0000555555599942
+_ZN7acommon8StackPtrINS_6ConfigEEC2EPS1_(0x5555555f5160 {char} [size: 0], 0 {char} [size: 0]) @ 0x0000555555599979
+_ZN7acommon4ConvC2EPNS_7ConvertE(0x5555555f51a0 {char} [size: 0], 0 {char} [size: 0]) @ 0x00005555555999b0
+_ZN7acommon4ConvC2EPNS_7ConvertE(0x5555555f5220 {char} [size: 0], 0 {char} [size: 0]) @ 0x00005555555999e7
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00005555555ca41a
+_ZN7acommon4ConvC2EPNS_7ConvertE(0x5555555f5400 {char} [size: 0], 0 {char} [size: 0]) @ 0x00005555555ca4f6
+_ZN7acommon8PosibErrIvEC1Ev() @ 0x00005555555cf1a1
+new_config() @ 0x0000555555571863
+~> change ret {Config*} from 0x611000000040 to 0x7ffffffde190
+operator=(0x5555555f5160 {StackPtr<acommon::Config>*} [size: 0x8], 0x7ffffffde190 {Config*} [size: 0x78]) @ 0x0000555555571875
+~> write {StackPtr<acommon::Config>*} 0x7ffffffde1 -> 0x23e00 at shared buffer 0x00005555555f5161
+~> change ret {StackPtr<acommon::Config>&} from 0x5555555f5160 to 0x5555555f4e48
+aspell_gettext_init() @ 0x000055555557188e
+operator->(0x5555555f5160 {StackPtr<acommon::Config>*} [size: 0x8]) @ 0x000055555557189d
+set_committed_state(0x7fffffffdc10 {Config*} [size: 0x78], 0x23e90 {bool} [size: 0]) @ 0x00005555555718db

@@ -1,0 +1,78 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+~> change ret from 0x7fffe25b1c30 to 0x7fffe25b1efa
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> change ret from 0 to 0xfffffffffffffcde
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0 -> 0xfffffffff448 at shared buffer 0x00006040000002a1
+~> change ret from 0 to 0xfffffffffffff448
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x65 -> 0 at shared buffer 0x0000602000000430
+pcap_set_promisc(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> change ret from 0 to 0xfffffffffffffecc
+pcap_set_timeout(0x618000000080 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0 -> 0 at shared buffer 0x00006180000000e8
+~> write 0x7fffe258b2 -> 0x139 at shared buffer 0x00006180000002c9
+~> write 0 -> 0 at shared buffer 0x000061800000014a
+~> change ret from 0 to 0x7
+pcap_set_tstamp_precision(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0 -> 0xfff6 at shared buffer 0x000061800000018f
+~> write 0 -> 0 at shared buffer 0x000061800000014c
+pcap_set_buffer_size(0x618000000080 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+~> write 0x58dd050000 -> 0xfffffffdf7 at shared buffer 0x00006180000002fe
+~> change ret from 0 to 0x2710
+pcap_activate(0x618000000080 [size: 0x288]) @ 0x0000555555586c87
+~> write 0x58dd000000 -> 0xffffff at shared buffer 0x0000618000000268
+~> write 0 -> 0x125 at shared buffer 0x000061800000015d
+~> write 0x7f -> 0 at shared buffer 0x00006180000002a5
+~> write 0x1ff -> 0 at shared buffer 0x000061800000011b
+~> change ret from 0 to 0x14a
+pcap_get_tstamp_precision(0x618000000080 [size: 0x288]) @ 0x0000555555585b92
+~> write 0 -> 0 at shared buffer 0x000061800000024e
+~> write 0 -> 0 at shared buffer 0x00006180000000e5
+~> write 0x5861 -> 0 at shared buffer 0x00006180000002f9
+~> write 0xffffff -> 0x29a at shared buffer 0x0000618000000268
+pcap_datalink(0x618000000080 [size: 0x288]) @ 0x0000555555585188
+~> write 0x6020000004 -> 0 at shared buffer 0x00006180000000f9
+~> write 0x7fffe2583d770000 -> 0 at shared buffer 0x00006180000002ee
+~> write 0x7fff -> 0xa at shared buffer 0x0000618000000084
+~> write 0 -> 0xffffffffffff80 at shared buffer 0x0000618000000233
+pcap_get_selectable_fd(0x618000000080 [size: 0x288]) @ 0x000055555556bf6b
+~> change ret from 0x9 to 0x42
+pcap_lookupnet(0x602000000430 [size: 0x1], 0x7fffffffc1b0 [size: 0x1], 0x7fffffffc1c0 [size: 0x1], 0x7fffffffc1d0 [size: 0x1]) @ 0x0000555555563a0a
+~> write 0 -> 0x7fffffffc109 at shared buffer 0x0000602000000430
+~> write 0x9 -> 0x7fffffffc118 at shared buffer 0x0000602000000430
+~> write 0x53 -> 0x7fffffffc100 at shared buffer 0x00007fffffffc1d0
+~> write 0 -> 0x7fffffffc100 at shared buffer 0x00007fffffffc1d0
+~> write 0 -> 0x7fffffffc104 at shared buffer 0x00007fffffffc1d0
+pcap_compile(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0x10], 0x55555558bb80 [size: 0x1], 0x1 [size: 0], 0 [size: 0]) @ 0x0000555555563aa9
+~> write 0 -> 0xffffff8000 at shared buffer 0x0000618000000180
+~> write 0 -> 0xffff000000 at shared buffer 0x00007fffffffc383
+~> change ret from 0 to 0x394
+pcap_setfilter(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0x10]) @ 0x000055555556c8b3
+~> write 0x60200000067000 -> 0 at shared buffer 0x00007fffffffc387
+~> write 0 -> 0 at shared buffer 0x00007fffffffc382
+~> write 0 -> 0xfec8 at shared buffer 0x00007fffffffc383
+~> write 0xfe -> 0xd8 at shared buffer 0x00007fffffffc384
+pcap_freecode(0x7fffffffc380 [size: 0x10]) @ 0x000055555556c8d6
+~> write 0xd800 -> 0 at shared buffer 0x00007fffffffc383
+~> write 0 -> 0xff at shared buffer 0x00007fffffffc384
+~> write 0xff -> 0 at shared buffer 0x00007fffffffc384
+~> write 0 -> 0xffffffffff8000 at shared buffer 0x00007fffffffc385
+~> change ret from 0 to 0xfffffffffffffdf5
+pcap_snapshot(0x618000000080 [size: 0x288]) @ 0x000055555556d2e4
+pcap_stats(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0xc]) @ 0x000055555556e51a
+~> write 0 -> 0 at shared buffer 0x00006180000001d6
+~> write 0x1c -> 0x6 at shared buffer 0x00007fffffffc380
+~> write 0 -> 0x5 at shared buffer 0x00007fffffffc38b
+~> write 0 -> 0xdf at shared buffer 0x00007fffffffc389
+~> write 0 -> 0 at shared buffer 0x00007fffffffc387
+pcap_stats(0x618000000080 [size: 0x288], 0x7fffffffe820 [size: 0xc]) @ 0x0000555555572a92
+~> write 0x7318 -> 0x1 at shared buffer 0x00006180000002c0
+~> write 0 -> 0xfffffff6 at shared buffer 0x00006180000001dd
+~> write 0 -> 0x2 at shared buffer 0x00007fffffffe825
+~> write 0 -> 0 at shared buffer 0x00007fffffffe822
+pcap_close(0x618000000080 [size: 0x288]) @ 0x000055555556c6e7

@@ -1,0 +1,20 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avformat_network_init() @ 0x00005555555a054e
+avformat_configuration() @ 0x00005555555775f7
+avformat_version() @ 0x000055555557757a
+avformat_alloc_context() @ 0x000055555559ba84
+avformat_open_input(0x7fffffffe790 [size: 0x8], 0x7fffffffecbf [size: 0x1], 0 [size: 0x98], 0x5555555cd6a0 [size: 0x8]) @ 0x000055555559bb74
+~> write 0x603000001420 -> 0xffffffffffffd8f0 at shared buffer 0x00005555555cd6a0
+~> write 0x6030000014ff -> 0xffffffffffffd8ae at shared buffer 0x00005555555cd6a4
+~> write 0x60ffffaeffff -> 0xffffff0000000000 at shared buffer 0x00005555555cd6a2
+~> write 0x60ffff000061 -> 0xffffff000000010d at shared buffer 0x00007fffffffe795
+~> write 0x60ffff000001 -> 0xffffff000000010d at shared buffer 0x00007fffffffe796
+~> write 0x60ffff00000d -> 0xffffff0000000100 at shared buffer 0x00007fffffffe796
+~> write 0x60ff00000080 -> 0xffffff00fffffffa at shared buffer 0x00007fffffffe790
+~> write 0x60ff00000066 -> 0xffffff00ffffffd9 at shared buffer 0x00007fffffffecbf
+~> write 0x60ff000000d9 -> 0xffffff00ffffff00 at shared buffer 0x00007fffffffecbf
+~> write 0x60ff00000000 -> 0xffffff00ffffff00 at shared buffer 0x00007fffffffecbf
+~> change ret from 0 to 0x8000000000000000

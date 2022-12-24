@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libpcre2-8.so.0.10.4
+cap_null_deref

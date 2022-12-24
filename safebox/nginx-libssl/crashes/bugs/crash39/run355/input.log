@@ -1,0 +1,30 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x40 {uint64_t} [size: 0], 0 {OPENSSL_INIT_SETTINGS*} [size: 0x18]) @ 0x000055555568137c
+ERR_clear_error() @ 0x00005555556813b6
+CRYPTO_get_ex_new_index(0 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556813db
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681442
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556814a9
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681510
+~> change arg #0x5 {CRYPTO_EX_dup*} from 0 to 0x10
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0x7b
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681577
+~> change arg #0x2 {longint} from 0 to 0x7fffffffffffffff
+~> change arg #0x4 {CRYPTO_EX_new*} from 0 to 0xfffffffffffffd4e
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0xfffffffffffffff8
+CRYPTO_get_ex_new_index(0x1 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556815de
+~> change arg #0x1 {int} from 0x1 to 0x4
+~> change arg #0x3 {void*} from 0 to 0xff
+~> change arg #0x4 {CRYPTO_EX_new*} from 0 to 0x1a1
+CRYPTO_get_ex_new_index(0x3 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x0000555555681645
+~> change arg #0x1 {int} from 0x3 to 0x29c
+~> change arg #0x3 {void*} from 0 to 0x2
+~> change arg #0x5 {CRYPTO_EX_dup*} from 0 to 0x101
+~> change arg #0x6 {CRYPTO_EX_free*} from 0 to 0x4
+ERR_peek_error() @ 0x000055555568ffcf
+ERR_peek_error_line_data(0 {char**} [size: 0x8], 0 {int*} [size: 0x4], 0x7fffffffdf70 {char**} [size: 0x8], 0x7fffffffdf60 {int*} [size: 0x4]) @ 0x000055555569002c
+~> change arg #0x1 {char**} from 0 to 0xbb8
+~> change arg #0x2 {int*} from 0 to 0xfffffffffffffdb5
+~> change arg #0x4 {int*} from 0x7fffffffdf60 to 0x7ffffffde000

@@ -1,0 +1,45 @@
+[I] Recursing from tifffield into _TIFFField
+[I] Recursing from tiffcodec into structure 
+[E] Not able to find type information for tiffcodec in DWARF
+[I] Recursing from tiffrgbaimage into _TIFFRGBAImage
+[I] Recursing from tiffcielabtorgb into structure 
+[E] Not able to find type information for tiffcielabtorgb in DWARF
+[I] Recursing from tiffycbcrtorgb into structure 
+[E] Not able to find type information for tiffycbcrtorgb in DWARF
+[I] Recursing from tifffieldarray into _TIFFFieldArray
+[I] Recursing from uint16_t into __uint16_t
+[I] Recursing from __uint16_t into short unsigned int
+[E] Not able to find type information for uint16_t in DWARF
+[I] Recursing from tifffieldinfo into structure 
+[E] Not able to find type information for tifffieldinfo in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from tiffdisplay into structure 
+[E] Not able to find type information for tiffdisplay in DWARF
+[I] Attempting to instrument callback TIFFErrors
+Got function argument numbers (3) from cache!
+Tried and failed to write to 0x00007fffb9b8bd80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b8bd80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b8bd80 (1 bytes)
+[I] Attempting to instrument callback TIFFWarnings
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFTagExtender
+Got function argument numbers (1) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==163854==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0x7fffb9b8b279 bp 0x7fffffff4200 sp 0x7fffffff30f0 T0)
+    #0 0x7fffb9b8b279 in RegisterTIFFImage coders/tiff.c:2364
+    #1 0x7fffe230d86d in OpenModule MagickCore/module.c:1326
+    #2 0x7fffe22fc0af in GetMagickInfo MagickCore/magick.c:638
+    #3 0x7fffe22c9679 in SetImageInfoFromExtension MagickCore/image.c:2758
+    #4 0x7fffe22ca424 in SetImageInfo MagickCore/image.c:2879
+    #5 0x7fffe212643d in WriteImages MagickCore/constitute.c:1518
+    #6 0x7fffe1be9121 in ConvertImageCommand MagickWand/convert.c:3330
+    #7 0x7fffe1d0a1f6 in MagickCommandGenesis MagickWand/mogrify.c:188
+    #8 0x555555556823 in MagickMain utilities/magick.c:150
+    #9 0x555555556aba in main utilities/magick.c:182
+    #10 0x7fffe11dd7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #11 0x555555556239 in _start (/usr/local/bin/magick+0x2239)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: UNKNOWN SIGNAL coders/tiff.c:2364 in RegisterTIFFImage
+==163854==ABORTING

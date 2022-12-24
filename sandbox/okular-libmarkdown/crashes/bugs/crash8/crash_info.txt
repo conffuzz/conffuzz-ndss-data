@@ -1,0 +1,2 @@
+fault_location /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.2
+cap_corrupt_allocator

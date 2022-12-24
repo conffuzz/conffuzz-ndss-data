@@ -1,0 +1,35 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==9493==ERROR: AddressSanitizer: SEGV on unknown address 0x611ffffffc7e (pc 0x7fffe09b1d06 bp 0x7fffffffd990 sp 0x7fffffffd940 T0)
+==9493==The signal is caused by a WRITE memory access.
+    #0 0x7fffe09b1d06 in aesni_set_encrypt_key (/usr/local/lib/libcrypto.so.1.1+0x138d06)
+    #1 0x7fffe0bcb4ea in aesni_init_key crypto/evp/e_aes.c:287
+    #2 0x7fffe0bfc694 in EVP_CipherInit_ex crypto/evp/evp_enc.c:200
+    #3 0x7fffe0c8d38d in drbg_ctr_init crypto/rand/drbg_ctr.c:413
+    #4 0x7fffe0c8dab2 in RAND_DRBG_set crypto/rand/drbg_lib.c:137
+    #5 0x7fffe0c8dfa0 in rand_drbg_new crypto/rand/drbg_lib.c:225
+    #6 0x7fffe0c8e0ea in RAND_DRBG_secure_new crypto/rand/drbg_lib.c:257
+    #7 0x7fffe0c91481 in drbg_setup crypto/rand/drbg_lib.c:878
+    #8 0x7fffe0c91672 in do_rand_drbg_init crypto/rand/drbg_lib.c:924
+    #9 0x7fffe0c91604 in do_rand_drbg_init_ossl_ crypto/rand/drbg_lib.c:909
+    #10 0x7fffe069af67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67)
+    #11 0x7fffe0d18f24 in CRYPTO_THREAD_run_once crypto/threads_pthread.c:118
+    #12 0x7fffe0c91ba0 in RAND_DRBG_get0_public crypto/rand/drbg_lib.c:1116
+    #13 0x7fffe0c91791 in drbg_bytes crypto/rand/drbg_lib.c:966
+    #14 0x7fffe0c946c3 in RAND_bytes crypto/rand/rand_lib.c:939
+    #15 0x7fffe104aca7 in SSL_CTX_new ssl/ssl_lib.c:3058
+    #16 0x55555568177a in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #17 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #18 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #19 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #20 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #21 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #22 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #23 0x5555555c76b0 in main src/core/nginx.c:292
+    #24 0x7fffe062ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #25 0x7fffe062ae3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #26 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/lib/libcrypto.so.1.1+0x138d06) in aesni_set_encrypt_key
+==9493==ABORTING

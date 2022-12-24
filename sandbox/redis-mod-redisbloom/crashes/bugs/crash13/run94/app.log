@@ -1,0 +1,255 @@
+22341:C 08 Nov 2022 10:53:36.740 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22341:C 08 Nov 2022 10:53:36.767 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=22341, just started
+22341:C 08 Nov 2022 10:53:36.770 # Configuration loaded
+22341:M 08 Nov 2022 10:53:36.859 * monotonic clock: POSIX clock_gettime
+22341:M 08 Nov 2022 10:53:37.287 * Running mode=standalone, port=6379.
+22341:M 08 Nov 2022 10:53:37.289 # Server initialized
+22341:M 08 Nov 2022 10:53:37.291 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+22341:M 08 Nov 2022 10:53:37.439 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+22341:M 08 Nov 2022 10:53:37.495 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+22341:M 08 Nov 2022 10:53:37.648 * Ready to accept connections
+
+
+=== REDIS BUG REPORT START: Cut & paste starting from here ===
+22341:M 08 Nov 2022 10:53:37.904 # ------------------------------------------------
+22341:M 08 Nov 2022 10:53:37.905 # !!! Software Failure. Press left mouse button to continue
+22341:M 08 Nov 2022 10:53:37.905 # Guru Meditation: decrRefCount against refcount <= 0 #object.c:390
+
+------ STACK TRACE ------
+
+Backtrace:
+/root/redis-6.2.6/src/redis-server *:6379(_serverPanic+0x2b3)[0x555555760089]
+/root/redis-6.2.6/src/redis-server *:6379(decrRefCount+0x1b1)[0x5555556b69ca]
+/root/redis-6.2.6/src/redis-server *:6379(+0x14add2)[0x55555569edd2]
+/root/redis-6.2.6/src/redis-server *:6379(resetClient+0x82)[0x5555556a1a50]
+/root/redis-6.2.6/src/redis-server *:6379(commandProcessed+0x57)[0x5555556a46c2]
+/root/redis-6.2.6/src/redis-server *:6379(processCommandAndResetClient+0x69)[0x5555556a49c2]
+/root/redis-6.2.6/src/redis-server *:6379(processInputBuffer+0x634)[0x5555556a50f6]
+/root/redis-6.2.6/src/redis-server *:6379(readQueryFromClient+0x841)[0x5555556a5a70]
+/root/redis-6.2.6/src/redis-server *:6379(+0x31c42d)[0x55555587042d]
+/root/redis-6.2.6/src/redis-server *:6379(+0x31d75a)[0x55555587175a]
+/root/redis-6.2.6/src/redis-server *:6379(aeProcessEvents+0x64b)[0x55555565a3b4]
+/root/redis-6.2.6/src/redis-server *:6379(aeMain+0x5d)[0x55555565aaa2]
+/root/redis-6.2.6/src/redis-server *:6379(main+0xf1a)[0x55555567c2b2]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xea)[0x7fffdee0fd0a]
+/root/redis-6.2.6/src/redis-server *:6379(_start+0x2a)[0x55555564d18a]
+
+------ INFO OUTPUT ------
+# Server
+redis_version:6.2.6
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:4b4b4131f1467250
+redis_mode:standalone
+os:Linux 6.0.0-1-amd64 x86_64
+arch_bits:64
+multiplexing_api:epoll
+atomicvar_api:atomic-builtin
+gcc_version:10.2.1
+process_id:22341
+process_supervised:no
+run_id:06a137e4b8139c4886883110d405c1fc94456c9c
+tcp_port:6379
+server_time_usec:1667904817794265
+uptime_in_seconds:1
+uptime_in_days:0
+hz:10
+configured_hz:10
+lru_clock:6960433
+executable:/root/redis-6.2.6/src/redis-server
+config_file:/root/redis-6.2.6/redis.conf
+io_threads_active:0
+
+# Clients
+connected_clients:1
+cluster_connections:0
+maxclients:10000
+client_recent_max_input_buffer:8
+client_recent_max_output_buffer:0
+blocked_clients:0
+tracking_clients:0
+clients_in_timeout_table:0
+
+# Memory
+used_memory:894088
+used_memory_human:873.13K
+used_memory_rss:229670912
+used_memory_rss_human:219.03M
+used_memory_peak:894088
+used_memory_peak_human:873.13K
+used_memory_peak_perc:100.20%
+used_memory_overhead:850216
+used_memory_startup:829656
+used_memory_dataset:43872
+used_memory_dataset_perc:68.09%
+allocator_allocated:1304328
+allocator_active:1622016
+allocator_resident:4456448
+total_system_memory:16427008000
+total_system_memory_human:15.30G
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+used_memory_scripts:0
+used_memory_scripts_human:0B
+number_of_cached_scripts:0
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+allocator_frag_ratio:1.24
+allocator_frag_bytes:317688
+allocator_rss_ratio:2.75
+allocator_rss_bytes:2834432
+rss_overhead_ratio:51.54
+rss_overhead_bytes:225214464
+mem_fragmentation_ratio:270.01
+mem_fragmentation_bytes:228820304
+mem_not_counted_for_evict:0
+mem_replication_backlog:0
+mem_clients_slaves:0
+mem_clients_normal:20488
+mem_aof_buffer:0
+mem_allocator:jemalloc-5.1.0
+active_defrag_running:0
+lazyfree_pending_objects:0
+lazyfreed_objects:0
+
+# Persistence
+loading:0
+current_cow_size:0
+current_cow_size_age:0
+current_fork_perc:0.00
+current_save_keys_processed:0
+current_save_keys_total:0
+rdb_changes_since_last_save:1
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1667904816
+rdb_last_bgsave_status:ok
+rdb_last_bgsave_time_sec:-1
+rdb_current_bgsave_time_sec:-1
+rdb_last_cow_size:0
+aof_enabled:0
+aof_rewrite_in_progress:0
+aof_rewrite_scheduled:0
+aof_last_rewrite_time_sec:-1
+aof_current_rewrite_time_sec:-1
+aof_last_bgrewrite_status:ok
+aof_last_write_status:ok
+aof_last_cow_size:0
+module_fork_in_progress:0
+module_fork_last_cow_size:0
+
+# Stats
+total_connections_received:1
+total_commands_processed:1
+instantaneous_ops_per_sec:0
+total_net_input_bytes:40
+total_net_output_bytes:0
+instantaneous_input_kbps:0.00
+instantaneous_output_kbps:0.00
+rejected_connections:0
+sync_full:0
+sync_partial_ok:0
+sync_partial_err:0
+expired_keys:0
+expired_stale_perc:0.00
+expired_time_cap_reached_count:0
+expire_cycle_cpu_milliseconds:1
+evicted_keys:0
+keyspace_hits:0
+keyspace_misses:0
+pubsub_channels:0
+pubsub_patterns:0
+latest_fork_usec:0
+total_forks:0
+migrate_cached_sockets:0
+slave_expires_tracked_keys:0
+active_defrag_hits:0
+active_defrag_misses:0
+active_defrag_key_hits:0
+active_defrag_key_misses:0
+tracking_total_keys:0
+tracking_total_items:0
+tracking_total_prefixes:0
+unexpected_error_replies:0
+total_error_replies:0
+dump_payload_sanitizations:0
+total_reads_processed:1
+total_writes_processed:0
+io_threaded_reads_processed:0
+io_threaded_writes_processed:0
+
+# Replication
+role:master
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:7cff7db453cde1a30a1f63453433dcf4e6b1cc65
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:0
+second_repl_offset:-1
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+
+# CPU
+used_cpu_sys:0.510629
+used_cpu_user:2.421502
+used_cpu_sys_children:0.009576
+used_cpu_user_children:0.003885
+used_cpu_sys_main_thread:0.497384
+used_cpu_user_main_thread:2.387444
+
+# Modules
+module:name=bf,ver=20218,api=1,filters=0,usedby=[],using=[],options=[]
+
+# Commandstats
+cmdstat_bf.add:calls=1,usec=78838,usec_per_call=78838.00,rejected_calls=0,failed_calls=0
+
+# Errorstats
+
+# Cluster
+cluster_enabled:0
+
+# Keyspace
+db0:keys=1,expires=0,avg_ttl=0
+
+------ CLIENT LIST OUTPUT ------
+id=3 addr=127.0.0.1:44062 laddr=127.0.0.1:6379 fd=15 name= age=1 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=40 qbuf-free=40914 argv-mem=18 obl=4 oll=0 omem=0 tot-mem=61482 events=r cmd=bf.add user=default redir=-1
+
+------ CURRENT CLIENT INFO ------
+id=3 addr=127.0.0.1:44062 laddr=127.0.0.1:6379 fd=15 name= age=1 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=40 qbuf-free=40914 argv-mem=18 obl=4 oll=0 omem=0 tot-mem=61482 events=r cmd=bf.add user=default redir=-1
+argv[0]: 'EäÙÿ'
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==22341==ERROR: AddressSanitizer: SEGV on unknown address 0x10037bda6d35 (pc 0x555555b43676 bp 0x7fffffffe200 sp 0x7fffffff7030 T0)
+==22341==The signal is caused by a READ memory access.
+    #0 0x555555b43676 in tcache_dalloc_large include/jemalloc/internal/tcache_inlines.h:203
+    #1 0x555555b43676 in arena_dalloc include/jemalloc/internal/arena_inlines_b.h:232
+    #2 0x555555b43676 in idalloctm include/jemalloc/internal/jemalloc_internal_inlines_c.h:118
+    #3 0x555555b43676 in ifree src/jemalloc.c:2222
+    #4 0x555555b43676 in je_free src/jemalloc.c:2393
+    #5 0x555555683576 in zfree /root/redis-6.2.6/src/zmalloc.c:292
+    #6 0x55555567e16d in sdsfree /root/redis-6.2.6/src/sds.c:196
+    #7 0x5555556b626f in freeStringObject /root/redis-6.2.6/src/object.c:298
+    #8 0x5555556b68e2 in decrRefCount /root/redis-6.2.6/src/object.c:379
+    #9 0x555555760ea6 in logCurrentClient /root/redis-6.2.6/src/debug.c:1623
+    #10 0x5555557623e1 in printCrashReport /root/redis-6.2.6/src/debug.c:1846
+    #11 0x55555576008d in _serverPanic /root/redis-6.2.6/src/debug.c:1003
+    #12 0x5555556b69c9 in decrRefCount /root/redis-6.2.6/src/object.c:390
+    #13 0x55555569edd1 in freeClientArgv /root/redis-6.2.6/src/networking.c:1199
+    #14 0x5555556a1a4f in resetClient /root/redis-6.2.6/src/networking.c:1659
+    #15 0x5555556a46c1 in commandProcessed /root/redis-6.2.6/src/networking.c:2003
+    #16 0x5555556a49c1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2040
+    #17 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #18 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #19 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #20 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #21 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #22 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #23 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #24 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #25 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV include/jemalloc/internal/tcache_inlines.h:203 in tcache_dalloc_large
+==22341==ABORTING

@@ -1,0 +1,17 @@
+    #0 0xaddr in chunkqueue_release_chunks /root/lighttpd-1.4.67/src/chunk.c:443
+    #1 0xaddr in chunkqueue_reset /root/lighttpd-1.4.67/src/chunk.c:493
+    #2 0xaddr in request_reset /root/lighttpd-1.4.67/src/reqpool.c:143
+    #3 0xaddr in connection_reset /root/lighttpd-1.4.67/src/connections.c:557
+    #4 0xaddr in connection_handle_shutdown /root/lighttpd-1.4.67/src/connections.c:160
+    #5 0xaddr in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:216
+    #6 0xaddr in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #7 0xaddr in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #8 0xaddr in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #9 0xaddr in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #10 0xaddr in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #11 0xaddr in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #12 0xaddr in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #13 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2085
+    #14 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+poptGetContext(0x5555556b15a0 {char*} [size: 0x1], 0x5 {int} [size: 0], 0x7fffffffea68 {char**} [size: 0x8], 0x5555556f62a0 {poptOption*} [size: 0x30], 0 {unsignedint} [size: 0]) @ 0x0000555555610b3b
+~> failure to write 0x1 bytes at address 0x00005555556b15a0
+poptReadDefaultConfig(0x618000000080 {poptContext} [size: 0], 0 {int} [size: 0]) @ 0x0000555555610b64
+poptAddAlias(0x618000000080 {poptContext} [size: 0], 0 {poptAlias} [size: 0], 0 {int} [size: 0]) @ 0x00005555556107af
+~> change ret {int} from 0 to 0xfffffffffffffee7
+poptAddAlias(0x618000000080 {poptContext} [size: 0], 0 {poptAlias} [size: 0], 0 {int} [size: 0]) @ 0x00005555556107af
+poptGetNextOpt(0x618000000080 {poptContext} [size: 0]) @ 0x0000555555612446
+~> change ret {int} from 0x3e9 to 0x3e8
+poptFreeContext(0x618000000080 {poptContext} [size: 0]) @ 0x0000555555610c68
+poptGetContext(0x5555556b15a0 {char*} [size: 0x1], 0x5 {int} [size: 0], 0x7fffffffea68 {char**} [size: 0x8], 0x5555556f62a0 {poptOption*} [size: 0x30], 0 {unsignedint} [size: 0]) @ 0x0000555555610c90
+~> write {poptOption*} 0x3f1000000 -> 0 at shared buffer 0x00005555556f62b6
+~> write {char**} 0xffffffec00 -> 0 at shared buffer 0x00007fffffffea69
+~> change ret {poptContext} from 0x618000000480 to 0x618000000798
+poptGetNextOpt(0x618000000798 {poptContext} [size: 0]) @ 0x0000555555612446

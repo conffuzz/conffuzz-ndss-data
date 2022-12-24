@@ -1,0 +1,7 @@
+    #1 0xaddr in acommon::String::reserve_i(unsigned long) common/string.cpp:34
+    #2 0xaddr in acommon::String::append(char const*) (/usr/local/bin/aspell+0xaddr)
+    #3 0xaddr in acommon::String::operator+=(char const*) (/usr/local/bin/aspell+0xaddr)
+    #4 0xaddr in print_help_line(char, char, char const*, acommon::KeyInfoType, char const*, bool) prog/aspell.cpp:2807
+    #5 0xaddr in print_help(bool) prog/aspell.cpp:2900
+    #6 0xaddr in main prog/aspell.cpp:267
+    #7 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

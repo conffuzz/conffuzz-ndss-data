@@ -1,0 +1,5 @@
+fault_location /root/httpd-2.4.52/httpd
+cap_write
+non_reproducible
+cap_read
+cap_write_arbitrary

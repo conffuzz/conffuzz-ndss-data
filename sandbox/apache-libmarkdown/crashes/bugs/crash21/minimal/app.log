@@ -1,0 +1,73 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 05 09:47:45.784429 2022] [core:warn] [pid 6990:tid 140736976533440] AH00098: pid file /usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+=================================================================
+==6990==ERROR: AddressSanitizer: negative-size-param: (size=-6)
+    #0 0x7fffe1e8a9ef in __interceptor_memcpy ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:806
+    #1 0x7fffe1cf2e19 in apr_bucket_heap_make (/usr/lib/x86_64-linux-gnu/libaprutil-1.so.0+0xbe19)
+    #2 0x7fffe1cf35e6  (/usr/lib/x86_64-linux-gnu/libaprutil-1.so.0+0xc5e6)
+    #3 0x55555562e341 in ap_save_brigade /root/httpd-2.4.52/server/util_filter.c:650
+    #4 0x55555568f64e in setaside_remaining_output /root/httpd-2.4.52/server/core_filters.c:579
+    #5 0x55555568f0cc in ap_core_output_filter /root/httpd-2.4.52/server/core_filters.c:548
+    #6 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #7 0x7fffd81afdd6 in reqtimeout_eor /root/httpd-2.4.52/modules/filters/mod_reqtimeout.c:354
+    #8 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #9 0x55555570f507 in ap_http_chunk_filter /root/httpd-2.4.52/modules/http/chunk_filter.c:189
+    #10 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #11 0x55555570e64e in ap_http_outerror_filter /root/httpd-2.4.52/modules/http/http_filters.c:1910
+    #12 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #13 0x55555570b41a in ap_http_header_filter /root/httpd-2.4.52/modules/http/http_filters.c:1544
+    #14 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #15 0x55555564ba96 in ap_content_length_filter /root/httpd-2.4.52/server/protocol.c:1977
+    #16 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #17 0x555555712d9a in ap_byterange_filter /root/httpd-2.4.52/modules/http/byterange_filter.c:480
+    #18 0x55555562d2b5 in ap_pass_brigade /root/httpd-2.4.52/server/util_filter.c:591
+    #19 0x55555562e87a in ap_filter_flush /root/httpd-2.4.52/server/util_filter.c:684
+    #20 0x55555564c88a in buffer_output /root/httpd-2.4.52/server/protocol.c:2106
+    #21 0x55555564cac6 in ap_rwrite /root/httpd-2.4.52/server/protocol.c:2128
+    #22 0x7fffd7ee357f in markdown_output /root/apache-mod-markdown/mod_markdown.c:163
+    #23 0x7fffd7ee4a96 in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #24 0x5555556a042b in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #25 0x5555556a1b97 in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #26 0x5555556f5835 in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #27 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #28 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #29 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #30 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #31 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #32 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #33 0x7fffe1ba4a2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+0x60e000007040 is located 0 bytes inside of 158-byte region [0x60e000007040,0x60e0000070de)
+allocated by thread T2 here:
+    #0 0x7fffe1efb1f8 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffd7e8dd6f in mkd_document /root/discount-2.2.7/generate.c:1984
+    #2 0x7fffd7ee3540 in markdown_output /root/apache-mod-markdown/mod_markdown.c:162
+    #3 0x7fffd7ee4a96 in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #4 0x5555556a042b in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #5 0x5555556a1b97 in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #6 0x5555556f5835 in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #7 0x5555556eafa3 in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #8 0x5555556eb5c0 in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #9 0x5555556c7ea3 in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #10 0x55555571bd57 in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #11 0x555555724979 in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #12 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+
+Thread T2 created by T1 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x555555726242 in start_threads /root/httpd-2.4.52/server/mpm/event/event.c:2390
+    #2 0x7fffe1c8bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+
+Thread T1 created by T0 here:
+    #0 0x7fffe1ea62a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x5555557279e3 in child_main /root/httpd-2.4.52/server/mpm/event/event.c:2599
+    #2 0x555555728659 in make_child /root/httpd-2.4.52/server/mpm/event/event.c:2712
+    #3 0x555555728aef in startup_children /root/httpd-2.4.52/server/mpm/event/event.c:2777
+    #4 0x55555572bf76 in event_run /root/httpd-2.4.52/server/mpm/event/event.c:3161
+    #5 0x555555626daf in ap_run_mpm /root/httpd-2.4.52/server/mpm_common.c:95
+    #6 0x55555560bc90 in main /root/httpd-2.4.52/server/main.c:819
+    #7 0x7fffe1acbd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+SUMMARY: AddressSanitizer: negative-size-param ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:806 in __interceptor_memcpy
+==6990==ABORTING

@@ -1,0 +1,14 @@
+    #1 0xaddr in pcre2_malloc /root/git-2.35.1/grep.c:338
+    #2 0xaddr in _pcre2_memctl_malloc_8 src/pcre2_context.c:90
+    #3 0xaddr in pcre2_match_data_create_8 src/pcre2_match_data.c:61
+    #4 0xaddr in pcre2_match_data_create_from_pattern_8 src/pcre2_match_data.c:83
+    #5 0xaddr in compile_pcre2_pattern /root/git-2.35.1/grep.c:400
+    #6 0xaddr in compile_regexp /root/git-2.35.1/grep.c:547
+    #7 0xaddr in compile_grep_patterns /root/git-2.35.1/grep.c:800
+    #8 0xaddr in start_threads builtin/grep.c:235
+    #9 0xaddr in cmd_grep builtin/grep.c:1133
+    #10 0xaddr in run_builtin /root/git-2.35.1/git.c:464
+    #11 0xaddr in handle_builtin /root/git-2.35.1/git.c:716
+    #12 0xaddr in cmd_main /root/git-2.35.1/git.c:884
+    #13 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #14 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

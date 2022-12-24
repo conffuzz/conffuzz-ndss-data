@@ -1,0 +1,15 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+aesni_set_encrypt_key(0x7fffe0e2de60 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x612000000040 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+~> change arg #0x1 {unsignedchar*} from 0x7fffe0e2de60 to 0x7ffffffde000
+~> change arg #0x3 {AES_KEY*} from 0x612000000040 to 0x612000000081
+aesni_set_encrypt_key(0x6130000002c8 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x6120000001c0 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+~> change arg #0x2 {int} from 0x100 to 0x7
+aesni_set_encrypt_key(0x7fffe0e2de60 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x612000000340 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+aesni_set_encrypt_key(0x7fffe0e2de60 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x6120000004c0 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+~> change arg #0x2 {int} from 0x100 to 0x7fff
+~> change arg #0x3 {AES_KEY*} from 0x6120000004c0 to 0x11
+aesni_set_encrypt_key(0x7fffe0e2de60 {unsignedchar*} [size: 0x1], 0x100 {int} [size: 0], 0x612000000640 {AES_KEY*} [size: 0xf4]) @ 0x00007fffe0bcb4eb
+~> change arg #0x1 {unsignedchar*} from 0x7fffe0e2de60 to 0x11

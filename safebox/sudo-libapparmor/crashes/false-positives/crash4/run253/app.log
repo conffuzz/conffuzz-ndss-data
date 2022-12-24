@@ -1,0 +1,58 @@
+=================================================================
+==4482==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000001514 at pc 0x556a413b79dd bp 0x7ffd539f91a0 sp 0x7ffd539f8928
+READ of size 1 at 0x603000001514 thread T0
+    #0 0x556a413b79dc in printf_common(void*, char const*, __va_list_tag*) asan_interceptors.cpp.o
+    #1 0x556a413b85f5 in __interceptor_vasprintf (/usr/local/bin/sudo+0xef5f5) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0x7f0afd10a123 in _aa_asprintf /root/apparmor-v3.1.1/libraries/libapparmor/src/private.c:180:7
+    #3 0x7f0afd0f6a14 in aa_change_onexec /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:817:8
+    #4 0x556a415556b3 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:92:16
+    #5 0x556a41530d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #6 0x556a41512a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #7 0x7f0afc9acd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0x7f0afc9ace3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #9 0x556a41395d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+0x603000001514 is located 218 bytes to the right of 26-byte region [0x603000001420,0x60300000143a)
+freed by thread T0 here:
+    #0 0x556a41418922 in free (/usr/local/bin/sudo+0x14f922) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #1 0x7f0afd109db1 in _aa_autofree /root/apparmor-v3.1.1/libraries/libapparmor/src/private.c:154:2
+    #2 0x7f0afd0fae82 in proc_attr_base_init_once /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:437:1
+    #3 0x7f0afca1cf67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+
+previously allocated by thread T0 here:
+    #0 0x556a41418bce in __interceptor_malloc (/usr/local/bin/sudo+0x14fbce) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #1 0x7f0afca0b1d7  (/lib/x86_64-linux-gnu/libc.so.6+0x881d7) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow asan_interceptors.cpp.o in printf_common(void*, char const*, __va_list_tag*)
+Shadow bytes around the buggy address:
+  0x0c067fff8250: 06 fa fa fa 00 00 00 02 fa fa 00 00 07 fa fa fa
+  0x0c067fff8260: 00 00 00 04 fa fa 00 00 00 fa fa fa 00 00 03 fa
+  0x0c067fff8270: fa fa 00 00 05 fa fa fa 00 00 06 fa fa fa 00 00
+  0x0c067fff8280: 00 fa fa fa fd fd fd fd fa fa fa fa fa fa fa fa
+  0x0c067fff8290: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c067fff82a0: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff82b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff82c0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff82d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff82e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff82f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==4482==ABORTING

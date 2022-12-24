@@ -1,0 +1,32 @@
+=================================================================
+==6079==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x60d000000020 in thread T0
+    #0 0x7fffe296c517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe277e5cc in file_reset /root/file-5.41/src/funcs.c:508
+    #2 0x7fffe273b480 in file_or_fd /root/file-5.41/src/magic.c:414
+    #3 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #4 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #5 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #6 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+0x60d000000020 is located 32 bytes to the left of 144-byte region [0x60d000000040,0x60d0000000d0)
+freed by thread T0 here:
+    #0 0x7fffe296c517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe255daba  (/lib/x86_64-linux-gnu/libc.so.6+0xf9aba)
+    #2 0x7fffe275fe80 in magiccheck /root/file-5.41/src/softmagic.c:2240
+    #3 0x7fffe27512ff in match /root/file-5.41/src/softmagic.c:374
+    #4 0x7fffe274ff15 in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #5 0x7fffe277df67 in file_buffer /root/file-5.41/src/funcs.c:445
+    #6 0x7fffe273ba94 in file_or_fd /root/file-5.41/src/magic.c:518
+    #7 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #8 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #9 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #10 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe296c867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe256827a  (/lib/x86_64-linux-gnu/libc.so.6+0x10427a)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==6079==ABORTING

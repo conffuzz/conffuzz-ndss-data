@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libtiff.so.5.7.0
+cap_corrupt_allocator

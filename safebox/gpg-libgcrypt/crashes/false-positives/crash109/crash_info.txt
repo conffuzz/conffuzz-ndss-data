@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/x86_64-linux-gnu/libgpg-error.so.0.31.1
+cap_read

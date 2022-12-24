@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+curl_global_init(0x3 {longint} [size: 0]) @ 0x00005555556207c2
+~> failure to write 0x1 bytes at address 0x0000555555ae0d60
+~> write {unknown} 0 -> 0 at shared buffer 0x000060300002b435
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555addfe0 {char*} [size: 0x1]) @ 0x00005555556208bd
+~> failure to write 0x1 bytes at address 0x0000555555addfe0
+~> change ret {curl_slist*} from 0x60300002af48 to 0x60300002abcf
+curl_slist_append(0 {curl_slist*} [size: 0x10], 0x555555ade020 {char*} [size: 0x1]) @ 0x00005555556208de
+~> failure to write 0x1 bytes at address 0x0000555555ade020
+~> change ret {curl_slist*} from 0x60300002afa8 to 0x555555ca80c8
+curl_multi_init() @ 0x000055555562091f
+~> change ret {Curl_multi*} from 0x614000000048 to 0x61400000040e
+curl_easy_init() @ 0x000055555561f01e
+~> change ret {CURL*} from 0x622000001908 to 0x11
+curl_easy_setopt(0x11 {CURL*} [size: 0x1500], 0x40 {CURLoption} [size: 0]) @ 0x000055555561f0d5

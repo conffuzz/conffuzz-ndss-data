@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==17085==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000029 (pc 0x7fffd805f937 bp 0x7fffffffde40 sp 0x7fffffffde20 T0)
+==17085==The signal is caused by a READ memory access.
+==17085==Hint: address points to the zero page.
+    #0 0x7fffd805f937 in ngx_http_geoip2_init_conf ../ngx_http_geoip2_module/ngx_http_geoip2_module.c:631
+    #1 0x5555556a8768 in ngx_http_block src/http/ngx_http.c:264
+    #2 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #3 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #4 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #5 0x5555555c76b0 in main src/core/nginx.c:292
+    #6 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../ngx_http_geoip2_module/ngx_http_geoip2_module.c:631 in ngx_http_geoip2_init_conf
+==17085==ABORTING

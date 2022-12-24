@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libavutil.so.57.17.100
+cap_corrupt_allocator
+cap_write_arbitrary
+cap_read_arbitrary

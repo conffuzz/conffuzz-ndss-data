@@ -1,0 +1,286 @@
+7fff7000-8fff7000 rw-p 00000000 00:00 0 
+8fff7000-2008fff7000 ---p 00000000 00:00 0 
+2008fff7000-10007fff8000 rw-p 00000000 00:00 0 
+55d50ffa2000-55d51006e000 r--p 00000000 fe:01 2123708                    /usr/local/bin/sudo
+55d51006e000-55d510260000 r-xp 000cc000 fe:01 2123708                    /usr/local/bin/sudo
+55d510260000-55d5102b2000 r--p 002be000 fe:01 2123708                    /usr/local/bin/sudo
+55d5102b2000-55d5102ba000 r--p 0030f000 fe:01 2123708                    /usr/local/bin/sudo
+55d5102ba000-55d510328000 rw-p 00317000 fe:01 2123708                    /usr/local/bin/sudo
+55d510328000-55d510c7e000 rw-p 00000000 00:00 0 
+600000000000-602000000000 ---p 00000000 00:00 0 
+602000000000-602000010000 rw-p 00000000 00:00 0 
+602000010000-602e00000000 ---p 00000000 00:00 0 
+602e00000000-602e00010000 rw-p 00000000 00:00 0 
+602e00010000-603000000000 ---p 00000000 00:00 0 
+603000000000-603000010000 rw-p 00000000 00:00 0 
+603000010000-603e00000000 ---p 00000000 00:00 0 
+603e00000000-603e00010000 rw-p 00000000 00:00 0 
+603e00010000-604000000000 ---p 00000000 00:00 0 
+604000000000-604000010000 rw-p 00000000 00:00 0 
+604000010000-604e00000000 ---p 00000000 00:00 0 
+604e00000000-604e00010000 rw-p 00000000 00:00 0 
+604e00010000-606000000000 ---p 00000000 00:00 0 
+606000000000-606000010000 rw-p 00000000 00:00 0 
+606000010000-606e00000000 ---p 00000000 00:00 0 
+606e00000000-606e00010000 rw-p 00000000 00:00 0 
+606e00010000-607000000000 ---p 00000000 00:00 0 
+607000000000-607000010000 rw-p 00000000 00:00 0 
+607000010000-607e00000000 ---p 00000000 00:00 0 
+607e00000000-607e00010000 rw-p 00000000 00:00 0 
+607e00010000-608000000000 ---p 00000000 00:00 0 
+608000000000-608000010000 rw-p 00000000 00:00 0 
+608000010000-608e00000000 ---p 00000000 00:00 0 
+608e00000000-608e00010000 rw-p 00000000 00:00 0 
+608e00010000-60b000000000 ---p 00000000 00:00 0 
+60b000000000-60b000010000 rw-p 00000000 00:00 0 
+60b000010000-60be00000000 ---p 00000000 00:00 0 
+60be00000000-60be00010000 rw-p 00000000 00:00 0 
+60be00010000-60c000000000 ---p 00000000 00:00 0 
+60c000000000-60c000020000 rw-p 00000000 00:00 0 
+60c000020000-60ce00000000 ---p 00000000 00:00 0 
+60ce00000000-60ce00010000 rw-p 00000000 00:00 0 
+60ce00010000-60d000000000 ---p 00000000 00:00 0 
+60d000000000-60d000010000 rw-p 00000000 00:00 0 
+60d000010000-60de00000000 ---p 00000000 00:00 0 
+60de00000000-60de00010000 rw-p 00000000 00:00 0 
+60de00010000-60f000000000 ---p 00000000 00:00 0 
+60f000000000-60f000010000 rw-p 00000000 00:00 0 
+60f000010000-60fe00000000 ---p 00000000 00:00 0 
+60fe00000000-60fe00010000 rw-p 00000000 00:00 0 
+60fe00010000-611000000000 ---p 00000000 00:00 0 
+611000000000-611000010000 rw-p 00000000 00:00 0 
+611000010000-611e00000000 ---p 00000000 00:00 0 
+611e00000000-611e00010000 rw-p 00000000 00:00 0 
+611e00010000-612000000000 ---p 00000000 00:00 0 
+612000000000-612000010000 rw-p 00000000 00:00 0 
+612000010000-612e00000000 ---p 00000000 00:00 0 
+612e00000000-612e00010000 rw-p 00000000 00:00 0 
+612e00010000-613000000000 ---p 00000000 00:00 0 
+613000000000-613000010000 rw-p 00000000 00:00 0 
+613000010000-613e00000000 ---p 00000000 00:00 0 
+613e00000000-613e00010000 rw-p 00000000 00:00 0 
+613e00010000-615000000000 ---p 00000000 00:00 0 
+615000000000-615000010000 rw-p 00000000 00:00 0 
+615000010000-615e00000000 ---p 00000000 00:00 0 
+615e00000000-615e00010000 rw-p 00000000 00:00 0 
+615e00010000-616000000000 ---p 00000000 00:00 0 
+616000000000-616000010000 rw-p 00000000 00:00 0 
+616000010000-616e00000000 ---p 00000000 00:00 0 
+616e00000000-616e00010000 rw-p 00000000 00:00 0 
+616e00010000-617000000000 ---p 00000000 00:00 0 
+617000000000-617000010000 rw-p 00000000 00:00 0 
+617000010000-617e00000000 ---p 00000000 00:00 0 
+617e00000000-617e00010000 rw-p 00000000 00:00 0 
+617e00010000-619000000000 ---p 00000000 00:00 0 
+619000000000-619000010000 rw-p 00000000 00:00 0 
+619000010000-619e00000000 ---p 00000000 00:00 0 
+619e00000000-619e00010000 rw-p 00000000 00:00 0 
+619e00010000-61a000000000 ---p 00000000 00:00 0 
+61a000000000-61a000010000 rw-p 00000000 00:00 0 
+61a000010000-61ae00000000 ---p 00000000 00:00 0 
+61ae00000000-61ae00010000 rw-p 00000000 00:00 0 
+61ae00010000-61c000000000 ---p 00000000 00:00 0 
+61c000000000-61c000010000 rw-p 00000000 00:00 0 
+61c000010000-61ce00000000 ---p 00000000 00:00 0 
+61ce00000000-61ce00010000 rw-p 00000000 00:00 0 
+61ce00010000-61d000000000 ---p 00000000 00:00 0 
+61d000000000-61d000010000 rw-p 00000000 00:00 0 
+61d000010000-61de00000000 ---p 00000000 00:00 0 
+61de00000000-61de00010000 rw-p 00000000 00:00 0 
+61de00010000-61e000000000 ---p 00000000 00:00 0 
+61e000000000-61e000010000 rw-p 00000000 00:00 0 
+61e000010000-61ee00000000 ---p 00000000 00:00 0 
+61ee00000000-61ee00010000 rw-p 00000000 00:00 0 
+61ee00010000-61f000000000 ---p 00000000 00:00 0 
+61f000000000-61f000010000 rw-p 00000000 00:00 0 
+61f000010000-61fe00000000 ---p 00000000 00:00 0 
+61fe00000000-61fe00010000 rw-p 00000000 00:00 0 
+61fe00010000-621000000000 ---p 00000000 00:00 0 
+621000000000-621000010000 rw-p 00000000 00:00 0 
+621000010000-621e00000000 ---p 00000000 00:00 0 
+621e00000000-621e00010000 rw-p 00000000 00:00 0 
+621e00010000-623000000000 ---p 00000000 00:00 0 
+623000000000-623000010000 rw-p 00000000 00:00 0 
+623000010000-623e00000000 ---p 00000000 00:00 0 
+623e00000000-623e00010000 rw-p 00000000 00:00 0 
+623e00010000-624000000000 ---p 00000000 00:00 0 
+624000000000-624000010000 rw-p 00000000 00:00 0 
+624000010000-624e00000000 ---p 00000000 00:00 0 
+624e00000000-624e00010000 rw-p 00000000 00:00 0 
+624e00010000-629000000000 ---p 00000000 00:00 0 
+629000000000-629000010000 rw-p 00000000 00:00 0 
+629000010000-629e00000000 ---p 00000000 00:00 0 
+629e00000000-629e00010000 rw-p 00000000 00:00 0 
+629e00010000-62d000000000 ---p 00000000 00:00 0 
+62d000000000-62d000010000 rw-p 00000000 00:00 0 
+62d000010000-62de00000000 ---p 00000000 00:00 0 
+62de00000000-62de00010000 rw-p 00000000 00:00 0 
+62de00010000-640000000000 ---p 00000000 00:00 0 
+640000000000-640000002000 rw-p 00000000 00:00 0 
+7fceb3a67000-7fceb3a68000 rw-p 00000000 00:00 0 
+7fceb3a69000-7fceb3a6a000 rw-p 00000000 00:00 0 
+7fceb3a6d000-7fceb3a6f000 rw-p 00000000 00:00 0 
+7fceb3a71000-7fceb3a73000 rw-p 00000000 00:00 0 
+7fceb3a7a000-7fceb4cd9000 rw-p 00000000 00:00 0 
+7fceb4cd9000-7fceb5389000 rw-p 00000000 00:00 0 
+7fceb5389000-7fceb598b000 rw-p 00000000 00:00 0 
+7fceb598b000-7fceb59a1000 rw-p 00000000 00:00 0 
+7fceb59a1000-7fceb5a58000 rw-p 00000000 00:00 0 
+7fceb5a58000-7fceb5a60000 rw-p 00000000 00:00 0 
+7fceb5a60000-7fceb5a62000 r--p 00000000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a62000-7fceb5a73000 r-xp 00002000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a73000-7fceb5a79000 r--p 00013000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a79000-7fceb5a7a000 ---p 00019000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a7a000-7fceb5a7b000 r--p 00019000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a7b000-7fceb5a7c000 rw-p 0001a000 fe:01 3029427                    /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+7fceb5a7c000-7fceb5aba000 rw-p 00000000 00:00 0 
+7fceb5aba000-7fceb5abc000 r--p 00000000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5abc000-7fceb5ad0000 r-xp 00002000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5ad0000-7fceb5ae9000 r--p 00016000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5ae9000-7fceb5aea000 ---p 0002f000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5aea000-7fceb5aeb000 r--p 0002f000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5aeb000-7fceb5aec000 rw-p 00030000 fe:01 3029305                    /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+7fceb5aec000-7fceb5b77000 rw-p 00000000 00:00 0 
+7fceb5b77000-7fceb5cc2000 rw-p 00000000 00:00 0 
+7fceb5cc2000-7fceb5e2a000 r--p 00000000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb5e2a000-7fceb609b000 r-xp 00168000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb609b000-7fceb60ea000 r--p 003d9000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb60ea000-7fceb60eb000 ---p 00428000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb60eb000-7fceb60fa000 r--p 00428000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb60fa000-7fceb61dd000 rw-p 00437000 fe:01 2123728                    /usr/local/libexec/sudo/sudoers.so
+7fceb61dd000-7fceb7640000 rw-p 00000000 00:00 0 
+7fceb7640000-7fceb7642000 rw-p 00000000 00:00 0 
+7fceb7642000-7fceb7e42000 rw-p 00000000 00:00 0 
+7fceb7e42000-7fceb81db000 rw-p 00000000 00:00 0 
+7fceb81db000-7fceb81de000 rw-p 00000000 00:00 0 
+7fceb81de000-7fceb8200000 rw-p 00000000 00:00 0 
+7fceb8200000-7fceb89e0000 ---p 00000000 00:00 0 
+7fceb89e0000-7fceb9d6c000 rw-p 00000000 00:00 0 
+7fceb9d6c000-7fceba1bd000 rw-p 00000000 00:00 0 
+7fceba1bd000-7fceba30a000 rw-p 00000000 00:00 0 
+7fceba30a000-7fceba3d1000 rw-p 00000000 00:00 0 
+7fceba3d1000-7fceba46e000 rw-p 00000000 00:00 0 
+7fceba46e000-7fceba83d000 rw-p 00000000 00:00 0 
+7fceba83d000-7fceba843000 rw-p 00000000 00:00 0 
+7fceba843000-7fceba845000 rw-p 00000000 00:00 0 
+7fceba845000-7fceba86d000 r--p 00000000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fceba86d000-7fcebaa02000 r-xp 00028000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcebaa02000-7fcebaa5a000 r--p 001bd000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcebaa5a000-7fcebaa5e000 r--p 00214000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcebaa5e000-7fcebaa60000 rw-p 00218000 fe:01 3029296                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcebaa60000-7fcebaaa5000 rw-p 00000000 00:00 0 
+7fcebaaa5000-7fcebaaa7000 rw-p 00000000 00:00 0 
+7fcebaaa7000-7fcebaaaa000 r--p 00000000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fcebaaaa000-7fcebaac1000 r-xp 00003000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fcebaac1000-7fcebaac5000 r--p 0001a000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fcebaac5000-7fcebaac6000 r--p 0001d000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fcebaac6000-7fcebaac7000 rw-p 0001e000 fe:01 3029321                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+7fcebaac7000-7fcebaac9000 rw-p 00000000 00:00 0 
+7fcebaac9000-7fcebaacf000 rw-p 00000000 00:00 0 
+7fcebaacf000-7fcebaad4000 rw-p 00000000 00:00 0 
+7fcebaad4000-7fcebaae2000 r--p 00000000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fcebaae2000-7fcebab5e000 r-xp 0000e000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fcebab5e000-7fcebabb9000 r--p 0008a000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fcebabb9000-7fcebabba000 r--p 000e4000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fcebabba000-7fcebabbb000 rw-p 000e5000 fe:01 3029348                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7fcebabbb000-7fcebacf9000 rw-p 00000000 00:00 0 
+7fcebacf9000-7fcebad83000 r--p 00000000 fe:01 2123722                    /usr/local/libexec/sudo/libsudo_util.so.0.0.0
+7fcebad83000-7fcebae68000 r-xp 0008a000 fe:01 2123722                    /usr/local/libexec/sudo/libsudo_util.so.0.0.0
+7fcebae68000-7fcebae77000 r--p 0016f000 fe:01 2123722                    /usr/local/libexec/sudo/libsudo_util.so.0.0.0
+7fcebae77000-7fcebae7a000 r--p 0017d000 fe:01 2123722                    /usr/local/libexec/sudo/libsudo_util.so.0.0.0
+7fcebae7a000-7fcebaec7000 rw-p 00180000 fe:01 2123722                    /usr/local/libexec/sudo/libsudo_util.so.0.0.0
+7fcebaec7000-7fcebaf0b000 rw-p 00000000 00:00 0 
+7fcebaf0b000-7fcebaf0e000 rw-p 00000000 00:00 0 
+7fcebaf0e000-7fcebaf8e000 rw-p 00000000 00:00 0 
+7fcebaf8e000-7fcebaf9f000 rw-p 00000000 00:00 0 
+7fcebaf9f000-7fcebafa8000 r--p 00000000 fe:01 1874346                    /usr/local/lib/libapparmor.so.1.12.0
+7fcebafa8000-7fcebafd2000 r-xp 00009000 fe:01 1874346                    /usr/local/lib/libapparmor.so.1.12.0
+7fcebafd2000-7fcebafdd000 r--p 00033000 fe:01 1874346                    /usr/local/lib/libapparmor.so.1.12.0
+7fcebafdd000-7fcebafde000 r--p 0003d000 fe:01 1874346                    /usr/local/lib/libapparmor.so.1.12.0
+7fcebafde000-7fcebafe2000 rw-p 0003e000 fe:01 1874346                    /usr/local/lib/libapparmor.so.1.12.0
+7fcebafe2000-7fcebb68a000 rw-p 00000000 00:00 0 
+7fcebb68a000-7fcebb6c4000 rw-p 00000000 00:00 0 
+7fcebb6c4000-7fcebbb21000 r--p 00000000 fe:01 2123708                    /usr/local/bin/sudo
+7fcebbb21000-7fcebbb24000 rw-p 00000000 00:00 0 
+7fcebbb24000-7fcebc0d5000 rw-p 00000000 00:00 0 
+7fcebc0d5000-7fcebc532000 r--p 00000000 fe:01 2123708                    /usr/local/bin/sudo
+7fcebc532000-7fcebc645000 rw-p 00000000 00:00 0 
+7fcebc645000-7fcebc785000 ---p 00000000 00:00 0 
+7fcebc785000-7fcebcb45000 rwxp 00000000 00:00 0 
+7fcebcb45000-7fcecc645000 ---p 00000000 00:00 0 
+7fcecc645000-7fcecd657000 rw-p 00000000 00:00 0 
+7fcecd657000-7fcecd659000 rwxp 00000000 00:00 0 
+7fcecd659000-7fcece4f1000 rw-p 00000000 00:00 0 
+7fcece4f1000-7fcece4f3000 r--p 00000000 00:00 0 
+7fcece4f3000-7fcece529000 r--p 00000000 fe:01 1623671                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7fcece529000-7fcece742000 r-xp 00036000 fe:01 1623671                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7fcece742000-7fcece7c0000 r--p 0024f000 fe:01 1623671                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7fcece7c0000-7fcece7d4000 r--p 002cc000 fe:01 1623671                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7fcece7d4000-7fcece7d5000 rw-p 002e0000 fe:01 1623671                    /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7fcece7d5000-7fcece7d8000 rw-p 00000000 00:00 0 
+7fcece7d8000-7fcece7e1000 r--p 00000000 fe:01 1494092                    /root/conffuzz/instrumentation.so
+7fcece7e1000-7fcece9a7000 r-xp 00009000 fe:01 1494092                    /root/conffuzz/instrumentation.so
+7fcece9a7000-7fcece9f6000 r--p 001cf000 fe:01 1494092                    /root/conffuzz/instrumentation.so
+7fcece9f6000-7fcece9f8000 r--p 0021d000 fe:01 1494092                    /root/conffuzz/instrumentation.so
+7fcece9f8000-7fcece9fa000 rw-p 0021f000 fe:01 1494092                    /root/conffuzz/instrumentation.so
+7fcece9fa000-7fcecea20000 rw-p 00000000 00:00 0 
+7fcecea20000-7fcecea21000 r--p 00000000 00:00 0 
+7fcecea21000-7fcecea39000 rw-p 00000000 00:00 0 
+7fcecea39000-7fcecea3e000 r--p 00000000 00:00 0 
+7fcecea3e000-7fcecead1000 r-xp 00000000 fe:01 1623687                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7fcecead1000-7fcececd1000 ---p 00000000 00:00 0 
+7fcececd1000-7fcececd4000 r--p 00093000 fe:01 1623687                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7fcececd4000-7fcececd5000 rw-p 00096000 fe:01 1623687                    /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7fcececd5000-7fcececfe000 rw-p 00000000 00:00 0 
+7fcececfe000-7fcececff000 r--p 00000000 00:00 0 
+7fcececff000-7fceced2e000 r-xp 00000000 fe:01 1623686                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7fceced2e000-7fcecef2d000 ---p 00000000 00:00 0 
+7fcecef2d000-7fcecef2e000 r--p 0002e000 fe:01 1623686                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7fcecef2e000-7fcecef2f000 rw-p 0002f000 fe:01 1623686                    /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7fcecef2f000-7fcecefd5000 r-xp 00000000 fe:01 1623689                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7fcecefd5000-7fcecf1d4000 ---p 00000000 00:00 0 
+7fcecf1d4000-7fcecf1d8000 r--p 000a5000 fe:01 1623689                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7fcecf1d8000-7fcecf1d9000 rw-p 000a9000 fe:01 1623689                    /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7fcecf1d9000-7fcecf1da000 rw-p 00000000 00:00 0 
+7fcecf1da000-7fcecf1e9000 r-xp 00000000 fe:01 1623692                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7fcecf1e9000-7fcecf3e8000 ---p 00000000 00:00 0 
+7fcecf3e8000-7fcecf3e9000 r--p 0000e000 fe:01 1623692                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7fcecf3e9000-7fcecf3ea000 rw-p 0000f000 fe:01 1623692                    /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7fcecf3ea000-7fcecf8ac000 r-xp 00000000 fe:01 3052024                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7fcecf8ac000-7fcecfaab000 ---p 00000000 00:00 0 
+7fcecfaab000-7fcecfb64000 r--p 004c1000 fe:01 3052024                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7fcecfb64000-7fcecfb65000 rw-p 0057a000 fe:01 3052024                    /root/pintools/extras/xed-intel64/lib/libxed.so
+7fcecfb65000-7fcecfb6a000 rw-p 00000000 00:00 0 
+7fcecfb6a000-7fcecfb6b000 r--p 00000000 00:00 0 
+7fcecfb6b000-7fcecfb84000 rw-p 00000000 00:00 0 
+7fcecfb84000-7fcecfb85000 r--p 00000000 00:00 0 
+7fcecfb85000-7fcecfb9d000 rw-p 00000000 00:00 0 
+7fcecfb9d000-7fcecfb9e000 r--p 00000000 00:00 0 
+7fcecfb9e000-7fcecfbdd000 rw-p 00000000 00:00 0 
+7fcecfbdd000-7fcecfc15000 r-xp 00000000 fe:01 1623680                    /root/pintools/intel64/runtime/pincrt/linker
+7fcecfc15000-7fcecfe15000 ---p 00000000 00:00 0 
+7fcecfe15000-7fcecfe16000 r--p 00038000 fe:01 1623680                    /root/pintools/intel64/runtime/pincrt/linker
+7fcecfe16000-7fcecfe17000 rw-p 00039000 fe:01 1623680                    /root/pintools/intel64/runtime/pincrt/linker
+7fcecfe17000-7fcecfe1b000 rw-p 00000000 00:00 0 
+7fcecfe1b000-7fced03ed000 r-xp 00000000 fe:01 1623674                    /root/pintools/intel64/bin/pinbin
+7fced03ed000-7fced05ed000 ---p 00000000 00:00 0 
+7fced05ed000-7fced05f2000 r--p 005d2000 fe:01 1623674                    /root/pintools/intel64/bin/pinbin
+7fced05f2000-7fced05ff000 rw-p 005d7000 fe:01 1623674                    /root/pintools/intel64/bin/pinbin
+7fced05ff000-7fced06cc000 rw-p 00000000 00:00 0 
+7fced06cc000-7fced06cd000 ---p 00000000 00:00 0 
+7fced06cd000-7fced06d0000 rw-p 00000000 00:00 0 
+7fced06d0000-7fced06d2000 ---p 00000000 00:00 0 
+7fced06d2000-7fced06d5000 rw-p 00000000 00:00 0 
+7fced06d5000-7fced06d9000 ---p 00000000 00:00 0 
+7fced06d9000-7fced0700000 rw-p 00000000 00:00 0 
+7fced0700000-7fced0701000 ---p 00000000 00:00 0 
+7fced0701000-7fced0b3d000 rw-p 00000000 00:00 0 
+7fced0b3d000-7fced0b3f000 r--p 00000000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7fced0b3f000-7fced0b69000 r-xp 00002000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7fced0b69000-7fced0b74000 r--p 0002c000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7fced0b74000-7fced0b75000 rwxp 00000000 00:00 0 
+7fced0b75000-7fced0b77000 r--p 00037000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7fced0b77000-7fced0b79000 rw-p 00039000 fe:01 3029278                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffd8cb44000-7ffd8cb65000 rw-p 00000000 00:00 0                          [stack]
+7ffd8cba8000-7ffd8cbac000 r--p 00000000 00:00 0                          [vvar]
+7ffd8cbac000-7ffd8cbae000 r-xp 00000000 00:00 0                          [vdso]

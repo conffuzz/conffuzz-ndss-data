@@ -1,0 +1,5 @@
+fault_location /usr/local/lib/libMagickCore-7.Q16HDRI.so.10.0.0
+cap_null_deref
+cap_read
+cap_write_arbitrary
+cap_read_arbitrary

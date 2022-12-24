@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==129110==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe0b18272 bp 0x7fffffffd8d0 sp 0x7fffffffd8b0 T0)
+==129110==The signal is caused by a READ memory access.
+==129110==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe0b18272 in OPENSSL_strnlen crypto/o_str.c:76
+    #1 0x7fffe08dd935 in fmtstr crypto/bio/b_print.c:376
+    #2 0x7fffe08dd2f4 in _dopr crypto/bio/b_print.c:308
+    #3 0x7fffe08dff97 in BIO_vsnprintf crypto/bio/b_print.c:917
+    #4 0x7fffe08dfdf6 in BIO_snprintf crypto/bio/b_print.c:906
+    #5 0x7fffe0a8c2cf in ERR_error_string_n crypto/err/err.c:615
+    #6 0x5555556900cb in ngx_ssl_error src/event/ngx_event_openssl.c:3503
+    #7 0x555555681545 in ngx_ssl_init src/event/ngx_event_openssl.c:214
+    #8 0x5555555c7508 in main src/core/nginx.c:241
+    #9 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV crypto/o_str.c:76 in OPENSSL_strnlen
+==129110==ABORTING

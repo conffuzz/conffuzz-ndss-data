@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+ngx_http_geoip2_create_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a7c26
+~> change ret {void*} from 0x62900000f9e0 to 0x62900000f6d8
+ngx_http_geoip2_init_conf(0x7fffffffe320 {ngx_conf_t*} [size: 0x60], 0x62900000f6d8 {void*} [size: 0x1]) @ 0x00005555556a8769
+ngx_http_geoip2_init(0x7fffffffe320 {ngx_conf_t*} [size: 0x60]) @ 0x00005555556a8c52
+ngx_http_geoip2_log_handler(0x62100001b950 {ngx_http_request_t*} [size: 0x5b0]) @ 0x00005555556e7fb8

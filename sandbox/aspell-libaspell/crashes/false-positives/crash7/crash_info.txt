@@ -1,0 +1,4 @@
+fault_location /usr/local/lib/libaspell.so.15.3.1
+cap_read_arbitrary
+cap_null_deref
+cap_read

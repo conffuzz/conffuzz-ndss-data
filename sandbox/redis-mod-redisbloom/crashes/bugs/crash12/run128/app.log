@@ -1,0 +1,31 @@
+27865:C 08 Nov 2022 10:56:51.024 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+27865:C 08 Nov 2022 10:56:51.054 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=27865, just started
+27865:C 08 Nov 2022 10:56:51.056 # Configuration loaded
+27865:M 08 Nov 2022 10:56:51.148 * monotonic clock: POSIX clock_gettime
+27865:M 08 Nov 2022 10:56:51.545 * Running mode=standalone, port=6379.
+27865:M 08 Nov 2022 10:56:51.547 # Server initialized
+27865:M 08 Nov 2022 10:56:51.549 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+27865:M 08 Nov 2022 10:56:51.691 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+27865:M 08 Nov 2022 10:56:51.752 * Module 'bf' loaded from /root/RedisBloom/redisbloom.so
+27865:M 08 Nov 2022 10:56:51.906 * Ready to accept connections
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==27865==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000020 (pc 0x55555566f1be bp 0x7fffffffe550 sp 0x7fffffffe460 T0)
+==27865==The signal is caused by a READ memory access.
+==27865==Hint: address points to the zero page.
+    #0 0x55555566f1be in call /root/redis-6.2.6/src/server.c:3777
+    #1 0x5555556725f5 in processCommand /root/redis-6.2.6/src/server.c:4241
+    #2 0x5555556a49b1 in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #3 0x5555556a50f5 in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #4 0x5555556a5a6f in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #5 0x55555587042c in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #6 0x555555871759 in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #7 0x55555565a3b3 in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #8 0x55555565aaa1 in aeMain /root/redis-6.2.6/src/ae.c:487
+    #9 0x55555567c2b1 in main /root/redis-6.2.6/src/server.c:6401
+    #10 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #11 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/server.c:3777 in call
+==27865==ABORTING

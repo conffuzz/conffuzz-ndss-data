@@ -1,0 +1,75 @@
+audit_add_watch audit_add_watch 2 int audit_rule_data** char*
+audit_can_write audit_can_write 0 int
+audit_name_to_fstype audit_name_to_fstype 1 int char*
+audit_send audit_send 4 int int int * unsignedint
+audit_open audit_open 0 int
+audit_set_loginuid_immutable audit_set_loginuid_immutable 1 int int
+audit_setloginuid audit_setloginuid 1 int uid_t
+audit_set_enabled audit_set_enabled 2 int int uint32_t
+audit_rule_create_data audit_rule_create_data 0 audit_rule_data*
+audit_rule_syscall_data audit_rule_syscall_data 2 int audit_rule_data* int
+audit_number_to_errmsg audit_number_to_errmsg 2 unknown_or_void int char*
+audit_detect_machine audit_detect_machine 0 int
+audit_log_user_comm_message audit_log_user_comm_message 8 int int int char* char* char* char* char* int
+audit_rule_syscallbyname_data audit_rule_syscallbyname_data 2 int audit_rule_data* char*
+audit_name_to_machine audit_name_to_machine 1 int char*
+audit_msg audit_msg 2 unknown_or_void int char*
+audit_machine_to_elf audit_machine_to_elf 1 unsignedint int
+audit_name_to_msg_type audit_name_to_msg_type 1 int char*
+audit_name_to_field audit_name_to_field 1 int char*
+audit_msg_type_to_name audit_msg_type_to_name 1 char* int
+audit_can_control audit_can_control 0 int
+audit_elf_to_machine audit_elf_to_machine 1 int unsignedint
+audit_syscall_to_name audit_syscall_to_name 2 char* int int
+audit_is_enabled audit_is_enabled 1 int int
+audit_set_rate_limit audit_set_rate_limit 2 int int uint32_t
+audit_set_backlog_limit audit_set_backlog_limit 2 int int uint32_t
+audit_log_acct_message audit_log_acct_message 10 int int int char* char* char* unsignedint char* char* char* int
+audit_determine_machine audit_determine_machine 1 int char*
+audit_name_to_flag audit_name_to_flag 1 int char*
+audit_add_watch_dir audit_add_watch_dir 3 int int audit_rule_data** char*
+audit_name_to_ftype audit_name_to_ftype 1 int char*
+audit_make_equivalent audit_make_equivalent 3 int int char* char*
+audit_rule_fieldpair_data audit_rule_fieldpair_data 3 int audit_rule_data** char* int
+audit_close audit_close 1 unknown_or_void int
+audit_log_user_avc_message audit_log_user_avc_message 7 int int int char* char* char* char* uid_t
+audit_errno_to_name audit_errno_to_name 1 char* int
+audit_encode_nv_string audit_encode_nv_string 3 char* char* char* unsignedint
+audit_set_pid audit_set_pid 3 int int uint32_t rep_wait_t
+audit_request_signal_info audit_request_signal_info 1 int int
+audit_add_rule_data audit_add_rule_data 4 int int audit_rule_data* int int
+audit_request_rules_list_data audit_request_rules_list_data 1 int int
+audit_log_user_command audit_log_user_command 5 int int int char* char* int
+audit_log_semanage_message audit_log_semanage_message 16 int int int char* char* char* unsignedint char* char* char* char* char* char* char* char* char* int
+audit_getloginuid audit_getloginuid 0 uid_t
+audit_log_user_message audit_log_user_message 7 int int int char* char* char* char* int
+audit_field_to_name audit_field_to_name 1 char* int
+audit_ftype_to_name audit_ftype_to_name 1 char* int
+audit_encode_value audit_encode_value 3 char* char* char* unsignedint
+audit_update_watch_perms audit_update_watch_perms 2 int audit_rule_data* int
+audit_fstype_to_name audit_fstype_to_name 1 char* int
+audit_name_to_syscall audit_name_to_syscall 2 int char* int
+audit_request_status audit_request_status 1 int int
+audit_can_read audit_can_read 0 int
+audit_format_signal_info audit_format_signal_info 5 char* char* int char* audit_reply* char*
+audit_set_feature audit_set_feature 4 int int unsignedint unsignedint unsignedint
+audit_name_to_errno audit_name_to_errno 1 int char*
+audit_value_needs_encoding audit_value_needs_encoding 2 int char* unsignedint
+audit_rule_init_data audit_rule_init_data 1 unknown_or_void audit_rule_data*
+audit_reset_backlog_wait_time_actual audit_reset_backlog_wait_time_actual 1 int int
+audit_get_features audit_get_features 0 uint32_t
+audit_action_to_name audit_action_to_name 1 char* int
+audit_reset_lost audit_reset_lost 1 int int
+audit_rule_free_data audit_rule_free_data 1 unknown_or_void audit_rule_data*
+audit_name_to_action audit_name_to_action 1 int char*
+audit_set_failure audit_set_failure 2 int int uint32_t
+audit_request_features audit_request_features 1 int int
+audit_set_backlog_wait_time audit_set_backlog_wait_time 2 int int uint32_t
+audit_rule_interfield_comp_data audit_rule_interfield_comp_data 3 int audit_rule_data** char* int
+audit_machine_to_name audit_machine_to_name 1 char* int
+audit_trim_subtrees audit_trim_subtrees 1 int int
+audit_get_reply audit_get_reply 4 int int audit_reply* reply_t int
+audit_operator_to_symbol audit_operator_to_symbol 1 char* int
+audit_flag_to_name audit_flag_to_name 1 char* int
+audit_get_session audit_get_session 0 uint32_t
+audit_delete_rule_data audit_delete_rule_data 4 int int audit_rule_data* int int

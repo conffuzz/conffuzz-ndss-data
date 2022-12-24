@@ -1,0 +1,14 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+BZ2_bzReadOpen(0x7fffffffbe30 [size: 0x4], 0x615000000580 [size: 0xd8], 0 [size: 0], 0 [size: 0], 0x7fffffffd310 [size: 0x1], 0 [size: 0]) @ 0x000055555555a938
+~> write 0 -> 0x62200000142e at shared buffer 0x00006150000005f3
+~> write 0xbebebebebebebe -> 0x28d at shared buffer 0x000061500000064b
+~> write 0xbebebebe000000 -> 0xfffffe at shared buffer 0x0000615000000590
+~> write 0xbebebe00000000 -> 0x4 at shared buffer 0x00006150000005ac
+~> write 0xbebebe00000000 -> 0x10 at shared buffer 0x00007fffffffbe30
+~> write 0xbebebe00000010 -> 0 at shared buffer 0x00007fffffffbe30
+~> change ret from 0x622000000100 to 0x555555559190
+BZ2_bzRead(0x7fffffffbe30 [size: 0x4], 0x555555559190 [size: 0x1], 0x7fffffffbe80 [size: 0x1], 0x1388 [size: 0]) @ 0x000055555555a9bb
+~> instrumenting 0x0000555555559190 (__asan_stack_malloc_0@plt, 0 arg(s))

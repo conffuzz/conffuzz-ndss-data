@@ -1,0 +1,14 @@
+    #0 0xaddr in get_minst_from_memory psi/imain.c:72
+    #1 0xaddr in psapi_run_string_with_length psi/psapi.c:432
+    #2 0xaddr in gsapi_run_string psi/iapi.c:295
+    #3 0xaddr in InvokeGhostscriptDelegate coders/ghostscript-private.h:165
+    #4 0xaddr in ReadPSImage coders/ps.c:820
+    #5 0xaddr in ReadImage MagickCore/constitute.c:728
+    #6 0xaddr in ReadImages MagickCore/constitute.c:1075
+    #7 0xaddr in ConvertImageCommand MagickWand/convert.c:614
+    #8 0xaddr in MagickCommandGenesis MagickWand/mogrify.c:188
+    #9 0xaddr in MagickMain utilities/magick.c:150
+    #10 0xaddr in main utilities/magick.c:182
+    #11 0xaddr in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #12 0xaddr in __libc_start_main_impl ../csu/libc-start.c:392
+    #13 0xaddr in _start (/usr/local/bin/magick+0xaddr)

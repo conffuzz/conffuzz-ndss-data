@@ -1,0 +1,9 @@
+warning: curl_multi_add_handle failed: Invalid easy handle
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==55885==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xbb00000000000000 bp 0x7fffffffda30 sp 0x7fffffffda18 T0)
+==55885==The signal is caused by a READ memory access.
+==55885==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

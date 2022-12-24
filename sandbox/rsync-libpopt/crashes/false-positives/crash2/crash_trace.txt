@@ -1,0 +1,8 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in longOptionStrcmp /root/popt-popt-1.19-release/src/popt.c:326
+    #3 0xaddr in findOption /root/popt-popt-1.19-release/src/popt.c:596
+    #4 0xaddr in poptGetNextOpt /root/popt-popt-1.19-release/src/popt.c:1319
+    #5 0xaddr in parse_arguments /root/rsync-3.2.7/options.c:1381
+    #6 0xaddr in main /root/rsync-3.2.7/main.c:1789
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in _start (/usr/local/bin/rsync+0xaddr)

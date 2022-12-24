@@ -1,0 +1,22 @@
+nginx: [alert] SSL_CTX_get_ex_new_index() failed (SSL: error:00000003:lib(0):func(0):BN lib)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==53279==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000139 (pc 0x7fffe0f0eeb4 bp 0x7fffffffdd10 sp 0x7fffffffdd00 T0)
+==53279==The signal is caused by a READ memory access.
+==53279==Hint: address points to the zero page.
+    #0 0x7fffe0f0eeb4 in SSL_CTX_set_options ssl/ssl_lib.c:4651
+    #1 0x5555556819d8 in ngx_ssl_create src/event/ngx_event_openssl.c:291
+    #2 0x5555557c72c4 in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #3 0x5555556aa283 in ngx_http_merge_servers src/http/ngx_http.c:584
+    #4 0x5555556a87a1 in ngx_http_block src/http/ngx_http.c:270
+    #5 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #6 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #7 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #8 0x5555555c76b0 in main src/core/nginx.c:292
+    #9 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ssl/ssl_lib.c:4651 in SSL_CTX_set_options
+==53279==ABORTING

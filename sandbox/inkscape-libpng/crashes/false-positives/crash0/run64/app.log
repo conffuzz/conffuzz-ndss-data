@@ -1,0 +1,36 @@
+[I] Recursing from png_uint_16p into png_uint_16*
+[E] Not able to find type information for png_uint_16p in DWARF
+[I] Recursing from png_uint_32 into unsigned int
+[E] Not able to find type information for png_uint_32 in DWARF
+[I] Recursing from png_bytep into png_byte*
+[E] Not able to find type information for png_bytep in DWARF
+[I] Recursing from png_charp into char*
+[E] Not able to find type information for png_charp in DWARF
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_charpp into char**
+[E] Not able to find type information for png_charpp in DWARF
+[I] Recursing from png_textp into png_text*
+[E] Not able to find type information for png_textp in DWARF
+[I] Recursing from png_color_8p into png_color_8*
+[E] Not able to find type information for png_color_8p in DWARF
+[I] Recursing from png_fixed_point into png_int_32
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_color_16p into png_color_16*
+[E] Not able to find type information for png_color_16p in DWARF
+[I] Recursing from file into _IO_FILE
+[E] Not able to find type information for restrictpng_alloc_size_t in DWARF
+[I] Recursing from png_colorp into png_color*
+[E] Not able to find type information for png_colorp in DWARF
+[I] Recursing from png_timep into png_time*
+[E] Not able to find type information for png_timep in DWARF
+Background RRGGBBAA: ffffff00
+Area 0:0:816:1056 exported to 816 x 1056 pixels (96 dpi)
+[I] Attempting to instrument callback __longjmp_chk
+[I] Acquired data about __longjmp_chk, recursing.
+[E] Failed to retrieve information about __longjmp_chk
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==201924==ERROR: AddressSanitizer: SEGV on unknown address 0x000000002900 (pc 0x000000002900 bp 0x7fffffffd790 sp 0x7fffffffd768 T0)
+==201924==The signal is caused by a READ memory access.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

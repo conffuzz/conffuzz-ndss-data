@@ -1,0 +1,11 @@
+    #0 0xaddr in ngx_vslprintf src/core/ngx_string.c:178
+    #1 0xaddr in ngx_log_error_core src/core/ngx_log.c:135
+    #2 0xaddr in ngx_ssl_ocsp_request src/event/ngx_event_openssl_stapling.c:1381
+    #3 0xaddr in ngx_regex_cleanup src/core/ngx_regex.c:580
+    #4 0xaddr in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #5 0xaddr in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #6 0xaddr in ngx_init_cycle src/core/ngx_cycle.c:286
+    #7 0xaddr in main src/core/nginx.c:292
+    #8 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

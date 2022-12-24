@@ -1,0 +1,14 @@
+Fuzzing seed: 1668069890
+Starting time: 2022-11-10 08:44:50
+Total instrumented API size: 129
+Statically detected called API endpoints: 129
+Max number of call sites reached in a run: 13
+Number of API endpoints reached: 13
+Number of API endpoints that are vulnerability vectors: 5
+List of these endpoints:
+  [api] exif_ifd_get_name
+  [api] exif_loader_get_data
+  [api] exif_loader_new
+  [api] exif_log_code_get_title
+  [api] exif_tag_get_title
+Ending time: 2022-11-10 09:40:46

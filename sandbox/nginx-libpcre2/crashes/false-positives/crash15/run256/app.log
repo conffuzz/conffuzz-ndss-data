@@ -1,0 +1,24 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+nginx: [emerg] pcre2_pattern_info("/", PCRE2_INFO_CAPTURECOUNT) failed: -31 in /root/nginx-1.21.6/conf/nginx.conf:50
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==16776==ERROR: AddressSanitizer: SEGV on unknown address 0x000055893840 (pc 0x5555555e351c bp 0x7fffffffd768 sp 0x7fffffffd6b8 T0)
+==16776==The signal is caused by a READ memory access.
+    #0 0x5555555e351c in ngx_vslprintf src/core/ngx_string.c:178
+    #1 0x5555555ce64a in ngx_log_error_core src/core/ngx_log.c:135
+    #2 0x5555556a001f in ngx_ssl_ocsp_request src/event/ngx_event_openssl_stapling.c:1381
+    #3 0x5555556a6c26 in ngx_regex_cleanup src/core/ngx_regex.c:580
+    #4 0x5555555d0fb2 in ngx_destroy_pool src/core/ngx_palloc.c:57
+    #5 0x55555561c356 in ngx_destroy_cycle_pools src/core/ngx_cycle.c:947
+    #6 0x555555617982 in ngx_init_cycle src/core/ngx_cycle.c:286
+    #7 0x5555555c76b0 in main src/core/nginx.c:292
+    #8 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #9 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #10 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_string.c:178 in ngx_vslprintf
+==16776==ABORTING

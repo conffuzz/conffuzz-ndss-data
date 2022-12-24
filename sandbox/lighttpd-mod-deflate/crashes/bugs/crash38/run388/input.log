@@ -1,0 +1,20 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mod_deflate_plugin_init(0x611000000180 {plugin*} [size: 0xc8]) @ 0x00005555555ac6a1
+mod_deflate_init() @ 0x00005555555ad6bd
+mod_deflate_set_defaults(0x614000000040 {server*} [size: 0x1a8], 0x60e0000003c0 {void*} [size: 0x1]) @ 0x00005555555acbc9
+mod_deflate_cleanup(0x619000000a80 {request_st*} [size: 0x320], 0x60e0000003c0 {void*} [size: 0x1]) @ 0x00005555555ac929
+~> change ret {handler_t} from 0 to 0x7
+mod_deflate_handle_response_start(0x619000000a80 {request_st*} [size: 0x320], 0x60e0000003c0 {void*} [size: 0x1]) @ 0x00005555555ac929
+~> write {void*} 0x2 -> 0 at shared buffer 0x000060e0000003c0
+~> write {request_st*} 0 -> 0 at shared buffer 0x0000619000000d2e
+~> write {request_st*} 0 -> 0xff9c000000000000 at shared buffer 0x0000619000000d57
+~> change ret {handler_t} from 0 to 0xfffffffffffffffd
+mod_deflate_cleanup(0x619000000a80 {request_st*} [size: 0x320], 0x60e0000003c0 {void*} [size: 0x1]) @ 0x00005555555ac929
+~> write {void*} 0 -> 0 at shared buffer 0x000060e0000003c0
+~> write {request_st*} 0 -> 0xfd97000000000000 at shared buffer 0x0000619000000bfa
+~> write {request_st*} 0 -> 0xfe78000000000000 at shared buffer 0x0000619000000a81
+~> write {request_st*} 0 -> 0 at shared buffer 0x0000619000000ce3
+~> change ret {handler_t} from 0 to 0xfffffffffffffff8

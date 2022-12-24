@@ -1,0 +1,9 @@
+    #0 0xaddr in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:707:10
+    #1 0xaddr in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #2 0xaddr in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #3 0xaddr in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #4 0xaddr in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #5 0xaddr in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #6 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #7 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0xaddr in _start (/usr/local/bin/sudo+0xaddr) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)

@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+assoc_init(0 {int} [size: 0]) @ 0x000055555558ffd3
+~> change arg #0x1 {int} from 0 to 0xffffffff

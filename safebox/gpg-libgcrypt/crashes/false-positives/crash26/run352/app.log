@@ -1,0 +1,68 @@
+=================================================================
+==29560==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x625000004910 at pc 0x7fffe1968269 bp 0x7fffffffe0b0 sp 0x7fffffffd860
+WRITE of size 48 at 0x625000004910 thread T0
+    #0 0x7fffe1968268 in __interceptor_memset ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:778
+    #1 0x7fffe1529e31 in init_stream_lock /root/libgpg-error-1.41/src/estream.c:405
+    #2 0x7fffe152bd57 in create_stream /root/libgpg-error-1.41/src/estream.c:2255
+    #3 0x7fffe152db19 in do_fpopen /root/libgpg-error-1.41/src/estream.c:3489
+    #4 0x7fffe152de6a in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3665
+    #5 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #6 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #7 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #8 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #9 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+0x625000004910 is located 206 bytes to the right of 8002-byte region [0x625000002900,0x625000004842)
+allocated by thread T0 here:
+    #0 0x7fffe19d8e8f in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe15abad6 in _gcry_private_malloc /root/libgcrypt-1.9.2/src/stdmem.c:113
+    #2 0x7fffe15a5627 in do_malloc /root/libgcrypt-1.9.2/src/global.c:943
+    #3 0x7fffe15a5693 in _gcry_malloc /root/libgcrypt-1.9.2/src/global.c:965
+    #4 0x7fffe15a5772 in _gcry_realloc_core /root/libgcrypt-1.9.2/src/global.c:1019
+    #5 0x7fffe15a581b in _gcry_realloc /root/libgcrypt-1.9.2/src/global.c:1039
+    #6 0x7fffe15a2bd8 in gcry_realloc /root/libgcrypt-1.9.2/src/visibility.c:1544
+    #7 0x7fffe1529013 in _gpgrt_realloc /root/libgpg-error-1.41/src/init.c:247
+    #8 0x7fffe152916a in _gpgrt_malloc /root/libgpg-error-1.41/src/init.c:317
+    #9 0x7fffe1529da6 in mem_alloc /root/libgpg-error-1.41/src/estream.c:222
+    #10 0x7fffe152bcb6 in create_stream /root/libgpg-error-1.41/src/estream.c:2222
+    #11 0x7fffe152db19 in do_fpopen /root/libgpg-error-1.41/src/estream.c:3489
+    #12 0x7fffe152de6a in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3665
+    #13 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #14 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #15 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #16 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:778 in __interceptor_memset
+Shadow bytes around the buggy address:
+  0x0c4a7fff88d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c4a7fff88e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c4a7fff88f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c4a7fff8900: 00 00 00 00 00 00 00 00 02 fa fa fa fa fa fa fa
+  0x0c4a7fff8910: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x0c4a7fff8920: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4a7fff8930: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4a7fff8940: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4a7fff8950: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4a7fff8960: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c4a7fff8970: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==29560==ABORTING

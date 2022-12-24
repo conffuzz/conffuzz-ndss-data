@@ -1,0 +1,51 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+=================================================================
+==140598==ERROR: AddressSanitizer: global-buffer-overflow on address 0x7fffe00e0fea at pc 0x7fffe2648668 bp 0x7fffffffe7e0 sp 0x7fffffffdf90
+READ of size 1 at 0x7fffe00e0fea thread T0
+    #0 0x7fffe2648667 in __interceptor_strcmp ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:467
+    #1 0x5555555774d6 in print_all_libs_info fftools/cmdutils.c:1136
+    #2 0x55555557819f in show_banner fftools/cmdutils.c:1192
+    #3 0x5555555a0570 in main fftools/ffprobe.c:3894
+    #4 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+0x7fffe00e0fea is located 22 bytes to the right of global variable '*.LC39' defined in 'libavcodec/av1dec.c' (0x7fffe00e0fa0) of size 52
+  '*.LC39' is ascii string 'Select an operating point of the scalable bitstream'
+0x7fffe00e0fea is located 22 bytes to the left of global variable '*.LC40' defined in 'libavcodec/av1dec.c' (0x7fffe00e1000) of size 12
+  '*.LC40' is ascii string 'AV1 decoder'
+SUMMARY: AddressSanitizer: global-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:467 in __interceptor_strcmp
+Shadow bytes around the buggy address:
+  0x10007c0141a0: 02 f9 f9 f9 f9 f9 f9 f9 00 00 00 01 f9 f9 f9 f9
+  0x10007c0141b0: 00 00 00 01 f9 f9 f9 f9 00 00 00 04 f9 f9 f9 f9
+  0x10007c0141c0: 00 00 07 f9 f9 f9 f9 f9 00 00 00 05 f9 f9 f9 f9
+  0x10007c0141d0: 00 00 00 00 02 f9 f9 f9 f9 f9 f9 f9 00 00 00 02
+  0x10007c0141e0: f9 f9 f9 f9 00 00 00 f9 f9 f9 f9 f9 00 00 00 00
+=>0x10007c0141f0: 00 00 00 00 00 00 00 00 00 00 04 f9 f9[f9]f9 f9
+  0x10007c014200: 00 04 f9 f9 f9 f9 f9 f9 04 f9 f9 f9 f9 f9 f9 f9
+  0x10007c014210: 00 00 00 04 f9 f9 f9 f9 00 00 f9 f9 f9 f9 f9 f9
+  0x10007c014220: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007c014230: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10007c014240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==140598==ABORTING

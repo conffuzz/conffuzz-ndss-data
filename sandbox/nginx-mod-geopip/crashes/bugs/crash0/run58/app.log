@@ -1,0 +1,19 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7271==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555555e3b6e bp 0x7fffffffd8c0 sp 0x7fffffffd890 T0)
+==7271==The signal is caused by a READ memory access.
+==7271==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555555e3b6e in ngx_sprintf_str src/core/ngx_string.c:580
+    #1 0x5555555e1729 in ngx_vslprintf src/core/ngx_string.c:271
+    #2 0x555555625267 in ngx_conf_log_error src/core/ngx_conf_file.c:1001
+    #3 0x555555622c34 in ngx_conf_handler src/core/ngx_conf_file.c:473
+    #4 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #5 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #6 0x5555555c76b0 in main src/core/nginx.c:292
+    #7 0x7fffe0652d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #8 0x7fffe0652e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #9 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/core/ngx_string.c:580 in ngx_sprintf_str
+==7271==ABORTING

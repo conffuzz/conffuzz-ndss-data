@@ -1,0 +1,37 @@
+22896:C 08 Nov 2022 09:37:16.020 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22896:C 08 Nov 2022 09:37:16.049 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=22896, just started
+22896:C 08 Nov 2022 09:37:16.051 # Configuration loaded
+22896:M 08 Nov 2022 09:37:16.144 * monotonic clock: POSIX clock_gettime
+22896:M 08 Nov 2022 09:37:16.505 * Running mode=standalone, port=6379.
+22896:M 08 Nov 2022 09:37:16.506 # Server initialized
+22896:M 08 Nov 2022 09:37:16.508 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+22896:M 08 Nov 2022 09:37:16.945 * <search> Redis version found by RedisSearch : 6.2.6 - oss
+22896:M 08 Nov 2022 09:37:16.949 * <search> RediSearch version 99.99.99 (Git=HEAD-f3577f7e)
+22896:M 08 Nov 2022 09:37:16.965 * <search> Low level api version 1 initialized successfully
+22896:M 08 Nov 2022 09:37:16.984 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8, 
+22896:M 08 Nov 2022 09:37:17.028 * <search> Initialized thread pool!
+22896:M 08 Nov 2022 09:37:17.047 * <search> Enabled diskless replication
+22896:M 08 Nov 2022 09:37:17.112 * Module 'search' loaded from /root/RediSearch/bin/linux-x64-debug/search/redisearch.so
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==22896==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x5555558fb4a8 bp 0x7fffffffdb40 sp 0x7fffffffdad0 T0)
+==22896==The signal is caused by a READ memory access.
+==22896==Hint: address points to the zero page.
+    #0 0x5555558fb4a8 in atomic_load_p include/jemalloc/internal/atomic.h:55
+    #1 0x555555d81b02 in rtree_leaf_elm_bits_read include/jemalloc/internal/rtree.h:175
+    #2 0x555555d81b02 in rtree_leaf_elm_szind_read include/jemalloc/internal/rtree.h:227
+    #3 0x555555d81b02 in rtree_szind_read include/jemalloc/internal/rtree.h:434
+    #4 0x555555d81b02 in arena_salloc include/jemalloc/internal/arena_inlines_b.h:120
+    #5 0x555555d81b02 in isalloc include/jemalloc/internal/jemalloc_internal_inlines_c.h:37
+    #6 0x555555d81b02 in je_malloc_usable_size src/jemalloc.c:3149
+    #7 0x555555683562 in zfree /root/redis-6.2.6/src/zmalloc.c:291
+    #8 0x5555557ec60c in moduleFreeContext /root/redis-6.2.6/src/module.c:673
+    #9 0x555555813575 in moduleLoad /root/redis-6.2.6/src/module.c:8595
+    #10 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #11 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #12 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #13 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV include/jemalloc/internal/atomic.h:55 in atomic_load_p
+==22896==ABORTING

@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+gpgme_check_version_internal(0 [size: 0x1], 0x3c [size: 0]) @ 0x00005555556217b2
+~> change arg #0x1 from 0 to 0x64

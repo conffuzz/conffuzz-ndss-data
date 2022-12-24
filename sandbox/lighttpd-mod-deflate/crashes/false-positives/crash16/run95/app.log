@@ -1,0 +1,65 @@
+=================================================================
+==8178==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000000000 at pc 0x7fffdbf70262 bp 0x7fffffffe540 sp 0x7fffffffe530
+READ of size 8 at 0x603000000000 thread T0
+    #0 0x7fffdbf70261 in mod_deflate_cleanup /root/lighttpd-1.4.67/src/mod_deflate.c:2173
+    #1 0x5555555ac928 in plugins_call_fn_req_data /root/lighttpd-1.4.67/src/plugin.c:288
+    #2 0x5555555ace32 in plugins_call_handle_request_reset /root/lighttpd-1.4.67/src/plugin.c:344
+    #3 0x5555555aafc6 in request_reset /root/lighttpd-1.4.67/src/reqpool.c:85
+    #4 0x55555559399f in connection_reset /root/lighttpd-1.4.67/src/connections.c:557
+    #5 0x555555591585 in connection_handle_shutdown /root/lighttpd-1.4.67/src/connections.c:160
+    #6 0x555555591c34 in connection_handle_response_end_state /root/lighttpd-1.4.67/src/connections.c:216
+    #7 0x555555596a53 in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:1035
+    #8 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #9 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #10 0x5555555b0511 in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #11 0x5555555c4b59 in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #12 0x5555555c448e in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #13 0x55555558a290 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #14 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #15 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #16 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #17 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+0x603000000000 is located 16 bytes to the left of 24-byte region [0x603000000010,0x603000000028)
+freed by thread T0 here:
+    #0 0x7fffe234b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe1f2b2e8  (/lib/x86_64-linux-gnu/libc.so.6+0x902e8)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe234b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe1f2b1da  (/lib/x86_64-linux-gnu/libc.so.6+0x901da)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/lighttpd-1.4.67/src/mod_deflate.c:2173 in mod_deflate_cleanup
+Shadow bytes around the buggy address:
+  0x0c067fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c067fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c067fff8000:[fa]fa fd fd fd fa fa fa 00 00 00 fa fa fa fd fd
+  0x0c067fff8010: fd fa fa fa fd fd fd fa fa fa 00 00 00 fa fa fa
+  0x0c067fff8020: 00 00 00 fa fa fa fd fd fd fd fa fa fd fd fd fd
+  0x0c067fff8030: fa fa 00 00 00 00 fa fa fd fd fd fa fa fa 00 00
+  0x0c067fff8040: 00 00 fa fa 00 00 00 00 fa fa fd fd fd fa fa fa
+  0x0c067fff8050: 00 00 00 00 fa fa 00 00 00 00 fa fa 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==8178==ABORTING

@@ -1,0 +1,17 @@
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] {instrumentation.cpp:480} Failed to retrieve information about _init
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2816==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe21b28e9 bp 0x7fffffffd550 sp 0x7fffffffd4a0 T0)
+==2816==The signal is caused by a READ memory access.
+==2816==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe21b28e9 in poptGetNextOpt /root/popt-popt-1.19-release/src/popt.c:1224
+    #1 0x555555610ef3 in parse_arguments /root/rsync-3.2.7/options.c:1424
+    #2 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #3 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #4 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/popt-popt-1.19-release/src/popt.c:1224 in poptGetNextOpt
+==2816==ABORTING

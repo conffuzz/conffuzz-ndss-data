@@ -1,0 +1,4 @@
+fault_location /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+cap_read
+cap_read_arbitrary
+cap_write_arbitrary

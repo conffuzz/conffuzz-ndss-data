@@ -1,0 +1,18 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==34742==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7fffe26473ff bp 0x7fffffffe7e0 sp 0x7fffffffdf70 T0)
+==34742==The signal is caused by a READ memory access.
+==34742==Hint: address points to the zero page.
+    #0 0x7fffe26473ff in __interceptor_strcmp ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:462
+    #1 0x555555577610 in print_all_libs_info fftools/cmdutils.c:1137
+    #2 0x55555557819f in show_banner fftools/cmdutils.c:1192
+    #3 0x5555555a0570 in main fftools/ffprobe.c:3894
+    #4 0x7fffdd64b7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #5 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:462 in __interceptor_strcmp
+==34742==ABORTING

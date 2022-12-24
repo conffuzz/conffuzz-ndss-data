@@ -1,0 +1,33 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+~> change ret from 0 to 0x2710
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+~> write 0x20000001b0000000 -> 0xfffffffffffffffc at shared buffer 0x0000604000000295
+~> change ret from 0 to 0xffffffffffffff42
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+~> write 0x20000001b0000065 -> 0x1d at shared buffer 0x0000602000000430
+~> write 0x20000001b0000000 -> 0 at shared buffer 0x00007fffffffc250
+~> write 0x20000001b0000000 -> 0x76 at shared buffer 0x00007fffffffc250
+~> write 0x20000001b0000076 -> 0xfe at shared buffer 0x00007fffffffc250
+~> write 0x20000001b00000fe -> 0xda at shared buffer 0x00007fffffffc250
+pcap_set_promisc(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+~> change ret from 0 to 0xffffffffffffff0c
+pcap_set_timeout(0x618000000080 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+~> write 0x2000000000000000 -> 0 at shared buffer 0x00006180000001f9
+~> write 0x2000000000000510 -> 0x192 at shared buffer 0x0000618000000280
+~> change ret from 0 to 0xbb8
+pcap_set_tstamp_precision(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+~> write 0x20000000007fffe2 -> 0x61 at shared buffer 0x00006180000002cb
+~> write 0x20000058b3090000 -> 0 at shared buffer 0x00006180000002d6
+~> write 0x2000005800000000 -> 0x2e4 at shared buffer 0x00006180000001e6
+~> change ret from 0xfffffff4 to 0xffffffffffffff9c
+pcap_set_buffer_size(0x618000000080 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+~> write 0x2000000000000000 -> 0xff at shared buffer 0x000061800000012f
+~> write 0x2e40000 -> 0 at shared buffer 0x00006180000001e4
+~> write 0x7fffe2 -> 0 at shared buffer 0x00006180000002a3
+~> write 0 -> 0xfffffffffffc24 at shared buffer 0x00006180000001dd
+pcap_activate(0x618000000080 [size: 0x288]) @ 0x0000555555586c87

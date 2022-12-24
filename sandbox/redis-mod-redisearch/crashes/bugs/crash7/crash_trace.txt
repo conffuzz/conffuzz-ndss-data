@@ -1,0 +1,17 @@
+    #0 0xaddr in moduleCloseKey /root/redis-6.2.6/src/module.c:2274
+    #1 0xaddr in RM_CloseKey /root/redis-6.2.6/src/module.c:2290
+    #2 0xaddr in autoMemoryCollect /root/redis-6.2.6/src/module.c:1104
+    #3 0xaddr in moduleFreeContext /root/redis-6.2.6/src/module.c:670
+    #4 0xaddr in RedisModuleCommandDispatcher /root/redis-6.2.6/src/module.c:695
+    #5 0xaddr in call /root/redis-6.2.6/src/server.c:3721
+    #6 0xaddr in processCommand /root/redis-6.2.6/src/server.c:4241
+    #7 0xaddr in processCommandAndResetClient /root/redis-6.2.6/src/networking.c:2039
+    #8 0xaddr in processInputBuffer /root/redis-6.2.6/src/networking.c:2140
+    #9 0xaddr in readQueryFromClient /root/redis-6.2.6/src/networking.c:2226
+    #10 0xaddr in callHandler /root/redis-6.2.6/src/connhelpers.h:79
+    #11 0xaddr in connSocketEventHandler /root/redis-6.2.6/src/connection.c:295
+    #12 0xaddr in aeProcessEvents /root/redis-6.2.6/src/ae.c:427
+    #13 0xaddr in aeMain /root/redis-6.2.6/src/ae.c:487
+    #14 0xaddr in main /root/redis-6.2.6/src/server.c:6401
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/root/redis-6.2.6/src/redis-server+0xaddr)

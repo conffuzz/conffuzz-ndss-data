@@ -1,0 +1,23 @@
+[I] Attempting to instrument callback pcre2_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback pcre2_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+=================================================================
+==1290==ERROR: AddressSanitizer: requested allocation size 0xfffffffffffffff6 (0x7f8 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffde79a867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x555555b5dd6d in pcre2_malloc /root/git-2.35.1/grep.c:338
+    #2 0x7fffde5a439a in pcre2_general_context_create_8 src/pcre2_context.c:121
+    #3 0x555555b5df52 in compile_pcre2_pattern /root/git-2.35.1/grep.c:372
+    #4 0x555555b5f4b0 in compile_regexp /root/git-2.35.1/grep.c:547
+    #5 0x555555b60e9d in compile_grep_patterns /root/git-2.35.1/grep.c:800
+    #6 0x555555815700 in start_threads builtin/grep.c:235
+    #7 0x5555558203a2 in cmd_grep builtin/grep.c:1133
+    #8 0x55555571ea06 in run_builtin /root/git-2.35.1/git.c:464
+    #9 0x55555571f442 in handle_builtin /root/git-2.35.1/git.c:716
+    #10 0x5555557206ee in cmd_main /root/git-2.35.1/git.c:884
+    #11 0x5555559a3836 in main /root/git-2.35.1/common-main.c:56
+    #12 0x7fffde32bd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+==1290==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145 in __interceptor_malloc
+==1290==ABORTING

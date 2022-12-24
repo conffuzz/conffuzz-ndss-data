@@ -1,0 +1,63 @@
+[I] Recursing from png_uint_16p into png_uint_16*
+[E] Not able to find type information for png_uint_16p in DWARF
+[I] Recursing from png_uint_32 into unsigned int
+[E] Not able to find type information for png_uint_32 in DWARF
+[I] Recursing from png_bytep into png_byte*
+[E] Not able to find type information for png_bytep in DWARF
+[I] Recursing from png_charp into char*
+[E] Not able to find type information for png_charp in DWARF
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_charpp into char**
+[E] Not able to find type information for png_charpp in DWARF
+[I] Recursing from png_textp into png_text*
+[E] Not able to find type information for png_textp in DWARF
+[I] Recursing from png_color_8p into png_color_8*
+[E] Not able to find type information for png_color_8p in DWARF
+[I] Recursing from png_fixed_point into png_int_32
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_color_16p into png_color_16*
+[E] Not able to find type information for png_color_16p in DWARF
+[I] Recursing from file into _IO_FILE
+[E] Not able to find type information for restrictpng_alloc_size_t in DWARF
+[I] Recursing from png_colorp into png_color*
+[E] Not able to find type information for png_colorp in DWARF
+[I] Recursing from png_timep into png_time*
+[E] Not able to find type information for png_timep in DWARF
+Background RRGGBBAA: ffffff00
+Area 0:0:816:1056 exported to 816 x 1056 pixels (96 dpi)
+[I] Attempting to instrument callback __longjmp_chk
+[I] Acquired data about __longjmp_chk, recursing.
+[E] Failed to retrieve information about __longjmp_chk
+libpng warning: MNG features are not allowed in a PNG datastream
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==548554==ERROR: AddressSanitizer: SEGV on unknown address 0x0000041ffff0 (pc 0x7fffe27d59c6 bp 0x000004200000 sp 0x7fffffffced0 T0)
+==548554==The signal is caused by a WRITE memory access.
+    #0 0x7fffe27d59c6 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe27d59c6 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe27d59c6 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe27d59c6 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe285b4a7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffdf87fb0e in png_free_default /root/libpng-1.6.37/pngmem.c:252
+    #6 0x7fffdf87fadf in png_free /root/libpng-1.6.37/pngmem.c:242
+    #7 0x7fffdf8a097d in png_write_destroy /root/libpng-1.6.37/pngwrite.c:961
+    #8 0x7fffdf8a09e2 in png_destroy_write_struct /root/libpng-1.6.37/pngwrite.c:992
+    #9 0x7fffe171070f in sp_png_write_rgba_striped(SPDocument*, char const*, unsigned long, unsigned long, double, double, int (*)(unsigned char const**, void**, int, int, void*, int, int, int), void*, bool, int, int, int, int) [clone .constprop.0] (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6e70f)
+    #10 0x7fffe1710b01 in sp_export_png_file(SPDocument*, char const*, Geom::Rect const&, unsigned long, unsigned long, double, double, unsigned long, unsigned int (*)(float, void*), void*, bool, std::vector<SPItem*, std::allocator<SPItem*> > const&, bool, int, int, int, int) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6eb01)
+    #11 0x7fffe17173c9 in InkFileExportCmd::do_export_png(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa753c9)
+    #12 0x7fffe17193d2 in InkFileExportCmd::do_export(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa773d2)
+    #13 0x7fffe1f82893 in InkscapeApplication::process_document(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12e0893)
+    #14 0x7fffe1f82a57 in InkscapeApplication::on_open(std::vector<Glib::RefPtr<Gio::File>, std::allocator<Glib::RefPtr<Gio::File> > > const&, Glib::ustring const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12e0a57)
+    #15 0x7fffdf1163ac  (/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so.1+0xf53ac)
+    #16 0x7fffe02ad71e in g_closure_invoke (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x1671e)
+    #17 0x7fffe02bfed0  (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x28ed0)
+    #18 0x7fffe02c6110 in g_signal_emit_valist (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f110)
+    #19 0x7fffe02c66be in g_signal_emit (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f6be)
+    #20 0x7fffe03db517  (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe4517)
+    #21 0x7fffe03db7bd in g_application_run (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe47bd)
+    #22 0x7fffdd72e7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #23 0x555555556f09 in _start (/root/inkscape-INKSCAPE_1_1_2/build/bin/inkscape+0x2f09)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==548554==ABORTING

@@ -1,0 +1,16 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==20145==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe273dd95 bp 0x7fffffffe7e0 sp 0x7fffffffe7c0 T0)
+==20145==The signal is caused by a READ memory access.
+==20145==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe273dd95 in mlist_free /root/file-5.41/src/apprentice.c:626
+    #1 0x7fffe273d45f in file_ms_free /root/file-5.41/src/apprentice.c:506
+    #2 0x7fffe273af4e in magic_close /root/file-5.41/src/magic.c:293
+    #3 0x55555555a382 in main /root/file-5.41/src/file.c:433
+    #4 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/file-5.41/src/apprentice.c:626 in mlist_free
+==20145==ABORTING

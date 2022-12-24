@@ -1,0 +1,1 @@
+    #1 0xaddr in QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (/usr/lib/x86_64-linux-gnu/libQt5Core.so.5+0xaddr)

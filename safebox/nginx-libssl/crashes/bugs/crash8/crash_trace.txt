@@ -1,0 +1,14 @@
+    #0 0xaddr in ssl3_write_bytes ssl/record/rec_layer_s3.c:350
+    #1 0xaddr in ssl_create_cipher_list ssl/ssl_ciph.c:1442
+    #2 0xaddr in SSL_CTX_new ssl/ssl_lib.c:3016
+    #3 0xaddr in ngx_ssl_create src/event/ngx_event_openssl.c:263
+    #4 0xaddr in ngx_http_ssl_merge_srv_conf src/http/modules/ngx_http_ssl_module.c:725
+    #5 0xaddr in ngx_http_merge_servers src/http/ngx_http.c:584
+    #6 0xaddr in ngx_http_block src/http/ngx_http.c:270
+    #7 0xaddr in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #8 0xaddr in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #9 0xaddr in ngx_init_cycle src/core/ngx_cycle.c:284
+    #10 0xaddr in main src/core/nginx.c:292
+    #11 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #13 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

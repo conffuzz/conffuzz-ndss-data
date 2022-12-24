@@ -1,0 +1,9 @@
+nginx: [alert] SSL_CTX_get_ex_new_index() failed (SSL: ръсџ)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==105836==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000005 (pc 0x000000000005 bp 0x7fffffffdbc0 sp 0x7fffffffda88 T0)
+==105836==Hint: pc points to the zero page.
+==105836==The signal is caused by a READ memory access.
+==105836==Hint: address points to the zero page.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

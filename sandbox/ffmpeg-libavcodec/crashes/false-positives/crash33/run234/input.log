@@ -1,0 +1,38 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> change ret from 0x7fffe00e12c0 to 0x55555555400a
+avcodec_version() @ 0x0000555555577440
+~> change ret from 0x3b1264 to 0x3b1528
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0xff -> 0 at shared buffer 0x000060e0000233dd
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x7fffe0500d6c
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+~> write 0x21c -> 0xfffffffffffffffd at shared buffer 0x000060e0000233fc
+~> write 0 -> 0xfffffffffffffce1 at shared buffer 0x000060e0000233e3
+~> write 0xffde8134aa -> 0xffffff0000000000 at shared buffer 0x0000619000000218
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+~> change ret from 0x7fffe0524ef0 to 0x7ffffffde190
+avcodec_parameters_alloc() @ 0x00007fffde5a6429
+avcodec_parameters_alloc() @ 0x00007fffde5a6478
+~> change ret from 0x60e000023660 to 0x11
+avcodec_parameters_copy(0x60e000023580 [size: 0x90], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eb8ece
+~> write 0xffde813400 -> 0x6080000000f8 at shared buffer 0x000060e0000233ce
+~> write 0 -> 0x60fffffffcab at shared buffer 0x000060e000023426
+~> write 0 -> 0x600000000000 at shared buffer 0x000060e0000235e6
+~> write 0x4600 -> 0x600000000000 at shared buffer 0x000060e000023587
+~> write 0 -> 0x600000000000 at shared buffer 0x000060e000023590
+~> change ret from 0 to 0xffffffffffffff48
+avcodec_parameters_free(0x6080000000b8 [size: 0x8]) @ 0x00007fffde5a61b5
+~> write 0 -> 0x7f at shared buffer 0x00006080000000b9
+~> write 0x7f00 -> 0xbb8 at shared buffer 0x00006080000000b8
+~> write 0 -> 0x16c at shared buffer 0x00006080000000bb
+~> change ret from 0x2b6bb to 0x2b7ac
+avcodec_parameters_free(0x6080000000c0 [size: 0x8]) @ 0x00007fffde5a61c5

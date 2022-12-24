@@ -1,0 +1,40 @@
+2022/11/09 16:34:01| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==9796==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000003ea (pc 0x555555ca66e7 bp 0x7fffffffd1c0 sp 0x7fffffffd1a0 T0)
+==9796==The signal is caused by a READ memory access.
+==9796==Hint: address points to the zero page.
+    #0 0x555555ca66e7 in ESILibxml2Parser::errorString() const /root/squid-5.7/src/esi/Libxml2Parser.cc:125
+    #1 0x555555c85232 in ESIContext::parseOneBuffer() /root/squid-5.7/src/esi/Esi.cc:1221
+    #2 0x555555c85632 in ESIContext::parse() /root/squid-5.7/src/esi/Esi.cc:1264
+    #3 0x555555c85a53 in ESIContext::process() /root/squid-5.7/src/esi/Esi.cc:1310
+    #4 0x555555c7da18 in ESIContext::kick() /root/squid-5.7/src/esi/Esi.cc:315
+    #5 0x555555c80f23 in esiProcessStream(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/esi/Esi.cc:787
+    #6 0x555555934985 in clientStreamCallback(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:159
+    #7 0x55555595dfd4 in clientReplyContext::pushStreamData(StoreIOBuffer const&, char*) /root/squid-5.7/src/client_side_reply.cc:1958
+    #8 0x55555595f8a4 in clientReplyContext::sendMoreData(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:2252
+    #9 0x55555595db73 in clientReplyContext::SendMoreData(void*, StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:1904
+    #10 0x5555559fc475 in store_client::callback(long, bool) /root/squid-5.7/src/store_client.cc:178
+    #11 0x5555559fdc02 in store_client::scheduleMemRead() /root/squid-5.7/src/store_client.cc:474
+    #12 0x5555559fd758 in store_client::scheduleRead() /root/squid-5.7/src/store_client.cc:440
+    #13 0x5555559fd4a6 in store_client::doCopy(StoreEntry*) /root/squid-5.7/src/store_client.cc:401
+    #14 0x5555559fcfe8 in storeClientCopy2 /root/squid-5.7/src/store_client.cc:355
+    #15 0x5555559fc629 in storeClientCopyEvent /root/squid-5.7/src/store_client.cc:194
+    #16 0x5555559792e2 in EventDialer::dial(AsyncCall&) /root/squid-5.7/src/event.cc:41
+    #17 0x5555559798e8 in AsyncCallT<EventDialer>::fire() ../src/base/AsyncCall.h:145
+    #18 0x555555afdd08 in AsyncCall::make() /root/squid-5.7/src/base/AsyncCall.cc:44
+    #19 0x555555afeb88 in AsyncCallQueue::fireNext() /root/squid-5.7/src/base/AsyncCallQueue.cc:60
+    #20 0x555555afe915 in AsyncCallQueue::fire() /root/squid-5.7/src/base/AsyncCallQueue.cc:43
+    #21 0x55555587fc36 in EventLoop::dispatchCalls() /root/squid-5.7/src/EventLoop.cc:144
+    #22 0x55555587fad0 in EventLoop::runOnce() /root/squid-5.7/src/EventLoop.cc:109
+    #23 0x55555587f995 in EventLoop::run() /root/squid-5.7/src/EventLoop.cc:83
+    #24 0x5555559bf69f in SquidMain(int, char**) /root/squid-5.7/src/main.cc:1719
+    #25 0x5555559be94c in SquidMainSafe /root/squid-5.7/src/main.cc:1406
+    #26 0x5555559be906 in main /root/squid-5.7/src/main.cc:1394
+    #27 0x7fffd73dfd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #28 0x7fffd73dfe3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #29 0x555555831e64 in _start (/usr/local/squid/sbin/squid+0x2dde64)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/squid-5.7/src/esi/Libxml2Parser.cc:125 in ESILibxml2Parser::errorString() const
+==9796==ABORTING

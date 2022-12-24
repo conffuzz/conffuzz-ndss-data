@@ -1,0 +1,3 @@
+    #1 0xaddr in assoc_init /root/memcached-1.6.17/assoc.c:59
+    #2 0xaddr in main /root/memcached-1.6.17/memcached.c:6045
+    #3 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

@@ -1,0 +1,4 @@
+fault_location /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.1
+cap_read
+cap_write_arbitrary
+cap_read_arbitrary

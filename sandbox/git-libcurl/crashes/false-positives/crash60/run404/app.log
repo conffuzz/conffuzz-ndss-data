@@ -1,0 +1,18 @@
+warning: curl_multi_add_handle failed: handle
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==63328==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000019 (pc 0x7fffe00e0768 bp 0x7fffffffd900 sp 0x7fffffffd8e0 T0)
+==63328==The signal is caused by a READ memory access.
+==63328==Hint: address points to the zero page.
+    #0 0x7fffe00e0768 in curl_slist_free_all /root/curl-7.82.0/lib/slist.c:139
+    #1 0x555555633db6 in locking_available /root/git-2.35.1/http-push.c:1260
+    #2 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #3 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #4 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #5 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #6 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/slist.c:139 in curl_slist_free_all
+==63328==ABORTING

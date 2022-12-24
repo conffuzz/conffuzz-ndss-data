@@ -1,0 +1,40 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+=================================================================
+==124424==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x6020000004ff in thread T0
+    #0 0x7fffe27254d7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe258dfa0 in pcap_close pcap.c:4068
+    #2 0x555555586de1 in open_capture_device_pcap_create /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1366
+    #3 0x555555583d3f in open_capture_device_local /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:82
+    #4 0x555555587514 in open_capture_device /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1607
+    #5 0x55555556b980 in capture_loop_open_input /root/wireshark-3.4.12/dumpcap.c:2703
+    #6 0x555555570f5a in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3793
+    #7 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #8 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #9 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+0x6020000004ff is located 10 bytes to the right of 5-byte region [0x6020000004f0,0x6020000004f5)
+allocated by thread T0 here:
+    #0 0x7fffe26d07a7 in __interceptor_strdup ../../../../src/libsanitizer/asan/asan_interceptors.cpp:454
+    #1 0x7fffe258c457 in pcap_create pcap.c:2322
+    #2 0x55555558674f in open_capture_device_pcap_create /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1280
+    #3 0x555555583d3f in open_capture_device_local /root/wireshark-3.4.12/caputils/capture-pcap-util-unix.c:82
+    #4 0x555555587514 in open_capture_device /root/wireshark-3.4.12/caputils/capture-pcap-util.c:1607
+    #5 0x55555556b980 in capture_loop_open_input /root/wireshark-3.4.12/dumpcap.c:2703
+    #6 0x555555570f5a in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3793
+    #7 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #8 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==124424==ABORTING

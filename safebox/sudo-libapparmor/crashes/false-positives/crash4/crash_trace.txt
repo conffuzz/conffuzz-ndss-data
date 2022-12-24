@@ -1,0 +1,10 @@
+    #0 0xaddr in printf_common(void*, char const*, __va_list_tag*) asan_interceptors.cpp.o
+    #1 0xaddr in __interceptor_vasprintf (/usr/local/bin/sudo+0xaddr) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+    #2 0xaddr in _aa_asprintf /root/apparmor-v3.1.1/libraries/libapparmor/src/private.c:180:7
+    #3 0xaddr in aa_change_onexec /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:817:8
+    #4 0xaddr in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:92:16
+    #5 0xaddr in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #6 0xaddr in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #7 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #8 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #9 0xaddr in _start (/usr/local/bin/sudo+0xaddr) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)

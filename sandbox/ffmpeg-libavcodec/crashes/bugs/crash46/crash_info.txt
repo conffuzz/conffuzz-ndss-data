@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libavutil.so.57.17.100
+cap_read_arbitrary

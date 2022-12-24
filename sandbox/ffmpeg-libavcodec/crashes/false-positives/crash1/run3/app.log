@@ -1,0 +1,33 @@
+ffprobe version 5.0 Copyright (c) 2007-2022 the FFmpeg developers
+  built with gcc 11 (Debian 11.2.0-20)
+  configuration: --extra-cflags='-fPIC -fsanitize=address' --extra-ldflags='-fsanitize=address' --enable-shared --disable-optimizations --enable-debug=3 --enable-pic --disable-stripping --disable-asm --disable-static --enable-memory-poisoning --enable-gpl --enable-gnutls --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libvorbis --enable-nonfree
+  libavutil      57. 17.100 / 57. 17.100
+  libavcodec     59. 18.100 / 65535.255.254
+  libavformat    59. 16.100 / 59. 16.100
+  libavdevice    59.  4.100 / 59.  4.100
+  libavfilter     8. 24.100 /  8. 24.100
+  libswscale      6.  4.100 /  6.  4.100
+  libswresample   4.  3.100 /  4.  3.100
+  libpostproc    56.  3.100 / 56.  3.100
+Tried and failed to write to 0x0000555555554080 (4 bytes)
+Tried and failed to write to 0x0000555555554085 (5 bytes)
+foo.avi: Unknown error 771
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2774==ERROR: AddressSanitizer: SEGV on unknown address 0x55555555401a (pc 0x7fffdda3c1a2 bp 0x7fffffffe6f0 sp 0x7fffffffe660 T0)
+==2774==The signal is caused by a WRITE memory access.
+    #0 0x7fffdda3c1a2 in av_freep libavutil/mem.c:259
+    #1 0x7fffde781438 in codec_parameters_reset libavcodec/codec_par.c:33
+    #2 0x7fffde78182b in avcodec_parameters_free libavcodec/codec_par.c:67
+    #3 0x7fffe130d5b8 in free_stream libavformat/utils.c:674
+    #4 0x7fffe130da99 in avformat_free_context libavformat/utils.c:706
+    #5 0x7fffe0ea2dea in avformat_close_input libavformat/demux.c:374
+    #6 0x55555559caf7 in close_input_file fftools/ffprobe.c:3253
+    #7 0x55555559d4f9 in probe_file fftools/ffprobe.c:3329
+    #8 0x5555555a0cdc in main fftools/ffprobe.c:3993
+    #9 0x7fffdd64c7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x55555556ffc9 in _start (/root/ffmpeg-5.0/ffprobe+0x1bfc9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV libavutil/mem.c:259 in av_freep
+==2774==ABORTING

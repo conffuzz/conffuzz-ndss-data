@@ -1,0 +1,4 @@
+fault_location /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+cap_read
+cap_read_arbitrary
+cap_null_deref

@@ -1,0 +1,3 @@
+fault_location /usr/local/nginx/modules/ngx_http_geoip_module.so
+cap_read_arbitrary
+cap_read

@@ -1,0 +1,24 @@
+=================================================================
+==5563==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x60d000005300 in thread T0
+    #0 0x7fffe296c517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe277e5cc in file_reset /root/file-5.41/src/funcs.c:508
+    #2 0x7fffe273b480 in file_or_fd /root/file-5.41/src/magic.c:414
+    #3 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #4 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #5 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #6 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+0x60d000005300 is located 32 bytes to the left of 137-byte region [0x60d000005320,0x60d0000053a9)
+allocated by thread T0 here:
+    #0 0x7fffe296cc18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe277e922 in file_getbuffer /root/file-5.41/src/funcs.c:546
+    #2 0x7fffe273bb2e in file_or_fd /root/file-5.41/src/magic.c:529
+    #3 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #4 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #5 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #6 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==5563==ABORTING

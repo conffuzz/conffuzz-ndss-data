@@ -1,0 +1,55 @@
+=================================================================
+==3061==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7ffc79a9684c at pc 0x7f1894f2462d bp 0x7ffc79a96410 sp 0x7ffc79a96408
+WRITE of size 8 at 0x7ffc79a9684c thread T0
+    #0 0x7f1894f2462c in splitcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:560:9
+    #1 0x7f1894f24aaa in aa_getprocattr_raw /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:645:7
+    #2 0x7f1894f24f22 in aa_getprocattr /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:698:8
+    #3 0x7f1894f268f9 in aa_gettaskcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:981:9
+    #4 0x7f1894f26923 in aa_getcon /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:1000:9
+    #5 0x55ead9b27588 in apparmor_prepare /root/sudo-1.9.12/src/./apparmor.c:84:16
+    #6 0x55ead9b02d49 in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:897:6
+    #7 0x55ead9ae4a39 in main /root/sudo-1.9.12/src/./sudo.c:288:6
+    #8 0x7f18947dbd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #9 0x7f18947dbe3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f) (BuildId: 69389d485a9793dbe873f0ea2c93e02efaa9aa3d)
+    #10 0x55ead9967d84 in _start (/usr/local/bin/sudo+0xccd84) (BuildId: 5e779861424146e9069c64485d3c4414c868ddb8)
+
+Address 0x7ffc79a9684c is located in stack of thread T0 at offset 44 in frame
+    #0 0x55ead9af388f in command_info_to_details /root/sudo-1.9.12/src/./sudo.c:652
+
+  This frame has 1 object(s):
+    [32, 40) 'errstr' (line 653) <== Memory access at offset 44 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow /root/apparmor-v3.1.1/libraries/libapparmor/src/kernel.c:560:9 in splitcon
+Shadow bytes around the buggy address:
+  0x10000f34acb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34acc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34acd0: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2
+  0x10000f34ace0: 00 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34acf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10000f34ad00: 00 00 00 00 f1 f1 f1 f1 00[f3]f3 f3 00 00 00 00
+  0x10000f34ad10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34ad20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34ad30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34ad40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f34ad50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==3061==ABORTING

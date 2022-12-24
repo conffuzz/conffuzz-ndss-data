@@ -1,0 +1,16 @@
+    #0 0xaddr in gs_main_finit psi/imain.c:1232
+    #1 0xaddr in gs_to_exit_with_code psi/imain.c:1434
+    #2 0xaddr in gs_to_exit psi/imain.c:1439
+    #3 0xaddr in psapi_exit psi/psapi.c:516
+    #4 0xaddr in gsapi_exit psi/iapi.c:401
+    #5 0xaddr in InvokeGhostscriptDelegate coders/ghostscript-private.h:167
+    #6 0xaddr in ReadPSImage coders/ps.c:820
+    #7 0xaddr in ReadImage MagickCore/constitute.c:728
+    #8 0xaddr in ReadImages MagickCore/constitute.c:1075
+    #9 0xaddr in ConvertImageCommand MagickWand/convert.c:614
+    #10 0xaddr in MagickCommandGenesis MagickWand/mogrify.c:188
+    #11 0xaddr in MagickMain utilities/magick.c:150
+    #12 0xaddr in main utilities/magick.c:182
+    #13 0xaddr in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0xaddr in __libc_start_main_impl ../csu/libc-start.c:392
+    #15 0xaddr in _start (/usr/local/bin/magick+0xaddr)

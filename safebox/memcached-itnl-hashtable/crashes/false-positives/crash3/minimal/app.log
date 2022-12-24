@@ -1,0 +1,1019 @@
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+Type list: *
+   void*->1
+Type list: int
+   int->0
+Type list: item* uint32_t
+   item*->48
+   uint32_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: * item**
+   void*->1
+   item**->8
+Type list: uint64_t
+   uint64_t->0
+Type list: char* size_t uint32_t
+   char*->1
+   size_t->0
+   uint32_t->0
+Type list: *
+   void*->1
+slab class   1: chunk size        96 perslab   10922
+slab class   2: chunk size       120 perslab    8738
+slab class   3: chunk size       152 perslab    6898
+slab class   4: chunk size       192 perslab    5461
+slab class   5: chunk size       240 perslab    4369
+slab class   6: chunk size       304 perslab    3449
+slab class   7: chunk size       384 perslab    2730
+slab class   8: chunk size       480 perslab    2184
+slab class   9: chunk size       600 perslab    1747
+slab class  10: chunk size       752 perslab    1394
+slab class  11: chunk size       944 perslab    1110
+slab class  12: chunk size      1184 perslab     885
+slab class  13: chunk size      1480 perslab     708
+slab class  14: chunk size      1856 perslab     564
+slab class  15: chunk size      2320 perslab     451
+slab class  16: chunk size      2904 perslab     361
+slab class  17: chunk size      3632 perslab     288
+slab class  18: chunk size      4544 perslab     230
+slab class  19: chunk size      5680 perslab     184
+slab class  20: chunk size      7104 perslab     147
+slab class  21: chunk size      8880 perslab     118
+slab class  22: chunk size     11104 perslab      94
+slab class  23: chunk size     13880 perslab      75
+slab class  24: chunk size     17352 perslab      60
+slab class  25: chunk size     21696 perslab      48
+slab class  26: chunk size     27120 perslab      38
+slab class  27: chunk size     33904 perslab      30
+slab class  28: chunk size     42384 perslab      24
+slab class  29: chunk size     52984 perslab      19
+slab class  30: chunk size     66232 perslab      15
+slab class  31: chunk size     82792 perslab      12
+slab class  32: chunk size    103496 perslab      10
+slab class  33: chunk size    129376 perslab       8
+slab class  34: chunk size    161720 perslab       6
+slab class  35: chunk size    202152 perslab       5
+slab class  36: chunk size    252696 perslab       4
+slab class  37: chunk size    315872 perslab       3
+slab class  38: chunk size    394840 perslab       2
+slab class  39: chunk size    524288 perslab       2
+Starting LRU crawler background thread
+Starting LRU maintainer background thread
+Kicking LRU crawler off for LRU 1
+Kicking LRU crawler off for LRU 2
+Kicking LRU crawler off for LRU 3
+Kicking LRU crawler off for LRU 4
+Kicking LRU crawler off for LRU 5
+Kicking LRU crawler off for LRU 6
+Kicking LRU crawler off for LRU 7
+Kicking LRU crawler off for LRU 8
+Kicking LRU crawler off for LRU 9
+Kicking LRU crawler off for LRU 10
+Kicking LRU crawler off for LRU 11
+Kicking LRU crawler off for LRU 12
+Kicking LRU crawler off for LRU 13
+Kicking LRU crawler off for LRU 14
+Kicking LRU crawler off for LRU 15
+Kicking LRU crawler off for LRU 16
+Kicking LRU crawler off for LRU 17
+Kicking LRU crawler off for LRU 18
+Kicking LRU crawler off for LRU 19
+Kicking LRU crawler off for LRU 20
+Kicking LRU crawler off for LRU 21
+Kicking LRU crawler off for LRU 22
+Kicking LRU crawler off for LRU 23
+Kicking LRU crawler off for LRU 24
+Kicking LRU crawler off for LRU 25
+Kicking LRU crawler off for LRU 26
+Kicking LRU crawler off for LRU 27
+Kicking LRU crawler off for LRU 28
+Kicking LRU crawler off for LRU 29
+Kicking LRU crawler off for LRU 30
+Kicking LRU crawler off for LRU 31
+Kicking LRU crawler off for LRU 32
+Kicking LRU crawler off for LRU 33
+Kicking LRU crawler off for LRU 34
+Kicking LRU crawler off for LRU 35
+Kicking LRU crawler off for LRU 36
+Kicking LRU crawler off for LRU 37
+Kicking LRU crawler off for LRU 38
+Kicking LRU crawler off for LRU 39
+Kicking LRU crawler off for LRU 40
+Kicking LRU crawler off for LRU 41
+Kicking LRU crawler off for LRU 42
+Kicking LRU crawler off for LRU 43
+Kicking LRU crawler off for LRU 44
+Kicking LRU crawler off for LRU 45
+Kicking LRU crawler off for LRU 46
+Kicking LRU crawler off for LRU 47
+Kicking LRU crawler off for LRU 48
+Kicking LRU crawler off for LRU 49
+Kicking LRU crawler off for LRU 50
+Kicking LRU crawler off for LRU 51
+Kicking LRU crawler off for LRU 52
+Kicking LRU crawler off for LRU 53
+Kicking LRU crawler off for LRU 54
+Kicking LRU crawler off for LRU 55
+Kicking LRU crawler off for LRU 56
+Kicking LRU crawler off for LRU 57
+Kicking LRU crawler off for LRU 58
+Kicking LRU crawler off for LRU 59
+Kicking LRU crawler off for LRU 60
+Kicking LRU crawler off for LRU 61
+Kicking LRU crawler off for LRU 62
+Kicking LRU crawler off for LRU 63
+Kicking LRU crawler off for LRU 64
+Kicking LRU crawler off for LRU 65
+Kicking LRU crawler off for LRU 66
+Kicking LRU crawler off for LRU 67
+Kicking LRU crawler off for LRU 68
+Kicking LRU crawler off for LRU 69
+Kicking LRU crawler off for LRU 70
+Kicking LRU crawler off for LRU 71
+Kicking LRU crawler off for LRU 72
+Kicking LRU crawler off for LRU 73
+Kicking LRU crawler off for LRU 74
+Kicking LRU crawler off for LRU 75
+Kicking LRU crawler off for LRU 76
+Kicking LRU crawler off for LRU 77
+Kicking LRU crawler off for LRU 78
+Kicking LRU crawler off for LRU 79
+Kicking LRU crawler off for LRU 80
+Kicking LRU crawler off for LRU 81
+Kicking LRU crawler off for LRU 82
+Kicking LRU crawler off for LRU 83
+Kicking LRU crawler off for LRU 84
+Kicking LRU crawler off for LRU 85
+Kicking LRU crawler off for LRU 86
+Kicking LRU crawler off for LRU 87
+Kicking LRU crawler off for LRU 88
+Kicking LRU crawler off for LRU 89
+Kicking LRU crawler off for LRU 90
+Kicking LRU crawler off for LRU 91
+Kicking LRU crawler off for LRU 92
+Kicking LRU crawler off for LRU 93
+Kicking LRU crawler off for LRU 94
+Kicking LRU crawler off for LRU 95
+Kicking LRU crawler off for LRU 96
+Kicking LRU crawler off for LRU 97
+Kicking LRU crawler off for LRU 98
+Kicking LRU crawler off for LRU 99
+Kicking LRU crawler off for LRU 100
+Kicking LRU crawler off for LRU 101
+Kicking LRU crawler off for LRU 102
+Kicking LRU crawler off for LRU 103
+Kicking LRU crawler off for LRU 104
+Kicking LRU crawler off for LRU 105
+Kicking LRU crawler off for LRU 106
+Kicking LRU crawler off for LRU 107
+Kicking LRU crawler off for LRU 108
+Kicking LRU crawler off for LRU 109
+Kicking LRU crawler off for LRU 110
+Kicking LRU crawler off for LRU 111
+Kicking LRU crawler off for LRU 112
+Kicking LRU crawler off for LRU 113
+Kicking LRU crawler off for LRU 114
+Kicking LRU crawler off for LRU 115
+Kicking LRU crawler off for LRU 116
+Kicking LRU crawler off for LRU 117
+Kicking LRU crawler off for LRU 118
+Kicking LRU crawler off for LRU 119
+Kicking LRU crawler off for LRU 120
+Kicking LRU crawler off for LRU 121
+Kicking LRU crawler off for LRU 122
+Kicking LRU crawler off for LRU 123
+Kicking LRU crawler off for LRU 124
+Kicking LRU crawler off for LRU 125
+Kicking LRU crawler off for LRU 126
+Kicking LRU crawler off for LRU 127
+Kicking LRU crawler off for LRU 128
+Kicking LRU crawler off for LRU 129
+Kicking LRU crawler off for LRU 130
+Kicking LRU crawler off for LRU 131
+Kicking LRU crawler off for LRU 132
+Kicking LRU crawler off for LRU 133
+Kicking LRU crawler off for LRU 134
+Kicking LRU crawler off for LRU 135
+Kicking LRU crawler off for LRU 136
+Kicking LRU crawler off for LRU 137
+Kicking LRU crawler off for LRU 138
+Kicking LRU crawler off for LRU 139
+Kicking LRU crawler off for LRU 140
+Kicking LRU crawler off for LRU 141
+Kicking LRU crawler off for LRU 142
+Kicking LRU crawler off for LRU 143
+Kicking LRU crawler off for LRU 144
+Kicking LRU crawler off for LRU 145
+Kicking LRU crawler off for LRU 146
+Kicking LRU crawler off for LRU 147
+Kicking LRU crawler off for LRU 148
+Kicking LRU crawler off for LRU 149
+Kicking LRU crawler off for LRU 150
+Kicking LRU crawler off for LRU 151
+Kicking LRU crawler off for LRU 152
+Kicking LRU crawler off for LRU 153
+Kicking LRU crawler off for LRU 154
+Kicking LRU crawler off for LRU 155
+Kicking LRU crawler off for LRU 156
+Kicking LRU crawler off for LRU 157
+Kicking LRU crawler off for LRU 158
+Kicking LRU crawler off for LRU 159
+Kicking LRU crawler off for LRU 160
+Kicking LRU crawler off for LRU 161
+Kicking LRU crawler off for LRU 162
+Kicking LRU crawler off for LRU 163
+Kicking LRU crawler off for LRU 164
+Kicking LRU crawler off for LRU 165
+Kicking LRU crawler off for LRU 166
+Kicking LRU crawler off for LRU 167
+Kicking LRU crawler off for LRU 168
+Kicking LRU crawler off for LRU 169
+Kicking LRU crawler off for LRU 170
+Kicking LRU crawler off for LRU 171
+Kicking LRU crawler off for LRU 172
+Kicking LRU crawler off for LRU 173
+Kicking LRU crawler off for LRU 174
+Kicking LRU crawler off for LRU 175
+Kicking LRU crawler off for LRU 176
+Kicking LRU crawler off for LRU 177
+Kicking LRU crawler off for LRU 178
+Kicking LRU crawler off for LRU 179
+Kicking LRU crawler off for LRU 180
+Kicking LRU crawler off for LRU 181
+Kicking LRU crawler off for LRU 182
+Kicking LRU crawler off for LRU 183
+Kicking LRU crawler off for LRU 184
+Kicking LRU crawler off for LRU 185
+Kicking LRU crawler off for LRU 186
+Kicking LRU crawler off for LRU 187
+Kicking LRU crawler off for LRU 188
+Kicking LRU crawler off for LRU 189
+Kicking LRU crawler off for LRU 190
+Kicking LRU crawler off for LRU 191
+Kicking LRU crawler off for LRU 192
+Kicking LRU crawler off for LRU 193
+Kicking LRU crawler off for LRU 194
+Kicking LRU crawler off for LRU 195
+Kicking LRU crawler off for LRU 196
+Kicking LRU crawler off for LRU 197
+Kicking LRU crawler off for LRU 198
+Kicking LRU crawler off for LRU 199
+Kicking LRU crawler off for LRU 200
+Kicking LRU crawler off for LRU 201
+Kicking LRU crawler off for LRU 202
+Kicking LRU crawler off for LRU 203
+Kicking LRU crawler off for LRU 204
+Kicking LRU crawler off for LRU 205
+Kicking LRU crawler off for LRU 206
+Kicking LRU crawler off for LRU 207
+Kicking LRU crawler off for LRU 208
+Kicking LRU crawler off for LRU 209
+Kicking LRU crawler off for LRU 210
+Kicking LRU crawler off for LRU 211
+Kicking LRU crawler off for LRU 212
+Kicking LRU crawler off for LRU 213
+Kicking LRU crawler off for LRU 214
+Kicking LRU crawler off for LRU 215
+Kicking LRU crawler off for LRU 216
+Kicking LRU crawler off for LRU 217
+Kicking LRU crawler off for LRU 218
+Kicking LRU crawler off for LRU 219
+Kicking LRU crawler off for LRU 220
+Kicking LRU crawler off for LRU 221
+Kicking LRU crawler off for LRU 222
+Kicking LRU crawler off for LRU 223
+Kicking LRU crawler off for LRU 224
+Kicking LRU crawler off for LRU 225
+Kicking LRU crawler off for LRU 226
+Kicking LRU crawler off for LRU 227
+Kicking LRU crawler off for LRU 228
+Kicking LRU crawler off for LRU 229
+Kicking LRU crawler off for LRU 230
+Kicking LRU crawler off for LRU 231
+Kicking LRU crawler off for LRU 232
+Kicking LRU crawler off for LRU 233
+Kicking LRU crawler off for LRU 234
+Kicking LRU crawler off for LRU 235
+Kicking LRU crawler off for LRU 236
+Kicking LRU crawler off for LRU 237
+Kicking LRU crawler off for LRU 238
+Kicking LRU crawler off for LRU 239
+Kicking LRU crawler off for LRU 240
+Kicking LRU crawler off for LRU 241
+Kicking LRU crawler off for LRU 242
+Kicking LRU crawler off for LRU 243
+Kicking LRU crawler off for LRU 244
+Kicking LRU crawler off for LRU 245
+Kicking LRU crawler off for LRU 246
+Kicking LRU crawler off for LRU 247
+Kicking LRU crawler off for LRU 248
+Kicking LRU crawler off for LRU 249
+Kicking LRU crawler off for LRU 250
+Kicking LRU crawler off for LRU 251
+Kicking LRU crawler off for LRU 252
+Kicking LRU crawler off for LRU 253
+Kicking LRU crawler off for LRU 254
+Kicking LRU crawler off for LRU 255
+Nothing left to crawl for 1
+Nothing left to crawl for 2
+Nothing left to crawl for 3
+Nothing left to crawl for 4
+Nothing left to crawl for 5
+Nothing left to crawl for 6
+Nothing left to crawl for 7
+Nothing left to crawl for 8
+Nothing left to crawl for 9
+Nothing left to crawl for 10
+Nothing left to crawl for 11
+Nothing left to crawl for 12
+Nothing left to crawl for 13
+Nothing left to crawl for 14
+Nothing left to crawl for 15
+Nothing left to crawl for 16
+Nothing left to crawl for 17
+Nothing left to crawl for 18
+Nothing left to crawl for 19
+Nothing left to crawl for 20
+Nothing left to crawl for 21
+Nothing left to crawl for 22
+Nothing left to crawl for 23
+Nothing left to crawl for 24
+Nothing left to crawl for 25
+Nothing left to crawl for 26
+Nothing left to crawl for 27
+Nothing left to crawl for 28
+Nothing left to crawl for 29
+Nothing left to crawl for 30
+Nothing left to crawl for 31
+Nothing left to crawl for 32
+Nothing left to crawl for 33
+Nothing left to crawl for 34
+Nothing left to crawl for 35
+Nothing left to crawl for 36
+Nothing left to crawl for 37
+Nothing left to crawl for 38
+Nothing left to crawl for 39
+Nothing left to crawl for 40
+Nothing left to crawl for 41
+Nothing left to crawl for 42
+Nothing left to crawl for 43
+Nothing left to crawl for 44
+Nothing left to crawl for 45
+Nothing left to crawl for 46
+Nothing left to crawl for 47
+Nothing left to crawl for 48
+Nothing left to crawl for 49
+Nothing left to crawl for 50
+Nothing left to crawl for 51
+Nothing left to crawl for 52
+Nothing left to crawl for 53
+Nothing left to crawl for 54
+Nothing left to crawl for 55
+Nothing left to crawl for 56
+Nothing left to crawl for 57
+Nothing left to crawl for 58
+Nothing left to crawl for 59
+Nothing left to crawl for 60
+Nothing left to crawl for 61
+Nothing left to crawl for 62
+Nothing left to crawl for 63
+Nothing left to crawl for 64
+Nothing left to crawl for 65
+Nothing left to crawl for 66
+Nothing left to crawl for 67
+Nothing left to crawl for 68
+Nothing left to crawl for 69
+Nothing left to crawl for 70
+Nothing left to crawl for 71
+Nothing left to crawl for 72
+Nothing left to crawl for 73
+Nothing left to crawl for 74
+Nothing left to crawl for 75
+Nothing left to crawl for 76
+Nothing left to crawl for 77
+Nothing left to crawl for 78
+Nothing left to crawl for 79
+Nothing left to crawl for 80
+Nothing left to crawl for 81
+Nothing left to crawl for 82
+Nothing left to crawl for 83
+Nothing left to crawl for 84
+Nothing left to crawl for 85
+Nothing left to crawl for 86
+Nothing left to crawl for 87
+Nothing left to crawl for 88
+Nothing left to crawl for 89
+Nothing left to crawl for 90
+Nothing left to crawl for 91
+Nothing left to crawl for 92
+Nothing left to crawl for 93
+Nothing left to crawl for 94
+Nothing left to crawl for 95
+Nothing left to crawl for 96
+Nothing left to crawl for 97
+Nothing left to crawl for 98
+Nothing left to crawl for 99
+Nothing left to crawl for 100
+Nothing left to crawl for 101
+Nothing left to crawl for 102
+Nothing left to crawl for 103
+Nothing left to crawl for 104
+Nothing left to crawl for 105
+Nothing left to crawl for 106
+Nothing left to crawl for 107
+Nothing left to crawl for 108
+Nothing left to crawl for 109
+Nothing left to crawl for 110
+Nothing left to crawl for 111
+Nothing left to crawl for 112
+Nothing left to crawl for 113
+Nothing left to crawl for 114
+Nothing left to crawl for 115
+Nothing left to crawl for 116
+Nothing left to crawl for 117
+Nothing left to crawl for 118
+Nothing left to crawl for 119
+Nothing left to crawl for 120
+Nothing left to crawl for 121
+Nothing left to crawl for 122
+Nothing left to crawl for 123
+Nothing left to crawl for 124
+Nothing left to crawl for 125
+Nothing left to crawl for 126
+Nothing left to crawl for 127
+Nothing left to crawl for 128
+Nothing left to crawl for 129
+Nothing left to crawl for 130
+Nothing left to crawl for 131
+Nothing left to crawl for 132
+Nothing left to crawl for 133
+Nothing left to crawl for 134
+Nothing left to crawl for 135
+Nothing left to crawl for 136
+Nothing left to crawl for 137
+Nothing left to crawl for 138
+Nothing left to crawl for 139
+Nothing left to crawl for 140
+Nothing left to crawl for 141
+Nothing left to crawl for 142
+Nothing left to crawl for 143
+Nothing left to crawl for 144
+Nothing left to crawl for 145
+Nothing left to crawl for 146
+Nothing left to crawl for 147
+Nothing left to crawl for 148
+Nothing left to crawl for 149
+Nothing left to crawl for 150
+Nothing left to crawl for 151
+Nothing left to crawl for 152
+Nothing left to crawl for 153
+Nothing left to crawl for 154
+Nothing left to crawl for 155
+Nothing left to crawl for 156
+Nothing left to crawl for 157
+Nothing left to crawl for 158
+Nothing left to crawl for 159
+Nothing left to crawl for 160
+Nothing left to crawl for 161
+Nothing left to crawl for 162
+Nothing left to crawl for 163
+Nothing left to crawl for 164
+Nothing left to crawl for 165
+Nothing left to crawl for 166
+Nothing left to crawl for 167
+Nothing left to crawl for 168
+Nothing left to crawl for 169
+Nothing left to crawl for 170
+Nothing left to crawl for 171
+Nothing left to crawl for 172
+Nothing left to crawl for 173
+Nothing left to crawl for 174
+Nothing left to crawl for 175
+Nothing left to crawl for 176
+Nothing left to crawl for 177
+Nothing left to crawl for 178
+Nothing left to crawl for 179
+Nothing left to crawl for 180
+Nothing left to crawl for 181
+Nothing left to crawl for 182
+Nothing left to crawl for 183
+Nothing left to crawl for 184
+Nothing left to crawl for 185
+Nothing left to crawl for 186
+Nothing left to crawl for 187
+Nothing left to crawl for 188
+Nothing left to crawl for 189
+Nothing left to crawl for 190
+Nothing left to crawl for 191
+Nothing left to crawl for 192
+Nothing left to crawl for 193
+Nothing left to crawl for 194
+Nothing left to crawl for 195
+Nothing left to crawl for 196
+Nothing left to crawl for 197
+Nothing left to crawl for 198
+Nothing left to crawl for 199
+Nothing left to crawl for 200
+Nothing left to crawl for 201
+Nothing left to crawl for 202
+Nothing left to crawl for 203
+Nothing left to crawl for 204
+Nothing left to crawl for 205
+Nothing left to crawl for 206
+Nothing left to crawl for 207
+Nothing left to crawl for 208
+Nothing left to crawl for 209
+Nothing left to crawl for 210
+Nothing left to crawl for 211
+Nothing left to crawl for 212
+Nothing left to crawl for 213
+Nothing left to crawl for 214
+Nothing left to crawl for 215
+Nothing left to crawl for 216
+Nothing left to crawl for 217
+Nothing left to crawl for 218
+Nothing left to crawl for 219
+Nothing left to crawl for 220
+Nothing left to crawl for 221
+Nothing left to crawl for 222
+Nothing left to crawl for 223
+Nothing left to crawl for 224
+Nothing left to crawl for 225
+Nothing left to crawl for 226
+Nothing left to crawl for 227
+Nothing left to crawl for 228
+Nothing left to crawl for 229
+Nothing left to crawl for 230
+Nothing left to crawl for 231
+Nothing left to crawl for 232
+Nothing left to crawl for 233
+Nothing left to crawl for 234
+Nothing left to crawl for 235
+Nothing left to crawl for 236
+Nothing left to crawl for 237
+Nothing left to crawl for 238
+Nothing left to crawl for 239
+Nothing left to crawl for 240
+Nothing left to crawl for 241
+Nothing left to crawl for 242
+Nothing left to crawl for 243
+Nothing left to crawl for 244
+Nothing left to crawl for 245
+Nothing left to crawl for 246
+Nothing left to crawl for 247
+Nothing left to crawl for 248
+Nothing left to crawl for 249
+Nothing left to crawl for 250
+Nothing left to crawl for 251
+Nothing left to crawl for 252
+Nothing left to crawl for 253
+Nothing left to crawl for 254
+Nothing left to crawl for 255
+LRU crawler thread sleeping
+<29 server listening (auto-negotiate)
+<30 new auto-negotiating client connection
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+30: Client using the binary protocol
+<30 Read binary protocol data:
+<30    0x80 0x20 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+>30 Writing an error: Unknown command
+>30 Writing bin response:
+>30   0x81 0x20 0x00 0x00
+>30   0x00 0x00 0x00 0x81
+>30   0x00 0x00 0x00 0x0f
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+30: going from conn_parse_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key0 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key0
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x01
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key1 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key1
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x02
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key2 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key2
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x03
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key3 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key3
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x04
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key4 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key4
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x05
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key5 Value len is 6
+30: going from conn_parse_cmd to conn_nread
+> NOT FOUND key5
+>30 Writing bin response:
+>30   0x81 0x01 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x00
+>30   0x00 0x00 0x00 0x06
+30: going from conn_nread to conn_new_cmd
+30: going from conn_new_cmd to conn_mwrite
+30: going from conn_mwrite to conn_new_cmd
+30: going from conn_new_cmd to conn_waiting
+30: going from conn_waiting to conn_read
+30: going from conn_read to conn_parse_cmd
+<30 Read binary protocol data:
+<30    0x80 0x01 0x00 0x04
+<30    0x08 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x12
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30    0x00 0x00 0x00 0x00
+<30 SET key6 Value len is 6
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==265504==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x55555559a37d bp 0x7fffdaeb6880 sp 0x7fffdaeb6850 T2)
+==265504==The signal is caused by a READ memory access.
+==265504==Hint: address points to the zero page.
+    #0 0x55555559a37d in do_slabs_alloc /root/memcached-1.6.17/slabs.c:429
+    #1 0x55555559c0f7 in slabs_alloc /root/memcached-1.6.17/slabs.c:661
+    #2 0x55555559fea4 in do_item_alloc_pull /root/memcached-1.6.17/items.c:189
+    #3 0x5555555a06ec in do_item_alloc /root/memcached-1.6.17/items.c:306
+    #4 0x5555555b2a7e in item_alloc /root/memcached-1.6.17/thread.c:802
+    #5 0x5555555e6a0f in process_bin_update /root/memcached-1.6.17/proto_bin.c:1117
+    #6 0x5555555e6112 in dispatch_bin_command /root/memcached-1.6.17/proto_bin.c:988
+    #7 0x5555555dff7d in try_read_command_binary /root/memcached-1.6.17/proto_bin.c:122
+    #8 0x555555584be3 in drive_machine /root/memcached-1.6.17/memcached.c:3133
+    #9 0x55555558681d in event_handler /root/memcached-1.6.17/memcached.c:3408
+    #10 0x7fffe24ebb4e  (/usr/lib/x86_64-linux-gnu/libevent-2.1.so.7+0x23b4e)
+    #11 0x7fffe24ec28e in event_base_loop (/usr/lib/x86_64-linux-gnu/libevent-2.1.so.7+0x2428e)
+    #12 0x5555555b1542 in worker_libevent /root/memcached-1.6.17/thread.c:520
+    #13 0x7fffe243bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #14 0x7fffe234ea2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/memcached-1.6.17/slabs.c:429 in do_slabs_alloc
+Thread T2 created by T0 here:
+    #0 0x7fffe261a2a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x5555555b0d1a in create_worker /root/memcached-1.6.17/thread.c:385
+    #2 0x5555555b5ea0 in memcached_thread_init /root/memcached-1.6.17/thread.c:1089
+    #3 0x5555555901f1 in main /root/memcached-1.6.17/memcached.c:6104
+    #4 0x7fffe2275d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==265504==ABORTING

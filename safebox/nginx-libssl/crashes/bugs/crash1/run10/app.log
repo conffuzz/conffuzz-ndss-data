@@ -1,0 +1,21 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==7132==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe099c021 bp 0x7fffffffe440 sp 0x7fffffffe410 T0)
+==7132==The signal is caused by a READ memory access.
+==7132==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe099c021 in openssl_config_int crypto/conf/conf_sap.c:53
+    #1 0x7fffe0af04fb in ossl_init_config crypto/init.c:293
+    #2 0x7fffe0af04d8 in ossl_init_config_ossl_ crypto/init.c:291
+    #3 0x7fffe0573f67  (/lib/x86_64-linux-gnu/libc.so.6+0x99f67)
+    #4 0x7fffe0be6f24 in CRYPTO_THREAD_run_once crypto/threads_pthread.c:118
+    #5 0x7fffe0af0eb4 in OPENSSL_init_crypto crypto/init.c:701
+    #6 0x7fffe0ef59e2 in OPENSSL_init_ssl ssl/ssl_init.c:205
+    #7 0x55555568137b in ngx_ssl_init src/event/ngx_event_openssl.c:147
+    #8 0x5555555c7508 in main src/core/nginx.c:241
+    #9 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV crypto/conf/conf_sap.c:53 in openssl_config_int
+==7132==ABORTING

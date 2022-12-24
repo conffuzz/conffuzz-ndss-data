@@ -1,0 +1,7 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+curl_global_init(0x3 {longint} [size: 0]) @ 0x00005555556207c2
+~> write {unknown} 0x11020000 -> 0 at shared buffer 0x000060300002aece
+~> change ret {CURLcode} from 0 to 0x64

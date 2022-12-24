@@ -1,0 +1,192 @@
+7fff7000-8fff7000 rw-p 00000000 00:00 0 
+8fff7000-2008fff7000 ---p 00000000 00:00 0 
+2008fff7000-10007fff8000 rw-p 00000000 00:00 0 
+555555554000-555555559000 r--p 00000000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+555555559000-555555562000 r-xp 00005000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+555555562000-555555567000 r--p 0000e000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+555555567000-555555568000 r--p 00012000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+555555568000-55555556b000 rw-p 00013000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+55555556b000-55555556c000 rw-p 00000000 00:00 0                          [heap]
+600000000000-602000000000 ---p 00000000 00:00 0 
+602000000000-602000010000 rw-p 00000000 00:00 0 
+602000010000-602e00000000 ---p 00000000 00:00 0 
+602e00000000-602e00010000 rw-p 00000000 00:00 0 
+602e00010000-607000000000 ---p 00000000 00:00 0 
+607000000000-607000010000 rw-p 00000000 00:00 0 
+607000010000-607e00000000 ---p 00000000 00:00 0 
+607e00000000-607e00010000 rw-p 00000000 00:00 0 
+607e00010000-608000000000 ---p 00000000 00:00 0 
+608000000000-608000010000 rw-p 00000000 00:00 0 
+608000010000-608e00000000 ---p 00000000 00:00 0 
+608e00000000-608e00010000 rw-p 00000000 00:00 0 
+608e00010000-60b000000000 ---p 00000000 00:00 0 
+60b000000000-60b000010000 rw-p 00000000 00:00 0 
+60b000010000-60be00000000 ---p 00000000 00:00 0 
+60be00000000-60be00010000 rw-p 00000000 00:00 0 
+60be00010000-615000000000 ---p 00000000 00:00 0 
+615000000000-615000010000 rw-p 00000000 00:00 0 
+615000010000-615e00000000 ---p 00000000 00:00 0 
+615e00000000-615e00010000 rw-p 00000000 00:00 0 
+615e00010000-622000000000 ---p 00000000 00:00 0 
+622000000000-622000010000 rw-p 00000000 00:00 0 
+622000010000-622e00000000 ---p 00000000 00:00 0 
+622e00000000-622e00010000 rw-p 00000000 00:00 0 
+622e00010000-624000000000 ---p 00000000 00:00 0 
+624000000000-624000010000 rw-p 00000000 00:00 0 
+624000010000-624e00000000 ---p 00000000 00:00 0 
+624e00000000-624e00010000 rw-p 00000000 00:00 0 
+624e00010000-630000000000 ---p 00000000 00:00 0 
+630000000000-630000010000 rw-p 00000000 00:00 0 
+630000010000-630e00000000 ---p 00000000 00:00 0 
+630e00000000-630e00010000 rw-p 00000000 00:00 0 
+630e00010000-640000000000 ---p 00000000 00:00 0 
+640000000000-640000003000 rw-p 00000000 00:00 0 
+7fffdd175000-7fffdd177000 rw-p 00000000 00:00 0 
+7fffdd17a000-7fffdd17f000 rw-p 00000000 00:00 0 
+7fffdd180000-7fffdffd1000 rw-p 00000000 00:00 0 
+7fffdffd1000-7fffe07d1000 ---p 00000000 00:00 0 
+7fffe07d1000-7fffe1186000 rw-p 00000000 00:00 0 
+7fffe1186000-7fffe1aa3000 rw-p 00000000 00:00 0 
+7fffe1aa3000-7fffe1fa2000 rw-p 00000000 00:00 0 
+7fffe1fa2000-7fffe20e6000 rw-p 00000000 00:00 0 
+7fffe20e6000-7fffe2106000 rw-p 00000000 00:00 0 
+7fffe2106000-7fffe213b000 rw-p 00000000 00:00 0 
+7fffe213b000-7fffe2160000 rw-p 00000000 00:00 0 
+7fffe2160000-7fffe216e000 rw-p 00000000 00:00 0 
+7fffe216e000-7fffe217b000 rw-p 00000000 00:00 0 
+7fffe217b000-7fffe21b3000 rw-p 00000000 00:00 0 
+7fffe21b3000-7fffe2487000 rw-p 00000000 00:00 0 
+7fffe2487000-7fffe2498000 rw-p 00000000 00:00 0 
+7fffe2498000-7fffe249b000 r--p 00000000 fe:01 7493809                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe249b000-7fffe24b2000 r-xp 00003000 fe:01 7493809                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe24b2000-7fffe24b6000 r--p 0001a000 fe:01 7493809                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe24b6000-7fffe24b7000 r--p 0001d000 fe:01 7493809                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe24b7000-7fffe24b8000 rw-p 0001e000 fe:01 7493809                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fffe24b8000-7fffe24ba000 rw-p 00000000 00:00 0 
+7fffe24ba000-7fffe24bd000 rw-p 00000000 00:00 0 
+7fffe24bd000-7fffe24bf000 rw-p 00000000 00:00 0 
+7fffe24bf000-7fffe24cc000 r--p 00000000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe24cc000-7fffe2566000 r-xp 0000d000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe2566000-7fffe2600000 r--p 000a7000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe2600000-7fffe2601000 ---p 00141000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe2601000-7fffe2602000 r--p 00141000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe2602000-7fffe2603000 rw-p 00142000 fe:01 2770565                    /lib/x86_64-linux-gnu/libm-2.33.so
+7fffe2603000-7fffe2609000 r--p 00000000 fe:01 2770589                    /lib/x86_64-linux-gnu/libpthread-2.33.so
+7fffe2609000-7fffe2618000 r-xp 00006000 fe:01 2770589                    /lib/x86_64-linux-gnu/libpthread-2.33.so
+7fffe2618000-7fffe261e000 r--p 00015000 fe:01 2770589                    /lib/x86_64-linux-gnu/libpthread-2.33.so
+7fffe261e000-7fffe261f000 r--p 0001a000 fe:01 2770589                    /lib/x86_64-linux-gnu/libpthread-2.33.so
+7fffe261f000-7fffe2620000 rw-p 0001b000 fe:01 2770589                    /lib/x86_64-linux-gnu/libpthread-2.33.so
+7fffe2620000-7fffe262c000 rw-p 00000000 00:00 0 
+7fffe262c000-7fffe262d000 r--p 00000000 fe:01 2770552                    /lib/x86_64-linux-gnu/libdl-2.33.so
+7fffe262d000-7fffe262f000 r-xp 00001000 fe:01 2770552                    /lib/x86_64-linux-gnu/libdl-2.33.so
+7fffe262f000-7fffe2630000 r--p 00003000 fe:01 2770552                    /lib/x86_64-linux-gnu/libdl-2.33.so
+7fffe2630000-7fffe2631000 r--p 00003000 fe:01 2770552                    /lib/x86_64-linux-gnu/libdl-2.33.so
+7fffe2631000-7fffe2632000 rw-p 00004000 fe:01 2770552                    /lib/x86_64-linux-gnu/libdl-2.33.so
+7fffe2632000-7fffe2634000 rw-p 00000000 00:00 0 
+7fffe2634000-7fffe2656000 r--p 00000000 fe:01 2770542                    /lib/x86_64-linux-gnu/libc-2.33.so
+7fffe2656000-7fffe27ae000 r-xp 00022000 fe:01 2770542                    /lib/x86_64-linux-gnu/libc-2.33.so
+7fffe27ae000-7fffe27fe000 r--p 0017a000 fe:01 2770542                    /lib/x86_64-linux-gnu/libc-2.33.so
+7fffe27fe000-7fffe2802000 r--p 001c9000 fe:01 2770542                    /lib/x86_64-linux-gnu/libc-2.33.so
+7fffe2802000-7fffe2804000 rw-p 001cd000 fe:01 2770542                    /lib/x86_64-linux-gnu/libc-2.33.so
+7fffe2804000-7fffe288a000 rw-p 00000000 00:00 0 
+7fffe288a000-7fffe288c000 r--p 00000000 fe:01 14549689                   /lib/x86_64-linux-gnu/libbz2.so.1.0
+7fffe288c000-7fffe28a0000 r-xp 00002000 fe:01 14549689                   /lib/x86_64-linux-gnu/libbz2.so.1.0
+7fffe28a0000-7fffe28a2000 r--p 00016000 fe:01 14549689                   /lib/x86_64-linux-gnu/libbz2.so.1.0
+7fffe28a2000-7fffe28a3000 r--p 00017000 fe:01 14549689                   /lib/x86_64-linux-gnu/libbz2.so.1.0
+7fffe28a3000-7fffe28a4000 rw-p 00018000 fe:01 14549689                   /lib/x86_64-linux-gnu/libbz2.so.1.0
+7fffe28a4000-7fffe28fc000 rw-p 00000000 00:00 0 
+7fffe28fc000-7fffe2907000 rw-p 00000000 00:00 0 
+7fffe2907000-7fffe292b000 r--p 00000000 fe:01 10509032                   /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe292b000-7fffe29f8000 r-xp 00024000 fe:01 10509032                   /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe29f8000-7fffe2a2b000 r--p 000f1000 fe:01 10509032                   /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe2a2b000-7fffe2a2f000 r--p 00123000 fe:01 10509032                   /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe2a2f000-7fffe2a32000 rw-p 00127000 fe:01 10509032                   /usr/lib/x86_64-linux-gnu/libasan.so.6.0.0
+7fffe2a32000-7fffe3467000 rw-p 00000000 00:00 0 
+7fffe3467000-7fffe346a000 rw-p 00000000 00:00 0 
+7fffe346a000-7fffe346e000 rw-p 00000000 00:00 0 
+7fffe346e000-7fffe3925000 rw-p 00000000 00:00 0 
+7fffe3925000-7fffe3956000 rw-p 00000000 00:00 0 
+7fffe3956000-7fffe3974000 r--p 00000000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+7fffe3974000-7fffe3976000 rw-p 00000000 00:00 0 
+7fffe3976000-7fffe39ac000 rw-p 00000000 00:00 0 
+7fffe39ac000-7fffe39ca000 r--p 00000000 fe:01 14549763                   /root/bzip2-1.0.8/bzip2-shared
+7fffe39ca000-7fffe3add000 rw-p 00000000 00:00 0 
+7fffe3add000-7fffe3c1d000 ---p 00000000 00:00 0 
+7fffe3c1d000-7fffe3cdd000 rwxp 00000000 00:00 0 
+7fffe3cdd000-7ffff3add000 ---p 00000000 00:00 0 
+7ffff3add000-7ffff4aef000 rw-p 00000000 00:00 0 
+7ffff4aef000-7ffff4af1000 rwxp 00000000 00:00 0 
+7ffff4af1000-7ffff5989000 rw-p 00000000 00:00 0 
+7ffff5989000-7ffff598b000 r--p 00000000 00:00 0 
+7ffff598b000-7ffff59c1000 r--p 00000000 fe:01 136859                     /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff59c1000-7ffff5bda000 r-xp 00036000 fe:01 136859                     /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5bda000-7ffff5c58000 r--p 0024f000 fe:01 136859                     /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c58000-7ffff5c6c000 r--p 002cc000 fe:01 136859                     /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c6c000-7ffff5c6d000 rw-p 002e0000 fe:01 136859                     /root/pintools/intel64/lib-ext/libpin3dwarf.so
+7ffff5c6d000-7ffff5c70000 rw-p 00000000 00:00 0 
+7ffff5c70000-7ffff5c79000 r--p 00000000 fe:01 143783                     /root/conffuzz/instrumentation.so
+7ffff5c79000-7ffff5e30000 r-xp 00009000 fe:01 143783                     /root/conffuzz/instrumentation.so
+7ffff5e30000-7ffff5e7e000 r--p 001c0000 fe:01 143783                     /root/conffuzz/instrumentation.so
+7ffff5e7e000-7ffff5e80000 r--p 0020d000 fe:01 143783                     /root/conffuzz/instrumentation.so
+7ffff5e80000-7ffff5e82000 rw-p 0020f000 fe:01 143783                     /root/conffuzz/instrumentation.so
+7ffff5e82000-7ffff5ea8000 rw-p 00000000 00:00 0 
+7ffff5ea8000-7ffff5ea9000 r--p 00000000 00:00 0 
+7ffff5ea9000-7ffff5ec1000 rw-p 00000000 00:00 0 
+7ffff5ec1000-7ffff5ec6000 r--p 00000000 00:00 0 
+7ffff5ec6000-7ffff5f59000 r-xp 00000000 fe:01 136875                     /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff5f59000-7ffff6159000 ---p 00000000 00:00 0 
+7ffff6159000-7ffff615c000 r--p 00093000 fe:01 136875                     /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff615c000-7ffff615d000 rw-p 00096000 fe:01 136875                     /root/pintools/intel64/runtime/pincrt/libc-dynamic.so
+7ffff615d000-7ffff6186000 rw-p 00000000 00:00 0 
+7ffff6186000-7ffff6187000 r--p 00000000 00:00 0 
+7ffff6187000-7ffff61b6000 r-xp 00000000 fe:01 136874                     /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff61b6000-7ffff63b5000 ---p 00000000 00:00 0 
+7ffff63b5000-7ffff63b6000 r--p 0002e000 fe:01 136874                     /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff63b6000-7ffff63b7000 rw-p 0002f000 fe:01 136874                     /root/pintools/intel64/runtime/pincrt/libm-dynamic.so
+7ffff63b7000-7ffff645d000 r-xp 00000000 fe:01 136877                     /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff645d000-7ffff665c000 ---p 00000000 00:00 0 
+7ffff665c000-7ffff6660000 r--p 000a5000 fe:01 136877                     /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff6660000-7ffff6661000 rw-p 000a9000 fe:01 136877                     /root/pintools/intel64/runtime/pincrt/libstlport-dynamic.so
+7ffff6661000-7ffff6662000 rw-p 00000000 00:00 0 
+7ffff6662000-7ffff6671000 r-xp 00000000 fe:01 136880                     /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff6671000-7ffff6870000 ---p 00000000 00:00 0 
+7ffff6870000-7ffff6871000 r--p 0000e000 fe:01 136880                     /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff6871000-7ffff6872000 rw-p 0000f000 fe:01 136880                     /root/pintools/intel64/runtime/pincrt/libunwind-dynamic.so
+7ffff6872000-7ffff6d34000 r-xp 00000000 fe:01 141963                     /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6d34000-7ffff6f33000 ---p 00000000 00:00 0 
+7ffff6f33000-7ffff6fec000 r--p 004c1000 fe:01 141963                     /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6fec000-7ffff6fed000 rw-p 0057a000 fe:01 141963                     /root/pintools/extras/xed-intel64/lib/libxed.so
+7ffff6fed000-7ffff6ff2000 rw-p 00000000 00:00 0 
+7ffff6ff2000-7ffff6ff3000 r--p 00000000 00:00 0 
+7ffff6ff3000-7ffff700c000 rw-p 00000000 00:00 0 
+7ffff700c000-7ffff700d000 r--p 00000000 00:00 0 
+7ffff700d000-7ffff7025000 rw-p 00000000 00:00 0 
+7ffff7025000-7ffff7026000 r--p 00000000 00:00 0 
+7ffff7026000-7ffff7065000 rw-p 00000000 00:00 0 
+7ffff7065000-7ffff709d000 r-xp 00000000 fe:01 136868                     /root/pintools/intel64/runtime/pincrt/linker
+7ffff709d000-7ffff729d000 ---p 00000000 00:00 0 
+7ffff729d000-7ffff729e000 r--p 00038000 fe:01 136868                     /root/pintools/intel64/runtime/pincrt/linker
+7ffff729e000-7ffff729f000 rw-p 00039000 fe:01 136868                     /root/pintools/intel64/runtime/pincrt/linker
+7ffff729f000-7ffff72a3000 rw-p 00000000 00:00 0 
+7ffff72a3000-7ffff7875000 r-xp 00000000 fe:01 136862                     /root/pintools/intel64/bin/pinbin
+7ffff7875000-7ffff7a75000 ---p 00000000 00:00 0 
+7ffff7a75000-7ffff7a7a000 r--p 005d2000 fe:01 136862                     /root/pintools/intel64/bin/pinbin
+7ffff7a7a000-7ffff7a87000 rw-p 005d7000 fe:01 136862                     /root/pintools/intel64/bin/pinbin
+7ffff7a87000-7ffff7b54000 rw-p 00000000 00:00 0 
+7ffff7b54000-7ffff7b55000 ---p 00000000 00:00 0 
+7ffff7b55000-7ffff7b58000 rw-p 00000000 00:00 0 
+7ffff7b58000-7ffff7b5a000 ---p 00000000 00:00 0 
+7ffff7b5a000-7ffff7b5d000 rw-p 00000000 00:00 0 
+7ffff7b5d000-7ffff7b61000 ---p 00000000 00:00 0 
+7ffff7b61000-7ffff7b88000 rw-p 00000000 00:00 0 
+7ffff7b88000-7ffff7b89000 ---p 00000000 00:00 0 
+7ffff7b89000-7ffff7fc5000 rw-p 00000000 00:00 0 
+7ffff7fc5000-7ffff7fc6000 rwxp 00000000 00:00 0 
+7ffff7fc6000-7ffff7fca000 r--p 00000000 00:00 0                          [vvar]
+7ffff7fca000-7ffff7fcc000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7fcc000-7ffff7fcd000 r--p 00000000 fe:01 2770530                    /lib/x86_64-linux-gnu/ld-2.33.so
+7ffff7fcd000-7ffff7ff1000 r-xp 00001000 fe:01 2770530                    /lib/x86_64-linux-gnu/ld-2.33.so
+7ffff7ff1000-7ffff7ffb000 r--p 00025000 fe:01 2770530                    /lib/x86_64-linux-gnu/ld-2.33.so
+7ffff7ffb000-7ffff7ffd000 r--p 0002e000 fe:01 2770530                    /lib/x86_64-linux-gnu/ld-2.33.so
+7ffff7ffd000-7ffff7fff000 rw-p 00030000 fe:01 2770530                    /lib/x86_64-linux-gnu/ld-2.33.so
+7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]

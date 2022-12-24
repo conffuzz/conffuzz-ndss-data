@@ -1,0 +1,3 @@
+fault_location /usr/local/apache2/modules/mod_headers.so
+cap_null_deref
+non_reproducible

@@ -1,0 +1,15 @@
+    #0 0xaddr in ___mkd_freeParagraph /root/discount-2.2.7/resource.c:46
+    #1 0xaddr in ___mkd_freeParagraph /root/discount-2.2.7/resource.c:47
+    #2 0xaddr in mkd_cleanup /root/discount-2.2.7/resource.c:152
+    #3 0xaddr in markdown_output /root/apache-mod-markdown/mod_markdown.c:179
+    #4 0xaddr in markdown_handler /root/apache-mod-markdown/mod_markdown.c:410
+    #5 0xaddr in ap_run_handler /root/httpd-2.4.52/server/config.c:169
+    #6 0xaddr in ap_invoke_handler /root/httpd-2.4.52/server/config.c:443
+    #7 0xaddr in ap_process_async_request /root/httpd-2.4.52/modules/http/http_request.c:452
+    #8 0xaddr in ap_process_http_async_connection /root/httpd-2.4.52/modules/http/http_core.c:155
+    #9 0xaddr in ap_process_http_connection /root/httpd-2.4.52/modules/http/http_core.c:246
+    #10 0xaddr in ap_run_process_connection /root/httpd-2.4.52/server/connection.c:42
+    #11 0xaddr in process_socket /root/httpd-2.4.52/server/mpm/event/event.c:1053
+    #12 0xaddr in worker_thread /root/httpd-2.4.52/server/mpm/event/event.c:2142
+    #13 0xaddr in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0xaddr)
+    #14 0xaddr in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)

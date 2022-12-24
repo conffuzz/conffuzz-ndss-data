@@ -1,0 +1,2 @@
+fault_location /usr/local/libexec/sudo/sudoers.so
+cap_read_arbitrary

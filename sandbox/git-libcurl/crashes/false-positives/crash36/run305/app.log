@@ -1,0 +1,26 @@
+warning: curl_multi_add_handle failed: 
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==31242==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe0328b46 bp 0x8fffffffffff8 sp 0x7fffffffd010 T0)
+==31242==The signal is caused by a READ memory access.
+==31242==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe0328b46 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe0328b46 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe0328b46 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe0328b46 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe03b44d4 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe0088bd0 in curl_dbg_free /root/curl-7.82.0/lib/memdebug.c:292
+    #6 0x7fffe0112dc8 in Curl_freeset /root/curl-7.82.0/lib/url.c:315
+    #7 0x7fffe01147b5 in Curl_close /root/curl-7.82.0/lib/url.c:472
+    #8 0x7fffe001c96e in curl_easy_cleanup /root/curl-7.82.0/lib/easy.c:735
+    #9 0x555555620d13 in http_cleanup /root/git-2.35.1/http.c:1114
+    #10 0x5555556381b6 in cmd_main /root/git-2.35.1/http-push.c:1962
+    #11 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #12 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #13 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #14 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==31242==ABORTING

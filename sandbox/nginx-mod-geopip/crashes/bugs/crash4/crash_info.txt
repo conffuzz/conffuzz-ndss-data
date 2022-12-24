@@ -1,0 +1,5 @@
+fault_location /root/nginx-1.21.6/objs/nginx
+cap_read_arbitrary
+cap_write
+cap_read
+cap_write_arbitrary

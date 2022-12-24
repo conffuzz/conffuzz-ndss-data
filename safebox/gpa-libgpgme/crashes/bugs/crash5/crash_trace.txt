@@ -1,0 +1,5 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in gpgme_set_locale /root/gpgme-1.15.1/src/gpgme.c:1028
+    #3 0xaddr in main /root/gpa-0.10.0/src/gpa.c:509
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/gpa-0.10.0/src/gpa+0xaddr)

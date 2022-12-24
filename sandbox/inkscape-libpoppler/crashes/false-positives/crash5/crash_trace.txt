@@ -1,0 +1,18 @@
+    #0 0xaddr in PDFDoc::isLinearized(bool) /root/poppler-22.02.0/poppler/PDFDoc.cc:765
+    #1 0xaddr in PDFDoc::getNumPages() /root/poppler-22.02.0/poppler/PDFDoc.cc:2085
+    #2 0xaddr in poppler_document_get_n_pages /root/poppler-22.02.0/glib/poppler-document.cc:756
+    #3 0xaddr in poppler_document_get_page /root/poppler-22.02.0/glib/poppler-document.cc:773
+    #4 0xaddr in Inkscape::Extension::Internal::PdfInput::open(Inkscape::Extension::Input*, char const*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #5 0xaddr in Inkscape::Extension::open(Inkscape::Extension::Extension*, char const*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #6 0xaddr in ink_file_open(Glib::RefPtr<Gio::File> const&, bool*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #7 0xaddr in InkscapeApplication::document_open(Glib::RefPtr<Gio::File> const&, bool*) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #8 0xaddr in InkscapeApplication::on_open(std::vector<Glib::RefPtr<Gio::File>, std::allocator<Glib::RefPtr<Gio::File> > > const&, Glib::ustring const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #9 0xaddr  (/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so.1+0xaddr)
+    #10 0xaddr in g_closure_invoke (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #11 0xaddr  (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #12 0xaddr in g_signal_emit_valist (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #13 0xaddr in g_signal_emit (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #14 0xaddr  (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xaddr)
+    #15 0xaddr in g_application_run (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xaddr)
+    #16 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #17 0xaddr in _start (/root/inkscape-INKSCAPE_1_1_2/build/bin/inkscape+0xaddr)

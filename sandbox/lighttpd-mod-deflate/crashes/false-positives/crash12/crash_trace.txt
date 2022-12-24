@@ -1,0 +1,8 @@
+    #0 0xaddr in mod_deflate_set_defaults /root/lighttpd-1.4.67/src/mod_deflate.c:843
+    #1 0xaddr in plugins_call_fn_srv_data /root/lighttpd-1.4.67/src/plugin.c:312
+    #2 0xaddr in plugins_call_set_defaults /root/lighttpd-1.4.67/src/plugin.c:373
+    #3 0xaddr in server_main_setup /root/lighttpd-1.4.67/src/server.c:1591
+    #4 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2082
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

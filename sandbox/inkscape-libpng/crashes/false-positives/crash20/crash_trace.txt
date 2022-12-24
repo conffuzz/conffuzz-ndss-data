@@ -1,0 +1,17 @@
+    #0 0xaddr in png_set_text_2 /root/libpng-1.6.37/pngset.c:899
+    #1 0xaddr in png_set_text /root/libpng-1.6.37/pngset.c:766
+    #2 0xaddr in sp_png_write_rgba_striped(SPDocument*, char const*, unsigned long, unsigned long, double, double, int (*)(unsigned char const**, void**, int, int, void*, int, int, int), void*, bool, int, int, int, int) [clone .constprop.0] (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #3 0xaddr in sp_export_png_file(SPDocument*, char const*, Geom::Rect const&, unsigned long, unsigned long, double, double, unsigned long, unsigned int (*)(float, void*), void*, bool, std::vector<SPItem*, std::allocator<SPItem*> > const&, bool, int, int, int, int) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #4 0xaddr in InkFileExportCmd::do_export_png(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #5 0xaddr in InkFileExportCmd::do_export(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #6 0xaddr in InkscapeApplication::process_document(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #7 0xaddr in InkscapeApplication::on_open(std::vector<Glib::RefPtr<Gio::File>, std::allocator<Glib::RefPtr<Gio::File> > > const&, Glib::ustring const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xaddr)
+    #8 0xaddr  (/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so.1+0xaddr)
+    #9 0xaddr in g_closure_invoke (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #10 0xaddr  (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #11 0xaddr in g_signal_emit_valist (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #12 0xaddr in g_signal_emit (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0xaddr)
+    #13 0xaddr  (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xaddr)
+    #14 0xaddr in g_application_run (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xaddr)
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/root/inkscape-INKSCAPE_1_1_2/build/bin/inkscape+0xaddr)

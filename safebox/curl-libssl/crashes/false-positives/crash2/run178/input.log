@@ -1,0 +1,6 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x7640 [size: 0], 0 [size: 0x1]) @ 0x00007fffe2211c78
+~> change arg #0x2 from 0 to 0xffffffffffffffa4

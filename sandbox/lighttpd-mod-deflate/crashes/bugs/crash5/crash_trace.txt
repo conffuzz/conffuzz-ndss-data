@@ -1,0 +1,22 @@
+    #5 0xaddr in array_extend /root/lighttpd-1.4.67/src/array.c:119
+    #6 0xaddr in array_insert_data_at_pos /root/lighttpd-1.4.67/src/array.c:363
+    #7 0xaddr in array_insert_string_at_pos /root/lighttpd-1.4.67/src/array.c:392
+    #8 0xaddr in array_get_buf_ptr_ext /root/lighttpd-1.4.67/src/array.c:400
+    #9 0xaddr in http_header_request_set_ptr /root/lighttpd-1.4.67/src/http_header.c:300
+    #10 0xaddr in http_request_header_set_Host /root/lighttpd-1.4.67/src/request.c:340
+    #11 0xaddr in http_request_parse_single_header /root/lighttpd-1.4.67/src/request.c:429
+    #12 0xaddr in http_request_parse_headers /root/lighttpd-1.4.67/src/request.c:1204
+    #13 0xaddr in http_request_parse_hoff /root/lighttpd-1.4.67/src/request.c:1300
+    #14 0xaddr in http_request_headers_process /root/lighttpd-1.4.67/src/request.c:1336
+    #15 0xaddr in connection_handle_read_state /root/lighttpd-1.4.67/src/connections.c:774
+    #16 0xaddr in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:989
+    #17 0xaddr in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #18 0xaddr in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #19 0xaddr in network_server_handle_fdevent /root/lighttpd-1.4.67/src/network.c:87
+    #20 0xaddr in fdevent_linux_sysepoll_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:384
+    #21 0xaddr in fdevent_poll /root/lighttpd-1.4.67/src/fdevent_impl.c:342
+    #22 0xaddr in server_main_loop /root/lighttpd-1.4.67/src/server.c:2013
+    #23 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2085
+    #24 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #25 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #26 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

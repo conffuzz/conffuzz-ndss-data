@@ -1,0 +1,5 @@
+fault_location /usr/lib/x86_64-linux-gnu/libaprutil-1.so.0.6.1
+cap_read_arbitrary
+non_reproducible
+cap_read
+cap_write_arbitrary

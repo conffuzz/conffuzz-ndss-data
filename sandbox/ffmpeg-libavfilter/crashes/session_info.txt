@@ -1,0 +1,12 @@
+Fuzzing seed: 1651186476
+Starting time: 2022-04-28 22:54:36
+Total instrumented API size: 33
+Statically detected call sites: 16
+Statically detected called API endpoints: 16
+Statically detected caller components: 2
+Max number of call sites reached in a run: 2
+Number of API endpoints reached: 2
+Number of API endpoints that are vulnerability vectors: 1
+List of these endpoints:
+  [api] avfilter_configuration
+Ending time: 2022-04-28 23:55:01

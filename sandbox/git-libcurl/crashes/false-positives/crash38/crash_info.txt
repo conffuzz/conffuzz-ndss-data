@@ -1,0 +1,1 @@
+fault_location /usr/local/lib/libcurl.so.4.7.0

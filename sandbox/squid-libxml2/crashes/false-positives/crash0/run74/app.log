@@ -1,0 +1,51 @@
+2022/11/09 16:36:51| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+parser error : Memory allocation failed
+=================================================================
+==11440==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7ffffffde190 in thread T0
+    #0 0x7fffd7d53517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffd79f2a63 in xmlFreeParserCtxt /root/libxml2-2.10.3/parserInternals.c:1703
+    #2 0x555555ca65cb in ESILibxml2Parser::~ESILibxml2Parser() /root/squid-5.7/src/esi/Libxml2Parser.cc:101
+    #3 0x555555ca6631 in ESILibxml2Parser::~ESILibxml2Parser() /root/squid-5.7/src/esi/Libxml2Parser.cc:103
+    #4 0x555555c90ed0 in RefCount<ESIParser>::dereference(ESIParser const*) ../../src/base/RefCount.h:100
+    #5 0x555555c90869 in RefCount<ESIParser>::operator=(RefCount<ESIParser>&&) (/usr/local/squid/sbin/squid+0x73c869)
+    #6 0x555555c8633e in ESIContext::ParserState::freeResources() /root/squid-5.7/src/esi/Esi.cc:1391
+    #7 0x555555c865d6 in ESIContext::freeResources() /root/squid-5.7/src/esi/Esi.cc:1412
+    #8 0x555555c867be in ESIContext::fail() /root/squid-5.7/src/esi/Esi.cc:1434
+    #9 0x555555c7ddee in ESIContext::kick() /root/squid-5.7/src/esi/Esi.cc:336
+    #10 0x555555c80f23 in esiProcessStream(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/esi/Esi.cc:787
+    #11 0x555555934985 in clientStreamCallback(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:159
+    #12 0x55555595f091 in clientReplyContext::processReplyAccessResult(Acl::Answer const&) /root/squid-5.7/src/client_side_reply.cc:2178
+    #13 0x55555595e6e9 in clientReplyContext::processReplyAccess() /root/squid-5.7/src/client_side_reply.cc:2066
+    #14 0x55555595f8f7 in clientReplyContext::sendMoreData(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:2264
+    #15 0x55555595db73 in clientReplyContext::SendMoreData(void*, StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:1904
+    #16 0x5555559fc475 in store_client::callback(long, bool) /root/squid-5.7/src/store_client.cc:178
+    #17 0x5555559fdc02 in store_client::scheduleMemRead() /root/squid-5.7/src/store_client.cc:474
+    #18 0x5555559fd758 in store_client::scheduleRead() /root/squid-5.7/src/store_client.cc:440
+    #19 0x5555559fd4a6 in store_client::doCopy(StoreEntry*) /root/squid-5.7/src/store_client.cc:401
+    #20 0x5555559fcfe8 in storeClientCopy2 /root/squid-5.7/src/store_client.cc:355
+    #21 0x5555559ff781 in StoreEntry::invokeHandlers() /root/squid-5.7/src/store_client.cc:793
+    #22 0x5555559f722f in StoreEntry::flush() /root/squid-5.7/src/store.cc:1666
+    #23 0x5555559f7acc in StoreEntry::startWriting() /root/squid-5.7/src/store.cc:1812
+    #24 0x555555a98c4c in Client::setFinalReply(HttpReply*) /root/squid-5.7/src/clients/Client.cc:153
+    #25 0x555555a9ef85 in Client::adaptOrFinalizeReply() /root/squid-5.7/src/clients/Client.cc:1010
+    #26 0x5555559a3ecc in HttpStateData::processReply() /root/squid-5.7/src/http.cc:1330
+    #27 0x5555559a3a7d in HttpStateData::readReply(CommIoCbParams const&) /root/squid-5.7/src/http.cc:1302
+    #28 0x5555559afc9e in CommCbMemFunT<HttpStateData, CommIoCbParams>::doDial() (/usr/local/squid/sbin/squid+0x45bc9e)
+    #29 0x5555559b02be in JobDialer<HttpStateData>::dial(AsyncCall&) base/AsyncJobCalls.h:175
+    #30 0x5555559af6ba in AsyncCallT<CommCbMemFunT<HttpStateData, CommIoCbParams> >::fire() (/usr/local/squid/sbin/squid+0x45b6ba)
+    #31 0x555555afdd08 in AsyncCall::make() /root/squid-5.7/src/base/AsyncCall.cc:44
+    #32 0x555555afeb88 in AsyncCallQueue::fireNext() /root/squid-5.7/src/base/AsyncCallQueue.cc:60
+    #33 0x555555afe915 in AsyncCallQueue::fire() /root/squid-5.7/src/base/AsyncCallQueue.cc:43
+    #34 0x55555587fc36 in EventLoop::dispatchCalls() /root/squid-5.7/src/EventLoop.cc:144
+    #35 0x55555587fb42 in EventLoop::runOnce() /root/squid-5.7/src/EventLoop.cc:121
+    #36 0x55555587f995 in EventLoop::run() /root/squid-5.7/src/EventLoop.cc:83
+    #37 0x5555559bf69f in SquidMain(int, char**) /root/squid-5.7/src/main.cc:1719
+    #38 0x5555559be94c in SquidMainSafe /root/squid-5.7/src/main.cc:1406
+    #39 0x5555559be906 in main /root/squid-5.7/src/main.cc:1394
+    #40 0x7fffd73dfd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #41 0x7fffd73dfe3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #42 0x555555831e64 in _start (/usr/local/squid/sbin/squid+0x2dde64)
+
+Address 0x7ffffffde190 is located in stack of thread T0
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127 in __interceptor_free
+==11440==ABORTING

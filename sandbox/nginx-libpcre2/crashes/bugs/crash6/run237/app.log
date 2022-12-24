@@ -1,0 +1,30 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+=================================================================
+==15268==ERROR: AddressSanitizer: requested allocation size 0xffffffffffffd8f0 (0xffffffffffffe8f0 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)
+    #0 0x7fffe137b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x555555665834 in ngx_alloc src/os/unix/ngx_alloc.c:22
+    #2 0x5555555d186f in ngx_palloc_large src/core/ngx_palloc.c:220
+    #3 0x5555555d138d in ngx_palloc src/core/ngx_palloc.c:131
+    #4 0x5555556a69f0 in ngx_regex_malloc src/core/ngx_regex.c:504
+    #5 0x7fffe11842f9 in pcre2_compile_8 src/pcre2_compile.c:10158
+    #6 0x5555556a5c7b in ngx_regex_compile src/core/ngx_regex.c:176
+    #7 0x55555570d802 in ngx_http_regex_compile src/http/ngx_http_variables.c:2494
+    #8 0x5555556cc213 in ngx_http_core_server_name src/http/ngx_http_core_module.c:4294
+    #9 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #10 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #11 0x5555556c01db in ngx_http_core_server src/http/ngx_http_core_module.c:2892
+    #12 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #13 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #14 0x5555556a83c2 in ngx_http_block src/http/ngx_http.c:239
+    #15 0x555555622bb0 in ngx_conf_handler src/core/ngx_conf_file.c:463
+    #16 0x555555621bcd in ngx_conf_parse src/core/ngx_conf_file.c:319
+    #17 0x55555561793c in ngx_init_cycle src/core/ngx_cycle.c:284
+    #18 0x5555555c76b0 in main src/core/nginx.c:292
+    #19 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+==15268==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+SUMMARY: AddressSanitizer: allocation-size-too-big ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145 in __interceptor_malloc
+==15268==ABORTING

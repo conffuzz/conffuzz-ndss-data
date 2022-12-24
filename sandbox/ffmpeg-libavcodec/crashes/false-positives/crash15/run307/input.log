@@ -1,0 +1,37 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+avcodec_version() @ 0x0000555555577440
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0xff9dffff -> 0xfffff448 at shared buffer 0x000060e0000233f2
+~> write 0 -> 0xffffffff80 at shared buffer 0x000060e00002343b
+~> write 0xffffff -> 0xffff000000 at shared buffer 0x000060e0000233f4
+~> write 0x180000 -> 0xff00000000 at shared buffer 0x000060e0000233e6
+~> write 0 -> 0xff00fffd92 at shared buffer 0x000061900000038f
+~> write 0 -> 0xff00fffd45 at shared buffer 0x0000619000000364
+~> write 0 -> 0xfffffffffffffb at shared buffer 0x00006190000000d4
+~> write 0 -> 0x1af at shared buffer 0x00006190000002c2
+~> change ret from 0 to 0x6
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x55555556f190
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+~> change ret from 0 to 0x39e
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+~> change ret from 0x7fffe05302c0 to 0x7ffffffde190
+avcodec_open2(0x619000000080 [size: 0x398], 0x7ffffffde190 [size: 0xe0], 0x603000001540 [size: 0x8]) @ 0x00007fffe0eba815
+~> write 0x3000001570 -> 0x610000000000 at shared buffer 0x0000603000001540
+~> write 0x6000000000 -> 0 at shared buffer 0x0000603000001541
+~> write 0x6000000000 -> 0x8a at shared buffer 0x0000603000001546
+~> write 0x6000000000 -> 0x4b at shared buffer 0x00006190000003ad
+~> write 0x6000000000 -> 0xff8f at shared buffer 0x00006190000000a2
+~> write 0x6000000000 -> 0xffe0 at shared buffer 0x000061900000027c
+~> change ret from 0xffffffea to 0xfffffc9a
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> write 0x6000000000 -> 0 at shared buffer 0x0000619000000251
+~> change ret from 0 to 0xffffffffffffff80

@@ -1,0 +1,26 @@
+60193:C 08 Nov 2022 11:21:52.195 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+60193:C 08 Nov 2022 11:21:52.225 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=60193, just started
+60193:C 08 Nov 2022 11:21:52.227 # Configuration loaded
+60193:M 08 Nov 2022 11:21:52.333 * monotonic clock: POSIX clock_gettime
+60193:M 08 Nov 2022 11:21:52.793 * Running mode=standalone, port=6379.
+60193:M 08 Nov 2022 11:21:52.795 # Server initialized
+60193:M 08 Nov 2022 11:21:52.797 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+60193:M 08 Nov 2022 11:21:52.963 * <bf> RedisBloom version 2.2.18 (Git=8b6ee3b)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==60193==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555556646c7 bp 0x7fffffffe520 sp 0x7fffffffe500 T0)
+==60193==The signal is caused by a READ memory access.
+==60193==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555556646c7 in sdslen /root/redis-6.2.6/src/sds.h:88
+    #1 0x555555665ccb in dictSdsCaseHash /root/redis-6.2.6/src/server.c:1307
+    #2 0x55555565facd in dictAddRaw /root/redis-6.2.6/src/dict.c:329
+    #3 0x55555565f8ef in dictAdd /root/redis-6.2.6/src/dict.c:294
+    #4 0x5555558133cf in moduleLoad /root/redis-6.2.6/src/module.c:8586
+    #5 0x55555581299a in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #6 0x55555567c0ff in main /root/redis-6.2.6/src/server.c:6359
+    #7 0x7fffdee0fd09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #8 0x55555564d189 in _start (/root/redis-6.2.6/src/redis-server+0xf9189)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/redis-6.2.6/src/sds.h:88 in sdslen
+==60193==ABORTING

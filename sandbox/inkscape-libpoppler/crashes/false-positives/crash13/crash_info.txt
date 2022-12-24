@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libpoppler.so.118.0.0
+cap_read_arbitrary

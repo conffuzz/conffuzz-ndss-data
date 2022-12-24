@@ -1,0 +1,17 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==50289==ERROR: AddressSanitizer: SEGV on unknown address 0x0000ffff8000 (pc 0x7fffe00e068f bp 0x7fffffffd7f0 sp 0x7fffffffd7d0 T0)
+==50289==The signal is caused by a READ memory access.
+    #0 0x7fffe00e068f in Curl_slist_duplicate /root/curl-7.82.0/lib/slist.c:115
+    #1 0x7fffe001d5c9 in curl_easy_duphandle /root/curl-7.82.0/lib/easy.c:855
+    #2 0x555555621272 in get_active_slot /root/git-2.35.1/http.c:1200
+    #3 0x555555633790 in locking_available /root/git-2.35.1/http-push.c:1214
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/slist.c:115 in Curl_slist_duplicate
+==50289==ABORTING

@@ -1,0 +1,2 @@
+fault_location /usr/local/bin/exif
+cap_null_deref

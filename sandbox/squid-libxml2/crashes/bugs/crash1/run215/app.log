@@ -1,0 +1,8 @@
+2022/11/09 17:06:49| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==27383==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x555555ca669800 bp 0x7fffffffd1a0 sp 0x7fffffffcd18 T0)
+==27383==The signal is caused by a READ memory access.
+==27383==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

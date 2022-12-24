@@ -1,0 +1,1 @@
+    #0 0xaddr in st_ref_memory (/usr/local/lib/libgs.so.9+0xaddr)

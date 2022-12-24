@@ -1,0 +1,19 @@
+warning: curl_multi_add_handle failed: ?ُ^
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==56198==ERROR: AddressSanitizer: SEGV on unknown address 0x19c07fff8000 (pc 0x7fffdffe7dc6 bp 0x7fffffffd8f0 sp 0x7fffffffd820 T0)
+==56198==The signal is caused by a READ memory access.
+    #0 0x7fffdffe7dc6 in Curl_altsvc_save /root/curl-7.82.0/lib/altsvc.c:340
+    #1 0x7fffe0113c80 in Curl_close /root/curl-7.82.0/lib/url.c:424
+    #2 0x7fffe001c96e in curl_easy_cleanup /root/curl-7.82.0/lib/easy.c:735
+    #3 0x555555620d13 in http_cleanup /root/git-2.35.1/http.c:1114
+    #4 0x5555556381b6 in cmd_main /root/git-2.35.1/http-push.c:1962
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/curl-7.82.0/lib/altsvc.c:340 in Curl_altsvc_save
+==56198==ABORTING

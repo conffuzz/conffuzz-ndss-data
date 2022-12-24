@@ -1,0 +1,2 @@
+fault_location /root/lighttpd-1.4.67/src/lighttpd
+cap_read

@@ -1,0 +1,16 @@
+    #1 0xaddr in CRYPTO_free crypto/mem.c:312
+    #2 0xaddr in OPENSSL_sk_free crypto/stack/stack.c:377
+    #3 0xaddr in OPENSSL_sk_pop_free crypto/stack/stack.c:369
+    #4 0xaddr in sk_EX_CALLBACK_pop_free include/internal/cryptlib.h:47
+    #5 0xaddr in crypto_cleanup_all_ex_data_int crypto/ex_data.c:100
+    #6 0xaddr in OPENSSL_cleanup crypto/init.c:604
+    #7 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #8 0xaddr in exit (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #9 0xaddr in die_builtin /root/git-2.35.1/usage.c:74
+    #10 0xaddr in die /root/git-2.35.1/usage.c:181
+    #11 0xaddr in http_init /root/git-2.35.1/http.c:1036
+    #12 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1766
+    #13 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #14 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #15 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #16 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

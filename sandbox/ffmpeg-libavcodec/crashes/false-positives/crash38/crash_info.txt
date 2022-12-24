@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libavcodec.so.59.18.100
+cap_read

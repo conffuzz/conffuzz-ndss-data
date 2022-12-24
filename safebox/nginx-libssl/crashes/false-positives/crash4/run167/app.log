@@ -1,0 +1,14 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==67837==ERROR: AddressSanitizer: SEGV on unknown address 0x0000bfff7f8e (pc 0x55555569017b bp 0x7fffffffe540 sp 0x7fffffffdef0 T0)
+==67837==The signal is caused by a READ memory access.
+    #0 0x55555569017b in ngx_ssl_error src/event/ngx_event_openssl.c:3509
+    #1 0x555555681410 in ngx_ssl_init src/event/ngx_event_openssl.c:191
+    #2 0x5555555c7508 in main src/core/nginx.c:241
+    #3 0x7fffe0503d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe0503e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/event/ngx_event_openssl.c:3509 in ngx_ssl_error
+==67837==ABORTING

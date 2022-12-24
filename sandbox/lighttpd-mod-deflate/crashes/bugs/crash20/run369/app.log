@@ -1,0 +1,17 @@
+2022-11-10 13:58:20: (plugin.c.260) mod_deflate plugin init failed
+2022-11-10 13:58:20: (server.c.1285) loading plugins finally failed
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==26946==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5555555e5a18 bp 0x7fffffffe8e0 sp 0x7fffffffe8d0 T0)
+==26946==The signal is caused by a READ memory access.
+==26946==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x5555555e5a18 in buffer_free /root/lighttpd-1.4.67/src/buffer.c:22
+    #1 0x555555582015 in server_free /root/lighttpd-1.4.67/src/server.c:356
+    #2 0x55555558a665 in main /root/lighttpd-1.4.67/src/server.c:2119
+    #3 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #4 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #5 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/buffer.c:22 in buffer_free
+==26946==ABORTING

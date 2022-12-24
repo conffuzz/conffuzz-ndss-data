@@ -1,0 +1,27 @@
+[I] Recursing from bzfile into structure 
+[E] Not able to find type information for bzfile in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from bz_stream into structure 
+[E] Not able to find type information for bz_stream in DWARF
+[I] Recursing from uchar into unsigned char
+[E] Not able to find type information for uchar in DWARF
+[I] Recursing from estate into structure 
+[E] Not able to find type information for estate in DWARF
+[I] Recursing from dstate into structure 
+[E] Not able to find type information for dstate in DWARF
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==44254==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe26ac050 bp 0x7fffffffbdb0 sp 0x7fffffffbd78 T0)
+==44254==The signal is caused by a READ memory access.
+==44254==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe26ac050 in ferror (/lib/x86_64-linux-gnu/libc.so.6+0x78050)
+    #1 0x7fffe289f2b8 in BZ2_bzRead /root/bzip2-1.0.8/bzlib.c:1186
+    #2 0x55555555a9ba in uncompressStream /root/bzip2-1.0.8/bzip2.c:462
+    #3 0x55555555e99e in uncompress /root/bzip2-1.0.8/bzip2.c:1472
+    #4 0x555555561072 in main /root/bzip2-1.0.8/bzip2.c:1984
+    #5 0x7fffe26577fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #6 0x555555559499 in _start (/root/bzip2-1.0.8/bzip2-shared+0x5499)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x78050) in ferror
+==44254==ABORTING

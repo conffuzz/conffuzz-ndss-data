@@ -1,0 +1,67 @@
+=================================================================
+==10493==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60e000001d00 at pc 0x7fffe2915f89 bp 0x7fffffffe6a0 sp 0x7fffffffde18
+READ of size 1 at 0x60e000001d00 thread T0
+    #0 0x7fffe2915f88 in printf_common ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553
+    #1 0x7fffe29166cc in __interceptor_vprintf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1660
+    #2 0x7fffe29167c6 in __interceptor_printf ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:1718
+    #3 0x55555555af0f in process /root/file-5.41/src/file.c:560
+    #4 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #5 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #6 0x7fffe248de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #7 0x555555559724 in _start (/usr/local/bin/file+0x5724)
+
+0x60e000001d00 is located 32 bytes to the left of 160-byte region [0x60e000001d20,0x60e000001dc0)
+freed by thread T0 here:
+    #0 0x7fffe296c517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe255da51  (/lib/x86_64-linux-gnu/libc.so.6+0xf9a51)
+    #2 0x7fffe275fe80 in magiccheck /root/file-5.41/src/softmagic.c:2240
+    #3 0x7fffe2750892 in match /root/file-5.41/src/softmagic.c:260
+    #4 0x7fffe274ff15 in file_softmagic /root/file-5.41/src/softmagic.c:134
+    #5 0x7fffe2761ad6 in file_ascmagic_with_encoding /root/file-5.41/src/ascmagic.c:156
+    #6 0x7fffe27615db in file_ascmagic /root/file-5.41/src/ascmagic.c:96
+    #7 0x7fffe277e0e6 in file_buffer /root/file-5.41/src/funcs.c:461
+    #8 0x7fffe273ba94 in file_or_fd /root/file-5.41/src/magic.c:518
+    #9 0x7fffe273b375 in magic_file /root/file-5.41/src/magic.c:400
+    #10 0x55555555aeba in process /root/file-5.41/src/file.c:555
+    #11 0x55555555a2cb in main /root/file-5.41/src/file.c:428
+    #12 0x7fffe248dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe296cc18 in __interceptor_realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x7fffe255ac1c  (/lib/x86_64-linux-gnu/libc.so.6+0xf6c1c)
+    #2 0x60200003650f  (<unknown module>)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_format.inc:553 in printf_common
+Shadow bytes around the buggy address:
+  0x0c1c7fff8350: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff8360: fd fd fd fd fa fa fa fa fa fa fa fa fd fd fd fd
+  0x0c1c7fff8370: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff8380: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x0c1c7fff8390: fd fd fd fd fd fd fd fd fd fd fd fd fa fa fa fa
+=>0x0c1c7fff83a0:[fa]fa fa fa fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff83b0: fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa
+  0x0c1c7fff83c0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff83d0: fd fd fd fd fa fa fa fa fa fa fa fa fd fd fd fd
+  0x0c1c7fff83e0: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x0c1c7fff83f0: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==10493==ABORTING

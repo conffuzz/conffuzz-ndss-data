@@ -1,0 +1,13 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==91429==ERROR: AddressSanitizer: SEGV on unknown address 0x55555598caf0 (pc 0x55555561049b bp 0x7fffffffd550 sp 0x7fffffffd520 T0)
+==91429==The signal is caused by a READ memory access.
+    #0 0x55555561049b in create_refuse_error /root/rsync-3.2.7/options.c:1300
+    #1 0x5555556123b9 in parse_arguments /root/rsync-3.2.7/options.c:1914
+    #2 0x5555555faa59 in main /root/rsync-3.2.7/main.c:1789
+    #3 0x7fffe1caed09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #4 0x55555559b449 in _start (/usr/local/bin/rsync+0x47449)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/rsync-3.2.7/options.c:1300 in create_refuse_error
+==91429==ABORTING

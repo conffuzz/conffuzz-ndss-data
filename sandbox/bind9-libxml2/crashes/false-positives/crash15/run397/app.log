@@ -1,0 +1,211 @@
+07-Nov-2022 17:46:49.721 starting BIND 9.18.8 (Stable Release) <id:35f5d35>
+07-Nov-2022 17:46:49.765 running on Linux x86_64 6.0.0-1-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.0.2-1 (2022-10-16)
+07-Nov-2022 17:46:49.769 built with  '--enable-threads' '--disable-linux-caps' '--with-libxml2' 'CFLAGS=-O0 -g -fsanitize=address' 'LDFLAGS=-fsanitize=address'
+07-Nov-2022 17:46:49.769 running as: named -g
+07-Nov-2022 17:46:49.769 compiled by GCC 10.2.1 20210110
+07-Nov-2022 17:46:49.769 compiled with OpenSSL version: OpenSSL 1.1.1n  15 Mar 2022
+07-Nov-2022 17:46:49.769 linked to OpenSSL version: OpenSSL 1.1.1n  15 Mar 2022
+07-Nov-2022 17:46:49.769 compiled with libxml2 version: 2.10.3
+07-Nov-2022 17:46:49.785 linked to libxml2 version: 21003
+07-Nov-2022 17:46:49.789 compiled with zlib version: 1.2.11
+07-Nov-2022 17:46:49.789 linked to zlib version: 1.2.11
+07-Nov-2022 17:46:49.789 ----------------------------------------------------
+07-Nov-2022 17:46:49.789 BIND 9 is maintained by Internet Systems Consortium,
+07-Nov-2022 17:46:49.789 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
+07-Nov-2022 17:46:49.789 corporation.  Support and training for BIND 9 are 
+07-Nov-2022 17:46:49.789 available at https://www.isc.org/support
+07-Nov-2022 17:46:49.789 ----------------------------------------------------
+07-Nov-2022 17:46:49.797 found 8 CPUs, using 8 worker threads
+07-Nov-2022 17:46:49.797 using 8 UDP listeners per interface
+07-Nov-2022 17:46:50.557 DNSSEC algorithms: RSASHA1 NSEC3RSASHA1 RSASHA256 RSASHA512 ECDSAP256SHA256 ECDSAP384SHA384 ED25519 ED448
+07-Nov-2022 17:46:50.561 DS algorithms: SHA-1 SHA-256 SHA-384
+07-Nov-2022 17:46:50.565 HMAC algorithms: HMAC-MD5 HMAC-SHA1 HMAC-SHA224 HMAC-SHA256 HMAC-SHA384 HMAC-SHA512
+07-Nov-2022 17:46:50.569 TKEY mode 2 support (Diffie-Hellman): yes
+07-Nov-2022 17:46:50.569 TKEY mode 3 support (GSS-API): no
+07-Nov-2022 17:46:50.825 config.c: option 'trust-anchor-telemetry' is experimental and subject to change in the future
+07-Nov-2022 17:46:50.881 loading configuration from '/usr/local/etc/named.conf'
+07-Nov-2022 17:46:51.073 unable to open '/usr/local/etc/bind.keys'; using built-in keys instead
+07-Nov-2022 17:46:51.265 statistics-channels: JSON library missing, only XML stats will be available
+07-Nov-2022 17:46:51.353 statistics channel listening on 10.1.10.10#8080
+07-Nov-2022 17:46:51.357 statistics channel listening on 127.0.0.1#8080
+07-Nov-2022 17:46:51.373 using default UDP/IPv4 port range: [32768, 60999]
+07-Nov-2022 17:46:51.377 using default UDP/IPv6 port range: [32768, 60999]
+07-Nov-2022 17:46:51.549 generating session key for dynamic DNS
+07-Nov-2022 17:46:51.717 sizing zone task pool based on 0 zones
+07-Nov-2022 17:46:51.737 none:96: 'max-cache-size 90%' - setting to 14099MB (out of 15666MB)
+07-Nov-2022 17:46:51.985 using built-in root key for view _default
+07-Nov-2022 17:46:52.137 set up managed keys zone for view _default, file 'managed-keys.bind'
+07-Nov-2022 17:46:52.185 automatic empty zone: 10.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.193 automatic empty zone: 16.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.197 automatic empty zone: 17.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.197 automatic empty zone: 18.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 19.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 20.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 21.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 22.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 23.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 24.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 25.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 26.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 27.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 28.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 29.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.201 automatic empty zone: 30.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 31.172.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 168.192.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 64.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 65.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 66.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 67.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 68.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 69.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 70.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 71.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 72.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 73.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 74.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 75.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 76.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 77.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 78.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 79.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 80.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 81.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 82.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 83.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 84.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 85.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 86.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 87.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.205 automatic empty zone: 88.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.209 automatic empty zone: 89.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 90.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 91.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 92.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 93.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 94.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 95.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 96.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 97.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 98.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 99.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.213 automatic empty zone: 100.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 101.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 102.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 103.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 104.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 105.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 106.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 107.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 108.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 109.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 110.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 111.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 112.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 113.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 114.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 115.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 116.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 117.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 118.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 119.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 120.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 121.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 122.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 123.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 124.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.217 automatic empty zone: 125.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 126.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 127.100.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 0.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 127.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 254.169.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 2.0.192.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 100.51.198.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 113.0.203.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: D.F.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 8.E.F.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 9.E.F.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: A.E.F.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: B.E.F.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: EMPTY.AS112.ARPA
+07-Nov-2022 17:46:52.221 automatic empty zone: HOME.ARPA
+07-Nov-2022 17:46:52.449 configuring command channel from '/usr/local/etc/rndc.key'
+07-Nov-2022 17:46:52.449 command channel listening on 127.0.0.1#953
+07-Nov-2022 17:46:52.457 configuring command channel from '/usr/local/etc/rndc.key'
+07-Nov-2022 17:46:52.461 command channel listening on ::1#953
+07-Nov-2022 17:46:52.461 not using config file logging statement for logging due to -g option
+07-Nov-2022 17:46:52.993 managed-keys-zone: loaded serial 403
+07-Nov-2022 17:46:53.581 failed generating XML response
+Entity: line 2: parser error : Extra content at the end of the document
+
+^
+error : xmlTextWriterCloseDocCallback : XML error 5 !
+07-Nov-2022 17:46:53.809 failed at rendering XML()
+07-Nov-2022 17:46:53.821 address not available resolving './NS/IN': 2001:500:2::c#53
+07-Nov-2022 17:46:53.909 address not available resolving './NS/IN': 2001:503:ba3e::2:30#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:7fd::1#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:500:1::53#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:500:200::b#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:503:c27::2:30#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:dc3::35#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:500:2f::f#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:7fe::53#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:500:12::d0d#53
+07-Nov-2022 17:46:53.953 address not available resolving './NS/IN': 2001:500:2d::d#53
+07-Nov-2022 17:46:53.957 address not available resolving './NS/IN': 2001:500:a8::e#53
+07-Nov-2022 17:46:53.957 address not available resolving './NS/IN': 2001:500:9f::42#53
+07-Nov-2022 17:46:53.973 resolver priming query complete: invalid file
+07-Nov-2022 17:46:53.977 all zones loaded
+07-Nov-2022 17:46:53.997 running
+07-Nov-2022 17:46:54.029 managed-keys-zone: Unable to fetch DNSKEY set '.': invalid file
+07-Nov-2022 17:46:54.445 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.449 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.457 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.461 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.497 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.501 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.513 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.525 failed at opcodestat_dump()
+07-Nov-2022 17:46:54.529 failed generating XML response
+Entity: line 2: parser error : Couldn't find end of Start Tag counter
+="RESERVED12">0</counter><counter><counter name="RESERVED14">0</counter><counter
+                                                                               ^
+error : xmlTextWriterCloseDocCallback : XML error 73 !
+=================================================================
+==161897==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x60f000077700 in thread T6
+    #0 0x7fffe2339b6f in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123
+    #1 0x7fffe0d1e4fd in xmlFreeDoc /root/libxml2-2.10.3/tree.c:1257
+    #2 0x555555657151 in generatexml /root/bind-9.18.8/bin/named/statschannel.c:2357
+    #3 0x5555556573fc in render_xml /root/bind-9.18.8/bin/named/statschannel.c:2384
+    #4 0x5555556576f3 in render_xml_all /root/bind-9.18.8/bin/named/statschannel.c:2409
+    #5 0x7fffe1b895af in httpd_request /root/bind-9.18.8/lib/isc/httpd.c:959
+    #6 0x7fffe1b24211 in isc__nm_async_readcb netmgr/netmgr.c:2812
+    #7 0x7fffe1b23a7f in isc__nm_readcb netmgr/netmgr.c:2785
+    #8 0x7fffe1b32d04 in isc__nm_tcp_read_cb netmgr/tcp.c:901
+    #9 0x7fffe0e84c30  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0x19c30)
+    #10 0x7fffe0e855e7  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0x1a5e7)
+    #11 0x7fffe0e8ba22  (/usr/lib/x86_64-linux-gnu/libuv.so.1+0x20a22)
+    #12 0x7fffe0e7a713 in uv_run (/usr/lib/x86_64-linux-gnu/libuv.so.1+0xf713)
+    #13 0x7fffe1b0fde9 in nm_thread netmgr/netmgr.c:698
+    #14 0x7fffe1bec01e in isc__trampoline_run /root/bind-9.18.8/lib/isc/trampoline.c:189
+    #15 0x7fffe0c4bea6 in start_thread (/lib/x86_64-linux-gnu/libpthread.so.0+0x7ea6)
+    #16 0x7fffe0b6ba2e in __clone (/lib/x86_64-linux-gnu/libc.so.6+0xfca2e)
+
+Address 0x60f000077700 is a wild pointer.
+SUMMARY: AddressSanitizer: bad-free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:123 in __interceptor_free
+Thread T6 created by T0 here:
+    #0 0x7fffe22e52a2 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:214
+    #1 0x7fffe1bd935a in isc_thread_create /root/bind-9.18.8/lib/isc/thread.c:81
+    #2 0x7fffe1b0c326 in isc__netmgr_create netmgr/netmgr.c:311
+    #3 0x7fffe1ba0992 in isc_managers_create /root/bind-9.18.8/lib/isc/managers.c:31
+    #4 0x5555555c842f in create_managers /root/bind-9.18.8/bin/named/main.c:1028
+    #5 0x5555555c8b0e in setup /root/bind-9.18.8/bin/named/main.c:1292
+    #6 0x5555555c90dd in main /root/bind-9.18.8/bin/named/main.c:1566
+    #7 0x7fffe0a92d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+
+==161897==ABORTING

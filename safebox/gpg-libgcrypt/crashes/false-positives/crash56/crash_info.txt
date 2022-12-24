@@ -1,0 +1,2 @@
+fault_location /usr/local/bin/gpg
+cap_write

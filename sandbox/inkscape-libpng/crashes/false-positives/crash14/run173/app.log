@@ -1,0 +1,102 @@
+[I] Recursing from png_uint_16p into png_uint_16*
+[E] Not able to find type information for png_uint_16p in DWARF
+[I] Recursing from png_uint_32 into unsigned int
+[E] Not able to find type information for png_uint_32 in DWARF
+[I] Recursing from png_bytep into png_byte*
+[E] Not able to find type information for png_bytep in DWARF
+[I] Recursing from png_charp into char*
+[E] Not able to find type information for png_charp in DWARF
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_charpp into char**
+[E] Not able to find type information for png_charpp in DWARF
+[I] Recursing from png_textp into png_text*
+[E] Not able to find type information for png_textp in DWARF
+[I] Recursing from png_color_8p into png_color_8*
+[E] Not able to find type information for png_color_8p in DWARF
+[I] Recursing from png_fixed_point into png_int_32
+[I] Recursing from png_int_32 into int
+[I] Recursing from png_color_16p into png_color_16*
+[E] Not able to find type information for png_color_16p in DWARF
+[I] Recursing from file into _IO_FILE
+[E] Not able to find type information for restrictpng_alloc_size_t in DWARF
+[I] Recursing from png_colorp into png_color*
+[E] Not able to find type information for png_colorp in DWARF
+[I] Recursing from png_timep into png_time*
+[E] Not able to find type information for png_timep in DWARF
+Background RRGGBBAA: ffffff00
+Area 0:0:816:1056 exported to 816 x 1056 pixels (96 dpi)
+[I] Attempting to instrument callback __longjmp_chk
+[I] Acquired data about __longjmp_chk, recursing.
+[E] Failed to retrieve information about __longjmp_chk
+libpng warning: Image width exceeds user limit in IHDR
+libpng warning: Image height exceeds user limit in IHDR
+libpng error: Invalid IHDR data
+=================================================================
+==475791==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x61a00004eb68 at pc 0x7fffe27e628e bp 0x7fffffffd290 sp 0x7fffffffca40
+WRITE of size 1256 at 0x61a00004eb68 thread T0
+    #0 0x7fffe27e628d in __interceptor_memset ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799
+    #1 0x7fffdf87f716 in png_destroy_png_struct /root/libpng-1.6.37/pngmem.c:33
+    #2 0x7fffdf8a09ee in png_destroy_write_struct /root/libpng-1.6.37/pngwrite.c:993
+    #3 0x7fffe171033f in sp_png_write_rgba_striped(SPDocument*, char const*, unsigned long, unsigned long, double, double, int (*)(unsigned char const**, void**, int, int, void*, int, int, int), void*, bool, int, int, int, int) [clone .constprop.0] (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6e33f)
+    #4 0x7fffe1710b01 in sp_export_png_file(SPDocument*, char const*, Geom::Rect const&, unsigned long, unsigned long, double, double, unsigned long, unsigned int (*)(float, void*), void*, bool, std::vector<SPItem*, std::allocator<SPItem*> > const&, bool, int, int, int, int) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6eb01)
+    #5 0x7fffe17173c9 in InkFileExportCmd::do_export_png(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa753c9)
+    #6 0x7fffe17193d2 in InkFileExportCmd::do_export(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa773d2)
+    #7 0x7fffe1f82893 in InkscapeApplication::process_document(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12e0893)
+    #8 0x7fffe1f82a57 in InkscapeApplication::on_open(std::vector<Glib::RefPtr<Gio::File>, std::allocator<Glib::RefPtr<Gio::File> > > const&, Glib::ustring const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0x12e0a57)
+    #9 0x7fffdf1163ac  (/usr/lib/x86_64-linux-gnu/libgiomm-2.4.so.1+0xf53ac)
+    #10 0x7fffe02ad71e in g_closure_invoke (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x1671e)
+    #11 0x7fffe02bfed0  (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x28ed0)
+    #12 0x7fffe02c6110 in g_signal_emit_valist (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f110)
+    #13 0x7fffe02c66be in g_signal_emit (/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x2f6be)
+    #14 0x7fffe03db517  (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe4517)
+    #15 0x7fffe03db7bd in g_application_run (/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0+0xe47bd)
+    #16 0x7fffdd72e7fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #17 0x555555556f09 in _start (/root/inkscape-INKSCAPE_1_1_2/build/bin/inkscape+0x2f09)
+
+0x61a00004eb68 is located 0 bytes to the right of 1256-byte region [0x61a00004e680,0x61a00004eb68)
+allocated by thread T0 here:
+    #0 0x7fffe285b7cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffdf87f7e1 in png_malloc_base /root/libpng-1.6.37/pngmem.c:95
+    #2 0x7fffdf87fa53 in png_malloc_warn /root/libpng-1.6.37/pngmem.c:217
+    #3 0x7fffdf876f60 in png_create_png_struct /root/libpng-1.6.37/png.c:319
+    #4 0x7fffdf89ffdb in png_create_write_struct_2 /root/libpng-1.6.37/pngwrite.c:515
+    #5 0x7fffdf89ff88 in png_create_write_struct /root/libpng-1.6.37/pngwrite.c:505
+    #6 0x7fffe17102d1 in sp_png_write_rgba_striped(SPDocument*, char const*, unsigned long, unsigned long, double, double, int (*)(unsigned char const**, void**, int, int, void*, int, int, int), void*, bool, int, int, int, int) [clone .constprop.0] (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6e2d1)
+    #7 0x7fffe1710b01 in sp_export_png_file(SPDocument*, char const*, Geom::Rect const&, unsigned long, unsigned long, double, double, unsigned long, unsigned int (*)(float, void*), void*, bool, std::vector<SPItem*, std::allocator<SPItem*> > const&, bool, int, int, int, int) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa6eb01)
+    #8 0x7fffe17173c9 in InkFileExportCmd::do_export_png(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa753c9)
+    #9 0x7fffe17193d2 in InkFileExportCmd::do_export(SPDocument*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (/root/inkscape-INKSCAPE_1_1_2/build/lib/libinkscape_base.so+0xa773d2)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:799 in __interceptor_memset
+Shadow bytes around the buggy address:
+  0x0c3480001d10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3480001d20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3480001d30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3480001d40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3480001d50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c3480001d60: 00 00 00 00 00 00 00 00 00 00 00 00 00[fa]fa fa
+  0x0c3480001d70: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3480001d80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3480001d90: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3480001da0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3480001db0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==475791==ABORTING

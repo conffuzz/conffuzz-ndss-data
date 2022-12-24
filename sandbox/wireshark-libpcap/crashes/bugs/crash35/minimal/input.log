@@ -1,0 +1,25 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcap_lib_version() @ 0x0000555555583deb
+pcap_findalldevs(0x7fffffffe350 [size: 0x8], 0x7fffffffe370 [size: 0x1]) @ 0x0000555555584b22
+pcap_freealldevs(0x604000000290 [size: 0x28]) @ 0x0000555555584e2b
+pcap_create(0x602000000430 [size: 0x1], 0x7fffffffc250 [size: 0x1]) @ 0x0000555555586750
+pcap_set_promisc(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555586980
+pcap_set_timeout(0x618000000080 [size: 0x288], 0xfa [size: 0]) @ 0x0000555555586991
+pcap_set_tstamp_precision(0x618000000080 [size: 0x288], 0x1 [size: 0]) @ 0x0000555555585b77
+pcap_set_buffer_size(0x618000000080 [size: 0x288], 0x200000 [size: 0]) @ 0x0000555555586bb3
+pcap_activate(0x618000000080 [size: 0x288]) @ 0x0000555555586c87
+pcap_get_tstamp_precision(0x618000000080 [size: 0x288]) @ 0x0000555555585b92
+pcap_datalink(0x618000000080 [size: 0x288]) @ 0x0000555555585188
+pcap_get_selectable_fd(0x618000000080 [size: 0x288]) @ 0x000055555556bf6b
+pcap_lookupnet(0x602000000430 [size: 0x1], 0x7fffffffc1b0 [size: 0x1], 0x7fffffffc1c0 [size: 0x1], 0x7fffffffc1d0 [size: 0x1]) @ 0x0000555555563a0a
+pcap_compile(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0x10], 0x55555558bb80 [size: 0x1], 0x1 [size: 0], 0xffff [size: 0]) @ 0x0000555555563aa9
+pcap_setfilter(0x618000000080 [size: 0x288], 0x7fffffffc380 [size: 0x10]) @ 0x000055555556c8b3
+pcap_freecode(0x7fffffffc380 [size: 0x10]) @ 0x000055555556c8d6
+pcap_snapshot(0x618000000080 [size: 0x288]) @ 0x000055555556d2e4
+pcap_dispatch(0x618000000080 [size: 0x288], 0x1 [size: 0], 0x5555555736da [size: 0], 0x610000000040 [size: 0x1]) @ 0x000055555556edbf
+~> instrumenting 0x00005555555736da (capture_loop_write_packet_cb, 0x3 arg(s))
+~> detected cb call capture_loop_write_packet_cb(0x610000000040 [size: 0x1], 0x7fffffffc250 [size: 0x18], 0x7fffdaf83086 [size: 0x1]) @ 0x00007fffe2586ce9
+~> change arg #0x1 {u_char*} from 0x610000000040 to 0x60ffffffffc6

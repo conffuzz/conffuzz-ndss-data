@@ -1,0 +1,14 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback _init
+[I] Acquired data about _init, recursing.
+[E] {instrumentation.cpp:476} Failed to retrieve information about _init
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==4612==ERROR: AddressSanitizer: SEGV on unknown address (pc 0xc085480031dfe105 bp 0x7fffffffcec0 sp 0x7fffffffce98 T0)
+==4612==The signal is caused by a READ memory access.
+==4612==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

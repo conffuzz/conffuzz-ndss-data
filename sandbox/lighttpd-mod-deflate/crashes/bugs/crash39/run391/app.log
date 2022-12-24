@@ -1,0 +1,23 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==29690==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000001 (pc 0x5555555e6798 bp 0x7fffffffa510 sp 0x7fffffffa4e0 T0)
+==29690==The signal is caused by a WRITE memory access.
+==29690==Hint: address points to the zero page.
+    #0 0x5555555e6798 in buffer_copy_string_len /root/lighttpd-1.4.67/src/buffer.c:167
+    #1 0x55555564a0ab in http_request_parse_reqline /root/lighttpd-1.4.67/src/request.c:944
+    #2 0x55555564b6c1 in http_request_parse_hoff /root/lighttpd-1.4.67/src/request.c:1297
+    #3 0x55555564b84d in http_request_headers_process /root/lighttpd-1.4.67/src/request.c:1336
+    #4 0x5555555952a3 in connection_handle_read_state /root/lighttpd-1.4.67/src/connections.c:774
+    #5 0x55555559682d in connection_state_machine_loop /root/lighttpd-1.4.67/src/connections.c:989
+    #6 0x555555598504 in connection_state_machine_h1 /root/lighttpd-1.4.67/src/connections.c:1343
+    #7 0x5555555985dd in connection_state_machine /root/lighttpd-1.4.67/src/connections.c:1358
+    #8 0x55555558a009 in server_run_con_queue /root/lighttpd-1.4.67/src/server.c:1958
+    #9 0x55555558a216 in server_main_loop /root/lighttpd-1.4.67/src/server.c:2011
+    #10 0x55555558a4d2 in main /root/lighttpd-1.4.67/src/server.c:2085
+    #11 0x7fffe1ec4d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #12 0x7fffe1ec4e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #13 0x555555580a24 in _start (/root/lighttpd-1.4.67/src/lighttpd+0x2ca24)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/lighttpd-1.4.67/src/buffer.c:167 in buffer_copy_string_len
+==29690==ABORTING

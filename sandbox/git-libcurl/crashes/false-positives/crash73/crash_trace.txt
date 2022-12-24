@@ -1,0 +1,12 @@
+    #0 0xaddr in engine_unlocked_finish crypto/engine/eng_init.c:56
+    #1 0xaddr in ENGINE_finish crypto/engine/eng_init.c:102
+    #2 0xaddr in ossl_close_all vtls/openssl.c:1597
+    #3 0xaddr in Curl_ssl_close_all vtls/vtls.c:663
+    #4 0xaddr in Curl_close /root/curl-7.82.0/lib/url.c:404
+    #5 0xaddr in curl_easy_cleanup /root/curl-7.82.0/lib/easy.c:735
+    #6 0xaddr in http_cleanup /root/git-2.35.1/http.c:1114
+    #7 0xaddr in cmd_main /root/git-2.35.1/http-push.c:1962
+    #8 0xaddr in main /root/git-2.35.1/common-main.c:56
+    #9 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/root/git-2.35.1/git-http-push+0xaddr)

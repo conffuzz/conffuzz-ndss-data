@@ -1,0 +1,18 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+OPENSSL_init_ssl(0x40 {uint64_t} [size: 0], 0 {OPENSSL_INIT_SETTINGS*} [size: 0x18]) @ 0x000055555568137c
+~> change arg #0x1 {uint64_t} from 0x40 to 0x362
+ERR_clear_error() @ 0x00005555556813b6
+CRYPTO_get_ex_new_index(0 {int} [size: 0], 0 {longint} [size: 0], 0 {void*} [size: 0x1], 0 {CRYPTO_EX_new*} [size: 0x1], 0 {CRYPTO_EX_dup*} [size: 0x1], 0 {CRYPTO_EX_free*} [size: 0x1]) @ 0x00005555556813db
+~> change arg #0x1 {int} from 0 to 0xffffffffffffffa3
+ERR_peek_error() @ 0x000055555568ffcf
+ERR_peek_error_line_data(0 {char**} [size: 0x8], 0 {int*} [size: 0x4], 0x7fffffffdf70 {char**} [size: 0x8], 0x7fffffffdf60 {int*} [size: 0x4]) @ 0x000055555569002c
+~> change arg #0x2 {int*} from 0 to 0x7fffffffffffffff
+~> change arg #0x3 {char**} from 0x7fffffffdf70 to 0x7fffffffdd95
+~> change arg #0x4 {int*} from 0x7fffffffdf60 to 0x55555593a000
+ERR_error_string_n(0xf071007 {longunsignedint} [size: 0], 0x7fffffffdff4 {char*} [size: 0x1], 0x3dc {size_t} [size: 0]) @ 0x00005555556900cc
+~> change arg #0x1 {longunsignedint} from 0xf071007 to 0xf070e5c
+~> change arg #0x2 {char*} from 0x7fffffffdff4 to 0x7fffffffe20a
+~> change arg #0x3 {size_t} from 0x3dc to 0xfffffffffffffff9

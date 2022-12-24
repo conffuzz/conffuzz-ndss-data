@@ -1,0 +1,10 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==8836==ERROR: AddressSanitizer: SEGV on unknown address 0x555555730000 (pc 0x555555730000 bp 0x7fffffffd490 sp 0x7fffffffd438 T0)
+==8836==The signal is caused by a READ memory access.
+==8836==Hint: PC is at a non-executable region. Maybe a wild jump?
+    #0 0x555555730000 in backup_suffix (/usr/local/bin/rsync+0x1dc000)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/usr/local/bin/rsync+0x1dc000) in backup_suffix
+==8836==ABORTING

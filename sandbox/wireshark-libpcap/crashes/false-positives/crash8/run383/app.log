@@ -1,0 +1,45 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+File: /tmp/wireshark_eth0Y7MAL1.pcapng
+[I] Attempting to instrument callback capture_loop_write_packet_cb
+Got function argument numbers (3) from cache!
+dumpcap: An error occurred while writing to the file to which the capture was being saved
+("/tmp/wireshark_eth0Y7MAL1.pcapng"): Bad address.
+Please report this to the Wireshark developers as a bug.
+https://gitlab.com/wireshark/wireshark/issues
+(This is not a crash; please do not say, in your report, that it is a crash.)
+Packets: 1 Packets captured: 1
+Packets received/dropped on interface 'eth0': 0/1 (pcap:0/dumpcap:1/flushed:0/ps_ifdrop:0) (0.0%)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==130961==ERROR: AddressSanitizer: SEGV on unknown address 0x60209cfffff4 (pc 0x7fffe269f9c6 bp 0x60209d000004 sp 0x7fffffffbb00 T0)
+==130961==The signal is caused by a WRITE memory access.
+    #0 0x7fffe269f9c6 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffe269f9c6 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffe269f9c6 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffe269f9c6 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffe27254a7 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffe258dfa0 in pcap_close pcap.c:4068
+    #6 0x55555556c6e6 in capture_loop_close_input /root/wireshark-3.4.12/dumpcap.c:2880
+    #7 0x555555572d4e in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:4223
+    #8 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #9 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #10 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==130961==ABORTING

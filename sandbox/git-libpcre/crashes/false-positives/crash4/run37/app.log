@@ -1,0 +1,11 @@
+[I] Attempting to instrument callback pcre2_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback pcre2_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==1689==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x10102464c457f bp 0x7fffffffc210 sp 0x7fffffffc1e8 T0)
+==1689==The signal is caused by a READ memory access.
+==1689==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+AddressSanitizer:DEADLYSIGNAL
+AddressSanitizer: nested bug in the same thread, aborting.

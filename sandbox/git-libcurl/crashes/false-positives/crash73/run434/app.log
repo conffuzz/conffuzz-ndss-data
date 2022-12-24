@@ -1,0 +1,23 @@
+warning: curl_multi_add_handle failed: Out of memory
+error: Unable to start PROPFIND request on https://github.com/project-flexos/sqlite-splitsrc.git/
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==70548==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000488 (pc 0x7fffdf584508 bp 0x7fffffffd870 sp 0x7fffffffd850 T0)
+==70548==The signal is caused by a READ memory access.
+==70548==Hint: address points to the zero page.
+    #0 0x7fffdf584508 in engine_unlocked_finish crypto/engine/eng_init.c:56
+    #1 0x7fffdf584828 in ENGINE_finish crypto/engine/eng_init.c:102
+    #2 0x7fffe01426ba in ossl_close_all vtls/openssl.c:1597
+    #3 0x7fffe0158088 in Curl_ssl_close_all vtls/vtls.c:663
+    #4 0x7fffe011381b in Curl_close /root/curl-7.82.0/lib/url.c:404
+    #5 0x7fffe001c96e in curl_easy_cleanup /root/curl-7.82.0/lib/easy.c:735
+    #6 0x555555620d13 in http_cleanup /root/git-2.35.1/http.c:1114
+    #7 0x5555556381b6 in cmd_main /root/git-2.35.1/http-push.c:1962
+    #8 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #9 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #10 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #11 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV crypto/engine/eng_init.c:56 in engine_unlocked_finish
+==70548==ABORTING

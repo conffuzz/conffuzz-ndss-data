@@ -1,0 +1,78 @@
+[I] Attempting to instrument callback ngx_regex_malloc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+[I] Attempting to instrument callback ngx_regex_free
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+2022/11/03 23:10:22 [notice] 13579#0: using the "epoll" event method
+2022/11/03 23:10:22 [notice] 13579#0: nginx/1.21.6
+2022/11/03 23:10:22 [notice] 13579#0: built by gcc 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+2022/11/03 23:10:22 [notice] 13579#0: OS: Linux 6.0.0-1-amd64
+2022/11/03 23:10:22 [notice] 13579#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/03 23:10:24 [alert] 13579#0: *1 pcre2_match() failed: -349 on "/index.html" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:10:24 [alert] 13579#0: *2 pcre2_match() failed: -44 on "/" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:10:25 [info] 13579#0: *3 client 172.17.0.2 closed keepalive connection
+2022/11/03 23:10:25 [alert] 13579#0: *4 pcre2_match() failed: -32768 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:10:25 [alert] 13579#0: *5 pcre2_match() failed: -240 on "172.17.0.2" using "^(www\.)?(?<domain>.+)$" while reading client request headers, client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:10:26 [alert] 13579#0: *6 pcre2_match() failed: -991 on "/" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+2022/11/03 23:10:26 [alert] 13579#0: *7 pcre2_match() failed: -334 on "/" using "/", client: 172.17.0.2, server: ~^(www\.)?(?<domain>.+)$, request: "GET / HTTP/1.1", host: "172.17.0.2"
+=================================================================
+==13579==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60c000000b60 at pc 0x5555556a6716 bp 0x7fffffffe000 sp 0x7fffffffdff0
+READ of size 8 at 0x60c000000b60 thread T0
+    #0 0x5555556a6715 in ngx_regex_exec src/core/ngx_regex.c:442
+    #1 0x55555570e26b in ngx_http_regex_exec src/http/ngx_http_variables.c:2579
+    #2 0x5555556e0a0f in ngx_http_find_virtual_server src/http/ngx_http_request.c:2364
+    #3 0x5555556dfd0c in ngx_http_set_virtual_server src/http/ngx_http_request.c:2252
+    #4 0x5555556dd6a9 in ngx_http_process_host src/http/ngx_http_request.c:1816
+    #5 0x5555556db82f in ngx_http_process_request_headers src/http/ngx_http_request.c:1470
+    #6 0x5555556d9bbf in ngx_http_process_request_line src/http/ngx_http_request.c:1165
+    #7 0x5555556d58cf in ngx_http_wait_request_handler src/http/ngx_http_request.c:503
+    #8 0x55555567f9de in ngx_epoll_process_events src/event/modules/ngx_epoll_module.c:901
+    #9 0x555555650b78 in ngx_process_events_and_timers src/event/ngx_event.c:248
+    #10 0x555555675ae4 in ngx_single_process_cycle src/os/unix/ngx_process_cycle.c:300
+    #11 0x5555555c7ffd in main src/core/nginx.c:380
+    #12 0x7fffe065dd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #13 0x7fffe065de3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #14 0x5555555c7024 in _start (/root/nginx-1.21.6/objs/nginx+0x73024)
+
+0x60c000000b60 is located 32 bytes to the left of 120-byte region [0x60c000000b80,0x60c000000bf8)
+freed by thread T0 here:
+    #0 0x7fffe137b517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x7fffe078aab1  (/lib/x86_64-linux-gnu/libc.so.6+0x156ab1)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe137b867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x7fffe06b41a2 in __getdelim (/lib/x86_64-linux-gnu/libc.so.6+0x801a2)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow src/core/ngx_regex.c:442 in ngx_regex_exec
+Shadow bytes around the buggy address:
+  0x0c187fff8110: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x0c187fff8120: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x0c187fff8130: fd fd fd fd fd fd fd fa fa fa fa fa fa fa fa fa
+  0x0c187fff8140: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x0c187fff8150: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+=>0x0c187fff8160: fd fd fd fd fd fd fd fa fa fa fa fa[fa]fa fa fa
+  0x0c187fff8170: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x0c187fff8180: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c187fff8190: 00 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa
+  0x0c187fff81a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c187fff81b0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==13579==ABORTING

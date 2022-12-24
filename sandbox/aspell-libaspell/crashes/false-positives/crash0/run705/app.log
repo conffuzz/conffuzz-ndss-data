@@ -1,0 +1,182 @@
+[I] Retrieving information from DWARF for type vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>
+[E] Not able to find type information for vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>> in DWARF
+[I] Retrieving information from DWARF for type vector<acommon::notifier*,std::allocator<acommon::notifier*>>
+[E] Not able to find type information for vector<acommon::notifier*,std::allocator<acommon::notifier*>> in DWARF
+[I] Retrieving information from DWARF for type vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>
+[E] Not able to find type information for vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>> in DWARF
+[I] Retrieving information from DWARF for type vector<charconst*,std::allocator<charconst*>>
+[E] Not able to find type information for vector<charconst*,std::allocator<charconst*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::spellerdict*const*,std::vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>>
+[E] Not able to find type information for __normal_iterator<aspeller::spellerdict*const*,std::vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<char*,std::vector<char,std::allocator<char>>>
+[E] Not able to find type information for __normal_iterator<char*,std::vector<char,std::allocator<char>>> in DWARF
+[I] Retrieving information from DWARF for type hashtable<acommon::hashsetparms<charconst*,acommon::hash<charconst*>,std::equal_to<charconst*>,false>>
+[E] Not able to find type information for hashtable<acommon::hashsetparms<charconst*,acommon::hash<charconst*>,std::equal_to<charconst*>,false>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::string*,std::vector<acommon::string,std::allocator<acommon::string>>>
+[E] Not able to find type information for __normal_iterator<constacommon::string*,std::vector<acommon::string,std::allocator<acommon::string>>> in DWARF
+[I] Retrieving information from DWARF for type vector<acommon::cacheable*,std::allocator<acommon::cacheable*>>
+[E] Not able to find type information for vector<acommon::cacheable*,std::allocator<acommon::cacheable*>> in DWARF
+[I] Retrieving information from DWARF for type vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>
+[E] Not able to find type information for vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::dictionary*const*,std::vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>>
+[E] Not able to find type information for __normal_iterator<aspeller::dictionary*const*,std::vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::individualfilter**,std::vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>>
+[E] Not able to find type information for __normal_iterator<acommon::individualfilter**,std::vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>> in DWARF
+[I] Retrieving information from DWARF for type new_allocator<charconst*>
+[E] Not able to find type information for new_allocator<charconst*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::suggestrepl*,std::vector<aspeller::suggestrepl,std::allocator<aspeller::suggestrepl>>>
+[E] Not able to find type information for __normal_iterator<aspeller::suggestrepl*,std::vector<aspeller::suggestrepl,std::allocator<aspeller::suggestrepl>>> in DWARF
+[I] Retrieving information from DWARF for type char*&
+[E] Not able to find type information for char*& in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::filtermode::magicstring*,std::vector<acommon::filtermode::magicstring,std::allocator<acommon::filtermode::magicstring>>>
+[E] Not able to find type information for __normal_iterator<constacommon::filtermode::magicstring*,std::vector<acommon::filtermode::magicstring,std::allocator<acommon::filtermode::magicstring>>> in DWARF
+[I] Retrieving information from DWARF for type blockslist<std::pair<charconst*const,acommon::vector<charconst*>>>
+[E] Not able to find type information for blockslist<std::pair<charconst*const,acommon::vector<charconst*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::filtermode*,std::vector<acommon::filtermode,std::allocator<acommon::filtermode>>>
+[E] Not able to find type information for __normal_iterator<acommon::filtermode*,std::vector<acommon::filtermode,std::allocator<acommon::filtermode>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::filtermode::magicstring*,std::vector<acommon::filtermode::magicstring,std::allocator<acommon::filtermode::magicstring>>>
+[E] Not able to find type information for __normal_iterator<acommon::filtermode::magicstring*,std::vector<acommon::filtermode::magicstring,std::allocator<acommon::filtermode::magicstring>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<int*,std::vector<int,std::allocator<int>>>
+[E] Not able to find type information for __normal_iterator<int*,std::vector<int,std::allocator<int>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::configmodule*,std::vector<acommon::configmodule,std::allocator<acommon::configmodule>>>
+[E] Not able to find type information for __normal_iterator<constacommon::configmodule*,std::vector<acommon::configmodule,std::allocator<acommon::configmodule>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::cacheable**,std::vector<acommon::cacheable*,std::allocator<acommon::cacheable*>>>
+[E] Not able to find type information for __normal_iterator<acommon::cacheable**,std::vector<acommon::cacheable*,std::allocator<acommon::cacheable*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::normtables::tounitable*,std::vector<acommon::normtables::tounitable,std::allocator<acommon::normtables::tounitable>>>
+[E] Not able to find type information for __normal_iterator<acommon::normtables::tounitable*,std::vector<acommon::normtables::tounitable,std::allocator<acommon::normtables::tounitable>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constaspeller::dictionary*const*,std::vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>>
+[E] Not able to find type information for __normal_iterator<constaspeller::dictionary*const*,std::vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>> in DWARF
+[I] Retrieving information from DWARF for type hashsetparms<charconst*,acommon::hash<charconst*>,std::equal_to<charconst*>,false>
+[E] Not able to find type information for hashsetparms<charconst*,acommon::hash<charconst*>,std::equal_to<charconst*>,false> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::dictext*,std::vector<acommon::dictext,std::allocator<acommon::dictext>>>
+[E] Not able to find type information for __normal_iterator<constacommon::dictext*,std::vector<acommon::dictext,std::allocator<acommon::dictext>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constaspeller::dictionary**,std::vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>>
+[E] Not able to find type information for __normal_iterator<constaspeller::dictionary**,std::vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::objstack::node**,std::vector<acommon::objstack::node*,std::allocator<acommon::objstack::node*>>>
+[E] Not able to find type information for __normal_iterator<acommon::objstack::node**,std::vector<acommon::objstack::node*,std::allocator<acommon::objstack::node*>>> in DWARF
+[I] Retrieving information from DWARF for type genericcopyptr<acommon::enumeration<aspeller::wordentry*>,acommon::cloneptr<acommon::enumeration<aspeller::wordentry*>>::parms>
+[E] Not able to find type information for genericcopyptr<acommon::enumeration<aspeller::wordentry*>,acommon::cloneptr<acommon::enumeration<aspeller::wordentry*>>::parms> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::spellerdict**,std::vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>>
+[E] Not able to find type information for __normal_iterator<aspeller::spellerdict**,std::vector<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::filtermode::keyvalue*,std::vector<acommon::filtermode::keyvalue,std::allocator<acommon::filtermode::keyvalue>>>
+[E] Not able to find type information for __normal_iterator<acommon::filtermode::keyvalue*,std::vector<acommon::filtermode::keyvalue,std::allocator<acommon::filtermode::keyvalue>>> in DWARF
+[I] Retrieving information from DWARF for type hash<charconst*>
+[E] Not able to find type information for hash<charconst*> in DWARF
+[I] Retrieving information from DWARF for type blockslist<charconst*>
+[E] Not able to find type information for blockslist<charconst*> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>
+[E] Not able to find type information for _vector_base<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>> in DWARF
+[I] Retrieving information from DWARF for type hashtable<acommon::hashmapparms<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>,false>>
+[E] Not able to find type information for hashtable<acommon::hashmapparms<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>,false>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::normtables::tounitable*,std::vector<acommon::normtables::tounitable,std::allocator<acommon::normtables::tounitable>>>
+[E] Not able to find type information for __normal_iterator<constacommon::normtables::tounitable*,std::vector<acommon::normtables::tounitable,std::allocator<acommon::normtables::tounitable>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::filtermode*,std::vector<acommon::filtermode,std::allocator<acommon::filtermode>>>
+[E] Not able to find type information for __normal_iterator<constacommon::filtermode*,std::vector<acommon::filtermode,std::allocator<acommon::filtermode>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::string*,std::vector<acommon::string,std::allocator<acommon::string>>>
+[E] Not able to find type information for __normal_iterator<acommon::string*,std::vector<acommon::string,std::allocator<acommon::string>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<intconst*,std::vector<int,std::allocator<int>>>
+[E] Not able to find type information for __normal_iterator<intconst*,std::vector<int,std::allocator<int>>> in DWARF
+[I] Retrieving information from DWARF for type vector<acommon::objstack::node*,std::allocator<acommon::objstack::node*>>
+[E] Not able to find type information for vector<acommon::objstack::node*,std::allocator<acommon::objstack::node*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<constacommon::filtermode::keyvalue*,std::vector<acommon::filtermode::keyvalue,std::allocator<acommon::filtermode::keyvalue>>>
+[E] Not able to find type information for __normal_iterator<constacommon::filtermode::keyvalue*,std::vector<acommon::filtermode::keyvalue,std::allocator<acommon::filtermode::keyvalue>>> in DWARF
+[I] Retrieving information from DWARF for type allocator<charconst*>
+[E] Not able to find type information for allocator<charconst*> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<acommon::notifier*,std::allocator<acommon::notifier*>>
+[E] Not able to find type information for _vector_base<acommon::notifier*,std::allocator<acommon::notifier*>> in DWARF
+[I] Retrieving information from DWARF for type cacheable*&
+[E] Not able to find type information for cacheable*& in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<charconst**,std::vector<charconst*,std::allocator<charconst*>>>
+[E] Not able to find type information for __normal_iterator<charconst**,std::vector<charconst*,std::allocator<charconst*>>> in DWARF
+[I] Retrieving information from DWARF for type posiberr<constacommon::dictinfolist*>
+[E] Not able to find type information for posiberr<constacommon::dictinfolist*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::keyinfo*,std::vector<acommon::keyinfo,std::allocator<acommon::keyinfo>>>
+[E] Not able to find type information for __normal_iterator<acommon::keyinfo*,std::vector<acommon::keyinfo,std::allocator<acommon::keyinfo>>> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>>
+[E] Not able to find type information for _vector_base<aspeller::spellerdict*,std::allocator<aspeller::spellerdict*>> in DWARF
+[I] Retrieving information from DWARF for type ht_constiterator<charconst*>
+[E] Not able to find type information for ht_constiterator<charconst*> in DWARF
+[I] Retrieving information from DWARF for type blockslist<constaspeller::conds*>
+[E] Not able to find type information for blockslist<constaspeller::conds*> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>
+[E] Not able to find type information for _vector_base<aspeller::dictionary*,std::allocator<aspeller::dictionary*>> in DWARF
+[I] Retrieving information from DWARF for type ht_iterator<charconst*>
+[E] Not able to find type information for ht_iterator<charconst*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::notifier**,std::vector<acommon::notifier*,std::allocator<acommon::notifier*>>>
+[E] Not able to find type information for __normal_iterator<acommon::notifier**,std::vector<acommon::notifier*,std::allocator<acommon::notifier*>>> in DWARF
+[I] Retrieving information from DWARF for type new_allocator<constaspeller::dictionary*>
+[E] Not able to find type information for new_allocator<constaspeller::dictionary*> in DWARF
+[I] Retrieving information from DWARF for type hashmapparms<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>,false>
+[E] Not able to find type information for hashmapparms<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>,false> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<charconst*,std::allocator<charconst*>>
+[E] Not able to find type information for _vector_base<charconst*,std::allocator<charconst*>> in DWARF
+[I] Retrieving information from DWARF for type individualfilter*&
+[E] Not able to find type information for individualfilter*& in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<unsignedint*,std::vector<unsignedint,std::allocator<unsignedint>>>
+[E] Not able to find type information for __normal_iterator<unsignedint*,std::vector<unsignedint,std::allocator<unsignedint>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::dictext*,std::vector<acommon::dictext,std::allocator<acommon::dictext>>>
+[E] Not able to find type information for __normal_iterator<acommon::dictext*,std::vector<acommon::dictext,std::allocator<acommon::dictext>>> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<acommon::cacheable*,std::allocator<acommon::cacheable*>>
+[E] Not able to find type information for _vector_base<acommon::cacheable*,std::allocator<acommon::cacheable*>> in DWARF
+[I] Retrieving information from DWARF for type _vector_base<acommon::objstack::node*,std::allocator<acommon::objstack::node*>>
+[E] Not able to find type information for _vector_base<acommon::objstack::node*,std::allocator<acommon::objstack::node*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::configmodule*,std::vector<acommon::configmodule,std::allocator<acommon::configmodule>>>
+[E] Not able to find type information for __normal_iterator<acommon::configmodule*,std::vector<acommon::configmodule,std::allocator<acommon::configmodule>>> in DWARF
+[I] Retrieving information from DWARF for type cloneptr<acommon::enumeration<aspeller::wordentry*>>
+[E] Not able to find type information for cloneptr<acommon::enumeration<aspeller::wordentry*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::individualfilter*const*,std::vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>>
+[E] Not able to find type information for __normal_iterator<acommon::individualfilter*const*,std::vector<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>> in DWARF
+[I] Retrieving information from DWARF for type ht_constiterator<std::pair<charconst*const,acommon::vector<charconst*>>>
+[E] Not able to find type information for ht_constiterator<std::pair<charconst*const,acommon::vector<charconst*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::dictionary**,std::vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>>
+[E] Not able to find type information for __normal_iterator<aspeller::dictionary**,std::vector<aspeller::dictionary*,std::allocator<aspeller::dictionary*>>> in DWARF
+[I] Retrieving information from DWARF for type allocator<constaspeller::dictionary*>
+[E] Not able to find type information for allocator<constaspeller::dictionary*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::notifier*const*,std::vector<acommon::notifier*,std::allocator<acommon::notifier*>>>
+[E] Not able to find type information for __normal_iterator<acommon::notifier*const*,std::vector<acommon::notifier*,std::allocator<acommon::notifier*>>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::cacheable*const*,std::vector<acommon::cacheable*,std::allocator<acommon::cacheable*>>>
+[E] Not able to find type information for __normal_iterator<acommon::cacheable*const*,std::vector<acommon::cacheable*,std::allocator<acommon::cacheable*>>> in DWARF
+[I] Retrieving information from DWARF for type vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>>
+[E] Not able to find type information for vector<constaspeller::dictionary*,std::allocator<constaspeller::dictionary*>> in DWARF
+[I] Retrieving information from DWARF for type node*&
+[E] Not able to find type information for node*& in DWARF
+[I] Retrieving information from DWARF for type _vector_base<acommon::individualfilter*,std::allocator<acommon::individualfilter*>>
+[E] Not able to find type information for _vector_base<acommon::individualfilter*,std::allocator<acommon::individualfilter*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<charconst*const*,std::vector<charconst*,std::allocator<charconst*>>>
+[E] Not able to find type information for __normal_iterator<charconst*const*,std::vector<charconst*,std::allocator<charconst*>>> in DWARF
+[I] Retrieving information from DWARF for type pair<acommon::ht_iterator<charconst*>,bool>
+[E] Not able to find type information for pair<acommon::ht_iterator<charconst*>,bool> in DWARF
+[I] Retrieving information from DWARF for type ht_iterator<constaspeller::conds*>
+[E] Not able to find type information for ht_iterator<constaspeller::conds*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<double*,std::vector<double,std::allocator<double>>>
+[E] Not able to find type information for __normal_iterator<double*,std::vector<double,std::allocator<double>>> in DWARF
+[I] Retrieving information from DWARF for type equal_to<charconst*>
+[E] Not able to find type information for equal_to<charconst*> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<aspeller::charpair*,std::vector<aspeller::charpair,std::allocator<aspeller::charpair>>>
+[E] Not able to find type information for __normal_iterator<aspeller::charpair*,std::vector<aspeller::charpair,std::allocator<aspeller::charpair>>> in DWARF
+[I] Retrieving information from DWARF for type vector<charconst*>
+[E] Not able to find type information for vector<charconst*> in DWARF
+[I] Retrieving information from DWARF for type posiberr<constacommon::keyinfo*>
+[E] Not able to find type information for posiberr<constacommon::keyinfo*> in DWARF
+[I] Retrieving information from DWARF for type ht_iterator<std::pair<charconst*const,acommon::vector<charconst*>>>
+[E] Not able to find type information for ht_iterator<std::pair<charconst*const,acommon::vector<charconst*>>> in DWARF
+[I] Retrieving information from DWARF for type hash_map<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>>
+[E] Not able to find type information for hash_map<charconst*,acommon::vector<charconst*>,acommon::hash<charconst*>,std::equal_to<charconst*>> in DWARF
+[I] Retrieving information from DWARF for type __normal_iterator<acommon::filterchar*,std::vector<acommon::filterchar,std::allocator<acommon::filterchar>>>
+[E] Not able to find type information for __normal_iterator<acommon::filterchar*,std::vector<acommon::filterchar,std::allocator<acommon::filterchar>>> in DWARF
+[I] Attempting to instrument callback _ZN8aspeller11SpellerImpl14ConfigNotifier8sug_modeEPS0_PKc
+[E] {instrumentation.cpp:469} Got function argument numbers (2) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==2262048==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000001b6 (pc 0x7fffe1cdd12d bp 0x7fffffffdb70 sp 0x7fffffffda80 T0)
+==2262048==The signal is caused by a READ memory access.
+==2262048==Hint: address points to the zero page.
+    #0 0x7fffe1cdd12d in acommon::Config::set_committed_state(bool) common/config.cpp:1354
+    #1 0x5555555718da in main prog/aspell.cpp:265
+    #2 0x7fffe153ad8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #3 0x7fffe153ae3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #4 0x555555570bd4 in _start (/usr/local/bin/aspell+0x1cbd4)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV common/config.cpp:1354 in acommon::Config::set_committed_state(bool)
+==2262048==ABORTING

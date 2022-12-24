@@ -1,0 +1,86 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+pcre2_general_context_create_8(0x5555556a69bb {*(size_t,*)*} [size: 0x1], 0x5555556a6a67 {void(*,*)*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00005555556a596e
+~> instrumenting 0x00005555556a69bb (ngx_regex_malloc, 0x2 arg(s))
+~> instrumenting 0x00005555556a6a67 (ngx_regex_free, 0x2 arg(s))
+~> detected cb call ngx_regex_malloc(0x18 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe118539b
+pcre2_compile_context_create_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a5998
+~> detected cb call ngx_regex_malloc(0x48 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11852dd
+pcre2_general_context_free_8(0x60300002a820 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a59df
+~> detected cb call ngx_regex_free(0x60300002a820 {void*} [size: 0x1], 0 {void*} [size: 0x1]) @ 0x00007fffe11857d8
+pcre2_compile_8(0x62900001974a {PCRE2_SPTR8} [size: 0], 0x17 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x7fffffffcf70 {int*} [size: 0x4], 0x7fffffffcf80 {size_t*} [size: 0x8], 0x6070000003a0 {pcre2_compile_context_8*} [size: 0x48]) @ 0x00005555556a5c7c
+~> detected cb call ngx_regex_malloc(0xb5 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11842fa
+pcre2_pattern_info_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x4 {uint32_t} [size: 0], 0x7fffffffd228 {void*} [size: 0x1]) @ 0x00005555556a6111
+pcre2_pattern_info_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x11 {uint32_t} [size: 0], 0x7fffffffd22c {void*} [size: 0x1]) @ 0x00005555556a61a0
+pcre2_pattern_info_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x12 {uint32_t} [size: 0], 0x7fffffffd230 {void*} [size: 0x1]) @ 0x00005555556a6237
+pcre2_pattern_info_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x13 {uint32_t} [size: 0], 0x7fffffffd238 {void*} [size: 0x1]) @ 0x00005555556a6275
+pcre2_compile_8(0x62900001af94 {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0x8 {uint32_t} [size: 0], 0x7fffffffce50 {int*} [size: 0x4], 0x7fffffffce60 {size_t*} [size: 0x8], 0x6070000003a0 {pcre2_compile_context_8*} [size: 0x48]) @ 0x00005555556a5c7c
+~> detected cb call ngx_regex_malloc(0x91 {size_t} [size: 0], 0 {void*} [size: 0x1]) @ 0x00007fffe11842fa
+pcre2_pattern_info_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x4 {uint32_t} [size: 0], 0x7fffffffd0d8 {void*} [size: 0x1]) @ 0x00005555556a6111
+pcre2_match_data_create_8(0x3 {uint32_t} [size: 0], 0 {pcre2_general_context_8*} [size: 0x18]) @ 0x00005555556a65c6
+pcre2_match_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x619000004b96 {PCRE2_SPTR8} [size: 0], 0xa {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> failure to write 0x3 bytes at address 0x000060c00004430d
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x619000004b84 {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x62100001c5d1 {PCRE2_SPTR8} [size: 0], 0xb {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x619000005596 {PCRE2_SPTR8} [size: 0], 0xa {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x619000005584 {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x6210000201d1 {PCRE2_SPTR8} [size: 0], 0xb {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+pcre2_match_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x619000005f96 {PCRE2_SPTR8} [size: 0], 0xa {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+~> failure to write 0x7 bytes at address 0x000060c0000e160e
+~> failure to write 0x5 bytes at address 0x000060c0000da248
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x619000005f84 {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> failure to write 0x7 bytes at address 0x000060c000095414
+~> failure to write 0x8 bytes at address 0x000060c000069c95
+~> write {pcre2_code_8*} 0 -> 0 at shared buffer 0x000062900001c5bf
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+~> change ret {uint32_t} from 0x3 to 0x26f
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+~> failure to write 0x5 bytes at address 0x000060c0000d249f
+~> failure to write 0x3 bytes at address 0x000060c0000f5e51
+~> failure to write 0x7 bytes at address 0x000060c00008781f
+~> change ret {size_t*} from 0x60c000000c90 to 0x11
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x6210000229d1 {PCRE2_SPTR8} [size: 0], 0xb {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> failure to write 0x8 bytes at address 0x000060c0000fddb2
+~> change ret {int} from 0x1 to 0x10
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+~> failure to write 0x7 bytes at address 0x000060c00007335a
+~> change ret {uint32_t} from 0x3 to 0xffffffffffffffc0
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+~> failure to write 0x5 bytes at address 0x000060c000089e32
+~> write {pcre2_match_data_8*} 0 -> 0 at shared buffer 0x000060c000004a38
+~> change ret {size_t*} from 0x60c000000c90 to 0x7ffffffde190
+pcre2_match_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x619000006996 {PCRE2_SPTR8} [size: 0], 0xa {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> write {pcre2_code_8*} 0xffff -> 0xfffffffffffffc7b at shared buffer 0x00006290000197d6
+~> write {pcre2_code_8*} 0 -> 0xffffffffffffd8f0 at shared buffer 0x0000629000019790
+~> write {pcre2_code_8*} 0 -> 0 at shared buffer 0x0000629000019776
+~> change ret {int} from 0x3 to 0x3e8
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+~> failure to write 0x8 bytes at address 0x000060c00003e7b9
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+~> failure to write 0x5 bytes at address 0x000060c0000f695d
+~> failure to write 0x3 bytes at address 0x000060c00006bfde
+~> failure to write 0x5 bytes at address 0x000060c0000d2a16
+pcre2_match_8(0x62900001c588 {pcre2_code_8*} [size: 0x88], 0x619000006984 {PCRE2_SPTR8} [size: 0], 0x1 {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> change ret {int} from 0x1 to 0xffffffffffffff9d
+pcre2_match_8(0x629000019768 {pcre2_code_8*} [size: 0x88], 0x619000006e96 {PCRE2_SPTR8} [size: 0], 0xa {size_t} [size: 0], 0 {size_t} [size: 0], 0 {uint32_t} [size: 0], 0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050], 0 {pcre2_match_context_8*} [size: 0x50]) @ 0x00005555556a6662
+~> failure to write 0x2 bytes at address 0x000060c00004631d
+~> failure to write 0x2 bytes at address 0x000060c00002774c
+pcre2_get_ovector_count_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a6686
+pcre2_get_ovector_pointer_8(0x60c000000c40 {pcre2_match_data_8*} [size: 0x100050]) @ 0x00005555556a669b
+~> change ret {size_t*} from 0x60c000000c90 to 0x11

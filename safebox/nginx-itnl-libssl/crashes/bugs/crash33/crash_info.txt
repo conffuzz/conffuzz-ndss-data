@@ -1,0 +1,2 @@
+fault_location /usr/local/lib/libcrypto.so.1.1
+cap_read

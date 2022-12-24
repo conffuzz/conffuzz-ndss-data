@@ -1,0 +1,7 @@
+    #0 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #2 0xaddr in exif_mbstrlen /root/exif/exif/utils.c:126
+    #3 0xaddr in action_tag_table /root/exif/exif/actions.c:436
+    #4 0xaddr in main /root/exif/exif/main.c:454
+    #5 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #6 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #7 0xaddr in _start (/usr/local/bin/exif+0xaddr)

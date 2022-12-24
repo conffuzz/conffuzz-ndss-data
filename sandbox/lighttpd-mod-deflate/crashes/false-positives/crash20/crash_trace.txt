@@ -1,0 +1,6 @@
+    #0 0xaddr in buffer_free /root/lighttpd-1.4.67/src/buffer.c:22
+    #1 0xaddr in server_free /root/lighttpd-1.4.67/src/server.c:356
+    #2 0xaddr in main /root/lighttpd-1.4.67/src/server.c:2119
+    #3 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/root/lighttpd-1.4.67/src/lighttpd+0xaddr)

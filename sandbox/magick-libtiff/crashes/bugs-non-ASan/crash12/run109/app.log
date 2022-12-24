@@ -1,0 +1,47 @@
+[I] Recursing from tifffield into _TIFFField
+[I] Recursing from tiffcodec into structure 
+[E] Not able to find type information for tiffcodec in DWARF
+[I] Recursing from tiffrgbaimage into _TIFFRGBAImage
+[I] Recursing from tiffcielabtorgb into structure 
+[E] Not able to find type information for tiffcielabtorgb in DWARF
+[I] Recursing from tiffycbcrtorgb into structure 
+[E] Not able to find type information for tiffycbcrtorgb in DWARF
+[I] Recursing from tifffieldarray into _TIFFFieldArray
+[I] Recursing from uint16_t into __uint16_t
+[I] Recursing from __uint16_t into short unsigned int
+[E] Not able to find type information for uint16_t in DWARF
+[I] Recursing from tifffieldinfo into structure 
+[E] Not able to find type information for tifffieldinfo in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from tiffdisplay into structure 
+[E] Not able to find type information for tiffdisplay in DWARF
+[I] Attempting to instrument callback TIFFErrors
+Got function argument numbers (3) from cache!
+Tried and failed to write to 0x00007fffb9b79d80 (1 bytes)
+Tried and failed to write to 0x00007fffb9b79d80 (1 bytes)
+[I] Attempting to instrument callback TIFFWarnings
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFTagExtender
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFReadBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFWriteBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFSeekBlob
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFCloseBlob
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFGetBlobSize
+Got function argument numbers (1) from cache!
+[I] Attempting to instrument callback TIFFMapBlob
+[E] Not able to find type information for tdata_t in DWARF
+[I] Recursing from toff_t into uint64_t
+[I] Recursing from uint64_t into __uint64_t
+[I] Recursing from __uint64_t into long unsigned int
+[E] Not able to find type information for toff_t in DWARF
+Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback TIFFUnmapBlob
+Got function argument numbers (3) from cache!
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==74384==ERROR: AddressSanitizer: UNKNOWN SIGNAL on unknown address 0x000000000000 (pc 0xfffffffffffffff7 bp 0x7fffffff70f0 sp 0x7fffffff70d8 T0)

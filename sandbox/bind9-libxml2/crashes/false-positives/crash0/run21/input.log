@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+xmlInitParser() @ 0x00005555555c8ef1
+xmlIsMainThread() @ 0x00007fffe0d8bb92
+~> change ret {int} from 0x1 to 0xffffffffffffff41
+xmlNewTextWriterDoc(0x7fffd0193760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+~> write {xmlDocPtr*} 0x30 -> 0 at shared buffer 0x00007fffd0193760
+~> change ret {xmlTextWriterPtr} from 0x60700003f250 to 0
+xmlFreeDoc(0x60f000017800 {xmlDocPtr} [size: 0]) @ 0x0000555555657152

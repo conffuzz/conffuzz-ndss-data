@@ -1,0 +1,18 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==345711==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x7fffe152bb56 bp 0x7fffffffe0e0 sp 0x7fffffffe0b0 T0)
+==345711==The signal is caused by a READ memory access.
+==345711==Hint: this fault was caused by a dereference of a high value address (see register values below).  Dissassemble the provided pc to learn which register was used.
+    #0 0x7fffe152bb56 in deinit_stream_obj /root/libgpg-error-1.41/src/estream.c:2149
+    #1 0x7fffe152bd98 in create_stream /root/libgpg-error-1.41/src/estream.c:2270
+    #2 0x7fffe152db19 in do_fpopen /root/libgpg-error-1.41/src/estream.c:3489
+    #3 0x7fffe152de3b in _gpgrt__get_std_stream /root/libgpg-error-1.41/src/estream.c:3663
+    #4 0x7fffe1534db4 in _gpgrt_get_std_stream /root/libgpg-error-1.41/src/visibility.c:305
+    #5 0x555555790c0a in _init_common_subsystems /root/gnupg-2.2.27/common/init.c:209
+    #6 0x5555555cc127 in main /root/gnupg-2.2.27/g10/gpg.c:2308
+    #7 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #8 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /root/libgpg-error-1.41/src/estream.c:2149 in deinit_stream_obj
+==345711==ABORTING

@@ -1,0 +1,19 @@
+    #0 0xaddr in Poppler::Page::formFields() const /root/poppler/qt5/src/poppler-page.cc:894
+    #1 0xaddr in PDFGenerator::getFormFields(Poppler::Page*) /root/okular/generators/poppler/generator_pdf.cpp:1796
+    #2 0xaddr in PDFGenerator::loadPages(QVector<Okular::Page*>&, int, bool) /root/okular/generators/poppler/generator_pdf.cpp:796
+    #3 0xaddr in PDFGenerator::init(QVector<Okular::Page*>&, QString const&) /root/okular/generators/poppler/generator_pdf.cpp:658
+    #4 0xaddr in PDFGenerator::loadDocumentWithPassword(QString const&, QVector<Okular::Page*>&, QString const&) /root/okular/generators/poppler/generator_pdf.cpp:601
+    #5 0xaddr in Okular::DocumentPrivate::openDocumentInternal(KPluginMetaData const&, bool, QString const&, QByteArray const&, QString const&) /root/okular/core/document.cpp:889
+    #6 0xaddr in Okular::Document::openDocument(QString const&, QUrl const&, QMimeType const&, QString const&) /root/okular/core/document.cpp:2329
+    #7 0xaddr in Okular::Part::doOpenFile(QMimeType const&, QString const&, bool*) /root/okular/part/part.cpp:1413
+    #8 0xaddr in Okular::Part::openFile() /root/okular/part/part.cpp:1531
+    #9 0xaddr  (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #10 0xaddr in KParts::ReadOnlyPart::openUrl(QUrl const&) (/usr/lib/x86_64-linux-gnu/libKF5Parts.so.5+0xaddr)
+    #11 0xaddr in Okular::Part::openUrl(QUrl const&, bool) /root/okular/part/part.cpp:1763
+    #12 0xaddr in Okular::Part::openUrl(QUrl const&) /root/okular/part/part.cpp:1712
+    #13 0xaddr in Shell::openUrl(QUrl const&, QString const&) /root/okular/shell/shell.cpp:285
+    #14 0xaddr in Shell::openDocument(QUrl const&, QString const&) /root/okular/shell/shell.cpp:236
+    #15 0xaddr in Okular::main(QStringList const&, QString const&) /root/okular/shell/okular_main.cpp:167
+    #16 0xaddr in main /root/okular/shell/main.cpp:91
+    #17 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #18 0xaddr in _start (/root/okular/build/bin/okular+0xaddr)

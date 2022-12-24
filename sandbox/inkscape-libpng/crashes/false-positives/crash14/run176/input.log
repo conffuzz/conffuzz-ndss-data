@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+png_create_write_struct(0x7fffe214e100 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17102d2
+~> change ret from 0x61a00004e680 to 0x61a00004e9fb
+png_create_info_struct(0x61a00004e9fb [size: 0]) @ 0x00007fffe17102ea
+png_set_longjmp_fn(0x61a00004e9fb [size: 0], 0x7fffe27e5b80 [size: 0], 0xc8 [size: 0]) @ 0x00007fffe1710312
+~> instrumenting 0x00007fffe27e5b80 (__longjmp_chk, 0 arg(s))
+png_init_io(0x61a00004e9fb [size: 0], 0x6150000da280 [size: 0]) @ 0x00007fffe1710377
+png_set_compression_level(0x61a00004e9fb [size: 0], 0x6 [size: 0]) @ 0x00007fffe1710386
+png_set_IHDR(0x61a00004e9fb [size: 0], 0x613000508740 [size: 0], 0x330 [size: 0], 0x420 [size: 0], 0x8 [size: 0], 0x6 [size: 0], 0 [size: 0], 0 [size: 0], 0 [size: 0]) @ 0x00007fffe17103c1
+~> detected cb call __longjmp_chk() @ 0x00007fffdf87d87e

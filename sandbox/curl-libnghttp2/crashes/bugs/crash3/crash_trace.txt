@@ -1,0 +1,6 @@
+    #0 0xaddr in curl_version_info /root/curl-7.82.0/lib/version.c:556
+    #1 0xaddr in get_libcurl_info /root/curl-7.82.0/src/tool_libinfo.c:85
+    #2 0xaddr in main_init /root/curl-7.82.0/src/tool_main.c:164
+    #3 0xaddr in main /root/curl-7.82.0/src/tool_main.c:271
+    #4 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #5 0xaddr in _start (/usr/local/bin/curl+0xaddr)

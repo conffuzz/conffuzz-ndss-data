@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+exif_log_new() @ 0x0000555555566eda
+~> failure to write 0x3 bytes at address 0x0000605ffffffdaa
+~> failure to write 0x7 bytes at address 0x0000605ffffffd94
+~> failure to write 0x5 bytes at address 0x0000605ffffffdac
+~> change ret {ExifLog*} from 0x603000000160 to 0x6030000003bf
+exif_log_set_func(0x6030000003bf {ExifLog*} [size: 0x20], 0x555555566116 {ExifLogFunc} [size: 0], 0x555555579340 {void*} [size: 0x1]) @ 0x0000555555566f01
+~> instrumenting 0x0000555555566116 (log_func, 0x6 arg(s))

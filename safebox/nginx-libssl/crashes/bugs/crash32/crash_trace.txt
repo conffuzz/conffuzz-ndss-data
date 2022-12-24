@@ -1,0 +1,12 @@
+    #0 0xaddr in doapr_outch crypto/bio/b_print.c:843
+    #1 0xaddr in fmtstr crypto/bio/b_print.c:401
+    #2 0xaddr in _dopr crypto/bio/b_print.c:308
+    #3 0xaddr in BIO_vsnprintf crypto/bio/b_print.c:917
+    #4 0xaddr in BIO_snprintf crypto/bio/b_print.c:906
+    #5 0xaddr in ERR_error_string_n crypto/err/err.c:615
+    #6 0xaddr in ngx_ssl_error src/event/ngx_event_openssl.c:3503
+    #7 0xaddr in ngx_ssl_init src/event/ngx_event_openssl.c:191
+    #8 0xaddr in main src/core/nginx.c:241
+    #9 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #10 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #11 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

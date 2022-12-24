@@ -1,0 +1,9 @@
+    #5 0xaddr in file_clearbuf /root/file-5.41/src/funcs.c:66
+    #6 0xaddr in file_reset /root/file-5.41/src/funcs.c:506
+    #7 0xaddr in file_apprentice /root/file-5.41/src/apprentice.c:687
+    #8 0xaddr in magic_load /root/file-5.41/src/magic.c:304
+    #9 0xaddr in load /root/file-5.41/src/file.c:481
+    #10 0xaddr in main /root/file-5.41/src/file.c:403
+    #11 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #12 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #13 0xaddr in _start (/usr/local/bin/file+0xaddr)

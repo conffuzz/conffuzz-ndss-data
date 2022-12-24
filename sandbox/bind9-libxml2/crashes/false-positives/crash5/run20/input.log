@@ -1,0 +1,11 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+xmlInitParser() @ 0x00005555555c8ef1
+xmlIsMainThread() @ 0x00007fffe0d8bb92
+~> change ret {int} from 0x1 to 0xfffffffffffffd89
+xmlNewTextWriterDoc(0x7fffcef27760 {xmlDocPtr*} [size: 0x1], 0 {int} [size: 0]) @ 0x0000555555654af4
+~> write {xmlDocPtr*} 0x20 -> 0xa300000000000000 at shared buffer 0x00007fffcef27760
+~> change ret {xmlTextWriterPtr} from 0x60700003ba50 to 0x60700003b849
+xmlTextWriterStartDocument(0x60700003b849 {xmlTextWriterPtr} [size: 0], 0 {char*} [size: 0x1], 0x5555556a5fc0 {char*} [size: 0x1], 0 {char*} [size: 0x1]) @ 0x0000555555654b29

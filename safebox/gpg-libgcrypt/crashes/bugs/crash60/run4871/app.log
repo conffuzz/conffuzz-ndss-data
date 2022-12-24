@@ -1,0 +1,56 @@
+[I] Attempting to instrument callback my_gcry_logger
+[E] {instrumentation.cpp:473} Got function argument numbers (4) from cache!
+[I] Attempting to instrument callback my_gcry_fatalerror_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+[I] Attempting to instrument callback my_gcry_outofcore_handler
+[E] {instrumentation.cpp:473} Got function argument numbers (3) from cache!
+=================================================================
+==406537==ERROR: AddressSanitizer: global-buffer-overflow on address 0x5555557b5002 at pc 0x7fffe196bb11 bp 0x7fffffffe130 sp 0x7fffffffd8e0
+READ of size 1 at 0x5555557b5002 thread T0
+    #0 0x7fffe196bb10 in __interceptor_strlen ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:370
+    #1 0x7fffe15a5998 in _gcry_strdup_core /root/libgcrypt-1.9.2/src/global.c:1111
+    #2 0x7fffe15a5dab in _gcry_xstrdup /root/libgcrypt-1.9.2/src/global.c:1229
+    #3 0x7fffe15a2caf in gcry_xstrdup /root/libgcrypt-1.9.2/src/visibility.c:1586
+    #4 0x555555625593 in parse_auto_key_locate /root/gnupg-2.2.27/g10/getkey.c:4170
+    #5 0x5555555cc6af in main /root/gnupg-2.2.27/g10/gpg.c:2455
+    #6 0x7fffe1359d09 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x23d09)
+    #7 0x5555555c7949 in _start (/usr/local/bin/gpg+0x73949)
+
+0x5555557b5002 is located 30 bytes to the left of global variable '*.LC664' defined in 'gpg.c' (0x5555557b5020) of size 14
+  '*.LC664' is ascii string '--show-photos'
+0x5555557b5002 is located 16 bytes to the right of global variable '*.LC663' defined in 'gpg.c' (0x5555557b4fe0) of size 18
+  '*.LC663' is ascii string '--default-comment'
+SUMMARY: AddressSanitizer: global-buffer-overflow ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:370 in __interceptor_strlen
+Shadow bytes around the buggy address:
+  0x0aab2aaee9b0: 00 07 f9 f9 f9 f9 f9 f9 00 00 00 00 01 f9 f9 f9
+  0x0aab2aaee9c0: f9 f9 f9 f9 00 00 03 f9 f9 f9 f9 f9 00 00 00 01
+  0x0aab2aaee9d0: f9 f9 f9 f9 00 00 02 f9 f9 f9 f9 f9 00 00 02 f9
+  0x0aab2aaee9e0: f9 f9 f9 f9 00 00 04 f9 f9 f9 f9 f9 00 00 05 f9
+  0x0aab2aaee9f0: f9 f9 f9 f9 00 06 f9 f9 f9 f9 f9 f9 00 00 02 f9
+=>0x0aab2aaeea00:[f9]f9 f9 f9 00 06 f9 f9 f9 f9 f9 f9 00 00 01 f9
+  0x0aab2aaeea10: f9 f9 f9 f9 00 00 00 00 00 02 f9 f9 f9 f9 f9 f9
+  0x0aab2aaeea20: 00 00 00 00 03 f9 f9 f9 f9 f9 f9 f9 00 00 00 04
+  0x0aab2aaeea30: f9 f9 f9 f9 00 00 00 05 f9 f9 f9 f9 00 00 00 03
+  0x0aab2aaeea40: f9 f9 f9 f9 02 f9 f9 f9 f9 f9 f9 f9 00 00 00 00
+  0x0aab2aaeea50: 03 f9 f9 f9 f9 f9 f9 f9 00 00 00 07 f9 f9 f9 f9
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==406537==ABORTING

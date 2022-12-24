@@ -1,0 +1,3 @@
+fault_location /root/nginx-1.21.6/objs/nginx
+cap_corrupt_allocator
+cap_read_arbitrary

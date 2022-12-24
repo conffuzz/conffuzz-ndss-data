@@ -1,0 +1,7 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+sudo_auth_init(0x60c0000112e8 {passwd*} [size: 0x30], 0x2000001 {int} [size: 0]) @ 0x00007f29293d31dd
+sudo_passwd_verify(0x60c0000112e8 {passwd*} [size: 0x30], 0x7ffc9bda9f00 {char*} [size: 0x1], 0x7f2929693060 {sudo_auth*} [size: 0x50], 0x7ffc9bdaa5e0 {sudo_conv_callback*} [size: 0x20]) @ 0x00007f29293c88ea
+~> change arg #0x3 {sudo_auth*} from 0x7f2929693060 to 0x7f292969302c

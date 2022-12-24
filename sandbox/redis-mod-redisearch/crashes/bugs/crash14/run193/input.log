@@ -1,0 +1,13 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe630 {RedisModuleCtx*} [size: 0x78], 0x7fffd940c850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+DropIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd9315be0 {RedisModuleString**} [size: 0x8], 0x2 {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleCtx*} 0xffd948 -> 0xffffff0000000000 at shared buffer 0x00007fffffffe392
+~> change ret {int} from 0 to 0x64
+CreateIndexCommand(0x7fffffffe380 {RedisModuleCtx*} [size: 0x78], 0x7fffd92f2ac0 {RedisModuleString**} [size: 0x8], 0xb {int} [size: 0]) @ 0x00005555557eca97
+~> write {RedisModuleString**} 0x7fffd9 -> 0xffffffff000000 at shared buffer 0x00007fffd92f2ac3
+~> write {RedisModuleCtx*} 0 -> 0xfffffffffffffd4c at shared buffer 0x00007fffffffe3dd
+~> write {RedisModuleCtx*} 0 -> 0x20800 at shared buffer 0x00007fffffffe397
+~> change ret {int} from 0 to 0xffffffffffff8000

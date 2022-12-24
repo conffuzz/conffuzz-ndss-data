@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+mkd_shlib_destructor() @ 0x00007ffff7fe677a
+mkd_in(0x61500000ff80 {FILE*} [size: 0xd8], 0 {mkd_flag_t} [size: 0]) @ 0x00007fffd7ebb9c9
+~> write {FILE*} 0x1f500 -> 0xfffff90000000000 at shared buffer 0x000061500000ffb8
+~> write {FILE*} 0xbebe000000800000 -> 0 at shared buffer 0x000061500000fff2
+~> write {FILE*} 0x62 -> 0 at shared buffer 0x000061500000ffbd

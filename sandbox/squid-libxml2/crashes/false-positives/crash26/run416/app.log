@@ -1,0 +1,81 @@
+2022/11/09 18:26:23| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+parser error : Memory allocation failed
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==64617==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000082 (pc 0x7fffd7cc7b46 bp 0x000000000092 sp 0x7fffffffafe0 T0)
+==64617==The signal is caused by a WRITE memory access.
+==64617==Hint: address points to the zero page.
+    #0 0x7fffd7cc7b46 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order) ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80
+    #1 0x7fffd7cc7b46 in __asan::Allocator::AtomicallySetQuarantineFlagIfAllocated(__asan::AsanChunk*, void*, __sanitizer::BufferedStackTrace*) ../../../../src/libsanitizer/asan/asan_allocator.cpp:621
+    #2 0x7fffd7cc7b46 in __asan::Allocator::Deallocate(void*, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:697
+    #3 0x7fffd7cc7b46 in __asan::asan_free(void*, __sanitizer::BufferedStackTrace*, __asan::AllocType) ../../../../src/libsanitizer/asan/asan_allocator.cpp:971
+    #4 0x7fffd7d534d4 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:128
+    #5 0x7fffd79f2749 in xmlFreeParserCtxt /root/libxml2-2.10.3/parserInternals.c:1653
+    #6 0x555555ca65cb in ESILibxml2Parser::~ESILibxml2Parser() /root/squid-5.7/src/esi/Libxml2Parser.cc:101
+    #7 0x555555ca6631 in ESILibxml2Parser::~ESILibxml2Parser() /root/squid-5.7/src/esi/Libxml2Parser.cc:103
+    #8 0x555555c90ed0 in RefCount<ESIParser>::dereference(ESIParser const*) ../../src/base/RefCount.h:100
+    #9 0x555555c90869 in RefCount<ESIParser>::operator=(RefCount<ESIParser>&&) (/usr/local/squid/sbin/squid+0x73c869)
+    #10 0x555555c8633e in ESIContext::ParserState::freeResources() /root/squid-5.7/src/esi/Esi.cc:1391
+    #11 0x555555c865d6 in ESIContext::freeResources() /root/squid-5.7/src/esi/Esi.cc:1412
+    #12 0x555555c867be in ESIContext::fail() /root/squid-5.7/src/esi/Esi.cc:1434
+    #13 0x555555c7ddee in ESIContext::kick() /root/squid-5.7/src/esi/Esi.cc:336
+    #14 0x555555c80f23 in esiProcessStream(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/esi/Esi.cc:787
+    #15 0x555555934985 in clientStreamCallback(clientStreamNode*, ClientHttpRequest*, HttpReply*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:159
+    #16 0x55555595f091 in clientReplyContext::processReplyAccessResult(Acl::Answer const&) /root/squid-5.7/src/client_side_reply.cc:2178
+    #17 0x55555595e6e9 in clientReplyContext::processReplyAccess() /root/squid-5.7/src/client_side_reply.cc:2066
+    #18 0x55555595f8f7 in clientReplyContext::sendMoreData(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:2264
+    #19 0x5555559578a0 in clientReplyContext::cacheHit(StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:721
+    #20 0x55555595607f in clientReplyContext::CacheHit(void*, StoreIOBuffer) /root/squid-5.7/src/client_side_reply.cc:532
+    #21 0x5555559fc475 in store_client::callback(long, bool) /root/squid-5.7/src/store_client.cc:178
+    #22 0x5555559fdc02 in store_client::scheduleMemRead() /root/squid-5.7/src/store_client.cc:474
+    #23 0x5555559fd758 in store_client::scheduleRead() /root/squid-5.7/src/store_client.cc:440
+    #24 0x5555559fd4a6 in store_client::doCopy(StoreEntry*) /root/squid-5.7/src/store_client.cc:401
+    #25 0x5555559fcfe8 in storeClientCopy2 /root/squid-5.7/src/store_client.cc:355
+    #26 0x5555559fcbd9 in store_client::copy(StoreEntry*, StoreIOBuffer, void (*)(void*, StoreIOBuffer), void*) /root/squid-5.7/src/store_client.cc:278
+    #27 0x5555559fc845 in storeClientCopy(store_client*, StoreEntry*, StoreIOBuffer, void (*)(void*, StoreIOBuffer), void*) /root/squid-5.7/src/store_client.cc:230
+    #28 0x55555595dae7 in clientReplyContext::doGetMoreData() /root/squid-5.7/src/client_side_reply.cc:1881
+    #29 0x55555595d576 in clientReplyContext::identifyFoundObject(StoreEntry*) /root/squid-5.7/src/client_side_reply.cc:1783
+    #30 0x555555958c37 in clientReplyContext::created(StoreEntry*) /root/squid-5.7/src/client_side_reply.cc:945
+    #31 0x5555559f0a93 in StoreEntry::getPublicByRequest(StoreClient*, HttpRequest*) /root/squid-5.7/src/store.cc:512
+    #32 0x55555595cabe in clientReplyContext::identifyStoreObject() /root/squid-5.7/src/client_side_reply.cc:1696
+    #33 0x55555595d87a in clientGetMoreData /root/squid-5.7/src/client_side_reply.cc:1842
+    #34 0x555555934b9b in clientStreamRead(clientStreamNode*, ClientHttpRequest*, StoreIOBuffer) /root/squid-5.7/src/clientStream.cc:182
+    #35 0x55555596810c in ClientHttpRequest::httpStart() /root/squid-5.7/src/client_side_request.cc:1548
+    #36 0x555555967f3b in ClientHttpRequest::processRequest() /root/squid-5.7/src/client_side_request.cc:1533
+    #37 0x5555559696aa in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1902
+    #38 0x55555596528f in ClientRequestContext::clientAccessCheckDone(Acl::Answer const&) /root/squid-5.7/src/client_side_request.cc:826
+    #39 0x5555559648fc in ClientRequestContext::clientAccessCheck2() /root/squid-5.7/src/client_side_request.cc:725
+    #40 0x555555968c70 in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1791
+    #41 0x55555596528f in ClientRequestContext::clientAccessCheckDone(Acl::Answer const&) /root/squid-5.7/src/client_side_request.cc:826
+    #42 0x555555964961 in clientAccessCheckDoneWrapper /root/squid-5.7/src/client_side_request.cc:737
+    #43 0x555555a8f94c in ACLChecklist::checkCallback(Acl::Answer) /root/squid-5.7/src/acl/Checklist.cc:169
+    #44 0x555555a8eecf in ACLChecklist::completeNonBlocking() /root/squid-5.7/src/acl/Checklist.cc:54
+    #45 0x555555a8fe47 in ACLChecklist::nonBlockingCheck(void (*)(Acl::Answer, void*), void*) /root/squid-5.7/src/acl/Checklist.cc:257
+    #46 0x5555559646cb in ClientRequestContext::clientAccessCheck() /root/squid-5.7/src/client_side_request.cc:705
+    #47 0x55555596894a in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1763
+    #48 0x555555963cba in ClientRequestContext::hostHeaderVerify() /root/squid-5.7/src/client_side_request.cc:653
+    #49 0x555555968807 in ClientHttpRequest::doCallouts() /root/squid-5.7/src/client_side_request.cc:1756
+    #50 0x555555942239 in clientProcessRequest(ConnStateData*, RefCount<Http::One::RequestParser> const&, Http::Stream*) /root/squid-5.7/src/client_side.cc:1798
+    #51 0x555555ade2ec in Http::One::Server::processParsedRequest(RefCount<Http::Stream>&) /root/squid-5.7/src/servers/Http1Server.cc:292
+    #52 0x555555943588 in ConnStateData::clientParseRequests() /root/squid-5.7/src/client_side.cc:1990
+    #53 0x555555943aa3 in ConnStateData::afterClientRead() /root/squid-5.7/src/client_side.cc:2024
+    #54 0x555555ae20f6 in Server::doClientRead(CommIoCbParams const&) /root/squid-5.7/src/servers/Server.cc:181
+    #55 0x555555ae3476 in CommCbMemFunT<Server, CommIoCbParams>::doDial() ../../src/CommCalls.h:205
+    #56 0x555555ae3550 in JobDialer<Server>::dial(AsyncCall&) ../../src/base/AsyncJobCalls.h:175
+    #57 0x555555ae335e in AsyncCallT<CommCbMemFunT<Server, CommIoCbParams> >::fire() ../../src/base/AsyncCall.h:145
+    #58 0x555555afdd08 in AsyncCall::make() /root/squid-5.7/src/base/AsyncCall.cc:44
+    #59 0x555555afeb88 in AsyncCallQueue::fireNext() /root/squid-5.7/src/base/AsyncCallQueue.cc:60
+    #60 0x555555afe915 in AsyncCallQueue::fire() /root/squid-5.7/src/base/AsyncCallQueue.cc:43
+    #61 0x55555587fc36 in EventLoop::dispatchCalls() /root/squid-5.7/src/EventLoop.cc:144
+    #62 0x55555587fb42 in EventLoop::runOnce() /root/squid-5.7/src/EventLoop.cc:121
+    #63 0x55555587f995 in EventLoop::run() /root/squid-5.7/src/EventLoop.cc:83
+    #64 0x5555559bf69f in SquidMain(int, char**) /root/squid-5.7/src/main.cc:1719
+    #65 0x5555559be94c in SquidMainSafe /root/squid-5.7/src/main.cc:1406
+    #66 0x5555559be906 in main /root/squid-5.7/src/main.cc:1394
+    #67 0x7fffd73dfd8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #68 0x7fffd73dfe3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #69 0x555555831e64 in _start (/usr/local/squid/sbin/squid+0x2dde64)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ../../../../src/libsanitizer/sanitizer_common/sanitizer_atomic_clang.h:80 in bool __sanitizer::atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>(__sanitizer::atomic_uint8_t volatile*, __sanitizer::atomic_uint8_t::Type*, __sanitizer::atomic_uint8_t::Type, __sanitizer::memory_order)
+==64617==ABORTING

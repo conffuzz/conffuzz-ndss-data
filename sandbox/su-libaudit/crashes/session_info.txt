@@ -1,0 +1,10 @@
+Fuzzing seed: 1668378468
+Starting time: 2022-11-13 22:27:48
+Total instrumented API size: 75
+Statically detected call sites: 10
+Statically detected called API endpoints: 3
+Statically detected caller components: 1
+Max number of call sites reached in a run: 2
+Number of API endpoints reached: 2
+Number of API endpoints that are vulnerability vectors: 0
+Ending time: 2022-11-13 23:02:12

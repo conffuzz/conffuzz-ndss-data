@@ -1,0 +1,5 @@
+    #0 0xaddr in moduleLoad /root/redis-6.2.6/src/module.c:8586
+    #1 0xaddr in moduleLoadFromQueue /root/redis-6.2.6/src/module.c:8499
+    #2 0xaddr in main /root/redis-6.2.6/src/server.c:6359
+    #3 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #4 0xaddr in _start (/root/redis-6.2.6/src/redis-server+0xaddr)

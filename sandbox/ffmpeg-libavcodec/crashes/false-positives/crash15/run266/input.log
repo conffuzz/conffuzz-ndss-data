@@ -1,0 +1,40 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+avcodec_configuration() @ 0x00005555555774bd
+~> change ret from 0x7fffe00e12c0 to 0x7fffe00e136b
+avcodec_version() @ 0x0000555555577440
+avcodec_parameters_alloc() @ 0x00007fffe130e181
+avcodec_alloc_context3(0 [size: 0xe0]) @ 0x00007fffe130e20f
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0ea160d
+~> write 0 -> 0xffff at shared buffer 0x00006190000002e5
+avcodec_get_class() @ 0x000055555557dba8
+~> change ret from 0x7fffe0500e20 to 0x7ffffffde190
+avcodec_find_decoder(0xc [size: 0]) @ 0x000055555557dc2b
+~> change ret from 0x7fffe05302c0 to 0x7fffe052ff58
+avcodec_parameters_to_context(0x619000000080 [size: 0x398], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eba45e
+~> write 0xffff00000000003d -> 0x315 at shared buffer 0x00006190000000c2
+~> write 0xffff000000000000 -> 0xff80000000 at shared buffer 0x000061900000024c
+avcodec_find_decoder(0xc [size: 0]) @ 0x00007fffe130a40a
+~> change ret from 0x7fffe05302c0 to 0x7ffffffde190
+avcodec_open2(0x619000000080 [size: 0x398], 0x7ffffffde190 [size: 0xe0], 0x603000001540 [size: 0x8]) @ 0x00007fffe0eba815
+~> write 0xffff000000003000 -> 0x619000000001 at shared buffer 0x0000603000001543
+~> write 0xffff000000000000 -> 0 at shared buffer 0x000061900000019f
+~> write 0xffff000000000000 -> 0xa9 at shared buffer 0x000061900000025c
+~> write 0xffff00000000056f -> 0 at shared buffer 0x00006190000000b9
+~> write 0xffff000000000000 -> 0 at shared buffer 0x00006190000001c5
+~> write 0 -> 0x7d at shared buffer 0x00007ffffffde1d3
+~> write 0 -> 0 at shared buffer 0x00007ffffffde1ec
+~> write 0 -> 0 at shared buffer 0x00007ffffffde1b4
+avcodec_descriptor_get(0xc [size: 0]) @ 0x00007fffe130af57
+avcodec_parameters_alloc() @ 0x00007fffde5a6429
+avcodec_parameters_alloc() @ 0x00007fffde5a6478
+avcodec_parameters_copy(0x60e000023580 [size: 0x90], 0x60e0000233c0 [size: 0x90]) @ 0x00007fffe0eb8ece
+~> change ret from 0 to 0x3
+avcodec_parameters_copy(0x60e000023660 [size: 0x90], 0x60e000023580 [size: 0x90]) @ 0x00007fffde5a6e63
+~> write 0 -> 0x4 at shared buffer 0x000060e0000236df
+~> write 0 -> 0x7fff at shared buffer 0x000060e0000236c2
+~> change ret from 0 to 0x36a
+avcodec_is_open(0x619000000080 [size: 0x398]) @ 0x00007fffe0eb4ed9
+~> change ret from 0 to 0x13f

@@ -1,0 +1,33 @@
+[I] Recursing from pcap_t into pcap
+[I] Recursing from u_char into __u_char
+[I] Recursing from __u_char into unsigned char
+[E] Not able to find type information for u_char in DWARF
+[I] Recursing from bpf_u_int32 into u_int
+[I] Recursing from u_int into __u_int
+[I] Recursing from __u_int into unsigned int
+[E] Not able to find type information for bpf_u_int32 in DWARF
+[I] Recursing from pcap_dumper_t into pcap_dumper
+[E] Not able to find type information for pcap_dumper_t in DWARF
+[I] Recursing from file into _IO_FILE
+[I] Recursing from pcap_if_t into pcap_if
+Capturing on 'eth0'
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+Tried and failed to write to 0x000055555558bb80 (1 bytes)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==110675==ERROR: AddressSanitizer: SEGV on unknown address 0x760028000003 (pc 0x7fffe25aa0cb bp 0x7fffffffc290 sp 0x7fffffffc290 T0)
+==110675==The signal is caused by a READ memory access.
+    #0 0x7fffe25aa0cb in pcap_validate_filter bpf_filter.c:419
+    #1 0x7fffe25a36fd in install_bpf_program optimize.c:2946
+    #2 0x7fffe2587390 in pcap_setfilter_linux pcap-linux.c:4216
+    #3 0x7fffe258daf6 in pcap_setfilter pcap.c:3697
+    #4 0x55555556c8b2 in capture_loop_init_filter /root/wireshark-3.4.12/dumpcap.c:2908
+    #5 0x55555557114c in capture_loop_start /root/wireshark-3.4.12/dumpcap.c:3806
+    #6 0x555555576664 in main /root/wireshark-3.4.12/dumpcap.c:5403
+    #7 0x7fffe21a57fc in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x237fc)
+    #8 0x555555562d59 in _start (/root/wireshark_build/run/dumpcap+0xed59)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV bpf_filter.c:419 in pcap_validate_filter
+==110675==ABORTING

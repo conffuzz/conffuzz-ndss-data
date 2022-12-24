@@ -1,0 +1,19 @@
+    #1 0xaddr in ngx_destroy_pool src/core/ngx_palloc.c:90
+    #2 0xaddr in ngx_http_free_request src/http/ngx_http_request.c:3736
+    #3 0xaddr in ngx_http_set_keepalive src/http/ngx_http_request.c:3122
+    #4 0xaddr in ngx_http_finalize_connection src/http/ngx_http_request.c:2774
+    #5 0xaddr in ngx_http_finalize_request src/http/ngx_http_request.c:2492
+    #6 0xaddr in ngx_http_core_content_phase src/http/ngx_http_core_module.c:1269
+    #7 0xaddr in ngx_http_core_run_phases src/http/ngx_http_core_module.c:875
+    #8 0xaddr in ngx_http_handler src/http/ngx_http_core_module.c:858
+    #9 0xaddr in ngx_http_process_request src/http/ngx_http_request.c:2120
+    #10 0xaddr in ngx_http_process_request_headers src/http/ngx_http_request.c:1498
+    #11 0xaddr in ngx_http_process_request_line src/http/ngx_http_request.c:1165
+    #12 0xaddr in ngx_http_wait_request_handler src/http/ngx_http_request.c:503
+    #13 0xaddr in ngx_epoll_process_events src/event/modules/ngx_epoll_module.c:901
+    #14 0xaddr in ngx_process_events_and_timers src/event/ngx_event.c:248
+    #15 0xaddr in ngx_single_process_cycle src/os/unix/ngx_process_cycle.c:300
+    #16 0xaddr in main src/core/nginx.c:380
+    #17 0xaddr  (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #18 0xaddr in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0xaddr)
+    #19 0xaddr in _start (/root/nginx-1.21.6/objs/nginx+0xaddr)

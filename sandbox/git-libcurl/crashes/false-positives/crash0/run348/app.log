@@ -1,0 +1,86 @@
+=================================================================
+==53591==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60300002b1d8 at pc 0x7fffe00e04ac bp 0x7fffffffd870 sp 0x7fffffffd860
+READ of size 8 at 0x60300002b1d8 thread T0
+    #0 0x7fffe00e04ab in slist_get_last /root/curl-7.82.0/lib/slist.c:44
+    #1 0x7fffe00e05aa in Curl_slist_append_nodup /root/curl-7.82.0/lib/slist.c:77
+    #2 0x7fffe00e0636 in curl_slist_append /root/curl-7.82.0/lib/slist.c:97
+    #3 0x555555633784 in locking_available /root/git-2.35.1/http-push.c:1212
+    #4 0x55555563703f in cmd_main /root/git-2.35.1/http-push.c:1771
+    #5 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #6 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+    #7 0x7fffdfc61e3f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29e3f)
+    #8 0x55555561b474 in _start (/root/git-2.35.1/git-http-push+0xc7474)
+
+0x60300002b1d8 is located 8 bytes to the left of 20-byte region [0x60300002b1e0,0x60300002b1f4)
+freed by thread T0 here:
+    #0 0x7fffe03b4517 in __interceptor_free ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:127
+    #1 0x5555556607d2 in configset_find_element /root/git-2.35.1/config.c:2047
+    #2 0x55555566165b in git_configset_get_value_multi /root/git-2.35.1/config.c:2168
+    #3 0x5555556614f3 in git_configset_get_value /root/git-2.35.1/config.c:2157
+    #4 0x555555661730 in git_configset_get_string /root/git-2.35.1/config.c:2175
+    #5 0x555555662a37 in repo_config_get_string /root/git-2.35.1/config.c:2327
+    #6 0x555555662f25 in git_config_get_string /root/git-2.35.1/config.c:2413
+    #7 0x555555815e91 in get_protocol_config /root/git-2.35.1/transport.c:976
+    #8 0x55555581611f in is_transport_allowed /root/git-2.35.1/transport.c:1016
+    #9 0x55555561ee35 in get_curl_allowed_protocols /root/git-2.35.1/http.c:730
+    #10 0x55555561f926 in get_curl_handle /root/git-2.35.1/http.c:879
+    #11 0x555555620b8c in http_init /root/git-2.35.1/http.c:1103
+    #12 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #13 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #14 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+previously allocated by thread T0 here:
+    #0 0x7fffe03b4867 in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x55555583a6c4 in do_xmalloc /root/git-2.35.1/wrapper.c:41
+    #2 0x55555583a7d2 in do_xmallocz /root/git-2.35.1/wrapper.c:75
+    #3 0x55555583a847 in xmallocz /root/git-2.35.1/wrapper.c:83
+    #4 0x555555656c13 in git_config_parse_key /root/git-2.35.1/config.c:459
+    #5 0x5555556606c1 in configset_find_element /root/git-2.35.1/config.c:2041
+    #6 0x55555566165b in git_configset_get_value_multi /root/git-2.35.1/config.c:2168
+    #7 0x5555556614f3 in git_configset_get_value /root/git-2.35.1/config.c:2157
+    #8 0x555555661730 in git_configset_get_string /root/git-2.35.1/config.c:2175
+    #9 0x555555662a37 in repo_config_get_string /root/git-2.35.1/config.c:2327
+    #10 0x555555662f25 in git_config_get_string /root/git-2.35.1/config.c:2413
+    #11 0x555555815e91 in get_protocol_config /root/git-2.35.1/transport.c:976
+    #12 0x55555581611f in is_transport_allowed /root/git-2.35.1/transport.c:1016
+    #13 0x55555561ee35 in get_curl_allowed_protocols /root/git-2.35.1/http.c:730
+    #14 0x55555561f926 in get_curl_handle /root/git-2.35.1/http.c:879
+    #15 0x555555620b8c in http_init /root/git-2.35.1/http.c:1103
+    #16 0x555555637030 in cmd_main /root/git-2.35.1/http-push.c:1766
+    #17 0x5555556386ae in main /root/git-2.35.1/common-main.c:56
+    #18 0x7fffdfc61d8f  (/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /root/curl-7.82.0/lib/slist.c:44 in slist_get_last
+Shadow bytes around the buggy address:
+  0x0c067fffd5e0: fa fa fd fd fd fd fa fa 00 00 00 00 fa fa 00 00
+  0x0c067fffd5f0: 00 fa fa fa 00 00 00 00 fa fa 00 00 00 00 fa fa
+  0x0c067fffd600: 00 00 00 fa fa fa fd fd fd fa fa fa 00 00 00 00
+  0x0c067fffd610: fa fa fd fd fd fa fa fa fd fd fd fa fa fa fd fd
+  0x0c067fffd620: fd fa fa fa fd fd fd fa fa fa fd fd fd fa fa fa
+=>0x0c067fffd630: fd fd fd fa fa fa fd fd fd fa fa[fa]fd fd fd fa
+  0x0c067fffd640: fa fa 00 00 00 03 fa fa 00 00 00 01 fa fa 00 00
+  0x0c067fffd650: 00 00 fa fa 00 00 00 00 fa fa fa fa fa fa fa fa
+  0x0c067fffd660: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fffd670: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fffd680: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==53591==ABORTING

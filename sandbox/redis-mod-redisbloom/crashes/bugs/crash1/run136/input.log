@@ -1,0 +1,9 @@
+# format:
+#   [function name](arguments) @ [call site]
+#   ~> [action taken]
+
+RedisModule_OnLoad(0x7fffffffe640 {RedisModuleCtx*} [size: 0x78], 0x7fffd9411850 {RedisModuleString**} [size: 0x8], 0 {int} [size: 0]) @ 0x00005555558131f4
+~> write {RedisModuleString**} 0x7fffd9 -> 0x20f00000000 at shared buffer 0x00007fffd9411853
+~> write {RedisModuleCtx*} 0 -> 0xffffffff00 at shared buffer 0x00007fffffffe68f
+~> write {RedisModuleCtx*} 0 -> 0 at shared buffer 0x00007fffffffe698
+~> write {RedisModuleCtx*} 0x7fffd92f75 -> 0x2b7 at shared buffer 0x00007fffffffe649
