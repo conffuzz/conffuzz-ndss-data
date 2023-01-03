@@ -57,3 +57,26 @@ Finally, we run conffuzz on the unikraft binary:
 "^(close|open|acces|getcwd|stat|fstat|ftruncate|fcntl|read|pread|write|pwrite|fchmod|unlink|mkdir|rmdir|fchown|readlink|lstat|ioctl|utime)$" \
 -d /root/examples/apps/app-sqlite/build/app-helloworld_linuxu-x86_64.dbg
 ```
+
+### Results
+
+We were able to find one interesting KASAN crashes caused by the `open` call. Below is the backtrace of the crash. 
+
+```sh
+ERR:  [libkasan] <kasan.c @  155> ==732545==ERROR: AddressSanitizer: SEGV on unknown address 0x7fffffffffffffff at pc 0x0000004c7fcd
+ERR:  [libkasan] <kasan.c @  156> READ of size 1 at 0x7fffffffffffffff thread T0
+ERR:  [liblinuxuplat] <read_allsymbol.c @  689> Call trace:
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #0 0x403f53 in uk_dump_backtrace+0/0x6c
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #1 0x42e4a6 in shadow_check+0x108/0x253
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #2 0x42e8d9 in __asan_load1_noabort+0x22/0x25
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #3 0x4a86e1 in strlcpy+0x50/0xc6
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #4 0x427964 in path_conv+0x49/0x32b
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #5 0x427c74 in task_conv+0x2e/0x43
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #6 0x4203cd in __uk_syscall_r_open+0xa2/0x147
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #7 0x420327 in uk_syscall_r_open+0x2e/0x32
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #8 0x4202a7 in uk_syscall_e_open+0x2e/0x80
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #9 0x420594 in open+0x122/0x128
+ERR:  [liblinuxuplat] <read_allsymbol.c @  662>          #10 0x50bfc1 in posixOpen+0x2b/0x2d
+```
+
+We can pass any pointer to the open function and the vfscore will read from the pointer up to `PATH_MAX` character and copy them in a new buffer, allocated on the stack, called `path` which is later passed to `sys_open`. If debugging is enabled, the variable `path` is printed. Thus the attacker could read all the strings from the memory space of `vfscore`. 
