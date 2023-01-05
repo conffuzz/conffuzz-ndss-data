@@ -1,4 +1,4 @@
-# ConfFuzz Data
+# ConfFuzz NDSS Data-Set
 
 [![](https://img.shields.io/badge/arXiv-paper-red)](https://arxiv.org/abs/2212.12904)
 
