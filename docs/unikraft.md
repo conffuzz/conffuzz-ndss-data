@@ -21,9 +21,9 @@ We ran conffuzz on Unikraft under the threat scenario where the `vfscore` intern
 ```
 
 We used the following commits:
-- newlib: dea6ac34da547c9ea5831ed4f6044669259285b4
-- pthread-embedded: e2705f98bcb17f423547c2394cc672a52de3d1e4
-- sqlite: ed967a22894779d62ad1ae8eaadb4c84ed959972
+- newlib: `dea6ac34da547c9ea5831ed4f6044669259285b4`
+- pthread-embedded: `e2705f98bcb17f423547c2394cc672a52de3d1e4`
+- sqlite: `ed967a22894779d62ad1ae8eaadb4c84ed959972`
 
 !!! To make things easier, move everything to the `example` folder in your conffuzz clone.
 
