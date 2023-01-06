@@ -33,4 +33,4 @@ zenodo:
 		curl -s https://github.com:@api.github.com/orgs/${ORG}/repos?per_page=200 | \
 		jq .[].ssh_url | xargs -n 1 git clone
 	find $(WORKDIR)/repositories/* -name '.git' | xargs rm -rf
-	tar -cvzf $(WORKDIR)/../conffuzz-artifact.tar.gz $(WORKDIR)/repositories/
+	cd $(WORKDIR) && tar -cvzf ../conffuzz-artifact.tar.gz repositories/
