@@ -34,3 +34,4 @@ zenodo:
 		jq .[].ssh_url | xargs -n 1 git clone
 	find $(WORKDIR)/repositories/* -name '.git' | xargs rm -rf
 	cd $(WORKDIR) && tar -cvzf ../conffuzz-artifact.tar.gz repositories/
+	rm -rf $(WORKDIR)/repositories
